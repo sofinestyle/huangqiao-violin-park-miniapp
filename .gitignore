@@ -32,3 +32,10 @@ backups/
 *.mov
 *.m4v
 *.webm
+
+# Local databases and native compiler output
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+miniprogram/miniprogram/**/*.js
+miniprogram/miniprogram/**/*.js.map
