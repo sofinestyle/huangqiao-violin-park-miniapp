@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>黄桥乐器文化产业园</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --wood-deep:#24180f;
+  --wood:#3a2817;
+  --wood-mid:#5a4128;
+  --gold:#c8a35c;
+  --gold-light:#e2c88f;
+  --paper:#f4ecdd;
+  --card:#fbf6ec;
+  --ink:#2a1d12;
+  --muted:#8a7560;
+  --line:#e2d3b8;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;}
+body{
+  font-family:"Noto Sans SC",system-ui,sans-serif;
+  background:#1a120b;
+  color:var(--ink);
+  line-height:1.6;
+}
+.serif{font-family:"Noto Serif SC",serif;}
+/* 手机容器 */
+#phone{
+  max-width:430px;margin:0 auto;min-height:100vh;
+  background:var(--paper);position:relative;
+  box-shadow:0 0 60px rgba(0,0,0,.6);
+  padding-bottom:84px;
+}
+/* 顶部品牌条 */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg,var(--wood-deep),rgba(36,24,15,.96));
+  color:var(--paper);
+  padding:14px 20px 12px;
+  display:flex;align-items:center;gap:10px;
+  border-bottom:1px solid rgba(200,163,92,.3);
+}
+.topbar .brand-logo{height:34px;width:auto;display:block;}
+.topbar .ttl{font-size:13px;line-height:1.4;color:var(--gold-light);letter-spacing:1.5px;white-space:nowrap;}
+/* 视图 */
+.view{display:none;animation:fade .35s ease;}
+.view.active{display:block;}
+@keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+
+/* HERO */
+.hero{position:relative;height:460px;overflow:hidden;}
+.hero img{width:100%;height:100%;object-fit:cover;display:block;}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(24,15,8,.25) 0%,rgba(24,15,8,.15) 40%,rgba(24,15,8,.92) 100%);
+}
+.hero-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px 24px 30px;color:var(--paper);}
+.hero-cap .eyebrow{font-size:11px;letter-spacing:5px;color:var(--gold-light);margin-bottom:10px;}
+.hero-cap h1{font-family:"Noto Serif SC",serif;font-size:34px;font-weight:900;line-height:1.2;letter-spacing:2px;}
+.hero-cap h1 span{color:var(--gold-light);}
+.hero-cap .desc{font-size:13px;margin-top:12px;color:#e9ddc6;line-height:1.8;text-indent:2em;}
+.goldrule{width:54px;height:2px;background:var(--gold);margin:14px 0;}
+
+.section{padding:26px 20px;}
+.sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:6px;}
+.sec-head .no{font-family:"Noto Serif SC",serif;color:var(--gold);font-size:13px;letter-spacing:2px;}
+.sec-head h2{font-family:"Noto Serif SC",serif;font-size:22px;font-weight:700;letter-spacing:1px;}
+.sec-note{font-size:12px;color:var(--muted);margin-bottom:18px;}
+
+/* 三大入口 */
+.entries{display:flex;flex-direction:column;gap:12px;margin-top:8px;}
+.entry{
+  display:flex;align-items:center;gap:16px;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:18px;cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+.entry:active{transform:scale(.985);}
+.entry .ico{
+  width:52px;height:52px;flex:0 0 52px;border-radius:12px;
+  background:linear-gradient(145deg,var(--wood),var(--wood-deep));
+  display:flex;align-items:center;justify-content:center;color:var(--gold-light);
+}
+.entry .txt b{font-family:"Noto Serif SC",serif;font-size:17px;letter-spacing:1px;}
+.entry .txt p{font-size:12px;color:var(--muted);margin-top:3px;}
+.entry .arrow{margin-left:auto;color:var(--gold);font-size:20px;}
+
+/* 首页：参观点位卡片 */
+.pcard{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  overflow:hidden;margin-bottom:14px;cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+.pcard:active{transform:scale(.985);}
+.pcard .pic{position:relative;height:150px;overflow:hidden;}
+.pcard .pic img{width:100%;height:100%;object-fit:cover;display:block;}
+.pcard .gal{position:relative;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:190px;scrollbar-width:none;}
+.pcard .gal::-webkit-scrollbar{display:none;}
+.pcard .gal img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;}
+.pcard .free{position:absolute;top:10px;right:10px;z-index:2;}
+.pcard .pic .free{
+  position:absolute;right:12px;top:12px;font-size:10px;color:#fff;
+  background:rgba(36,24,15,.72);border:1px solid var(--gold);
+  border-radius:20px;padding:3px 10px;letter-spacing:1px;
+}
+.pcard .body{padding:14px 16px 16px;}
+.pcard .body .no{font-family:"Noto Serif SC",serif;color:var(--gold);font-size:12px;letter-spacing:2px;}
+.pcard .body h3{font-family:"Noto Serif SC",serif;font-size:17px;font-weight:700;letter-spacing:1px;margin:2px 0 6px;}
+.pcard .body p{font-size:12.5px;color:#5a4a32;line-height:1.7;}
+.pcard .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;}
+.pcard .tags span{
+  font-size:10.5px;color:var(--wood);background:var(--paper);
+  border:1px solid var(--line);border-radius:20px;padding:3px 9px;
+}
+.pcard .dur{margin-top:12px;border-top:1px dashed var(--line);padding-top:4px;}
+.pcard .dur li{
+  list-style:none;font-size:12px;color:#4d3d2a;
+  display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed #eadfc8;
+}
+.pcard .dur li:last-child{border-bottom:none;}
+.pcard .dur li span:last-child{color:var(--gold);white-space:nowrap;font-size:11.5px;}
+
+/* 首页：金刚区 */
+.quick{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:6px;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:16px 6px 14px;margin-top:6px;
+}
+.quick a{text-align:center;cursor:pointer;}
+.quick .qi{
+  width:48px;height:48px;margin:0 auto 6px;border-radius:14px;
+  background:linear-gradient(145deg,#f0e2c6,#e3cd9f);
+  display:flex;align-items:center;justify-content:center;color:var(--wood);
+}
+.quick a span{font-size:11px;color:#5a4a32;display:block;letter-spacing:1px;}
+
+/* 首页：热门推荐 */
+.reco{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+.reco .rc{position:relative;border-radius:14px;overflow:hidden;height:168px;cursor:pointer;}
+.reco .rc img{width:100%;height:100%;object-fit:cover;display:block;}
+.reco .rc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.05) 35%,rgba(20,12,6,.88) 100%);}
+.reco .rc .tag{
+  position:absolute;left:10px;top:10px;z-index:2;font-size:10px;color:#fff;
+  background:var(--gold);border-radius:4px;padding:2px 8px;letter-spacing:1px;
+}
+.reco .rc .t{position:absolute;left:12px;right:12px;bottom:12px;z-index:2;color:#fff;}
+.reco .rc .t b{font-family:"Noto Serif SC",serif;font-size:15px;display:block;line-height:1.3;}
+.reco .rc .t .p{font-size:11.5px;color:var(--gold-light);margin-top:4px;}
+.reco .rc .t .p em{font-style:normal;font-size:15px;font-weight:700;}
+
+/* 首页：园区探索入口横幅 */
+.entrance{position:relative;border-radius:16px;overflow:hidden;height:180px;cursor:pointer;}
+.entrance img{width:100%;height:100%;object-fit:cover;display:block;}
+.entrance::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.1) 30%,rgba(20,12,6,.88) 100%);}
+.entrance .t{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:#fff;}
+.entrance .t b{font-family:"Noto Serif SC",serif;font-size:19px;letter-spacing:1px;}
+.entrance .t p{font-size:12px;color:#e6d8bc;margin-top:5px;}
+.entrance .t .btn{
+  display:inline-block;margin-top:10px;font-size:12px;color:var(--wood);
+  background:var(--gold-light);border-radius:20px;padding:6px 14px;letter-spacing:1px;
+}
+
+/* 二级页：导航头 */
+.sub-head{
+  position:sticky;top:0;z-index:50;background:var(--wood-deep);
+  color:var(--paper);padding:14px 18px;display:flex;align-items:center;gap:12px;
+  border-bottom:1px solid rgba(200,163,92,.3);
+}
+.sub-head .back{color:var(--gold-light);font-size:20px;cursor:pointer;line-height:1;}
+.sub-head b{font-family:"Noto Serif SC",serif;font-size:16px;letter-spacing:1px;}
+.sub-head span{font-size:11px;color:var(--gold);letter-spacing:2px;margin-left:auto;}
+
+/* 数据条 */
+.stats{display:flex;background:var(--wood-deep);border-radius:14px;padding:20px 0;margin-top:6px;}
+.stat{flex:1;text-align:center;color:var(--paper);}
+.stat b{font-family:"Noto Serif SC",serif;font-size:26px;color:var(--gold-light);font-weight:700;display:block;}
+.stat span{font-size:11px;color:#cbbfa4;letter-spacing:1px;}
+.stat+.stat{border-left:1px solid rgba(200,163,92,.25);}
+
+/* 套餐卡 */
+.pkg{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  margin-bottom:16px;position:relative;overflow:hidden;
+}
+.pkg .pic{height:124px;position:relative;}
+.pkg .pic img{width:100%;height:100%;object-fit:cover;display:block;}
+.pkg .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.05) 30%,rgba(20,12,6,.55) 100%);}
+.pkg .pic .num{position:absolute;right:14px;top:8px;z-index:2;font-family:"Noto Serif SC",serif;font-size:30px;color:rgba(255,255,255,.85);font-weight:900;}
+.pkg .pic .tag{
+  position:absolute;left:14px;top:12px;z-index:2;
+  display:inline-block;font-size:10px;letter-spacing:1px;color:#fff;
+  background:var(--gold);border-radius:4px;padding:2px 8px;
+}
+.pkg .pic .tag.rec{background:var(--wood);}
+.pkg .body{padding:16px 18px 18px;}
+.pkg h3{font-family:"Noto Serif SC",serif;font-size:18px;font-weight:700;letter-spacing:1px;}
+.pkg .pts{font-size:12.5px;color:#4d3d2a;margin:10px 0 4px;}
+.pkg .pts li{margin:4px 0 4px 16px;line-height:1.6;}
+.price-row{display:flex;gap:10px;margin-top:12px;}
+.price{
+  flex:1;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+}
+.price .lbl{font-size:11px;color:var(--muted);}
+.price .val{font-family:"Noto Serif SC",serif;font-size:20px;color:var(--wood);font-weight:700;}
+.price .val small{font-size:11px;color:var(--gold);font-weight:400;}
+
+/* 服务说明 */
+.notice{
+  background:#efe3cb;border:1px dashed var(--gold);border-radius:12px;
+  padding:16px 18px;font-size:12px;color:#5a4a32;line-height:1.9;
+}
+.notice b{font-family:"Noto Serif SC",serif;color:var(--wood);}
+
+/* 文创分类 */
+.cat-tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 20px 14px;}
+.cat-tab{
+  flex:0 auto;font-size:13px;padding:7px 16px;border-radius:20px;
+  background:transparent;border:1px solid var(--line);color:var(--muted);
+  cursor:pointer;white-space:nowrap;
+}
+.cat-tab.on{background:var(--wood);color:var(--gold-light);border-color:var(--wood);font-weight:500;}
+.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 20px;}
+.shop{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  display:flex;flex-direction:column;cursor:pointer;
+}
+.shop:active{transform:scale(.98);}
+.shop .thumb{width:100%;height:130px;object-fit:cover;display:block;background:#ece4d3;}
+.shop .body{padding:12px 13px 14px;}
+.shop .name{font-size:13.5px;font-weight:500;color:var(--ink);line-height:1.5;}
+.shop .price{margin-top:10px;font-family:"Noto Serif SC",serif;font-weight:700;color:var(--wood);font-size:17px;}
+.shop .price.na{color:var(--muted);font-size:12px;font-weight:400;font-family:"Noto Sans SC",sans-serif;}
+.shop .price small{font-size:10px;color:var(--gold);font-weight:400;}
+
+/* 提琴 */
+.fiddle{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:18px;margin-bottom:14px;position:relative;
+}
+.fiddle .lvl{
+  display:inline-block;font-size:10px;letter-spacing:1px;color:var(--gold-light);
+  background:var(--wood);border-radius:4px;padding:3px 9px;margin-bottom:8px;
+}
+.fiddle .model{font-family:"Noto Serif SC",serif;font-size:19px;font-weight:700;}
+.fiddle .grade{font-size:12px;color:var(--muted);margin-left:8px;}
+.fiddle .spec{margin-top:12px;font-size:12.5px;color:#4d3d2a;}
+.fiddle .spec div{margin:5px 0;padding-left:14px;position:relative;}
+.fiddle .spec div::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold);}
+.fiddle .spec b{color:var(--wood);font-weight:500;}
+.fiddle .gift{margin-top:10px;font-size:11.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:9px;line-height:1.7;}
+.fiddle-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 20px;}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;}
+.fcard:active{transform:scale(.98);}
+.fcard .thumb{width:100%;height:140px;object-fit:cover;display:block;background:#ece4d3;}
+.fcard .body{padding:11px 12px 13px;}
+.fcard .lvl{display:inline-block;font-size:10px;color:#fff;background:var(--gold);padding:2px 7px;border-radius:4px;letter-spacing:1px;}
+.fcard .model{font-family:"Noto Serif SC",serif;font-size:17px;font-weight:700;color:var(--wood);margin-top:7px;}
+.fcard .grade{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.4;}
+.fcard .go{margin-top:8px;font-size:12px;color:var(--gold);}
+.fd-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;scrollbar-width:none;}
+.fd-gallery::-webkit-scrollbar{display:none;}
+.fd-gallery img{flex:0 0 100%;width:100%;height:260px;object-fit:cover;scroll-snap-align:start;}
+.fd-spec{margin:14px 20px;}
+.fd-spec .row{display:flex;justify-content:space-between;font-size:13px;padding:9px 0;border-bottom:1px dashed var(--line);}
+.fd-spec .row span:first-child{color:var(--muted);}
+.fd-spec .row span:last-child{color:var(--ink);text-align:right;max-width:60%;}
+.fd-sizes{display:flex;gap:8px;padding:0 20px;flex-wrap:wrap;}
+.fd-sizes .sz{padding:7px 16px;border:1px solid var(--line);border-radius:20px;font-size:13px;color:var(--ink);}
+.fd-sizes .sz.on{border-color:var(--gold);color:var(--gold);background:#f6efdd;}
+.buy-bar{position:fixed;bottom:56px;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding:10px 20px calc(10px + env(safe-area-inset-bottom));display:flex;gap:12px;align-items:center;}
+.buy-bar .pk{flex:1;}
+.buy-bar .pk small{font-size:11px;color:var(--muted);}
+.buy-bar .pk b{font-family:"Noto Serif SC",serif;color:var(--wood);font-size:17px;display:block;}
+.buy-bar button{flex:0 0 auto;background:var(--wood);color:#fff;border:none;padding:12px 26px;border-radius:24px;font-size:14px;}
+
+/* 底部Tab */
+.tabbar{
+  position:fixed;bottom:0;left:50%;transform:translateX(-50%);
+  width:100%;max-width:430px;z-index:100;
+  background:rgba(28,19,11,.98);backdrop-filter:blur(10px);
+  border-top:1px solid rgba(200,163,92,.3);
+  display:flex;padding:8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+.tab{
+  flex:1;text-align:center;cursor:pointer;color:#9c8a6d;
+  padding:4px 0;font-size:10px;
+}
+.tab svg{width:23px;height:23px;display:block;margin:0 auto 3px;stroke:currentColor;fill:none;stroke-width:1.6;}
+.tab.on{color:var(--gold-light);}
+.tab.on svg{stroke:var(--gold-light);}
+.foot-pad{height:20px;}
+
+/* 研学：产业引言与数据 */
+.intro{font-size:13px;color:#4d3d2a;line-height:1.9;margin-bottom:16px;}
+.industry-stats{display:flex;background:var(--wood-deep);border-radius:14px;padding:18px 0;margin-bottom:22px;}
+.industry-stats .stat b{font-size:22px;}
+
+/* 研学：参观点位 */
+.spot{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px;}
+.spot h4{font-family:"Noto Serif SC",serif;font-size:15.5px;font-weight:700;display:flex;align-items:center;gap:8px;}
+.spot h4 .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);flex:0 0 9px;}
+.spot h4 .free{font-size:10px;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:1px 6px;margin-left:auto;font-family:"Noto Sans SC",sans-serif;font-weight:400;}
+.spot ul{margin-top:8px;}
+.spot li{font-size:12.5px;color:#4d3d2a;display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed #eadfc8;list-style:none;}
+.spot li:last-child{border-bottom:none;}
+.spot li span:last-child{color:var(--gold);white-space:nowrap;font-size:11.5px;}
+
+/* 研学：体验项目 */
+.exp-cat{font-family:"Noto Serif SC",serif;font-size:14px;font-weight:700;color:var(--wood);margin:20px 0 10px;display:flex;align-items:center;gap:8px;}
+.exp-cat::after{content:"";flex:1;height:1px;background:var(--line);}
+.exp{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px;}
+.exp .e-name{flex:1;font-size:13px;color:var(--ink);line-height:1.5;}
+.exp .e-name small{display:block;font-size:11px;color:var(--muted);margin-top:2px;}
+.exp .e-price{font-family:"Noto Serif SC",serif;font-weight:700;color:var(--wood);font-size:16px;white-space:nowrap;text-align:right;}
+.exp .e-price small{font-size:10px;color:var(--muted);font-weight:400;display:block;}
+
+/* 板块头图 */
+.sub-hero{position:relative;height:180px;border-radius:16px;overflow:hidden;margin-bottom:18px;}
+.sub-hero img{width:100%;height:100%;object-fit:cover;display:block;}
+.sub-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.15) 0%,rgba(20,12,6,.25) 45%,rgba(20,12,6,.88) 100%);}
+.sub-hero .cap{position:absolute;left:20px;right:20px;bottom:16px;z-index:2;color:#fff;}
+.sub-hero .cap .ey{font-size:10px;letter-spacing:4px;color:var(--gold-light);}
+.sub-hero .cap b{font-family:"Noto Serif SC",serif;font-size:21px;letter-spacing:1px;display:block;margin-top:5px;}
+.sub-hero .cap p{font-size:12px;color:#e6d8bc;margin-top:6px;line-height:1.6;}
+
+/* 研学保障四宫格 */
+.guarantee{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0 4px;}
+.guarantee .g{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 4px;text-align:center;}
+.guarantee .g .ic{color:var(--gold);display:flex;justify-content:center;}
+.guarantee .g span{display:block;font-size:10.5px;color:#5a4a32;margin-top:6px;line-height:1.4;}
+
+/* 套餐：时长/适合标签 */
+.pkg .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.pkg .meta span{font-size:10.5px;color:var(--wood);background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:3px 9px;}
+
+/* 研学：联系 */
+.contact{background:var(--wood-deep);border-radius:14px;padding:18px 20px;color:var(--paper);margin-top:18px;}
+.contact h4{font-family:"Noto Serif SC",serif;color:var(--gold-light);font-size:15px;margin-bottom:8px;letter-spacing:1px;}
+.contact .person{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(200,163,92,.2);font-size:13px;}
+.contact .person:last-of-type{border-bottom:none;}
+.contact .person b{color:var(--gold-light);font-weight:500;}
+.contact .tip{font-size:11px;color:#cbbfa4;margin-top:10px;line-height:1.7;}
+
+/* 教学视频 */
+.video{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:10px;cursor:pointer;}
+.video:active{transform:scale(.985);}
+.video .thumb{width:112px;height:74px;border-radius:8px;overflow:hidden;position:relative;flex:0 0 112px;background:var(--wood-deep);}
+.video .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+.video .thumb::after{content:"▶";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;text-shadow:0 1px 5px rgba(0,0,0,.6);}
+.video .meta{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+.video .meta .vtag{display:inline-block;font-size:9.5px;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:1px 6px;margin-bottom:5px;align-self:flex-start;}
+.video .meta b{font-size:13.5px;line-height:1.4;font-weight:500;}
+.video .meta span{font-size:11px;color:var(--muted);margin-top:5px;}
+
+/* 预约表单 */
+.book-btn{display:block;width:100%;margin-top:14px;background:var(--wood);color:var(--gold-light);border:none;border-radius:10px;padding:12px;font-size:14px;letter-spacing:3px;cursor:pointer;}
+.book-btn:active{opacity:.88;}
+.form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 16px;}
+.frow{padding:13px 0;border-bottom:1px solid var(--line);}
+.frow:last-child{border-bottom:none;}
+.frow label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;}
+.frow input,.frow select,.frow textarea{
+  width:100%;border:none;outline:none;background:transparent;
+  font-size:14px;color:var(--ink);font-family:inherit;
+}
+.frow textarea{resize:none;height:60px;}
+.pkg-recap{background:var(--wood-deep);color:var(--paper);border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+.pkg-recap b{font-family:"Noto Serif SC",serif;color:var(--gold-light);font-size:15px;display:block;}
+.pkg-recap span{font-size:12px;color:#cbbfa4;}
+.total-bar{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:13px;color:#5a4a32;}
+.total-bar b{font-family:"Noto Serif SC",serif;font-size:22px;color:var(--wood);}
+
+/* 我的 */
+.me-head{
+  background:linear-gradient(160deg,var(--wood),var(--wood-deep));
+  color:var(--paper);padding:34px 22px 26px;display:flex;align-items:center;gap:16px;
+}
+.me-head .av{
+  width:66px;height:66px;border-radius:50%;flex:0 0 66px;
+  background:linear-gradient(145deg,var(--gold-light),var(--wood-mid));
+  display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;
+}
+.me-head b{font-family:"Noto Serif SC",serif;font-size:19px;display:block;letter-spacing:1px;}
+.me-head span{font-size:12px;color:#cbbfa4;}
+.me-nums{
+  display:flex;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;margin:-16px 16px 0;position:relative;padding:16px 0;
+}
+.me-nums div{flex:1;text-align:center;cursor:pointer;}
+.me-nums b{font-family:"Noto Serif SC",serif;font-size:21px;color:var(--wood);display:block;}
+.me-nums span{font-size:11px;color:var(--muted);}
+.me-list{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:16px;overflow:hidden;}
+.me-list .li{display:flex;align-items:center;gap:12px;padding:15px 16px;border-bottom:1px solid var(--line);font-size:14px;cursor:pointer;}
+.me-list .li:last-child{border-bottom:none;}
+.me-list .li .ic{width:34px;height:34px;border-radius:9px;background:var(--paper);display:flex;align-items:center;justify-content:center;color:var(--wood);}
+.me-list .li .ar{margin-left:auto;color:var(--gold);}
+</style>
+</head>
+<body>
+<div id="phone">
+
+  <div class="topbar">
+    <img class="brand-logo" src="images/yorray-logo.png" alt="YorRay">
+    <div class="ttl">江苏黄桥乐器文化产业园投资发展有限公司</div>
+  </div>
+
+  <!-- ===== 首页 ===== -->
+  <section class="view active" id="v-home">
+    <div class="hero">
+      <img src="images/hero-violin.jpg" alt="手工小提琴">
+      <div class="hero-cap">
+        <h1>一把琴的旅程<br><span>从这里出发</span></h1>
+        <div class="desc">江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="quick">
+        <a onclick="go('yanxue')">
+          <div class="qi"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M4 12v5c0 1.5 3.5 3 8 3s8-1.5 8-3v-5"/></svg></div>
+          <span>研学套餐</span>
+        </a>
+        <a onclick="go('wenchuang')">
+          <div class="qi"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7c-2 0-3-1.5-3-3S10 2 12 7zM12 7c2 0 3-1.5 3-3S14 2 12 7z"/></svg></div>
+          <span>文创伴手礼</span>
+        </a>
+        <a onclick="go('violin')">
+          <div class="qi"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-3 0-5 2.5-5 6 0 2 .8 3.5 1.5 5 .6 1.2 1 3 1 5a3.5 3.5 0 007 0c0-1.5.4-3.8 1-5 .7-1.5 1.5-3 1.5-5 0-3.5-2-6-5-6z"/><path d="M10 7h4"/></svg></div>
+          <span>提琴选购</span>
+        </a>
+        <a onclick="go('yanxue')">
+          <div class="qi"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <span>点位导览</span>
+        </a>
+        <a onclick="go('yanxue')">
+          <div class="qi"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></div>
+          <span>预约咨询</span>
+        </a>
+      </div>
+
+      <div class="sec-head" style="margin-top:24px;"><span class="no">01</span><h2>园区探索</h2></div>
+      <div class="sec-note">琴音之旅 · 读懂一把琴的诞生</div>
+      <div class="entrance" onclick="go('explore')">
+        <img src="images/c1.jpg" alt="琴音之旅">
+        <div class="t">
+          <b>琴音之旅</b>
+          <p>城市客厅 · 音乐生态湖 · 产业园 · 绿岛</p>
+          <span class="btn">进入探索 ›</span>
+        </div>
+      </div>
+
+      <div class="sec-head" style="margin-top:26px;"><span class="no">02</span><h2>热门推荐</h2></div>
+      <div class="sec-note">初次到访，从这两条路线开始</div>
+      <div class="reco">
+        <div class="rc" onclick="go('yanxue')">
+          <img src="images/workshop.jpg" alt="琴韵初体验">
+          <span class="tag">亲子首选</span>
+          <div class="t"><b>琴韵初体验</b><div class="p">城市客厅 + 尤克里里组装彩绘 · <em>¥118</em> 起</div></div>
+        </div>
+        <div class="rc" onclick="go('yanxue')">
+          <img src="images/city.jpg" alt="提琴匠心深度游">
+          <span class="tag">深度路线</span>
+          <div class="t"><b>提琴匠心深度游</b><div class="p">工坊观摩 + 机器人喷漆 · <em>¥158</em> 起</div></div>
+        </div>
+      </div>
+
+      <div class="stats" style="margin-top:24px;">
+        <div class="stat"><b>5</b><span>研学套餐</span></div>
+        <div class="stat"><b>27</b><span>文创产品</span></div>
+        <div class="stat"><b>8</b><span>提琴系列</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 园区探索（二级页） ===== -->
+  <section class="view" id="v-explore">
+    <div class="sub-head">
+      <span class="back" onclick="go('home')">‹</span>
+      <b>园区探索</b>
+      <span>FOUR VIEWS</span>
+    </div>
+    <div class="section">
+      <p class="intro">沿「城市客厅 → 音乐生态湖 → 产业园 → 绿岛」一线，从读懂提琴文化到走进制琴现场，约半天即可走完一遍一把琴的诞生旅程。</p>
+
+      <div class="pcard">
+        <div class="gal"><img src="images/c1.jpg" alt=""><img src="images/c2.jpg" alt=""><img src="images/c3.jpg" alt=""><img src="images/c4.jpg" alt=""></div>
+        <div class="body">
+          <div class="no">SPOT 01</div>
+          <h3>城市客厅</h3>
+          <p>黄桥的"金色名片"。数字沙盘看产业脉络，乐器博览馆探提琴文化，路演厅听演奏、古琴馆赏名琴，一站式读懂提琴故事。</p>
+          <div class="tags"><span>数字沙盘</span><span>乐器博览馆</span><span>路演厅</span><span>古琴馆</span></div>
+          <ul class="dur">
+            <li><span>数字沙盘 · 了解黄桥发展脉络</span><span>20 分钟</span></li>
+            <li><span>乐器博览馆 · 深入探究提琴文化</span><span>20 分钟</span></li>
+            <li><span>路演厅 · 提琴知识普及与演奏欣赏</span><span>20 分钟</span></li>
+            <li><span>古琴馆 · 欣赏古典提琴</span><span>10 分钟</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="gal"><img src="images/l1.jpg" alt=""><img src="images/l2.jpg" alt=""><img src="images/l3.jpg" alt=""></div><span class="free">免费开放</span>
+        <div class="body">
+          <div class="no">SPOT 02</div>
+          <h3>音乐生态湖</h3>
+          <p>小镇的灵动明珠。音乐喷泉随旋律起伏起舞，草坪音乐会露天开唱，湖畔漫步，把琴韵融入湖光。</p>
+          <div class="tags"><span>音乐喷泉</span><span>草坪音乐会</span></div>
+          <ul class="dur">
+            <li><span>音乐喷泉</span><span>约 1 小时</span></li>
+            <li><span>草坪音乐会</span><span>约 1 小时</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="gal"><img src="images/i1.jpg" alt=""><img src="images/i2.jpg" alt=""><img src="images/i3.jpg" alt=""><img src="images/i4.jpg" alt=""></div>
+        <div class="body">
+          <div class="no">SPOT 03</div>
+          <h3>产业园 · 中小企业集聚区</h3>
+          <p>沉浸式走进提琴全产业链。沿通道参观生产流程，在制作工坊近距离观摩大师制琴，研学体验中心亲手组装尤克里里。</p>
+          <div class="tags"><span>生产工厂</span><span>制作工坊</span><span>尤克里里体验</span></div>
+          <ul class="dur">
+            <li><span>生产工厂 · 介绍小提琴具体制作流程</span><span>30 分钟</span></li>
+            <li><span>制作工坊 · 观摩大师制琴</span><span>30 分钟</span></li>
+            <li><span>研学体验中心 · 尤克里里制作体验</span><span>60 分钟</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="gal"><img src="images/g1.jpg" alt=""><img src="images/g2.jpg" alt=""><img src="images/g3.jpg" alt=""><img src="images/g4.jpg" alt=""></div>
+        <div class="body">
+          <div class="no">SPOT 04</div>
+          <h3>绿岛 · 智能环保表面处理中心</h3>
+          <p>绿色生产与精工制造的融合之地。大师工坊切磋工艺，静电喷漆、机器人喷涂手臂整齐作业，看科技如何守护一把琴的漆面。</p>
+          <div class="tags"><span>大师工坊</span><span>静电喷漆</span><span>机器人喷漆</span></div>
+          <ul class="dur">
+            <li><span>大师工坊 · 与大师探讨制琴工艺</span><span>20 分钟</span></li>
+            <li><span>静电喷漆 · 观看静电喷漆技术</span><span>20 分钟</span></li>
+            <li><span>机器人喷漆 · 高科技喷漆体验</span><span>20 分钟</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice">
+        <b>参观提示</b><br>
+        生产区域请沿指定通道有序参观，保持安静，不随意触摸设备、产品与原材料；尤克里里等体验作品完成后可带走。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 研学 ===== -->
+  <section class="view" id="v-yanxue">
+    <div class="section">
+      <div class="sub-hero">
+        <img src="images/workshop.jpg" alt="工业研学">
+        <div class="cap">
+          <div class="ey">INDUSTRIAL STUDY TOUR</div>
+          <b>工业研学 · 一把琴的诞生课堂</b>
+          <p>走进真实制琴现场，从听琴到做琴，把作品带回家</p>
+        </div>
+      </div>
+
+      <div class="sec-head"><span class="no">02</span><h2>工业研学</h2></div>
+      <div class="sec-note">一站式打包 · 亲子同行 · 亲手制作 · 带走专属记忆</div>
+
+      <p class="intro">黄桥，江苏泰兴腹地的千年古镇，更是"中国提琴产业之都"。上世纪六十年代，上海提琴厂老艺人返乡传艺，从此一把提琴要经历选料、开料、刨木、雕刻、装配、上漆等上百道工序。如今的黄桥，正以"琴韵小镇"之姿，让制琴工艺与文旅体验深度相拥。</p>
+      <div class="industry-stats">
+        <div class="stat"><b>110万把</b><span>年产各类提琴</span></div>
+        <div class="stat"><b>70%+</b><span>全国市场份额</span></div>
+        <div class="stat"><b>30%+</b><span>全球市场份额</span></div>
+      </div>
+
+      <div class="guarantee">
+        <div class="g"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M4 12v5c0 1.5 3.5 3 8 3s8-1.5 8-3v-5"/></svg></div><span>专业研学导师</span></div>
+        <div class="g"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/></svg></div><span>作品可带走</span></div>
+        <div class="g"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 00-3-3.87"/></svg></div><span>10人团体优惠</span></div>
+        <div class="g"><div class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span>全程安全观摩</span></div>
+      </div>
+
+      <div class="exp-cat">研学套餐</div>
+      <div id="pkg-list"></div>
+
+      <div class="notice">
+        <b>预约提示</b><br>
+        · 价格为建议零售价，团体规模、季节不同可调整；10 人以上享团体优惠。<br>
+        · 一大一小亲子票中儿童限 5–14 岁；增购 1 名儿童按单人价 8 折。<br>
+        · 个人提前 3 天、团队提前 1 周预约，如遇工厂生产调整以现场安排为准。<br>
+        · 体验作品（尤克里里、干花画、琴码钥匙扣等）均可带走。
+      </div>
+
+      <div class="contact">
+        <h4>预约与咨询</h4>
+        <div class="person"><span>张女士</span><b>138 1249 6272</b></div>
+        <div class="person"><span>樊先生</span><b>139 6107 9710</b></div>
+        <div class="tip">个人提前 3 天、团队提前 1 周预约，有冲突以缴费时间为准；建议穿着舒适便装与运动鞋。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 文创 ===== -->
+  <section class="view" id="v-wenchuang">
+    <div class="section" style="padding-bottom:0;">
+      <div class="sec-head"><span class="no">03</span><h2>文创伴手礼</h2></div>
+      <div class="sec-note">把黄桥的琴音带回家</div>
+    </div>
+    <div class="cat-tabs" id="cat-tabs"></div>
+    <div class="shop-grid" id="shop-grid"></div>
+    <div class="foot-pad"></div>
+  </section>
+
+  <!-- ===== 提琴 ===== -->
+  <section class="view" id="v-violin">
+    <div class="section">
+      <div class="sec-head"><span class="no">04</span><h2>提琴系列</h2></div>
+      <div class="sec-note">从初学入门到大师监制，七档产品线</div>
+      <div class="fiddle-grid" id="fiddle-list"></div>
+      <div class="notice">
+        <b>选购提示</b><br>
+        · 每把琴出厂均配齐：琴码、松香、备用弦、肩托、电子调音器、擦琴布等。<br>
+        · 型号越往后，面板年代、背板等级、油漆工艺与琴弓材质越高。<br>
+        · L1201 可选装德国绿美人琴弦（差价约 350 元）。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 提琴详情 ===== -->
+  <section class="view" id="v-fdetail">
+    <div class="sub-head">
+      <span class="back" onclick="go('violin')">‹</span>
+      <b id="fd-title">提琴详情</b>
+    </div>
+    <div class="fd-gallery" id="fd-gallery"></div>
+    <div style="padding:16px 20px 0;">
+      <span class="lvl" id="fd-lvl" style="display:inline-block;font-size:10px;color:#fff;background:var(--gold);padding:2px 7px;border-radius:4px;"></span>
+      <div style="font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--wood);margin-top:8px;" id="fd-model"></div>
+      <div style="font-size:13px;color:var(--muted);margin-top:3px;" id="fd-grade"></div>
+    </div>
+    <div style="padding:6px 20px 0;"><div style="font-size:14px;font-weight:600;color:var(--wood);margin:14px 0 4px;">选择尺寸</div></div>
+    <div class="fd-sizes" id="fd-sizes"></div>
+    <div class="fd-spec" id="fd-spec"></div>
+    <div style="margin:0 20px 130px;background:#faf5ea;border-radius:10px;padding:13px 14px;font-size:12.5px;color:#5a4a32;line-height:1.8;" id="fd-gift"></div>
+    <div class="buy-bar">
+      <div class="pk"><small>价格请咨询客服</small><b id="fd-price">¥ 询价</b></div>
+      <button onclick="openFbuy()">立即购买</button>
+    </div>
+  </section>
+
+  <!-- ===== 教学 ===== -->
+  <section class="view" id="v-teaching">
+    <div class="section">
+      <div class="sec-head"><span class="no">05</span><h2>提琴课堂</h2></div>
+      <div id="video-list"></div>
+    </div>
+  </section>
+
+  <!-- ===== 文创购买 ===== -->
+  <section class="view" id="v-wbuy">
+    <div class="sub-head">
+      <span class="back" onclick="go('wenchuang')">‹</span>
+      <b>填写收货信息</b>
+    </div>
+    <div class="section">
+      <div class="pkg-recap">
+        <b id="wb-name">商品</b>
+        <span id="wb-price">价格</span>
+      </div>
+      <div class="form">
+        <div class="frow"><label>数量</label><input id="wb-qty" type="number" min="1" value="1" oninput="updateWPrice()"></div>
+        <div class="frow"><label>省份</label>
+          <select id="wb-prov" onchange="updateWPrice()">
+            <option>江苏</option><option>浙江</option><option>上海</option>
+            <option>北京</option><option>广东</option><option>山东</option><option>安徽</option><option>福建</option><option>湖北</option><option>湖南</option><option>河南</option><option>河北</option><option>四川</option><option>重庆</option><option>天津</option><option>广西</option><option>云南</option><option>贵州</option><option>陕西</option><option>山西</option><option>辽宁</option><option>吉林</option><option>黑龙江</option><option>江西</option>
+            <option>海南</option><option>甘肃</option><option>青海</option><option>宁夏</option><option>新疆</option><option>西藏</option><option>内蒙古</option>
+          </select></div>
+        <div class="frow"><label>收货人</label><input id="wb-name-input" type="text" placeholder="姓名"></div>
+        <div class="frow"><label>手机号</label><input id="wb-tel" type="tel" placeholder="联系电话"></div>
+        <div class="frow"><label>详细地址</label><input id="wb-addr" type="text" placeholder="省市区 / 街道 / 门牌号"></div>
+        <div class="total-bar">运费 <b id="wb-fee">¥0</b></div>
+        <div class="total-bar">应付合计 <b id="wb-total">¥0</b></div>
+        <button class="book-btn" onclick="submitWbuy()">提交订单</button>
+        <div class="tip" style="font-size:12px;color:#8a7a5c;margin-top:10px;line-height:1.7;">
+          江浙沪满 38 元包邮，偏远地区（新/藏/青/宁/甘/内蒙古/海南）满 108 元包邮，其余地区满 68 元包邮；未满额按标准收取运费。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 预约 ===== -->
+  <section class="view" id="v-book">
+    <div class="sub-head">
+      <span class="back" onclick="go('yanxue')">‹</span>
+      <b>预约研学</b>
+    </div>
+    <div class="section">
+      <div class="pkg-recap">
+        <b id="bk-name">套餐名称</b>
+        <span id="bk-price">价格</span>
+      </div>
+      <div class="form">
+        <div class="frow"><label>票型</label>
+        <select id="bk-type" onchange="updatePrice()">
+          <option value="parent">亲子票（1大1小）</option>
+          <option value="single">单人体验票</option>
+        </select></div>
+      <div class="frow"><label>购买数量</label>
+        <input id="bk-qty" type="number" min="1" value="1" oninput="updatePrice()">
+      </div>
+      <div class="frow"><label>姓名</label><input id="bk-user" placeholder="请输入您的姓名"></div>
+        <div class="frow"><label>手机号</label><input id="bk-phone" type="tel" placeholder="请输入联系电话"></div>
+        <div class="frow"><label>出行日期</label><input id="bk-date" type="date"></div>
+        <div class="frow"><label>人数</label><input id="bk-num" placeholder="如：2 大 1 小"></div>
+        <div class="frow"><label>备注（选填）</label><textarea id="bk-note" placeholder="特殊需求等"></textarea></div>
+      </div>
+      <div class="total-bar">应付合计 <b id="bk-total">¥0</b></div>
+      <button class="book-btn" onclick="submitBook()">提交预约</button>
+      <div class="notice" style="margin-top:14px">提交后工作人员将在 1 个工作日内与您电话确认。</div>
+    </div>
+  </section>
+
+  <!-- ===== 我的 ===== -->
+  <section class="view" id="v-me">
+    <div class="me-head">
+      <div class="av">琴</div>
+      <div>
+        <b>音乐爱好者</b>
+        <span>138****6272　·　点击登录</span>
+      </div>
+    </div>
+    <div class="me-nums">
+      <div><b>0</b><span>我的预约</span></div>
+      <div><b>0</b><span>我的订单</span></div>
+      <div><b>0</b><span>我的收藏</span></div>
+    </div>
+    <div class="me-list">
+      <div class="li" onclick="go('yanxue')"><div class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></div>我的预约<span class="ar">›</span></div>
+      <div class="li" onclick="go('yanxue')"><div class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6h15l-1.5 9h-12L6 3H3"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></div>我的订单<span class="ar">›</span></div>
+      <div class="li"><div class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5-7 10-7 10z"/></svg></div>我的收藏<span class="ar">›</span></div>
+    </div>
+    <div class="me-list">
+      <div class="li"><div class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></div>联系客服<span class="ar">›</span></div>
+      <div class="li"><div class="ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 00-.1-1.2l2-1.5-2-3.4-2.3 1a7 7 0 00-2-1.2L14.2 3h-4l-.4 2.5a7 7 0 00-2 1.2l-2.3-1-2 3.4 2 1.5a7 7 0 000 2.4l-2 1.5 2 3.4 2.3-1a7 7 0 002 1.2l.4 2.5h4l.4-2.5a7 7 0 002-1.2l2.3 1 2-3.4-2-1.5c.1-.4.1-.8.1-1.2z"/></svg></div>设置<span class="ar">›</span></div>
+    </div>
+  </section>
+
+  <!-- 底部Tab -->
+  <nav class="tabbar">
+    <div class="tab on" data-go="home" onclick="go('home')">
+      <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>首页
+    </div>
+    <div class="tab" data-go="yanxue" onclick="go('yanxue')">
+      <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M4 12v5c0 1.5 3.5 3 8 3s8-1.5 8-3v-5"/></svg>研学
+    </div>
+    <div class="tab" data-go="wenchuang" onclick="go('wenchuang')">
+      <svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>文创
+    </div>
+    <div class="tab" data-go="violin" onclick="go('violin')">
+      <svg viewBox="0 0 24 24"><path d="M12 3c-3 0-5 2.5-5 6 0 2 .8 3.5 1.5 5 .6 1.2 1 3 1 5a3.5 3.5 0 007 0c0-1.5.4-3.8 1-5 .7-1.5 1.5-3 1.5-5 0-3.5-2-6-5-6z"/><path d="M10 7h4"/></svg>提琴
+    </div>
+    <div class="tab" data-go="teaching" onclick="go('teaching')">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M10 9l5 2.5-5 2.5z"/><path d="M8 21h8"/></svg>教学
+    </div>
+    <div class="tab" data-go="me" onclick="go('me')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>我的
+    </div>
+  </nav>
+</div>
+
+<script>
+/* ---------- 数据 ---------- */
+const pkgs=[
+ {n:"01",tag:"新",cls:"",name:"琴韵初体验",img:"images/workshop.jpg",age:"适合 5 岁以上亲子家庭",dur:"2 小时",
+  pts:["城市客厅：数字沙盘 · 乐器博览馆 · 路演厅 · 古琴馆","尤克里里组装彩绘：白胚 → 彩绘 → 试音，约 60 分钟","含白胚、颜料、琴包、调音器，作品可带走"],
+  parent:118,single:88},
+ {n:"02",tag:"推荐",cls:"rec",name:"提琴匠心深度游",img:"images/green.jpg",age:"适合 6 岁以上亲子家庭 / 学生团体",dur:"3.5 小时",
+  pts:["城市客厅：数字沙盘 · 乐器博览馆 · 路演厅 · 古琴馆","产业园：生产工坊讲解流程 · 制作工坊观摩大师制琴","绿岛：大师工坊 · 静电喷涂 · 机器人喷漆展示","尤克里里组装彩绘，全套材料包，作品可带走"],
+  parent:158,single:118},
+ {n:"03",tag:"",cls:"",name:"制琴工坊探秘",img:"images/industry.jpg",age:"适合 6 岁以上亲子家庭 / 学生团体",dur:"3 小时",
+  pts:["产业园：生产工坊讲解全流程 · 近距离观摩大师制琴","绿岛：大师工坊工艺 · 静电喷涂 · 机器人喷漆体验","尤克里里组装彩绘，聚焦制造核心，作品可带走"],
+  parent:138,single:98},
+ {n:"04",tag:"文艺",cls:"",name:"提琴文化艺术营",img:"images/city.jpg",age:"适合 5 岁以上亲子家庭 / 文艺爱好者",dur:"2 小时",
+  pts:["城市客厅名琴故事，PPT 配合实物展示（约 30 分钟）","提琴知识科普：历史 · 结构 · 工艺 · 名琴故事","提琴干花制作：勾轮廓 → 贴干花 → 装相框，约 60 分钟"],
+  parent:118,single:88},
+ {n:"05",tag:"",cls:"",name:"小小制琴师 · 工序体验营",img:"images/workshop.jpg",age:"适合 7 岁以上亲子家庭 / 学生团体",dur:"3 小时",
+  pts:["城市客厅 + 产业园生产工坊 + 绿岛表面处理中心","制琴工序二选一：A 面板拼合 / B 板材打磨","琴码钥匙扣：打孔 → 打磨 → 修边 → 穿绳，作品可带走"],
+  parent:128,single:88},
+];
+
+const shops=[
+  {c:"琴城印记",name:"地图冰箱贴",p:24},
+  {c:"琴城印记",name:"古镇冰箱贴",p:26},
+  {c:"琴城印记",name:"音乐冰箱贴",p:0},
+  {c:"琴城印记",name:"亚克力拼图冰箱贴",p:24},
+  {c:"琴城印记",name:"纪念币",p:20},
+  {c:"琴城印记",name:"金属直尺",p:15},
+  {c:"琴城印记",name:"提琴书签",p:15},
+  {c:"琴城印记",name:"手机支架",p:18},
+  {c:"琴城印记",name:"帆布包",p:38},
+  {c:"弦音玩趣",name:"紫色提琴玩偶",p:48},
+  {c:"弦音玩趣",name:"琵琶玩偶",p:48},
+  {c:"弦音玩趣",name:"尤克里里玩偶",p:48},
+  {c:"弦音玩趣",name:"棕色小提琴玩偶",p:48},
+  {c:"弦音玩趣",name:"迷你乐器",p:48},
+  {c:"弦音玩趣",name:"提琴包挂",p:29},
+  {c:"匠心典藏",name:"榉木笔筒夜灯",p:108},
+  {c:"匠心典藏",name:"文创礼盒",p:128},
+  {c:"匠心典藏",name:"1/64 木盒",p:399},
+  {c:"匠心典藏",name:"1/64 纸盒",p:399},
+  {c:"匠心典藏",name:"小提琴紫砂壶",p:600},
+];
+
+const fiddles=[
+ {lvl:"实木",model:"L201",grade:"实木普级",spec:[
+   ["面板 / 背板","欧洲云杉 · 枫木"],["工艺","普及油漆"],
+   ["琴弦 / 马桥","普级琴弦 · 普级马桥"],["琴弓 / 琴盒","乌木琴弓 · 三角盒带绣标"]],
+  gift:"琴码1、松香2、备用弦1副、肩托、调音器、擦琴布"},
+ {lvl:"实木",model:"L301",grade:"实木普级 · 虎纹",spec:[
+   ["面板 / 背板","云杉 · 枫木（虎纹头筋工艺虎纹）"],["配件","乌木 + 碳纤维拉板"],
+   ["琴弦 / 马桥","普级琴弦 · 普级马桥"],["琴弓 / 琴盒","乌木鱼眼琴弓 · 方盒带绣标"]],
+  gift:"含实木肩托、弱音器"},
+ {lvl:"实木",model:"L501",grade:"实木普级",spec:[
+   ["面板 / 背板","云杉 · B 级枫木（背板花纹，琴头无花）"],["工艺","吊木筋哑光磨白边"],
+   ["琴弦 / 马桥","乙级琴弦 · 乙级马桥"],["琴弓 / 琴盒","乌木琴弓 · 方盒带绣标"]],
+  gift:"含实木肩托、弱音器"},
+ {lvl:"花纹琴",model:"L701",grade:"实木花纹琴",spec:[
+   ["面板 / 背板","欧洲云杉 · A+ 级枫木"],["工艺","手工油漆"],
+   ["琴弦 / 马桥","乙级琴弦 · 进口马桥"],["琴弓 / 琴盒","八角琴弓 · 两边鼓方盒"]],
+  gift:"方盒松香、实木肩托、弱音器"},
+ {lvl:"手工",model:"L901",grade:"手工制作",spec:[
+   ["面板 / 背板","欧洲云杉 · AA+ 级枫木"],["工艺","腰果漆"],
+   ["琴弦 / 马桥","德国托尼卡琴弦 · 进口马桥"],["琴弓 / 琴盒","蛇皮八角琴弓 · 带表方盒"]],
+  gift:"罗甸乌木配件，含弱音器"},
+ {lvl:"匠制",model:"L1101",grade:"手工匠制",spec:[
+   ["面板 / 背板","欧洲 10 年云杉 · AAA 级枫木"],["工艺","柯巴胶"],
+   ["琴弦 / 马桥","德国托尼卡琴弦 · 进口马桥"],["琴弓 / 琴盒","苏木高级琴弓 · 蓝色带表高档方盒"]],
+  gift:"高级乌木朵子配件，含弱音器"},
+ {lvl:"大师",model:"L1201",grade:"高级纯手工 · 大师监制",spec:[
+   ["面板 / 背板","欧洲 15 年云杉 · AAA 级枫木"],["工艺","油性漆"],
+   ["琴弦 / 马桥","奥地利托马斯琴弦 · 法国奥博特马桥"],["琴弓 / 琴盒","苏木高级琴弓 · 高级碳纤方盒"]],
+  gift:"进口乌木 + 老红木配件、分体腮托；可选德国绿美人弦 +350"},
+];
+
+/* 参观点位 */
+const spots=[
+ {name:"城市客厅",free:false,items:[
+   ["数字沙盘 · 了解黄桥发展脉络","20 分钟"],
+   ["乐器博览馆 · 深入探究提琴文化","20 分钟"],
+   ["路演厅 · 提琴知识普及与演奏欣赏","20 分钟"],
+   ["古琴馆 · 欣赏古典提琴","10 分钟"]]},
+ {name:"音乐生态湖",free:true,items:[
+   ["音乐喷泉","约 1 小时"],
+   ["草坪音乐会","约 1 小时"]]},
+ {name:"产业园 · 中小企业集聚区",free:false,items:[
+   ["生产工厂 · 介绍小提琴具体制作流程","30 分钟"],
+   ["制作工坊 · 观摩大师制琴","30 分钟"],
+   ["研学体验中心 · 尤克里里制作体验","60 分钟"]]},
+ {name:"绿岛 · 智能环保表面处理中心",free:false,items:[
+   ["大师工坊 · 与大师探讨制琴工艺","20 分钟"],
+   ["静电喷漆 · 观看静电喷漆技术","20 分钟"],
+   ["机器人喷漆 · 高科技喷漆体验","20 分钟"]]},
+];
+
+/* 单项体验 */
+const exps=[
+ {cat:"制作类",items:[
+   {n:"尤克里里组装与彩绘",d:"组装白胚 → 彩绘装饰 → 试音",p:"80元",t:"1 小时"},
+   {n:"小提琴彩绘",d:"白胚上彩绘 → 喷漆 → 装配 → 邮寄",p:"299元",t:"1 小时"},
+   {n:"定制小提琴制作（高阶）",d:"白胚组装 → 涂装 → 配件安装 → 包装",p:"2998元",t:"28 天"},
+   {n:"短时工序体验（五选一）",d:"A 面板拼合 / B 琴身打磨 / C 琴弦安装调音 / D 旋轴调试 / E 腮托安装",p:"19元起",t:"30 分钟"},
+   {n:"琴头 / F 孔拉花窗体验",d:"绘制琴头或 F 孔 → 小型拉花窗沿形成型",p:"29元",t:"30 分钟"},
+   {n:"琴码钥匙挂件",d:"琴码打孔 → 打磨修整 → 穿绳成钥匙扣",p:"29元",t:"30 分钟"},
+   {n:"小提琴纸板拼贴涂色",d:"纸板剪出部件 → 粘贴成图 → 涂色装饰",p:"29元",t:"30 分钟"}]},
+ {cat:"装饰与艺术类",items:[
+   {n:"小提琴压花手作",d:"卡纸上勾小提琴轮廓 → 贴干花 → 装相框",p:"49元",t:"1 小时"},
+   {n:"音乐帆布包设计",d:"在空白帆布包上绘制音乐元素",p:"29元",t:"40 分钟"}]},
+ {cat:"音乐感知类",items:[
+   {n:"“听见木材”音色体验",d:"敲击不同木材样本 → 听音对比 → 讲解",p:"19元",t:"15 分钟"},
+   {n:"弦与弓的初体验",d:"基础持琴持弓 → 拉奏单音 / 简单旋律",p:"19元",t:"30 分钟"},
+   {n:"我是调音师互动",d:"用调音器为琴调音 → 听辨音高变化",p:"19元",t:"30 分钟"}]},
+ {cat:"文化类",items:[
+   {n:"小提琴文化 PPT 讲座",d:"历史起源 → 结构图解 → 工艺概述 → 名琴故事",p:"29元",t:"30 分钟"},
+   {n:"制琴师故事 / 影片观看",d:"观看纪录片片段 → 互动问答",p:"29元",t:"30 分钟"}]},
+];
+
+/* ---------- 渲染 ---------- */
+document.getElementById('pkg-list').innerHTML = pkgs.map(p=>`
+ <div class="pkg" onclick="goBook('${p.n}')">
+   <div class="pic">
+     <img src="${p.img}" alt="${p.name}">
+     <span class="num">${p.n}</span>
+     ${p.tag?`<span class="tag ${p.cls}">${p.tag}</span>`:''}
+   </div>
+   <div class="body">
+     <h3>${p.name}</h3>
+     <div class="meta"><span>全程约 ${p.dur}</span><span>${p.age}</span></div>
+     <ul class="pts">${p.pts.map(x=>`<li>${x}</li>`).join('')}</ul>
+     <div class="price-row">
+       <div class="price"><div class="lbl">亲子票（1大1小）</div><div class="val">¥${p.parent}<small> / 份</small></div></div>
+       <div class="price"><div class="lbl">单人体验票</div><div class="val">¥${p.single}<small> / 人</small></div></div>
+     </div>
+     <button class="book-btn" onclick="goBook('${p.n}')">立即预约</button>
+   </div>
+ </div>`).join('');
+
+document.getElementById('fiddle-list').innerHTML = fiddles.map((f,i)=>`
+ <div class="fcard" onclick="openFdetail(${i})">
+   <img class="thumb" src="images/hero-violin.jpg" alt="${f.model}">
+   <div class="body">
+     <span class="lvl">${f.lvl}</span>
+     <div class="model">${f.model}</div>
+     <div class="grade">${f.grade}</div>
+     <div class="go">查看详情 ›</div>
+   </div>
+ </div>`).join('');
+
+/* 教学视频 */
+const videos=[
+ {t:"琴弓浮毛修剪",lv:"保养",d:"1:00",c:"images/hero-violin.jpg"},
+ {t:"琴弓松紧的分寸",lv:"基础",d:"1:00",c:"images/hero-violin.jpg"},
+ {t:"松香用量的学问",lv:"重点",d:"1:30",c:"images/hero-violin.jpg"},
+ {t:"极简调音三步法",lv:"基础",d:"1:05",c:"images/hero-violin.jpg"},
+ {t:"断弦更换与选配",lv:"保养",d:"1:40",c:"images/hero-violin.jpg"},
+ {t:"肩托稳固安装",lv:"基础",d:"0:50",c:"images/hero-violin.jpg"},
+ {t:"指板贴定位与贴法",lv:"附加",d:"0:50",c:"images/hero-violin.jpg"},
+ {t:"旋轴打滑怎么办",lv:"保养",d:"1:00",c:"images/hero-violin.jpg"},
+ {t:"琴码摆正与调平",lv:"保养",d:"1:05",c:"images/hero-violin.jpg"},
+ {t:"新弦为何总跑音",lv:"保养",d:"0:40",c:"images/hero-violin.jpg"},
+ {t:"琴与弓的日常养护",lv:"保养",d:"0:45",c:"images/hero-violin.jpg"},
+ {t:"拉弦板微调器用法",lv:"基础",d:"0:35",c:"images/hero-violin.jpg"},
+ {t:"弱音器的妙用",lv:"基础",d:"0:30",c:"images/hero-violin.jpg"},
+ {t:"提琴存放与温湿度",lv:"保养",d:"0:45",c:"images/hero-violin.jpg"}
+];
+document.getElementById('video-list').innerHTML = videos.map(v=>`
+ <div class="video">
+   <div class="thumb"><img src="${v.c}" alt="${v.t}"></div>
+   <div class="meta">
+     <span class="vtag">${v.lv}</span>
+     <b>${v.t}</b>
+     <span>时长 ${v.d}</span>
+   </div>
+ </div>`).join('');
+
+/* 文创分类 */
+const cats=["全部",...new Set(shops.map(s=>s.c))];
+let curCat="全部";
+function renderTabs(){
+ document.getElementById('cat-tabs').innerHTML = cats.map(c=>
+  `<div class="cat-tab ${c===curCat?'on':''}" onclick="setCat('${c}')">${c}</div>`).join('');
+}
+function setCat(c){curCat=c;renderTabs();renderShop();}
+
+const SIZES=["4/4","3/4","1/2","1/4","1/8"];
+let curSize="4/4",curF=null;
+function openFdetail(i){
+  const f=fiddles[i];curF=f;
+  document.getElementById('fd-title').textContent=f.model+" 详情";
+  document.getElementById('fd-lvl').textContent=f.lvl;
+  document.getElementById('fd-model').textContent=f.model;
+  document.getElementById('fd-grade').textContent=f.grade;
+  document.getElementById('fd-gallery').innerHTML=
+    `<img src="images/hero-violin.jpg" alt=""><img src="images/workshop.jpg" alt=""><img src="images/c1.jpg" alt="">`;
+  document.getElementById('fd-spec').innerHTML=f.spec.map(s=>`<div class="row"><span>${s[0]}</span><span>${s[1]}</span></div>`).join('')
+    +`<div class="row"><span>出厂配置</span><span style="text-align:left;max-width:62%;">${f.gift}</span></div>`;
+  curSize="4/4";
+  document.getElementById('fd-sizes').innerHTML=SIZES.map(z=>`<div class="sz ${z===curSize?'on':''}" onclick="pickSize(this,'${z}')">${z}</div>`).join('');
+  go('fdetail');
+}
+function pickSize(el,z){
+  curSize=z;
+  document.querySelectorAll('#fd-sizes .sz').forEach(x=>x.classList.remove('on'));
+  el.classList.add('on');
+}
+function openFbuy(){
+  const f=curF;
+  curGood={name:f.model+'（'+curSize+'）',p:f.p||0};
+  document.getElementById('wb-name').textContent=f.model+' '+curSize;
+  document.getElementById('wb-price').textContent=f.p?('¥'+f.p+' / 把'):'价格面议（工作人员联系）';
+  document.getElementById('wb-qty').value=1;
+  go('wbuy');
+  updateWPrice();
+}
+
+let curGood=null;
+const JH=["江苏","浙江","上海"];
+const FAR=["新疆","西藏","青海","宁夏","甘肃","内蒙古","海南"];
+function openWbuy(name){
+  const g=shops.find(x=>x.name===name);
+  curGood=g;
+  document.getElementById('wb-name').textContent=g.name;
+  document.getElementById('wb-price').textContent=g.p?`¥${g.p} / 件`:'价格面议（工作人员联系）';
+  document.getElementById('wb-qty').value=1;
+  go('wbuy');
+  updateWPrice();
+}
+function updateWPrice(){
+  if(!curGood)return;
+  const q=Math.max(1,parseInt(document.getElementById('wb-qty').value)||1);
+  const prov=document.getElementById('wb-prov').value;
+  const sub=(curGood.p||0)*q;
+  let fee=0,freeAt=68,base=10;
+  if(JH.includes(prov)){freeAt=38;base=8;}
+  else if(FAR.includes(prov)){freeAt=108;base=15;}
+  fee = sub>=freeAt?0:base;
+  document.getElementById('wb-fee').textContent=curGood.p?('¥'+fee):'待核算';
+  document.getElementById('wb-total').textContent=curGood.p?('¥'+(sub+fee)):'待核算';
+}
+function submitWbuy(){
+  alert('订单已提交：'+curGood.name+' × '+document.getElementById('wb-qty').value+'\n工作人员将尽快与您联系确认发货！');
+  go('wenchuang');
+}
+function renderShop(){
+ const list = curCat==="全部"?shops:shops.filter(s=>s.c===curCat);
+ document.getElementById('shop-grid').innerHTML = list.map(s=>`
+  <div class="shop" onclick="openWbuy('${s.name}')">
+    <img class="thumb" src="images/wenchuang.jpg" alt="${s.name}">
+    <div class="body">
+    <div class="name">${s.name}</div>
+    <div class="price ${s.p? '' : 'na'}">${s.p? `¥${s.p}<small> / 件</small>` : '面议'}</div>
+    </div>
+  </div>`).join('');
+}
+renderTabs();renderShop();
+
+/* ---------- 路由 ---------- */
+let curP=null;
+function goBook(n){
+  const p=pkgs.find(x=>x.n===n);
+  curP=p;
+  document.getElementById('bk-name').textContent=p.name;
+  document.getElementById('bk-price').textContent=`亲子 ¥${p.parent} / 份 · 单人 ¥${p.single} / 人`;
+  document.getElementById('bk-qty').value=1;
+  go('book');
+  updatePrice();
+}
+function updatePrice(){
+  if(!curP) return;
+  const t=document.getElementById('bk-type').value;
+  const q=Math.max(1,parseInt(document.getElementById('bk-qty').value)||1);
+  const price=t==='parent'?curP.parent:curP.single;
+  document.getElementById('bk-total').textContent='¥'+(price*q);
+}
+function submitBook(){
+  const u=document.getElementById('bk-user').value.trim();
+  const ph=document.getElementById('bk-phone').value.trim();
+  if(!u||!ph){alert('请填写姓名和手机号');return;}
+  const t=document.getElementById('bk-type');
+  const tname=t.options[t.selectedIndex].text;
+  alert(`预约已提交：${curP.name} · ${tname} × ${document.getElementById('bk-qty').value}
+应付 ¥${document.getElementById('bk-total').textContent.replace('¥','')}
+工作人员将尽快与您联系！`);
+  go('yanxue');
+}
+function go(key){
+ document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+ document.getElementById('v-'+key).classList.add('active');
+ document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.go===key));
+ window.scrollTo({top:0});
+}
+</script>
+</body>
+</html>

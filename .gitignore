@@ -1,0 +1,34 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Dependencies and generated build output
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.pyc
+*.log
+
+# Local credentials and developer private configuration
+.env
+.env.*
+!.env.example
+project.private.config.json
+*.pem
+*.key
+secrets/
+
+# Business personal data, backups and temporary QA output
+data-private/
+exports/
+backups/
+.local/
+.qa/
+
+# Published videos live in managed media storage, never in source control
+*.mp4
+*.mov
+*.m4v
+*.webm

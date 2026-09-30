@@ -1,0 +1,228 @@
+{
+  "baseline_date": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "project_root": "/Users/aaron/Documents/huangqiao-app",
+  "purpose": "初始化前原始业务文件基线；不可通过重写此清单掩盖原件变更",
+  "excluded_preserved_metadata": [
+    ".DS_Store"
+  ],
+  "files": [
+    {
+      "path": "images/c1.jpg",
+      "bytes": 160505,
+      "sha256": "5ff0f482f76007a8f417f000aa09313676fa09beda933ecacbe23fa22d3c41e7",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/c2.jpg",
+      "bytes": 140252,
+      "sha256": "5b40c754ca250fbb0d277ea0a669330e754b36ad2f466cedeab68fdf1889fd42",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/c3.jpg",
+      "bytes": 94954,
+      "sha256": "dc8230ef77e9b23af6bb204f998c344290f779e4912a4af2f00917d5e4877dc8",
+      "width": 900,
+      "height": 581,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/c4.jpg",
+      "bytes": 53294,
+      "sha256": "24e64d1882ed4775358d1cc7a2118a3b79e927385f26cbd92e853473d260d1d0",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/city.jpg",
+      "bytes": 342073,
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "width": 1400,
+      "height": 1049,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/g1.jpg",
+      "bytes": 99304,
+      "sha256": "9c242f08aa7f90e938c2b940ec442a87ea453bf4c7408e2275fa1cd04bebbd72",
+      "width": 900,
+      "height": 675,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/g2.jpg",
+      "bytes": 103317,
+      "sha256": "18048dfdcf6d896811c40ddbaf8d157827adfb5a5831c3772c5dbba2024cfd17",
+      "width": 900,
+      "height": 675,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/g3.jpg",
+      "bytes": 83222,
+      "sha256": "fcd0176db3b460f7183694e140ab65a50c2c804bd952b66bb291eacf3c9f032a",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/g4.jpg",
+      "bytes": 59956,
+      "sha256": "5b03c77125332aaa6735240b6d5961602ad568a13948592ed0dcf31e39886dc5",
+      "width": 900,
+      "height": 599,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/green.jpg",
+      "bytes": 167195,
+      "sha256": "d653a7245c9ced5724ac996d67b39a8df0ceac6be51202d755b396b5242aabd2",
+      "width": 1000,
+      "height": 750,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/hero-violin.jpg",
+      "bytes": 478879,
+      "sha256": "1432fe600bcd0b246b52999030ad7edafc80969ca32832a95e1a14b8ee465ee4",
+      "width": 1152,
+      "height": 1536,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/i1.jpg",
+      "bytes": 94775,
+      "sha256": "143804173d53cd55e86aa39a6d0e230caaeff55f618e5681e693e731db85c0c6",
+      "width": 900,
+      "height": 468,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/i2.jpg",
+      "bytes": 84456,
+      "sha256": "e019b8247943741bfbbd2f172c34c6df6a1845fb86ab0896465d1746c55d0685",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/i3.jpg",
+      "bytes": 102935,
+      "sha256": "ead20d1239cdaec70026874a2fa544bf232c35cb7b247eb5deb4c3e51c2011f5",
+      "width": 900,
+      "height": 675,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/i4.jpg",
+      "bytes": 127530,
+      "sha256": "251584dcfd579947d88f65f11f4d59f86bd0890593d49dfa97945163f3fd603f",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/industry.jpg",
+      "bytes": 225273,
+      "sha256": "4a58eb780ab8992de21e8586fec140db70e28a8ea8d9775d9a7302a232722e7d",
+      "width": 1000,
+      "height": 750,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/l1.jpg",
+      "bytes": 135818,
+      "sha256": "d00607ca3d94c26710cc894eeaf08d95c37e87dd9c05f11fb88f07d5fcecf875",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/l2.jpg",
+      "bytes": 129446,
+      "sha256": "3bc3f28bac57d52aa96cf26f27827084c3db5326e322ac3c79afba546788039e",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/l3.jpg",
+      "bytes": 53144,
+      "sha256": "f01bc09c9d45a6fbd0d4d7a29c56186623d25858c005d6ce930951010d3c82ef",
+      "width": 900,
+      "height": 600,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/lake.jpg",
+      "bytes": 221562,
+      "sha256": "1b3e6ce424b42e18fb73289b87f22d91c3375896153418368a87b7eee02ff5c3",
+      "width": 1000,
+      "height": 750,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/wenchuang.jpg",
+      "bytes": 657075,
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "width": 1152,
+      "height": 1536,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/workshop.jpg",
+      "bytes": 657075,
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "width": 1152,
+      "height": 1536,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "path": "images/yorray-logo.png",
+      "bytes": 14516,
+      "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb",
+      "width": 315,
+      "height": 140,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "path": "黄桥乐器文化产业园小程序首页.html",
+      "bytes": 60877,
+      "sha256": "9db6661143fe2574453e93b6176b3f3df9882522e1c911572076b11bfecf4c0d"
+    },
+    {
+      "path": "黄桥乐器文化产业园微信小程序需求说明_V1.0_细化稿.docx",
+      "bytes": 58878,
+      "sha256": "8e8869fee81be8615461e3aeae7fb92e153677bde622dc617b50b0e61c610de5"
+    }
+  ]
+}
