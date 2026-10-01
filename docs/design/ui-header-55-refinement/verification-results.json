@@ -1,0 +1,48 @@
+{
+  "baselineHead": "4cb687d3779ade1867d11f301610d4c7a42b58dd",
+  "baselineTrackedFiles": 453,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedExistingFiles": 452,
+  "sourceSHA256": "22f96ef8e7c53ce34059da72858656f02da13af9ecb4fb54dc659260039a0834",
+  "scope": "Only homepage logo size and brand-name font/color; all other CSS and WXML/business/original files preserved",
+  "declaredLogoScale": 1.2,
+  "nativeLogoBefore": {
+    "id": "",
+    "dataset": {},
+    "left": 16,
+    "right": 76,
+    "top": 9,
+    "bottom": 46,
+    "width": 60,
+    "height": 37
+  },
+  "nativeLogoAfter": {
+    "id": "",
+    "dataset": {},
+    "left": 16,
+    "right": 88,
+    "top": 5.5,
+    "bottom": 49.5,
+    "width": 72,
+    "height": 44
+  },
+  "rpxRoundingNote": "139.2rpx/86.4rpx are exactly 120% of 116rpx/72rpx; native integer conversion gives 72x44px at 390px",
+  "foreground": "#E2C88F",
+  "referenceSampling": "Most frequent bright golden text RGB in reference-brown-header.png x110..405 y20..40: (226,200,143), 266 pixels",
+  "contrastAgainstWalnut": 8.247470181313464,
+  "fontConfiguration": "\"Microsoft YaHei\", 微软雅黑, \"PingFang SC\", sans-serif",
+  "fontAvailability": "Microsoft YaHei first, PingFang SC and generic sans-serif fallback; no bundled or downloaded font; actual font family across devices not guaranteed",
+  "native390CompileAndScrollPassed": true,
+  "scrollPositions": [
+    0,
+    450,
+    1015,
+    0
+  ],
+  "runtimeExceptions": [],
+  "headerHeightLogicalPx": 55,
+  "otherWidthsRealDevicesStatesAndClicks": "Not repeated in this targeted cosmetic revision; no reused prior pass claims",
+  "result": "Passed scoped verification; pending human visual acceptance"
+}
