@@ -52,7 +52,9 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
       if(path==='/api/public/content' && method==='GET') return json(res,service.listContent(Object.fromEntries(url.searchParams)));
       let m;
       if((m=match(/^\/api\/public\/content\/([^/]+)$/)) && method==='GET') return json(res,service.content(m[1]));
-      if(path==='/api/public/slots' && method==='GET') return json(res,service.slots(true).map(s=>({id:s.id,date:s.date,start:s.start,end:s.end,package_ids:s.package_ids,note:s.note})));
+      if(path==='/api/public/slots' && method==='GET') return json(res,service.slots(true).map(s=>({id:s.id,date:s.date,start:s.start,end:s.end,package_ids:s.package_ids})));
+      if(path==='/api/public/enrollments' && method==='GET') return json(res,service.enrollments());
+      if((m=match(/^\/api\/public\/enrollments\/([^/]+)$/)) && method==='GET') return json(res,service.enrollment(m[1]));
       if((m=match(/^\/api\/media\/([a-zA-Z0-9-]+)$/)) && ['GET','HEAD'].includes(method)) return serveMedia(db,req,res,m[1],uploads);
       if(path.startsWith('/api/visitor/')) {
         const visitor=authenticate(db,bearer(req),'visitor');

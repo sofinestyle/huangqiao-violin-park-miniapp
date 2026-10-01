@@ -45,6 +45,14 @@ export function openDatabase(path) {
       action TEXT NOT NULL, object TEXT NOT NULL, detail TEXT NOT NULL, created_at TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS migrations (version INTEGER PRIMARY KEY, applied_at TEXT NOT NULL);
     INSERT OR IGNORE INTO migrations VALUES (1, datetime('now'));`);
+  if (!db.prepare('SELECT 1 FROM migrations WHERE version=3').get()) transaction(db,()=>{
+    // Recheck after acquiring the write lock; two processes may open the same database.
+    if (db.prepare('SELECT 1 FROM migrations WHERE version=3').get()) return;
+    db.exec(`ALTER TABLE slots ADD COLUMN external_count INTEGER NOT NULL DEFAULT 0 CHECK(external_count>=0);
+      ALTER TABLE slots ADD COLUMN enrollment TEXT NOT NULL DEFAULT '{"state":"draft"}';`);
+    db.prepare('INSERT INTO migrations VALUES (3,?)').run(now());
+    db.prepare('INSERT INTO audit(actor,action,object,detail,created_at) VALUES (?,?,?,?,?)').run('system','schema.slot-enrollment.migrate','slots',JSON.stringify({version:3,existingSlots:'draft',externalCount:0}),now());
+  });
   return db;
 }
 

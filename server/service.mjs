@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { transaction, decode, now } from './db.mjs';
 import { requireValue, text, number, futureDate, contact, permit, audit, digest } from './security.mjs';
 import { INSTRUMENT_CATEGORIES, PRODUCT_CATEGORIES } from '../shared/status.mjs';
+import { enrollmentData, publicEnrollment } from './enrollment.mjs';
 
 export const publicContent = row => ({ id: row.id, kind: row.kind, name: row.name, ...decode(row.data), state: row.state, sort: row.sort, version: row.version });
 const record = row => row && ({ ...row, snapshot: decode(row.snapshot), request: decode(row.request),
@@ -90,7 +91,19 @@ export class Service {
     const today = new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai'}).format(new Date());
     return this.db.prepare(`SELECT s.*,COALESCE((SELECT SUM(b.headcount) FROM bookings b WHERE b.slot_id=s.id AND b.state IN ('confirmed','completed','no_show')),0) AS confirmed_count FROM slots s ORDER BY s.date,s.start`).all()
       .filter(s => !publicOnly || (!s.paused && s.date >= today))
-      .map(s => ({ ...s, package_ids: decode(s.package_ids), remaining: Math.max(0,s.capacity-s.confirmed_count) }));
+      .map(s => ({ ...s, package_ids: decode(s.package_ids),enrollment:decode(s.enrollment),
+        occupied_count:s.external_count+s.confirmed_count,remaining:Math.max(0,s.capacity-s.external_count-s.confirmed_count) }));
+  }
+  enrollments() {
+    const packages=new Map(this.listContent({kind:'package'}).map(p=>[p.id,p]));
+    const enabled=this.listContent({kind:'site'})[0]?.bookingEnabled===true;
+    return this.slots(true).filter(s=>s.enrollment.state==='published' && packages.has(s.enrollment.packageId))
+      .map(s=>publicEnrollment(s,packages.get(s.enrollment.packageId),enabled));
+  }
+  enrollment(key) {
+    const item=this.enrollments().find(s=>s.id===key);
+    requireValue(item,'报名活动已下架、暂停或不存在',404,'ENROLLMENT_UNAVAILABLE');
+    return item;
   }
   saveSlot(actor, data, slotId) {
     permit(actor,'reception');
@@ -101,15 +114,26 @@ export class Service {
       const date = futureDate(data.date), start = text(data.start,'开始时间',5), end = text(data.end,'结束时间',5);
       requireValue(/^([01]\d|2[0-3]):[0-5]\d$/.test(start) && /^([01]\d|2[0-3]):[0-5]\d$/.test(end) && start < end, '时间段无效');
       const capacity = number(data.capacity,'人数上限',1);
-      requireValue(capacity >= (prev?.confirmed_count || 0), '容量不能低于已确认人数',409,'CAPACITY_FULL');
+      const externalCount=number(data.externalCount ?? prev?.external_count ?? 0,'系统外已成团人数',0);
+      requireValue(capacity >= externalCount+(prev?.confirmed_count || 0), '人数上限不能低于系统外人数与系统已确认人数之和',409,'CAPACITY_FULL');
       requireValue(Array.isArray(data.packageIds) && data.packageIds.length > 0, '请选择适用套餐');
       for (const pid of data.packageIds) requireValue(this.content(pid,false).kind === 'package', '关联套餐无效');
-      if(prev?.confirmed_count>0)requireValue(date===prev.date && start===prev.start && end===prev.end && JSON.stringify([...data.packageIds].sort())===JSON.stringify([...prev.package_ids].sort()),'已有确认或历史接待记录的场次不能修改日期、时段或适用套餐，请建立新场次',409,'SLOT_HAS_BOOKINGS');
+      const hasJoinApplications=prev && this.db.prepare("SELECT 1 FROM bookings WHERE json_extract(request,'$.enrollment.id')=? LIMIT 1").get(prev.id);
+      if(prev?.confirmed_count>0 || hasJoinApplications)requireValue(date===prev.date && start===prev.start && end===prev.end && JSON.stringify([...data.packageIds].sort())===JSON.stringify([...prev.package_ids].sort()),'已有确认或报名记录的场次不能修改日期、时段或适用套餐，请建立新场次',409,'SLOT_HAS_BOOKINGS');
+      const enrollment=enrollmentData(data.enrollment ?? prev?.enrollment);
+      if(hasJoinApplications)requireValue(enrollment.packageId===prev.enrollment.packageId,'已有报名记录，不能更换跟团套餐，请建立新场次',409,'SLOT_HAS_BOOKINGS');
+      if(enrollment.state==='published') {
+        requireValue(enrollment.title && enrollment.meetingPoint,'发布报名活动须填写活动名称和集合地点');
+        requireValue(data.packageIds.includes(enrollment.packageId),'跟团套餐须属于本场次适用套餐');
+        requireValue(this.content(enrollment.packageId).kind==='package','跟团套餐须已发布');
+        requireValue(externalCount+(prev?.confirmed_count || 0)>0,'请登记实际已成团人数，或先确认已有团体预约');
+      }
       const note = text(data.note || '','接待说明',1500,true);
       const key = slotId || randomUUID();
-      if (prev) this.db.prepare('UPDATE slots SET date=?,start=?,end=?,capacity=?,package_ids=?,paused=?,note=?,version=version+1 WHERE id=?').run(date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note,key);
-      else this.db.prepare('INSERT INTO slots VALUES (?,?,?,?,?,?,?, ?,1)').run(key,date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note);
-      audit(this.db,actor,'slot.save',key,{ date,start,end,capacity,paused:!!data.paused });
+      if (prev) this.db.prepare('UPDATE slots SET date=?,start=?,end=?,capacity=?,package_ids=?,paused=?,note=?,external_count=?,enrollment=?,version=version+1 WHERE id=?').run(date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note,externalCount,JSON.stringify(enrollment),key);
+      else this.db.prepare('INSERT INTO slots(id,date,start,end,capacity,package_ids,paused,note,external_count,enrollment) VALUES (?,?,?,?,?,?,?,?,?,?)').run(key,date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note,externalCount,JSON.stringify(enrollment));
+      audit(this.db,actor,'slot.save',key,{date,start,end,capacity,paused:!!data.paused,externalCount,
+        previousExternalCount:prev?.external_count ?? 0,enrollmentState:enrollment.state,previousEnrollmentState:prev?.enrollment.state || 'draft',title:enrollment.title});
       return this.slots().find(s=>s.id===key);
     });
   }
@@ -144,6 +168,13 @@ export class Service {
   createBooking(visitor, data, key) {
     return this.idempotent(visitor,'bookings',key,data,()=> {
       const requested = this.bookingRequest(data,data.group === true);
+      if (data.enrollmentId) {
+        const activity=this.enrollment(data.enrollmentId);
+        requireValue(!requested.group && requested.date===activity.date && data.packageId===activity.packageId && requested.slotId===activity.id,'报名日期、时段及套餐必须与所选活动一致');
+        requireValue(activity.canApply,'该活动暂不可报名',409,'ENROLLMENT_CLOSED');
+        requireValue(requested.total<=activity.remaining,'本次报名人数超过当前剩余名额，请联系工作人员',409,'CAPACITY_FULL');
+        requested.enrollment={...activity};
+      }
       const pkg = requested.group && !data.packageId
         ? {id:'group-general',kind:'package',name:'团体研学需求（未指定套餐）',isTest:true}
         : this.content(data.packageId);
@@ -205,7 +236,7 @@ export class Service {
     requireValue(slot && !slot.paused && (packageId==='group-general' || slot.package_ids.includes(packageId)),'场次不可用或不适用',409,'SLOT_UNAVAILABLE');
     futureDate(slot.date);
     const used = this.db.prepare("SELECT COALESCE(SUM(headcount),0) AS n FROM bookings WHERE slot_id=? AND state IN ('confirmed','completed','no_show') AND id<>?").get(slotId,excludedBooking).n;
-    requireValue(used+count <= slot.capacity,'该场次剩余容量不足，原安排未改变',409,'CAPACITY_FULL');
+    requireValue(slot.external_count+used+count <= slot.capacity,'该场次剩余容量不足，原安排未改变',409,'CAPACITY_FULL');
     return slot;
   }
   handleBooking(actor, key, data) {
@@ -222,6 +253,7 @@ export class Service {
       if (data.action==='followup') requireValue(note,'请填写联系情况');
       if (data.action==='confirm') {
         requireValue(state==='pending','仅待确认预约可确认',409);
+        if(row.request.enrollment)requireValue(data.slotId===row.request.enrollment.id,'跟团申请须确认到游客所选活动场次；其他安排请联系游客另行申请',409,'ENROLLMENT_SLOT_MISMATCH');
         requireValue(note,'请填写已联系游客的确认安排说明');
         assignee=this.validateAssignee(data.assignee || assignee || actor.id);
         const slot=this.capacity(data.slotId,row.snapshot.id,row.headcount,key);
@@ -300,6 +332,7 @@ export class Service {
     const table=kind==='bookings'?'bookings':'consultations';
     return this.db.prepare(`SELECT * FROM ${table} ORDER BY created_at DESC`).all().map(record)
       .filter(r=>(!filter.state || r.state===filter.state) && (!filter.unassigned || !r.assignee)
-        && (!filter.q || `${r.id} ${r.request.contactName} ${r.request.phone} ${r.request.team || ''}`.includes(filter.q)));
+        && (!filter.enrollment || !!r.request.enrollment)
+        && (!filter.q || `${r.id} ${r.request.contactName} ${r.request.phone} ${r.request.team || ''} ${r.request.enrollment?.title || ''}`.includes(filter.q)));
   }
 }

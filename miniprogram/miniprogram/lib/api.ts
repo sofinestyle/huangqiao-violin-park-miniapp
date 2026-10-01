@@ -1,5 +1,6 @@
 import { API_BASE, IDENTITY_MODE } from '../config';
 export interface Content { id: string; kind: string; name: string; images?: string[]; [key: string]: any }
+export interface Enrollment {id:string;title:string;date:string;start:string;end:string;packageId:string;packageName:string;cover:string;description:string;meetingPoint:string;feeNote:string;registrationNote:string;remaining:number;canApply:boolean;availabilityLabel:string;version:number}
 export interface BusinessRecord { id: string; state: string; snapshot: Content | null; request: Record<string, any>; confirmed?: Record<string, any>; changes?: any[]; [key: string]: any }
 export class RequestError extends Error { status: number; constructor(message: string,status: number){super(message);this.status=status;} }
 export function api<T>(path: string, options: { method?: 'GET'|'POST'; data?: object; auth?: boolean; key?: string } = {}): Promise<T> {
@@ -23,7 +24,7 @@ export function decorate(c:Content):Content {return {...c,categoryLabel:INSTRUME
 export const newKey=()=>`hq_${Date.now()}_${Math.random().toString(36).slice(2,14)}`;
 export const BOOKING_LABELS:Record<string,string>={pending:'待确认',confirmed:'已确认待到访',completed:'已完成',cancelled:'已取消',rejected:'无法接待',no_show:'未到访'};
 export const CONSULTATION_LABELS:Record<string,string>={pending:'待处理',following:'跟进中',closed:'已结束'};
-export function decorateRecord(row:BusinessRecord,kind:string){return {...row,stateLabel:(kind==='bookings'?BOOKING_LABELS:CONSULTATION_LABELS)[row.state],displayName:row.snapshot?.name || row.request.team || '其他服务',createdLabel:new Date(row.created_at).toLocaleString()};}
+export function decorateRecord(row:BusinessRecord,kind:string){return {...row,stateLabel:(kind==='bookings'?BOOKING_LABELS:CONSULTATION_LABELS)[row.state],displayName:row.request.enrollment?.title || row.snapshot?.name || row.request.team || '其他服务',createdLabel:new Date(row.created_at).toLocaleString()};}
 export const message=(e:unknown)=>e instanceof Error?e.message:'操作失败，请重试';
 const TAB_ROUTES=['/pages/index/index','/pages/instruments/index','/pages/gifts/index','/pages/study/index','/pages/mine/index'];
 export const go=(url:string)=>{const path=url.split('?')[0];const fail=()=>wx.showToast({title:'页面打开失败，请重试',icon:'none'});if(TAB_ROUTES.includes(path))wx.switchTab({url:path,fail});else wx.navigateTo({url,fail});};
