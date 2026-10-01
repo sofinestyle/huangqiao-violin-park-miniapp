@@ -1,0 +1,49 @@
+{
+  "exceptions": [],
+  "cards": [
+    {
+      "size": {
+        "width": 173,
+        "height": 173
+      },
+      "text": "琴韵初体验2小时单人参考价 ¥88",
+      "body": {
+        "width": 153,
+        "height": 69.59375
+      }
+    },
+    {
+      "size": {
+        "width": 173,
+        "height": 173
+      },
+      "text": "提琴匠心深度游3.5小时单人参考价 ¥118",
+      "body": {
+        "width": 153,
+        "height": 69.59375
+      }
+    }
+  ],
+  "clicks": [
+    {
+      "selector": ".home-view-all",
+      "i": 0,
+      "target": "pages/study/index",
+      "passed": true
+    },
+    {
+      "selector": ".home-package",
+      "i": 0,
+      "target": "pages/package/index",
+      "passed": true
+    },
+    {
+      "selector": ".home-package",
+      "i": 1,
+      "target": "pages/package/index",
+      "passed": true
+    }
+  ],
+  "width": 390,
+  "passed": true
+}
