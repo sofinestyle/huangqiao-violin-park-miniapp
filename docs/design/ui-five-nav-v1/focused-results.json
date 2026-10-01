@@ -1,0 +1,32 @@
+{
+  "method": "Actual native Element.tap for 13 homepage entrances, instrument categories, brand actions and retries; callWxMethod only for setup/stack return, never substituted for entrance taps",
+  "tests": [
+    {
+      "brandAction": "instruments",
+      "passed": true
+    },
+    {
+      "brandAction": "consult",
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "entryOverridesOldSearchAndCategory": true,
+  "normalTabKeepsExistingCategoryBehavior": true,
+  "brandStates": [
+    {
+      "name": "loading",
+      "passed": true
+    },
+    {
+      "name": "error",
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "passed": true
+    }
+  ],
+  "brandRetryPassed": true,
+  "passed": true
+}

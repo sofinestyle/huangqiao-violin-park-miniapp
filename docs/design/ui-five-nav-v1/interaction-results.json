@@ -1,0 +1,161 @@
+{
+  "method": "13 actual homepage Element.tap entrances and native return-stack checks, followed by focused completion for category/search, brand actions and controlled states; original attempts preserved",
+  "homepageTests": [
+    {
+      "selector": ".home-nav-item",
+      "route": "pages/instruments/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-nav-item[data-page=\"brand\"]",
+      "route": "pages/brand/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-nav-item[data-page=\"teaching\"]",
+      "route": "pages/teaching/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-nav-item[data-page=\"tour\"]",
+      "route": "pages/tour/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-nav-item[data-page=\"consult\"]",
+      "route": "pages/consult/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-1\"]",
+      "route": "pages/spot/index",
+      "id": "spot-1",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-2\"]",
+      "route": "pages/spot/index",
+      "id": "spot-2",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-3\"]",
+      "route": "pages/spot/index",
+      "id": "spot-3",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-4\"]",
+      "route": "pages/spot/index",
+      "id": "spot-4",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-package[data-id=\"package-1\"]",
+      "route": "pages/package/index",
+      "id": "package-1",
+      "size": {
+        "width": 173,
+        "height": 203
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-package[data-id=\"package-2\"]",
+      "route": "pages/package/index",
+      "id": "package-2",
+      "size": {
+        "width": 173,
+        "height": 203
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-about",
+      "route": "pages/about/index",
+      "size": {
+        "width": 358,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-guide-link",
+      "route": "pages/tour/index",
+      "size": {
+        "width": 99,
+        "height": 44
+      },
+      "passed": true
+    }
+  ],
+  "focusedResults": {
+    "method": "Actual native Element.tap for 13 homepage entrances, instrument categories, brand actions and retries; callWxMethod only for setup/stack return, never substituted for entrance taps",
+    "tests": [
+      {
+        "brandAction": "instruments",
+        "passed": true
+      },
+      {
+        "brandAction": "consult",
+        "passed": true
+      }
+    ],
+    "exceptions": [],
+    "entryOverridesOldSearchAndCategory": true,
+    "normalTabKeepsExistingCategoryBehavior": true,
+    "brandStates": [
+      {
+        "name": "loading",
+        "passed": true
+      },
+      {
+        "name": "error",
+        "passed": true
+      },
+      {
+        "name": "empty",
+        "passed": true
+      }
+    ],
+    "brandRetryPassed": true,
+    "passed": true
+  },
+  "passed": true
+}

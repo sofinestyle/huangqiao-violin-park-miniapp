@@ -1,0 +1,463 @@
+{
+  "mode": "after",
+  "route": "pages/index/index",
+  "system": {
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "statusBarHeight": 47,
+    "pixelRatio": 3,
+    "model": "iPhone 12/13 (Pro)"
+  },
+  "size": {
+    "width": 390,
+    "height": 1503.9921875
+  },
+  "site": {
+    "heroTitle": "一把琴的旅程",
+    "heroSubtitle": "从这里出发",
+    "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+    "images": [
+      "http://127.0.0.1:8787/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b"
+    ]
+  },
+  "spotCount": 4,
+  "packageCount": 2,
+  "measures": [
+    {
+      "selector": ".home-nav-item",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "offset": {
+        "left": 21,
+        "top": 570
+      }
+    },
+    {
+      "selector": ".home-nav-item",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "offset": {
+        "left": 90.6015625,
+        "top": 570
+      }
+    },
+    {
+      "selector": ".home-nav-item",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "offset": {
+        "left": 160.203125,
+        "top": 570
+      }
+    },
+    {
+      "selector": ".home-nav-item",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "offset": {
+        "left": 229.8046875,
+        "top": 570
+      }
+    },
+    {
+      "selector": ".home-nav-item",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "offset": {
+        "left": 299.40625,
+        "top": 570
+      }
+    },
+    {
+      "selector": ".home-quick-nav",
+      "size": {
+        "width": 358,
+        "height": 104
+      },
+      "offset": {
+        "left": 16,
+        "top": 559
+      }
+    },
+    {
+      "selector": ".home-guide-link",
+      "size": {
+        "width": 99,
+        "height": 44
+      },
+      "offset": {
+        "left": 30,
+        "top": 872
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "offset": {
+        "left": 16,
+        "top": 940
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "offset": {
+        "left": 201,
+        "top": 940
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "offset": {
+        "left": 16,
+        "top": 988
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 173,
+        "height": 44
+      },
+      "offset": {
+        "left": 201,
+        "top": 988
+      }
+    },
+    {
+      "selector": ".home-package",
+      "size": {
+        "width": 173,
+        "height": 203
+      },
+      "offset": {
+        "left": 16,
+        "top": 1139.796875
+      }
+    },
+    {
+      "selector": ".home-package",
+      "size": {
+        "width": 173,
+        "height": 203
+      },
+      "offset": {
+        "left": 201,
+        "top": 1139.796875
+      }
+    },
+    {
+      "selector": ".home-about",
+      "size": {
+        "width": 358,
+        "height": 44
+      },
+      "offset": {
+        "left": 16,
+        "top": 1432.9921875
+      }
+    },
+    {
+      "selector": ".home-section-title",
+      "size": {
+        "width": 285.2890625,
+        "height": 22.9453125
+      },
+      "offset": {
+        "left": 74.7109375,
+        "top": 719
+      }
+    },
+    {
+      "selector": ".home-section-title",
+      "size": {
+        "width": 313.2890625,
+        "height": 27
+      },
+      "offset": {
+        "left": 60.7109375,
+        "top": 1074
+      }
+    },
+    {
+      "selector": ".home-brand-name",
+      "size": {
+        "width": 72,
+        "height": 23.796875
+      },
+      "offset": {
+        "left": 159,
+        "top": 15.6015625
+      }
+    },
+    {
+      "selector": ".home-brand",
+      "size": {
+        "width": 390,
+        "height": 55
+      },
+      "offset": {
+        "left": 0,
+        "top": 0
+      }
+    },
+    {
+      "selector": ".home-hero",
+      "size": {
+        "width": 390,
+        "height": 488
+      },
+      "offset": {
+        "left": 0,
+        "top": 55
+      }
+    },
+    {
+      "selector": ".home-explore",
+      "size": {
+        "width": 358,
+        "height": 345
+      },
+      "offset": {
+        "left": 16,
+        "top": 687
+      }
+    },
+    {
+      "selector": ".home-recommended",
+      "size": {
+        "width": 358,
+        "height": 286.796875
+      },
+      "offset": {
+        "left": 16,
+        "top": 1056
+      }
+    },
+    {
+      "selector": ".home-footer",
+      "size": {
+        "width": 390,
+        "height": 137.1953125
+      },
+      "offset": {
+        "left": 0,
+        "top": 1366.796875
+      }
+    },
+    {
+      "selector": ".home-hero-image",
+      "size": {
+        "width": 580,
+        "height": 543
+      },
+      "offset": {
+        "left": -190,
+        "top": 0
+      }
+    },
+    {
+      "selector": ".home-hero-media",
+      "size": {
+        "width": 390,
+        "height": 543
+      },
+      "offset": {
+        "left": 0,
+        "top": 0
+      }
+    },
+    {
+      "selector": ".home-hero-caption",
+      "size": {
+        "width": 358,
+        "height": 215.4765625
+      },
+      "offset": {
+        "left": 16,
+        "top": 285.5234375
+      }
+    },
+    {
+      "selector": ".home-hero-title",
+      "size": {
+        "width": 358,
+        "height": 38.75
+      },
+      "offset": {
+        "left": 16,
+        "top": 285.5234375
+      }
+    },
+    {
+      "selector": ".home-hero-title",
+      "size": {
+        "width": 358,
+        "height": 38.75
+      },
+      "offset": {
+        "left": 16,
+        "top": 324.2734375
+      }
+    },
+    {
+      "selector": ".home-hero-note",
+      "size": {
+        "width": 358,
+        "height": 125.9765625
+      },
+      "offset": {
+        "left": 16,
+        "top": 375.0234375
+      }
+    },
+    {
+      "selector": ".home-explore-image",
+      "size": {
+        "width": 358,
+        "height": 243
+      },
+      "offset": {
+        "left": 16,
+        "top": 687
+      }
+    },
+    {
+      "selector": ".home-package-image",
+      "size": {
+        "width": 173,
+        "height": 123
+      },
+      "offset": {
+        "left": 16,
+        "top": 1139.796875
+      }
+    },
+    {
+      "selector": ".home-package-image",
+      "size": {
+        "width": 173,
+        "height": 123
+      },
+      "offset": {
+        "left": 201,
+        "top": 1139.796875
+      }
+    },
+    {
+      "selector": ".home-explore-visual",
+      "size": {
+        "width": 358,
+        "height": 243
+      },
+      "offset": {
+        "left": 16,
+        "top": 687
+      }
+    },
+    {
+      "selector": ".home-spots",
+      "size": {
+        "width": 358,
+        "height": 92
+      },
+      "offset": {
+        "left": 16,
+        "top": 940
+      }
+    },
+    {
+      "selector": ".home-logo",
+      "size": {
+        "width": 72,
+        "height": 44
+      },
+      "offset": {
+        "left": 16,
+        "top": 5.5
+      }
+    },
+    {
+      "selector": ".home-item-title",
+      "size": {
+        "width": 173,
+        "height": 24
+      },
+      "offset": {
+        "left": 16,
+        "top": 1270.796875
+      }
+    },
+    {
+      "selector": ".home-item-title",
+      "size": {
+        "width": 173,
+        "height": 24
+      },
+      "offset": {
+        "left": 201,
+        "top": 1270.796875
+      }
+    },
+    {
+      "selector": ".home-package-detail",
+      "size": {
+        "width": 42,
+        "height": 44
+      },
+      "offset": {
+        "left": 147,
+        "top": 1298.796875
+      }
+    },
+    {
+      "selector": ".home-package-detail",
+      "size": {
+        "width": 42,
+        "height": 44
+      },
+      "offset": {
+        "left": 332,
+        "top": 1298.796875
+      }
+    }
+  ],
+  "segments": [
+    {
+      "path": "after-390-segment-00.png",
+      "scrollTop": 0
+    },
+    {
+      "path": "after-390-segment-01.png",
+      "scrollTop": 536
+    },
+    {
+      "path": "after-390-segment-02.png",
+      "scrollTop": 833
+    }
+  ],
+  "errors": []
+}

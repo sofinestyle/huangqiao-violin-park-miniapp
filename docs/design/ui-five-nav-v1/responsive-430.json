@@ -1,0 +1,301 @@
+{
+  "width": 430,
+  "pages": [
+    {
+      "route": "index",
+      "size": {
+        "width": 430,
+        "height": 1621.59375
+      },
+      "system": {
+        "windowWidth": 430,
+        "windowHeight": 752,
+        "statusBarHeight": 54
+      },
+      "segments": [
+        {
+          "path": "index-430-segment-0.png",
+          "scrollTop": 0
+        },
+        {
+          "path": "index-430-segment-1.png",
+          "scrollTop": 601
+        },
+        {
+          "path": "index-430-segment-2.png",
+          "scrollTop": 869.5
+        }
+      ],
+      "elements": [
+        {
+          "selector": ".home-quick-nav",
+          "size": {
+            "width": 394,
+            "height": 104
+          },
+          "offset": {
+            "left": 18,
+            "top": 609
+          },
+          "text": "提琴选购品牌介绍教学课堂地图导览预约咨询"
+        },
+        {
+          "selector": ".home-nav-item",
+          "size": {
+            "width": 76.796875,
+            "height": 82
+          },
+          "offset": {
+            "left": 23,
+            "top": 620
+          },
+          "text": "提琴选购"
+        },
+        {
+          "selector": ".home-nav-item",
+          "size": {
+            "width": 76.796875,
+            "height": 82
+          },
+          "offset": {
+            "left": 99.796875,
+            "top": 620
+          },
+          "text": "品牌介绍"
+        },
+        {
+          "selector": ".home-nav-item",
+          "size": {
+            "width": 76.796875,
+            "height": 82
+          },
+          "offset": {
+            "left": 176.59375,
+            "top": 620
+          },
+          "text": "教学课堂"
+        },
+        {
+          "selector": ".home-nav-item",
+          "size": {
+            "width": 76.796875,
+            "height": 82
+          },
+          "offset": {
+            "left": 253.390625,
+            "top": 620
+          },
+          "text": "地图导览"
+        },
+        {
+          "selector": ".home-nav-item",
+          "size": {
+            "width": 76.796875,
+            "height": 82
+          },
+          "offset": {
+            "left": 330.1875,
+            "top": 620
+          },
+          "text": "预约咨询"
+        },
+        {
+          "selector": ".home-nav-label",
+          "size": {
+            "width": 56,
+            "height": 21
+          },
+          "offset": {
+            "left": 33.3984375,
+            "top": 679.5
+          },
+          "text": "提琴选购"
+        },
+        {
+          "selector": ".home-nav-label",
+          "size": {
+            "width": 56,
+            "height": 21
+          },
+          "offset": {
+            "left": 110.1953125,
+            "top": 679.5
+          },
+          "text": "品牌介绍"
+        },
+        {
+          "selector": ".home-nav-label",
+          "size": {
+            "width": 56,
+            "height": 21
+          },
+          "offset": {
+            "left": 186.9921875,
+            "top": 679.5
+          },
+          "text": "教学课堂"
+        },
+        {
+          "selector": ".home-nav-label",
+          "size": {
+            "width": 56,
+            "height": 21
+          },
+          "offset": {
+            "left": 263.7890625,
+            "top": 679.5
+          },
+          "text": "地图导览"
+        },
+        {
+          "selector": ".home-nav-label",
+          "size": {
+            "width": 56,
+            "height": 21
+          },
+          "offset": {
+            "left": 340.5859375,
+            "top": 679.5
+          },
+          "text": "预约咨询"
+        },
+        {
+          "selector": ".home-brand",
+          "size": {
+            "width": 430,
+            "height": 55
+          },
+          "offset": {
+            "left": 0,
+            "top": 0
+          },
+          "text": "黄桥琴旅"
+        },
+        {
+          "selector": ".home-brand-name",
+          "size": {
+            "width": 80,
+            "height": 26.59375
+          },
+          "offset": {
+            "left": 175,
+            "top": 14.203125
+          },
+          "text": "黄桥琴旅"
+        },
+        {
+          "selector": ".home-hero",
+          "size": {
+            "width": 430,
+            "height": 538
+          },
+          "offset": {
+            "left": 0,
+            "top": 55
+          },
+          "text": "一把琴的旅程从这里出发江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+        },
+        {
+          "selector": ".home-hero-caption",
+          "size": {
+            "width": 394,
+            "height": 270.78125
+          },
+          "offset": {
+            "left": 18,
+            "top": 277.21875
+          },
+          "text": "一把琴的旅程从这里出发江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+        }
+      ]
+    },
+    {
+      "route": "brand",
+      "size": {
+        "width": 430,
+        "height": 838.6875
+      },
+      "system": {
+        "windowWidth": 430,
+        "windowHeight": 832,
+        "statusBarHeight": 54,
+        "homepageWindowHeight": 752,
+        "windowHeightSource": "Derived from native screenshot height after subtracting status bar and 44px native title bar; brand page has no tab bar. Original capture loop used homepage viewport, all final scrolls still reached native page bottom."
+      },
+      "segments": [
+        {
+          "path": "brand-430-segment-0.png",
+          "scrollTop": 0
+        },
+        {
+          "path": "brand-430-segment-1.png",
+          "scrollTop": 4.5
+        }
+      ],
+      "elements": [
+        {
+          "selector": ".brand-title",
+          "size": {
+            "width": 382,
+            "height": 39.1953125
+          },
+          "offset": {
+            "left": 24,
+            "top": 116.1953125
+          },
+          "text": "黄桥琴旅"
+        },
+        {
+          "selector": ".brand-company",
+          "size": {
+            "width": 382,
+            "height": 64
+          },
+          "offset": {
+            "left": 24,
+            "top": 506.1875
+          },
+          "text": "江苏黄桥乐器文化产业园投资发展有限公司"
+        },
+        {
+          "selector": ".brand-intro",
+          "size": {
+            "width": 382,
+            "height": 142.5
+          },
+          "offset": {
+            "left": 24,
+            "top": 588.1875
+          },
+          "text": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+        },
+        {
+          "selector": ".brand-primary",
+          "size": {
+            "width": 185,
+            "height": 48
+          },
+          "offset": {
+            "left": 24,
+            "top": 758.6875
+          },
+          "text": "查看乐器"
+        },
+        {
+          "selector": ".brand-secondary",
+          "size": {
+            "width": 185,
+            "height": 48
+          },
+          "offset": {
+            "left": 221,
+            "top": 758.6875
+          },
+          "text": "联系咨询"
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "passed": true
+}

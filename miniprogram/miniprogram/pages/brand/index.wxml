@@ -1,0 +1,11 @@
+<import src="../../templates/state.wxml"/>
+<view class="brand-page">
+  <template is="state" data="{{loading,error}}"/>
+  <block wx:if="{{site}}">
+    <view class="brand-heading"><image class="brand-logo" src="/assets/yorray-logo.png" mode="aspectFit"/><view class="brand-title">黄桥琴旅</view><view class="brand-subtitle">品牌介绍</view></view>
+    <image wx:if="{{site.images[1]}}" class="brand-photo" src="{{site.images[1]}}" mode="aspectFill"/>
+    <view class="brand-content"><view class="brand-section-title">运营主体</view><view class="brand-company"><view>江苏黄桥乐器文化产业园</view><view>投资发展有限公司</view></view><view class="brand-intro">{{site.intro}}</view></view>
+    <view class="brand-actions"><button class="brand-primary" bindtap="instruments" hover-class="brand-pressed">查看乐器</button><button class="brand-secondary" bindtap="consult" hover-class="brand-pressed">联系咨询</button></view>
+  </block>
+  <view wx:if="{{!loading && !error && !site}}" class="brand-empty">品牌资料暂未发布，请稍后再试。</view>
+</view>

@@ -1,0 +1,25 @@
+{
+  "baselineHead": "e4e575691c88f58a849ab641a2e0ad92123e9e90",
+  "trackedBaselineFiles": 700,
+  "changedExistingFiles": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/app.json",
+    "miniprogram/miniprogram/pages/index/index.ts",
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss",
+    "miniprogram/miniprogram/pages/instruments/index.ts"
+  ],
+  "unchangedBaselineFiles": 693,
+  "approvedTsExceptions": [
+    "homepage violin entry only",
+    "instrument page one-shot display filter only"
+  ],
+  "appJsonExistingRoutesWindowAndFiveTabsUnchanged": true,
+  "heroAndBrandSourceUnchanged": true,
+  "exploreRecommendationsAndFooterUnchanged": true,
+  "sharedApiListPageServerAdminDatabaseSchemaAuthBookingConsultationAndOtherPagesUnchanged": true,
+  "governanceHistoryPreserved": true,
+  "originalNavReferenceBytesPreserved": true,
+  "result": "passed"
+}

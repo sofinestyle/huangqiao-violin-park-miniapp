@@ -17,7 +17,8 @@
     "pages/spot/index",
     "pages/about/index",
     "pages/enrollments/index",
-    "pages/enrollment/index"
+    "pages/enrollment/index",
+    "pages/brand/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

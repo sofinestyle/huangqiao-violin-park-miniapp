@@ -1,0 +1,80 @@
+{
+  "method": "Approved deterministic cropping of five icon tiles only; labels rendered as native text; original attachment unchanged",
+  "originalSize": [
+    2170,
+    725
+  ],
+  "originalSha256": "fa83ec51c6db4743dae2a12ac884323f34e195b105d5c23fb895f0439c4233e5",
+  "icons": [
+    {
+      "name": "violin",
+      "box": [
+        119,
+        159,
+        396,
+        432
+      ],
+      "size": [
+        277,
+        273
+      ],
+      "sha256": "d3bc4ce87dcfee1be0c7ac66108960c012c8d57e98f3b27377aea3f85e4c7c67"
+    },
+    {
+      "name": "brand",
+      "box": [
+        533,
+        159,
+        811,
+        432
+      ],
+      "size": [
+        278,
+        273
+      ],
+      "sha256": "9ac5e7274fd4d71242bc5ef97d00670212b139d348e2b4d461aa7a405a70e9ab"
+    },
+    {
+      "name": "teaching",
+      "box": [
+        946,
+        159,
+        1224,
+        432
+      ],
+      "size": [
+        278,
+        273
+      ],
+      "sha256": "ebde93c9c80fc3ba14fbf85502ebed555cec4a7a8b64f9c3806acc566e0e411b"
+    },
+    {
+      "name": "map",
+      "box": [
+        1360,
+        159,
+        1638,
+        432
+      ],
+      "size": [
+        278,
+        273
+      ],
+      "sha256": "9ffbb3c9bf5b9a0c82524a0f508a31f66facacdf9f890eecc00af6993fa937a3"
+    },
+    {
+      "name": "consult",
+      "box": [
+        1774,
+        159,
+        2051,
+        432
+      ],
+      "size": [
+        277,
+        273
+      ],
+      "sha256": "653b308a6cb535edac8820910d93f500d23551ca56c2b4c5d5be8ec2cce96db7"
+    }
+  ]
+}

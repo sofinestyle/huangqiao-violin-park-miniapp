@@ -1,0 +1,45 @@
+{
+  "method": "Actual native Element.tap for 13 homepage entrances, instrument categories, brand actions and retries; callWxMethod only for setup/stack return, never substituted for entrance taps",
+  "tests": [
+    {
+      "selector": ".home-nav-item",
+      "route": "pages/instruments/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-nav-item[data-page=\"brand\"]",
+      "route": "pages/brand/index",
+      "size": {
+        "width": 69.6015625,
+        "height": 82
+      },
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "brandScreens": {
+    "size": {
+      "width": 390,
+      "height": 753
+    },
+    "system": {
+      "windowWidth": 390,
+      "windowHeight": 671,
+      "statusBarHeight": 47
+    },
+    "segments": [
+      {
+        "path": "brand-390-segment-0.png",
+        "scrollTop": 0
+      },
+      {
+        "path": "brand-390-segment-1.png",
+        "scrollTop": 113
+      }
+    ]
+  }
+}

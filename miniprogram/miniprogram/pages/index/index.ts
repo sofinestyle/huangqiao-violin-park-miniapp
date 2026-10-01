@@ -3,5 +3,6 @@ Page({data:{site:null as Content|null,packages:[] as Content[],spots:[] as Conte
  onShow(){this.load();},
  async load(){this.setData({loading:true,error:''});try{const rows=await api<Content[]>('/api/public/content');const site=rows.find(c=>c.kind==='site');if(!site)throw new Error('首页内容暂未发布，请稍后再试');this.setData({site:site?decorate(site):null,packages:rows.filter(c=>c.kind==='package'&&c.highlight).map(decorate),spots:rows.filter(c=>c.kind==='spot').map(decorate),stats:{packages:rows.filter(c=>c.kind==='package').length,gifts:rows.filter(c=>c.kind==='product'&&c.category==='gift').length,series:new Set(rows.filter(c=>c.kind==='product'&&c.category!=='gift'&&c.category).map(c=>c.category)).size}});}catch(e){this.setData({error:message(e)});}finally{this.setData({loading:false});}},retry(){this.load();},
  open(e:WechatMiniprogram.TouchEvent){go(`/pages/${e.currentTarget.dataset.page}/index${e.currentTarget.dataset.id?'?id='+encodeURIComponent(e.currentTarget.dataset.id):''}`);},
- tab(e:WechatMiniprogram.TouchEvent){go(`/pages/${e.currentTarget.dataset.page}/index`);}
+ tab(e:WechatMiniprogram.TouchEvent){go(`/pages/${e.currentTarget.dataset.page}/index`);},
+ violin(){wx.setStorageSync('hq-home-instrument-filter','violin');wx.switchTab({url:'/pages/instruments/index',fail(){wx.removeStorageSync('hq-home-instrument-filter');wx.showToast({title:'页面打开失败，请重试',icon:'none'});}});}
 });

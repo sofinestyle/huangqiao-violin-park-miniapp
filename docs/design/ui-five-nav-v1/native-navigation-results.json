@@ -1,0 +1,31 @@
+{
+  "environment": "Actual native 390px iPhone 12/13 Pro",
+  "method": "cua_repl native UI clicks, route observed from refreshed accessibility text",
+  "tests": [
+    {
+      "label": "instrument",
+      "observedRoute": "pages/instruments/index",
+      "result": "passed"
+    },
+    {
+      "label": "gift",
+      "observedRoute": "pages/gifts/index",
+      "result": "passed"
+    },
+    {
+      "label": "study",
+      "observedRoute": "pages/study/index",
+      "result": "passed"
+    },
+    {
+      "label": "mine",
+      "observedRoute": "pages/mine/index",
+      "result": "passed"
+    }
+  ],
+  "notExecuted": [
+    "home tab: Mac locked before click, native input rejected",
+    "physical native back: Mac locked, API stack return already checked separately"
+  ],
+  "modelRestored": "390px before lock"
+}

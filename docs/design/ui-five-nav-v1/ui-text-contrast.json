@@ -1,0 +1,41 @@
+{
+  "method": "sRGB contrast for opaque UI text backgrounds only; does not replace photo contrast tests",
+  "rows": [
+    {
+      "name": "navigation-label",
+      "foreground": "#3C2B24",
+      "background": "#FBF8F0",
+      "ratio": 12.66,
+      "passed": true
+    },
+    {
+      "name": "brand-body",
+      "foreground": "#3C2C20",
+      "background": "#F7F3E9",
+      "ratio": 12.05,
+      "passed": true
+    },
+    {
+      "name": "brand-secondary",
+      "foreground": "#6C5948",
+      "background": "#F7F3E9",
+      "ratio": 6.0,
+      "passed": true
+    },
+    {
+      "name": "brand-primary-button",
+      "foreground": "#FFFDF7",
+      "background": "#3C2B24",
+      "ratio": 13.21,
+      "passed": true
+    },
+    {
+      "name": "brand-secondary-button",
+      "foreground": "#3C2B24",
+      "background": "#EDE5D7",
+      "ratio": 10.74,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
