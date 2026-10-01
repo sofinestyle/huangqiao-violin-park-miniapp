@@ -1,0 +1,28 @@
+{
+  "baseline": "5c2ec2d52eb042a94033986ac46d19bc0232e5dd",
+  "baselineTrackedFiles": 294,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedExistingFiles": 292,
+  "missingExistingFiles": [],
+  "changesInsideWhitelist": true,
+  "designSystemSkillGovernanceAndOldEvidenceUnchanged": true,
+  "API_TS_Admin_Server_Shared_Assets_AppJson_AppWxssUnchanged": true,
+  "databaseScope": "No database schema/model/logic edits or QA writes; excluded runtime DB byte invariance is not claimed",
+  "nativeWidths": [
+    {
+      "width": 390,
+      "height": 1682.5859375,
+      "model": "iPhone 12/13 (Pro)",
+      "targets": 15,
+      "minimumTargetHeight": 44,
+      "horizontalBounds": "within viewport",
+      "runtimeExceptions": []
+    }
+  ],
+  "originalsVerification": "25 originals verified by scripts/verify_originals.py; size and SHA-256 unchanged",
+  "nativeCompilation": "Official miniprogram-automator launch of original project; successful native render and interaction checks, not a replacement by TypeScript check",
+  "typecheck": "npm run typecheck exit 0"
+}

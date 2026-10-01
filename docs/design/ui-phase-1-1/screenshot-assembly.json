@@ -1,0 +1,31 @@
+[
+  {
+    "width": 390,
+    "nativePixelSize": [
+      618,
+      1334
+    ],
+    "fullPixelSize": [
+      618,
+      2666
+    ],
+    "scale": 1.5846153846153845,
+    "cropTop": 144,
+    "windowCropHeight": 1063,
+    "frames": [
+      {
+        "path": "after-390-segment-00.png",
+        "scrollTop": 0
+      },
+      {
+        "path": "after-390-segment-01.png",
+        "scrollTop": 536
+      },
+      {
+        "path": "after-390-segment-02.png",
+        "scrollTop": 1011.5
+      }
+    ],
+    "method": "Original native screenshot pixels aligned by actual scrollTop; repeated system bars removed, no UI redrawn."
+  }
+]

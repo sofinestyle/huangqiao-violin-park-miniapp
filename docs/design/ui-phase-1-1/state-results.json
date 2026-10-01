@@ -1,0 +1,26 @@
+{
+  "method": "Native rendering through unchanged index.ts with temporarily mocked wx.request; no database changes",
+  "tests": [
+    {
+      "state": "Loading",
+      "passed": true
+    },
+    {
+      "state": "Error",
+      "retrySize": {
+        "width": 184,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "state": "Error retry actual tap",
+      "passed": true
+    },
+    {
+      "state": "Empty site -> existing Error/retry path; no new empty-state logic",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
