@@ -1,0 +1,81 @@
+{
+  "elements": [
+    {
+      "selector": ".home-explore .home-section-heading",
+      "text": "01EXPLORE THE PARK琴音之旅",
+      "size": {
+        "width": 358,
+        "height": 45
+      },
+      "offset": {
+        "left": 16,
+        "top": 687
+      },
+      "styles": {
+        "border-radius": null,
+        "color": "rgb(60, 44, 32)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "font-family": "-apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+      }
+    },
+    {
+      "selector": ".home-explore-visual",
+      "text": "城市客厅·音乐生态湖·产业园·绿岛进入探索›",
+      "size": {
+        "width": 358,
+        "height": 243
+      },
+      "offset": {
+        "left": 16,
+        "top": 770.796875
+      },
+      "styles": {
+        "border-radius": null,
+        "color": "rgb(255, 253, 247)",
+        "background-color": "rgb(60, 43, 36)",
+        "font-family": "-apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+      }
+    },
+    {
+      "selector": ".home-explore-note",
+      "text": "城市客厅·音乐生态湖·产业园·绿岛",
+      "size": {
+        "width": 330,
+        "height": 20.796875
+      },
+      "offset": {
+        "left": 30,
+        "top": 929
+      },
+      "styles": {
+        "border-radius": null,
+        "color": "rgb(226, 200, 143)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "font-family": "\"Microsoft YaHei\", 微软雅黑, \"PingFang SC\", sans-serif"
+      }
+    },
+    {
+      "selector": ".home-guide-link",
+      "text": "进入探索›",
+      "size": {
+        "width": 101.78125,
+        "height": 44
+      },
+      "offset": {
+        "left": 30,
+        "top": 955.796875
+      },
+      "styles": {
+        "border-radius": null,
+        "color": "rgb(60, 43, 36)",
+        "background-color": "rgb(226, 200, 143)",
+        "font-family": "-apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+      }
+    }
+  ],
+  "exceptions": [],
+  "width": 390,
+  "visualChecksPassed": true,
+  "actualExploreTapPassed": true,
+  "apiReturnPassed": false
+}
