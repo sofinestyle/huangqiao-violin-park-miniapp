@@ -28,14 +28,8 @@
 .home-section-titles { flex: 1; min-width: 0; }
 .home-section-english { font-family: var(--home-serif); font-size: 24rpx; letter-spacing: 1.5rpx; line-height: 1.5; }
 .home-section-title { font-family: var(--home-serif); font-size: 40rpx; font-weight: 600; line-height: 1.35; }
-.home-explore-caption { position: absolute; bottom: 28rpx; left: 28rpx; right: 28rpx; }
-.home-explore-note { color: #E2C88F; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 26rpx; font-weight: 500; line-height: 1.6; }
-.home-guide-link { display: inline-flex; align-items: center; justify-content: space-between; min-height: 44px; min-width: 44px; margin-top: 12rpx; padding: 8rpx 32rpx; border-radius: 999px; background: #E2C88F; color: var(--home-walnut); font-size: 28rpx; line-height: 1.5; }
-.home-spots { display: grid; grid-template-columns: 1fr 1fr; gap: 8rpx 24rpx; margin-top: 20rpx; }
-.home-spot { display: flex; align-items: center; gap: 12rpx; min-height: 44px; padding: 8rpx 0; }
-.home-spot-image { flex-shrink: 0; width: 64rpx; height: 64rpx; border-radius: 6rpx; }
-.home-spot-name { flex: 1; min-width: 0; font-size: 28rpx; line-height: 1.5; }
-.home-spot-arrow { font-size: 24rpx; color: var(--home-secondary); flex-shrink: 0; }
+.home-explore-note { position: absolute; top: 28rpx; left: 28rpx; right: 28rpx; color: #E2C88F; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 26rpx; font-weight: 500; line-height: 1.6; }
+.home-guide-link { position: absolute; bottom: 28rpx; right: 28rpx; display: inline-flex; align-items: center; justify-content: space-between; min-height: 44px; min-width: 44px; padding: 8rpx 32rpx; border-radius: 999px; background: #E2C88F; color: var(--home-walnut); font-size: 28rpx; line-height: 1.5; }
 .home-section-english { color: var(--home-secondary); }
 .home-section-note { margin-top: 12rpx; color: var(--home-secondary); font-size: 26rpx; line-height: 1.6; }
 .home-packages { display: grid; grid-template-columns: 1fr 1fr; gap: 24rpx; margin-top: 24rpx; }

@@ -40,13 +40,8 @@
       <view class="home-explore-visual">
         <image class="home-explore-image" src="{{spots[0].images[1] || spots[0].cover}}" mode="aspectFill"/>
         <view class="home-explore-shade"/>
-        <view class="home-explore-caption"><view class="home-explore-note">城市客厅·音乐生态湖·产业园·绿岛</view><view class="home-guide-link" data-page="tour" bindtap="open" hover-class="home-pressed">进入探索<text class="home-arrow">›</text></view></view>
-      </view>
-      <view class="home-spots">
-        <view wx:for="{{spots}}" wx:key="id" class="home-spot" data-page="spot" data-id="{{item.id}}" bindtap="open" hover-class="home-pressed">
-          <image class="home-spot-image" src="{{item.cover}}" mode="aspectFill"/>
-          <text class="home-spot-name">{{item.name==='产业园·中小企业集聚区'?'产业园':item.name==='绿岛·智能环保表面处理中心'?'绿岛':item.name}}</text><text class="home-spot-arrow">↗</text>
-        </view>
+        <view class="home-explore-note">城市客厅·音乐生态湖·产业园·绿岛</view>
+        <view class="home-guide-link" data-page="tour" bindtap="open" hover-class="home-pressed">进入探索<text class="home-arrow">›</text></view>
       </view>
     </view>
     <view class="home-section home-recommended" wx:if="{{packages.length}}">
