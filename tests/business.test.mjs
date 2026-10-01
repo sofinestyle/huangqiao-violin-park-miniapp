@@ -31,7 +31,7 @@ test('本地业务与状态规则',async t=>{
   const f=fixture();t.after(()=>f.db.close());
   await t.test('五套餐原稿价格与时长完整保留；未发布视频标题不冒充可播放内容',()=>{
     const p=f.service.listContent({kind:'package'});assert.equal(p.length,5);assert.deepEqual(p.map(c=>[c.referenceParentPrice,c.referenceSinglePrice]),[[118,88],[158,118],[138,98],[118,88],[128,88]]);
-    assert.equal(p[0].durationNote,'原稿2小时');assert.equal(f.service.listContent({kind:'lesson'}).length,0);assert.equal(f.service.listContent({kind:'lesson'},true).length,14);
+    assert.equal(p[0].durationNote,'2小时');assert.equal(f.service.listContent({kind:'lesson'}).length,0);assert.equal(f.service.listContent({kind:'lesson'},true).length,14);
     assert.equal(f.service.listContent({kind:'product',category:'gift'}).length,20);assert.equal(f.service.content('site').phone,'');
   });
   await t.test('没有媒体文件不能发布视频；草稿允许后续维护',()=>{

@@ -1,0 +1,97 @@
+{
+  "routes": [
+    {
+      "selector": "button.text-button",
+      "from": "pages/gifts/index",
+      "to": "pages/product/index"
+    },
+    {
+      "button": "咨询此产品",
+      "from": "pages/product/index",
+      "to": "pages/consult/index"
+    },
+    {
+      "button": "查看套餐与预约说明",
+      "from": "pages/study/index",
+      "to": "pages/package/index"
+    },
+    {
+      "button": "个人 / 家庭预约申请",
+      "from": "pages/package/index",
+      "to": "pages/booking/index"
+    },
+    {
+      "button": "团体申请",
+      "from": "pages/package/index",
+      "to": "pages/booking/index"
+    },
+    {
+      "button": "套餐咨询",
+      "from": "pages/package/index",
+      "to": "pages/consult/index"
+    },
+    {
+      "button": "团体需求申请",
+      "from": "pages/study/index",
+      "to": "pages/booking/index"
+    },
+    {
+      "selector": ".card",
+      "from": "pages/tour/index",
+      "to": "pages/spot/index"
+    },
+    {
+      "button": "咨询到访安排",
+      "from": "pages/spot/index",
+      "to": "pages/consult/index"
+    },
+    {
+      "selector": ".row[data-url=\"/pages/records/index?kind=bookings\"]",
+      "from": "pages/mine/index",
+      "to": "pages/records/index"
+    },
+    {
+      "selector": ".row[data-url=\"/pages/records/index?kind=consultations\"]",
+      "from": "pages/mine/index",
+      "to": "pages/records/index"
+    },
+    {
+      "selector": ".row[data-url=\"/pages/consult/index\"]",
+      "from": "pages/mine/index",
+      "to": "pages/consult/index"
+    },
+    {
+      "selector": ".row[data-url=\"/pages/about/index\"]",
+      "from": "pages/mine/index",
+      "to": "pages/about/index"
+    },
+    {
+      "selector": ".row[data-url=\"/pages/about/index?section=privacy\"]",
+      "from": "pages/mine/index",
+      "to": "pages/about/index"
+    },
+    {
+      "selector": ".card[data-id=\"fb27e38b-2906-44f7-b00e-5f04e5d987dd\"]",
+      "from": "pages/teaching/index",
+      "to": "pages/lesson/index"
+    },
+    {
+      "button": "咨询相关教学与课程",
+      "from": "pages/lesson/index",
+      "to": "pages/consult/index"
+    }
+  ],
+  "filters": [],
+  "exceptions": [],
+  "slot": {
+    "id": "e885c02d-5948-4ab3-9323-822e0abbc0a4",
+    "date": "2099-10-20",
+    "label": "09:00—11:00"
+  },
+  "video": {
+    "played": true,
+    "time": 0,
+    "ended": true
+  },
+  "phase": "remaining"
+}

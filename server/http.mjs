@@ -5,7 +5,7 @@ import { join, resolve, extname } from 'node:path';
 import { Service, publicContent } from './service.mjs';
 import { Fault, requireValue, authenticate, checkPassword, issueSession, createAccount, hashPassword, permit, audit, digest, text } from './security.mjs';
 import { now, decode, transaction } from './db.mjs';
-import { upload, serveMedia, MAX_UPLOAD } from './media.mjs';
+import { upload, serveMedia, MAX_UPLOAD, listMedia } from './media.mjs';
 
 const json=(res,value,status=200)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(value));};
 async function body(req) {
@@ -121,7 +121,7 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
         }
         if(path==='/api/admin/media') {
           permit(actor,'content');
-          if(method==='GET')return json(res,db.prepare('SELECT id,filename,mime,size,sha256,rights,duration,created_at FROM media ORDER BY created_at DESC').all());
+          if(method==='GET')return json(res,listMedia(db));
           if(method==='POST')return json(res,await upload(db,actor,req,uploads),201);
         }
         if((m=match(/^\/api\/admin\/media\/([^/]+)\/file$/)) && ['GET','HEAD'].includes(method)){permit(actor,'content');return serveMedia(db,req,res,m[1],uploads,true);}

@@ -1,9 +1,10 @@
 import { readFileSync } from 'node:fs';
 import { now } from './db.mjs';
+import { neutralDefault, migrateContentCopy } from './content-migration.mjs';
 const catalog=JSON.parse(readFileSync(new URL('./test-catalog.json',import.meta.url),'utf8'));
 export function seed(db) {
   const insert=db.prepare('INSERT OR IGNORE INTO content VALUES (?,?,?,?,?,?,1,?,?)');
-  const add=(id,kind,name,data,sort=0,state='published')=>insert.run(id,kind,name,JSON.stringify({...data,isTest:true}),state,sort,now(),now());
+  const add=(id,kind,name,data,sort=0,state='published')=>insert.run(id,kind,name,JSON.stringify({...neutralDefault(kind,data),isTest:true}),state,sort,now(),now());
   add('site','site','黄桥乐器文化产业园',{
     images:['/assets/yorray-logo.png','/assets/hero-violin.jpg'],heroTitle:'一把琴的旅程',heroSubtitle:'从这里出发',
     intro:'江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。',
@@ -43,4 +44,5 @@ export function seed(db) {
     ['绿岛·智能环保表面处理中心','green.jpg',['g1.jpg','g2.jpg','g3.jpg','g4.jpg'],'制琴工艺与表面处理场景。开放安排需核定。']];
   spots.forEach(([name,img,gallery,description],i)=>add(`spot-${i+1}`,'spot',name,{description,images:[img,...gallery].map(x=>`/assets/${x}`),opening:'开放安排尚待核定，请先咨询',address:'',visitNote:'测试点位资料；不填入未经确认的地址或坐标'},80+i));
   catalog.videos.forEach((v,i)=>add(`lesson-${i+1}`,'lesson',v.t,{type:'video',category:v.lv,description:'原展示稿教学标题，仅作草稿；上传可用视频并登记权属、实际时长后发布。',images:['/assets/hero-violin.jpg'],mediaId:'',rights:''},100+i,'draft'));
+  migrateContentCopy(db);
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/api/public/content/9b963ff2-6e75-4ebb-b4a8-3ef2fe9d8f77",
+    "status": 404
+  },
+  {
+    "path": "/api/public/content/fb27e38b-2906-44f7-b00e-5f04e5d987dd",
+    "status": 404
+  },
+  {
+    "path": "/api/media/0b12721c-f563-4e7e-9d38-7f0555f926c6",
+    "status": 410
+  }
+]

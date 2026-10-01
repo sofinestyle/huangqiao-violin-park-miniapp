@@ -1,6 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { transaction, decode, now } from './db.mjs';
 import { requireValue, text, number, futureDate, contact, permit, audit, digest } from './security.mjs';
+import { INSTRUMENT_CATEGORIES, PRODUCT_CATEGORIES } from '../shared/status.mjs';
 
 export const publicContent = row => ({ id: row.id, kind: row.kind, name: row.name, ...decode(row.data), state: row.state, sort: row.sort, version: row.version });
 const record = row => row && ({ ...row, snapshot: decode(row.snapshot), request: decode(row.request),
@@ -22,7 +23,7 @@ export class Service {
   }
   listContent({ kind, category, q = '' } = {}, admin = false) {
     const rows = this.db.prepare(`SELECT * FROM content ${admin ? '' : "WHERE state='published'"} ORDER BY sort,id`).all().map(publicContent);
-    return rows.filter(r => (!kind || r.kind === kind) && (!category || r.category === category) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
+    return rows.filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
   }
   saveContent(actor, data, existingId) {
     permit(actor, 'content');
@@ -52,7 +53,7 @@ export class Service {
       }
       if (detail.phone) requireValue(/^[+\d][\d\s()-]{4,29}$/.test(detail.phone), '服务电话格式无效');
       if (kind === 'product') {
-        requireValue(['violin','gift'].includes(detail.category), '产品须选择提琴或文创');
+        requireValue(Object.hasOwn(PRODUCT_CATEGORIES,detail.category), '请选择有效的乐器品类或文创');
         requireValue(['inquiry','reference'].includes(detail.priceMode), '请选择参考价格或咨询报价');
         if (detail.priceMode === 'reference') requireValue(typeof detail.price === 'number' && detail.price >= 0 && detail.price <= 1e7, '参考价格无效');
         requireValue(Array.isArray(detail.specs) && detail.specs.length <= 50 && detail.specs.every(s => s && typeof s.name === 'string' && s.name.length <= 80 && typeof s.description === 'string' && s.description.length <= 3000 && (s.price == null || (typeof s.price === 'number' && Number.isFinite(s.price) && s.price >= 0 && s.price<=1e7)) && (s.images==null || (Array.isArray(s.images) && s.images.length<=12))), '规格格式无效');
@@ -99,12 +100,12 @@ export class Service {
       if (prev) requireValue(prev.version === data.version, '场次已修改，请刷新',409,'VERSION_CONFLICT');
       const date = futureDate(data.date), start = text(data.start,'开始时间',5), end = text(data.end,'结束时间',5);
       requireValue(/^([01]\d|2[0-3]):[0-5]\d$/.test(start) && /^([01]\d|2[0-3]):[0-5]\d$/.test(end) && start < end, '时间段无效');
-      const capacity = number(data.capacity,'测试容量',1);
+      const capacity = number(data.capacity,'人数上限',1);
       requireValue(capacity >= (prev?.confirmed_count || 0), '容量不能低于已确认人数',409,'CAPACITY_FULL');
       requireValue(Array.isArray(data.packageIds) && data.packageIds.length > 0, '请选择适用套餐');
       for (const pid of data.packageIds) requireValue(this.content(pid,false).kind === 'package', '关联套餐无效');
       if(prev?.confirmed_count>0)requireValue(date===prev.date && start===prev.start && end===prev.end && JSON.stringify([...data.packageIds].sort())===JSON.stringify([...prev.package_ids].sort()),'已有确认或历史接待记录的场次不能修改日期、时段或适用套餐，请建立新场次',409,'SLOT_HAS_BOOKINGS');
-      const note = text(data.note || '','测试接待说明',1500,true);
+      const note = text(data.note || '','接待说明',1500,true);
       const key = slotId || randomUUID();
       if (prev) this.db.prepare('UPDATE slots SET date=?,start=?,end=?,capacity=?,package_ids=?,paused=?,note=?,version=version+1 WHERE id=?').run(date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note,key);
       else this.db.prepare('INSERT INTO slots VALUES (?,?,?,?,?,?,?, ?,1)').run(key,date,start,end,capacity,JSON.stringify(data.packageIds),+!!data.paused,note);
@@ -148,7 +149,7 @@ export class Service {
         : this.content(data.packageId);
       requireValue(pkg.kind === 'package','请选择研学套餐');
       const site = this.listContent({kind:'site'})[0];
-      requireValue(site?.bookingEnabled === true,'测试预约尚未开放，请联系项目管理员',409,'BOOKING_CLOSED');
+      requireValue(site?.bookingEnabled === true,'预约申请尚未开放，请联系工作人员',409,'BOOKING_CLOSED');
       if (requested.slotId) {
         const slot = this.slots(true).find(s=>s.id===requested.slotId);
         requireValue(slot && slot.date === requested.date && (pkg.id==='group-general' || slot.package_ids.includes(pkg.id)),'意向场次已暂停或不适用',409,'SLOT_UNAVAILABLE');
@@ -262,7 +263,7 @@ export class Service {
       let snapshot=null;
       if (data.contentId) {
         const c=this.content(data.contentId);
-        requireValue(['product','lesson','package'].includes(c.kind),'咨询关联对象无效');
+        requireValue(['product','lesson','package','spot'].includes(c.kind),'咨询关联对象无效');
         const spec=data.spec || '';
         if (spec) requireValue(c.kind==='product' && c.specs?.some(s=>s.name===spec),'所选规格不存在');
         snapshot={id:c.id,name:c.name,code:c.code || '',category:c.category || '',spec,version:c.version};

@@ -6,6 +6,10 @@ import { requireValue, permit, text, audit } from './security.mjs';
 import { now } from './db.mjs';
 
 export const MAX_UPLOAD=64*1024*1024; // Local validation limit; production budget and format policy remain pending.
+export function listMedia(db) {
+  const contents=db.prepare('SELECT id,kind,name,state,data FROM content').all().map(c=>({...c,data:JSON.parse(c.data)}));
+  return db.prepare('SELECT id,filename,mime,size,sha256,rights,duration,created_at FROM media ORDER BY created_at DESC').all().map(m=>({...m,usedBy:contents.filter(c=>c.data.mediaId===m.id || c.data.images?.includes(`/api/media/${m.id}`) || c.data.specs?.some(s=>s.images?.includes(`/api/media/${m.id}`))).map(({id,kind,name,state})=>({id,kind,name,state}))}));
+}
 function validHeader(mime,buffer) {
   if(mime==='video/mp4') return buffer.length>12 && buffer.subarray(4,8).toString()==='ftyp';
   if(mime==='video/webm') return buffer.subarray(0,4).toString('hex')==='1a45dfa3';
@@ -16,11 +20,11 @@ function validHeader(mime,buffer) {
 export async function upload(db,actor,request,uploads) {
   permit(actor,'content');
   const mime=request.headers['content-type']?.split(';')[0];
-  requireValue(['video/mp4','video/webm','image/png','image/jpeg'].includes(mime),'测试环境支持MP4、WebM、PNG、JPG',415);
+  requireValue(['video/mp4','video/webm','image/png','image/jpeg'].includes(mime),'支持MP4、WebM、PNG、JPG文件',415);
   const rights=text(decodeURIComponent(request.headers['x-media-rights'] || ''),'权属说明',800);
   const filename=text(decodeURIComponent(request.headers['x-file-name'] || ''),'文件名',180);
   const expected=Number(request.headers['content-length']);
-  requireValue(Number.isFinite(expected) && expected>0 && expected<=MAX_UPLOAD,'文件为空或超过本地测试上限64MB',413);
+  requireValue(Number.isFinite(expected) && expected>0 && expected<=MAX_UPLOAD,'文件为空或超过64MB上传上限',413);
   mkdirSync(uploads,{recursive:true,mode:0o700});
   const key=randomUUID(),storedName=key+({ 'video/mp4':'.mp4','video/webm':'.webm','image/png':'.png','image/jpeg':'.jpg' }[mime]);
   const path=join(uploads,storedName), out=createWriteStream(path,{flags:'wx',mode:0o600});
@@ -29,7 +33,7 @@ export async function upload(db,actor,request,uploads) {
   try {
     for await(const chunk of request) {
       size+=chunk.length;
-      requireValue(size<=MAX_UPLOAD && size<=expected,'文件大小超出声明或测试限制',413);
+      requireValue(size<=MAX_UPLOAD && size<=expected,'文件大小超出声明或上传限制',413);
       if(header.length<32) header=Buffer.concat([header,chunk]).subarray(0,32);
       if(failed) throw failed;
       hash.update(chunk);

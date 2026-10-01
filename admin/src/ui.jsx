@@ -7,10 +7,10 @@ export function Icon({name,size=20}) {
 export function Field({label,children,hint}) {return <label className="field"><span>{label}</span>{children}{hint?<small>{hint}</small>:null}</label>;}
 export function ErrorBox({error}) {return error?<div className="error" role="alert">{error}</div>:null;}
 export function Empty({children='暂无记录'}) {return <div className="empty">{children}</div>;}
-export function Drawer({title,onClose,children}) {useEffect(()=>{const f=e=>{if(e.key==='Escape')onClose();};document.addEventListener('keydown',f);return()=>document.removeEventListener('keydown',f);},[onClose]);return <aside className="drawer" role="dialog" aria-modal="false" aria-label={title}><div className="drawer-heading"><h2>{title}</h2><button className="icon-button" onClick={onClose} aria-label="关闭详情"><Icon name="close"/></button></div>{children}</aside>;}
+export function Drawer({title,onClose,children,closeDisabled=false}) {useEffect(()=>{const f=e=>{if(e.key==='Escape' && !closeDisabled)onClose();};document.addEventListener('keydown',f);return()=>document.removeEventListener('keydown',f);},[onClose,closeDisabled]);return <aside className="drawer" role="dialog" aria-modal="false" aria-label={title}><div className="drawer-heading"><h2>{title}</h2><button className="icon-button" disabled={closeDisabled} onClick={onClose} aria-label="关闭详情"><Icon name="close"/></button></div>{children}</aside>;}
 export function useRemote(path) {
   const [data,setData]=useState(null),[error,setError]=useState(''),[loading,setLoading]=useState(true),[tick,setTick]=useState(0);
-  useEffect(()=>{let alive=true;setLoading(true);setError('');api(path).then(r=>{if(alive)setData(r);}).catch(e=>{if(alive)setError(e.message);}).finally(()=>{if(alive)setLoading(false);});return()=>{alive=false;};},[path,tick]);
+  useEffect(()=>{let alive=true;setLoading(true);setError('');setData(null);api(path).then(r=>{if(alive)setData(r);}).catch(e=>{if(alive)setError(e.message);}).finally(()=>{if(alive)setLoading(false);});return()=>{alive=false;};},[path,tick]);
   return {data,error,loading,refresh:()=>setTick(x=>x+1)};
 }
 export function Status({state,labels}) {return <span className={`status ${state}`}>{labels[state] || state}</span>;}
