@@ -1,0 +1,22 @@
+{
+  "baselineHead": "43e273c91aa8a79535d107fb9e5c3f8fa561b45b",
+  "trackedBaselineFiles": 620,
+  "changedExistingFiles": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedBaselineFiles": 616,
+  "eventHandlersAndRouteDatasetsUnchanged": true,
+  "conditionalAndLoopExpressionsUnchanged": true,
+  "allSectionsFromServicesDownUnchanged": true,
+  "brandBarHeightOpacityLogoFontAndStickyBehaviorUnchanged": true,
+  "homepageOnlyBrandLabelChangedToQinlvWhite": true,
+  "captionBottomOnlyIncreasedBy20LogicalPx": true,
+  "existingGovernanceHistoryPreserved": true,
+  "apiModelsDatabaseSchemaBackendTsGlobalConfigAndOriginalsUnchanged": true,
+  "localContentUpdate": "None in this change: image/title/intro bindings and public content retained. No media upload or admin content update performed.",
+  "sourceAttachmentAndTypographyReferenceBytesPreserved": true,
+  "result": "passed"
+}

@@ -1,0 +1,45 @@
+{
+  "method": "Conservative WCAG sRGB contrast calculation: native text colors versus every pixel inside each original text bounding box on the native background-only capture, including spaces; no estimate from CSS gradient alone",
+  "logicalWidth": 390,
+  "nativeScreenshotPixels": [
+    618,
+    1334
+  ],
+  "screenshotScale": 1.5846153846153845,
+  "rows": [
+    {
+      "selector": ".home-hero-title",
+      "foregroundRgb": [
+        255,
+        253,
+        247
+      ],
+      "minimumContrastOverEntireBoundingBox": 4.9,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "selector": ".home-hero-subtitle",
+      "foregroundRgb": [
+        226,
+        200,
+        143
+      ],
+      "minimumContrastOverEntireBoundingBox": 3.75,
+      "threshold": 3.0,
+      "passed": true
+    },
+    {
+      "selector": ".home-hero-note",
+      "foregroundRgb": [
+        244,
+        236,
+        221
+      ],
+      "minimumContrastOverEntireBoundingBox": 7.69,
+      "threshold": 4.5,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
