@@ -1,0 +1,55 @@
+{
+  "method": "Temporary native render-state injection with existing site retained; no API failure induced and no persisted content change",
+  "stage": "inspect",
+  "states": [
+    {
+      "state": "loading",
+      "box": {
+        "size": {
+          "width": 358,
+          "height": 57.5
+        },
+        "offset": {
+          "left": 16,
+          "top": 71
+        }
+      },
+      "media": {
+        "size": {
+          "width": 390,
+          "height": 543
+        },
+        "offset": {
+          "left": 0,
+          "top": 89.5
+        }
+      },
+      "overlaps": true
+    },
+    {
+      "state": "error",
+      "box": {
+        "size": {
+          "width": 358,
+          "height": 115.5
+        },
+        "offset": {
+          "left": 16,
+          "top": 71
+        }
+      },
+      "media": {
+        "size": {
+          "width": 390,
+          "height": 543
+        },
+        "offset": {
+          "left": 0,
+          "top": 147.5
+        }
+      },
+      "overlaps": true
+    }
+  ],
+  "noSiteExistingBehaviorPreserved": true
+}

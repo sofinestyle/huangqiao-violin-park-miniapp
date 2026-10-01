@@ -4,11 +4,14 @@
 .home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.9); }
 .home-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
 .home-brand-name { flex: 1; min-width: 0; text-align: center; color: #E2C88F; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
-.home-hero { position: relative; height: 940rpx; min-height: 410px; overflow: hidden; background: var(--home-walnut); }
-.home-hero-image { position: absolute; right: 0; top: 0; display: block; width: 1000rpx; height: 100%; }
+.home-hero { position: relative; height: 940rpx; min-height: 410px; overflow: visible; background: var(--home-walnut); }
+.home-hero-media { position: absolute; top: -55px; left: 0; right: 0; height: calc(100% + 55px); overflow: hidden; background: var(--home-walnut); }
+.home-hero-image { position: absolute; right: 0; top: 0; display: block; width: calc(1000rpx + 60px); height: 100%; }
+.home .loading ~ .home-hero .home-hero-media, .home .error ~ .home-hero .home-hero-media { top: 0; height: 100%; }
+.home .loading ~ .home-hero .home-hero-image, .home .error ~ .home-hero .home-hero-image { width: 1000rpx; }
 .home-hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,12,8,0) 28%, rgba(20,12,8,.54) 48%, rgba(20,12,8,.94) 100%); pointer-events: none; }
 .home-hero-caption { position: absolute; bottom: 44rpx; left: var(--home-gutter); right: var(--home-gutter); color: var(--home-surface); }
-.home-hero-title { font-family: var(--home-serif); font-size: 60rpx; font-weight: 700; line-height: 1.25; }
+.home-hero-title { font-family: var(--home-serif); font-size: 60rpx; font-weight: 900; line-height: 1.25; }
 .home-hero-subtitle { margin-top: 0; color: #E2C88F; }
 .home-hero-note { margin-top: 24rpx; color: #F4ECDD; font-size: 28rpx; line-height: 1.8; text-indent: 2em; }
 .home-hero-links { display: flex; align-items: center; padding: 12rpx var(--home-gutter) 0; }

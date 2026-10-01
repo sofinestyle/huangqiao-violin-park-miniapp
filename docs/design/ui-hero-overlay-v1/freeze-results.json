@@ -1,0 +1,17 @@
+{
+  "baselineHead": "f47a418307e83b810f3d98026cef689e66781033",
+  "trackedBaselineFiles": 571,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedBaselineFiles": 569,
+  "eventHandlersAndRouteDatasetsUnchanged": true,
+  "conditionalAndLoopExpressionsUnchanged": true,
+  "allSectionsFromServicesDownUnchanged": true,
+  "brandBarStylesUnchanged": true,
+  "apiModelsDatabaseSchemaBackendTsGlobalConfigAndOriginalsUnchanged": true,
+  "localContentUpdate": "None in this change: image/title/intro bindings and public content retained. No media upload or admin content update performed.",
+  "sourceAttachmentAndTypographyReferenceBytesPreserved": true,
+  "result": "passed"
+}

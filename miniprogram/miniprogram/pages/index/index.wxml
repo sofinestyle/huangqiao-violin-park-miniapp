@@ -7,8 +7,10 @@
   <template is="state" data="{{loading,error}}"/>
   <block wx:if="{{site}}">
     <view class="home-hero">
-      <image class="home-hero-image" src="{{site.images[1]}}" mode="aspectFill"/>
-      <view class="home-hero-shade"/>
+      <view class="home-hero-media">
+        <image class="home-hero-image" src="{{site.images[1]}}" mode="aspectFill"/>
+        <view class="home-hero-shade"/>
+      </view>
       <view class="home-hero-caption">
         <view class="home-hero-title">{{site.heroTitle}}</view>
         <view class="home-hero-title home-hero-subtitle">{{site.heroSubtitle}}</view>
