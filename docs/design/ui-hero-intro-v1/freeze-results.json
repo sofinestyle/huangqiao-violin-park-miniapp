@@ -1,0 +1,17 @@
+{
+  "baselineHead": "6b6513a155be6a28c3f422f01ee8bf2efec47443",
+  "trackedBaselineFiles": 502,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedBaselineFiles": 500,
+  "eventHandlersAndRouteDatasetsUnchanged": true,
+  "conditionalAndLoopExpressionsUnchanged": true,
+  "allSectionsFromServicesDownUnchanged": true,
+  "brandBarStylesUnchanged": true,
+  "apiModelsDatabaseSchemaBackendTsGlobalConfigAndOriginalsUnchanged": true,
+  "localContentUpdate": "User-authorized background replacement through existing admin APIs: images[1] only, version 2 to 3. Existing local database media/audit content changed; no claim of unchanged database bytes. See content-update-result.json.",
+  "sourceAttachmentAndTypographyReferenceBytesPreserved": true,
+  "result": "passed"
+}

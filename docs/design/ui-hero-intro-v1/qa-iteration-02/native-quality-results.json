@@ -1,0 +1,131 @@
+{
+  "method": "Native element text, computed styles, geometry and actual scroll positions; temporary in-memory title/body hiding for background contrast capture; no persisted content changes",
+  "styles": [
+    {
+      "selector": ".home-hero-title",
+      "values": {
+        "font-family": "\"Songti SC\", STSong, \"Noto Serif CJK SC\", serif",
+        "font-size": "31px",
+        "font-weight": "700",
+        "line-height": "38.75px",
+        "color": "rgb(255, 253, 247)",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "size": {
+        "width": 358,
+        "height": 38.75
+      },
+      "offset": {
+        "left": 16,
+        "top": 305.5234375
+      }
+    },
+    {
+      "selector": ".home-hero-subtitle",
+      "values": {
+        "font-family": "\"Songti SC\", STSong, \"Noto Serif CJK SC\", serif",
+        "font-size": "31px",
+        "font-weight": "700",
+        "line-height": "38.75px",
+        "color": "rgb(226, 200, 143)",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "size": {
+        "width": 358,
+        "height": 38.75
+      },
+      "offset": {
+        "left": 16,
+        "top": 344.2734375
+      }
+    },
+    {
+      "selector": ".home-hero-note",
+      "values": {
+        "font-family": "-apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "25.2px",
+        "color": "rgb(244, 236, 221)",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "size": {
+        "width": 358,
+        "height": 125.9765625
+      },
+      "offset": {
+        "left": 16,
+        "top": 395.0234375
+      }
+    },
+    {
+      "selector": ".home-brand",
+      "values": {
+        "font-family": "-apple-system, \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "23.8px",
+        "color": "rgb(60, 44, 32)",
+        "background-color": "rgba(60, 43, 36, 0.9)"
+      },
+      "size": {
+        "width": 390,
+        "height": 55
+      },
+      "offset": {
+        "left": 0,
+        "top": 0
+      }
+    }
+  ],
+  "scrollChecks": [
+    {
+      "requestedScrollTop": 0,
+      "actualScrollTop": 0,
+      "offsetTop": 0,
+      "height": 55,
+      "viewportTop": 0,
+      "passed": true
+    },
+    {
+      "requestedScrollTop": 600,
+      "actualScrollTop": 600,
+      "offsetTop": 0,
+      "height": 55,
+      "viewportTop": 0,
+      "passed": true
+    },
+    {
+      "requestedScrollTop": 1189,
+      "actualScrollTop": 1189,
+      "offsetTop": 0,
+      "height": 55,
+      "viewportTop": 0,
+      "passed": true
+    }
+  ],
+  "fullIntroTextExact": true,
+  "fullIntroCharacters": 117,
+  "captionInsideHero": true,
+  "hero": {
+    "size": {
+      "width": 390,
+      "height": 488
+    },
+    "offset": {
+      "left": 0,
+      "top": 55
+    }
+  },
+  "caption": {
+    "size": {
+      "width": 358,
+      "height": 215.4765625
+    },
+    "offset": {
+      "left": 16,
+      "top": 305.5234375
+    }
+  },
+  "passed": true
+}

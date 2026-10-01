@@ -4,15 +4,15 @@
 .home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.9); }
 .home-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
 .home-brand-name { flex: 1; min-width: 0; text-align: center; color: #E2C88F; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
-.home-hero { position: relative; height: 700rpx; min-height: 298px; overflow: hidden; background: var(--home-walnut); }
-.home-hero-image { display: block; width: 100%; height: 100%; }
-.home-hero-shade { position: absolute; inset: 0; background: linear-gradient(110deg, rgba(20,12,8,.72), rgba(20,12,8,.2) 40%, rgba(20,12,8,0) 65%); pointer-events: none; }
-.home-hero-caption { position: absolute; top: 38rpx; left: var(--home-gutter); right: var(--home-gutter); color: var(--home-surface); }
-.home-hero-title { font-family: var(--home-serif); font-size: 56rpx; font-weight: 600; line-height: 1.3; }
-.home-hero-subtitle { margin-top: 8rpx; }
-.home-hero-rule { width: 52rpx; height: 2rpx; margin: 24rpx 0; background: var(--home-gold); }
-.home-hero-note { font-size: 26rpx; line-height: 1.65; }
-.home-hero-action { position: relative; display: inline-flex; align-items: center; justify-content: space-between; min-height: 44px; min-width: 44px; margin-top: 24rpx; padding: 0 20rpx; color: var(--home-walnut); font-size: 28rpx; font-weight: 500; line-height: 1.5; }
+.home-hero { position: relative; height: 940rpx; min-height: 410px; overflow: hidden; background: var(--home-walnut); }
+.home-hero-image { position: absolute; right: 0; top: 0; display: block; width: 1000rpx; height: 100%; }
+.home-hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,12,8,0) 28%, rgba(20,12,8,.54) 48%, rgba(20,12,8,.94) 100%); pointer-events: none; }
+.home-hero-caption { position: absolute; bottom: 44rpx; left: var(--home-gutter); right: var(--home-gutter); color: var(--home-surface); }
+.home-hero-title { font-family: var(--home-serif); font-size: 60rpx; font-weight: 700; line-height: 1.25; }
+.home-hero-subtitle { margin-top: 0; color: #E2C88F; }
+.home-hero-note { margin-top: 24rpx; color: #F4ECDD; font-size: 28rpx; line-height: 1.8; text-indent: 2em; }
+.home-hero-links { display: flex; align-items: center; padding: 12rpx var(--home-gutter) 0; }
+.home-hero-action { position: relative; display: inline-flex; align-items: center; justify-content: space-between; min-height: 44px; min-width: 44px; margin-top: 0; padding: 0 20rpx; color: var(--home-walnut); font-size: 28rpx; font-weight: 500; line-height: 1.5; }
 .home-hero-action::before { content: ""; position: absolute; inset: 6rpx 0; border-radius: 12rpx; background: rgba(247,243,233,.96); pointer-events: none; }
 .home-hero-action > text { position: relative; }
 .home-hero-action .home-arrow { margin-left: 12rpx; font-size: 26rpx; }

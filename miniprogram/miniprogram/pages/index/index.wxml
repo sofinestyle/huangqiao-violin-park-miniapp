@@ -12,10 +12,11 @@
       <view class="home-hero-caption">
         <view class="home-hero-title">{{site.heroTitle}}</view>
         <view class="home-hero-title home-hero-subtitle">{{site.heroSubtitle}}</view>
-        <view class="home-hero-rule"/>
-        <view class="home-hero-note">从一块云杉到一把成琴</view>
-        <view class="home-hero-action" data-page="tour" bindtap="open" hover-class="home-pressed"><text>探索园区</text><text class="home-arrow">→</text></view>
+        <view class="home-hero-note">{{site.intro}}</view>
       </view>
+    </view>
+    <view class="home-hero-links">
+      <view class="home-hero-action" data-page="tour" bindtap="open" hover-class="home-pressed"><text>探索园区</text><text class="home-arrow">→</text></view>
     </view>
     <view class="home-services">
       <view class="home-service-primary">

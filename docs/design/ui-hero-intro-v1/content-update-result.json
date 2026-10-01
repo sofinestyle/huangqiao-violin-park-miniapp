@@ -1,0 +1,18 @@
+{
+  "method": "Existing authenticated media upload and version-checked content update APIs; localhost only",
+  "beforeVersion": 2,
+  "afterVersion": 3,
+  "contentId": "site",
+  "changedBusinessContentFields": [
+    "images[1]"
+  ],
+  "oldImage": "/assets/hero-violin.jpg",
+  "newImage": "/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b",
+  "source": "docs/design/references/homepage-workshop-background-20261001.png",
+  "sourceBytes": 1877874,
+  "sourceSha256": "16b302c48c0b61b3ea2bea964fa28130e43acac67c14606c59feee88a75eeeb0",
+  "anonymousImageFetch": "passed, exact SHA-256 match",
+  "otherContentFieldsUnchanged": true,
+  "schemaApiLogicChanged": false,
+  "storage": "Existing ignored .local database and uploads; no database or credentials saved to Git"
+}
