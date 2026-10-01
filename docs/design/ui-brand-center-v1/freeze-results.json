@@ -1,0 +1,22 @@
+{
+  "baselineHead": "51b94bafdfa3c91abc72f4fa6760c0da0161a944",
+  "trackedBaselineFiles": 664,
+  "changedExistingFiles": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedBaselineFiles": 661,
+  "eventHandlersAndRouteDatasetsUnchanged": true,
+  "conditionalAndLoopExpressionsUnchanged": true,
+  "allSectionsFromServicesDownUnchanged": true,
+  "brandBarHeightOpacityLogoFontAndStickyBehaviorUnchanged": true,
+  "brandNameTextColorAndTypographyUnchanged": true,
+  "brandNamePositionOnlyChangedToFullBarCenter": true,
+  "heroCaptionPrevious20LogicalPxOffsetUnchanged": true,
+  "existingGovernanceHistoryPreserved": true,
+  "apiModelsDatabaseSchemaBackendTsGlobalConfigAndOriginalsUnchanged": true,
+  "localContentUpdate": "None in this change: image/title/intro bindings and public content retained. No media upload or admin content update performed.",
+  "sourceAttachmentAndTypographyReferenceBytesPreserved": true,
+  "result": "passed"
+}

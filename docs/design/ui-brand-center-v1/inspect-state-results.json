@@ -1,0 +1,71 @@
+{
+  "method": "Temporary native render-state injection with existing site retained; no API failure induced and no persisted content change",
+  "stage": "verify",
+  "states": [
+    {
+      "state": "loading",
+      "box": {
+        "size": {
+          "width": 358,
+          "height": 57.5
+        },
+        "offset": {
+          "left": 16,
+          "top": -435.5
+        }
+      },
+      "media": {
+        "size": {
+          "width": 390,
+          "height": 488
+        },
+        "offset": {
+          "left": 0,
+          "top": -362
+        }
+      },
+      "overlaps": false,
+      "brand": {
+        "centerX": 195,
+        "barCenterX": 195,
+        "passed": true
+      }
+    },
+    {
+      "state": "error",
+      "box": {
+        "size": {
+          "width": 358,
+          "height": 115.5
+        },
+        "offset": {
+          "left": 16,
+          "top": -493.5
+        }
+      },
+      "media": {
+        "size": {
+          "width": 390,
+          "height": 488
+        },
+        "offset": {
+          "left": 0,
+          "top": -362
+        }
+      },
+      "overlaps": false,
+      "brand": {
+        "centerX": 195,
+        "barCenterX": 195,
+        "passed": true
+      }
+    }
+  ],
+  "actualRetryTapPassed": true,
+  "noSiteExistingBehaviorPreserved": true,
+  "emptyBrand": {
+    "centerX": 195,
+    "barCenterX": 195,
+    "passed": true
+  }
+}

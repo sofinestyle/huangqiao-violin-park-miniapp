@@ -3,7 +3,7 @@
 .home { background: var(--home-bg); color: var(--home-text); font-family: var(--home-sans); line-height: 1.7; }
 .home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.9); }
 .home-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
-.home-brand-name { flex: 1; min-width: 0; text-align: center; color: #FFFFFF; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
+.home-brand-name { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; text-align: center; color: #FFFFFF; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
 .home-hero { position: relative; height: 940rpx; min-height: 410px; overflow: visible; background: var(--home-walnut); }
 .home-hero-media { position: absolute; top: -55px; left: 0; right: 0; height: calc(100% + 55px); overflow: hidden; background: var(--home-walnut); }
 .home-hero-image { position: absolute; right: 0; top: 0; display: block; width: calc(1000rpx + 60px); height: 100%; }
