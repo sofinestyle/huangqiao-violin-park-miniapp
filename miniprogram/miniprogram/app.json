@@ -1,14 +1,58 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/violin/index",
+    "pages/gifts/index",
+    "pages/study/index",
+    "pages/mine/index",
+    "pages/product/index",
+    "pages/package/index",
+    "pages/booking/index",
+    "pages/records/index",
+    "pages/record/index",
+    "pages/consult/index",
+    "pages/teaching/index",
+    "pages/lesson/index",
+    "pages/tour/index",
+    "pages/spot/index",
+    "pages/about/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTitleText": "黄桥乐器文化产业园",
+    "navigationBarBackgroundColor": "#f7f3e9",
+    "backgroundColor": "#f7f3e9"
+  },
+  "tabBar": {
+    "color": "#8a7c69",
+    "selectedColor": "#4b3325",
+    "backgroundColor": "#fffdf7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/violin/index",
+        "text": "提琴"
+      },
+      {
+        "pagePath": "pages/gifts/index",
+        "text": "文创"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "text": "研学"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
 }

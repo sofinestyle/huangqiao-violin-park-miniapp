@@ -39,3 +39,6 @@ backups/
 *.sqlite-wal
 miniprogram/miniprogram/**/*.js
 miniprogram/miniprogram/**/*.js.map
+
+# Restored isolated copies must never enter Git
+.local-restored*/

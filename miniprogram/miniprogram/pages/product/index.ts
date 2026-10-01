@@ -1,0 +1,2 @@
+import {detailPage} from '../../lib/detail-page';import {go} from '../../lib/api';
+Page({...detailPage(),data:{...detailPage().data,selectedSpec:0},select(e:WechatMiniprogram.TouchEvent){this.setData({selectedSpec:Number(e.currentTarget.dataset.index)});},consult(){const spec=this.data.item?.specs?.[this.data.selectedSpec]?.name || '';go(`/pages/consult/index?id=${this.data.id}&spec=${encodeURIComponent(spec)}`);}});

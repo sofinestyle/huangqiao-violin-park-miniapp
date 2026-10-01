@@ -1,27 +1,4 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
-  </view>
-</scroll-view>
+<import src="../../templates/state.wxml"/><view class="brand-bar"><image src="/assets/yorray-logo.png" mode="aspectFit"/><text>黄桥乐器文化产业园</text></view><view class="test-notice">本地测试资料 · 不用于真实接待</view><template is="state" data="{{loading,error}}"/>
+<block wx:if="{{site}}"><view class="hero"><image src="{{site.images[1]}}" mode="aspectFill"/><view class="shade"/><view class="caption"><view class="h1">{{site.heroTitle}}</view><view class="h1">{{site.heroSubtitle}}</view></view></view><view class="page"><view class="intro">{{site.intro}}</view><view class="quick-grid"><view class="entry" data-page="violin" bindtap="tab">提琴选购<view class="sub">展示与咨询</view></view><view class="entry" data-page="gifts" bindtap="tab">文创伴手礼<view class="sub">把琴音带回家</view></view><view class="entry" data-page="study" bindtap="tab">研学套餐<view class="sub">人工确认安排</view></view><view class="entry" data-page="teaching" bindtap="open">教学课堂<view class="sub">图文与公开视频</view></view><view class="entry" data-page="tour" bindtap="open">点位导览<view class="sub">琴音之旅</view></view><view class="entry" data-page="consult" bindtap="open">联系咨询<view class="sub">留下您的需求</view></view></view>
+<view class="section"><view class="section-title"><view class="h2">01 园区探索</view><text class="muted" data-page="tour" bindtap="open">完整导览</text></view><view class="h3">琴音之旅·读懂一把琴的诞生</view><view wx:for="{{spots}}" wx:key="id" class="spot-row" data-page="spot" data-id="{{item.id}}" bindtap="open"><image src="{{item.cover}}" mode="aspectFill"/><view><view class="h3">{{item.name}}</view><view class="muted">{{item.opening}}</view></view></view></view>
+<view class="section" wx:if="{{packages.length}}"><view class="h2">02 热门推荐</view><view class="muted">初次到访，从这两条路线开始</view><view class="card" wx:for="{{packages}}" wx:key="id" data-page="package" data-id="{{item.id}}" bindtap="open"><image class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="card-body"><view class="h3">{{item.name}}</view><view class="muted">{{item.durationNote}}</view><view class="price">亲子原稿参考价 ¥{{item.referenceParentPrice}} / 组（1大1小）</view></view></view></view><view class="stats"><view class="stat"><text class="stat-value">{{stats.packages}}</text><view class="muted">已发布测试套餐</view></view><view class="stat"><text class="stat-value">{{stats.gifts}}</text><view class="muted">已发布测试文创</view></view><view class="stat"><text class="stat-value">{{stats.series}}</text><view class="muted">测试提琴系列</view></view></view><view class="support-note" wx:if="{{site.notice}}">{{site.notice}}</view><button class="text-button" data-page="about" bindtap="open">关于我们与服务说明</button></view></block>
