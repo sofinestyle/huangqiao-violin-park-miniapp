@@ -18,6 +18,12 @@
 
 2026年10月1日用户报告CR002人工验收通过，对应功能版本`e172de4`；已补记验收并下架独立联调活动，保留场次和操作记录。真机、正式身份、云环境及上线验收仍按现有边界推进。
 
+## 当前 UI/UX 阶段
+
+2026年10月1日进入视觉升级准备，本轮仅完成现状检查、Skill配置、首页原生截图Audit及设计文档，未修改首页或业务代码。已确认首页效果图作为视觉方向参考，不要求像素复制；其价格、数量、旧“提琴”导航等不覆盖现行业务。精确设计参数与布局仍为v0.1提案，须人工确认后才能进入UI Phase 1。
+
+请先审阅[Design System](docs/DESIGN_SYSTEM.md)、[首页Audit及本轮截图](docs/design/HOME_UI_AUDIT.md)、[技术现状、Skill配置及首页实施计划](docs/UI_UX_REFACTOR_PLAN.md)和[项目UI Skill](skills/violin-park-ui-design/SKILL.md)。Skill唯一源保存在`skills/`，由`.agents/skills/violin-park-ui-design`链接供项目发现；不重复安装同功能插件。UI阶段冻结业务，下一步仅在确认后改首页WXML/WXSS，不自动推进其他页面或后台。
+
 ## 本机启动
 
 需要 Node.js 22.13或以上（当前实际验证环境为26.3.1）、npm、已安装的微信开发者工具。

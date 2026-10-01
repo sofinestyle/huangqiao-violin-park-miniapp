@@ -1,0 +1,20 @@
+{
+  "docs/design-reference/homepage-target-v1.png": {
+    "bytes": 2034691,
+    "dimensions": [
+      865,
+      1819
+    ],
+    "sha256": "3a38cd2a58139a6611dfd3f166da7d48d37d1fe499463757342231bf3b5515d1",
+    "source": "User supplied; target-v1 explicitly identified in current conversation; preserved unchanged"
+  },
+  "docs/design-reference/homepage-current.png": {
+    "bytes": 215383,
+    "dimensions": [
+      334,
+      680
+    ],
+    "sha256": "47ad0a06a1a49e9764ec663d8e08fb7f02d67e650bd51940adf93bf90eacdc01",
+    "source": "User supplied; target-v1 explicitly identified in current conversation; preserved unchanged"
+  }
+}

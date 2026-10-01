@@ -1,0 +1,34 @@
+{
+  "colors": {
+    "bg": "#F7F3E9",
+    "surface": "#FFFDF7",
+    "walnut": "#3C2B24",
+    "body": "#3C2C20",
+    "secondary": "#6C5948",
+    "gold": "#B99A68",
+    "goldText": "#80613B",
+    "amber": "#965A32",
+    "line": "#E5DCCB",
+    "success": "#42644D",
+    "error": "#A13E35",
+    "info": "#456270",
+    "oldMuted": "#8A795F",
+    "oldGridSub": "#947F5E",
+    "oldFooter": "#967548"
+  },
+  "ratios": {
+    "walnut/bg": 12.124,
+    "secondary/bg": 5.997,
+    "gold/bg": 2.404,
+    "goldText/bg": 5.135,
+    "amber/bg": 4.98,
+    "surface/walnut": 13.207,
+    "oldMuted/bg": 3.805,
+    "oldGridSub/surface": 3.784,
+    "oldFooter/bg": 3.84,
+    "success/bg": 5.994,
+    "error/bg": 5.821,
+    "info/bg": 5.86
+  },
+  "method": "WCAG relative sRGB luminance; opaque color pairs only; no rounding in pass decisions"
+}

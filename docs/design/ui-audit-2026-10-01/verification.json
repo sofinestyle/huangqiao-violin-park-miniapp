@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-01",
+  "baseline_commit": "4815c6853db4327eebe1b0c9a14d00b2c55d58c6",
+  "frozen_entries": 138,
+  "engineering_entries": 137,
+  "changed_frozen_files": [],
+  "changed_reference_files": [],
+  "original_verification": "25 files unchanged via npm run verify:originals",
+  "local_document_links_checked": 47,
+  "broken_document_links": [],
+  "skill_discovery_link": "../../skills/violin-park-ui-design",
+  "skill_resolves_to_expected": true,
+  "scope": "Docs, skills and evidence only; no business or homepage implementation",
+  "not_executed": [
+    "business regression tests and build (documentation-only change)",
+    "WeChat real device checks",
+    "loading/empty/error interactions",
+    "screen reader checks",
+    "new Skill visibility in current selector"
+  ],
+  "skill_validation": {
+    "result": "passed",
+    "validator": "unchanged skill-creator quick_validate.py rules",
+    "yaml_parser": "installed Ruby Psych 3.1.0, via temporary in-memory Python adapter; PyYAML unavailable",
+    "runtime_dependency_installed": false
+  },
+  "git_diff_check": "passed",
+  "freeze_manifest": "frozen-files.json"
+}

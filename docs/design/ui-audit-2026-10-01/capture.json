@@ -1,0 +1,38 @@
+{
+  "route": "pages/index/index",
+  "windowWidth": 390,
+  "windowHeight": 671,
+  "source": "WeChat developer tools simulator",
+  "sitePresent": true,
+  "spotCount": 4,
+  "packageCount": 2,
+  "sections": [
+    {
+      "name": "01-home-top",
+      "scrollTop": 0
+    },
+    {
+      "name": "02-home-services",
+      "scrollTop": 450
+    },
+    {
+      "name": "03-home-explore",
+      "scrollTop": 850
+    },
+    {
+      "name": "04-home-recommendations",
+      "scrollTop": 1085
+    }
+  ],
+  "errors": [],
+  "sizes": {
+    "grid": {
+      "width": 358,
+      "height": 139.1875
+    },
+    "guide": {
+      "width": 48,
+      "height": 20.3984375
+    }
+  }
+}
