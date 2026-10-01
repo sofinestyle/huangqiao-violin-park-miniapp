@@ -1,0 +1,65 @@
+{
+  "xmlParsePassed": true,
+  "dataBindingsUnchanged": true,
+  "conditionsAndLoopsUnchanged": true,
+  "originalEventBindingsRetained": [
+    [
+      "instruments",
+      null,
+      "tab"
+    ],
+    [
+      "gifts",
+      null,
+      "tab"
+    ],
+    [
+      "study",
+      null,
+      "tab"
+    ],
+    [
+      "teaching",
+      null,
+      "open"
+    ],
+    [
+      "tour",
+      null,
+      "open"
+    ],
+    [
+      "consult",
+      null,
+      "open"
+    ],
+    [
+      "tour",
+      null,
+      "open"
+    ],
+    [
+      "spot",
+      "{{item.id}}",
+      "open"
+    ],
+    [
+      "package",
+      "{{item.id}}",
+      "open"
+    ],
+    [
+      "about",
+      null,
+      "open"
+    ]
+  ],
+  "addedEventBinding": [
+    "tour",
+    null,
+    "open"
+  ],
+  "tokenImports": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "mode": "after",
+  "route": "pages/index/index",
+  "system": {
+    "windowWidth": 375,
+    "windowHeight": 555,
+    "screenWidth": 375,
+    "screenHeight": 667,
+    "statusBarHeight": 20,
+    "pixelRatio": 2,
+    "model": "iPhone 6/7/8"
+  },
+  "size": {
+    "width": 375,
+    "height": 2473.609375
+  },
+  "site": {
+    "heroTitle": "一把琴的旅程",
+    "heroSubtitle": "从这里出发",
+    "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+    "images": [
+      "http://127.0.0.1:8787/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/assets/hero-violin.jpg"
+    ]
+  },
+  "spotCount": 4,
+  "packageCount": 2,
+  "measures": [
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 56.796875
+      },
+      "offset": {
+        "left": 56,
+        "top": 502
+      }
+    },
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 56.796875
+      },
+      "offset": {
+        "left": 213.5,
+        "top": 502
+      }
+    },
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 53.796875
+      },
+      "offset": {
+        "left": 56,
+        "top": 583.796875
+      }
+    },
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 53.796875
+      },
+      "offset": {
+        "left": 213.5,
+        "top": 583.796875
+      }
+    },
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 53.796875
+      },
+      "offset": {
+        "left": 56,
+        "top": 662.59375
+      }
+    },
+    {
+      "selector": ".home-entry",
+      "size": {
+        "width": 145.5,
+        "height": 53.796875
+      },
+      "offset": {
+        "left": 213.5,
+        "top": 662.59375
+      }
+    },
+    {
+      "selector": ".home-guide-link",
+      "size": {
+        "width": 72,
+        "height": 44
+      },
+      "offset": {
+        "left": 287,
+        "top": 989.5390625
+      }
+    },
+    {
+      "selector": ".home-hero-action",
+      "size": {
+        "width": 375,
+        "height": 44
+      },
+      "offset": {
+        "left": 0,
+        "top": 438
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 343,
+        "height": 288.9921875
+      },
+      "offset": {
+        "left": 16,
+        "top": 1074.8359375
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 343,
+        "height": 100
+      },
+      "offset": {
+        "left": 16,
+        "top": 1363.828125
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 343,
+        "height": 100
+      },
+      "offset": {
+        "left": 16,
+        "top": 1463.828125
+      }
+    },
+    {
+      "selector": ".home-spot",
+      "size": {
+        "width": 343,
+        "height": 100
+      },
+      "offset": {
+        "left": 16,
+        "top": 1563.828125
+      }
+    },
+    {
+      "selector": ".home-package",
+      "size": {
+        "width": 343,
+        "height": 269.9921875
+      },
+      "offset": {
+        "left": 16,
+        "top": 1785.625
+      }
+    },
+    {
+      "selector": ".home-package",
+      "size": {
+        "width": 343,
+        "height": 269.9921875
+      },
+      "offset": {
+        "left": 16,
+        "top": 2071.6171875
+      }
+    },
+    {
+      "selector": ".home-about",
+      "size": {
+        "width": 343,
+        "height": 44
+      },
+      "offset": {
+        "left": 16,
+        "top": 2405.609375
+      }
+    },
+    {
+      "selector": ".home-section-title",
+      "size": {
+        "width": 211.3515625,
+        "height": 27
+      },
+      "offset": {
+        "left": 63.6484375,
+        "top": 1007.0390625
+      }
+    },
+    {
+      "selector": ".home-section-title",
+      "size": {
+        "width": 295.3515625,
+        "height": 27
+      },
+      "offset": {
+        "left": 63.6484375,
+        "top": 1713.828125
+      }
+    },
+    {
+      "selector": ".home-brand-name",
+      "size": {
+        "width": 144,
+        "height": 21.59375
+      },
+      "offset": {
+        "left": 84,
+        "top": 18.203125
+      }
+    }
+  ],
+  "segments": [
+    {
+      "path": "after-375-segment-00.png",
+      "scrollTop": 0
+    },
+    {
+      "path": "after-375-segment-01.png",
+      "scrollTop": 444
+    },
+    {
+      "path": "after-375-segment-02.png",
+      "scrollTop": 888
+    },
+    {
+      "path": "after-375-segment-03.png",
+      "scrollTop": 1332
+    },
+    {
+      "path": "after-375-segment-04.png",
+      "scrollTop": 1776
+    },
+    {
+      "path": "after-375-segment-05.png",
+      "scrollTop": 1918.5
+    }
+  ],
+  "errors": []
+}

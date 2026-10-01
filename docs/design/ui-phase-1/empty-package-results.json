@@ -1,0 +1,6 @@
+{
+  "method": "Official SDK this.origin reads real public response, removes package rows only from temporary response; no persistence changes",
+  "passed": true,
+  "entryCount": 6,
+  "packageCount": 0
+}

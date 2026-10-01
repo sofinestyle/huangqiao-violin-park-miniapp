@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "method": "User-assisted actual clicks in WeChat Developer Tools; not inferred from routing APIs",
+  "requestedTests": [
+    "native tab 首页",
+    "native tab 乐器",
+    "native tab 文创",
+    "native tab 研学",
+    "native tab 我的",
+    "native top-left back 教学",
+    "native top-left back 任一点位",
+    "native top-left back 任一推荐",
+    "native top-left back 关于我们"
+  ],
+  "userReply": "导航与返回均通过，430已切换",
+  "passed": true,
+  "scope": "Native controls and representative return flows in simulator; not whole UI manual acceptance or physical-device testing."
+}

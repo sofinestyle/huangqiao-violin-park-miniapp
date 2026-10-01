@@ -1,0 +1,62 @@
+{
+  "method": "Independent actual Element.tap then explicit wx.navigateBack; no screenshot before return",
+  "tests": [
+    {
+      "selector": ".home-entry[data-page=\"teaching\"]",
+      "before": [
+        "pages/index/index",
+        "pages/teaching/index"
+      ],
+      "response": {
+        "errMsg": "navigateBack:ok"
+      },
+      "after": [
+        "pages/index/index"
+      ],
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-1\"]",
+      "before": [
+        "pages/index/index",
+        "pages/spot/index"
+      ],
+      "response": {
+        "errMsg": "navigateBack:ok"
+      },
+      "after": [
+        "pages/index/index"
+      ],
+      "passed": true
+    },
+    {
+      "selector": ".home-package[data-id=\"package-1\"]",
+      "before": [
+        "pages/index/index",
+        "pages/package/index"
+      ],
+      "response": {
+        "errMsg": "navigateBack:ok"
+      },
+      "after": [
+        "pages/index/index"
+      ],
+      "passed": true
+    },
+    {
+      "selector": ".home-about",
+      "before": [
+        "pages/index/index",
+        "pages/about/index"
+      ],
+      "response": {
+        "errMsg": "navigateBack:ok"
+      },
+      "after": [
+        "pages/index/index"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

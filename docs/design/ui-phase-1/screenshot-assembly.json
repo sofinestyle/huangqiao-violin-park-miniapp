@@ -1,0 +1,126 @@
+[
+  {
+    "width": 320,
+    "sourceFrames": [
+      "after-320-segment-00.png",
+      "after-320-segment-01.png",
+      "after-320-segment-02.png",
+      "after-320-segment-03.png",
+      "after-320-segment-04.png",
+      "after-320-segment-05.png"
+    ],
+    "contentCropTop": 126,
+    "contentCropHeight": 895,
+    "capturePixelSize": [
+      628,
+      1114
+    ],
+    "scale": 1.9625,
+    "scrollOffsets": [
+      0,
+      364,
+      728,
+      1092,
+      1456,
+      1640
+    ],
+    "output": "homepage-after-320-full.png",
+    "pixelSize": [
+      628,
+      4113
+    ],
+    "method": "Original native scroll pixels aligned by measured scrollTop; repeated system bars removed, no UI redrawn or invented."
+  },
+  {
+    "width": 375,
+    "sourceFrames": [
+      "after-375-segment-00.png",
+      "after-375-segment-01.png",
+      "after-375-segment-02.png",
+      "after-375-segment-03.png",
+      "after-375-segment-04.png",
+      "after-375-segment-05.png"
+    ],
+    "contentCropTop": 127,
+    "contentCropHeight": 1101,
+    "capturePixelSize": [
+      744,
+      1322
+    ],
+    "scale": 1.984,
+    "scrollOffsets": [
+      0,
+      444,
+      888,
+      1332,
+      1776,
+      1918.5
+    ],
+    "output": "homepage-after-375-full.png",
+    "pixelSize": [
+      744,
+      4908
+    ],
+    "method": "Original native scroll pixels aligned by measured scrollTop; repeated system bars removed, no UI redrawn or invented."
+  },
+  {
+    "width": 390,
+    "sourceFrames": [
+      "after-390-segment-00.png",
+      "after-390-segment-01.png",
+      "after-390-segment-02.png",
+      "after-390-segment-03.png",
+      "after-390-segment-04.png"
+    ],
+    "contentCropTop": 144,
+    "contentCropHeight": 1063,
+    "capturePixelSize": [
+      618,
+      1334
+    ],
+    "scale": 1.5846153846153845,
+    "scrollOffsets": [
+      0,
+      536,
+      1072,
+      1608,
+      1853.5
+    ],
+    "output": "homepage-after-390-full.png",
+    "pixelSize": [
+      618,
+      4001
+    ],
+    "method": "Original native scroll pixels aligned by measured scrollTop; repeated system bars removed, no UI redrawn or invented."
+  },
+  {
+    "width": 430,
+    "sourceFrames": [
+      "after-430-segment-00.png",
+      "after-430-segment-01.png",
+      "after-430-segment-02.png",
+      "after-430-segment-03.png",
+      "after-430-segment-04.png"
+    ],
+    "contentCropTop": 139,
+    "contentCropHeight": 1070,
+    "capturePixelSize": [
+      612,
+      1324
+    ],
+    "scale": 1.4232558139534883,
+    "scrollOffsets": [
+      0,
+      601,
+      1202,
+      1803,
+      2018.5
+    ],
+    "output": "homepage-after-430-full.png",
+    "pixelSize": [
+      612,
+      3943
+    ],
+    "method": "Original native scroll pixels aligned by measured scrollTop; repeated system bars removed, no UI redrawn or invented."
+  }
+]

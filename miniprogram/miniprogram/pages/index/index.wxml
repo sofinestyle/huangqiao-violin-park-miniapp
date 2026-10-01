@@ -1,4 +1,112 @@
-<import src="../../templates/state.wxml"/><view class="brand-bar"><image src="/assets/yorray-logo.png" mode="aspectFit"/><text>黄桥乐器文化产业园</text></view><template is="state" data="{{loading,error}}"/>
-<block wx:if="{{site}}"><view class="hero"><image src="{{site.images[1]}}" mode="aspectFill"/><view class="shade"/><view class="caption"><view class="h1">{{site.heroTitle}}</view><view class="h1">{{site.heroSubtitle}}</view></view></view><view class="page"><view class="intro">{{site.intro}}</view><view class="quick-grid"><view class="entry" data-page="instruments" bindtap="tab">乐器展示<view class="sub">展示与咨询</view></view><view class="entry" data-page="gifts" bindtap="tab">文创伴手礼<view class="sub">把琴音带回家</view></view><view class="entry" data-page="study" bindtap="tab">研学套餐<view class="sub">人工确认安排</view></view><view class="entry" data-page="teaching" bindtap="open">教学课堂<view class="sub">图文与公开视频</view></view><view class="entry" data-page="tour" bindtap="open">点位导览<view class="sub">琴音之旅</view></view><view class="entry" data-page="consult" bindtap="open">联系咨询<view class="sub">留下您的需求</view></view></view>
-<view class="section"><view class="section-title"><view class="h2">01 园区探索</view><text class="muted" data-page="tour" bindtap="open">完整导览</text></view><view class="h3">琴音之旅·读懂一把琴的诞生</view><view wx:for="{{spots}}" wx:key="id" class="spot-row" data-page="spot" data-id="{{item.id}}" bindtap="open"><image src="{{item.cover}}" mode="aspectFill"/><view><view class="h3">{{item.name}}</view><view class="muted">{{item.opening}}</view></view></view></view>
-<view class="section" wx:if="{{packages.length}}"><view class="h2">02 热门推荐</view><view class="muted">初次到访，从这两条路线开始</view><view class="card" wx:for="{{packages}}" wx:key="id" data-page="package" data-id="{{item.id}}" bindtap="open"><image class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="card-body"><view class="h3">{{item.name}}</view><view class="muted">{{item.durationNote}}</view></view></view></view><view class="support-note" wx:if="{{site.notice}}">{{site.notice}}</view><button class="text-button" data-page="about" bindtap="open">关于我们与服务说明</button></view></block>
+<import src="../../templates/state.wxml"/>
+<view class="home">
+  <view class="home-brand">
+    <image class="home-logo" src="/assets/yorray-logo.png" mode="aspectFit"/>
+    <text class="home-brand-name">黄桥乐器文化产业园</text>
+  </view>
+  <template is="state" data="{{loading,error}}"/>
+  <block wx:if="{{site}}">
+    <view class="home-hero">
+      <image class="home-hero-image" src="{{site.images[1]}}" mode="aspectFill"/>
+      <view class="home-hero-shade"/>
+      <view class="home-hero-caption">
+        <view class="home-hero-title">{{site.heroTitle}}</view>
+        <view class="home-hero-title home-hero-subtitle">{{site.heroSubtitle}}</view>
+        <view class="home-hero-rule"/>
+      </view>
+    </view>
+    <view class="home-hero-action" data-page="tour" bindtap="open" hover-class="home-pressed-dark">
+      <text>探索园区</text><text class="home-arrow">↗</text>
+    </view>
+    <view class="home-services">
+      <view class="home-service-group">
+        <text class="home-service-label">产品</text>
+        <view class="home-service-pair">
+          <view class="home-entry home-entry-featured" data-page="instruments" bindtap="tab" hover-class="home-pressed">
+            <view class="home-entry-title">乐器展示<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">展示与咨询</view>
+          </view>
+          <view class="home-entry" data-page="gifts" bindtap="tab" hover-class="home-pressed">
+            <view class="home-entry-title">文创伴手礼<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">把琴音带回家</view>
+          </view>
+        </view>
+      </view>
+      <view class="home-service-group">
+        <text class="home-service-label">体验</text>
+        <view class="home-service-pair">
+          <view class="home-entry" data-page="study" bindtap="tab" hover-class="home-pressed">
+            <view class="home-entry-title">研学套餐<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">人工确认安排</view>
+          </view>
+          <view class="home-entry" data-page="teaching" bindtap="open" hover-class="home-pressed">
+            <view class="home-entry-title">教学课堂<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">图文与公开视频</view>
+          </view>
+        </view>
+      </view>
+      <view class="home-service-group">
+        <text class="home-service-label">服务</text>
+        <view class="home-service-pair">
+          <view class="home-entry" data-page="tour" bindtap="open" hover-class="home-pressed">
+            <view class="home-entry-title">点位导览<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">琴音之旅</view>
+          </view>
+          <view class="home-entry" data-page="consult" bindtap="open" hover-class="home-pressed">
+            <view class="home-entry-title">联系咨询<text class="home-entry-arrow">↗</text></view>
+            <view class="home-entry-note">留下您的需求</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="home-story">
+      <view class="home-story-heading">关于园区</view>
+      <view class="home-story-intro">{{site.intro}}</view>
+    </view>
+    <view class="home-section home-explore">
+      <view class="home-section-heading">
+        <text class="home-section-number">01</text>
+        <view class="home-section-titles">
+          <view class="home-section-english">EXPLORE THE PARK</view>
+          <view class="home-section-title">园区探索</view>
+        </view>
+        <view class="home-guide-link" data-page="tour" bindtap="open" hover-class="home-pressed">完整导览<text class="home-arrow">↗</text></view>
+      </view>
+      <view class="home-section-note">琴音之旅·读懂一把琴的诞生</view>
+      <view class="home-spots">
+        <view wx:for="{{spots}}" wx:key="id" class="home-spot" data-page="spot" data-id="{{item.id}}" bindtap="open" hover-class="home-pressed">
+          <image class="home-spot-image" src="{{item.cover}}" mode="aspectFill"/>
+          <view class="home-spot-copy">
+            <view class="home-item-title">{{item.name}}</view>
+            <view class="home-item-note">{{item.opening}}</view>
+          </view>
+          <text class="home-spot-arrow home-arrow">↗</text>
+        </view>
+      </view>
+    </view>
+    <view class="home-section home-recommended" wx:if="{{packages.length}}">
+      <view class="home-section-heading">
+        <text class="home-section-number">02</text>
+        <view class="home-section-titles">
+          <view class="home-section-english">RECOMMENDED</view>
+          <view class="home-section-title">热门推荐</view>
+        </view>
+      </view>
+      <view class="home-section-note">初次到访，从这两条路线开始</view>
+      <view class="home-package" wx:for="{{packages}}" wx:key="id" data-page="package" data-id="{{item.id}}" bindtap="open" hover-class="home-pressed">
+        <image class="home-package-image" src="{{item.cover}}" mode="aspectFill"/>
+        <view class="home-package-body">
+          <view class="home-package-copy">
+            <view class="home-item-title">{{item.name}}</view>
+            <view class="home-item-note">{{item.durationNote}}</view>
+          </view>
+          <view class="home-package-detail">查看详情<text class="home-arrow">↗</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="home-footer">
+      <view class="home-notice" wx:if="{{site.notice}}">{{site.notice}}</view>
+      <button class="home-about" data-page="about" bindtap="open" hover-class="home-pressed-dark">关于我们与服务说明<text class="home-arrow">↗</text></button>
+    </view>
+  </block>
+</view>

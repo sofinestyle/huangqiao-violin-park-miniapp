@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-01",
+  "approvedBaseline": "cadb85f9118f9d0af41162d698268ceda2920248",
+  "baselineFileCount": 206,
+  "changedBaselineFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "missingBaselineFiles": [],
+  "unchangedBaselineFileCount": 204,
+  "frozenFilesPassed": true,
+  "newSourceFiles": [
+    "miniprogram/miniprogram/styles/design-tokens.wxss"
+  ],
+  "originalBusinessFiles": {
+    "count": 25,
+    "verifyOriginalsPassed": true
+  },
+  "widthChecks": [
+    {
+      "logicalWidth": 320,
+      "system": {
+        "windowWidth": 320,
+        "windowHeight": 456,
+        "screenWidth": 320,
+        "screenHeight": 568,
+        "statusBarHeight": 20,
+        "pixelRatio": 2,
+        "model": "iPhone 5"
+      },
+      "rootSize": {
+        "width": 320,
+        "height": 2095.8203125
+      },
+      "measuredClickCount": 15,
+      "minClickHeight": 44,
+      "minClickWidth": 60,
+      "keyTargetsWithinWidth": true,
+      "siteAndFullIntroUnchanged": true,
+      "exceptionCount": 0
+    },
+    {
+      "logicalWidth": 375,
+      "system": {
+        "windowWidth": 375,
+        "windowHeight": 555,
+        "screenWidth": 375,
+        "screenHeight": 667,
+        "statusBarHeight": 20,
+        "pixelRatio": 2,
+        "model": "iPhone 6/7/8"
+      },
+      "rootSize": {
+        "width": 375,
+        "height": 2473.609375
+      },
+      "measuredClickCount": 15,
+      "minClickHeight": 44,
+      "minClickWidth": 72,
+      "keyTargetsWithinWidth": true,
+      "siteAndFullIntroUnchanged": true,
+      "exceptionCount": 0
+    },
+    {
+      "logicalWidth": 390,
+      "system": {
+        "windowWidth": 390,
+        "windowHeight": 671,
+        "screenWidth": 390,
+        "screenHeight": 844,
+        "statusBarHeight": 47,
+        "pixelRatio": 3,
+        "model": "iPhone 12/13 (Pro)"
+      },
+      "rootSize": {
+        "width": 390,
+        "height": 2524.609375
+      },
+      "measuredClickCount": 15,
+      "minClickHeight": 44,
+      "minClickWidth": 72,
+      "keyTargetsWithinWidth": true,
+      "siteAndFullIntroUnchanged": true,
+      "exceptionCount": 0
+    },
+    {
+      "logicalWidth": 430,
+      "system": {
+        "windowWidth": 430,
+        "windowHeight": 752,
+        "screenWidth": 430,
+        "screenHeight": 932,
+        "statusBarHeight": 54,
+        "pixelRatio": 3,
+        "model": "iPhone 14 Pro Max"
+      },
+      "rootSize": {
+        "width": 430,
+        "height": 2770.65625
+      },
+      "measuredClickCount": 15,
+      "minClickHeight": 44,
+      "minClickWidth": 78,
+      "keyTargetsWithinWidth": true,
+      "siteAndFullIntroUnchanged": true,
+      "exceptionCount": 0
+    }
+  ],
+  "typecheckPassed": true,
+  "gitDiffCheckPassed": true,
+  "sensitiveCheck": {
+    "newAndChangedTextFilesScanned": 20,
+    "suspectedCredentials": [],
+    "pngReview": "Homepage, blank consultation, public content and state captures reviewed; no personal authentication fields intentionally captured. No new history-wide audit claimed."
+  },
+  "oversizeFiles": [],
+  "notes": [
+    "Static protection checks supplement actual clicks and do not replace them.",
+    "Native screenshots assembled from original scroll pixels; no UI redrawn.",
+    "No business submissions, backend content edits, or persistent data changes used for QA."
+  ]
+}

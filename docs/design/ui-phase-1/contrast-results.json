@@ -1,0 +1,40 @@
+{
+  "method": "sRGB relative luminance; opaque combinations only, photographic hero reviewed separately",
+  "results": [
+    {
+      "role": "正文",
+      "foreground": "#3C2C20",
+      "background": "#F7F3E9",
+      "ratio": 12.046126314940972,
+      "passesNormalTextTarget": true
+    },
+    {
+      "role": "辅助字",
+      "foreground": "#6C5948",
+      "background": "#F7F3E9",
+      "ratio": 5.99707879561354,
+      "passesNormalTextTarget": true
+    },
+    {
+      "role": "装饰编号文字",
+      "foreground": "#80613B",
+      "background": "#F7F3E9",
+      "ratio": 5.13475336451546,
+      "passesNormalTextTarget": true
+    },
+    {
+      "role": "深色操作",
+      "foreground": "#FFFDF7",
+      "background": "#3C2B24",
+      "ratio": 13.207365207637284,
+      "passesNormalTextTarget": true
+    },
+    {
+      "role": "错误字",
+      "foreground": "#A13E35",
+      "background": "#FFFDF7",
+      "ratio": 6.340911195200212,
+      "passesNormalTextTarget": true
+    }
+  ]
+}

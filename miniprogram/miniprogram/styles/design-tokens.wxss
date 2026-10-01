@@ -1,0 +1,17 @@
+/* Homepage only: approved Design System v0.1. Never import from app.wxss. */
+.home {
+  --home-bg: #F7F3E9;
+  --home-surface: #FFFDF7;
+  --home-walnut: #3C2B24;
+  --home-text: #3C2C20;
+  --home-secondary: #6C5948;
+  --home-gold: #B99A68;
+  --home-gold-text: #80613B;
+  --home-amber: #965A32;
+  --home-line: #E5DCCB;
+  --home-error: #A13E35;
+  --home-serif: "Songti SC", STSong, "Noto Serif CJK SC", serif;
+  --home-sans: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --home-gutter: 32rpx;
+  --home-section-gap: 64rpx;
+}
