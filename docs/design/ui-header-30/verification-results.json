@@ -1,0 +1,57 @@
+{
+  "baseline": "1e0c91e8d793728987b1171c5bec48aeb09d9788",
+  "baselineTrackedFiles": 478,
+  "unchangedExistingFiles": 477,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "sourceSHA256": "72c96cbdaab3b29f92cca6e0da31731f40db4fe6482d6d2202fd3020ef6e85e7",
+  "onlyChange": "Brand background alpha 0.7 to 0.3; rest of source byte-for-byte preserved",
+  "native390CompileAndScrollPassed": true,
+  "background": "rgba(60, 43, 36, 0.3)",
+  "containerOpacity": "1",
+  "nameOpacity": "1",
+  "logoBackground": "rgba(0, 0, 0, 0)",
+  "headerHeightLogicalPx": 55,
+  "actualScrollPositions": [
+    0,
+    450,
+    1015,
+    0
+  ],
+  "evidence": [
+    {
+      "path": "before-00.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    },
+    {
+      "path": "after-00.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    },
+    {
+      "path": "after-01.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    }
+  ],
+  "goldTextContrastOverIvoryWith30PercentWalnut": 1.2166377646107749,
+  "designReadabilityTarget": 4.5,
+  "designReadabilityPassed": false,
+  "designQA": "P1: park title is difficult to read against the light first-screen background; preserves user-directed 30% alpha and existing title color",
+  "otherWidthsRealDevicesStatesAndClicks": "Not executed in this one-property appearance revision",
+  "exceptions": []
+}
