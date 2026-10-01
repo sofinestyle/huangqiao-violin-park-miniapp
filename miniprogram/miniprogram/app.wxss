@@ -2,3 +2,7 @@ page{background:#f7f3e9;color:#3c2c20;font-family:-apple-system,"PingFang SC",sa
 
 /* White supplied logo needs a dark backing; original pixels are preserved. */
 .brand-bar image{background:#3c2b24;padding:8rpx 12rpx;border-radius:6rpx;}
+
+/* Square covers for the instruments and cultural gifts catalogues. */
+.product-square{position:relative;width:100%;padding-top:100%;overflow:hidden}
+.product-square .cover{position:absolute;top:0;left:0;width:100%;height:100%}
