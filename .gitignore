@@ -20,12 +20,33 @@ project.private.config.json
 *.key
 secrets/
 
+# Additional certificate and authentication files excluded from remote uploads
+*.p12
+*.pfx
+*.p8
+*.p7b
+*.p7c
+*.jks
+*.keystore
+*.crt
+*.cer
+.npmrc
+.netrc
+.pypirc
+.aws/
+.ssh/
+credentials*.json
+*service-account*.json
+
 # Business personal data, backups and temporary QA output
 data-private/
 exports/
 backups/
 .local/
 .qa/
+
+# User local archive is retained locally, never included in this repository
+/归档.zip
 
 # Published videos live in managed media storage, never in source control
 *.mp4
