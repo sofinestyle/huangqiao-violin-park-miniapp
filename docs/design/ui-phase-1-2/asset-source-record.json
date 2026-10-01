@@ -1,0 +1,42 @@
+{
+  "method": "Read-only existing public API response; no business writes",
+  "items": [
+    {
+      "id": "site",
+      "kind": "site",
+      "name": "黄桥乐器文化产业园",
+      "images": [
+        "/assets/yorray-logo.png",
+        "/assets/hero-violin.jpg"
+      ]
+    },
+    {
+      "id": "package-1",
+      "kind": "package",
+      "name": "琴韵初体验",
+      "images": [
+        "/assets/workshop.jpg"
+      ]
+    },
+    {
+      "id": "package-2",
+      "kind": "package",
+      "name": "提琴匠心深度游",
+      "images": [
+        "/assets/green.jpg"
+      ]
+    },
+    {
+      "id": "spot-1",
+      "kind": "spot",
+      "name": "城市客厅",
+      "images": [
+        "/assets/city.jpg",
+        "/assets/c1.jpg",
+        "/assets/c2.jpg",
+        "/assets/c3.jpg",
+        "/assets/c4.jpg"
+      ]
+    }
+  ]
+}

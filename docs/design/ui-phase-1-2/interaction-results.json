@@ -1,0 +1,199 @@
+{
+  "method": "Phase 1.2: 15 actual WeChat native Element.tap actions at 390px; route/id/data error checks; no new database submissions",
+  "tests": [
+    {
+      "selector": ".home-entry[data-page=\"instruments\"]",
+      "type": "tab",
+      "route": "pages/instruments/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 158.1796875,
+        "height": 126
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-entry[data-page=\"gifts\"]",
+      "type": "tab",
+      "route": "pages/gifts/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 47
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-entry[data-page=\"study\"]",
+      "type": "tab",
+      "route": "pages/study/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 189.8125,
+        "height": 126
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-entry[data-page=\"teaching\"]",
+      "type": "detail",
+      "route": "pages/teaching/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 47
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-entry[data-page=\"tour\"]",
+      "type": "detail",
+      "route": "pages/tour/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 171,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-entry[data-page=\"consult\"]",
+      "type": "detail",
+      "route": "pages/consult/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 171,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-1\"]",
+      "type": "detail",
+      "route": "pages/spot/index",
+      "query": {
+        "id": "spot-1"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-2\"]",
+      "type": "detail",
+      "route": "pages/spot/index",
+      "query": {
+        "id": "spot-2"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-3\"]",
+      "type": "detail",
+      "route": "pages/spot/index",
+      "query": {
+        "id": "spot-3"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-spot[data-id=\"spot-4\"]",
+      "type": "detail",
+      "route": "pages/spot/index",
+      "query": {
+        "id": "spot-4"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-package[data-id=\"package-1\"]",
+      "type": "detail",
+      "route": "pages/package/index",
+      "query": {
+        "id": "package-1"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 203
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-package[data-id=\"package-2\"]",
+      "type": "detail",
+      "route": "pages/package/index",
+      "query": {
+        "id": "package-2"
+      },
+      "width": 390,
+      "clickSize": {
+        "width": 173,
+        "height": 203
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-about",
+      "type": "detail",
+      "route": "pages/about/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 358,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-hero-action",
+      "type": "detail",
+      "route": "pages/tour/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 95,
+        "height": 44
+      },
+      "passed": true
+    },
+    {
+      "selector": ".home-guide-link",
+      "type": "detail",
+      "route": "pages/tour/index",
+      "query": {},
+      "width": 390,
+      "clickSize": {
+        "width": 99,
+        "height": 44
+      },
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "entranceClicksPassed": true
+}

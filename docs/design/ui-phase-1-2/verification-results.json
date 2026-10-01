@@ -1,0 +1,81 @@
+{
+  "phase": "Homepage UI Phase 1.2",
+  "baseline": "382bd938b8cf2593f56e524631c2687a24a66505",
+  "implementationStartedClean": true,
+  "baselineTrackedFiles": 348,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxml",
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedExistingFiles": 346,
+  "eventBindingsUnchanged": true,
+  "loopsConditionsAndTagStructureUnchanged": true,
+  "storyTextUnchanged": true,
+  "heroImagePositionSizeTitlesAndNoteUnchanged": true,
+  "existingNarrowMediaRulesUnchanged": true,
+  "tokenUnchangedAndHomepageOnly": true,
+  "frozenBusinessAndOtherFilesUnchanged": true,
+  "width": 390,
+  "system": {
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "statusBarHeight": 47,
+    "pixelRatio": 3,
+    "model": "iPhone 12/13 (Pro)"
+  },
+  "logicalContentHeight": 1701.7890625,
+  "measuredClickTargets": 15,
+  "minimumClickTargetHeight": 44,
+  "horizontalBoundsWithin390": true,
+  "runtimeExceptions": [],
+  "logoMeasuredBefore": {
+    "width": 66,
+    "height": 41
+  },
+  "logoMeasuredAfter": {
+    "width": 60,
+    "height": 37
+  },
+  "logoWidthReductionPercent": 9.090909090909093,
+  "logoHeightReductionPercent": 9.756097560975608,
+  "secondaryImageMeasuredBefore": {
+    "width": 39,
+    "height": 49
+  },
+  "secondaryImageMeasuredAfter": {
+    "width": 47,
+    "height": 47
+  },
+  "secondaryImageAreaIncreasePercent": 15.593929879644165,
+  "heroCTA": {
+    "width": 95,
+    "height": 44
+  },
+  "contrastPureColors": {
+    "Main": {
+      "foreground": "#3C2C20",
+      "background": "#F7F3E9",
+      "ratio": 12.046126314940972
+    },
+    "Secondary": {
+      "foreground": "#6C5948",
+      "background": "#F7F3E9",
+      "ratio": 5.99707879561354
+    },
+    "Footer secondary": {
+      "foreground": "#E4D9C9",
+      "background": "#3C2B24",
+      "ratio": 9.639045970574253
+    },
+    "CTA opaque approximation": {
+      "foreground": "#3C2B24",
+      "background": "#F7F3E9",
+      "ratio": 12.123990497791343
+    }
+  },
+  "photographicContrast": "Reviewed visually; not a per-pixel accessibility certification",
+  "otherWidths": "Not executed; other widths have not entered adaptation stage; shared base rules may affect them",
+  "runtimeDatabase": "No QA submissions or schema/model/logic modifications; SQLite byte invariance is not claimed"
+}

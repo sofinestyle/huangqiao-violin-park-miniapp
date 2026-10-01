@@ -1,0 +1,64 @@
+[
+  {
+    "mode": "before",
+    "logicalWidth": 390,
+    "logicalContentHeight": 1682.5859375,
+    "nativePixels": [
+      618,
+      1334
+    ],
+    "fullPixels": [
+      618,
+      2666
+    ],
+    "actualScale": 1.5846153846153845,
+    "statusAndNavigationCropTop": 144,
+    "windowCropHeight": 1063,
+    "frames": [
+      {
+        "path": "before-390-segment-00.png",
+        "scrollTop": 0
+      },
+      {
+        "path": "before-390-segment-01.png",
+        "scrollTop": 536
+      },
+      {
+        "path": "before-390-segment-02.png",
+        "scrollTop": 1011.5
+      }
+    ],
+    "method": "Original native pixels stitched using actual scrollTop; repeated native bars removed, no UI redrawn."
+  },
+  {
+    "mode": "after",
+    "logicalWidth": 390,
+    "logicalContentHeight": 1701.7890625,
+    "nativePixels": [
+      618,
+      1334
+    ],
+    "fullPixels": [
+      618,
+      2697
+    ],
+    "actualScale": 1.5846153846153845,
+    "statusAndNavigationCropTop": 144,
+    "windowCropHeight": 1063,
+    "frames": [
+      {
+        "path": "after-390-segment-00.png",
+        "scrollTop": 0
+      },
+      {
+        "path": "after-390-segment-01.png",
+        "scrollTop": 536
+      },
+      {
+        "path": "after-390-segment-02.png",
+        "scrollTop": 1031
+      }
+    ],
+    "method": "Original native pixels stitched using actual scrollTop; repeated native bars removed, no UI redrawn."
+  }
+]

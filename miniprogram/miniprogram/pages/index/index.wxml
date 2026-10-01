@@ -20,7 +20,7 @@
     <view class="home-services">
       <view class="home-service-primary">
         <view class="home-entry home-entry-instruments" data-page="instruments" bindtap="tab" hover-class="home-pressed">
-          <image class="home-service-image" src="{{site.images[1]}}" mode="aspectFill"/>
+          <image class="home-service-image" src="{{spots[0].cover || site.images[1]}}" mode="aspectFill"/>
           <view class="home-entry-caption"><view class="home-entry-title">乐器展示<text class="home-entry-arrow">↗</text></view><view class="home-entry-note">展示与咨询</view></view>
         </view>
         <view class="home-entry home-entry-study" data-page="study" bindtap="tab" hover-class="home-pressed">
@@ -34,7 +34,7 @@
           <view class="home-entry-copy"><view class="home-entry-title">文创伴手礼</view><view class="home-entry-note">把琴音带回家</view></view><text class="home-entry-arrow">↗</text>
         </view>
         <view class="home-entry home-entry-small" data-page="teaching" bindtap="open" hover-class="home-pressed">
-          <image class="home-service-image" src="{{site.images[1]}}" mode="aspectFill"/>
+          <image class="home-service-image" src="{{spots[0].images[4] || packages[0].cover || site.images[1]}}" mode="aspectFill"/>
           <view class="home-entry-copy"><view class="home-entry-title">教学课堂</view><view class="home-entry-note">图文与公开视频</view></view><text class="home-entry-arrow">↗</text>
         </view>
       </view>
@@ -67,7 +67,7 @@
       <view class="home-packages">
         <view class="home-package" wx:for="{{packages}}" wx:key="id" data-page="package" data-id="{{item.id}}" bindtap="open" hover-class="home-pressed">
           <image class="home-package-image" src="{{item.cover}}" mode="aspectFill"/>
-          <view class="home-package-body"><view class="home-item-title">{{item.name}}</view><view class="home-package-meta"><view class="home-item-note">{{item.durationNote}}</view><view class="home-package-detail">查看详情<text class="home-arrow">↗</text></view></view></view>
+          <view class="home-package-body"><view class="home-item-title">{{item.name}}</view><view class="home-package-meta"><view class="home-item-note">{{item.durationNote}}</view><view class="home-package-detail">详情<text class="home-arrow">↗</text></view></view></view>
         </view>
       </view>
     </view>

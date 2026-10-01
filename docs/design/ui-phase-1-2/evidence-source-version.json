@@ -1,0 +1,12 @@
+{
+  "phase": "1.2",
+  "width": 390,
+  "baseline": "382bd938b8cf2593f56e524631c2687a24a66505",
+  "implementationSource": {
+    "index.wxml": "3d6d6d56c7d71e651e71b815657d4f91f1ddb52816cfab92583ecbc68b350526",
+    "index.wxss": "d433059ae84fdb526fd0cc1f7f6db5f56d75d4b8e2eadf071af60f4f40f868fb"
+  },
+  "clicks": 15,
+  "nativeImageFiles": "Final after-390 raw frames and derived full/five crops",
+  "otherWidths": "Not executed or adapted"
+}
