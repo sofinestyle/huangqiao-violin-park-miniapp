@@ -1,0 +1,15 @@
+{
+  "scope": "Changed homepage source and current-phase text evidence only; no audit of all existing history or screenshot OCR",
+  "checkedTextFiles": 9,
+  "patterns": [
+    "private-key",
+    "GitHub-token",
+    "GitHub-fine-grained-token",
+    "AWS-access-key",
+    "OpenAI-token",
+    "assigned-appsecret"
+  ],
+  "suspectedCredentialHits": [],
+  "gitignoreUnchanged": true,
+  "result": "No suspected credentials found in checked text"
+}

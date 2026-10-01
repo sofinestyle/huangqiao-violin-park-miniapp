@@ -1,0 +1,354 @@
+{
+  "method": "Native WeChat compile and pageScrollTo with rendered boundingClientRect; CSS logical pixels, not PNG pixels",
+  "states": [
+    {
+      "requestedScroll": 0,
+      "actualScroll": 0,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 55,
+        "bottom": 419,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-00.png"
+    },
+    {
+      "requestedScroll": 100,
+      "actualScroll": 100,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": -45,
+        "bottom": 319,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-01.png"
+    },
+    {
+      "requestedScroll": 450,
+      "actualScroll": 450,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": -395,
+        "bottom": -31,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-02.png"
+    },
+    {
+      "requestedScroll": 900,
+      "actualScroll": 900,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": -845,
+        "bottom": -481,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-03.png"
+    },
+    {
+      "requestedScroll": 9999,
+      "actualScroll": 1015,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": -960,
+        "bottom": -596,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-04.png"
+    },
+    {
+      "requestedScroll": 0,
+      "actualScroll": 0,
+      "header": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 55,
+        "width": 390,
+        "height": 55
+      },
+      "logo": {
+        "id": "",
+        "dataset": {},
+        "left": 16,
+        "right": 76,
+        "top": 9,
+        "bottom": 46,
+        "width": 60,
+        "height": 37
+      },
+      "name": {
+        "id": "",
+        "dataset": {},
+        "left": 88,
+        "right": 374,
+        "top": 15.6015625,
+        "bottom": 39.3984375,
+        "width": 286,
+        "height": 23.796875
+      },
+      "hero": {
+        "id": "",
+        "dataset": {},
+        "left": 0,
+        "right": 390,
+        "top": 55,
+        "bottom": 419,
+        "width": 390,
+        "height": 364
+      },
+      "styles": {
+        "position": "sticky",
+        "background": "rgb(60, 43, 36)",
+        "color": "rgb(255, 253, 247)"
+      },
+      "screenshot": "scroll-05.png"
+    }
+  ],
+  "exceptions": [],
+  "system": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "system": "iOS 10.0.1",
+    "platform": "devtools",
+    "benchmarkLevel": -1,
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "statusBarHeight": 47,
+    "safeArea": {
+      "top": 47,
+      "left": 0,
+      "right": 390,
+      "bottom": 810,
+      "width": 390,
+      "height": 763
+    },
+    "language": "zh_CN",
+    "version": "8.0.5",
+    "fontSizeSetting": 16,
+    "SDKVersion": "3.17.3",
+    "host": {
+      "env": "WeChat"
+    },
+    "enableDebug": false,
+    "mode": "default",
+    "deviceOrientation": "portrait",
+    "bluetoothEnabled": true,
+    "locationEnabled": true,
+    "wifiEnabled": true,
+    "albumAuthorized": true,
+    "cameraAuthorized": true,
+    "locationAuthorized": true,
+    "microphoneAuthorized": true,
+    "notificationAuthorized": true,
+    "notificationAlertAuthorized": true,
+    "notificationBadgeAuthorized": true,
+    "notificationSoundAuthorized": true,
+    "phoneCalendarAuthorized": true,
+    "bluetoothAuthorized": true,
+    "locationReducedAccuracy": true,
+    "devicePixelRatio": 3
+  },
+  "route": "pages/index/index",
+  "passed": true
+}

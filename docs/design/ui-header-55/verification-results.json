@@ -1,0 +1,86 @@
+{
+  "baselineHead": "7a79f60e4ea28888f5dbf351b9a45dbe4eaef186",
+  "startedClean": true,
+  "baselineTrackedFiles": 411,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "unchangedExistingFiles": 410,
+  "sourceSHA256": "0a3ec1602b653fab12ebf26dd80c784154eeb52db5c3e69e2848d4a0dff99080",
+  "otherHomepageStylesUnchanged": true,
+  "homepageWXMLAndAllBusinessFilesUnchanged": true,
+  "originalLogoUnchanged": true,
+  "originalRequirementDesignSystemSkillAndEarlierEvidenceUnchanged": true,
+  "headerHeightLogicalPx": 55,
+  "headerBackground": "#3C2B24",
+  "headerForeground": "#FFFDF7",
+  "headerContrastPureColors": 13.207365207637284,
+  "headerBeforeLogicalPx": 71,
+  "titleArea": {
+    "id": "",
+    "dataset": {},
+    "left": 88,
+    "right": 374,
+    "top": 15.6015625,
+    "bottom": 39.3984375,
+    "width": 286,
+    "height": 23.796875
+  },
+  "logoRect": {
+    "id": "",
+    "dataset": {},
+    "left": 16,
+    "right": 76,
+    "top": 9,
+    "bottom": 46,
+    "width": 60,
+    "height": 37
+  },
+  "nativeViewport": {
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "statusBarHeight": 47,
+    "pixelRatio": 3,
+    "model": "iPhone 12/13 (Pro)"
+  },
+  "scrollPositions": [
+    [
+      0,
+      0,
+      55
+    ],
+    [
+      100,
+      0,
+      55
+    ],
+    [
+      450,
+      0,
+      55
+    ],
+    [
+      900,
+      0,
+      55
+    ],
+    [
+      1015,
+      0,
+      55
+    ],
+    [
+      0,
+      0,
+      55
+    ]
+  ],
+  "actualEntranceClicksPassed": 15,
+  "minimumTargetHeight": 44,
+  "nativeRuntimeExceptions": [],
+  "otherWidthsAndRealDevices": "Not executed in this targeted revision; 390px native validation only",
+  "statesAndTabBarReturns": "Not repeated in this targeted revision; existing implementation unchanged, do not reuse previous passes as new test evidence",
+  "result": "Passed scoped native compile, scrolling, layout and actual entrance-click checks"
+}
