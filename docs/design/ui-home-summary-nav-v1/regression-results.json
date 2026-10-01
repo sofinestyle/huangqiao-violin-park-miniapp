@@ -1,0 +1,43 @@
+{
+  "programmaticSelectedChecks": [
+    {
+      "route": "pages/index/index",
+      "selected": 0
+    },
+    {
+      "route": "pages/instruments/index",
+      "selected": 1
+    },
+    {
+      "route": "pages/gifts/index",
+      "selected": 2
+    },
+    {
+      "route": "pages/study/index",
+      "selected": 3
+    },
+    {
+      "route": "pages/mine/index",
+      "selected": 4
+    }
+  ],
+  "actualSummaryTaps": [
+    {
+      "target": "gifts",
+      "selected": 2,
+      "passed": true
+    },
+    {
+      "target": "instruments",
+      "selected": 1,
+      "passed": true
+    },
+    {
+      "target": "study",
+      "selected": 3,
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "passed": true
+}

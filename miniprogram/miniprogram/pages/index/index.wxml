@@ -55,10 +55,10 @@
         </view>
       </view>
     </view>
-    <view class="home-footer">
-      <view class="home-footer-brand">黄桥乐器文化产业园</view>
-      <view class="home-notice" wx:if="{{site.notice}}">{{site.notice}}</view>
-      <button class="home-about" data-page="about" bindtap="open" hover-class="home-pressed">关于我们与服务说明<text class="home-arrow">→</text></button>
+    <view class="home-summary">
+      <view class="home-summary-item" data-page="gifts" bindtap="tab" hover-class="home-pressed"><image src="/assets/tab-icons/gift-gold.png" mode="aspectFit"/><view><view class="home-summary-value">{{stats.gifts}}<text>款</text></view><view class="home-summary-label">文创产品</view></view></view>
+      <view class="home-summary-item" data-page="instruments" bindtap="tab" hover-class="home-pressed"><image src="/assets/tab-icons/instrument-gold.png" mode="aspectFit"/><view><view class="home-summary-value">{{stats.series}}<text>类</text></view><view class="home-summary-label">乐器系列</view></view></view>
+      <view class="home-summary-item" data-page="study" bindtap="tab" hover-class="home-pressed"><image src="/assets/tab-icons/group-gold.png" mode="aspectFit"/><view><view class="home-summary-value">{{stats.packages}}<text>个</text></view><view class="home-summary-label">研学套餐</view></view></view>
     </view>
   </block>
 </view>

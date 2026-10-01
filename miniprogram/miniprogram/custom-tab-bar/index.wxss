@@ -1,0 +1,8 @@
+.park-tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; box-sizing: content-box; display: flex; height: 49px; padding-bottom: env(safe-area-inset-bottom); background: #F7F3E9; border-radius: 16px 16px 0 0; color: #746656; }
+.park-tab { flex: 1; min-width: 44px; height: 49px; box-sizing: border-box; padding-top: 3px; display: flex; flex-direction: column; align-items: center; }
+.park-tab-icon { display: block; width: 23px; height: 23px; }
+.park-tab-label { font-family: "Microsoft YaHei","PingFang SC",sans-serif; font-size: 12px; line-height: 17px; }
+.park-tab-line { width: 22px; height: 3px; margin-top: 1px; border-radius: 2px; background: transparent; }
+.park-tab-selected { color: #4B3325; }
+.park-tab-selected .park-tab-line { background: #4B3325; }
+.park-tab-pressed { opacity: .7; }

@@ -1,0 +1,31 @@
+{
+  "method": "cua_repl actual visible custom-tab-bar button clicks; route text observed after each click",
+  "tests": [
+    {
+      "label": "instrument",
+      "observedRoute": "pages/instruments/index",
+      "passed": true
+    },
+    {
+      "label": "gift",
+      "observedRoute": "pages/gifts/index",
+      "passed": true
+    },
+    {
+      "label": "study",
+      "observedRoute": "pages/study/index",
+      "passed": true
+    },
+    {
+      "label": "mine",
+      "observedRoute": "pages/mine/index",
+      "passed": true
+    },
+    {
+      "label": "home",
+      "observedRoute": "pages/index/index",
+      "passed": true
+    }
+  ],
+  "narrowWidthCheck": "Not executed: Mac locked"
+}

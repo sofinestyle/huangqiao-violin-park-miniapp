@@ -1,0 +1,6 @@
+<view class="park-tabs">
+ <view class="park-tab {{selected===index?'park-tab-selected':''}}" wx:for="{{tabs}}" wx:key="path" data-index="{{index}}" bindtap="select" hover-class="park-tab-pressed" aria-role="button" aria-label="{{item.text}}">
+  <image class="park-tab-icon" src="/assets/tab-icons/{{item.icon}}-{{selected===index?'active':'muted'}}.png" mode="aspectFit"/>
+  <text class="park-tab-label">{{item.text}}</text><view class="park-tab-line"/>
+ </view>
+</view>
