@@ -35,10 +35,11 @@
       </view>
     </view>
     <view class="home-section home-explore">
+      <view class="home-section-heading"><text class="home-section-number">01</text><view class="home-section-titles"><view class="home-section-english">EXPLORE THE PARK</view><view class="home-section-title">琴音之旅</view></view></view>
+      <view class="home-section-note">在这里，遇见琴的诞生</view>
       <view class="home-explore-visual">
         <image class="home-explore-image" src="{{spots[0].images[1] || spots[0].cover}}" mode="aspectFill"/>
         <view class="home-explore-shade"/>
-        <view class="home-section-heading"><text class="home-section-number">01</text><view class="home-section-titles"><view class="home-section-english">EXPLORE THE PARK</view><view class="home-section-title">园区探索 · 琴音之旅</view></view></view>
         <view class="home-explore-caption"><view class="home-explore-note">从城市客厅到智能工坊</view><view class="home-guide-link" data-page="tour" bindtap="open" hover-class="home-pressed">进入探索<text class="home-arrow">→</text></view></view>
       </view>
       <view class="home-spots">

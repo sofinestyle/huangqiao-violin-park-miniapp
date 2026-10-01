@@ -1,0 +1,112 @@
+{
+  "exceptions": [],
+  "checks": [
+    {
+      "selector": ".home-explore .home-section-heading",
+      "text": "01EXPLORE THE PARK琴音之旅",
+      "offset": {
+        "left": 16,
+        "top": 687
+      },
+      "size": {
+        "width": 358,
+        "height": 45
+      }
+    },
+    {
+      "selector": ".home-explore .home-section-title",
+      "text": "琴音之旅",
+      "offset": {
+        "left": 60.7109375,
+        "top": 705
+      },
+      "size": {
+        "width": 313.2890625,
+        "height": 27
+      }
+    },
+    {
+      "selector": ".home-explore .home-section-note",
+      "text": "在这里，遇见琴的诞生",
+      "offset": {
+        "left": 16,
+        "top": 738
+      },
+      "size": {
+        "width": 358,
+        "height": 20.796875
+      }
+    },
+    {
+      "selector": ".home-explore-visual",
+      "text": "从城市客厅到智能工坊进入探索→",
+      "offset": {
+        "left": 16,
+        "top": 770.796875
+      },
+      "size": {
+        "width": 358,
+        "height": 243
+      }
+    },
+    {
+      "selector": ".home-recommended .home-section-heading",
+      "text": "02RECOMMENDED热门推荐",
+      "offset": {
+        "left": 16,
+        "top": 1139.796875
+      },
+      "size": {
+        "width": 358,
+        "height": 45
+      }
+    }
+  ],
+  "system": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "system": "iOS 10.0.1",
+    "platform": "devtools",
+    "benchmarkLevel": -1,
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "statusBarHeight": 47,
+    "safeArea": {
+      "top": 47,
+      "left": 0,
+      "right": 390,
+      "bottom": 810,
+      "width": 390,
+      "height": 763
+    },
+    "language": "zh_CN",
+    "version": "8.0.5",
+    "fontSizeSetting": 16,
+    "SDKVersion": "3.17.3",
+    "host": {
+      "env": "WeChat"
+    },
+    "enableDebug": false,
+    "mode": "default",
+    "deviceOrientation": "portrait",
+    "bluetoothEnabled": true,
+    "locationEnabled": true,
+    "wifiEnabled": true,
+    "albumAuthorized": true,
+    "cameraAuthorized": true,
+    "locationAuthorized": true,
+    "microphoneAuthorized": true,
+    "notificationAuthorized": true,
+    "notificationAlertAuthorized": true,
+    "notificationBadgeAuthorized": true,
+    "notificationSoundAuthorized": true,
+    "phoneCalendarAuthorized": true,
+    "bluetoothAuthorized": true,
+    "locationReducedAccuracy": true,
+    "devicePixelRatio": 3
+  },
+  "scrollTop": 612
+}

@@ -20,7 +20,7 @@
 .home-nav-label { white-space: nowrap; color: var(--home-walnut); font-size: 14px; font-weight: 500; line-height: 1.5; }
 .home-arrow { margin-left: 16rpx; font-family: var(--home-sans); font-size: 30rpx; line-height: 1.4; }
 .home-section { margin: 48rpx var(--home-gutter); }
-.home-explore-visual { position: relative; height: 468rpx; min-height: 220px; border-radius: 16rpx; overflow: hidden; background: var(--home-walnut); color: var(--home-surface); }
+.home-explore-visual { position: relative; height: 468rpx; min-height: 220px; margin-top: 24rpx; border-radius: 16rpx; overflow: hidden; background: var(--home-walnut); color: var(--home-surface); }
 .home-explore-image { display: block; width: 100%; height: 100%; }
 .home-explore-shade { position: absolute; inset: 0; background: linear-gradient(0deg,rgba(28,21,17,.82),rgba(28,21,17,.03) 55%,rgba(28,21,17,.68)), rgba(185,154,104,.07); pointer-events: none; }
 .home-section-heading { display: flex; align-items: center; gap: 20rpx; }
@@ -28,9 +28,6 @@
 .home-section-titles { flex: 1; min-width: 0; }
 .home-section-english { font-family: var(--home-serif); font-size: 24rpx; letter-spacing: 1.5rpx; line-height: 1.5; }
 .home-section-title { font-family: var(--home-serif); font-size: 40rpx; font-weight: 600; line-height: 1.35; }
-.home-explore-visual .home-section-heading { position: absolute; top: 28rpx; left: 28rpx; right: 28rpx; }
-.home-explore-visual .home-section-number { color: var(--home-surface); }
-.home-explore-visual .home-section-title { font-size: 34rpx; }
 .home-explore-caption { position: absolute; bottom: 28rpx; left: 28rpx; right: 28rpx; }
 .home-explore-note { font-size: 26rpx; line-height: 1.6; }
 .home-guide-link { display: inline-flex; align-items: center; justify-content: space-between; min-height: 44px; min-width: 44px; margin-top: 12rpx; padding: 8rpx 20rpx; border-radius: 12rpx; background: var(--home-bg); color: var(--home-walnut); font-size: 28rpx; line-height: 1.5; }
@@ -39,7 +36,7 @@
 .home-spot-image { flex-shrink: 0; width: 64rpx; height: 64rpx; border-radius: 6rpx; }
 .home-spot-name { flex: 1; min-width: 0; font-size: 28rpx; line-height: 1.5; }
 .home-spot-arrow { font-size: 24rpx; color: var(--home-secondary); flex-shrink: 0; }
-.home-recommended .home-section-english { color: var(--home-secondary); }
+.home-section-english { color: var(--home-secondary); }
 .home-section-note { margin-top: 12rpx; color: var(--home-secondary); font-size: 26rpx; line-height: 1.6; }
 .home-packages { display: grid; grid-template-columns: 1fr 1fr; gap: 24rpx; margin-top: 24rpx; }
 .home-package { position: relative; min-width: 0; }
@@ -70,7 +67,5 @@
   .home-quick-nav { margin-left: 12px; margin-right: 12px; }
   .home-nav-icon { width: 44px; height: 44px; }
   .home-nav-label { font-size: 13px; }
-  .home-explore-visual .home-section-heading { gap: 12rpx; }
-  .home-explore-visual .home-section-title { font-size: 34rpx; }
   .home-packages { gap: 24rpx; }
 }
