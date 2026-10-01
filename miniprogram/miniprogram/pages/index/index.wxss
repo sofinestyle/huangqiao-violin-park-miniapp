@@ -1,7 +1,7 @@
 @import "../../styles/design-tokens.wxss";
 
 .home { background: var(--home-bg); color: var(--home-text); font-family: var(--home-sans); line-height: 1.7; }
-.home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.3); }
+.home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.9); }
 .home-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
 .home-brand-name { flex: 1; min-width: 0; text-align: center; color: #E2C88F; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
 .home-hero { position: relative; height: 700rpx; min-height: 298px; overflow: hidden; background: var(--home-walnut); }

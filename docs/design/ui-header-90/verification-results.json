@@ -1,0 +1,58 @@
+{
+  "baseline": "a306451f62a7f37e6eacb4758d0eec72168e4bcb",
+  "baselineTrackedFiles": 490,
+  "unchangedExistingFiles": 489,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "sourceSHA256": "b8358e6922e5d0a262403273abc98d85c5d0d8e7b19a42b36a3dc8aced9d90db",
+  "onlyChange": "Brand background alpha 0.3 to 0.9; all other source bytes preserved",
+  "native390CompileAndScrollPassed": true,
+  "background": "rgba(60, 43, 36, 0.9)",
+  "containerOpacity": "1",
+  "nameOpacity": "1",
+  "logoBackground": "rgba(0, 0, 0, 0)",
+  "headerHeightLogicalPx": 55,
+  "actualScrollPositions": [
+    0,
+    450,
+    1015,
+    0
+  ],
+  "evidence": [
+    {
+      "file": "before-00.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    },
+    {
+      "file": "after-00.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    },
+    {
+      "file": "after-01.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    }
+  ],
+  "goldTextContrastOverIvoryWith90PercentWalnut": 6.146680494407904,
+  "goldTextContrastOverWhiteWith90PercentWalnut": 6.036953648684496,
+  "designReadabilityTarget": 4.5,
+  "pureColorReadabilityPassed": true,
+  "scope": "Native 390px title and fixed brand header only; not whole-app accessibility certification",
+  "otherWidthsRealDevicesStatesAndClicks": "Not executed in this one-property appearance revision",
+  "exceptions": []
+}
