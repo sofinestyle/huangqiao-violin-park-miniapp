@@ -1,0 +1,62 @@
+{
+  "baseline": "388a0ce5932dc73ca0c01a21c8424699c2aa5f4f",
+  "baselineTrackedFiles": 466,
+  "unchangedExistingFiles": 465,
+  "changedExistingFiles": [
+    "miniprogram/miniprogram/pages/index/index.wxss"
+  ],
+  "sourceSHA256": "823ea1fb7ef00687b542b4c3f0176859f7ddcc17274c30a95efd229afbee175f",
+  "change": "Background alpha 0.7; logo backing transparent; container/text/image opacity unchanged",
+  "allOtherStylesAndBusinessFilesUnchanged": true,
+  "nativeCompile390AndHeaderScrollPassed": true,
+  "headerLogicalHeight": 55,
+  "headerNativeBackground": "rgba(60, 43, 36, 0.7)",
+  "headerContainerOpacity": "1",
+  "logoBackdrop": "rgba(0, 0, 0, 0)",
+  "logoSize": [
+    72,
+    44
+  ],
+  "textColor": "rgb(226, 200, 143)",
+  "actualScrollPositions": [
+    630,
+    450,
+    1015,
+    0
+  ],
+  "evidence": [
+    {
+      "file": "before-00.png",
+      "pixels": [
+        618,
+        1334
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 1.5846153846153845
+    },
+    {
+      "file": "after-03.png",
+      "pixels": [
+        309,
+        667
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 0.7923076923076923
+    },
+    {
+      "file": "after-01.png",
+      "pixels": [
+        309,
+        667
+      ],
+      "logicalWidth": 390,
+      "screenshotScale": 0.7923076923076923
+    }
+  ],
+  "foreGroundContrastAgainstIvoryWith70PercentWalnut": 3.34887440587282,
+  "designReadabilityTarget": 4.5,
+  "designReadabilityPassed": false,
+  "designQA": "P2: unchanged yellow text over ivory through 70% background is below the approved contrast target; user-requested alpha preserved, no automatic color/shadow/font change",
+  "otherWidthsRealDevicesAndClicks": "Not executed in this appearance-only revision; previous test results not reused as new passes",
+  "runtimeExceptions": []
+}
