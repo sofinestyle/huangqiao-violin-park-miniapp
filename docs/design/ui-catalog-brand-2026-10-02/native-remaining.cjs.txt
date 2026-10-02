@@ -1,0 +1,20 @@
+const root='/Users/aaron/Documents/huangqiao-app',out=root+'/docs/design/ui-catalog-brand-2026-10-02';
+const a=require(root+'/node_modules/miniprogram-automator'),assert=require('node:assert/strict'),fs=require('node:fs');
+const full=process.argv.includes('--full');let m;const report=JSON.parse(fs.readFileSync(out+'/native-390.json'));delete report.failure;report.status='running';
+(async()=>{try{
+ m=await a.connect({wsEndpoint:'ws://127.0.0.1:9420'});m.on('exception',e=>report.exceptions.push(String(e.message||e)));const info=await m.systemInfo();report.system={model:info.model,width:info.windowWidth,height:info.windowHeight,SDKVersion:info.SDKVersion};
+ const ready=async p=>{await p.waitFor(200);for(let i=0;i<60&&await p.data('loading');i++)await p.waitFor(100);assert.equal(await p.data('error')||'','');return p;};
+ const open=async route=>ready(await m.reLaunch(route));
+ const routed=async path=>{for(let i=0;i<60;i++){const p=await m.currentPage();if(p.path===path)return ready(p);await p.waitFor(100);}throw Error('未跳转到'+path);};
+ const shot=async name=>{const f=`${name}-${info.windowWidth}.png`;await m.screenshot({path:out+'/'+f});assert.ok(fs.statSync(out+'/'+f).size>0);report.shots.push(f);};
+ const rect=async(p,selector)=>{const e=await p.$(selector);assert.ok(e,selector);return {...await e.offset(),...await e.size()};};
+ const body=['instruments','gifts','study'];const details=[['instrument-detail','/pages/product/index?id=violin-L201'],[],['package-detail','/pages/package/index?id=package-1']];let p;const button=async(p,label)=>{for(const b of await p.$$('button'))if((await b.text()).trim()===label)return b;throw Error('未找到按钮:'+label);};
+ if(full){
+  p=await open(details[0][1]);await (await p.$('.filter[data-index="1"]')).tap();await p.waitFor(async()=>await p.data('selectedSpec')===1);const spec=(await p.data('item')).specs[1].name;await m.pageScrollTo(10000);await (await button(p,'咨询此产品')).tap();p=await routed('pages/consult/index');assert.equal(await p.data('spec'),spec);assert.equal(await p.data('id'),'violin-L201');report.checks.push({actualConsultationTap:true,specPreserved:spec});
+  for(const action of ['book','group','consult']){p=await open(details[2][1]);await m.pageScrollTo(10000);await (await button(p,{book:'个人 / 家庭预约申请',group:'团体申请',consult:'套餐咨询'}[action])).tap();p=await routed(action==='consult'?'pages/consult/index':'pages/booking/index');assert.equal(await p.data(action==='consult'?'id':'packageId'),'package-1');if(action==='group')assert.equal(await p.data('group'),true);report.checks.push({actualPackageActionTap:action,path:p.path});}
+  for(const name of [...body,'product','package']){p=await open('/pages/'+name+'/index'+(name==='product'?'?id=violin-L201':name==='package'?'?id=package-1':''));const saved=await p.data();await p.setData({loading:true,error:'',item:null,items:[]});assert.ok(await p.$('.loading'));assert.ok(await p.$('.visitor-brand'));await p.setData({loading:false,error:'受控网络错误：用于检查重试入口',item:null,items:[]});assert.ok(await p.$('.error button'));assert.ok(await p.$('.visitor-brand'));if(name==='product'||name==='package')assert.equal((await p.$$('.park-tab')).length,5);await (await p.$('.error button')).tap();await ready(p);assert.ok((await p.data('item'))||(await p.data('items')).length);report.checks.push({page:name,controlledLoadingAndError:true,actualRetryTap:true});if(name!=='product'&&name!=='package'){await p.setData({loading:false,error:'',items:[]});if(name!=='study')assert.ok(await p.$('.empty'));await p.setData(saved);}}
+ }
+ assert.deepEqual(report.exceptions,[]);await open('/pages/instruments/index');report.status='passed';
+}finally{if(m)m.disconnect();fs.writeFileSync(out+'/native-'+(report.system?.width||'unknown')+'.json',JSON.stringify(report,null,2)+'\n');}
+console.log('PASS',report.system,report.checks.length);
+})().catch(e=>{report.status='failed';report.failure=String(e.stack||e);fs.writeFileSync(out+'/native-'+(report.system?.width||'unknown')+'.json',JSON.stringify(report,null,2)+'\n');console.error(e);process.exitCode=1;});

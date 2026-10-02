@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-02T12:59:09.621Z",
+  "checks": [
+    {
+      "page": "instruments",
+      "brand": true,
+      "squareCover": true
+    },
+    {
+      "page": "gifts",
+      "brand": true,
+      "squareCover": true
+    },
+    {
+      "page": "study",
+      "brand": true,
+      "squareCover": false
+    },
+    {
+      "page": "instrument-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "乐器",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 667,
+        "width": 390,
+        "height": 86
+      },
+      "action": {
+        "left": 16,
+        "top": 547.5859375,
+        "width": 358,
+        "height": 93.3984375
+      }
+    },
+    {
+      "page": "gift-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "文创",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 667,
+        "width": 390,
+        "height": 86
+      },
+      "action": {
+        "left": 16,
+        "top": 547.46875,
+        "width": 358,
+        "height": 93.3984375
+      }
+    },
+    {
+      "page": "package-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "研学",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 667,
+        "width": 390,
+        "height": 86
+      },
+      "action": {
+        "left": 16,
+        "top": 513.109375,
+        "width": 358,
+        "height": 128
+      }
+    },
+    {
+      "actualCardTap": "instruments",
+      "detail": "pages/product/index",
+      "id": "violin-L201"
+    },
+    {
+      "actualCardTap": "gifts",
+      "detail": "pages/product/index",
+      "id": "gift-1"
+    },
+    {
+      "actualCardTap": "study",
+      "detail": "pages/package/index",
+      "id": "package-1"
+    },
+    {
+      "actualNavigationTap": "instrument-detail",
+      "to": "index"
+    },
+    {
+      "actualNavigationTap": "instrument-detail",
+      "to": "instruments"
+    },
+    {
+      "actualNavigationTap": "instrument-detail",
+      "to": "gifts"
+    },
+    {
+      "actualNavigationTap": "instrument-detail",
+      "to": "study"
+    },
+    {
+      "actualNavigationTap": "instrument-detail",
+      "to": "mine"
+    },
+    {
+      "actualNavigationTap": "package-detail",
+      "to": "index"
+    },
+    {
+      "actualNavigationTap": "package-detail",
+      "to": "instruments"
+    },
+    {
+      "actualNavigationTap": "package-detail",
+      "to": "gifts"
+    },
+    {
+      "actualNavigationTap": "package-detail",
+      "to": "study"
+    },
+    {
+      "actualNavigationTap": "package-detail",
+      "to": "mine"
+    },
+    {
+      "actualNavigationTap": "gift-detail",
+      "to": "gifts"
+    }
+  ],
+  "shots": [
+    "instruments-top-390.png",
+    "gifts-top-390.png",
+    "study-top-390.png",
+    "instrument-detail-top-390.png",
+    "instrument-detail-bottom-390.png",
+    "gift-detail-top-390.png",
+    "gift-detail-bottom-390.png",
+    "package-detail-top-390.png",
+    "package-detail-bottom-390.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 12/13 (Pro)",
+    "width": 390,
+    "height": 753,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "TypeError: Cannot read properties of null (reading 'tap')\n    at /private/tmp/hq-brand-check.cjs:19:264\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}

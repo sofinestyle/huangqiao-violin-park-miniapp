@@ -1,0 +1,97 @@
+{
+  "at": "2026-10-02T13:03:55.349Z",
+  "checks": [
+    {
+      "page": "instruments",
+      "brand": true,
+      "squareCover": true
+    },
+    {
+      "page": "gifts",
+      "brand": true,
+      "squareCover": true
+    },
+    {
+      "page": "study",
+      "brand": true,
+      "squareCover": false
+    },
+    {
+      "page": "instrument-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "乐器",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 452,
+        "width": 320,
+        "height": 52
+      },
+      "action": {
+        "left": 13,
+        "top": 357.609375,
+        "width": 294,
+        "height": 73.5
+      }
+    },
+    {
+      "page": "gift-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "文创",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 452,
+        "width": 320,
+        "height": 52
+      },
+      "action": {
+        "left": 13,
+        "top": 357.6875,
+        "width": 294,
+        "height": 73.5
+      }
+    },
+    {
+      "page": "package-detail",
+      "brand": true,
+      "tabs": 5,
+      "selected": "研学",
+      "actionAboveNavigation": true,
+      "nav": {
+        "left": 0,
+        "top": 452,
+        "width": 320,
+        "height": 52
+      },
+      "action": {
+        "left": 13,
+        "top": 330.2734375,
+        "width": 294,
+        "height": 101
+      }
+    }
+  ],
+  "shots": [
+    "instruments-top-320.png",
+    "gifts-top-320.png",
+    "study-top-320.png",
+    "instrument-detail-top-320.png",
+    "instrument-detail-bottom-320.png",
+    "gift-detail-top-320.png",
+    "gift-detail-bottom-320.png",
+    "package-detail-top-320.png",
+    "package-detail-bottom-320.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "width": 320,
+    "height": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

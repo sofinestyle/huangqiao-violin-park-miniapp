@@ -1,0 +1,9 @@
+			3 文本 微信开发者工具 Stable 2.02.2608070
+							23 标题 乐器展示, Value: 3
+								46 文本 黄桥琴旅
+						92 文本 iPhone 5 84% 16
+									126 标题 资源管理器, Help: 资源管理器 (⌘K ⇧⌘E), Value: 2
+												134 标题 Description: 文件资源管理器部分, Help: miniprogram, Value: 3
+											162 标题 大纲, Value: 3
+											166 标题 时间线, Value: 3
+										201 标签 (selected) Description: 调试器 - Errors: 0, Warnings: 26, Value: 1

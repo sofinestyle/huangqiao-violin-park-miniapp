@@ -1,0 +1,23 @@
+{
+  "base": "fe74305",
+  "originalPageBodiesUnchanged": [
+    "instruments",
+    "gifts",
+    "study",
+    "product",
+    "package"
+  ],
+  "sourceFiles": [
+    "miniprogram/miniprogram/pages/gifts/index.wxml",
+    "miniprogram/miniprogram/pages/gifts/index.wxss",
+    "miniprogram/miniprogram/pages/instruments/index.wxml",
+    "miniprogram/miniprogram/pages/instruments/index.wxss",
+    "miniprogram/miniprogram/pages/package/index.wxml",
+    "miniprogram/miniprogram/pages/package/index.wxss",
+    "miniprogram/miniprogram/pages/product/index.wxml",
+    "miniprogram/miniprogram/pages/product/index.wxss",
+    "miniprogram/miniprogram/pages/study/index.wxml",
+    "miniprogram/miniprogram/pages/study/index.wxss"
+  ],
+  "TS_API_homepage_global_navigationComponent_unchanged": true
+}
