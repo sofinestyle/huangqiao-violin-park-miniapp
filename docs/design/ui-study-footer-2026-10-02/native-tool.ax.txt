@@ -1,0 +1,185 @@
+Window: "huangqiao-miniprogram", App: 微信开发者工具.
+0 标准窗口 huangqiao-miniprogram, Secondary Actions: Raise
+	1 HTML 内容 file:///Applications/wechatwebdevtools.app/Contents/Resources/app.asar/html/electron-project.html?projectpath=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&projectname=huangqiao-miniprogram&projectid=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&theme=dark&skeletonPath=%2FUsers%2Faaron%2FLibrary%2FApplication%20Support%2F%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%2Fd1e8765721a6c23d43b14c95b1843e6b%2FWeappCache%2FskeletonCache%2Fd447ea02741771c901da221b03e3a10f%2Fpageskeleton.html&trustProject=1&openSource=cli&autoPort=9420&frame=0&devid=s0&runtimeid=0&devtype=miniprogram&proxyPort=54922&userDataPath=%2FUsers%2Faaron%2FLibrary%2FApplication%2520Support%2F%25E5%25BE%25AE%25E4%25BF%25A1%25E5%25BC%2580%25E5%258F%2591%25E8%2580%2585%25E5%25B7%25A5%25E5%2585%25B7%2Fd1e8765721a6c23d43b14c95b1843e6b&appVersion=2.02.2608070&appVersionType=0
+		2 container
+			3 文本 微信开发者工具 Stable 2.02.2608070
+			4 container
+				5 text 小程序模式
+			6 文本 预览
+			7 文本 真机调试
+			8 文本 上传
+			9 未加标签的图片 要获取缺失的图片说明，请打开上下文菜单。
+			10 container
+				11 container
+				12 container
+					13 container
+						14 container
+							15 文本 miniprogram
+							16 工具栏
+								17 按钮 Toggle Primary Side Bar (⌘K ⌘B)
+									18 文本 
+								19 按钮 切换面板 (⌘J)
+									20 文本 
+								21 按钮 Toggle Secondary Side Bar (⌥⌘B)
+									22 文本 
+						23 container
+							24 container
+								25 标签组 活动视图切换器
+									26 标签 (selected) Description: 资源管理器 (⌘K ⇧⌘E), Value: 1
+										27 container 资源管理器 (⌘K ⇧⌘E)
+											28 文本 
+									29 标签 (settable, integer) Search (⇧⌘F), Value: 0
+										30 container Search (⇧⌘F)
+											31 文本 
+									32 标签 (settable, integer) Description: 源代码管理 (⌃⇧G) - 7 个挂起的更改, Value: 0
+										33 文本 
+									34 标签 (settable, integer) 扩展 (⇧⌘X), Value: 0
+										35 container 扩展 (⇧⌘X)
+											36 文本 
+									37 标签 (settable, integer) Description: 代码依赖分析, Value: 0
+									38 弹出式按钮 其他视图
+										39 文本 
+								40 container
+									41 标题 资源管理器, Help: 资源管理器 (⌘K ⇧⌘E), Value: 2
+										42 文本 资源管理器
+									43 内容列表 资源管理器操作
+										44 弹出式按钮 Views and More Actions...
+									45 container
+										46 container
+											47 按钮 文件资源管理器部分
+												48 文本 
+												49 标题 Description: 文件资源管理器部分, Help: miniprogram, Value: 3
+													50 文本 MINIPROGRAM
+											51 外框 树
+												52 container
+													53 row miniprogram
+														54 container
+															55 文本 
+															56 container ~/Documents/huangqiao-app/miniprogram/miniprogram • 包含强调项
+																57 文本 miniprogram
+																58 文本 
+													59 row typings
+														60 container
+															61 文本 
+															62 文本 typings
+													63 row package.json
+														64 container
+															65 文本 package.json
+													66 row project.config.json
+														67 container
+															68 文本 project.config.json
+													69 row project.private.config.json
+														70 container
+															71 文本 project.private.config.json
+													72 row tsconfig.json
+														73 container
+															74 文本 tsconfig.json
+										75 按钮 大纲 Section
+											76 文本 
+											77 标题 大纲, Value: 3
+												78 文本 大纲
+										79 按钮 时间线 Section
+											80 文本 
+											81 标题 时间线, Value: 3
+												82 文本 时间线
+							83 container
+								84 container
+									85 container 第 1 组 (空)
+										86 container
+											87 定义列表
+												88 container 显示所有命令
+													89 文本 显示所有命令
+												90 container Command+K Command+P
+													91 text ⌘ K ⌘ P
+											92 定义列表
+												93 container Go to File
+													94 文本 Go to File
+												95 container Command+P
+													96 text ⌘ P
+											97 定义列表
+												98 container 在文件中查找
+													99 文本 在文件中查找
+												100 container Shift+Command+F
+													101 text ⇧ ⌘ F
+											102 定义列表
+												103 container 开始调试
+													104 文本 开始调试
+												105 文本 F5
+											106 定义列表
+												107 container 切换终端
+													108 文本 切换终端
+												109 container Control+`
+													110 text ⌃ `
+								111 container
+									112 标签组 活动视图切换器
+										113 标签 (selected) Description: 构建 - Logs: 100, Value: 1
+											114 container 构建 - Logs: 100
+												115 文本 构建
+											116 container 构建 - Logs: 100
+												117 文本 100
+										118 标签 (settable, integer) Description: 调试器 - Errors: 0, Warnings: 16, Value: 0
+											119 文本 调试器
+											120 文本 16
+										121 标签 (settable, integer) Description: 问题 (⌘K ⇧⌘M) - 总计 0 个问题, Value: 0
+											122 文本 问题
+										123 标签 (settable, integer) Description: 输出, Value: 0
+											124 文本 输出
+										125 标签 (settable, integer) 调试控制台 (⇧⌘Y), Value: 0
+											126 container 调试控制台 (⇧⌘Y)
+												127 文本 调试控制台
+										128 标签 (settable, integer) 终端 (⌃`), Value: 0
+											129 container 终端 (⌃`)
+												130 文本 终端
+										131 标签 (settable, integer) 代码质量, Value: 0
+											132 container 代码质量
+												133 文本 代码质量
+									134 工具栏 构建操作
+									135 工具栏
+										136 按钮 最大化面板大小
+											137 文本 
+										138 按钮 关闭面板
+											139 文本 
+									140 container
+										141 container
+											142 图像
+											143 文本栏 (settable) Terminal input
+											144 图像
+											145 图像
+											146 图像
+											147 图像
+						148 container
+							149 container huangqiao-app (Git) - main*, Checkout Branch/Tag...
+								150 按钮 huangqiao-app (Git) - main*, Checkout Branch/Tag...
+									151 文本 
+									152 文本  main*
+							153 container huangqiao-app (Git) - Push 10 commits to origin/main
+								154 按钮 huangqiao-app (Git) - Push 10 commits to origin/main
+									155 文本 
+									156 文本  0↓ 10↑
+							157 container 没有问题
+								158 按钮 没有问题
+									159 文本 
+									160 文本  0 
+									161 文本 
+									162 文本  0
+							163 container 进度和简要通知
+							164 container 已为屏幕阅读器优化
+								165 按钮 已为屏幕阅读器优化
+							166 container undefined
+	167 关闭按钮
+	168 全屏幕按钮 Help: 此按钮也可以执行缩放窗口的操作, Secondary Actions: 缩放窗口
+	169 最小化按钮
+170 menu bar
+	171 微信开发者工具
+	172 项目
+	173 文件
+	174 编辑
+	175 工具
+	176 跳转
+	177 选择
+	178 界面
+	179 设置
+	180 插件
+	181 帮助
+
+The focused UI element is 1 HTML 内容 file:///Applications/wechatwebdevtools.app/Contents/Resources/app.asar/html/electron-project.html?projectpath=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&projectname=huangqiao-miniprogram&projectid=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&theme=dark&skeletonPath=%2FUsers%2Faaron%2FLibrary%2FApplication%20Support%2F%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%2Fd1e8765721a6c23d43b14c95b1843e6b%2FWeappCache%2FskeletonCache%2Fd447ea02741771c901da221b03e3a10f%2Fpageskeleton.html&trustProject=1&openSource=cli&autoPort=9420&frame=0&devid=s0&runtimeid=0&devtype=miniprogram&proxyPort=54922&userDataPath=%2FUsers%2Faaron%2FLibrary%2FApplication%2520Support%2F%25E5%25BE%25AE%25E4%25BF%25A1%25E5%25BC%2580%25E5%258F%2591%25E8%2580%2585%25E5%25B7%25A5%25E5%2585%25B7%2Fd1e8765721a6c23d43b14c95b1843e6b&appVersion=2.02.2608070&appVersionType=0

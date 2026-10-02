@@ -56,7 +56,7 @@
 .visitor-page .study-number { font-family: Georgia,serif; font-size: 26rpx; letter-spacing: 3rpx; color: #c8a35c; }
 .visitor-page .study-title { font-family: "Songti SC",STSong,serif; font-size: 40rpx; font-weight: 700; }
 .visitor-page .study-subtitle { color: #8a7560; font-size: 23rpx; margin: 10rpx 0 32rpx; line-height: 1.8; }
-.visitor-page .study-intro { font-size: 24rpx; color: #4d3d2a; line-height: 1.9; margin-bottom: 30rpx; }
+.visitor-page .study-intro { font-size: 24rpx; color: #4d3d2a; line-height: 1.9; margin-bottom: 30rpx; text-align: justify; text-align-last: left; }
 .visitor-page .study-stats { display: flex; background: #24180f; border-radius: 26rpx; padding: 32rpx 0; margin-bottom: 38rpx; }
 .visitor-page .study-stat { flex: 1; min-width: 0; text-align: center; }
 .visitor-page .study-stat + .study-stat { border-left: 1px solid rgba(200,163,92,.25); }
@@ -94,6 +94,14 @@
 .visitor-page .study-more-note { font-size: 24rpx; color: #6c5948; margin-top: 14rpx; }
 .visitor-page .study-more-actions { display: flex; gap: 18rpx; margin: 24rpx 0; }
 .visitor-page .study-more-actions button { flex: 1; font-size: 26rpx; min-height: 44px; padding: 18rpx 8rpx; background: transparent; border: 1px solid #c8a35c; color: #3a2817; }
+.visitor-page .study-notice { margin-top: 32rpx; padding: 28rpx 32rpx; border: 1px dashed #c8a35c; border-radius: 22rpx; background: #efe3cb; color: #5a4a32; font-size: 24rpx; line-height: 1.9; }
+.visitor-page .study-notice-title { font-family: "Songti SC",STSong,serif; font-size: 26rpx; color: #3a2817; font-weight: 700; margin-bottom: 6rpx; }
+.visitor-page .study-notice-item { margin-top: 4rpx; }
+.visitor-page .study-contact { margin-top: 32rpx; padding: 30rpx 34rpx; border-radius: 26rpx; background: #24180f; color: #f4ecdd; }
+.visitor-page .study-contact-title { font-family: "Songti SC",STSong,serif; font-size: 30rpx; font-weight: 700; color: #e2c88f; margin-bottom: 22rpx; }
+.visitor-page .study-contact-person { display: flex; justify-content: space-between; align-items: baseline; gap: 16rpx; padding: 16rpx 0; border-bottom: 1px solid rgba(200,163,92,.25); font-size: 25rpx; }
+.visitor-page .study-contact-phone { color: #e2c88f; font-weight: 600; white-space: nowrap; }
+.visitor-page .study-contact-note { margin-top: 20rpx; color: #cbbfa4; font-size: 23rpx; line-height: 1.8; }
 @media (max-width: 350px) {
   .visitor-page .study-hero { height: 355rpx; }
   .visitor-page .study-hero-title { font-size: 34rpx; }

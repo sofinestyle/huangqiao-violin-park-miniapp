@@ -59,5 +59,18 @@
       <view class="study-more-actions"><button bindtap="enroll">研学报名</button><button bindtap="group">团体需求申请</button></view>
       <view class="study-more-note">提交预约申请后，工作人员将联系您确认安排。</view>
     </view>
+    <view class="study-notice">
+      <view class="study-notice-title">预约提示</view>
+      <view class="study-notice-item">· 价格为建议零售价，团体规模、季节不同可调整；10 人以上享团体优惠。</view>
+      <view class="study-notice-item">· 一大一小亲子票中儿童限 5–14 岁；增购 1 名儿童按单人价 8 折。</view>
+      <view class="study-notice-item">· 个人提前 3 天、团队提前 1 周预约，如遇工厂生产调整以现场安排为准。</view>
+      <view class="study-notice-item">· 体验作品（尤克里里、干花画、琴码钥匙扣等）均可带走。</view>
+    </view>
+    <view class="study-contact">
+      <view class="study-contact-title">预约与咨询</view>
+      <view class="study-contact-person"><text>张女士</text><text class="study-contact-phone">138 1249 6272</text></view>
+      <view class="study-contact-person"><text>樊先生</text><text class="study-contact-phone">139 6107 9710</text></view>
+      <view class="study-contact-note">个人提前 3 天、团队提前 1 周预约，有冲突以缴费时间为准；建议穿着舒适便装与运动鞋。</view>
+    </view>
   </view>
 </view>
