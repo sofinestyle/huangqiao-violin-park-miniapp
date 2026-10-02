@@ -1,6 +1,6 @@
 @import "../../styles/design-tokens.wxss";
 
-.home { padding-bottom: calc(49px + env(safe-area-inset-bottom)); background: var(--home-bg); color: var(--home-text); font-family: var(--home-sans); line-height: 1.7; }
+.home { padding-bottom: calc(52px + env(safe-area-inset-bottom)); background: var(--home-bg); color: var(--home-text); font-family: var(--home-sans); line-height: 1.7; }
 .home-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 24rpx; box-sizing: border-box; height: 55px; padding: 0 var(--home-gutter); background: rgba(60,43,36,.9); }
 .home-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
 .home-brand-name { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; text-align: center; color: #FFFFFF; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
@@ -14,6 +14,7 @@
 .home-hero-title { font-family: var(--home-serif); font-size: 60rpx; font-weight: 900; line-height: 1.25; }
 .home-hero-subtitle { margin-top: 0; color: #E2C88F; }
 .home-hero-note { margin-top: 24rpx; color: #F4ECDD; font-size: 28rpx; line-height: 1.8; text-indent: 2em; }
+.home-content { position: relative; z-index: 1; margin-top: -16px; padding-top: 16px; border-radius: 24px 24px 0 0; background: var(--home-bg); }
 .home-quick-nav { display: flex; box-sizing: border-box; margin: 16px var(--home-gutter) 0; padding: 10px 4px; border: 1px solid #E5D5B8; border-radius: 16px; background: #FBF8F0; }
 .home-nav-item { flex: 1; min-width: 0; min-height: 82px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 .home-nav-icon { display: block; width: 48px; height: 48px; border-radius: 12px; }
