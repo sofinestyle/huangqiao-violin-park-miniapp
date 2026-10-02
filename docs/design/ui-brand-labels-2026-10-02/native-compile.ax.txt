@@ -1,0 +1,8 @@
+			3 文本 微信开发者工具 Stable 2.02.2608070
+							23 标题 文创伴手礼, Value: 3
+								24 文本 文创伴手礼
+									37 文本 文创
+								46 文本 文创伴手礼
+							47 文本 文创伴手礼
+						144 文本 iPhone 5 84% 16
+										253 标签 (selected) Description: 调试器 - Errors: 0, Warnings: 9, Value: 1

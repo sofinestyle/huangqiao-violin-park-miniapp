@@ -2,7 +2,7 @@
 <view class="visitor-page">
   <view class="visitor-brand">
     <image class="visitor-logo" src="/assets/yorray-logo.png" mode="aspectFit" aria-label="YorRay"/>
-    <text class="visitor-brand-name">黄桥琴旅</text>
+    <text class="visitor-brand-name">套餐详情</text>
   </view>
   <view class="page"><template is="state" data="{{loading,error}}"/><block wx:if="{{item}}"><image class="cover" src="{{item.cover}}" mode="aspectFill" binderror="imageError"/><view class="h1">{{item.name}}</view><view class="muted">{{item.ageNote}} · {{item.durationNote}}</view><view class="panel"><view class="muted">具体费用与接待安排请咨询工作人员。</view></view><view class="h2">行程与参加说明</view><view class="intro pre-line">{{item.itinerary}}</view><view class="panel"><view class="detail-line"><text class="key">包含说明</text><text>{{item.included}}</text></view><view class="detail-line"><text class="key">不含说明</text><text>{{item.excluded}}</text></view><view class="detail-line"><text class="key">作品 / 材料</text><text>{{item.materials}}</text></view><view class="detail-line"><text class="key">集合地点</text><text>{{item.meetingPoint}}</text></view><view class="detail-line"><text class="key">转场安排</text><text>{{item.transfer}}</text></view></view><view class="h2">预约说明</view><view class="intro">{{item.bookingNote}}</view><view class="h2">取消与改期</view><view class="intro">{{item.cancelNote}}</view><view class="sticky-action"><button bindtap="book">个人 / 家庭预约申请</button><view class="actions"><button class="secondary" bindtap="group">团体申请</button><button class="secondary" bindtap="consult">套餐咨询</button></view></view></block></view>
   <view class="park-tabs">

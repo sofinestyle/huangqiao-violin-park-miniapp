@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-02T13:09:58.821Z",
+  "checks": [
+    {
+      "page": "pages/instruments/index",
+      "title": "乐器产品",
+      "noLogoOverlap": true,
+      "shot": "instruments-390.png"
+    },
+    {
+      "page": "pages/product/index",
+      "title": "产品详情",
+      "noLogoOverlap": true,
+      "shot": "product-390.png"
+    }
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 390,
+    "model": "iPhone 12/13 (Pro)",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "Error: 未进入pages/gifts/index"
+}

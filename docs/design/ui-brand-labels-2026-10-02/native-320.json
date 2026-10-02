@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-02T13:11:32.630Z",
+  "checks": [
+    {
+      "page": "pages/gifts/index",
+      "title": "文创伴手礼",
+      "noLogoOverlap": true,
+      "shot": "gifts-320.png"
+    }
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 320,
+    "model": "iPhone 5",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}
