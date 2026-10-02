@@ -1,0 +1,62 @@
+/* Approved visitor phase: page-local styles, no shared token import. */
+.tour-page {
+  padding: 40rpx 40rpx calc(48rpx + env(safe-area-inset-bottom));
+  color: #3c2b24;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.tour-page .tour-heading { margin-bottom: 40rpx; }
+.tour-page .tour-title {
+  margin: 0 0 12rpx;
+  font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
+  font-size: 44rpx;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.tour-page .tour-intro { font-size: 28rpx; line-height: 1.8; color: #6c5948; }
+.tour-page .tour-stop { margin-bottom: 52rpx; }
+.tour-page .tour-gallery {
+  width: 100%;
+  height: 380rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  background: #e5dccb;
+}
+.tour-page .tour-photo { display: block; width: 100%; height: 100%; }
+.tour-page .tour-stop-body { padding-top: 28rpx; }
+.tour-page .tour-stop-heading { display: flex; align-items: baseline; gap: 18rpx; margin-bottom: 18rpx; }
+.tour-page .tour-number { flex-shrink: 0; font-family: Georgia, serif; font-size: 30rpx; line-height: 1.5; color: #80613b; }
+.tour-page .tour-stop-name {
+  min-width: 0;
+  margin: 0;
+  font-family: "Songti SC", STSong, "Noto Serif CJK SC", serif;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+.tour-page .tour-description { font-size: 30rpx; line-height: 1.8; overflow-wrap: break-word; }
+.tour-page .tour-opening { margin-top: 20rpx; font-size: 26rpx; line-height: 1.8; color: #6c5948; }
+.tour-page button.tour-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 24rpx;
+  padding: 18rpx 0;
+  border: 0;
+  border-top: 1rpx solid #e5dccb;
+  border-bottom: 1rpx solid #e5dccb;
+  border-radius: 0;
+  background: transparent;
+  color: #3c2b24;
+  font-size: 28rpx;
+  line-height: 1.6;
+  text-align: left;
+}
+.tour-page .tour-arrow { margin-left: 24rpx; font-size: 38rpx; line-height: 1; }
+.tour-page .tour-pressed { background: #eee6d8; }
+.tour-page .tour-support { padding: 24rpx 28rpx; background: #eee6d8; font-size: 26rpx; line-height: 1.8; color: #6c5948; }
+.tour-page .loading, .tour-page .empty { padding: 64rpx 20rpx; font-size: 28rpx; line-height: 1.8; color: #6c5948; }
+.tour-page .error { margin: 24rpx 0; padding: 28rpx; border: 0; border-radius: 12rpx; font-size: 28rpx; line-height: 1.8; color: #a13e35; }
+.tour-page .error button.secondary { min-height: 44px; font-size: 28rpx; color: #3c2b24; border-color: #826742; }

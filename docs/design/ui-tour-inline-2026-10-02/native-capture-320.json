@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-02T08:18:52.267Z",
+  "mode": "capture",
+  "exceptions": [],
+  "shots": [
+    "tour-top-320.png",
+    "tour-stop-1-320.png",
+    "tour-stop-2-320.png",
+    "tour-stop-3-320.png",
+    "tour-stop-4-320.png",
+    "tour-bottom-320.png"
+  ],
+  "checks": [
+    {
+      "brandSize": {
+        "width": 320,
+        "height": 55
+      },
+      "detailsRemoved": true
+    },
+    {
+      "id": "spot-1",
+      "name": "城市客厅",
+      "size": {
+        "width": 298,
+        "height": 364
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-2",
+      "name": "音乐生态湖",
+      "size": {
+        "width": 298,
+        "height": 387
+      },
+      "imageCount": 4,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-3",
+      "name": "产业园·中小企业集聚区",
+      "size": {
+        "width": 298,
+        "height": 387
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-4",
+      "name": "绿岛·智能环保表面处理中心",
+      "size": {
+        "width": 298,
+        "height": 364
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 320,
+  "status": "passed"
+}

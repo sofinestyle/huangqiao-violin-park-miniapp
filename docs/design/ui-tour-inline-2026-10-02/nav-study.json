@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-02T08:13:22.183Z",
+  "name": "study",
+  "expected": "pages/study/index",
+  "actual": "pages/study/index",
+  "method": "CUA native button click; SDK route/screenshot read afterwards",
+  "submitted": false
+}

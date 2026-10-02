@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-02",
+  "baseline": "105ff82",
+  "homepageBaseline": "c927ce6",
+  "operator": "Codex",
+  "scope": "tour page layout; complete content and model extension pending CR006",
+  "trackedBeforeCount": 965,
+  "changedTrackedFiles": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/tour/index.json",
+    "miniprogram/miniprogram/pages/tour/index.wxml",
+    "miniprogram/miniprogram/pages/tour/index.wxss"
+  ],
+  "outsideWhitelistUnchanged": 960,
+  "protectedSourceUnchanged": true,
+  "originalsVerified": 25,
+  "referenceSHA256": "443af1ea2a8a68e5fd2aa469b1b43a98f19b8e3b9ff17936e7977d6ecf1dd3ca",
+  "referenceCopyMatches": true,
+  "contrastRatios": {
+    "#916824": 4.67,
+    "#403326": 11.42,
+    "#6c5948": 6.22
+  },
+  "typecheck": "passed",
+  "diffCheck": "passed",
+  "nativeWidths": [
+    320,
+    375,
+    390,
+    430
+  ],
+  "actualNativeNavigation": [
+    "home",
+    "instruments",
+    "gifts",
+    "study",
+    "mine"
+  ],
+  "nativeGalleryGesture": {
+    "initial": 1,
+    "leftAttemptFinal": 1,
+    "rightAttemptFinal": 0,
+    "routeUnchanged": true,
+    "method": "CUA native drag; SDK read-only property observation"
+  },
+  "controlledRendering": [
+    "long text",
+    "loading",
+    "error",
+    "empty"
+  ],
+  "actualRetry": true,
+  "notExecuted": [
+    "CR006 models/admin/content changes",
+    "real devices",
+    "font scaling",
+    "screen reader",
+    "business submissions",
+    "native back",
+    "homepage enter-explore second entry"
+  ],
+  "publicDeployment": false,
+  "remotePush": false
+}

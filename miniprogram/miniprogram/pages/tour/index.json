@@ -1,1 +1,6 @@
-{"usingComponents": {}, "navigationBarTitleText": "琴音之旅"}
+{
+  "usingComponents": {
+    "park-navigation": "../../custom-tab-bar/index"
+  },
+  "navigationBarTitleText": "琴音之旅"
+}

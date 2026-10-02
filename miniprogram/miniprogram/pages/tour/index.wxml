@@ -1,26 +1,28 @@
 <import src="../../templates/state.wxml"/>
-<view class="page tour-page">
-  <view class="tour-heading">
-    <view class="h1 tour-title">琴音之旅</view>
-    <view class="intro tour-intro">读懂一把琴的诞生</view>
+<view class="tour-page">
+  <view class="tour-brand">
+    <image class="tour-logo" src="/assets/yorray-logo.png" mode="aspectFit" aria-label="YorRay"/>
+    <text class="tour-brand-name">琴音之旅</text>
   </view>
-  <template is="state" data="{{loading,error}}"/>
-  <view class="tour-stop" wx:for="{{items}}" wx:key="id">
-    <swiper class="tour-gallery" indicator-dots indicator-color="rgba(255,253,247,0.5)" indicator-active-color="#fffdf7" aria-label="{{item.name}}图片">
-      <swiper-item wx:for="{{item.images}}" wx:for-item="photo" wx:key="*this">
-        <image class="tour-photo" src="{{photo}}" mode="aspectFill"/>
-      </swiper-item>
-    </swiper>
-    <view class="tour-stop-body">
-      <view class="tour-stop-heading">
-        <text class="tour-number">{{index > 8 ? '' : '0'}}{{index+1}}</text>
-        <view class="h3 tour-stop-name">{{item.name}}</view>
+  <view class="tour-content">
+    <view class="tour-intro">沿「城市客厅 → 音乐生态湖 → 产业园 → 绿岛」一线，从读懂提琴文化到走进制琴现场，约半天即可走完一遍一把琴的诞生旅程。</view>
+    <template is="state" data="{{loading,error}}"/>
+    <view class="tour-stop" wx:for="{{items}}" wx:key="id">
+      <swiper class="tour-gallery" current="{{item.images.length > 1 ? 1 : 0}}" indicator-dots indicator-color="rgba(255,253,247,0.5)" indicator-active-color="#fffdf7" aria-label="{{item.name}}图片">
+        <swiper-item wx:for="{{item.images}}" wx:for-item="photo" wx:key="*this">
+          <image class="tour-photo" src="{{photo}}" mode="aspectFill"/>
+        </swiper-item>
+      </swiper>
+      <view class="tour-stop-body">
+        <view class="tour-number">SPOT {{index > 8 ? '' : '0'}}{{index+1}}</view>
+        <view class="tour-stop-name">{{item.name}}</view>
+        <view class="tour-description pre-line">{{item.description}}</view>
+        <view class="tour-opening pre-line">{{item.opening}}</view>
+        <view class="tour-visit-note pre-line" wx:if="{{item.visitNote}}">{{item.visitNote}}</view>
       </view>
-      <view class="tour-description pre-line">{{item.description}}</view>
-      <view class="muted tour-opening">{{item.opening}}</view>
-      <button class="secondary tour-detail" data-id="{{item.id}}" bindtap="open" hover-class="tour-pressed" aria-label="查看{{item.name}}详情">查看点位详情<text class="tour-arrow">›</text></button>
     </view>
+    <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view>
+    <view class="tour-support">集合点、转场方式及交通费用以工作人员确认安排为准。</view>
   </view>
-  <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view>
-  <view class="support-note tour-support">集合点、转场方式及交通费用以工作人员确认安排为准。</view>
+  <park-navigation/>
 </view>

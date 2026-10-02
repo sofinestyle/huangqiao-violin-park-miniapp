@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-02T08:14:03.574Z",
+  "name": "mine",
+  "expected": "pages/mine/index",
+  "actual": "pages/mine/index",
+  "method": "CUA native button click; SDK route/screenshot read afterwards",
+  "submitted": false
+}

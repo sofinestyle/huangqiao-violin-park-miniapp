@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-02T08:09:06.167Z",
+  "exceptions": [],
+  "system": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "system": "iOS 10.0.1",
+    "platform": "devtools",
+    "benchmarkLevel": -1,
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "statusBarHeight": 47,
+    "safeArea": {
+      "top": 47,
+      "left": 0,
+      "right": 390,
+      "bottom": 810,
+      "width": 390,
+      "height": 763
+    },
+    "language": "zh_CN",
+    "version": "8.0.5",
+    "fontSizeSetting": 16,
+    "SDKVersion": "3.17.3",
+    "host": {
+      "env": "WeChat"
+    },
+    "enableDebug": false,
+    "mode": "default",
+    "deviceOrientation": "portrait",
+    "bluetoothEnabled": true,
+    "locationEnabled": true,
+    "wifiEnabled": true,
+    "albumAuthorized": true,
+    "cameraAuthorized": true,
+    "locationAuthorized": true,
+    "microphoneAuthorized": true,
+    "notificationAuthorized": true,
+    "notificationAlertAuthorized": true,
+    "notificationBadgeAuthorized": true,
+    "notificationSoundAuthorized": true,
+    "phoneCalendarAuthorized": true,
+    "bluetoothAuthorized": true,
+    "locationReducedAccuracy": true,
+    "devicePixelRatio": 3
+  },
+  "path": "pages/tour/index",
+  "error": "",
+  "items": [
+    {
+      "id": "spot-1",
+      "images": 5,
+      "name": "城市客厅"
+    },
+    {
+      "id": "spot-2",
+      "images": 4,
+      "name": "音乐生态湖"
+    },
+    {
+      "id": "spot-3",
+      "images": 5,
+      "name": "产业园·中小企业集聚区"
+    },
+    {
+      "id": "spot-4",
+      "images": 5,
+      "name": "绿岛·智能环保表面处理中心"
+    }
+  ],
+  "brand": "琴音之旅",
+  "details": 0,
+  "navigation": {
+    "park-navigation": false,
+    "custom-tab-bar": false,
+    ".park-tabs": false
+  },
+  "navigationQueryNote": "官方SDK未定位该复用组件；导航渲染与点击另以原生界面验证，不将此查询当作通过"
+}

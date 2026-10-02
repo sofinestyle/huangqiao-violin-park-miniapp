@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-02T08:16:29.746Z",
+  "mode": "observe",
+  "exceptions": [],
+  "shots": [
+    "observed-pages-tour-index-390.png"
+  ],
+  "checks": [],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 390,
+  "path": "pages/tour/index",
+  "query": {},
+  "slide": 0,
+  "status": "passed"
+}

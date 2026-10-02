@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-02T08:11:45.736Z",
+  "name": "instruments",
+  "expected": "pages/instruments/index",
+  "actual": "pages/instruments/index",
+  "method": "CUA native button click; SDK route/screenshot read afterwards",
+  "submitted": false
+}
