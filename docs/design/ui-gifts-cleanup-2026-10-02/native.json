@@ -1,0 +1,12 @@
+{
+  "width": 430,
+  "brandRetained": true,
+  "bodyHeadingAndDetailButtonsRemoved": true,
+  "squareCover": {
+    "width": 189,
+    "height": 189
+  },
+  "actualCardTap": true,
+  "detailId": "gift-1",
+  "status": "passed"
+}
