@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-03",
+  "sourceBaseline": "3fb90fb",
+  "operator": "Codex",
+  "pageCount": 19,
+  "changedDocumentAndEvidenceFiles": 16,
+  "localLinkCount": 113,
+  "brokenLocalFileLinks": [],
+  "anchorAndExternalLinkChecks": "not executed",
+  "sourceChangesThisRound": [],
+  "homepageAndSharedChangesSinceC927ce6": [],
+  "originals": "原件校验通过：25份业务文件，大小及SHA-256均一致。",
+  "originalsExit": 0,
+  "build": "passed; see build.txt",
+  "isolatedTests": {
+    "passed": 55,
+    "failed": 0,
+    "skipped": 0
+  },
+  "largestTrackedFiles": [
+    {
+      "path": "docs/design/ui-phase-1/homepage-after-375-full.png",
+      "bytes": 2435223
+    },
+    {
+      "path": "docs/design-reference/homepage-target-v1.png",
+      "bytes": 2034691
+    },
+    {
+      "path": "docs/design/references/homepage-target-v1.png",
+      "bytes": 2034691
+    }
+  ],
+  "newNativeOrDeviceTests": "not executed; docs-only"
+}

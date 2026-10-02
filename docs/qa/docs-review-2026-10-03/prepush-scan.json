@@ -1,0 +1,11 @@
+{
+  "scope": "origin/main..3fb90fb pending changed files, pattern scan only",
+  "files": 506,
+  "textFiles": 225,
+  "forbiddenPaths": [],
+  "candidateMatches": [],
+  "newDocumentReview": {
+    "files": 16,
+    "candidateMatches": []
+  }
+}
