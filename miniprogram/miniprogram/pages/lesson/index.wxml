@@ -1,1 +1,27 @@
-<import src="../../templates/state.wxml"/><view class="page"><template is="state" data="{{loading,error}}"/><block wx:if="{{item}}"><view class="h1">{{item.name}}</view><view class="muted">{{item.category}}</view><video wx:if="{{item.type==='video' && !playbackError}}" id="teaching-video" src="{{item.videoUrl}}" poster="{{item.cover}}" controls autoplay="{{false}}" show-fullscreen-btn="{{true}}" binderror="playError" bindtimeupdate="time" bindended="ended" bindplay="play" bindpause="pause"/><view wx:if="{{playbackError}}" class="error">视频加载失败，请重试。<button class="secondary" bindtap="retry">重新加载视频</button></view><image wx:if="{{item.type!=='video' && item.cover}}" class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="h2">内容介绍</view><view class="intro pre-line">{{item.description}}</view><view wx:if="{{item.type==='course'}}" class="panel"><view>适合对象：{{item.audience}}</view><view>授课形式：{{item.form}}</view><view>地点：{{item.place}}</view><view>时间：{{item.courseTime}}</view><view>费用说明：{{item.courseFee}}</view></view><button bindtap="consult">咨询相关教学与课程</button><view class="support-note">观看视频不代表课程报名。</view></block></view>
+<import src="../../templates/state.wxml"/>
+<view class="visitor-page"><view class="visitor-brand"><image class="visitor-logo" src="/assets/yorray-logo.png" mode="aspectFit" aria-label="YorRay"/><text class="visitor-brand-name">{{item.name || '教学内容'}}</text></view>
+<view class="page"><template is="state" data="{{loading,error}}"/><block wx:if="{{item}}"><view class="h1">{{item.name}}</view><view class="muted">{{item.category}}</view><video wx:if="{{item.type==='video' && !playbackError}}" id="teaching-video" src="{{item.videoUrl}}" poster="{{item.cover}}" controls autoplay="{{false}}" show-fullscreen-btn="{{true}}" binderror="playError" bindtimeupdate="time" bindended="ended" bindplay="play" bindpause="pause"/><view wx:if="{{playbackError}}" class="error">视频加载失败，请重试。<button class="secondary" bindtap="retry">重新加载视频</button></view><image wx:if="{{item.type!=='video' && item.cover}}" class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="h2">内容介绍</view><view class="intro pre-line">{{item.description}}</view><view wx:if="{{item.type==='course'}}" class="panel"><view>适合对象：{{item.audience}}</view><view>授课形式：{{item.form}}</view><view>地点：{{item.place}}</view><view>时间：{{item.courseTime}}</view><view>费用说明：{{item.courseFee}}</view></view></block></view>
+  <view class="park-tabs">
+    <navigator class="park-tab" url="/pages/index/index" open-type="switchTab" hover-class="park-tab-pressed" aria-role="button" aria-label="首页">
+      <image class="park-tab-icon" src="/assets/tab-icons/home-muted.png" mode="aspectFit"/>
+      <text class="park-tab-label">首页</text><view class="park-tab-line"/>
+    </navigator>
+    <navigator class="park-tab " url="/pages/instruments/index" open-type="switchTab" hover-class="park-tab-pressed" aria-role="button" aria-label="乐器">
+      <image class="park-tab-icon" src="/assets/tab-icons/instrument-muted.png" mode="aspectFit"/>
+      <text class="park-tab-label">乐器</text><view class="park-tab-line"/>
+    </navigator>
+    <navigator class="park-tab " url="/pages/gifts/index" open-type="switchTab" hover-class="park-tab-pressed" aria-role="button" aria-label="文创">
+      <image class="park-tab-icon" src="/assets/tab-icons/gift-muted.png" mode="aspectFit"/>
+      <text class="park-tab-label">文创</text><view class="park-tab-line"/>
+    </navigator>
+    <navigator class="park-tab" url="/pages/study/index" open-type="switchTab" hover-class="park-tab-pressed" aria-role="button" aria-label="研学">
+      <image class="park-tab-icon" src="/assets/tab-icons/study-muted.png" mode="aspectFit"/>
+      <text class="park-tab-label">研学</text><view class="park-tab-line"/>
+    </navigator>
+    <navigator class="park-tab" url="/pages/mine/index" open-type="switchTab" hover-class="park-tab-pressed" aria-role="button" aria-label="我的">
+      <image class="park-tab-icon" src="/assets/tab-icons/mine-muted.png" mode="aspectFit"/>
+      <text class="park-tab-label">我的</text><view class="park-tab-line"/>
+    </navigator>
+  </view>
+
+</view>

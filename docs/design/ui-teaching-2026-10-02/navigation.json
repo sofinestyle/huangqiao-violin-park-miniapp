@@ -1,0 +1,16 @@
+{
+  "actualClicks": [
+    "teaching → index",
+    "teaching → instruments",
+    "teaching → gifts",
+    "teaching → study",
+    "teaching → mine",
+    "lesson → index",
+    "lesson → instruments",
+    "lesson → gifts",
+    "lesson → study",
+    "lesson → mine"
+  ],
+  "longTitleDisplayOnly": true,
+  "noPersistedTitleChange": true
+}

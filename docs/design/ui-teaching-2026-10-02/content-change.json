@@ -1,0 +1,16 @@
+{
+  "changed": [
+    {
+      "id": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+      "fields": [
+        "images",
+        "duration"
+      ],
+      "stateBefore": "published",
+      "stateAfter": "published"
+    }
+  ],
+  "originalMediaUnchanged": true,
+  "beforeMedia": 10,
+  "afterMedia": 11
+}

@@ -1,1 +1,49 @@
-/* Shared styles are maintained in app.wxss. */
+@import "../../custom-tab-bar/index.wxss";
+/* Page-local brand shell: follows the accepted tour page without changing global styles. */
+.visitor-page {
+  min-height: 100vh;
+  padding-bottom: calc(52px + env(safe-area-inset-bottom));
+  background: #f5eddd;
+  color: #403326;
+}
+.visitor-page .visitor-brand {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  height: 55px;
+  padding: 0 40rpx;
+  background: #3c2b24;
+}
+.visitor-page .visitor-logo {
+  flex-shrink: 0;
+  width: 139.2rpx;
+  height: 86.4rpx;
+  background: transparent;
+  border-radius: 4rpx;
+}
+.visitor-page .visitor-brand-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif;
+  font-size: 34rpx;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1rpx;
+}
+@media (max-width: 320px) {
+  .visitor-page .visitor-brand { gap: 20rpx; }
+  .visitor-page .visitor-brand-name { font-size: 32rpx; }
+}
+
+/* Dynamic titles reserve equal side spaces to keep the text centered and clear of the logo. */
+.visitor-page .visitor-brand { height: auto; min-height: 55px; padding-top: 0; padding-bottom: 0; box-sizing: border-box; }
+.visitor-page .visitor-brand-name { position: static; transform: none; white-space: normal; overflow-wrap: anywhere; flex: 1; min-width: 0; font-size: 30rpx; padding: 8px 0; }
+.visitor-page .visitor-brand::after { content: ""; flex: 0 0 139.2rpx; }
