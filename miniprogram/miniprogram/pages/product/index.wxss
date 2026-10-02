@@ -53,7 +53,7 @@
 }
 
 /* Square display viewport; original images and preview URLs are untouched. */
-.visitor-page .product-gallery-square { position: relative; width: 100%; padding-top: 100%; }
+.visitor-page .product-gallery-square { position: relative; width: 100%; padding-top: 100%; margin-bottom: 5px; }
 .visitor-page .gallery {
   position: absolute;
   top: 0;
