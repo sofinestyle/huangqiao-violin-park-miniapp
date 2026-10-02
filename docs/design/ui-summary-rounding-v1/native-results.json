@@ -1,0 +1,82 @@
+{
+  "exceptions": [],
+  "tests": [],
+  "system": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "system": "iOS 10.0.1",
+    "platform": "devtools",
+    "benchmarkLevel": -1,
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "statusBarHeight": 47,
+    "safeArea": {
+      "top": 47,
+      "left": 0,
+      "right": 390,
+      "bottom": 810,
+      "width": 390,
+      "height": 763
+    },
+    "language": "zh_CN",
+    "version": "8.0.5",
+    "fontSizeSetting": 16,
+    "SDKVersion": "3.17.3",
+    "host": {
+      "env": "WeChat"
+    },
+    "enableDebug": false,
+    "mode": "default",
+    "deviceOrientation": "portrait",
+    "bluetoothEnabled": true,
+    "locationEnabled": true,
+    "wifiEnabled": true,
+    "albumAuthorized": true,
+    "cameraAuthorized": true,
+    "locationAuthorized": true,
+    "microphoneAuthorized": true,
+    "notificationAuthorized": true,
+    "notificationAlertAuthorized": true,
+    "notificationBadgeAuthorized": true,
+    "notificationSoundAuthorized": true,
+    "phoneCalendarAuthorized": true,
+    "bluetoothAuthorized": true,
+    "locationReducedAccuracy": true,
+    "devicePixelRatio": 3
+  },
+  "stats": {
+    "packages": 5,
+    "gifts": 20,
+    "instruments": 7,
+    "series": 1
+  },
+  "summary": {
+    "size": {
+      "width": 390,
+      "height": 120
+    },
+    "text": "20款文创产品7款乐器产品5个研学套餐",
+    "offset": {
+      "left": 0,
+      "top": 1318.59375
+    }
+  },
+  "rootSize": {
+    "width": 390,
+    "height": 1524.59375
+  },
+  "content": {
+    "size": {
+      "width": 390,
+      "height": 911.59375
+    },
+    "offset": {
+      "left": 0,
+      "top": 527
+    }
+  },
+  "componentFound": false
+}
