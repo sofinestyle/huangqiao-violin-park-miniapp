@@ -1,0 +1,8 @@
+{
+  "entry": "study enroll button",
+  "destination": "pages/enrollments/index",
+  "nativeBackArrow": true,
+  "actualNativeBackClick": true,
+  "returnedTo": "pages/study/index",
+  "sourceCodeChanged": false
+}
