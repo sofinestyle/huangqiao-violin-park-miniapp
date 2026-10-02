@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-02T09:12:36.615Z",
+  "mode": "focus-bottom",
+  "exceptions": [],
+  "shots": [
+    "tour-bottom-390.png"
+  ],
+  "checks": [
+    {
+      "focused": "focus-bottom"
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 390,
+  "status": "passed"
+}

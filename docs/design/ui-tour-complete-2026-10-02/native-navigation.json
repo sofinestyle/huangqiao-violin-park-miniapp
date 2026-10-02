@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-02T09:05:17.134Z",
+  "checks": [
+    {
+      "label": "首页",
+      "path": "pages/index/index",
+      "method": "CUA native AX button click"
+    },
+    {
+      "label": "乐器",
+      "path": "pages/instruments/index",
+      "method": "CUA native AX button click"
+    },
+    {
+      "label": "文创",
+      "path": "pages/gifts/index",
+      "method": "CUA native AX button click"
+    },
+    {
+      "label": "研学",
+      "path": "pages/study/index",
+      "method": "CUA native AX button click"
+    },
+    {
+      "label": "我的",
+      "path": "pages/mine/index",
+      "method": "CUA native AX button click"
+    }
+  ],
+  "status": "passed",
+  "businessSubmitted": false
+}

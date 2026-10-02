@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-02T08:57:11.456Z",
+  "mode": "entry-map",
+  "exceptions": [],
+  "checks": [
+    {
+      "actualSDKElementTap": "entry-map",
+      "to": "pages/tour/index"
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 320,
+  "status": "passed",
+  "requestedViews": [
+    {
+      "name": "entry-map-320.png",
+      "method": "deferred CUA native screenshot"
+    }
+  ],
+  "screenshotsObtained": false,
+  "screenshotNote": "浮窗模式下SDK返回空截图；改用CUA保存原生窗口，后续主窗口截图已重新获取。"
+}

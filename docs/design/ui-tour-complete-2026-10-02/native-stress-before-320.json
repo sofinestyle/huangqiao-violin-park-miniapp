@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-02T08:55:27.108Z",
+  "mode": "stress",
+  "exceptions": [],
+  "shots": [],
+  "checks": [
+    {
+      "rowSize": {
+        "width": 268,
+        "height": 945
+      },
+      "durationSize": {
+        "width": 379.609375,
+        "height": 22
+      },
+      "durationOffset": {
+        "left": 38,
+        "top": 218
+      },
+      "durationFits": false
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 320,
+  "controlledOnly": true,
+  "geometry": {
+    "rowSize": {
+      "width": 268,
+      "height": 945
+    },
+    "durationSize": {
+      "width": 379.609375,
+      "height": 22
+    },
+    "durationOffset": {
+      "left": 38,
+      "top": 218
+    },
+    "durationFits": false
+  },
+  "status": "failed",
+  "failure": "长时长说明超过320px视口，已据原生截图判失败并修正。原脚本仅记录布尔值，后续已补断言。"
+}

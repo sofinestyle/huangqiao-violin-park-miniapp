@@ -1,0 +1,342 @@
+Browser tab: 2, Title: "黄桥乐器文化产业园 · 管理后台", URL: "http://127.0.0.1:8787/admin/".
+1 AXWebArea 黄桥乐器文化产业园 · 管理后台, URL: 127.0.0.1:8787/admin/
+	2 container root
+		3 container
+			4 heading 园区管理, Value: 1
+				5 text 园区管理
+			6 text 黄桥乐器文化产业园
+			7 container 后台导航
+				8 button 工作台
+				9 button 内容维护
+				10 button 场次管理
+				11 button 研学预约
+				12 button 咨询管理
+				13 button 素材库
+				14 button 账号权限
+				15 button 操作记录
+			16 text 内容运营与接待管理
+		17 container
+			18 text admin
+			19 button 退出
+		20 container
+			21 heading 内容维护, Value: 1
+				22 text 内容维护
+			23 button 乐器
+			24 button 文创
+			25 button 首页与企业
+			26 button 研学套餐
+			27 button 教学内容
+			28 button 点位导览
+			29 text field (settable) 搜索内容
+			30 button 新增内容
+			31 button 刷新
+			32 table
+				33 row
+					34 cell
+						35 text 封面
+					36 cell
+						37 text 名称 / 编码
+					38 cell
+						39 text 分类
+					40 cell
+						41 text 状态
+					42 cell
+						43 text 排序
+					44 cell
+						45 text 操作
+				46 row
+					47 cell
+						48 text 城市客厅
+						49 text spot-1
+					50 cell
+						51 text —
+					52 cell
+						53 text 已发布
+					54 cell
+						55 text 80
+					56 cell
+						57 button 维护 / 预览
+				58 row
+					59 cell
+						60 text 音乐生态湖
+						61 text spot-2
+					62 cell
+						63 text —
+					64 cell
+						65 text 已发布
+					66 cell
+						67 text 81
+					68 cell
+						69 button 维护 / 预览
+				70 row
+					71 cell
+						72 text 产业园·中小企业集聚区
+						73 text spot-3
+					74 cell
+						75 text —
+					76 cell
+						77 text 已发布
+					78 cell
+						79 text 82
+					80 cell
+						81 button 维护 / 预览
+				82 row
+					83 cell
+						84 text 绿岛·智能环保表面处理中心
+						85 text spot-4
+					86 cell
+						87 text —
+					88 cell
+						89 text 已发布
+					90 cell
+						91 text 83
+					92 cell
+						93 button 维护 / 预览
+			94 container 点位导览 · 维护
+				95 heading 点位导览 · 维护, Value: 2
+					96 text 点位导览 · 维护
+				97 button 关闭详情
+				98 container
+					99 text 名称
+					100 text field (settable) 名称, Value: 城市客厅
+					101 text 发布状态
+					102 pop up button (collapsed, settable) 发布状态, Value: 已发布, Secondary Actions: Expand
+						103 menu
+							104 草稿
+							105 (selected) 已发布
+							106 已下架
+					107 text 排序
+					108 stepper (settable, integer) 排序, Value: 80
+					109 text 介绍
+					110 text entry area (settable) 介绍, Value: 黄桥的"金色名片"。数字沙盘看产业脉络，乐器博览馆探提琴文化，路演厅听演奏、古琴馆赏名琴，一站式读懂提琴故事。
+					111 text 已核实地址
+					112 text field (settable) 已核实地址
+					113 text 开放说明
+					114 text field (settable) 开放说明, Value: 开放安排尚待核定，请先咨询
+					115 text 到访 / 临时公告
+					116 text field (settable) 到访 / 临时公告, Value: 到访前请联系工作人员确认开放与接待安排。
+					117 container 点位标签
+						118 text 点位标签
+						119 text field (settable) Description: 点位标签1, Value: 数字沙盘
+						120 button 移除点位标签1
+						121 text field (settable) Description: 点位标签2, Value: 乐器博览馆
+						122 button 移除点位标签2
+						123 text field (settable) Description: 点位标签3, Value: 路演厅
+						124 button 移除点位标签3
+						125 text field (settable) Description: 点位标签4, Value: 古琴馆
+						126 button 移除点位标签4
+						127 button 添加点位标签
+					128 container 参观项目与预计时长
+						129 text 参观项目与预计时长
+						130 container
+							131 text 项目名称
+							132 text field (settable) Description: 参观项目1名称, Value: 数字沙盘
+							133 text 预计参观时长
+							134 text field (settable) Description: 参观项目1时长, Value: 20 分钟
+							135 text 项目介绍
+							136 text entry area (settable) Description: 参观项目1介绍, Value: 了解黄桥发展脉络
+							137 button 移除参观项目1
+						138 container
+							139 text 项目名称
+							140 text field (settable) Description: 参观项目2名称, Value: 乐器博览馆
+							141 text 预计参观时长
+							142 text field (settable) Description: 参观项目2时长, Value: 20 分钟
+							143 text 项目介绍
+							144 text entry area (settable) Description: 参观项目2介绍, Value: 深入探究提琴文化
+							145 button 移除参观项目2
+						146 container
+							147 text 项目名称
+							148 text field (settable) Description: 参观项目3名称, Value: 路演厅
+							149 text 预计参观时长
+							150 text field (settable) Description: 参观项目3时长, Value: 20 分钟
+							151 text 项目介绍
+							152 text entry area (settable) Description: 参观项目3介绍, Value: 提琴知识普及与演奏欣赏
+							153 button 移除参观项目3
+						154 container
+							155 text 项目名称
+							156 text field (settable) Description: 参观项目4名称, Value: 古琴馆
+							157 text 预计参观时长
+							158 text field (settable) Description: 参观项目4时长, Value: 10 分钟
+							159 text 项目介绍
+							160 text entry area (settable) Description: 参观项目4介绍, Value: 欣赏古典提琴
+							161 button 移除参观项目4
+						162 button 添加参观项目
+					163 container 内容图片
+						164 text 内容图片
+						165 text 可直接上传新图片，也可复用素材库；第一张作为封面。
+						166 pop up button (collapsed, settable) Value: city.jpg, Secondary Actions: Expand
+							167 menu
+								168 hero-violin.jpg
+								169 workshop.jpg
+								170 wenchuang.jpg
+								171 (selected) city.jpg
+								172 lake.jpg
+								173 industry.jpg
+								174 green.jpg
+								175 yorray-logo.png
+								176 c1.jpg
+								177 c2.jpg
+								178 c3.jpg
+								179 c4.jpg
+								180 i1.jpg
+								181 i2.jpg
+								182 i3.jpg
+								183 i4.jpg
+								184 g1.jpg
+								185 g2.jpg
+								186 g3.jpg
+								187 g4.jpg
+								188 l1.jpg
+								189 l2.jpg
+								190 l3.jpg
+								191 homepage-workshop-background-20261001.png
+								192 yorray-logo.png
+								193 hero-violin.jpg
+								194 dmx-image-1785425593376-1-v1.png
+						195 button 移除
+						196 pop up button (collapsed, settable) Value: c1.jpg, Secondary Actions: Expand
+							197 menu
+								198 hero-violin.jpg
+								199 workshop.jpg
+								200 wenchuang.jpg
+								201 city.jpg
+								202 lake.jpg
+								203 industry.jpg
+								204 green.jpg
+								205 yorray-logo.png
+								206 (selected) c1.jpg
+								207 c2.jpg
+								208 c3.jpg
+								209 c4.jpg
+								210 i1.jpg
+								211 i2.jpg
+								212 i3.jpg
+								213 i4.jpg
+								214 g1.jpg
+								215 g2.jpg
+								216 g3.jpg
+								217 g4.jpg
+								218 l1.jpg
+								219 l2.jpg
+								220 l3.jpg
+								221 homepage-workshop-background-20261001.png
+								222 yorray-logo.png
+								223 hero-violin.jpg
+								224 dmx-image-1785425593376-1-v1.png
+						225 button 移除
+						226 pop up button (collapsed, settable) Value: c2.jpg, Secondary Actions: Expand
+							227 menu
+								228 hero-violin.jpg
+								229 workshop.jpg
+								230 wenchuang.jpg
+								231 city.jpg
+								232 lake.jpg
+								233 industry.jpg
+								234 green.jpg
+								235 yorray-logo.png
+								236 c1.jpg
+								237 (selected) c2.jpg
+								238 c3.jpg
+								239 c4.jpg
+								240 i1.jpg
+								241 i2.jpg
+								242 i3.jpg
+								243 i4.jpg
+								244 g1.jpg
+								245 g2.jpg
+								246 g3.jpg
+								247 g4.jpg
+								248 l1.jpg
+								249 l2.jpg
+								250 l3.jpg
+								251 homepage-workshop-background-20261001.png
+								252 yorray-logo.png
+								253 hero-violin.jpg
+								254 dmx-image-1785425593376-1-v1.png
+						255 button 移除
+						256 pop up button (collapsed, settable) Value: c3.jpg, Secondary Actions: Expand
+							257 menu
+								258 hero-violin.jpg
+								259 workshop.jpg
+								260 wenchuang.jpg
+								261 city.jpg
+								262 lake.jpg
+								263 industry.jpg
+								264 green.jpg
+								265 yorray-logo.png
+								266 c1.jpg
+								267 c2.jpg
+								268 (selected) c3.jpg
+								269 c4.jpg
+								270 i1.jpg
+								271 i2.jpg
+								272 i3.jpg
+								273 i4.jpg
+								274 g1.jpg
+								275 g2.jpg
+								276 g3.jpg
+								277 g4.jpg
+								278 l1.jpg
+								279 l2.jpg
+								280 l3.jpg
+								281 homepage-workshop-background-20261001.png
+								282 yorray-logo.png
+								283 hero-violin.jpg
+								284 dmx-image-1785425593376-1-v1.png
+						285 button 移除
+						286 pop up button (collapsed, settable) Value: c4.jpg, Secondary Actions: Expand
+							287 menu
+								288 hero-violin.jpg
+								289 workshop.jpg
+								290 wenchuang.jpg
+								291 city.jpg
+								292 lake.jpg
+								293 industry.jpg
+								294 green.jpg
+								295 yorray-logo.png
+								296 c1.jpg
+								297 c2.jpg
+								298 c3.jpg
+								299 (selected) c4.jpg
+								300 i1.jpg
+								301 i2.jpg
+								302 i3.jpg
+								303 i4.jpg
+								304 g1.jpg
+								305 g2.jpg
+								306 g3.jpg
+								307 g4.jpg
+								308 l1.jpg
+								309 l2.jpg
+								310 l3.jpg
+								311 homepage-workshop-background-20261001.png
+								312 yorray-logo.png
+								313 hero-violin.jpg
+								314 dmx-image-1785425593376-1-v1.png
+						315 button 移除
+						316 container 上传图片
+							317 container
+								318 text 上传新图片
+								319 button 上传新图片 支持JPG、PNG，单个文件不超过64MB。
+								320 text 支持JPG、PNG，单个文件不超过64MB。
+							321 container
+								322 text 文件来源与使用授权
+								323 text entry area (settable) 文件来源与使用授权
+							324 button 上传并添加图片
+							325 text 保存内容前，文件仅存入素材库；草稿不会对外展示。
+						326 button 从素材库添加图片
+					327 container 地图位置（核实后填写）
+						328 text 地图位置（核实后填写）
+						329 container
+							330 text 纬度
+							331 stepper (settable) 纬度
+						332 container
+							333 text 经度
+							334 stepper (settable) 经度
+						335 checkbox (settable, integer) Description: 坐标已由工作人员核实, Value: 0
+						336 text 未核实坐标时不开放导航，不填猜测位置。
+					337 image 封面预览
+					338 text 草稿不会出现在小程序中，发布后即可展示。
+					339 button 保存内容
+
+The focused UI element is 57 button 维护 / 预览

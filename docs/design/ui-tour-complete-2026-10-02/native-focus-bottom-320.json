@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-02T09:09:57.506Z",
+  "mode": "focus-bottom",
+  "exceptions": [],
+  "shots": [
+    "tour-bottom-320.png"
+  ],
+  "checks": [
+    {
+      "focused": "focus-bottom"
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 320,
+  "status": "passed"
+}

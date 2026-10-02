@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02T08:51:38.118Z",
+  "mode": "focus-2",
+  "exceptions": [],
+  "shots": [],
+  "checks": [
+    {
+      "focused": "focus-2"
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 14 Pro Max",
+    "windowWidth": 430,
+    "windowHeight": 834,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 430,
+  "status": "passed"
+}

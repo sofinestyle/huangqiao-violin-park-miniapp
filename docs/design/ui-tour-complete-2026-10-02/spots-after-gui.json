@@ -1,0 +1,169 @@
+[
+  {
+    "id": "spot-1",
+    "kind": "spot",
+    "name": "城市客厅",
+    "description": "黄桥的\"金色名片\"。数字沙盘看产业脉络，乐器博览馆探提琴文化，路演厅听演奏、古琴馆赏名琴，一站式读懂提琴故事。",
+    "images": [
+      "/assets/city.jpg",
+      "/assets/c1.jpg",
+      "/assets/c2.jpg",
+      "/assets/c3.jpg",
+      "/assets/c4.jpg"
+    ],
+    "address": "",
+    "opening": "开放安排尚待核定，请先咨询",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "tags": [
+      "数字沙盘",
+      "乐器博览馆",
+      "路演厅",
+      "古琴馆"
+    ],
+    "visitItems": [
+      {
+        "name": "数字沙盘",
+        "description": "了解黄桥发展脉络",
+        "durationNote": "20 分钟"
+      },
+      {
+        "name": "乐器博览馆",
+        "description": "深入探究提琴文化",
+        "durationNote": "20 分钟"
+      },
+      {
+        "name": "路演厅",
+        "description": "提琴知识普及与演奏欣赏",
+        "durationNote": "20 分钟"
+      },
+      {
+        "name": "古琴馆",
+        "description": "欣赏古典提琴",
+        "durationNote": "10 分钟"
+      }
+    ],
+    "state": "published",
+    "sort": 80,
+    "version": 4
+  },
+  {
+    "id": "spot-2",
+    "kind": "spot",
+    "name": "音乐生态湖",
+    "description": "小镇的灵动明珠。音乐喷泉随旋律起伏起舞，草坪音乐会露天开唱，湖畔漫步，把琴韵融入湖光。",
+    "images": [
+      "/assets/lake.jpg",
+      "/assets/l1.jpg",
+      "/assets/l2.jpg",
+      "/assets/l3.jpg"
+    ],
+    "address": "",
+    "opening": "开放安排尚待核定，请先咨询",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "tags": [
+      "音乐喷泉",
+      "草坪音乐会"
+    ],
+    "visitItems": [
+      {
+        "name": "音乐喷泉",
+        "description": "",
+        "durationNote": "约 1 小时"
+      },
+      {
+        "name": "草坪音乐会",
+        "description": "",
+        "durationNote": "约 1 小时"
+      }
+    ],
+    "state": "published",
+    "sort": 81,
+    "version": 3
+  },
+  {
+    "id": "spot-3",
+    "kind": "spot",
+    "name": "产业园·中小企业集聚区",
+    "description": "沉浸式走进提琴全产业链。沿通道参观生产流程，在制作工坊近距离观摩大师制琴，研学体验中心亲手组装尤克里里。",
+    "images": [
+      "/assets/industry.jpg",
+      "/assets/i1.jpg",
+      "/assets/i2.jpg",
+      "/assets/i3.jpg",
+      "/assets/i4.jpg"
+    ],
+    "address": "",
+    "opening": "开放安排尚待核定，请先咨询",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "tags": [
+      "生产工厂",
+      "制作工坊",
+      "尤克里里体验"
+    ],
+    "visitItems": [
+      {
+        "name": "生产工厂",
+        "description": "介绍小提琴具体制作流程",
+        "durationNote": "30 分钟"
+      },
+      {
+        "name": "制作工坊",
+        "description": "观摩大师制琴",
+        "durationNote": "30 分钟"
+      },
+      {
+        "name": "研学体验中心",
+        "description": "尤克里里制作体验",
+        "durationNote": "60 分钟"
+      }
+    ],
+    "state": "published",
+    "sort": 82,
+    "version": 3
+  },
+  {
+    "id": "spot-4",
+    "kind": "spot",
+    "name": "绿岛·智能环保表面处理中心",
+    "description": "绿色生产与精工制造的融合之地。大师工坊切磋工艺，静电喷漆、机器人喷涂手臂整齐作业，看科技如何守护一把琴的漆面。",
+    "images": [
+      "/assets/green.jpg",
+      "/assets/g1.jpg",
+      "/assets/g2.jpg",
+      "/assets/g3.jpg",
+      "/assets/g4.jpg"
+    ],
+    "address": "",
+    "opening": "开放安排尚待核定，请先咨询",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "tags": [
+      "大师工坊",
+      "静电喷漆",
+      "机器人喷漆"
+    ],
+    "visitItems": [
+      {
+        "name": "大师工坊",
+        "description": "与大师探讨制琴工艺",
+        "durationNote": "20 分钟"
+      },
+      {
+        "name": "静电喷漆",
+        "description": "观看静电喷漆技术",
+        "durationNote": "20 分钟"
+      },
+      {
+        "name": "机器人喷漆",
+        "description": "高科技喷漆体验",
+        "durationNote": "20 分钟"
+      }
+    ],
+    "state": "published",
+    "sort": 83,
+    "version": 3
+  }
+]

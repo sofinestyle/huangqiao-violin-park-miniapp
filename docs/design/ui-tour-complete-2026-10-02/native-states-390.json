@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-02T09:03:57.713Z",
+  "mode": "states",
+  "exceptions": [],
+  "shots": [
+    "tour-top-390.png",
+    "tour-stop-1-390.png",
+    "tour-body-1-390.png",
+    "tour-stop-2-390.png",
+    "tour-body-2-390.png",
+    "tour-stop-3-390.png",
+    "tour-body-3-390.png",
+    "tour-stop-4-390.png",
+    "tour-body-4-390.png",
+    "tour-bottom-390.png",
+    "controlled-long-390.png",
+    "controlled-loading-390.png",
+    "controlled-error-390.png",
+    "controlled-empty-390.png"
+  ],
+  "checks": [
+    {
+      "brandSize": {
+        "width": 390,
+        "height": 55
+      },
+      "detailsRemoved": true
+    },
+    {
+      "allPublishedContentMatchesAttachments": true,
+      "visitRows": 12,
+      "everyRowDashed": true
+    },
+    {
+      "id": "spot-1",
+      "name": "城市客厅",
+      "size": {
+        "width": 362,
+        "height": 630
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-2",
+      "name": "音乐生态湖",
+      "size": {
+        "width": 362,
+        "height": 521
+      },
+      "imageCount": 4,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-3",
+      "name": "产业园·中小企业集聚区",
+      "size": {
+        "width": 362,
+        "height": 587
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-4",
+      "name": "绿岛·智能环保表面处理中心",
+      "size": {
+        "width": 362,
+        "height": 587
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "legacyOptionalFieldsRender": true,
+      "controlledOnly": true
+    },
+    {
+      "retryActualSDKElementTap": true,
+      "actualServiceReload": true,
+      "errorWasControlledDisplay": true
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 390,
+  "status": "passed"
+}

@@ -1,0 +1,502 @@
+{
+  "date": "2026-10-02",
+  "references": [
+    {
+      "reference": "reference-1.png",
+      "sha256": "383e06103759e2c388fd7c9b92bfe79f953e83134b251192cfd18568c792722c",
+      "attachmentMatches": true
+    },
+    {
+      "reference": "reference-2.png",
+      "sha256": "9a86d47e7bee3b02389ad81f24f79535aed99db2b9df0530d1a1f976414b0a46",
+      "attachmentMatches": true
+    },
+    {
+      "reference": "reference-3.png",
+      "sha256": "40a138ae9c30c01078b9fe8fd9706e9871d115739e47cff529685c7d5276fc3f",
+      "attachmentMatches": true
+    },
+    {
+      "reference": "reference-4.png",
+      "sha256": "1cea6597857e62f56c169bef9891b92ad58b8635f43ffe2f0d9811331ba09c16",
+      "attachmentMatches": true
+    },
+    {
+      "reference": "reference-5.png",
+      "sha256": "068f35b173e9a6aa4e472bfe7a5b49db405d8fc616543a3959eb4df0a111f27b",
+      "attachmentMatches": true
+    }
+  ],
+  "localLinksChecked": 41,
+  "emptyEvidenceFiles": [],
+  "originalFiles": 25,
+  "originalCheck": "size and SHA-256 passed before and after",
+  "nativeReports": {
+    "native-focus-bottom-320.json": {
+      "status": "passed",
+      "width": 320,
+      "exceptions": []
+    },
+    "native-capture-unknown.json": {
+      "status": "failed",
+      "width": null,
+      "exceptions": []
+    },
+    "native-observe-390.json": {
+      "status": "passed",
+      "width": 390,
+      "exceptions": []
+    },
+    "native-stress-before-320.json": {
+      "status": "failed",
+      "width": 320,
+      "exceptions": []
+    },
+    "native-capture-320.json": {
+      "status": "passed",
+      "width": 320,
+      "exceptions": []
+    },
+    "native-entry-map-320.json": {
+      "status": "passed",
+      "width": 320,
+      "exceptions": []
+    },
+    "native-navigation.json": {
+      "status": "passed",
+      "width": null,
+      "exceptions": []
+    },
+    "native-focus-3-430.json": {
+      "status": "passed",
+      "width": 430,
+      "exceptions": []
+    },
+    "native-focus-2-430.json": {
+      "status": "passed",
+      "width": 430,
+      "exceptions": []
+    },
+    "native-states-390.json": {
+      "status": "passed",
+      "width": 390,
+      "exceptions": []
+    },
+    "native-focus-bottom-375.json": {
+      "status": "passed",
+      "width": 375,
+      "exceptions": []
+    },
+    "native-capture-375.json": {
+      "status": "passed",
+      "width": 375,
+      "exceptions": []
+    },
+    "native-stress-320.json": {
+      "status": "passed",
+      "width": 320,
+      "exceptions": []
+    },
+    "native-gallery-430.json": {
+      "status": "passed",
+      "width": 430,
+      "exceptions": []
+    },
+    "native-capture-430.json": {
+      "status": "passed",
+      "width": 430,
+      "exceptions": []
+    },
+    "native-focus-bottom-390.json": {
+      "status": "passed",
+      "width": 390,
+      "exceptions": []
+    },
+    "native-focus-4-430.json": {
+      "status": "passed",
+      "width": 430,
+      "exceptions": []
+    }
+  },
+  "testResult": {
+    "passed": 49,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": "passed",
+  "truthfulLimitations": "Native gesture attempt failed; official swiper component calls passed. Controlled states are not real network failures. No WeChat real device or deployment.",
+  "manifest": {
+    "native-green-430.jpg": {
+      "size": 123307,
+      "sha256": "431cede6ec581d8c75acb6537476dee832f6e5106dabf3fe22677f246a77c687"
+    },
+    "tour-body-3-375.png": {
+      "size": 106722,
+      "sha256": "544554fd18b5c574bdce87f72bc35536b427fc9ec00d5938644b330ccd93253b"
+    },
+    "tour-body-4-320.png": {
+      "size": 72989,
+      "sha256": "f401ba2dd6653e5fe1b2b4fc592dfd37d7534a846604d2ad5e97633aa0fcc6d3"
+    },
+    "spots-after.json": {
+      "size": 4631,
+      "sha256": "05af6a129dc27f2e50cf8dc2b38c4aa43634e35e77b92b91556eadf524b11c77"
+    },
+    "tour-stop-4-430.png": {
+      "size": 131681,
+      "sha256": "480bf3d678348b05ca6cbe954e379a8cfcc50fba350931b9052b29191f8424d8"
+    },
+    "tour-bottom-390.png": {
+      "size": 86599,
+      "sha256": "c1aad743debc677ccddbd0a6bfadb96089d0dcd602a21beeb8f502dce6f712cd"
+    },
+    "spots-after-gui.json": {
+      "size": 4632,
+      "sha256": "bd0d5fa999c161382c9db4846d9e9b0566cbc999d3a60aaa39e7c1bd81559720"
+    },
+    "tour-stop-4-390.png": {
+      "size": 132634,
+      "sha256": "8ca0077de96227f2996222e74d052e1105ca4ac61e2b9d595d3cc12a94547989"
+    },
+    "tour-bottom-430.png": {
+      "size": 122745,
+      "sha256": "a37e3cbe1a37bc97796678e18d099ca9d91fd5d372f2985a27c47982d9c17571"
+    },
+    "tour-top-320.png": {
+      "size": 127981,
+      "sha256": "352fe5f4b71a5dc802509ae0c9bab8aff3cac6d9360ec3e18e9b47c4619d7dab"
+    },
+    "tour-body-2-375.png": {
+      "size": 121500,
+      "sha256": "3794ac7d48e624ae8fd00db6489fb7512dde8b101a700c429a26597d496cac43"
+    },
+    "tour-stop-1-375.png": {
+      "size": 158218,
+      "sha256": "0237720415f5a486ccd6472e9371730ef5905a6ab6b6016e0cea5b84386c6932"
+    },
+    "spots-before.json": {
+      "size": 2217,
+      "sha256": "ac23d87c15ea76231a672a11cd15590b7b7b381a912cfda4cc15b6e76e81d101"
+    },
+    "native-focus-bottom-320.json": {
+      "size": 379,
+      "sha256": "a44d2ffb320da80fdf158f57daf5f6f58e3ea72105599ac77d191780c0d40e0e"
+    },
+    "tour-body-4-430.png": {
+      "size": 122737,
+      "sha256": "80e76928f3313e73e6d920eb5b980f2a687b6a2d953facb0907f613946dab685"
+    },
+    "native-capture-unknown.json": {
+      "size": 820,
+      "sha256": "707a438da15c41031d7888a4011ee33612868b57d55783df7a0ce7b222cdf7fb"
+    },
+    "native-observe-390.json": {
+      "size": 410,
+      "sha256": "9dfdb60c33fc2fc1d33e9f18938dcb598acaa73705626fd7e949124336693b41"
+    },
+    "tour-top-390.png": {
+      "size": 152513,
+      "sha256": "5949634d1f319b58d9063ae069b8a0b4af69da7bee4c09232a51603b0e0748cf"
+    },
+    "native-city-430.jpg": {
+      "size": 135939,
+      "sha256": "7feae6fcfe1216a45d59e67ef86d59afd800440516df8b7b9e6a17747f0b101b"
+    },
+    "content-restoration.json": {
+      "size": 1026,
+      "sha256": "74083b4e9a63602c0b6ba996f38effe1956047b546204519b2f3a6e43540a5b1"
+    },
+    "controlled-error-390.png": {
+      "size": 54653,
+      "sha256": "0761fc02a8c2ee68d1ec66e095a8f84901079047b91940b237353a7ec86df3a5"
+    },
+    "tour-stop-4-320.png": {
+      "size": 114851,
+      "sha256": "609fb39c8dc3abd1f8d44a2206fb7e6b6db9036145a82b13fa7776e82161b5e8"
+    },
+    "native-stress-before-320.json": {
+      "size": 989,
+      "sha256": "9b8a417b8267f4282a7616bbbc480a22f324a0a11ac85281fd244608cd492976"
+    },
+    "gallery-4-430.png": {
+      "size": 127098,
+      "sha256": "6bd20cd007284889ead000212b8ddbce9f8db1c74195aeaefc489280601276b9"
+    },
+    "native-capture-320.json": {
+      "size": 1663,
+      "sha256": "03d71e47e7149aee376c7d09cb764913ce2f7c45d3c55c3996c8b6b0b87daa6d"
+    },
+    "controlled-long-390.png": {
+      "size": 141587,
+      "sha256": "2cd33080418a8143caed8eef58ebea334691defcd23d9bbbd97763bf5fde43dc"
+    },
+    "tour-stop-3-375.png": {
+      "size": 140869,
+      "sha256": "0126f9c10aa4ddf051dddb31cc4b3432def5d2fb05d8510ceb374a4525b7afbc"
+    },
+    "tour-body-1-375.png": {
+      "size": 99115,
+      "sha256": "92b1ad2eedc937cb0b1f11f259536f23e0f901462ce7739341bd3b9a82d782f1"
+    },
+    "native-industry-430.jpg": {
+      "size": 119787,
+      "sha256": "602521581e2b1da21301f8f9dfb042df4bc9d4480f3fe43456737bf8898b684f"
+    },
+    "tour-bottom-320.png": {
+      "size": 58187,
+      "sha256": "39a47ff1c8642a512845483b6714f8d39efbf8611bd6b179a091a61c2c0bd44b"
+    },
+    "native-entry-map-320.json": {
+      "size": 657,
+      "sha256": "c8f100671eee6ca4f0ca40dbd13d69d188775aa1730e33d0461ff6d25fe1e3e1"
+    },
+    "protection-report.json": {
+      "size": 1367,
+      "sha256": "f648ba57d92e6de77e4b4627be7d1f93eff2440e9d5850f358bd18ff195c53c7"
+    },
+    "tour-stop-2-375.png": {
+      "size": 145052,
+      "sha256": "ea91ad68c78648decb57d28c1d1bd4e6e03ff1e23b4aba066dac566da3e78668"
+    },
+    "admin-city-after-refresh.ax.txt": {
+      "size": 10793,
+      "sha256": "8f8b9453a1c3e4e543b0cc543906418a93da466ca5ee1c8c43ef204228a37527"
+    },
+    "tour-body-4-390.png": {
+      "size": 95406,
+      "sha256": "379c3d61567c6b23ff54b514e037cdcdf44a52ede4604b4f97b49481f6caf061"
+    },
+    "tour-top-430.png": {
+      "size": 159153,
+      "sha256": "abc187f38c5be0faa5827ff386f6538760f6f5a3616d3daf5a01d9d5e3abc6a9"
+    },
+    "native-check.cjs.txt": {
+      "size": 8421,
+      "sha256": "541a150625d61d06bc6676e7f74c00bdc78aa498beb712b5638e5e2abf384bf1"
+    },
+    "tour-stop-3-430.png": {
+      "size": 160585,
+      "sha256": "c46526ad9f99c8dca7c97835aa75e66704dbd9cf43102fa6861164b5b865a205"
+    },
+    "native-navigation.json": {
+      "size": 705,
+      "sha256": "6547094bff3dcccb3dbcc28df947daac3d1c753d6429afc376c42c553883b6e7"
+    },
+    "tracked-before.json": {
+      "size": 126717,
+      "sha256": "179c4d94b7fca34da80ef0ebc583e5906c00a2ef27339492c16f7d036a0d462d"
+    },
+    "tour-stop-2-390.png": {
+      "size": 155982,
+      "sha256": "68db2f9e3ca31d4ac3c0a095b74a9f8d6a103db61ddd9be7f1d20405f985cde5"
+    },
+    "approved-content.json": {
+      "size": 2402,
+      "sha256": "b4556a16d23c2cdb5150fd221e42ad73440755494c2c2787d7cf4880877d8007"
+    },
+    "native-focus-3-430.json": {
+      "size": 349,
+      "sha256": "04e59caa5ed5d317d211bb23817feb95a08eb8f43f3574fca328bae65a8c15ca"
+    },
+    "native-focus-2-430.json": {
+      "size": 349,
+      "sha256": "8ac66248befec9a7f393230f6b930bf4e652a213b8405d51dce5eacb972f31e3"
+    },
+    "reference-5.png": {
+      "size": 37740,
+      "sha256": "068f35b173e9a6aa4e472bfe7a5b49db405d8fc616543a3959eb4df0a111f27b"
+    },
+    "observed-pages-tour-index-390.png": {
+      "size": 151642,
+      "sha256": "ea160e0a2160b863cce7e386b79453ac7760ae406ce06e57e8bcf034812a6abf"
+    },
+    "native-states-390.json": {
+      "size": 2013,
+      "sha256": "0255927d942b08fe74fdeb7310b2ba3f740191d56064963781640267de761dd6"
+    },
+    "admin-city-after-refresh.png": {
+      "size": 81023,
+      "sha256": "90c287136a2a444029c1324a77fd9cdf2b80e2368571ed4fda8bcf585df99a31"
+    },
+    "reference-4.png": {
+      "size": 50465,
+      "sha256": "1cea6597857e62f56c169bef9891b92ad58b8635f43ffe2f0d9811331ba09c16"
+    },
+    "native-focus-bottom-375.json": {
+      "size": 383,
+      "sha256": "c37582148bf3fe66ac45da514a029d9568b52fb74034ab0ec787291221234e61"
+    },
+    "tour-body-1-390.png": {
+      "size": 146970,
+      "sha256": "998e6d7165346721039e0f43c19b702b09539ad14301f7aabba5ffe161a94ffd"
+    },
+    "native-capture-375.json": {
+      "size": 1667,
+      "sha256": "30f6376a833f167eefd0fa1354ffcbc17e31766c535372625f211a7080f46b92"
+    },
+    "gallery-0-430.png": {
+      "size": 152465,
+      "sha256": "42c6c7915d2d70ff1e5474e0bb61bca966e33d8fb9d586fc93d3f185248ec592"
+    },
+    "tour-body-3-320.png": {
+      "size": 74383,
+      "sha256": "53a01d92cb8d6bf636c350f1857c7e2faa952d1e24b92d2a3b5fd90b6d68258d"
+    },
+    "tour-body-4-375.png": {
+      "size": 91654,
+      "sha256": "283a36e020b9adfcad69e6ae0eba9da72ddeb2549ceab42f1665e8915ffad5ea"
+    },
+    "controlled-loading-390.png": {
+      "size": 48195,
+      "sha256": "7c7a94a9140c495d2eb399830cd11416816c0ea36e8721f38e3ddda1e14388e4"
+    },
+    "gallery-1-430.png": {
+      "size": 159084,
+      "sha256": "a501619e8bd8dc492340abdf9cb90ac40d2621a09db2072328badb8aa90813da"
+    },
+    "reference-3.png": {
+      "size": 83810,
+      "sha256": "40a138ae9c30c01078b9fe8fd9706e9871d115739e47cff529685c7d5276fc3f"
+    },
+    "tour-top-375.png": {
+      "size": 153288,
+      "sha256": "a1c278fd9f7572eee8e6283b57e78629a0bcb8b76cf92b75299472054ff7da24"
+    },
+    "tour-body-2-320.png": {
+      "size": 66281,
+      "sha256": "60fae701030f9ac8216b491f6afc81e1c1c33635084aae0d717ea37440a71fef"
+    },
+    "tour-stop-1-320.png": {
+      "size": 135745,
+      "sha256": "5871da0e1f26780fca11d300836ce4b5ae82b013de8b8a65afa5b567ef189501"
+    },
+    "reference-2.png": {
+      "size": 79023,
+      "sha256": "9a86d47e7bee3b02389ad81f24f79535aed99db2b9df0530d1a1f976414b0a46"
+    },
+    "build-output.txt": {
+      "size": 422,
+      "sha256": "b7a2b7faf9478834991165c09024f898267743ea30390eb1734c800fa6aaf283"
+    },
+    "tour-stop-3-390.png": {
+      "size": 145035,
+      "sha256": "804a5413d66d6e29484dd8f73a9af5c519f38f404c85fcd70b9abc9429e7fe43"
+    },
+    "content-restoration.mjs.txt": {
+      "size": 3981,
+      "sha256": "2a7b183e02fe8052352aadc8694bf0e4179476c4c57409223382ffed5ddfe03a"
+    },
+    "tour-stop-2-430.png": {
+      "size": 181748,
+      "sha256": "89449c4c0b18be4b67034ece74180c601f854c4e6e314b413c58fd863aca8e9d"
+    },
+    "controlled-long-before-320.jpg": {
+      "size": 53296,
+      "sha256": "a37788879616f04756153d4261dfcba1226e4faf93851b0cf1ece78d376498f3"
+    },
+    "reference-1.png": {
+      "size": 96096,
+      "sha256": "383e06103759e2c388fd7c9b92bfe79f953e83134b251192cfd18568c792722c"
+    },
+    "native-stress-320.json": {
+      "size": 861,
+      "sha256": "728ef7115e300e5922697933fa3715c57bef5bd7d499b20d58c6c7229e58f590"
+    },
+    "tour-body-1-430.png": {
+      "size": 159276,
+      "sha256": "6bf545ab8fad46aedd1b1efee64f7285ae20ba4dd4ea1afb2a605f5a3e20300e"
+    },
+    "test-output.txt": {
+      "size": 4756,
+      "sha256": "992e7bb26fe1225e8220d969c527f49e88c3edff4d53b04fc21ac4a8ca239b11"
+    },
+    "tour-stop-4-375.png": {
+      "size": 134887,
+      "sha256": "4d5422ae308ea9262fbad1c4d364b601f6fdb5c107d348364e09151662d9e820"
+    },
+    "gallery-3-430.png": {
+      "size": 149028,
+      "sha256": "4c41569a11a0da7cc62f7fe0220c662dcbe36c25c07419e3235ae3b547c6bb50"
+    },
+    "native-gallery-430.json": {
+      "size": 1081,
+      "sha256": "8d41e000890e4549a2b1fe539a9a0f122763a7827b65fa5b38c57147accdfa5c"
+    },
+    "native-capture-430.json": {
+      "size": 1672,
+      "sha256": "e6e2887675315ea43970d13025477245d8cc5aa467057be9775a0b684dd9558f"
+    },
+    "native-focus-bottom-390.json": {
+      "size": 389,
+      "sha256": "fc85d3ee44ace50946834fb505de5fad243f91dd67e872396ad96b07abb7ec77"
+    },
+    "native-lake-430.jpg": {
+      "size": 118391,
+      "sha256": "6102883466a3c901978400be5c50f09cc035ea5610a84384ac4d7fbb3adcfb75"
+    },
+    "tour-stop-3-320.png": {
+      "size": 120845,
+      "sha256": "2b4a7818ad5ab8cfa74e27b2289246050d98c0d25a0486d486b4dd863c2fa452"
+    },
+    "tour-stop-1-390.png": {
+      "size": 159500,
+      "sha256": "6eca953909e453d568eb5eebee20ba58530a7000624ed090319163fe79e47381"
+    },
+    "tour-body-2-390.png": {
+      "size": 145007,
+      "sha256": "e6454c4d191ef501375b4a244079b1989f4c7ee2b50d84ffce48033445e30b5d"
+    },
+    "tour-body-3-430.png": {
+      "size": 146326,
+      "sha256": "7565729e73fdd438457a33f77a0a95ee34894b4ef17ed61788e2be021f9e7c8e"
+    },
+    "native-focus-4-430.json": {
+      "size": 349,
+      "sha256": "55ea7910c6f84900b6395d213b6bfba6b1394cb21d7f8a83182e774e01858a65"
+    },
+    "controlled-long-after-320.jpg": {
+      "size": 67852,
+      "sha256": "a968b22e2a06dbdbc8bc40fb0c36d0651a3d3f4e0577eed1901b534ff334ace0"
+    },
+    "tour-stop-1-430.png": {
+      "size": 176033,
+      "sha256": "cc6499cec1f2e5d5a30de4aa96ae5f3b4dc0f0c617ec5975cf5441a2056dc41c"
+    },
+    "protection-check.mjs.txt": {
+      "size": 3895,
+      "sha256": "d1cee11abbdd8fdba5fd71a33588a56379fd52a8932796327ec63ff0d6b03329"
+    },
+    "controlled-empty-390.png": {
+      "size": 48868,
+      "sha256": "3a660e4696b02127cf2b44443043977149b231f60e49514d98b1e8759d39223a"
+    },
+    "tour-body-2-430.png": {
+      "size": 145530,
+      "sha256": "669e2a9f92508ed6948745da08ed0d2bef0e56c4f93d7ee9ce5334f197c8526a"
+    },
+    "tour-body-3-390.png": {
+      "size": 143395,
+      "sha256": "d460cdefc0dff16a3c7be394cca2560c09b4b99ce3a8e8df08b21cb77eb907c7"
+    },
+    "tour-body-1-320.png": {
+      "size": 76502,
+      "sha256": "e7b8024a979a6f58b819daa567147c6f272cdc598cdf72ed7ecbd81fb8f03bbc"
+    },
+    "tour-bottom-375.png": {
+      "size": 74705,
+      "sha256": "10ac2bcb2a95653fb6f6c710822bf0c4f70dcf96e72908af4fb1b9581837b9d5"
+    },
+    "gallery-2-430.png": {
+      "size": 158682,
+      "sha256": "75b31b6244347f74b52bcbefac73698ed18d3666f4cf93d87875da8f8ffcbbac"
+    },
+    "ACCEPTANCE.md": {
+      "size": 9952,
+      "sha256": "b6449c2180f1015a4a95ba88aa288d64e3f8002212554d02fb5758802b6e8dcb"
+    },
+    "tour-stop-2-320.png": {
+      "size": 122629,
+      "sha256": "7dcca29f062f55ca6825cba296a0e481dc3bab0eabe9e034f6cbcfcde2c2dfc0"
+    }
+  }
+}

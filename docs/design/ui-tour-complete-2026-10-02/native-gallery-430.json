@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-02T09:13:35.321Z",
+  "mode": "gallery",
+  "exceptions": [],
+  "shots": [
+    "gallery-0-430.png",
+    "gallery-1-430.png",
+    "gallery-2-430.png",
+    "gallery-3-430.png",
+    "gallery-4-430.png"
+  ],
+  "checks": [
+    {
+      "method": "official SDK SwiperElement.swipeTo component call",
+      "index": 0,
+      "routeUnchanged": true
+    },
+    {
+      "method": "official SDK SwiperElement.swipeTo component call",
+      "index": 1,
+      "routeUnchanged": true
+    },
+    {
+      "method": "official SDK SwiperElement.swipeTo component call",
+      "index": 2,
+      "routeUnchanged": true
+    },
+    {
+      "method": "official SDK SwiperElement.swipeTo component call",
+      "index": 3,
+      "routeUnchanged": true
+    },
+    {
+      "method": "official SDK SwiperElement.swipeTo component call",
+      "index": 4,
+      "routeUnchanged": true
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 14 Pro Max",
+    "windowWidth": 430,
+    "windowHeight": 834,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 430,
+  "status": "passed"
+}

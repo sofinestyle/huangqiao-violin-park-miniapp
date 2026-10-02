@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-02T09:13:41.976Z",
+  "changedTrackedFiles": [
+    "admin/src/Content.jsx",
+    "docs/DESIGN_SYSTEM.md",
+    "docs/UI_CR006_TOUR_INLINE_ITEMS.md",
+    "docs/UI_UX_REFACTOR_PLAN.md",
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/tour/index.wxml",
+    "miniprogram/miniprogram/pages/tour/index.wxss",
+    "server/service.mjs"
+  ],
+  "whitelistPassed": true,
+  "homeAndNavigationUnchangedFrom": "c927ce6",
+  "protectedTables": {
+    "bookings": true,
+    "consultations": true,
+    "slots": true,
+    "changes": true,
+    "accounts": true,
+    "visitors": true,
+    "media": true,
+    "migrations": true,
+    "idempotency": true
+  },
+  "otherContentRecordsUnchanged": 50,
+  "schemaUnchanged": true,
+  "contentUpdates": 5,
+  "updatesLimitedToFourApprovedSpots": true,
+  "adminGuiSave": {
+    "id": "spot-1",
+    "versionBefore": 3,
+    "versionAfter": 4,
+    "descriptionTagsAndItemsMatchAttachments": true
+  },
+  "publicContent": [
+    {
+      "id": "spot-1",
+      "version": 4,
+      "tags": 4,
+      "items": 4
+    },
+    {
+      "id": "spot-2",
+      "version": 3,
+      "tags": 2,
+      "items": 2
+    },
+    {
+      "id": "spot-3",
+      "version": 3,
+      "tags": 3,
+      "items": 3
+    },
+    {
+      "id": "spot-4",
+      "version": 3,
+      "tags": 3,
+      "items": 3
+    }
+  ]
+}

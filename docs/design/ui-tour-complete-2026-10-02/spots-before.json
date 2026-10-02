@@ -1,0 +1,81 @@
+[
+  {
+    "id": "spot-1",
+    "kind": "spot",
+    "name": "城市客厅",
+    "description": "数字沙盘、乐器博览馆、路演厅及古琴馆。",
+    "images": [
+      "/assets/city.jpg",
+      "/assets/c1.jpg",
+      "/assets/c2.jpg",
+      "/assets/c3.jpg",
+      "/assets/c4.jpg"
+    ],
+    "opening": "开放安排尚待核定，请先咨询",
+    "address": "",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "state": "published",
+    "sort": 80,
+    "version": 2
+  },
+  {
+    "id": "spot-2",
+    "kind": "spot",
+    "name": "音乐生态湖",
+    "description": "音乐文化与园区环境。喷泉、音乐会和免费范围需核定。",
+    "images": [
+      "/assets/lake.jpg",
+      "/assets/l1.jpg",
+      "/assets/l2.jpg",
+      "/assets/l3.jpg"
+    ],
+    "opening": "开放安排尚待核定，请先咨询",
+    "address": "",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "state": "published",
+    "sort": 81,
+    "version": 2
+  },
+  {
+    "id": "spot-3",
+    "kind": "spot",
+    "name": "产业园·中小企业集聚区",
+    "description": "真实生产与制琴工坊。可观摩项目需接待人员确认。",
+    "images": [
+      "/assets/industry.jpg",
+      "/assets/i1.jpg",
+      "/assets/i2.jpg",
+      "/assets/i3.jpg",
+      "/assets/i4.jpg"
+    ],
+    "opening": "开放安排尚待核定，请先咨询",
+    "address": "",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "state": "published",
+    "sort": 82,
+    "version": 2
+  },
+  {
+    "id": "spot-4",
+    "kind": "spot",
+    "name": "绿岛·智能环保表面处理中心",
+    "description": "制琴工艺与表面处理场景。开放安排需核定。",
+    "images": [
+      "/assets/green.jpg",
+      "/assets/g1.jpg",
+      "/assets/g2.jpg",
+      "/assets/g3.jpg",
+      "/assets/g4.jpg"
+    ],
+    "opening": "开放安排尚待核定，请先咨询",
+    "address": "",
+    "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+    "isTest": true,
+    "state": "published",
+    "sort": 83,
+    "version": 2
+  }
+]

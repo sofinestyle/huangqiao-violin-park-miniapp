@@ -66,6 +66,12 @@
   overflow-wrap: break-word;
 }
 .tour-page .tour-description { font-size: 13px; line-height: 23px; overflow-wrap: break-word; }
+.tour-page .tour-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 12px; }
+.tour-page .tour-tag { max-width: 100%; box-sizing: border-box; overflow-wrap: break-word; padding: 3px 10px; border: 1px solid #e5d2b3; border-radius: 999px; background: #f5eddd; font-size: 11px; line-height: 17px; }
+.tour-page .tour-visit-list { border-top: 1px dashed #e5d2b3; }
+.tour-page .tour-visit-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #e5d2b3; font-size: 13px; line-height: 22px; }
+.tour-page .tour-visit-label { flex: 1; min-width: 0; overflow-wrap: break-word; }
+.tour-page .tour-visit-duration { flex-shrink: 0; max-width: 35%; color: #916824; text-align: right; white-space: normal; overflow-wrap: break-word; }
 .tour-page .tour-opening, .tour-page .tour-visit-note {
   margin-top: 10px;
   color: #6c5948;
@@ -73,7 +79,9 @@
   line-height: 21px;
   overflow-wrap: break-word;
 }
-.tour-page .tour-support { padding: 4px 2px 0; color: #6c5948; font-size: 12px; line-height: 22px; }
+.tour-page .tour-support { padding: 4px 2px 0; margin-bottom: 12px; color: #6c5948; font-size: 12px; line-height: 22px; }
+.tour-page .tour-notice { margin: 2px 0 12px; padding: 16px 18px; border: 1px dashed #bd9652; border-radius: 16px; background: #efe3ca; color: #584630; font-size: 13px; line-height: 24px; }
+.tour-page .tour-notice-title { margin-bottom: 4px; font-family: "Songti SC", STSong, serif; font-size: 14px; font-weight: 600; }
 .tour-page .loading, .tour-page .empty { padding: 48px 12px; color: #6c5948; font-size: 14px; line-height: 24px; }
 .tour-page .error { margin: 14px 0; padding: 16px; border-radius: 12px; font-size: 14px; line-height: 24px; color: #a13e35; }
 .tour-page .error button.secondary { min-height: 44px; font-size: 14px; color: #3c2b24; border-color: #826742; }

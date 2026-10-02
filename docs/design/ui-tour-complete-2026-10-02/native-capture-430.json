@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-02T09:08:24.074Z",
+  "mode": "capture",
+  "exceptions": [],
+  "shots": [
+    "tour-top-430.png",
+    "tour-stop-1-430.png",
+    "tour-body-1-430.png",
+    "tour-stop-2-430.png",
+    "tour-body-2-430.png",
+    "tour-stop-3-430.png",
+    "tour-body-3-430.png",
+    "tour-stop-4-430.png",
+    "tour-body-4-430.png",
+    "tour-bottom-430.png"
+  ],
+  "checks": [
+    {
+      "brandSize": {
+        "width": 430,
+        "height": 55
+      },
+      "detailsRemoved": true
+    },
+    {
+      "allPublishedContentMatchesAttachments": true,
+      "visitRows": 12,
+      "everyRowDashed": true
+    },
+    {
+      "id": "spot-1",
+      "name": "城市客厅",
+      "size": {
+        "width": 398,
+        "height": 607
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-2",
+      "name": "音乐生态湖",
+      "size": {
+        "width": 398,
+        "height": 521
+      },
+      "imageCount": 4,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-3",
+      "name": "产业园·中小企业集聚区",
+      "size": {
+        "width": 398,
+        "height": 564
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    },
+    {
+      "id": "spot-4",
+      "name": "绿岛·智能环保表面处理中心",
+      "size": {
+        "width": 398,
+        "height": 564
+      },
+      "imageCount": 5,
+      "fullDescriptionMatchesPublished": true
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 14 Pro Max",
+    "windowWidth": 430,
+    "windowHeight": 834,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 430,
+  "status": "passed"
+}

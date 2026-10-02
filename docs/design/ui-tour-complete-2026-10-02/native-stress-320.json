@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-02T08:56:20.842Z",
+  "mode": "stress",
+  "exceptions": [],
+  "shots": [],
+  "checks": [
+    {
+      "rowSize": {
+        "width": 268,
+        "height": 131
+      },
+      "durationSize": {
+        "width": 93.796875,
+        "height": 110
+      },
+      "durationOffset": {
+        "left": 200.203125,
+        "top": 235
+      },
+      "durationFits": true
+    }
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "width": 320,
+  "controlledOnly": true,
+  "geometry": {
+    "rowSize": {
+      "width": 268,
+      "height": 131
+    },
+    "durationSize": {
+      "width": 93.796875,
+      "height": 110
+    },
+    "durationOffset": {
+      "left": 200.203125,
+      "top": 235
+    },
+    "durationFits": true
+  },
+  "status": "passed"
+}

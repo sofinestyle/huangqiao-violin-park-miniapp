@@ -17,12 +17,25 @@
         <view class="tour-number">SPOT {{index > 8 ? '' : '0'}}{{index+1}}</view>
         <view class="tour-stop-name">{{item.name}}</view>
         <view class="tour-description pre-line">{{item.description}}</view>
+        <view class="tour-tags" wx:if="{{item.tags.length}}">
+          <text class="tour-tag" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this">{{tag}}</text>
+        </view>
+        <view class="tour-visit-list" wx:if="{{item.visitItems.length}}">
+          <view class="tour-visit-row" wx:for="{{item.visitItems}}" wx:for-item="visit" wx:key="name">
+            <view class="tour-visit-label">{{visit.name}}<text wx:if="{{visit.description}}"> · {{visit.description}}</text></view>
+            <text class="tour-visit-duration">{{visit.durationNote}}</text>
+          </view>
+        </view>
         <view class="tour-opening pre-line">{{item.opening}}</view>
         <view class="tour-visit-note pre-line" wx:if="{{item.visitNote}}">{{item.visitNote}}</view>
       </view>
     </view>
     <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view>
     <view class="tour-support">集合点、转场方式及交通费用以工作人员确认安排为准。</view>
+    <view class="tour-notice">
+      <view class="tour-notice-title">参观提示</view>
+      <view>生产区域请沿指定通道有序参观，保持安静，不随意触摸设备、产品与原材料；尤克里里等体验作品完成后可带走。</view>
+    </view>
   </view>
   <park-navigation/>
 </view>

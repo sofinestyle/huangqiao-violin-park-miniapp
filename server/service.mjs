@@ -44,6 +44,10 @@ export class Service {
         'meetingPoint','transfer','bookingNote','cancelNote','type','mediaId','rights','duration','audience','form','place',
         'courseTime','courseFee','address','opening','visitNote','phone','heroTitle','heroSubtitle','intro','notice',
         'privacy','serviceNote','bookingEnabled','isTest','highlight','latitude','longitude','coordinateVerified'];
+      if (Object.hasOwn(data.data, 'tags') || Object.hasOwn(data.data, 'visitItems')) {
+        requireValue(kind === 'spot', '点位标签和参观项目仅适用于园区点位');
+        allowed.push('tags', 'visitItems');
+      }
       const detail = Object.fromEntries(allowed.filter(k => Object.hasOwn(data.data,k)).map(k => [k,data.data[k]]));
       requireValue(detail.isTest !== false, '本地开发环境内容必须标记为测试资料');
       detail.isTest = true;
@@ -53,6 +57,18 @@ export class Service {
         if (typeof value === 'number') requireValue(Number.isFinite(value), `${key}数值无效`);
       }
       if (detail.phone) requireValue(/^[+\d][\d\s()-]{4,29}$/.test(detail.phone), '服务电话格式无效');
+      if (kind === 'spot') {
+        if (Object.hasOwn(detail, 'tags')) {
+          requireValue(Array.isArray(detail.tags) && detail.tags.length <= 12 && detail.tags.every(tag => typeof tag === 'string' && tag.trim().length > 0 && tag.length <= 40), '点位标签最多12项，每项1—40字');
+        }
+        if (Object.hasOwn(detail, 'visitItems')) {
+          requireValue(Array.isArray(detail.visitItems) && detail.visitItems.length <= 20 && detail.visitItems.every(item =>
+            item && typeof item === 'object' && !Array.isArray(item) && Object.keys(item).every(key => ['name','description','durationNote'].includes(key)) &&
+            typeof item.name === 'string' && item.name.trim().length > 0 && item.name.length <= 80 &&
+            typeof item.description === 'string' && item.description.length <= 200 &&
+            typeof item.durationNote === 'string' && item.durationNote.trim().length > 0 && item.durationNote.length <= 40), '参观项目最多20项，名称1—80字、说明0—200字、时长说明1—40字');
+        }
+      }
       if (kind === 'product') {
         requireValue(Object.hasOwn(PRODUCT_CATEGORIES,detail.category), '请选择有效的乐器品类或文创');
         requireValue(['inquiry','reference'].includes(detail.priceMode), '请选择参考价格或咨询报价');

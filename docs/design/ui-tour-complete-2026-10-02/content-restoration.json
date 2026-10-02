@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-02T08:44:07.286Z",
+  "method": "existing admin API login and PUT with permission/version/audit",
+  "backup": "backups/2026-10-02-CR006-before",
+  "updates": [
+    {
+      "id": "spot-1",
+      "versionBefore": 2,
+      "versionAfter": 3,
+      "tagCount": 4,
+      "itemCount": 4
+    },
+    {
+      "id": "spot-2",
+      "versionBefore": 2,
+      "versionAfter": 3,
+      "tagCount": 2,
+      "itemCount": 2
+    },
+    {
+      "id": "spot-3",
+      "versionBefore": 2,
+      "versionAfter": 3,
+      "tagCount": 3,
+      "itemCount": 3
+    },
+    {
+      "id": "spot-4",
+      "versionBefore": 2,
+      "versionAfter": 3,
+      "tagCount": 3,
+      "itemCount": 3
+    }
+  ],
+  "otherContentRecordsUnchanged": 50,
+  "protectedTablesUnchanged": {
+    "bookings": true,
+    "consultations": true,
+    "slots": true,
+    "changes": true,
+    "accounts": true,
+    "visitors": true,
+    "media": true,
+    "migrations": true,
+    "idempotency": true
+  },
+  "schemaUnchanged": true,
+  "auditContentUpdates": 4
+}
