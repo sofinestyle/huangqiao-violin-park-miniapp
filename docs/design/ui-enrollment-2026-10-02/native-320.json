@@ -1,0 +1,11 @@
+{
+  "width": 320,
+  "listTitle": true,
+  "duplicateTitleRemoved": true,
+  "actualDetailClick": true,
+  "detailTitle": true,
+  "removedPackageAndConsultButtons": true,
+  "actualApplyNavigation": true,
+  "fixedEnrollmentTime": true,
+  "businessSubmission": false
+}
