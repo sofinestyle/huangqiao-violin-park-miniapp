@@ -1,1 +1,38 @@
-<view class="page" style="padding-bottom: calc(50rpx + 52px + env(safe-area-inset-bottom));"><view class="h1">我的</view><view class="panel"><view class="h3">{{hasIdentity?'已登录并查看记录':'查看本人申请与咨询'}}</view><view class="muted">公开内容无需登录。提交业务与查询记录时验证身份；联系电话不作为查询凭据。</view><button wx:if="{{!hasIdentity}}" bindtap="login" loading="{{busy}}" disabled="{{busy}}">登录并查看记录</button><view wx:if="{{error}}" class="error">{{error}}</view></view><view class="row" data-url="/pages/records/index?kind=bookings" bindtap="open"><text>我的研学预约</text><text class="muted">查看状态</text></view><view class="row" data-url="/pages/records/index?kind=consultations" bindtap="open"><text>我的咨询</text><text class="muted">查看处理结果</text></view><view class="row" data-url="/pages/consult/index" bindtap="open"><text>联系工作人员</text></view><view class="row" data-url="/pages/about/index" bindtap="open"><text>关于我们</text></view><view class="row" data-url="/pages/about/index?section=privacy" bindtap="open"><text>隐私与服务说明</text></view></view>
+<view class="mine-page">
+  <view class="mine-heading">我的</view>
+  <view class="mine-identity">
+    <view class="mine-identity-title">{{hasIdentity?'已登录并查看记录':'查看本人申请与咨询'}}</view>
+    <view class="mine-identity-note">公开内容无需登录。提交业务与查询记录时验证身份；联系电话不作为查询凭据。</view>
+    <button wx:if="{{!hasIdentity}}" class="mine-login" bindtap="login" loading="{{busy}}" disabled="{{busy}}">登录并查看记录</button>
+    <view wx:if="{{error}}" class="error">{{error}}</view>
+  </view>
+  <view class="mine-group">
+    <view class="mine-row" data-url="/pages/records/index?kind=bookings" bindtap="open" hover-class="mine-row-pressed" aria-role="button" aria-label="我的研学预约，查看状态">
+      <view class="mine-icon-box"><view class="mine-icon mine-icon-calendar"/></view>
+      <view class="mine-row-copy"><text class="mine-row-title">我的研学预约</text><text class="mine-row-note">查看状态</text></view>
+      <text class="mine-arrow" aria-hidden="true">›</text>
+    </view>
+    <view class="mine-row" data-url="/pages/records/index?kind=consultations" bindtap="open" hover-class="mine-row-pressed" aria-role="button" aria-label="我的咨询，查看处理结果">
+      <view class="mine-icon-box"><view class="mine-icon mine-icon-message"/></view>
+      <view class="mine-row-copy"><text class="mine-row-title">我的咨询</text><text class="mine-row-note">查看处理结果</text></view>
+      <text class="mine-arrow" aria-hidden="true">›</text>
+    </view>
+  </view>
+  <view class="mine-group">
+    <view class="mine-row" data-url="/pages/consult/index" bindtap="open" hover-class="mine-row-pressed" aria-role="button" aria-label="联系工作人员">
+      <view class="mine-icon-box"><view class="mine-icon mine-icon-phone"/></view>
+      <view class="mine-row-copy"><text class="mine-row-title">联系工作人员</text></view>
+      <text class="mine-arrow" aria-hidden="true">›</text>
+    </view>
+    <view class="mine-row" data-url="/pages/about/index" bindtap="open" hover-class="mine-row-pressed" aria-role="button" aria-label="关于我们">
+      <view class="mine-icon-box"><view class="mine-icon mine-icon-info"/></view>
+      <view class="mine-row-copy"><text class="mine-row-title">关于我们</text></view>
+      <text class="mine-arrow" aria-hidden="true">›</text>
+    </view>
+    <view class="mine-row" data-url="/pages/about/index?section=privacy" bindtap="open" hover-class="mine-row-pressed" aria-role="button" aria-label="隐私与服务说明">
+      <view class="mine-icon-box"><view class="mine-icon mine-icon-shield"/></view>
+      <view class="mine-row-copy"><text class="mine-row-title">隐私与服务说明</text></view>
+      <text class="mine-arrow" aria-hidden="true">›</text>
+    </view>
+  </view>
+</view>

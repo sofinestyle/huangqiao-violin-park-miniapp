@@ -1,1 +1,24 @@
-/* Shared styles are maintained in app.wxss. */
+/* Local menu styling follows the user reference; all existing actions are retained. */
+.mine-page { min-height: 100vh; padding: 32rpx 28rpx calc(40rpx + 52px + env(safe-area-inset-bottom)); background: #f4ecdd; color: #38291c; }
+.mine-heading { font-family: "Songti SC", STSong, serif; font-size: 44rpx; font-weight: 600; line-height: 1.4; margin: 4rpx 12rpx 22rpx; }
+.mine-identity { padding: 0 12rpx 28rpx; }
+.mine-identity-title { font-size: 28rpx; font-weight: 500; line-height: 1.5; margin-bottom: 8rpx; }
+.mine-identity-note { color: #75634f; font-size: 24rpx; line-height: 1.8; }
+.mine-page .mine-login { margin-top: 20rpx; min-height: 44px; background: #4b3325; border-radius: 14rpx; }
+.mine-page .mine-login[disabled] { background: #c2b3a1; }
+.mine-group { background: #fbf7ee; border: 1px solid #e3d2af; border-radius: 26rpx; overflow: hidden; margin-bottom: 28rpx; }
+.mine-row { display: flex; align-items: center; gap: 22rpx; min-height: 114rpx; padding: 23rpx 28rpx; }
+.mine-row + .mine-row { border-top: 1px solid #e0d2b7; }
+.mine-row-pressed { background: #f1e6d3; }
+.mine-icon-box { flex: 0 0 62rpx; width: 62rpx; height: 62rpx; display: flex; align-items: center; justify-content: center; background: #f3ecdf; border-radius: 17rpx; }
+.mine-icon { width: 32rpx; height: 32rpx; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.mine-row-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 3rpx; }
+.mine-row-title { font-size: 29rpx; font-weight: 500; line-height: 1.5; }
+.mine-row-note { color: #796952; font-size: 22rpx; line-height: 1.4; }
+.mine-arrow { flex: 0 0 14rpx; color: #b88a39; font-size: 36rpx; line-height: 1; text-align: right; }
+@media (max-width: 320px) { .mine-row { padding-left: 24rpx; padding-right: 24rpx; min-height: 60px; } }
+.mine-icon-calendar { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%225%22%20width%3D%2218%22%20height%3D%2216%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22M7%203v4m10-4v4M3%2010h18%22%2F%3E%3C%2Fsvg%3E"); }
+.mine-icon-message { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2011.5a8.5%208.5%200%200%201-8.5%208.5%209%209%200%200%201-4-.9L3%2021l1.9-5.5a9%209%200%200%201-.9-4A8.5%208.5%200%200%201%2012.5%203%208.5%208.5%200%200%201%2021%2011.5Z%22%2F%3E%3Cpath%20d%3D%22M8%2010h8m-8%204h5%22%2F%3E%3C%2Fsvg%3E"); }
+.mine-icon-phone { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2016.8v3a2%202%200%200%201-2.2%202%2019.8%2019.8%200%200%201-8.6-3.1%2019.5%2019.5%200%200%201-6-6A19.8%2019.8%200%200%201%201.1%204%202%202%200%200%201%203.1%202h3a2%202%200%200%201%202%201.7c.1%201%20.4%201.9.7%202.8a2%202%200%200%201-.5%202.1L7%209.9a16%2016%200%200%200%206%206l1.3-1.3a2%202%200%200%201%202.1-.5c.9.3%201.8.6%202.8.7a2%202%200%200%201%201.8%202Z%22%2F%3E%3C%2Fsvg%3E"); }
+.mine-icon-info { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M12%2011v6m0-10v.1%22%2F%3E%3C%2Fsvg%3E"); }
+.mine-icon-shield { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%203%203.8%206.5v5.4c0%204.8%203.8%208.2%208.2%2010%204.4-1.8%208.2-5.2%208.2-10V6.5L12%203Z%22%2F%3E%3Cpath%20d%3D%22m8%2012%203%203%205-6%22%2F%3E%3C%2Fsvg%3E"); }

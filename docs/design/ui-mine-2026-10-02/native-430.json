@@ -1,0 +1,14 @@
+{
+  "width": 430,
+  "menuRows": 5,
+  "minTapHeight": 65,
+  "actualMenuNavigation": [
+    "/pages/records/index?kind=bookings",
+    "/pages/records/index?kind=consultations",
+    "/pages/consult/index",
+    "/pages/about/index",
+    "/pages/about/index?section=privacy"
+  ],
+  "loggedOutVisualOnly": true,
+  "sourceBusinessUnchanged": true
+}
