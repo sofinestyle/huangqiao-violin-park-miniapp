@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-02T13:34:17.050Z",
+  "checks": [
+    {
+      "instrumentsTitlesAndDetailButtonRemoved": true,
+      "cardsRetained": true
+    },
+    {
+      "actualCardTap": true,
+      "id": "violin-L201"
+    },
+    {
+      "squareGallery": {
+        "width": 358,
+        "height": 358
+      },
+      "squareImage": {
+        "width": 358,
+        "height": 358
+      }
+    },
+    {
+      "nativeSwiperSwipe": true
+    },
+    {
+      "actualSpecTap": "3/4"
+    },
+    {
+      "actualConsultTap": true,
+      "idAndSpecPreserved": true,
+      "brand": true,
+      "oldTitleAndPrivacyButtonRemoved": true,
+      "fiveTabs": true,
+      "submitAboveTabs": true
+    },
+    {
+      "actualPrivacyLinkTap": true,
+      "returnPreservesDraft": true,
+      "privacyTapDoesNotConsent": true,
+      "checkboxTogglePassedViaCUA": true
+    },
+    {
+      "controlledBusyLoadingError": true,
+      "actualRetryTap": true
+    },
+    {
+      "actualConsultNavigationTap": "index"
+    },
+    {
+      "actualConsultNavigationTap": "instruments"
+    },
+    {
+      "actualConsultNavigationTap": "gifts"
+    },
+    {
+      "actualConsultNavigationTap": "study"
+    },
+    {
+      "actualConsultNavigationTap": "mine"
+    },
+    {
+      "giftGallerySquare": {
+        "width": 358,
+        "height": 358
+      }
+    },
+    {
+      "consultVariant": "general",
+      "selected": ""
+    },
+    {
+      "consultVariant": "?id=gift-1",
+      "selected": "文创"
+    },
+    {
+      "consultVariant": "?id=package-1",
+      "selected": "研学"
+    }
+  ],
+  "shots": [
+    "instruments-390.png",
+    "product-square-390.png",
+    "consult-top-390.png",
+    "consult-bottom-390.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 390,
+    "model": "iPhone 12/13 (Pro)",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

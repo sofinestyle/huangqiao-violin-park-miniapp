@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-02T13:34:17.050Z",
+  "checks": [
+    {
+      "instrumentsTitlesAndDetailButtonRemoved": true,
+      "cardsRetained": true
+    },
+    {
+      "actualCardTap": true,
+      "id": "violin-L201"
+    },
+    {
+      "squareGallery": {
+        "width": 358,
+        "height": 358
+      },
+      "squareImage": {
+        "width": 358,
+        "height": 358
+      }
+    },
+    {
+      "nativeSwiperSwipe": true
+    },
+    {
+      "actualSpecTap": "3/4"
+    },
+    {
+      "actualConsultTap": true,
+      "idAndSpecPreserved": true,
+      "brand": true,
+      "oldTitleAndPrivacyButtonRemoved": true,
+      "fiveTabs": true,
+      "submitAboveTabs": true
+    }
+  ],
+  "shots": [
+    "instruments-390.png",
+    "product-square-390.png",
+    "consult-top-390.png",
+    "consult-bottom-390.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 390,
+    "model": "iPhone 12/13 (Pro)",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "Error: timeout waiting for automator response\n    at Connection.onMessage (/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator/out/Connection.js:1:985)\n    at Transport.emit (node:events:509:20)\n    at WebSocket.<anonymous> (/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator/out/Transport.js:1:220)\n    at WebSocket.onMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/event-target.js:120:16)\n    at WebSocket.emit (node:events:509:20)\n    at Receiver.receiverOnMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/websocket.js:807:20)\n    at Receiver.emit (node:events:509:20)\n    at Receiver.dataMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:448:14)\n    at Receiver.getData (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:377:17)\n    at Receiver.startLoop (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:158:22)"
+}

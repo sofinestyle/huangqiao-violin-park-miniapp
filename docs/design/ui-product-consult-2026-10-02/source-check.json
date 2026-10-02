@@ -1,0 +1,13 @@
+{
+  "base": "b7e7d17",
+  "sourceFiles": [
+    "miniprogram/miniprogram/pages/consult/index.wxml",
+    "miniprogram/miniprogram/pages/consult/index.wxss",
+    "miniprogram/miniprogram/pages/instruments/index.wxml",
+    "miniprogram/miniprogram/pages/product/index.wxml",
+    "miniprogram/miniprogram/pages/product/index.wxss"
+  ],
+  "instrumentsOnlyRequestedNodesRemoved": true,
+  "productOnlySquareWrapperAdded": true,
+  "TS_JSON_global_homepage_API_admin_unchanged": true
+}

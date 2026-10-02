@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-02T13:32:25.368Z",
+  "checks": [
+    {
+      "instrumentsTitlesAndDetailButtonRemoved": true,
+      "cardsRetained": true
+    },
+    {
+      "actualCardTap": true,
+      "id": "violin-L201"
+    }
+  ],
+  "shots": [
+    "instruments-390.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 390,
+    "model": "iPhone 12/13 (Pro)",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Math.abs(size.width-size.height)<1)\n\n    at /private/tmp/hq-product-consult.cjs:4:114\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}

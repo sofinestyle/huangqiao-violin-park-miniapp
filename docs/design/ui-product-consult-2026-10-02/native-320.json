@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-02T13:39:11.058Z",
+  "checks": [
+    {
+      "instrumentsTitlesAndDetailButtonRemoved": true,
+      "cardsRetained": true
+    },
+    {
+      "actualCardTap": true,
+      "id": "violin-L201"
+    },
+    {
+      "squareGallery": {
+        "width": 294,
+        "height": 294
+      },
+      "squareImage": {
+        "width": 294,
+        "height": 294
+      }
+    },
+    {
+      "actualConsultTap": true,
+      "idAndSpecPreserved": true,
+      "brand": true,
+      "oldTitleAndPrivacyButtonRemoved": true,
+      "fiveTabs": true,
+      "submitAboveTabs": true
+    }
+  ],
+  "shots": [
+    "instruments-320.png",
+    "product-square-320.png",
+    "consult-top-320.png",
+    "consult-bottom-320.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 320,
+    "model": "iPhone 5",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

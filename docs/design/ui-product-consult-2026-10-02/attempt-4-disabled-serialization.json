@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-02T13:34:17.050Z",
+  "checks": [
+    {
+      "instrumentsTitlesAndDetailButtonRemoved": true,
+      "cardsRetained": true
+    },
+    {
+      "actualCardTap": true,
+      "id": "violin-L201"
+    },
+    {
+      "squareGallery": {
+        "width": 358,
+        "height": 358
+      },
+      "squareImage": {
+        "width": 358,
+        "height": 358
+      }
+    },
+    {
+      "nativeSwiperSwipe": true
+    },
+    {
+      "actualSpecTap": "3/4"
+    },
+    {
+      "actualConsultTap": true,
+      "idAndSpecPreserved": true,
+      "brand": true,
+      "oldTitleAndPrivacyButtonRemoved": true,
+      "fiveTabs": true,
+      "submitAboveTabs": true
+    },
+    {
+      "actualPrivacyLinkTap": true,
+      "returnPreservesDraft": true,
+      "privacyTapDoesNotConsent": true,
+      "checkboxTogglePassedViaCUA": true
+    }
+  ],
+  "shots": [
+    "instruments-390.png",
+    "product-square-390.png",
+    "consult-top-390.png",
+    "consult-bottom-390.png"
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "system": {
+    "width": 390,
+    "model": "iPhone 12/13 (Pro)",
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'true' !== true\n\n    at /private/tmp/hq-product-consult-finish.cjs:3:419\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}
