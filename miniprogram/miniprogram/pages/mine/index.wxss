@@ -1,6 +1,9 @@
 /* Local menu styling follows the user reference; all existing actions are retained. */
-.mine-page { min-height: 100vh; padding: 32rpx 28rpx calc(40rpx + 52px + env(safe-area-inset-bottom)); background: #f4ecdd; color: #38291c; }
-.mine-heading { font-family: "Songti SC", STSong, serif; font-size: 44rpx; font-weight: 600; line-height: 1.4; margin: 4rpx 12rpx 22rpx; }
+.mine-shell { min-height: 100vh; background: #f4ecdd; color: #38291c; }
+.mine-brand { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; height: 55px; padding: 0 40rpx; background: #3c2b24; }
+.mine-brand-logo { flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; border-radius: 4rpx; }
+.mine-brand-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; text-align: center; color: #fff; font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", sans-serif; font-size: 34rpx; font-weight: 500; line-height: 1.4; letter-spacing: 1rpx; }
+.mine-page { padding: 32rpx 28rpx calc(40rpx + 52px + env(safe-area-inset-bottom)); }
 .mine-identity { padding: 0 12rpx 28rpx; }
 .mine-identity-title { font-size: 28rpx; font-weight: 500; line-height: 1.5; margin-bottom: 8rpx; }
 .mine-identity-note { color: #75634f; font-size: 24rpx; line-height: 1.8; }

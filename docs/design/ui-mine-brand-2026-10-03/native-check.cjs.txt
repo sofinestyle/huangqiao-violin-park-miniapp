@@ -1,0 +1,15 @@
+const a=require('/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator');
+const fs=require('fs'),assert=require('assert/strict');
+const dir='/Users/aaron/Documents/huangqiao-app/docs/design/ui-mine-brand-2026-10-03/';
+(async()=>{const m=await a.connect({wsEndpoint:'ws://127.0.0.1:9420'});try{
+const p=await m.switchTab('/pages/mine/index');await p.waitFor(1500);
+const width=(await m.callWxMethod('getSystemInfoSync')).windowWidth;
+const brand=await p.$('.mine-brand'),title=await p.$('.mine-brand-title');
+assert.ok(brand);assert.equal(await title.text(),'我的主页');
+assert.equal((await p.$$('.mine-row')).length,5);assert.equal((await p.$$('.mine-heading')).length,0);
+const box=await brand.size(),t=await title.size(),pos=await title.offset();
+assert.equal(box.height,55);assert.ok(Math.abs(pos.left+t.width/2-width/2)<1);
+await m.screenshot({path:dir+'mine-'+width+'.png'});
+fs.writeFileSync(dir+'native-'+width+'.json',JSON.stringify({width,title:await title.text(),brandSize:box,titleOffset:pos,titleSize:t,menuRows:5},null,2));
+console.log('Native brand check passed '+width+'px');
+}finally{m.disconnect()}})().catch(e=>{console.error(e.stack);process.exitCode=1});

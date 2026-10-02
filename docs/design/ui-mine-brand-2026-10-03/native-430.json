@@ -1,0 +1,17 @@
+{
+  "width": 430,
+  "title": "我的主页",
+  "brandSize": {
+    "width": 430,
+    "height": 55
+  },
+  "titleOffset": {
+    "left": 175,
+    "top": 14.203125
+  },
+  "titleSize": {
+    "width": 80,
+    "height": 26.59375
+  },
+  "menuRows": 5
+}
