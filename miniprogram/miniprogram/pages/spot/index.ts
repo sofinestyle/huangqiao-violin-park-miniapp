@@ -1,2 +1,0 @@
-import {go} from '../../lib/api';import {detailPage} from '../../lib/detail-page';
-Page({...detailPage(),consult(){go('/pages/consult/index?source='+encodeURIComponent(this.data.item?.name || '点位导览'));},map(){const c=this.data.item;if(c?.coordinateVerified && typeof c.latitude==='number' && typeof c.longitude==='number')wx.openLocation({latitude:c.latitude,longitude:c.longitude,name:c.name,address:c.address || ''});}});

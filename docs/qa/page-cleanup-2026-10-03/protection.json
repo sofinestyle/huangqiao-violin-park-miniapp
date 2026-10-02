@@ -1,0 +1,13 @@
+{
+  "baseline": "5aee662",
+  "registeredBefore": 19,
+  "registeredAfter": 18,
+  "unregisteredTemplateRemoved": "pages/logs/logs",
+  "brokenLocalFileLinks": [],
+  "unchangedTabBar": true,
+  "protectedFileChanges": [],
+  "legacyScriptUnchanged": true,
+  "native": "passed at 430px; native.json",
+  "originalFiles": "25 verified",
+  "sourceScope": "No server/admin/database/content changes"
+}

@@ -1,0 +1,57 @@
+{
+  "routes": [
+    {
+      "from": "pages/index/index",
+      "to": "pages/tour/index",
+      "selector": ".home-nav-item[data-page=\"tour\"]"
+    },
+    {
+      "from": "pages/index/index",
+      "to": "pages/package/index",
+      "selector": ".home-package"
+    },
+    {
+      "from": "pages/instruments/index",
+      "to": "pages/product/index",
+      "selector": ".card"
+    },
+    {
+      "from": "pages/gifts/index",
+      "to": "pages/product/index",
+      "selector": ".card"
+    },
+    {
+      "from": "pages/index/index",
+      "to": "pages/teaching/index",
+      "selector": ".home-nav-item[data-page=\"teaching\"]"
+    },
+    {
+      "from": "pages/teaching/index",
+      "to": "pages/lesson/index",
+      "selector": ".card"
+    },
+    {
+      "from": "pages/study/index",
+      "to": "pages/booking/index",
+      "selector": ".study-book"
+    },
+    {
+      "from": "pages/enrollments/index",
+      "to": "pages/enrollment/index",
+      "selector": "[data-id=\"5857ebbc-b0ff-4176-bb9e-e16dc1fdb57a\"]"
+    },
+    {
+      "from": "pages/enrollment/index",
+      "to": "pages/booking/index",
+      "button": "申请跟团报名"
+    }
+  ],
+  "exceptions": [],
+  "businessWrites": false,
+  "tour": {
+    "stops": 4,
+    "visitRows": 12
+  },
+  "width": 430,
+  "status": "passed"
+}

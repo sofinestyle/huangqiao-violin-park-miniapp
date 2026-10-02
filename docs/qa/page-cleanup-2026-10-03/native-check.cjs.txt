@@ -1,0 +1,19 @@
+const a=require('/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator'),assert=require('assert/strict'),fs=require('fs');
+const dir='/Users/aaron/Documents/huangqiao-app/docs/qa/page-cleanup-2026-10-03/';
+(async()=>{const m=process.env.HQ_REUSE?await a.connect({wsEndpoint:'ws://127.0.0.1:9420'}):await a.launch({projectPath:'/Users/aaron/Documents/huangqiao-app/miniprogram',port:9420,trustProject:true,timeout:45000});const result={routes:[],exceptions:[],businessWrites:false};m.on('exception',e=>result.exceptions.push(String(e.message||e)));
+const ready=async p=>{for(let i=0;i<50;i++){if(!await p.data('loading'))break;await p.waitFor(100);}assert.equal(await p.data('error')||'','');await p.waitFor(300);return p;};
+const routed=async route=>{for(let i=0;i<40;i++){const p=await m.currentPage();if(p.path===route)return ready(p);await new Promise(r=>setTimeout(r,150));}throw Error('Route timeout '+route)};
+const tap=async(p,sel,route)=>{assert.ok(await p.$(sel),sel);await(await p.$(sel)).tap();let next=await routed(route);result.routes.push({from:p.path,to:next.path,selector:sel});return next;};
+try{
+let p=await ready(await m.switchTab('/pages/index/index'));
+p=await tap(p,'.home-nav-item[data-page="tour"]','pages/tour/index');
+assert.equal((await p.$$('.tour-stop')).length,4);assert.equal((await p.$$('.tour-visit-row')).length,12);result.tour={stops:4,visitRows:12};await p.waitFor(1000);await m.screenshot({path:dir+'tour.png'});
+p=await ready(await m.switchTab('/pages/index/index'));p=await tap(p,'.home-package','pages/package/index');assert.ok(await p.data('item'));await m.screenshot({path:dir+'retained-package.png'});
+for(const page of ['instruments','gifts']){p=await ready(await m.switchTab('/pages/'+page+'/index'));p=await tap(p,'.card','pages/product/index');assert.ok(await p.data('item'));}
+p=await ready(await m.switchTab('/pages/index/index'));p=await tap(p,'.home-nav-item[data-page="teaching"]','pages/teaching/index');if((await p.$$('.card')).length){p=await tap(p,'.card','pages/lesson/index');assert.ok(await p.data('item'));}else result.lesson='not executed: no published content';
+p=await ready(await m.switchTab('/pages/study/index'));p=await tap(p,'.study-book','pages/booking/index');assert.ok(await p.data('packageId'));
+p=await ready(await m.switchTab('/pages/study/index'));for(const b of await p.$$('button'))if((await b.text()).trim()==='研学报名'){await b.tap();p=await routed('pages/enrollments/index');break;}
+assert.equal(p.path,'pages/enrollments/index');
+if((await p.data('items')).length){const row=(await p.data('items'))[0];p=await tap(p,'[data-id="'+row.id+'"]','pages/enrollment/index');for(const b of await p.$$('button'))if((await b.text()).trim()==='申请跟团报名'){await b.tap();const next=await routed('pages/booking/index');assert.ok(await next.data('enrollmentId'));result.routes.push({from:p.path,to:next.path,button:'申请跟团报名'});break;}}else result.enrollment='not executed: no published activity';
+await m.switchTab('/pages/index/index');assert.deepEqual(result.exceptions,[]);result.width=(await m.systemInfo()).windowWidth;result.status='passed';console.log(JSON.stringify(result));
+}catch(e){result.status='failed';result.error=e.stack;throw e;}finally{fs.writeFileSync(dir+'native.json',JSON.stringify(result,null,2));m.disconnect();}})().catch(e=>{console.error(e.stack);process.exitCode=1});
