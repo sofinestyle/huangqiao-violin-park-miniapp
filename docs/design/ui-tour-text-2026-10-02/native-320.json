@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02T09:30:39.728Z",
+  "exceptions": [],
+  "checks": [
+    {
+      "actualElementTap": "首页地图导览",
+      "path": "pages/tour/index"
+    },
+    {
+      "fourStops": true,
+      "visitRows": 12,
+      "requestedPlaceholdersHidden": true,
+      "transferRemoved": true,
+      "brandUnchanged": true,
+      "noticePreserved": true
+    },
+    {
+      "publicContentUnchangedFromPreviousDelivery": true
+    }
+  ],
+  "shots": [
+    "top-320.png",
+    "city-320.png",
+    "bottom-320.png"
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 5",
+    "width": 320,
+    "height": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

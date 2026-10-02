@@ -79,7 +79,6 @@
   line-height: 21px;
   overflow-wrap: break-word;
 }
-.tour-page .tour-support { padding: 4px 2px 0; margin-bottom: 12px; color: #6c5948; font-size: 12px; line-height: 22px; }
 .tour-page .tour-notice { margin: 2px 0 12px; padding: 16px 18px; border: 1px dashed #bd9652; border-radius: 16px; background: #efe3ca; color: #584630; font-size: 13px; line-height: 24px; }
 .tour-page .tour-notice-title { margin-bottom: 4px; font-family: "Songti SC", STSong, serif; font-size: 14px; font-weight: 600; }
 .tour-page .loading, .tour-page .empty { padding: 48px 12px; color: #6c5948; font-size: 14px; line-height: 24px; }

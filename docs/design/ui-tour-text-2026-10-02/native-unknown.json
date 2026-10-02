@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-02T09:27:31.308Z",
+  "exceptions": [],
+  "checks": [],
+  "shots": [],
+  "businessWrites": false,
+  "status": "failed",
+  "failure": "Error: Port 9420 is in use, please specify another port"
+}

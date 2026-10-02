@@ -26,12 +26,11 @@
             <text class="tour-visit-duration">{{visit.durationNote}}</text>
           </view>
         </view>
-        <view class="tour-opening pre-line">{{item.opening}}</view>
-        <view class="tour-visit-note pre-line" wx:if="{{item.visitNote}}">{{item.visitNote}}</view>
+        <view class="tour-opening pre-line" wx:if="{{item.opening && item.opening !== '开放安排尚待核定，请先咨询'}}">{{item.opening}}</view>
+        <view class="tour-visit-note pre-line" wx:if="{{item.visitNote && item.visitNote !== '到访前请联系工作人员确认开放与接待安排。'}}">{{item.visitNote}}</view>
       </view>
     </view>
     <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view>
-    <view class="tour-support">集合点、转场方式及交通费用以工作人员确认安排为准。</view>
     <view class="tour-notice">
       <view class="tour-notice-title">参观提示</view>
       <view>生产区域请沿指定通道有序参观，保持安静，不随意触摸设备、产品与原材料；尤克里里等体验作品完成后可带走。</view>

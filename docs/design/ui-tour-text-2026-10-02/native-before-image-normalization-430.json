@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-02T09:27:58.000Z",
+  "exceptions": [],
+  "checks": [
+    {
+      "actualElementTap": "首页地图导览",
+      "path": "pages/tour/index"
+    },
+    {
+      "fourStops": true,
+      "visitRows": 12,
+      "requestedPlaceholdersHidden": true,
+      "transferRemoved": true,
+      "brandUnchanged": true,
+      "noticePreserved": true
+    }
+  ],
+  "shots": [
+    "top-430.png",
+    "city-430.png",
+    "bottom-430.png"
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 14 Pro Max",
+    "width": 430,
+    "height": 834,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   'http://127.0.0.1:8787/assets/city.jpg',\n+   'http://127.0.0.1:8787/assets/c1.jpg',\n+   'http://127.0.0.1:8787/assets/c2.jpg',\n+   'http://127.0.0.1:8787/assets/c3.jpg',\n+   'http://127.0.0.1:8787/assets/c4.jpg'\n-   '/assets/city.jpg',\n-   '/assets/c1.jpg',\n-   '/assets/c2.jpg',\n-   '/assets/c3.jpg',\n-   '/assets/c4.jpg'\n  ]\n"
+}

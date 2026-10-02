@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-02T09:33:55.849Z",
+  "exceptions": [],
+  "checks": [
+    {
+      "actualElementTap": "首页地图导览",
+      "path": "pages/tour/index"
+    },
+    {
+      "fourStops": true,
+      "visitRows": 12,
+      "requestedPlaceholdersHidden": true,
+      "transferRemoved": true,
+      "brandUnchanged": true,
+      "noticePreserved": true
+    },
+    {
+      "publicContentUnchangedFromPreviousDelivery": true
+    },
+    {
+      "otherPublishedMessagesRemainVisible": true,
+      "controlledOnly": true,
+      "noPersistentWrites": true
+    }
+  ],
+  "shots": [
+    "top-430.png",
+    "city-430.png",
+    "bottom-430.png"
+  ],
+  "businessWrites": false,
+  "system": {
+    "model": "iPhone 14 Pro Max",
+    "width": 430,
+    "height": 834,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

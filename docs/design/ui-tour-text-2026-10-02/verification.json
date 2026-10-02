@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-02",
+  "baseline": "61a6ea1",
+  "allowedTrackedChanges": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/tour/index.json",
+    "miniprogram/miniprogram/pages/tour/index.wxml",
+    "miniprogram/miniprogram/pages/tour/index.wxss"
+  ],
+  "onlyTourPageSourceChanged": true,
+  "homeAndSharedNavigationUnchangedFrom": "c927ce6",
+  "referenceSHA256": "beba79225facbc004ac136da2cea0b798ac6b9227d164e4cbc322db731719a1f",
+  "referenceUnchanged": true,
+  "originalFilesPassed": 25,
+  "localLinksChecked": 26,
+  "nativeChecksPassed": [
+    320,
+    430
+  ],
+  "nativeCompilation": "CUA tools menu compile, Errors 0; actual page entry verified afterwards",
+  "noNewTests": true,
+  "fullBusinessSuiteThisTurn": "not executed; page-only copy changes",
+  "files": {
+    "native-unknown.json": {
+      "sha256": "70e8b7f423ae46d454fd93ffb03862942707c378fe6271a9dd3de7ed0a6fd8cf",
+      "bytes": 213
+    },
+    "native-before-image-normalization-430.json": {
+      "sha256": "6de0c393bc8dc35556cbc9d91a3513eb4af1b9f3a7a6d843e2dff4d354ee17a9",
+      "bytes": 1075
+    },
+    "reference.png": {
+      "sha256": "beba79225facbc004ac136da2cea0b798ac6b9227d164e4cbc322db731719a1f",
+      "bytes": 9745
+    },
+    "native-320.json": {
+      "sha256": "1e33e1d372cf773a7c8632ba85601fa5c2dc75533f69f2123953d1812d9a9789",
+      "bytes": 673
+    },
+    "native-check.cjs.txt": {
+      "sha256": "3890e32052f7c5832ee25e379173b84723845d0de4831b69d64e6d04f660b825",
+      "bytes": 3749
+    },
+    "top-320.png": {
+      "sha256": "63ab959b557483718e777dc4347f084132280606b98ab0974277611175dbb503",
+      "bytes": 199873
+    },
+    "bottom-320.png": {
+      "sha256": "29717d6f85e4209c308a7aa74f77e41f04ea14d09dee331ac48a6b7b7c2b5901",
+      "bytes": 91866
+    },
+    "city-320.png": {
+      "sha256": "3158a74b7e7bb07b686266f6d5685ae62f61f2150a4f9599d5c36a5b7ca1017e",
+      "bytes": 116536
+    },
+    "top-430.png": {
+      "sha256": "83a43721014933b3a1bed365bc8cea1b54545f0f18a2a06b961588695d13d98c",
+      "bytes": 239864
+    },
+    "bottom-430.png": {
+      "sha256": "0c36494f4ee55f92993f8a2eea81211f35f582b1074c547fcbe0b6b4355ebfcf",
+      "bytes": 183979
+    },
+    "city-430.png": {
+      "sha256": "265cf0ae663723a4c4b096e8a81c42f650569ab094014f57b117a58ff5fc90df",
+      "bytes": 235547
+    },
+    "native-title-430.ax.txt": {
+      "sha256": "e42972288d54ff0badd0742a83b4af814c7be2b67c5a69216aca667fce185abf",
+      "bytes": 318
+    },
+    "ACCEPTANCE.md": {
+      "sha256": "355ee69749421ecc6482d10417cda1c7880eec1889131f1e8efd6d19692408e4",
+      "bytes": 4303
+    },
+    "native-430.json": {
+      "sha256": "13d78786ae0d87fed8fa37234885d1ef046b107bc4950cbb94ad3fa2e0be64dc",
+      "bytes": 809
+    }
+  }
+}
