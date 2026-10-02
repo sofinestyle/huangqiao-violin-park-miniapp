@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-02",
+  "baseline": "c927ce65249d511203b539ab9dfdc35fb58ee1c3",
+  "checkedTracked": 853,
+  "changedTracked": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "miniprogram/miniprogram/pages/spot/index.wxml",
+    "miniprogram/miniprogram/pages/spot/index.wxss",
+    "miniprogram/miniprogram/pages/tour/index.wxml",
+    "miniprogram/miniprogram/pages/tour/index.wxss"
+  ],
+  "authorizedSourceFiles": [
+    "miniprogram/miniprogram/pages/tour/index.wxml",
+    "miniprogram/miniprogram/pages/tour/index.wxss",
+    "miniprogram/miniprogram/pages/spot/index.wxml",
+    "miniprogram/miniprogram/pages/spot/index.wxss"
+  ],
+  "frozenOutsideWhitelist": 847,
+  "unexpectedChanges": [],
+  "localPageStylesScoped": true,
+  "homeNavigationSharedCodeUnchanged": true,
+  "publicSpotDataHashUnchanged": "727e97f3edfc2bea8875afabaf6b1db9efe0ba6cc44f5c165bae54f387f98b11",
+  "nativeCompilePassed": true,
+  "actualElementClicks": 10,
+  "nativeUIActions": "native-ui-actions.json",
+  "actualWidths": [
+    320,
+    375,
+    390
+  ],
+  "unexecutedWidth": {
+    "430": "开发者工具出现用户持续操作；未切换当前人工查看的界面"
+  },
+  "nativePngCount": 35,
+  "controlledStateRendering": "320px long name/body/address/image error/loading/error/empty; original retry actual click reloads service; no writes",
+  "exceptions": [],
+  "consoleErrors": [],
+  "originals": "25 unchanged via verify_originals.py",
+  "typecheck": "passed",
+  "gitDiffCheck": "passed",
+  "unexecuted": [
+    "430px simulator",
+    "iOS/Android real devices and accessibility font scaling",
+    "real network/image failure injection",
+    "image preview open/close and verified location launch",
+    "five tab physical switching in this batch",
+    "business submission/admin/identity/capacity/concurrency/video regression",
+    "HTML browser rendering and pixel comparison"
+  ],
+  "businessSubmission": false,
+  "serverOrDatabaseEdits": false,
+  "completeHtmlReplica": false,
+  "CR005_B_C_Implemented": false,
+  "manualAcceptance": "pending"
+}

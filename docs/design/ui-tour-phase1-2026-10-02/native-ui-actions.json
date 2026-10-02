@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02",
+  "operator": "Codex",
+  "tool": "CUA native app + official SDK read-only observations",
+  "actions": [
+    {
+      "control": "查看城市客厅详情",
+      "action": "AX click",
+      "width": 320,
+      "observedPath": "pages/spot/index",
+      "result": "passed"
+    },
+    {
+      "control": "原生返回",
+      "action": "native coordinate click",
+      "width": 320,
+      "observedPath": "pages/tour/index",
+      "result": "passed"
+    },
+    {
+      "control": "导览图库",
+      "action": "native drag right",
+      "width": 320,
+      "beforeCurrent": 1,
+      "afterCurrent": 0,
+      "observedPath": "pages/tour/index",
+      "result": "passed",
+      "beforeEvidence": "tour-320-component-slide.png",
+      "afterEvidence": "gesture-320-tour.png"
+    }
+  ],
+  "earlierGestureAttempts": "390px初次拖动未观察到索引变化，不计通过；320px重新定位后实际右滑成功",
+  "businessSubmission": false
+}

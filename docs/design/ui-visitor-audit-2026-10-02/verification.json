@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-02",
+  "baseline": "c927ce65249d511203b539ab9dfdc35fb58ee1c3",
+  "checkedTracked": 853,
+  "changedExistingTracked": [],
+  "originals": "25 passed via scripts/verify_originals.py",
+  "viewVariants": 18,
+  "uniqueRegisteredPages": 16,
+  "nativeScreenshots": 37,
+  "missingScreenshots": [],
+  "inspectedContactSheets": 5,
+  "registeredPages": 19,
+  "missingDocumentLinks": [],
+  "privateRecordScreenshots": false,
+  "exceptions": [],
+  "implementedUI": false,
+  "executedClickTests": false,
+  "businessSubmission": false,
+  "unexecuted": [
+    "device widths other than390",
+    "real phones",
+    "newUI",
+    "click/search/specs/back",
+    "private records",
+    "normal teaching detail/video",
+    "network failure states",
+    "business tests/typecheck",
+    "publish/deploy"
+  ]
+}

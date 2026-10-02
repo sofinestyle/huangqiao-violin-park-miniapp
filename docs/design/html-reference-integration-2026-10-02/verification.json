@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-02",
+  "baseline": "c927ce65249d511203b539ab9dfdc35fb58ee1c3",
+  "checkedTracked": 853,
+  "changedTracked": [
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md"
+  ],
+  "changesAppendOnly": true,
+  "frozenSourceChanges": [],
+  "originals": "25 passed via scripts/verify_originals.py",
+  "htmlSourceHashVerified": "9db6661143fe2574453e93b6176b3f3df9882522e1c911572076b11bfecf4c0d",
+  "referenceSections": [
+    "explore",
+    "yanxue",
+    "wenchuang",
+    "teaching"
+  ],
+  "registeredPages": 19,
+  "nonHomePages": 18,
+  "proposedBatchCounts": [
+    2,
+    5,
+    3,
+    2,
+    4,
+    2
+  ],
+  "plannedTotal": 18,
+  "missingDocumentLinks": [],
+  "whitespaceErrors": [],
+  "browserRendered": false,
+  "browserLimitation": "file protocol rejected; no workaround attempted",
+  "newNativeCompile": false,
+  "newNativeScreenshots": 0,
+  "executedClickTests": false,
+  "pageCodeChanged": false,
+  "databaseChanged": false,
+  "referenceDataPublished": false,
+  "implementationAuthorized": false,
+  "gitCommitOrPush": false,
+  "previousNativeAudit": "docs/design/ui-visitor-audit-2026-10-02; retained as previous current-state evidence only",
+  "unexecuted": [
+    "HTML browser render/pixel comparison",
+    "UI implementation",
+    "content restore/model edits",
+    "new UI native compile and clicks",
+    "new UI screenshots",
+    "other widths and real phones",
+    "business submissions and admin handling"
+  ]
+}

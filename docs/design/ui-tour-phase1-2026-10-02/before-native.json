@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-02T06:38:12.824Z",
+  "system": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "system": "iOS 10.0.1",
+    "platform": "devtools",
+    "benchmarkLevel": -1,
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "statusBarHeight": 47,
+    "safeArea": {
+      "top": 47,
+      "left": 0,
+      "right": 390,
+      "bottom": 810,
+      "width": 390,
+      "height": 763
+    },
+    "language": "zh_CN",
+    "version": "8.0.5",
+    "fontSizeSetting": 16,
+    "SDKVersion": "3.17.3",
+    "host": {
+      "env": "WeChat"
+    },
+    "enableDebug": false,
+    "mode": "default",
+    "deviceOrientation": "portrait",
+    "bluetoothEnabled": true,
+    "locationEnabled": true,
+    "wifiEnabled": true,
+    "albumAuthorized": true,
+    "cameraAuthorized": true,
+    "locationAuthorized": true,
+    "microphoneAuthorized": true,
+    "notificationAuthorized": true,
+    "notificationAlertAuthorized": true,
+    "notificationBadgeAuthorized": true,
+    "notificationSoundAuthorized": true,
+    "phoneCalendarAuthorized": true,
+    "bluetoothAuthorized": true,
+    "locationReducedAccuracy": true,
+    "devicePixelRatio": 3
+  },
+  "tour": {
+    "path": "pages/tour/index",
+    "error": "",
+    "imageCount": [
+      {
+        "id": "spot-1",
+        "count": 5
+      },
+      {
+        "id": "spot-2",
+        "count": 4
+      },
+      {
+        "id": "spot-3",
+        "count": 5
+      },
+      {
+        "id": "spot-4",
+        "count": 5
+      }
+    ]
+  },
+  "spot": {
+    "path": "pages/spot/index",
+    "error": "",
+    "imageCount": 5
+  }
+}

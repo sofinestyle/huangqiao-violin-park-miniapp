@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-02T06:49:38.908Z",
+  "mode": "states",
+  "exceptions": [],
+  "screenshots": [
+    "tour-320-top.png",
+    "tour-320-long-name.png",
+    "tour-320-bottom.png",
+    "spot-4-320-top.png",
+    "spot-4-320-bottom.png",
+    "spot-320-controlled-long-image-error.png",
+    "spot-320-controlled-long-bottom.png",
+    "tour-320-controlled-loading.png",
+    "tour-320-controlled-error.png"
+  ],
+  "checks": [
+    {
+      "point": 1,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 2,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 3,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 4,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "detailConsult": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "controlledRendering": "long name/body/address/image error",
+      "businessData": false
+    }
+  ],
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '隔离渲染样本：暂时无法连接服务，请稍后重试'\n- ''\n\n    at /private/tmp/hq-tour-device.cjs:13:437\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}

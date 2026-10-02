@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-02T06:55:15.198Z",
+  "mode": "inspect",
+  "exceptions": [],
+  "screenshots": [
+    "gesture-320-tour.png"
+  ],
+  "checks": [],
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "path": "pages/tour/index",
+  "current": 0,
+  "query": {},
+  "status": "passed"
+}

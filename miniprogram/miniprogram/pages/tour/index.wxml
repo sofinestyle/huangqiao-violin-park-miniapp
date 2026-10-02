@@ -1,1 +1,26 @@
-<import src="../../templates/state.wxml"/><view class="page"><view class="h1">琴音之旅</view><view class="intro">读懂一把琴的诞生</view><template is="state" data="{{loading,error}}"/><view class="card" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="open"><image class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="card-body"><view class="h3">{{index+1}} · {{item.name}}</view><view class="muted">{{item.opening}}</view></view></view><view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view><view class="support-note">集合点、转场方式及交通费用以工作人员确认安排为准。</view></view>
+<import src="../../templates/state.wxml"/>
+<view class="page tour-page">
+  <view class="tour-heading">
+    <view class="h1 tour-title">琴音之旅</view>
+    <view class="intro tour-intro">读懂一把琴的诞生</view>
+  </view>
+  <template is="state" data="{{loading,error}}"/>
+  <view class="tour-stop" wx:for="{{items}}" wx:key="id">
+    <swiper class="tour-gallery" indicator-dots indicator-color="rgba(255,253,247,0.5)" indicator-active-color="#fffdf7" aria-label="{{item.name}}图片">
+      <swiper-item wx:for="{{item.images}}" wx:for-item="photo" wx:key="*this">
+        <image class="tour-photo" src="{{photo}}" mode="aspectFill"/>
+      </swiper-item>
+    </swiper>
+    <view class="tour-stop-body">
+      <view class="tour-stop-heading">
+        <text class="tour-number">{{index > 8 ? '' : '0'}}{{index+1}}</text>
+        <view class="h3 tour-stop-name">{{item.name}}</view>
+      </view>
+      <view class="tour-description pre-line">{{item.description}}</view>
+      <view class="muted tour-opening">{{item.opening}}</view>
+      <button class="secondary tour-detail" data-id="{{item.id}}" bindtap="open" hover-class="tour-pressed" aria-label="查看{{item.name}}详情">查看点位详情<text class="tour-arrow">›</text></button>
+    </view>
+  </view>
+  <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布点位</view>
+  <view class="support-note tour-support">集合点、转场方式及交通费用以工作人员确认安排为准。</view>
+</view>

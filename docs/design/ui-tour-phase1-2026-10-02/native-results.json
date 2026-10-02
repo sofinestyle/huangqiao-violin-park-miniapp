@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-02T06:45:36.671Z",
+  "operator": "Codex",
+  "environment": "WeChat Developer Tools local simulator",
+  "exceptions": [],
+  "consoleErrors": [],
+  "clicks": [
+    {
+      "control": "homepage map guide",
+      "method": "Element.tap",
+      "to": "pages/tour/index"
+    },
+    {
+      "control": "point detail",
+      "method": "Element.tap",
+      "id": "spot-1",
+      "to": "pages/spot/index"
+    },
+    {
+      "control": "consult visit",
+      "method": "Element.tap",
+      "source": "城市客厅",
+      "to": "pages/consult/index",
+      "submitted": false
+    },
+    {
+      "control": "point detail",
+      "method": "Element.tap",
+      "id": "spot-2",
+      "to": "pages/spot/index"
+    },
+    {
+      "control": "consult visit",
+      "method": "Element.tap",
+      "source": "音乐生态湖",
+      "to": "pages/consult/index",
+      "submitted": false
+    },
+    {
+      "control": "point detail",
+      "method": "Element.tap",
+      "id": "spot-3",
+      "to": "pages/spot/index"
+    },
+    {
+      "control": "consult visit",
+      "method": "Element.tap",
+      "source": "产业园·中小企业集聚区",
+      "to": "pages/consult/index",
+      "submitted": false
+    },
+    {
+      "control": "point detail",
+      "method": "Element.tap",
+      "id": "spot-4",
+      "to": "pages/spot/index"
+    },
+    {
+      "control": "consult visit",
+      "method": "Element.tap",
+      "source": "绿岛·智能环保表面处理中心",
+      "to": "pages/consult/index",
+      "submitted": false
+    },
+    {
+      "control": "homepage enter explore",
+      "method": "Element.tap",
+      "to": "pages/tour/index"
+    }
+  ],
+  "screenshots": [
+    "tour-390-top.png",
+    "tour-390-stop-1.png",
+    "spot-1-390-top.png",
+    "spot-1-390-bottom.png",
+    "tour-390-stop-2.png",
+    "spot-2-390-top.png",
+    "spot-2-390-bottom.png",
+    "tour-390-stop-3.png",
+    "spot-3-390-top.png",
+    "spot-3-390-bottom.png",
+    "tour-390-stop-4.png",
+    "spot-4-390-top.png",
+    "spot-4-390-bottom.png",
+    "tour-390-bottom.png"
+  ],
+  "measurements": [
+    {
+      "id": "spot-1",
+      "selector": ".tour-detail",
+      "size": {
+        "width": 350,
+        "height": 44
+      }
+    },
+    {
+      "id": "spot-1",
+      "selector": ".gallery",
+      "height": 223
+    },
+    {
+      "id": "spot-1",
+      "selector": ".spot-consult",
+      "size": {
+        "width": 350,
+        "height": 44.3984375
+      }
+    },
+    {
+      "id": "spot-2",
+      "selector": ".tour-detail",
+      "size": {
+        "width": 350,
+        "height": 44
+      }
+    },
+    {
+      "id": "spot-2",
+      "selector": ".gallery",
+      "height": 223
+    },
+    {
+      "id": "spot-2",
+      "selector": ".spot-consult",
+      "size": {
+        "width": 350,
+        "height": 44.3984375
+      }
+    },
+    {
+      "id": "spot-3",
+      "selector": ".tour-detail",
+      "size": {
+        "width": 350,
+        "height": 44
+      }
+    },
+    {
+      "id": "spot-3",
+      "selector": ".gallery",
+      "height": 223
+    },
+    {
+      "id": "spot-3",
+      "selector": ".spot-consult",
+      "size": {
+        "width": 350,
+        "height": 44.3984375
+      }
+    },
+    {
+      "id": "spot-4",
+      "selector": ".tour-detail",
+      "size": {
+        "width": 350,
+        "height": 44
+      }
+    },
+    {
+      "id": "spot-4",
+      "selector": ".gallery",
+      "height": 223
+    },
+    {
+      "id": "spot-4",
+      "selector": ".spot-consult",
+      "size": {
+        "width": 350,
+        "height": 44.3984375
+      }
+    }
+  ],
+  "programmaticNavigation": [
+    "initial home launch",
+    "tour reset between separate point tests; native back tested separately",
+    "tour reset between separate point tests; native back tested separately",
+    "tour reset between separate point tests; native back tested separately",
+    "tour reset between separate point tests; native back tested separately",
+    "home launch for explore entry"
+  ],
+  "businessSubmission": false,
+  "nativeCompile": {
+    "status": "updated WXML/WXSS compiled and rendered in launched devtools; SDK connected for interactions",
+    "independentDiagnostics": "UI panel checked separately"
+  },
+  "actualGestureObservation": {
+    "path": "pages/tour/index",
+    "current": 0,
+    "method": "CUA native drag, SDK read-only observation"
+  },
+  "system": {
+    "platform": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3",
+    "version": "8.0.5"
+  },
+  "spots": [
+    {
+      "id": "spot-1",
+      "name": "城市客厅",
+      "imageCount": 5,
+      "description": "数字沙盘、乐器博览馆、路演厅及古琴馆。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-2",
+      "name": "音乐生态湖",
+      "imageCount": 4,
+      "description": "音乐文化与园区环境。喷泉、音乐会和免费范围需核定。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-3",
+      "name": "产业园·中小企业集聚区",
+      "imageCount": 5,
+      "description": "真实生产与制琴工坊。可观摩项目需接待人员确认。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-4",
+      "name": "绿岛·智能环保表面处理中心",
+      "imageCount": 5,
+      "description": "制琴工艺与表面处理场景。开放安排需核定。",
+      "opening": "开放安排尚待核定，请先咨询"
+    }
+  ],
+  "publicSpotDigestBefore": "727e97f3edfc2bea8875afabaf6b1db9efe0ba6cc44f5c165bae54f387f98b11",
+  "fullDescriptions": [
+    "spot-1",
+    "spot-2",
+    "spot-3",
+    "spot-4"
+  ],
+  "publicSpotDigestAfter": "727e97f3edfc2bea8875afabaf6b1db9efe0ba6cc44f5c165bae54f387f98b11",
+  "status": "passed"
+}

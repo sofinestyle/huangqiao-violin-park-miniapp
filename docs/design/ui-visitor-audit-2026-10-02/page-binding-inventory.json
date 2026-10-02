@@ -1,0 +1,839 @@
+[
+  {
+    "route": "pages/index/index",
+    "pageTitle": "黄桥乐器文化产业园",
+    "conditionBindings": [
+      "wx:if=\"{{site}}\"",
+      "wx:if=\"{{packages.length}}\"",
+      "wx:for=\"{{packages}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{item.referenceSinglePrice || item.referenceSinglePrice === 0}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"violin\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"tab\"",
+      "bindtap=\"open\"",
+      "bindtap=\"tab\"",
+      "bindtap=\"tab\"",
+      "bindtap=\"tab\""
+    ],
+    "datasets": [
+      "data-page=\"brand\"",
+      "data-page=\"teaching\"",
+      "data-page=\"tour\"",
+      "data-page=\"consult\"",
+      "data-page=\"tour\"",
+      "data-page=\"study\"",
+      "data-page=\"package\"",
+      "data-id=\"{{item.id}}\"",
+      "data-page=\"gifts\"",
+      "data-page=\"instruments\"",
+      "data-page=\"study\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{site}}",
+      "{{site.images[1]}}",
+      "{{site.heroTitle}}",
+      "{{site.heroSubtitle}}",
+      "{{site.intro}}",
+      "{{spots[0].images[1] || spots[0].cover}}",
+      "{{packages.length}}",
+      "{{packages}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.name}}",
+      "{{item.durationNote}}",
+      "{{item.referenceSinglePrice || item.referenceSinglePrice === 0}}",
+      "{{item.referenceSinglePrice}}",
+      "{{stats.gifts}}",
+      "{{stats.instruments}}",
+      "{{stats.packages}}"
+    ],
+    "pageStyleIsSharedOnly": false
+  },
+  {
+    "route": "pages/instruments/index",
+    "pageTitle": "乐器展示",
+    "conditionBindings": [
+      "wx:for=\"{{filters}}\"",
+      "wx:key=\"*this\"",
+      "wx:if=\"{{!loading}}\"",
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{!loading && !error && !items.length}}\""
+    ],
+    "eventBindings": [
+      "bindinput=\"search\"",
+      "bindtap=\"select\"",
+      "bindtap=\"open\"",
+      "catchtap=\"open\""
+    ],
+    "datasets": [
+      "data-filter=\"{{item}}\"",
+      "data-id=\"{{item.id}}\"",
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{title}}",
+      "{{q}}",
+      "{{filters}}",
+      "{{selected===item?'on':''}}",
+      "{{item}}",
+      "{{item}}",
+      "{{loading,error}}",
+      "{{!loading}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.categoryLabel}}",
+      "{{item.name}}",
+      "{{item.priceLabel}}",
+      "{{item.id}}",
+      "{{!loading && !error && !items.length}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/gifts/index",
+    "pageTitle": "文创伴手礼",
+    "conditionBindings": [
+      "wx:for=\"{{filters}}\"",
+      "wx:key=\"*this\"",
+      "wx:if=\"{{!loading}}\"",
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{!loading && !error && !items.length}}\""
+    ],
+    "eventBindings": [
+      "bindinput=\"search\"",
+      "bindtap=\"select\"",
+      "bindtap=\"open\"",
+      "catchtap=\"open\""
+    ],
+    "datasets": [
+      "data-filter=\"{{item}}\"",
+      "data-id=\"{{item.id}}\"",
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{title}}",
+      "{{q}}",
+      "{{filters}}",
+      "{{selected===item?'on':''}}",
+      "{{item}}",
+      "{{item}}",
+      "{{loading,error}}",
+      "{{!loading}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.series}}",
+      "{{item.name}}",
+      "{{item.priceLabel}}",
+      "{{item.id}}",
+      "{{!loading && !error && !items.length}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/study/index",
+    "pageTitle": "研学套餐",
+    "conditionBindings": [
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\""
+    ],
+    "eventBindings": [
+      "bindtap=\"enroll\"",
+      "bindtap=\"open\"",
+      "catchtap=\"open\"",
+      "bindtap=\"group\""
+    ],
+    "datasets": [
+      "data-id=\"{{item.id}}\"",
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.code}}",
+      "{{item.name}}",
+      "{{item.ageNote}}",
+      "{{item.durationNote}}",
+      "{{item.description}}",
+      "{{item.referenceSinglePrice}}",
+      "{{item.id}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/mine/index",
+    "pageTitle": "我的",
+    "conditionBindings": [
+      "wx:if=\"{{!hasIdentity}}\"",
+      "wx:if=\"{{error}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"login\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\"",
+      "bindtap=\"open\""
+    ],
+    "datasets": [
+      "data-url=\"/pages/records/index?kind=bookings\"",
+      "data-url=\"/pages/records/index?kind=consultations\"",
+      "data-url=\"/pages/consult/index\"",
+      "data-url=\"/pages/about/index\"",
+      "data-url=\"/pages/about/index?section=privacy\""
+    ],
+    "expressions": [
+      "{{hasIdentity?'已登录并查看记录':'查看本人申请与咨询'}}",
+      "{{!hasIdentity}}",
+      "{{busy}}",
+      "{{busy}}",
+      "{{error}}",
+      "{{error}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/product/index",
+    "pageTitle": "产品详情",
+    "conditionBindings": [
+      "wx:if=\"{{item}}\"",
+      "wx:if=\"{{galleryImages.length}}\"",
+      "wx:for=\"{{galleryImages}}\"",
+      "wx:key=\"*this\"",
+      "wx:if=\"{{!galleryImages.length}}\"",
+      "wx:if=\"{{imageError}}\"",
+      "wx:if=\"{{item.brand}}\"",
+      "wx:if=\"{{item.specs.length}}\"",
+      "wx:for=\"{{item.specs}}\"",
+      "wx:key=\"name\"",
+      "wx:if=\"{{item.specs.length}}\"",
+      "wx:if=\"{{item.specs[selectedSpec].price!==undefined && item.specs[selectedSpec].price!==null}}\"",
+      "wx:if=\"{{phone}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"preview\"",
+      "binderror=\"imageError\"",
+      "bindtap=\"select\"",
+      "bindtap=\"phone\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [
+      "data-url=\"{{item}}\"",
+      "data-index=\"{{index}}\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{item}}",
+      "{{galleryImages.length}}",
+      "{{galleryImages}}",
+      "{{item}}",
+      "{{item}}",
+      "{{!galleryImages.length}}",
+      "{{imageError}}",
+      "{{item.name}}",
+      "{{item.code}}",
+      "{{item.categoryLabel}}",
+      "{{item.brand}}",
+      "{{item.brand}}",
+      "{{item.priceLabel}}",
+      "{{item.priceNote}}",
+      "{{item.specs.length}}",
+      "{{item.specs}}",
+      "{{selectedSpec===index?'on':''}}",
+      "{{index}}",
+      "{{item.name}}",
+      "{{item.specs.length}}",
+      "{{item.specs[selectedSpec].description}}",
+      "{{item.specs[selectedSpec].price!==undefined && item.specs[selectedSpec].price!==null}}",
+      "{{item.specs[selectedSpec].price}}",
+      "{{item.description}}",
+      "{{phone}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/package/index",
+    "pageTitle": "套餐详情",
+    "conditionBindings": [
+      "wx:if=\"{{item}}\""
+    ],
+    "eventBindings": [
+      "binderror=\"imageError\"",
+      "bindtap=\"book\"",
+      "bindtap=\"group\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [],
+    "expressions": [
+      "{{loading,error}}",
+      "{{item}}",
+      "{{item.cover}}",
+      "{{item.name}}",
+      "{{item.ageNote}}",
+      "{{item.durationNote}}",
+      "{{item.itinerary}}",
+      "{{item.included}}",
+      "{{item.excluded}}",
+      "{{item.materials}}",
+      "{{item.meetingPoint}}",
+      "{{item.transfer}}",
+      "{{item.bookingNote}}",
+      "{{item.cancelNote}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/booking/index",
+    "pageTitle": "研学预约申请",
+    "conditionBindings": [
+      "wx:if=\"{{!loading && !error}}\"",
+      "wx:if=\"{{enrollmentId}}\"",
+      "wx:if=\"{{!activity.canApply}}\"",
+      "wx:if=\"{{filteredSlots.length}}\"",
+      "wx:if=\"{{form.slotId}}\"",
+      "wx:if=\"{{group}}\"",
+      "wx:if=\"{{!group}}\"",
+      "wx:if=\"{{group}}\"",
+      "wx:if=\"{{submitError}}\""
+    ],
+    "eventBindings": [
+      "bindchange=\"pickPackage\"",
+      "bindchange=\"date\"",
+      "bindchange=\"slot\"",
+      "bindtap=\"clearSlot\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindchange=\"consent\"",
+      "bindtap=\"privacy\"",
+      "bindtap=\"submit\""
+    ],
+    "datasets": [
+      "data-key=\"team\"",
+      "data-key=\"adults\"",
+      "data-key=\"children\"",
+      "data-key=\"total\"",
+      "data-key=\"contactName\"",
+      "data-key=\"phone\"",
+      "data-key=\"note\""
+    ],
+    "expressions": [
+      "{{enrollmentId?'研学跟团报名':group?'团体需求申请':'个人 / 家庭预约申请'}}",
+      "{{loading,error}}",
+      "{{!loading && !error}}",
+      "{{enrollmentId}}",
+      "{{activity.title}}",
+      "{{activity.packageName}}",
+      "{{activity.date}}",
+      "{{activity.start}}",
+      "{{activity.end}}",
+      "{{activity.meetingPoint}}",
+      "{{activity.remaining}}",
+      "{{!activity.canApply}}",
+      "{{activity.availabilityLabel}}",
+      "{{group?'意向套餐（可不指定）':'研学套餐'}}",
+      "{{packages}}",
+      "{{packageName}}",
+      "{{minDate}}",
+      "{{form.date}}",
+      "{{form.date || '请选择日期'}}",
+      "{{filteredSlots.length}}",
+      "{{filteredSlots}}",
+      "{{slotLabel}}",
+      "{{form.slotId}}",
+      "{{group}}",
+      "{{form.team}}",
+      "{{!group}}",
+      "{{form.adults}}",
+      "{{form.children}}",
+      "{{group}}",
+      "{{form.total}}",
+      "{{form.contactName}}",
+      "{{form.phone}}",
+      "{{group?'团体需求说明（必填）':'备注（可选）'}}",
+      "{{form.note}}",
+      "{{form.consent}}",
+      "{{submitError}}",
+      "{{submitError}}",
+      "{{busy}}",
+      "{{busy || (enrollmentId && !activity.canApply)}}",
+      "{{busy?'正在保存…':'提交预约申请'}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/records/index",
+    "pageTitle": "我的记录",
+    "conditionBindings": [
+      "wx:if=\"{{!hasIdentity}}\"",
+      "wx:if=\"{{hasIdentity && !loading}}\"",
+      "wx:for=\"{{rows}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{kind==='bookings'}}\"",
+      "wx:if=\"{{!rows.length && !error}}\"",
+      "wx:if=\"{{hasIdentity}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"login\"",
+      "bindtap=\"open\"",
+      "bindtap=\"retry\""
+    ],
+    "datasets": [
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{kind==='bookings'?'我的研学预约':'我的咨询'}}",
+      "{{!hasIdentity}}",
+      "{{loading,error}}",
+      "{{hasIdentity && !loading}}",
+      "{{rows}}",
+      "{{item.id}}",
+      "{{item.displayName}}",
+      "{{item.stateLabel}}",
+      "{{item.id}}",
+      "{{kind==='bookings'}}",
+      "{{item.request.date}}",
+      "{{item.headcount}}",
+      "{{item.createdLabel}}",
+      "{{!rows.length && !error}}",
+      "{{hasIdentity}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/record/index",
+    "pageTitle": "记录详情",
+    "conditionBindings": [
+      "wx:if=\"{{row}}\"",
+      "wx:if=\"{{kind==='bookings' && row.state==='pending'}}\"",
+      "wx:if=\"{{kind==='bookings'}}\"",
+      "wx:if=\"{{row.request.team}}\"",
+      "wx:if=\"{{row.snapshot.spec}}\"",
+      "wx:if=\"{{row.request.enrollment}}\"",
+      "wx:if=\"{{row.confirmed}}\"",
+      "wx:if=\"{{row.public_note}}\"",
+      "wx:for=\"{{row.changes}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{item.result.note}}\"",
+      "wx:if=\"{{kind==='bookings' && row.state==='pending'}}\"",
+      "wx:if=\"{{kind==='bookings' && row.state==='confirmed'}}\"",
+      "wx:if=\"{{changeOpen}}\"",
+      "wx:if=\"{{changeType==='reschedule'}}\"",
+      "wx:if=\"{{!row.request.group}}\"",
+      "wx:if=\"{{row.request.group}}\"",
+      "wx:if=\"{{actionError}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"openChange\"",
+      "bindtap=\"openChange\"",
+      "bindtap=\"openChange\"",
+      "bindinput=\"input\"",
+      "bindchange=\"date\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindtap=\"action\"",
+      "bindtap=\"closeChange\"",
+      "bindtap=\"contact\""
+    ],
+    "datasets": [
+      "data-type=\"cancel\"",
+      "data-type=\"cancel\"",
+      "data-type=\"reschedule\"",
+      "data-key=\"reason\"",
+      "data-key=\"adults\"",
+      "data-key=\"children\"",
+      "data-key=\"total\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{row}}",
+      "{{row.displayName}}",
+      "{{row.id}}",
+      "{{row.stateLabel}}",
+      "{{kind==='bookings' && row.state==='pending'}}",
+      "{{row.request.contactName}}",
+      "{{row.request.phone}}",
+      "{{kind==='bookings'}}",
+      "{{row.request.date}}",
+      "{{row.headcount}}",
+      "{{row.request.team}}",
+      "{{row.request.team}}",
+      "{{row.request.note}}",
+      "{{row.snapshot.spec}}",
+      "{{row.snapshot.spec}}",
+      "{{row.request.message}}",
+      "{{row.request.enrollment}}",
+      "{{row.request.enrollment.title}}",
+      "{{row.request.enrollment.packageName}}",
+      "{{row.request.enrollment.date}}",
+      "{{row.request.enrollment.start}}",
+      "{{row.request.enrollment.end}}",
+      "{{row.request.enrollment.meetingPoint}}",
+      "{{row.confirmed}}",
+      "{{row.confirmed.date}}",
+      "{{row.confirmed.start}}",
+      "{{row.confirmed.end}}",
+      "{{row.confirmed.total}}",
+      "{{row.confirmed.arrangement}}",
+      "{{row.public_note}}",
+      "{{row.public_note}}",
+      "{{row.changes}}",
+      "{{item.type==='cancel'?'取消申请':'日期 / 人数变更申请'}}",
+      "{{item.state==='pending'?'待处理':item.state==='approved'?'已批准':'未批准'}}",
+      "{{item.data.reason}}",
+      "{{item.result.note}}",
+      "{{item.result.note}}",
+      "{{kind==='bookings' && row.state==='pending'}}",
+      "{{kind==='bookings' && row.state==='confirmed'}}",
+      "{{changeOpen}}",
+      "{{row.state==='pending'?'撤回申请':changeType==='cancel'?'申请取消':'申请改期 / 人数变更'}}",
+      "{{form.reason}}",
+      "{{changeType==='reschedule'}}",
+      "{{minDate}}",
+      "{{form.date}}",
+      "{{form.date}}",
+      "{{!row.request.group}}",
+      "{{form.adults}}",
+      "{{form.children}}",
+      "{{row.request.group}}",
+      "{{form.total}}",
+      "{{actionError}}",
+      "{{actionError}}",
+      "{{busy}}",
+      "{{busy}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/consult/index",
+    "pageTitle": "联系咨询",
+    "conditionBindings": [
+      "wx:if=\"{{!loading && !error}}\"",
+      "wx:if=\"{{item}}\"",
+      "wx:if=\"{{spec}}\"",
+      "wx:if=\"{{!item}}\"",
+      "wx:if=\"{{submitError}}\""
+    ],
+    "eventBindings": [
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindinput=\"input\"",
+      "bindchange=\"consent\"",
+      "bindtap=\"privacy\"",
+      "bindtap=\"submit\""
+    ],
+    "datasets": [
+      "data-key=\"contactName\"",
+      "data-key=\"phone\"",
+      "data-key=\"message\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{!loading && !error}}",
+      "{{item}}",
+      "{{item.name}}",
+      "{{item.code}}",
+      "{{spec}}",
+      "{{spec}}",
+      "{{!item}}",
+      "{{source}}",
+      "{{form.contactName}}",
+      "{{form.phone}}",
+      "{{form.message}}",
+      "{{form.consent}}",
+      "{{submitError}}",
+      "{{submitError}}",
+      "{{busy}}",
+      "{{busy}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/teaching/index",
+    "pageTitle": "教学课堂",
+    "conditionBindings": [
+      "wx:for=\"{{filters}}\"",
+      "wx:key=\"*this\"",
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{!loading && !error && !items.length}}\""
+    ],
+    "eventBindings": [
+      "bindinput=\"search\"",
+      "bindtap=\"select\"",
+      "bindtap=\"open\""
+    ],
+    "datasets": [
+      "data-filter=\"{{item}}\"",
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{q}}",
+      "{{filters}}",
+      "{{selected===item?'on':''}}",
+      "{{item}}",
+      "{{item}}",
+      "{{loading,error}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.type==='video'?'公开视频':item.type==='course'?'课程信息':'图文教学'}}",
+      "{{item.name}}",
+      "{{item.category}}",
+      "{{!loading && !error && !items.length}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/lesson/index",
+    "pageTitle": "教学内容",
+    "conditionBindings": [
+      "wx:if=\"{{item}}\"",
+      "wx:if=\"{{item.type==='video' && !playbackError}}\"",
+      "wx:if=\"{{playbackError}}\"",
+      "wx:if=\"{{item.type!=='video' && item.cover}}\"",
+      "wx:if=\"{{item.type==='course'}}\""
+    ],
+    "eventBindings": [
+      "binderror=\"playError\"",
+      "bindtimeupdate=\"time\"",
+      "bindended=\"ended\"",
+      "bindplay=\"play\"",
+      "bindpause=\"pause\"",
+      "bindtap=\"retry\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [],
+    "expressions": [
+      "{{loading,error}}",
+      "{{item}}",
+      "{{item.name}}",
+      "{{item.category}}",
+      "{{item.type==='video' && !playbackError}}",
+      "{{item.videoUrl}}",
+      "{{item.cover}}",
+      "{{false}}",
+      "{{true}}",
+      "{{playbackError}}",
+      "{{item.type!=='video' && item.cover}}",
+      "{{item.cover}}",
+      "{{item.description}}",
+      "{{item.type==='course'}}",
+      "{{item.audience}}",
+      "{{item.form}}",
+      "{{item.place}}",
+      "{{item.courseTime}}",
+      "{{item.courseFee}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/tour/index",
+    "pageTitle": "琴音之旅",
+    "conditionBindings": [
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{!loading && !error && !items.length}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"open\""
+    ],
+    "datasets": [
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{index+1}}",
+      "{{item.name}}",
+      "{{item.opening}}",
+      "{{!loading && !error && !items.length}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/spot/index",
+    "pageTitle": "点位详情",
+    "conditionBindings": [
+      "wx:if=\"{{item}}\"",
+      "wx:for=\"{{item.images}}\"",
+      "wx:key=\"*this\"",
+      "wx:if=\"{{imageError}}\"",
+      "wx:if=\"{{item.address}}\"",
+      "wx:if=\"{{item.coordinateVerified}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"preview\"",
+      "binderror=\"imageError\"",
+      "bindtap=\"map\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [
+      "data-url=\"{{item}}\""
+    ],
+    "expressions": [
+      "{{loading,error}}",
+      "{{item}}",
+      "{{item.images}}",
+      "{{item}}",
+      "{{item}}",
+      "{{imageError}}",
+      "{{item.name}}",
+      "{{item.description}}",
+      "{{item.opening}}",
+      "{{item.visitNote}}",
+      "{{item.address}}",
+      "{{item.address}}",
+      "{{item.coordinateVerified}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/about/index",
+    "pageTitle": "关于我们与服务说明",
+    "conditionBindings": [
+      "wx:if=\"{{site}}\"",
+      "wx:if=\"{{site.address}}\"",
+      "wx:if=\"{{site.phone}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"phone\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [],
+    "expressions": [
+      "{{loading,error}}",
+      "{{site}}",
+      "{{section==='privacy'?'隐私与服务说明':'关于我们'}}",
+      "{{site.intro}}",
+      "{{site.serviceNote}}",
+      "{{site.privacy}}",
+      "{{site.address}}",
+      "{{site.address}}",
+      "{{site.phone}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/enrollments/index",
+    "pageTitle": "研学报名",
+    "conditionBindings": [
+      "wx:if=\"{{date}}\"",
+      "wx:if=\"{{!loading && !error}}\"",
+      "wx:for=\"{{items}}\"",
+      "wx:key=\"id\"",
+      "wx:if=\"{{item.cover}}\"",
+      "wx:if=\"{{!items.length}}\""
+    ],
+    "eventBindings": [
+      "bindchange=\"date\"",
+      "bindtap=\"clear\"",
+      "bindtap=\"open\"",
+      "catchtap=\"open\""
+    ],
+    "datasets": [
+      "data-id=\"{{item.id}}\"",
+      "data-id=\"{{item.id}}\""
+    ],
+    "expressions": [
+      "{{date}}",
+      "{{date || '全部活动日期'}}",
+      "{{date}}",
+      "{{loading,error}}",
+      "{{!loading && !error}}",
+      "{{items}}",
+      "{{item.id}}",
+      "{{item.cover}}",
+      "{{item.cover}}",
+      "{{item.availabilityLabel}}",
+      "{{item.title}}",
+      "{{item.date}}",
+      "{{item.start}}",
+      "{{item.end}}",
+      "{{item.packageName}}",
+      "{{item.meetingPoint}}",
+      "{{item.remaining}}",
+      "{{item.id}}",
+      "{{!items.length}}",
+      "{{date?'该日暂无已发布的报名活动，请查看其他日期。':'暂无已发布的报名活动，请稍后查看或联系工作人员。'}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/enrollment/index",
+    "pageTitle": "研学活动",
+    "conditionBindings": [
+      "wx:if=\"{{item && !loading && !error}}\"",
+      "wx:if=\"{{item.cover}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"package\"",
+      "bindtap=\"consult\"",
+      "bindtap=\"apply\""
+    ],
+    "datasets": [],
+    "expressions": [
+      "{{loading,error}}",
+      "{{item && !loading && !error}}",
+      "{{item.cover}}",
+      "{{item.cover}}",
+      "{{item.title}}",
+      "{{item.availabilityLabel}}",
+      "{{item.date}}",
+      "{{item.start}}",
+      "{{item.end}}",
+      "{{item.packageName}}",
+      "{{item.meetingPoint}}",
+      "{{item.remaining}}",
+      "{{item.description}}",
+      "{{item.feeNote || '具体费用请联系工作人员确认。'}}",
+      "{{item.registrationNote || '请按实际参加人数填写报名申请，提交后由工作人员联系确认安排。'}}",
+      "{{!item.canApply}}",
+      "{{item.canApply?'申请跟团报名':item.availabilityLabel}}"
+    ],
+    "pageStyleIsSharedOnly": true
+  },
+  {
+    "route": "pages/brand/index",
+    "pageTitle": "品牌介绍",
+    "conditionBindings": [
+      "wx:if=\"{{site}}\"",
+      "wx:if=\"{{site.images[1]}}\"",
+      "wx:if=\"{{!loading && !error && !site}}\""
+    ],
+    "eventBindings": [
+      "bindtap=\"instruments\"",
+      "bindtap=\"consult\""
+    ],
+    "datasets": [],
+    "expressions": [
+      "{{loading,error}}",
+      "{{site}}",
+      "{{site.images[1]}}",
+      "{{site.images[1]}}",
+      "{{site.intro}}",
+      "{{!loading && !error && !site}}"
+    ],
+    "pageStyleIsSharedOnly": false
+  }
+]

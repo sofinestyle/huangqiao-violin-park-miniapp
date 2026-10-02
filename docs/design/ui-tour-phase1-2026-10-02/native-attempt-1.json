@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-02T06:43:36.836Z",
+  "operator": "Codex",
+  "environment": "WeChat Developer Tools local simulator",
+  "exceptions": [],
+  "consoleErrors": [],
+  "clicks": [
+    {
+      "control": "homepage map guide",
+      "method": "Element.tap",
+      "to": "pages/tour/index"
+    },
+    {
+      "control": "point detail",
+      "method": "Element.tap",
+      "id": "spot-1",
+      "to": "pages/spot/index"
+    },
+    {
+      "control": "consult visit",
+      "method": "Element.tap",
+      "source": "城市客厅",
+      "to": "pages/consult/index",
+      "submitted": false
+    }
+  ],
+  "screenshots": [
+    "tour-390-top.png",
+    "tour-390-stop-1.png",
+    "spot-1-390-top.png",
+    "spot-1-390-bottom.png"
+  ],
+  "measurements": [
+    {
+      "id": "spot-1",
+      "selector": ".tour-detail",
+      "size": {
+        "width": 350,
+        "height": 44
+      }
+    },
+    {
+      "id": "spot-1",
+      "selector": ".gallery",
+      "height": 223
+    },
+    {
+      "id": "spot-1",
+      "selector": ".spot-consult",
+      "size": {
+        "width": 350,
+        "height": 44.3984375
+      }
+    }
+  ],
+  "programmaticNavigation": [
+    "initial home launch",
+    "consult -> spot via navigateBack"
+  ],
+  "businessSubmission": false,
+  "nativeCompile": {
+    "status": "launch succeeded; updated WXML/WXSS rendered",
+    "independentDiagnostics": "UI panel checked separately"
+  },
+  "system": {
+    "platform": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3",
+    "version": "8.0.5"
+  },
+  "spots": [
+    {
+      "id": "spot-1",
+      "name": "城市客厅",
+      "imageCount": 5,
+      "description": "数字沙盘、乐器博览馆、路演厅及古琴馆。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-2",
+      "name": "音乐生态湖",
+      "imageCount": 4,
+      "description": "音乐文化与园区环境。喷泉、音乐会和免费范围需核定。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-3",
+      "name": "产业园·中小企业集聚区",
+      "imageCount": 5,
+      "description": "真实生产与制琴工坊。可观摩项目需接待人员确认。",
+      "opening": "开放安排尚待核定，请先咨询"
+    },
+    {
+      "id": "spot-4",
+      "name": "绿岛·智能环保表面处理中心",
+      "imageCount": 5,
+      "description": "制琴工艺与表面处理场景。开放安排需核定。",
+      "opening": "开放安排尚待核定，请先咨询"
+    }
+  ],
+  "publicSpotDigestBefore": "727e97f3edfc2bea8875afabaf6b1db9efe0ba6cc44f5c165bae54f387f98b11",
+  "fullDescriptions": [
+    "spot-1"
+  ],
+  "status": "failed",
+  "failure": "Error: timeout waiting for automator response\n    at Connection.onMessage (/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator/out/Connection.js:1:985)\n    at Transport.emit (node:events:509:20)\n    at WebSocket.<anonymous> (/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator/out/Transport.js:1:220)\n    at WebSocket.onMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/event-target.js:120:16)\n    at WebSocket.emit (node:events:509:20)\n    at Receiver.receiverOnMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/websocket.js:807:20)\n    at Receiver.emit (node:events:509:20)\n    at Receiver.dataMessage (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:448:14)\n    at Receiver.getData (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:377:17)\n    at Receiver.startLoop (/Users/aaron/Documents/huangqiao-app/node_modules/ws/lib/receiver.js:158:22)"
+}

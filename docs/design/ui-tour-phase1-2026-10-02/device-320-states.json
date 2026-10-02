@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-02T06:50:58.086Z",
+  "mode": "states",
+  "exceptions": [],
+  "screenshots": [
+    "tour-320-top.png",
+    "tour-320-long-name.png",
+    "tour-320-bottom.png",
+    "spot-4-320-top.png",
+    "spot-4-320-bottom.png",
+    "spot-320-controlled-long-image-error.png",
+    "spot-320-controlled-long-bottom.png",
+    "tour-320-controlled-loading.png",
+    "tour-320-controlled-error.png",
+    "tour-320-controlled-empty.png",
+    "tour-320-component-slide.png"
+  ],
+  "checks": [
+    {
+      "point": 1,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 2,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 3,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "point": 4,
+      "buttonSize": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "detailConsult": {
+        "width": 286,
+        "height": 44
+      }
+    },
+    {
+      "controlledRendering": "long name/body/address/image error",
+      "businessData": false
+    },
+    {
+      "retryActualTap": true,
+      "reloadedActualService": true,
+      "errorWasControlledDisplay": true
+    },
+    {
+      "galleryComponentSwipeTo": 1,
+      "method": "official SwiperElement.swipeTo; not a physical gesture",
+      "didNotOpenDetail": true
+    }
+  ],
+  "system": {
+    "model": "iPhone 5",
+    "windowWidth": 320,
+    "windowHeight": 504,
+    "SDKVersion": "3.17.3"
+  },
+  "status": "passed"
+}

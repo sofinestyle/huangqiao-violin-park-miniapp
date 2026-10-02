@@ -1,0 +1,44 @@
+const root='/Users/aaron/Documents/huangqiao-app';
+const fs=require('node:fs'), assert=require('node:assert/strict'), crypto=require('node:crypto');
+const a=require(root+'/node_modules/miniprogram-automator');
+const out=root+'/docs/design/ui-tour-phase1-2026-10-02';
+const results={date:new Date().toISOString(),operator:'Codex',environment:'WeChat Developer Tools local simulator',exceptions:[],consoleErrors:[],clicks:[],screenshots:[],measurements:[],programmaticNavigation:[],businessSubmission:false};
+const save=()=>fs.writeFileSync(out+'/native-results.json',JSON.stringify(results,null,2)+'\n');
+(async()=>{let m;try{
+ m=await a.connect({wsEndpoint:'ws://127.0.0.1:9420'});
+ results.nativeCompile={status:'updated WXML/WXSS compiled and rendered in launched devtools; SDK connected for interactions',independentDiagnostics:'UI panel checked separately'};
+ const gesturePage=await m.currentPage(); if(gesturePage.path==='pages/tour/index'){const sw=await gesturePage.$('.tour-gallery');results.actualGestureObservation={path:gesturePage.path,current:await sw.property('current'),method:'CUA native drag, SDK read-only observation'};await m.screenshot({path:out+'/tour-390-actual-swipe.png'});}
+ m.on('exception',e=>{results.exceptions.push(String(e.message||e));save()});
+ m.on('console',e=>{if(e.level==='error'){results.consoleErrors.push(e);save()}});
+ const sys=await m.systemInfo(); results.system={platform:sys.platform,model:sys.model,windowWidth:sys.windowWidth,windowHeight:sys.windowHeight,SDKVersion:sys.SDKVersion,version:sys.version};
+ const ready=async p=>{assert.ok(p);for(let i=0;i<65&&await p.data('loading');i++)await p.waitFor(100);assert.equal(await p.data('loading'),false);assert.equal(await p.data('error')||'','');await p.waitFor(250);return p};
+ const routed=async route=>{for(let i=0;i<45;i++){const p=await m.currentPage();if(p?.path===route)return ready(p);await new Promise(r=>setTimeout(r,100));}throw Error('Route not reached: '+route)};
+ const screenshot=async(name)=>{await m.screenshot({path:out+'/'+name+'.png'});results.screenshots.push(name+'.png');save()};
+ let p=await ready(await m.reLaunch('/pages/index/index'));results.programmaticNavigation.push('initial home launch');
+ const entry=await p.$('.home-nav-item[data-page="tour"]');assert.ok(entry);await entry.tap();p=await routed('pages/tour/index');results.clicks.push({control:'homepage map guide',method:'Element.tap',to:p.path});
+ const items=await p.data('items');assert.equal(items.length,4);results.spots=items.map(x=>({id:x.id,name:x.name,imageCount:x.images.length,description:x.description,opening:x.opening}));
+ results.publicSpotDigestBefore=crypto.createHash('sha256').update(JSON.stringify(await fetch('http://127.0.0.1:8787/api/public/content?kind=spot').then(r=>r.json()))).digest('hex');
+ await screenshot('tour-390-top');
+ const stops=await p.$$('.tour-stop');
+ assert.equal(stops.length,items.length);
+ results.fullDescriptions=[];
+ for(let i=0;i<items.length;i++){
+  await m.pageScrollTo(0);await p.waitFor(100);
+  const currentStops=await p.$$('.tour-stop');const stop=currentStops[i];const offset=await stop.offset();
+  await m.pageScrollTo(Math.max(0,Number(offset.top)-20));await p.waitFor(200);await screenshot('tour-390-stop-'+(i+1));
+  const desc=await stop.$('.tour-description');assert.equal((await desc.text()).trim(),items[i].description.trim());results.fullDescriptions.push(items[i].id);
+  const btn=await stop.$('.tour-detail');const size=await btn.size();assert.ok(Number(size.height)>=44);results.measurements.push({id:items[i].id,selector:'.tour-detail',size});
+  await btn.tap();p=await routed('pages/spot/index');assert.equal(await p.data('id'),items[i].id);assert.equal((await p.data('item')).description,items[i].description);
+  results.clicks.push({control:'point detail',method:'Element.tap',id:items[i].id,to:p.path});
+  const galleryHeight=parseFloat(await (await p.$('.gallery')).style('height'));assert.ok(Math.abs(galleryHeight-430*sys.windowWidth/750)<1);results.measurements.push({id:items[i].id,selector:'.gallery',height:galleryHeight});
+  await screenshot('spot-'+(i+1)+'-390-top');
+  await m.pageScrollTo(10000);await p.waitFor(150);await screenshot('spot-'+(i+1)+'-390-bottom');
+  const b=await p.$('.spot-consult');const bs=await b.size();assert.ok(Number(bs.height)>=44);results.measurements.push({id:items[i].id,selector:'.spot-consult',size:bs});
+  await b.tap();p=await routed('pages/consult/index');assert.equal(await p.data('source'),items[i].name);results.clicks.push({control:'consult visit',method:'Element.tap',source:items[i].name,to:p.path,submitted:false});
+  p=await ready(await m.reLaunch('/pages/tour/index'));results.programmaticNavigation.push('tour reset between separate point tests; native back tested separately');
+ }
+ await m.pageScrollTo(10000);await p.waitFor(200);await screenshot('tour-390-bottom');
+ results.publicSpotDigestAfter=crypto.createHash('sha256').update(JSON.stringify(await fetch('http://127.0.0.1:8787/api/public/content?kind=spot').then(r=>r.json()))).digest('hex');assert.equal(results.publicSpotDigestBefore,results.publicSpotDigestAfter);
+ p=await ready(await m.reLaunch('/pages/index/index'));results.programmaticNavigation.push('home launch for explore entry');await m.pageScrollTo(550);await p.waitFor(150);const explore=await p.$('.home-guide-link');assert.ok(explore);await explore.tap();p=await routed('pages/tour/index');results.clicks.push({control:'homepage enter explore',method:'Element.tap',to:p.path});await m.pageScrollTo(0);await p.waitFor(200);
+ results.status='passed';assert.deepEqual(results.exceptions,[]);save();console.log(JSON.stringify({status:results.status,system:results.system,clickCount:results.clicks.length,screenCount:results.screenshots.length,exceptions:results.exceptions,consoleErrors:results.consoleErrors.length}));
+}finally{save();if(m)m.disconnect()}})().catch(e=>{results.status='failed';results.failure=e.stack||String(e);save();console.error(e);process.exitCode=1});

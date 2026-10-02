@@ -1,0 +1,78 @@
+{
+  "wxml": {
+    "tour": {
+      "conditionBranchesRetained": true,
+      "eventHandlersRetained": true,
+      "events": [
+        [
+          "bindtap",
+          "open"
+        ]
+      ],
+      "loopSources": [
+        "{{items}}",
+        "{{item.images}}"
+      ],
+      "sourceDataException": "tour existing images gallery and description; visual numbering format"
+    },
+    "spot": {
+      "conditionBranchesRetained": true,
+      "eventHandlersRetained": true,
+      "events": [
+        [
+          "bindtap",
+          "preview"
+        ],
+        [
+          "binderror",
+          "imageError"
+        ],
+        [
+          "bindtap",
+          "map"
+        ],
+        [
+          "bindtap",
+          "consult"
+        ]
+      ],
+      "loopSources": [
+        "{{item.images}}"
+      ],
+      "sourceDataException": "none"
+    }
+  },
+  "contrast": [
+    {
+      "foreground": "#3c2b24",
+      "background": "#f7f3e9",
+      "ratio": 12.124
+    },
+    {
+      "foreground": "#6c5948",
+      "background": "#f7f3e9",
+      "ratio": 5.9971
+    },
+    {
+      "foreground": "#80613b",
+      "background": "#f7f3e9",
+      "ratio": 5.1348
+    },
+    {
+      "foreground": "#fffdf7",
+      "background": "#3c2b24",
+      "ratio": 13.2074
+    },
+    {
+      "foreground": "#6c5948",
+      "background": "#eee6d8",
+      "ratio": 5.3623
+    },
+    {
+      "foreground": "#a13e35",
+      "background": "#fbede3",
+      "ratio": 5.6282
+    }
+  ],
+  "scope": "static protection and color checks; not native compilation/interactions"
+}

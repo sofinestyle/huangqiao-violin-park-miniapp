@@ -1,0 +1,942 @@
+{
+  "baseline": "c927ce65249d511203b539ab9dfdc35fb58ee1c3",
+  "date": "2026-10-02",
+  "operator": "Codex",
+  "purpose": "current UI audit only; no business submission, login, mock data or source edits",
+  "screens": [
+    {
+      "name": "home",
+      "path": "pages/index/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "home-0.png",
+        "home-650.png",
+        "home-1100.png"
+      ],
+      "measurements": {}
+    },
+    {
+      "name": "instruments",
+      "path": "pages/instruments/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "instruments-0.png",
+        "instruments-600.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -585
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": -543.65625
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".search": {
+          "size": {
+            "width": 358,
+            "height": 43
+          },
+          "offset": {
+            "left": 16,
+            "top": -523.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".filter": {
+          "size": {
+            "width": 46,
+            "height": 30.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": -469.2578125
+          },
+          "fontSize": "12px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".product-square": {
+          "size": {
+            "width": 171.5,
+            "height": 171.5
+          },
+          "offset": {
+            "left": 17,
+            "top": -428.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".card": {
+          "size": {
+            "width": 173.5,
+            "height": 309.7890625
+          },
+          "offset": {
+            "left": 16,
+            "top": -429.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".text-button": {
+          "size": {
+            "width": 184,
+            "height": 27.5
+          },
+          "offset": {
+            "left": 30,
+            "top": -158.96875
+          },
+          "fontSize": "13px",
+          "color": "rgb(150, 117, 72)"
+        }
+      }
+    },
+    {
+      "name": "gifts",
+      "path": "pages/gifts/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "gifts-0.png",
+        "gifts-600.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -585
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": -543.65625
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".search": {
+          "size": {
+            "width": 358,
+            "height": 43
+          },
+          "offset": {
+            "left": 16,
+            "top": -523.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".filter": {
+          "size": {
+            "width": 46,
+            "height": 30.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": -469.2578125
+          },
+          "fontSize": "12px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".product-square": {
+          "size": {
+            "width": 171.5,
+            "height": 171.5
+          },
+          "offset": {
+            "left": 17,
+            "top": -428.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".card": {
+          "size": {
+            "width": 173.5,
+            "height": 309.7890625
+          },
+          "offset": {
+            "left": 16,
+            "top": -429.2578125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".text-button": {
+          "size": {
+            "width": 184,
+            "height": 27.5
+          },
+          "offset": {
+            "left": 30,
+            "top": -158.96875
+          },
+          "fontSize": "13px",
+          "color": "rgb(150, 117, 72)"
+        }
+      }
+    },
+    {
+      "name": "product-instrument",
+      "path": "pages/product/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "product-instrument-0.png",
+        "product-instrument-650.png",
+        "product-instrument-1200.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 148
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 189.34375
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".filter": {
+          "size": {
+            "width": 42.40625,
+            "height": 30.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 297.1328125
+          },
+          "fontSize": "12px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".sticky-action": {
+          "size": {
+            "width": 358,
+            "height": 127.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 599.5859375
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".gallery": {
+          "size": {
+            "width": 358,
+            "height": 223
+          },
+          "offset": {
+            "left": 16,
+            "top": -75
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "product-gift",
+      "path": "pages/product/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "product-gift-0.png",
+        "product-gift-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 238
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 279.34375
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".filter": {
+          "size": {
+            "width": 70,
+            "height": 30.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 407.53125
+          },
+          "fontSize": "12px",
+          "color": "rgb(255, 255, 255)"
+        },
+        ".sticky-action": {
+          "size": {
+            "width": 358,
+            "height": 127.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 559.46875
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".gallery": {
+          "size": {
+            "width": 358,
+            "height": 223
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "study",
+      "path": "pages/study/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "study-0.png",
+        "study-650.png",
+        "study-1600.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -1551
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": -1419.1171875
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".card": {
+          "size": {
+            "width": 358,
+            "height": 334.1328125
+          },
+          "offset": {
+            "left": 16,
+            "top": -1213.7265625
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "package",
+      "path": "pages/package/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "package-0.png",
+        "package-650.png",
+        "package-1400.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -74
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": -32.65625
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".sticky-action": {
+          "size": {
+            "width": 358,
+            "height": 162
+          },
+          "offset": {
+            "left": 16,
+            "top": 565.109375
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "enrollments",
+      "path": "pages/enrollments/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "enrollments-0.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": 473.46875
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".card": {
+          "size": {
+            "width": 358,
+            "height": 367.328125
+          },
+          "offset": {
+            "left": 16,
+            "top": 234.6796875
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "enrollment",
+      "path": "pages/enrollment/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "enrollment-0.png",
+        "enrollment-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -6
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": 259.3125
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".sticky-action": {
+          "size": {
+            "width": 358,
+            "height": 93
+          },
+          "offset": {
+            "left": 16,
+            "top": 633.8671875
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "booking-personal",
+      "path": "pages/booking/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "booking-personal-0.png",
+        "booking-personal-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -196
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 44.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 84.875
+          },
+          "fontSize": "14px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".text-button": {
+          "size": {
+            "width": 184,
+            "height": 27.5
+          },
+          "offset": {
+            "left": 103,
+            "top": 660.2578125
+          },
+          "fontSize": "13px",
+          "color": "rgb(150, 117, 72)"
+        }
+      }
+    },
+    {
+      "name": "booking-group",
+      "path": "pages/booking/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "booking-group-0.png",
+        "booking-group-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -257.5
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 358,
+            "height": 44.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 23.375
+          },
+          "fontSize": "14px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".text-button": {
+          "size": {
+            "width": 184,
+            "height": 27.5
+          },
+          "offset": {
+            "left": 103,
+            "top": 660.5546875
+          },
+          "fontSize": "13px",
+          "color": "rgb(150, 117, 72)"
+        }
+      }
+    },
+    {
+      "name": "consult",
+      "path": "pages/consult/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "consult-0.png",
+        "consult-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": 113.5390625
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".text-button": {
+          "size": {
+            "width": 184,
+            "height": 27.5
+          },
+          "offset": {
+            "left": 103,
+            "top": 502.328125
+          },
+          "fontSize": "13px",
+          "color": "rgb(150, 117, 72)"
+        }
+      }
+    },
+    {
+      "name": "teaching",
+      "path": "pages/teaching/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "teaching-0.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".search": {
+          "size": {
+            "width": 358,
+            "height": 43
+          },
+          "offset": {
+            "left": 16,
+            "top": 81.6875
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".filter": {
+          "size": {
+            "width": 46,
+            "height": 30.3984375
+          },
+          "offset": {
+            "left": 16,
+            "top": 135.6875
+          },
+          "fontSize": "12px",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "name": "tour",
+      "path": "pages/tour/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "tour-0.png",
+        "tour-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": -316
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": -58.1171875
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".card": {
+          "size": {
+            "width": 358,
+            "height": 223.59375
+          },
+          "offset": {
+            "left": 16,
+            "top": -249.3125
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "spot",
+      "path": "pages/spot/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "spot-0.png",
+        "spot-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 238
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 20.3984375
+          },
+          "offset": {
+            "left": 30,
+            "top": 393.6796875
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        },
+        ".gallery": {
+          "size": {
+            "width": 358,
+            "height": 223
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "14px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "brand",
+      "path": "pages/brand/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "brand-0.png",
+        "brand-650.png"
+      ],
+      "measurements": {
+        ".brand-intro": {
+          "size": {
+            "width": 342,
+            "height": 171
+          },
+          "offset": {
+            "left": 24,
+            "top": 474.2890625
+          },
+          "fontSize": "15px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "about",
+      "path": "pages/about/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "about-0.png",
+        "about-650.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        }
+      }
+    },
+    {
+      "name": "mine",
+      "path": "pages/mine/index",
+      "error": "",
+      "loading": false,
+      "screenshots": [
+        "mine-0.png"
+      ],
+      "measurements": {
+        ".h1": {
+          "size": {
+            "width": 358,
+            "height": 33.34375
+          },
+          "offset": {
+            "left": 16,
+            "top": 15
+          },
+          "fontSize": "23px",
+          "color": "rgb(60, 44, 32)"
+        },
+        ".muted": {
+          "size": {
+            "width": 330,
+            "height": 40.796875
+          },
+          "offset": {
+            "left": 30,
+            "top": 113.5390625
+          },
+          "fontSize": "12px",
+          "color": "rgb(138, 121, 95)"
+        }
+      }
+    }
+  ],
+  "exceptions": [],
+  "clicks": [],
+  "system": {
+    "platform": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "SDKVersion": "3.17.3",
+    "version": "8.0.5"
+  },
+  "publicCounts": {
+    "instrument": 7,
+    "gifts": 20,
+    "packages": 5,
+    "lessons": [],
+    "spots": 4,
+    "activities": 1
+  },
+  "privateRecords": "Not opened or captured: source inspection only; avoid personal record contents.",
+  "missingScreens": []
+}

@@ -1,0 +1,35 @@
+{
+  "method": "sRGB relative luminance; opaque solid colors only",
+  "combinations": [
+    {
+      "foreground": "#8A795F",
+      "background": "#F7F3E9",
+      "ratio": 3.8049154845058246,
+      "normalTextTarget4_5": false
+    },
+    {
+      "foreground": "#8A795F",
+      "background": "#FFFDF7",
+      "ratio": 4.144914860929434,
+      "normalTextTarget4_5": false
+    },
+    {
+      "foreground": "#967548",
+      "background": "#FFFDF7",
+      "ratio": 4.183509458284572,
+      "normalTextTarget4_5": false
+    },
+    {
+      "foreground": "#6C5948",
+      "background": "#F7F3E9",
+      "ratio": 5.99707879561354,
+      "normalTextTarget4_5": true
+    },
+    {
+      "foreground": "#3C2B24",
+      "background": "#F7F3E9",
+      "ratio": 12.123990497791343,
+      "normalTextTarget4_5": true
+    }
+  ]
+}
