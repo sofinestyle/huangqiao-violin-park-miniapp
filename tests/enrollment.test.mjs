@@ -52,7 +52,7 @@ test('报名真实保存为待确认，重试幂等，历史活动快照与本�
   assert.equal(f.service.adminRecords(f.admin,'bookings',{enrollment:'1',q:'虚拟成团'}).length,1);
 });
 test('服务端拒绝篡改套餐、日期、时段、团体模式和超出当前可确认人数的报名',t=>{
-  const f=fixture(t),s=save(f);for(const extra of [{packageId:'package-2'},{date:'2099-11-02'},{slotId:randomUUID()},{group:true,team:'虚拟团队',total:1}])fault(()=>apply(f,s,f.a,extra));
+  const f=fixture(t),s=save(f);for(const extra of [{packageId:'package-2'},{date:'2099-11-02'},{slotId:randomUUID()},{preferredTime:'改成下午'},{group:true,team:'虚拟团队',total:1}])fault(()=>apply(f,s,f.a,extra));
   fault(()=>apply(f,s,f.a,{adults:3}),'CAPACITY_FULL');assert.equal(f.db.prepare('SELECT COUNT(*) AS n FROM bookings').get().n,0);
   const archived=update(f,s,{enrollment:{...s.enrollment,state:'archived'}});fault(()=>apply(f,archived),'ENROLLMENT_UNAVAILABLE');
 });

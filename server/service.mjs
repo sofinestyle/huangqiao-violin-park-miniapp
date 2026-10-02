@@ -169,6 +169,10 @@ export class Service {
   }
   bookingRequest(data, group = false) {
     const requested = { ...contact(data), date: futureDate(data.date), note: text(data.note || '','说明',1500,true), group };
+    if (data.preferredTime != null) {
+      const preferredTime = text(data.preferredTime, '意向时间段', 100, true);
+      if (preferredTime) requested.preferredTime = preferredTime;
+    }
     if (group) {
       requested.team = text(data.team,'团队名称',120);
       requested.total = number(data.total,'预计总人数',1);
@@ -185,6 +189,7 @@ export class Service {
     return this.idempotent(visitor,'bookings',key,data,()=> {
       const requested = this.bookingRequest(data,data.group === true);
       if (data.enrollmentId) {
+        requireValue(!requested.preferredTime, '跟团活动使用已发布的固定时段，不能另填意向时间段');
         const activity=this.enrollment(data.enrollmentId);
         requireValue(!requested.group && requested.date===activity.date && data.packageId===activity.packageId && requested.slotId===activity.id,'报名日期、时段及套餐必须与所选活动一致');
         requireValue(activity.canApply,'该活动暂不可报名',409,'ENROLLMENT_CLOSED');

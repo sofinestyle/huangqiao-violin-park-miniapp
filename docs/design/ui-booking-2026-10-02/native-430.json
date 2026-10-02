@@ -1,0 +1,12 @@
+{
+  "brandAndNativeTitle": "游客预约申请",
+  "ordinaryHeadingRemoved": true,
+  "standalonePrivacyButtonRemoved": true,
+  "preferredTimeInput": true,
+  "privacyActualClick": true,
+  "draftPreservedAfterReturn": true,
+  "consentNotAutomaticallyChecked": true,
+  "checkboxActualClick": true,
+  "groupTimeInput": true,
+  "businessSubmission": false
+}
