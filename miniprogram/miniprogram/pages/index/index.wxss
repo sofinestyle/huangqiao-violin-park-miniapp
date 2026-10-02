@@ -44,7 +44,10 @@
 .home-item-note { margin-top: 6rpx; color: #F4ECDD; font-size: 24rpx; line-height: 1.5; }
 .home-package-price { margin-top: 6rpx; color: #E2C88F; font-size: 24rpx; line-height: 1.5; }
 .home-price-value { font-size: 32rpx; font-weight: 700; }
-.home-summary { display: flex; align-items: center; padding: 30px var(--home-gutter); border-radius: 24px 24px 0 0; background: var(--home-walnut); color: #E2C88F; }
+.home-summary { position: relative; display: flex; align-items: center; padding: 30px var(--home-gutter); background: var(--home-walnut); color: #E2C88F; }
+.home-summary::before, .home-summary::after { content: ""; position: absolute; top: -24px; left: 0; right: 0; height: 24px; pointer-events: none; }
+.home-summary::before { background: var(--home-walnut); }
+.home-summary::after { border-radius: 0 0 24px 24px; background: var(--home-bg); }
 .home-summary-item { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8rpx; min-height: 60px; min-width: 0; }
 .home-summary-item + .home-summary-item { border-left: 1px solid rgba(226,200,143,.18); }
 .home-summary-item image { flex-shrink: 0; width: 48rpx; height: 48rpx; }
