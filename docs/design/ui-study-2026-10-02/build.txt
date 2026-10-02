@@ -1,0 +1,13 @@
+
+> huangqiao-app@0.1.0 build
+> vite build admin && tsc --noEmit -p miniprogram/tsconfig.json
+
+vite v7.1.7 building for production...
+transforming...
+✓ 32 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.40 kB │ gzip:  0.33 kB
+dist/assets/index-B3SeOjRV.css    9.78 kB │ gzip:  2.93 kB
+dist/assets/index-CcQGZdX1.js   246.64 kB │ gzip: 75.60 kB
+✓ built in 325ms

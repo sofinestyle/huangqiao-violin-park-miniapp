@@ -1,0 +1,11 @@
+{
+  "unchangedExistingData": true,
+  "changedIds": [],
+  "testDraft": {
+    "id": "61b919a4-9ffe-4c55-b2b2-7a477b91c274",
+    "state": "archived",
+    "images": 2,
+    "description": "第一项：轮播与分项介绍验证\n第二项：换行保存验证"
+  },
+  "publishedPackages": 5
+}

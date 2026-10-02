@@ -1,0 +1,16 @@
+{
+  "width": 320,
+  "gallery": {
+    "width": 290,
+    "height": 217.5
+  },
+  "button": {
+    "width": 264,
+    "height": 44
+  },
+  "body": {
+    "width": 290,
+    "height": 240.4921875
+  },
+  "bookingClick": true
+}

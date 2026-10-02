@@ -1,0 +1,1 @@
+首次原生编译失败：study/index.wxml:33 unexpected character inside expression。WXML条件误用了HTML实体 &amp;&amp;；改为原生表达式 && 后重新编译验证。

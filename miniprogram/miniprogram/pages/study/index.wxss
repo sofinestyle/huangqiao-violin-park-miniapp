@@ -14,7 +14,7 @@
   gap: 24rpx;
   height: 55px;
   padding: 0 40rpx;
-  background: rgba(60, 43, 36, 0.9);
+  background: #3c2b24;
 }
 .visitor-page .visitor-logo {
   flex-shrink: 0;
@@ -40,4 +40,64 @@
 @media (max-width: 320px) {
   .visitor-page .visitor-brand { gap: 20rpx; }
   .visitor-page .visitor-brand-name { font-size: 32rpx; }
+}
+
+/* Reference study layout, scoped to this page. Package photos intentionally use 4:3. */
+.visitor-page { background: #f4ecdd; color: #2a1d12; }
+.visitor-page .study-content { padding: 46rpx 35rpx 42rpx; }
+.visitor-page .study-hero { position: relative; height: 315rpx; border-radius: 28rpx; overflow: hidden; margin-bottom: 34rpx; background: #3a2817; }
+.visitor-page .study-hero-image, .visitor-page .study-hero-shade { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+.visitor-page .study-hero-shade { background: linear-gradient(180deg,rgba(20,12,6,.15) 0%,rgba(20,12,6,.25) 45%,rgba(20,12,6,.88) 100%); }
+.visitor-page .study-hero-caption { position: absolute; left: 35rpx; right: 26rpx; bottom: 28rpx; color: #fff; }
+.visitor-page .study-eyebrow { font-size: 18rpx; letter-spacing: 6rpx; color: #e2c88f; }
+.visitor-page .study-hero-title { font-family: "Songti SC",STSong,serif; font-size: 36rpx; font-weight: 700; margin-top: 8rpx; line-height: 1.5; }
+.visitor-page .study-hero-note { font-size: 22rpx; color: #e6d8bc; margin-top: 12rpx; line-height: 1.6; }
+.visitor-page .study-heading { display: flex; align-items: baseline; gap: 20rpx; }
+.visitor-page .study-number { font-family: Georgia,serif; font-size: 26rpx; letter-spacing: 3rpx; color: #c8a35c; }
+.visitor-page .study-title { font-family: "Songti SC",STSong,serif; font-size: 40rpx; font-weight: 700; }
+.visitor-page .study-subtitle { color: #8a7560; font-size: 23rpx; margin: 10rpx 0 32rpx; line-height: 1.8; }
+.visitor-page .study-intro { font-size: 24rpx; color: #4d3d2a; line-height: 1.9; margin-bottom: 30rpx; }
+.visitor-page .study-stats { display: flex; background: #24180f; border-radius: 26rpx; padding: 32rpx 0; margin-bottom: 38rpx; }
+.visitor-page .study-stat { flex: 1; min-width: 0; text-align: center; }
+.visitor-page .study-stat + .study-stat { border-left: 1px solid rgba(200,163,92,.25); }
+.visitor-page .study-stat-value { display: block; font-family: "Songti SC",STSong,serif; font-size: 42rpx; color: #e2c88f; font-weight: 700; line-height: 1.5; }
+.visitor-page .study-stat-label { display: block; font-size: 21rpx; color: #cbbfa4; margin-top: 12rpx; }
+.visitor-page .study-guarantees { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14rpx; }
+.visitor-page .study-guarantee { background: #fbf6ec; border: 1px solid #e2d3b8; border-radius: 22rpx; padding: 24rpx 3rpx; text-align: center; }
+.visitor-page .study-guarantee image { display: block; width: 40rpx; height: 40rpx; margin: 0 auto 12rpx; }
+.visitor-page .study-guarantee text { display: block; font-size: 20rpx; color: #5a4a32; line-height: 1.4; }
+.visitor-page .study-section-heading { display: flex; align-items: center; gap: 16rpx; font-family: "Songti SC",STSong,serif; font-size: 28rpx; font-weight: 700; color: #3a2817; margin: 38rpx 0 20rpx; }
+.visitor-page .study-heading-line { height: 1px; background: #e2d3b8; flex: 1; }
+.visitor-page .study-package { background: #fbf6ec; border: 1px solid #e2d3b8; border-radius: 28rpx; overflow: hidden; margin-bottom: 28rpx; }
+.visitor-page .study-gallery { position: relative; width: 100%; padding-top: 75%; background: #efe3cb; }
+.visitor-page .study-swiper { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.visitor-page .study-swiper image { display: block; width: 100%; height: 100%; }
+.visitor-page .study-image-empty { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #5a4a32; font-size: 25rpx; }
+.visitor-page .study-package-number { position: absolute; right: 26rpx; top: 12rpx; font-family: Georgia,serif; font-size: 60rpx; color: rgba(255,255,255,.92); font-weight: 700; pointer-events: none; text-shadow: 0 1px 3px rgba(36,24,15,.4); }
+.visitor-page .study-package-body { padding: 30rpx 32rpx 34rpx; }
+.visitor-page .study-package-title { font-family: "Songti SC",STSong,serif; font-size: 36rpx; font-weight: 700; line-height: 1.5; }
+.visitor-page .study-meta { display: flex; flex-wrap: wrap; gap: 10rpx; margin-top: 18rpx; }
+.visitor-page .study-meta text { font-size: 23rpx; line-height: 1.5; background: #f4ecdd; border: 1px solid #e2d3b8; border-radius: 40rpx; padding: 5rpx 16rpx; color: #3a2817; }
+.visitor-page .study-points { margin: 20rpx 0 8rpx; color: #4d3d2a; font-size: 25rpx; }
+.visitor-page .study-point { display: flex; align-items: flex-start; gap: 12rpx; margin: 8rpx 0; line-height: 1.7; }
+.visitor-page .study-bullet { flex-shrink: 0; }
+.visitor-page .study-point-text { min-width: 0; overflow-wrap: break-word; }
+.visitor-page .study-prices { display: flex; gap: 18rpx; margin-top: 24rpx; }
+.visitor-page .study-price { flex: 1; min-width: 0; background: #f4ecdd; border: 1px solid #e2d3b8; border-radius: 18rpx; padding: 18rpx 22rpx; }
+.visitor-page .study-price-label { font-size: 23rpx; color: #8a7560; }
+.visitor-page .study-price-value { font-family: "Songti SC",STSong,serif; color: #3a2817; font-size: 40rpx; font-weight: 700; line-height: 1.6; overflow-wrap: break-word; }
+.visitor-page .study-price-value text { font-size: 22rpx; color: #a78038; font-weight: 400; white-space: nowrap; }
+.visitor-page .study-price-pending { font-size: 26rpx; color: #3a2817; line-height: 2; }
+.visitor-page .study-book { width: 100%; background: #3a2817; color: #e2c88f; font-size: 28rpx; font-weight: 500; letter-spacing: 4rpx; padding: 22rpx; min-height: 44px; border-radius: 18rpx; margin-top: 24rpx; }
+.visitor-page .study-more { padding: 24rpx 0 0; border-top: 1px solid #e2d3b8; }
+.visitor-page .study-more-title { font-family: "Songti SC",STSong,serif; font-size: 30rpx; font-weight: 600; }
+.visitor-page .study-more-note { font-size: 24rpx; color: #6c5948; margin-top: 14rpx; }
+.visitor-page .study-more-actions { display: flex; gap: 18rpx; margin: 24rpx 0; }
+.visitor-page .study-more-actions button { flex: 1; font-size: 26rpx; min-height: 44px; padding: 18rpx 8rpx; background: transparent; border: 1px solid #c8a35c; color: #3a2817; }
+@media (max-width: 350px) {
+  .visitor-page .study-hero { height: 355rpx; }
+  .visitor-page .study-hero-title { font-size: 34rpx; }
+  .visitor-page .study-hero-note { font-size: 24rpx; }
+  .visitor-page .study-guarantee text { font-size: 22rpx; }
+  .visitor-page .study-price { padding: 16rpx; }
 }

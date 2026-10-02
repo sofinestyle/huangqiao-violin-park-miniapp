@@ -1,0 +1,117 @@
+Browser tab: 4, Title: "黄桥乐器文化产业园 · 管理后台", URL: "http://127.0.0.1:5173/admin/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++			117 container 研学套餐 · 维护
++				118 heading 研学套餐 · 维护, Value: 2
++					119 text 研学套餐 · 维护
++				120 button 关闭详情
++				121 container
++					122 text 名称
++					123 text field (settable) 名称, Value: 研学界面验证样例（未发布）
++					124 text 发布状态
++					125 pop up button (collapsed, settable) 发布状态, Value: 草稿, Secondary Actions: Expand
++						126 menu
++							127 (selected) 草稿
++							128 已发布
++							129 已下架
++					130 text 排序
++					131 stepper (settable, integer) 排序, Value: 0
++					132 text 套餐编码
++					133 text field (settable) 套餐编码
++					134 text 套餐介绍（每行一项）
++					135 text entry area (settable) 套餐介绍（每行一项） 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。, Value: 第一项：轮播与分项介绍验证
+第二项：换行保存验证
++					136 text 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。
++					137 text 适合年龄说明
++					138 text field (settable) 适合年龄说明
++					139 text 时长说明
++					140 text field (settable) 时长说明
++					141 text 亲子参考价（元 / 组）
++					142 stepper (settable) 亲子参考价（元 / 组）
++					143 text 单人参考价（元 / 张）
++					144 stepper (settable) 单人参考价（元 / 张）
++					145 checkbox (settable, integer) Description: 首页推荐, Value: 0
++					146 text 票型对象、优惠及作品数量待公司核定；此处维护参考信息，不自动计算预约费用。
++					147 container 套餐轮播图片
++						148 text 套餐轮播图片
++						149 text 最多12张，可逐张上传或复用素材库；按下方顺序轮播，第一张作为封面。前台以4∶3显示，原图保留。
++						150 pop up button (collapsed, settable) Value: workshop.jpg, Secondary Actions: Expand
++							151 menu
++								152 hero-violin.jpg
++								153 workshop.jpg
++								154 wenchuang.jpg
++								155 city.jpg
++								156 lake.jpg
++								157 industry.jpg
++								158 green.jpg
++								159 yorray-logo.png
++								160 c1.jpg
++								161 c2.jpg
++								162 c3.jpg
++								163 c4.jpg
++								164 i1.jpg
++								165 i2.jpg
++								166 i3.jpg
++								167 i4.jpg
++								168 g1.jpg
++								169 g2.jpg
++								170 g3.jpg
++								171 g4.jpg
++								172 l1.jpg
++								173 l2.jpg
++								174 l3.jpg
++								175 city.jpg
++								176 (selected) workshop.jpg
++								177 dmx-image-1785425809948-1-v1.png
++								178 homepage-workshop-background-20261001.png
++								179 yorray-logo.png
++								180 hero-violin.jpg
++								181 dmx-image-1785425593376-1-v1.png
++						182 button 移除
++						183 pop up button (collapsed, settable) Value: city.jpg, Secondary Actions: Expand
++							184 menu
++								185 hero-violin.jpg
++								186 workshop.jpg
++								187 wenchuang.jpg
++								188 city.jpg
++								189 lake.jpg
++								190 industry.jpg
++								191 green.jpg
++								192 yorray-logo.png
++								193 c1.jpg
++								194 c2.jpg
++								195 c3.jpg
++								196 c4.jpg
++								197 i1.jpg
++								198 i2.jpg
++								199 i3.jpg
++								200 i4.jpg
++								201 g1.jpg
++								202 g2.jpg
++								203 g3.jpg
++								204 g4.jpg
++								205 l1.jpg
++								206 l2.jpg
++								207 l3.jpg
++								208 (selected) city.jpg
++								209 workshop.jpg
++								210 dmx-image-1785425809948-1-v1.png
++								211 homepage-workshop-background-20261001.png
++								212 yorray-logo.png
++								213 hero-violin.jpg
++								214 dmx-image-1785425593376-1-v1.png
++						215 button 移除
++						216 container 上传图片
++							217 container
++								218 text 上传新图片
++								219 button 上传新图片 支持JPG、PNG，单个文件不超过64MB。
++								220 text 支持JPG、PNG，单个文件不超过64MB。
++							221 container
++								222 text 文件来源与使用授权
++								223 text entry area (settable) 文件来源与使用授权
++							224 button 上传并添加图片
++							225 text 保存内容前，文件仅存入素材库；草稿不会对外展示。
++						226 button 从素材库添加图片
++					227 image 封面预览
++					228 text 草稿不会出现在小程序中，发布后即可展示。
++					229 button 保存内容
+The focused UI element is 56 button 维护 / 预览

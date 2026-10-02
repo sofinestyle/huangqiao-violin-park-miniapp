@@ -1,0 +1,28 @@
+const a=require('/Users/aaron/Documents/huangqiao-app/node_modules/miniprogram-automator');
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const dir='/Users/aaron/Documents/huangqiao-app/docs/design/ui-study-2026-10-02';
+(async()=>{const m=await a.connect({wsEndpoint:'ws://127.0.0.1:9420'});const out={checks:[],exceptions:[]};m.on('exception',e=>out.exceptions.push(String(e.message||e)));
+ const ready=async p=>{for(let i=0;i<60;i++){if(!await p.data('loading'))break;await p.waitFor(100);}assert.equal(await p.data('error'),'');return p;};
+ const study=async()=>ready(await m.reLaunch('/pages/study/index'));
+ const route=async(expected)=>{for(let i=0;i<40;i++){let p=await m.currentPage();if(p.path===expected)return ready(p);await p.waitFor(100);}throw Error('route '+expected);};
+ try{
+ let p=await study();out.width=await m.evaluate(()=>wx.getWindowInfo().windowWidth);let rows=await p.data('items');assert.ok(rows.length);
+ out.cards=[];for(let i=0;i<rows.length;i++){let el=(await p.$$('.study-gallery'))[i];const size=await el.size();assert.ok(Math.abs(size.height-size.width*.75)<=1);out.cards.push({id:rows[i].id,size,points:rows[i].points.length});}
+ assert.equal(await(await p.$('.visitor-brand-name')).text(),'工业研学');
+ await m.screenshot({path:dir+'/study-top-'+out.width+'.png'});
+ await m.callWxMethod('pageScrollTo',{selector:'.study-package',offsetTop:-60,duration:0});await p.waitFor(200);await m.screenshot({path:dir+'/study-card-'+out.width+'.png'});
+ for(const row of rows){await(await p.$(`.study-book[data-id="${row.id}"]`)).tap();const b=await route('pages/booking/index');assert.equal(await b.data('packageId'),row.id);assert.equal(await b.data('packageName'),row.name);out.checks.push('实际预约点击 '+row.id);p=await study();}
+ // Controlled presentation, no persistent content or business writes.
+ const controlled={...rows[0],name:'长标题验证：亲子制琴与黄桥乐器文化研学体验',description:'',images:[rows[0].images[0],rows[1].images[0]],points:['第一项介绍，包含城市客厅和手工体验。','第二项较长介绍用于验证换行与圆点对齐，保持管理员输入的内容完整显示。'],hasParentPrice:false,referenceSinglePrice:0,failedImages:{}};
+ await p.setData({items:[controlled]});let swiper=await p.$('.study-swiper');await swiper.swipeTo(1);await p.waitFor(300);assert.equal(Number(await swiper.property('current')),1);out.checks.push('受控两图原生swiper切换至第2张');
+ await m.callWxMethod('pageScrollTo',{selector:'.study-package',offsetTop:-60,duration:0});await m.screenshot({path:dir+'/controlled-card-'+out.width+'.png'});
+ assert.ok((await(await p.$('.study-prices')).text()).includes('请咨询'));assert.ok((await(await p.$('.study-prices')).text()).includes('¥0'));
+ await p.setData({'items[0].failedImages':{1:true}});assert.equal((await p.$$('.study-image-empty')).length,1);out.checks.push('受控长文字、空价格、零价格、图片错误');
+ await p.setData({items:[],loading:false,error:''});assert.ok(await p.$('.empty'));out.checks.push('受控空列表');
+ await p.setData({loading:true});assert.ok(await p.$('.loading'));out.checks.push('受控加载');
+ await p.setData({loading:false,error:'验证用连接失败'});await(await p.$('.error button')).tap();await p.waitFor(300);await ready(p);assert.ok((await p.data('items')).length);out.checks.push('受控错误及实际重试');
+ for(const [label,expected] of [['研学报名','pages/enrollments/index'],['团体需求申请','pages/booking/index']]){p=await study();let btn;for(const b of await p.$$('.study-more-actions button')){if((await b.text()).trim()===label)btn=b;}await btn.tap();const target=await route(expected);if(label==='团体需求申请')assert.equal(await target.data('group'),true);out.checks.push('实际点击 '+label);}
+ p=await study();await m.callWxMethod('pageScrollTo',{selector:'.study-more',offsetTop:-65,duration:0});await m.screenshot({path:dir+'/study-footer-'+out.width+'.png'});
+ out.passed=true;assert.deepEqual(out.exceptions,[]);fs.writeFileSync(dir+'/native-'+out.width+'.json',JSON.stringify(out,null,2));console.log(JSON.stringify(out));await study();
+ }finally{m.disconnect();}
+})().catch(e=>{console.error(e.stack);process.exitCode=1});

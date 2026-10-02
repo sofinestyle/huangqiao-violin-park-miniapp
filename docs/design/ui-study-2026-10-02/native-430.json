@@ -1,0 +1,61 @@
+{
+  "checks": [
+    "实际预约点击 package-1",
+    "实际预约点击 package-2",
+    "实际预约点击 package-3",
+    "实际预约点击 package-4",
+    "实际预约点击 package-5",
+    "受控两图原生swiper切换至第2张",
+    "受控长文字、空价格、零价格、图片错误",
+    "受控空列表",
+    "受控加载",
+    "受控错误及实际重试",
+    "实际点击 研学报名",
+    "实际点击 团体需求申请"
+  ],
+  "exceptions": [],
+  "width": 430,
+  "cards": [
+    {
+      "id": "package-1",
+      "size": {
+        "width": 388,
+        "height": 291
+      },
+      "points": 2
+    },
+    {
+      "id": "package-2",
+      "size": {
+        "width": 388,
+        "height": 291
+      },
+      "points": 4
+    },
+    {
+      "id": "package-3",
+      "size": {
+        "width": 388,
+        "height": 291
+      },
+      "points": 3
+    },
+    {
+      "id": "package-4",
+      "size": {
+        "width": 388,
+        "height": 291
+      },
+      "points": 3
+    },
+    {
+      "id": "package-5",
+      "size": {
+        "width": 388,
+        "height": 291
+      },
+      "points": 3
+    }
+  ],
+  "passed": true
+}

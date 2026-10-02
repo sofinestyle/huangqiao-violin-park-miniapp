@@ -1,0 +1,464 @@
+Window: "huangqiao-miniprogram", App: 微信开发者工具.
+0 标准窗口 huangqiao-miniprogram, Secondary Actions: Raise
+	1 HTML 内容 file:///Applications/wechatwebdevtools.app/Contents/Resources/app.asar/html/electron-project.html?projectpath=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&projectname=huangqiao-miniprogram&projectid=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&theme=dark&skeletonPath=%2FUsers%2Faaron%2FLibrary%2FApplication%20Support%2F%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%2Fd1e8765721a6c23d43b14c95b1843e6b%2FWeappCache%2FskeletonCache%2Fd447ea02741771c901da221b03e3a10f%2Fpageskeleton.html&trustProject=1&openSource=cli&autoPort=9420&frame=0&devid=s0&runtimeid=0&devtype=miniprogram&proxyPort=54922&userDataPath=%2FUsers%2Faaron%2FLibrary%2FApplication%2520Support%2F%25E5%25BE%25AE%25E4%25BF%25A1%25E5%25BC%2580%25E5%258F%2591%25E8%2580%2585%25E5%25B7%25A5%25E5%2585%25B7%2Fd1e8765721a6c23d43b14c95b1843e6b&appVersion=2.02.2608070&appVersionType=0
+		2 container
+			3 文本 微信开发者工具 Stable 2.02.2608070
+			4 container
+				5 text 小程序模式
+			6 文本 预览
+			7 文本 真机调试
+			8 文本 上传
+			9 未加标签的图片 要获取缺失的图片说明，请打开上下文菜单。
+			10 container
+				11 container
+					12 container
+						13 text 预览 编辑
+					14 container
+						15 text 普通编译
+					16 container
+						17 container
+							18 text 22 : 29
+						19 container
+							20 标题 研学套餐, Value: 3
+								21 文本 研学套餐
+							22 链接
+							23 链接
+						24 container
+							25 HTML 内容 Webview: pages/study/index, URL: 127.0.0.1:35142/__pageframe__/pages/study/index (showing 0-100 of 102 items)
+								26 container
+									27 按钮 首页
+										28 图像
+										29 文本 首页
+									30 按钮 乐器
+										31 图像
+										32 文本 乐器
+									33 按钮 文创
+										34 图像
+										35 文本 文创
+									36 按钮 研学
+										37 图像
+										38 文本 研学
+									39 按钮 我的
+										40 图像
+										41 文本 我的
+								42 container
+									43 图像 YorRay
+									44 文本 工业研学
+								45 container
+									46 图像 亲子手工研学课堂
+									47 文本 INDUSTRIAL STUDY TOUR
+									48 文本 工业研学 · 一把琴的诞生课堂
+									49 文本 走进真实制琴现场，从听琴到做琴，把作品带回家
+								50 文本 02
+								51 文本 工业研学
+								52 文本 一站式打包 · 亲子同行 · 亲手制作 · 带走专属记忆
+								53 文本 黄桥，江苏泰兴腹地的千年古镇，更是“中国提琴产业之都”。上世纪六十年代，上海提琴厂老艺人返乡传艺，从此一把提琴要经历选料、开料、刨木、雕刻、装配、上漆等上百道工序。如今的黄桥，正以“琴韵小镇”之姿，让制琴工艺与文旅体验深度相拥。
+								54 文本 110万把
+								55 文本 年产各类提琴
+								56 文本 70%+
+								57 文本 全国市场份额
+								58 文本 30%+
+								59 文本 全球市场份额
+								60 图像
+								61 文本 专业研学导师
+								62 图像
+								63 文本 作品可带走
+								64 图像
+								65 文本 10人团体优惠
+								66 图像
+								67 文本 全程安全观摩
+								68 文本 研学套餐
+								69 container
+									70 列表框
+										71 container 可横向滚动
+											72 图像 琴韵初体验图片1
+									73 文本 01
+								74 文本 琴韵初体验
+								75 文本 全程约 2小时
+								76 文本 适合5岁以上
+								77 文本 •
+								78 文本 城市客厅四馆
+								79 文本 •
+								80 文本 尤克里里组装彩绘约60分钟，作品带走。
+								81 文本 亲子票
+								82 container
+									83 text ¥118  / 份
+								84 文本 单人体验票
+								85 container
+									86 text ¥88  / 人
+								87 按钮 立即预约
+								88 container
+									89 列表框
+										90 container 可横向滚动
+											91 图像 提琴匠心深度游图片1
+									92 文本 02
+								93 文本 提琴匠心深度游
+								94 文本 全程约 3.5小时
+								95 文本 适合6岁以上
+								96 文本 •
+								97 文本 城市客厅
+								98 文本 •
+								99 文本 产业园生产讲解＋观摩制琴
+								100 文本 •
+								101 文本 绿岛喷涂
+								102 文本 •
+								103 文本 尤克里里。
+								104 文本 亲子票
+								105 container
+									106 text ¥158  / 份
+								107 文本 单人体验票
+								108 container
+									109 text ¥118  / 人
+								110 按钮 立即预约
+								111 container
+									112 列表框
+										113 container 可横向滚动
+											114 图像 制琴工坊探秘图片1
+									115 文本 03
+								116 文本 制琴工坊探秘
+								117 文本 全程约 3小时
+								118 文本 适合6岁以上
+								119 文本 •
+								120 文本 产业园全流程＋观摩
+								121 文本 •
+								122 文本 绿岛喷涂
+								123 文本 •
+								124 文本 尤克里里。
+								125 文本 亲子票
+								126 container
+									127 text ¥138  / 份
+								128 文本 单人体验票
+								129 container
+									130 text ¥98  / 人
+								131 按钮 立即预约
+								132 container
+									133 列表框
+										134 container 可横向滚动
+											135 图像 提琴文化艺术营图片1
+									136 文本 04
+								137 文本 提琴文化艺术营
+								138 文本 全程约 2小时
+								139 文本 适合5岁以上
+								140 文本 •
+								141 文本 名琴故事约30分钟
+								142 文本 •
+								143 文本 提琴科普
+								144 文本 •
+								145 文本 提琴干花制作约60分钟。
+								146 文本 亲子票
+								147 container
+									148 text ¥118  / 份
+								149 文本 单人体验票
+								150 container
+									151 text ¥88  / 人
+								152 按钮 立即预约
+								153 container
+									154 列表框
+										155 container 可横向滚动
+											156 图像 小小制琴师·工序体验营图片1
+									157 文本 05
+								158 文本 小小制琴师·工序体验营
+								159 文本 全程约 3小时
+								160 文本 适合7岁以上
+								161 文本 •
+								162 文本 三地点
+								163 文本 •
+								164 文本 制琴工序二选一
+								165 文本 •
+								166 文本 琴码钥匙扣带走。
+								167 文本 亲子票
+								168 container
+									169 text ¥128  / 份
+								170 文本 单人体验票
+								171 container
+									172 text ¥88  / 人
+								173 按钮 立即预约
+								174 文本 参加已成团的研学活动
+								175 文本 查看活动日期、时段和集合地点，提交跟团报名申请。
+								176 按钮 研学报名
+						177 HTML 内容 小程序逻辑层, URL: 127.0.0.1:35142/appservice/s0/_sessionId/simulator-app-session-s0/mainframe?load
+							178 container
+								179 HTML 内容 小程序逻辑层, URL: 127.0.0.1:35142/appservice/instanceframe?s=1790951319741&autoload#id_1
+								180 HTML 内容 127.0.0.1:35142/appservice/appContext?contextName=app&id=ifr-1_2#id_1
+								181 HTML 内容 127.0.0.1:35142/appservice/app_xrframe_renderContext?contextName=app_xrframe_render&id=ifr-1_3&empty=true#id_1
+								182 HTML 内容 127.0.0.1:35142/appservice/app_sub_debugContext?contextName=app_sub_debug&id=ifr-1_4&empty=true#id_1
+						183 container
+							184 链接
+							185 链接
+					186 container
+						187 文本 iPhone 14 Pro Max 71% 16
+					188 container
+						189 文本 页面路径
+					190 文本 pages/study/index
+					191 链接 复制
+				192 container
+					193 container
+						194 container
+							195 文本 miniprogram
+							196 工具栏
+								197 按钮 Toggle Primary Side Bar (⌘K ⌘B)
+									198 文本 
+								199 按钮 切换面板 (⌘J)
+									200 文本 
+								201 按钮 Toggle Secondary Side Bar (⌥⌘B)
+									202 文本 
+						203 container
+							204 container
+								205 标签组 活动视图切换器
+									206 标签 (selected) Description: 资源管理器 (⌘K ⇧⌘E), Value: 1
+										207 container 资源管理器 (⌘K ⇧⌘E)
+											208 文本 
+									209 标签 (settable, integer) Search (⇧⌘F), Value: 0
+										210 container Search (⇧⌘F)
+											211 文本 
+									212 标签 (settable, integer) Description: 源代码管理 (⌃⇧G) - 39 个挂起的更改, Value: 0
+										213 文本 
+									214 标签 (settable, integer) 扩展 (⇧⌘X), Value: 0
+										215 container 扩展 (⇧⌘X)
+											216 文本 
+									217 标签 (settable, integer) Description: 代码依赖分析, Value: 0
+									218 弹出式按钮 其他视图
+										219 文本 
+								220 container
+									221 标题 资源管理器, Help: 资源管理器 (⌘K ⇧⌘E), Value: 2
+										222 文本 资源管理器
+									223 内容列表 资源管理器操作
+										224 弹出式按钮 Views and More Actions...
+									225 container
+										226 container
+											227 按钮 文件资源管理器部分
+												228 文本 
+												229 标题 Description: 文件资源管理器部分, Help: miniprogram, Value: 3
+													230 文本 MINIPROGRAM
+											231 外框 树
+												232 container
+													233 row miniprogram
+														234 container
+															235 文本 
+															236 container ~/Documents/huangqiao-app/miniprogram/miniprogram • 包含强调项
+																237 文本 miniprogram
+																238 文本 
+													239 row typings
+														240 container
+															241 文本 
+															242 文本 typings
+													243 row package.json
+														244 container
+															245 文本 package.json
+													246 row project.config.json
+														247 container
+															248 文本 project.config.json
+													249 row project.private.config.json
+														250 container
+															251 文本 project.private.config.json
+													252 row tsconfig.json
+														253 container
+															254 文本 tsconfig.json
+										255 按钮 大纲 Section
+											256 文本 
+											257 标题 大纲, Value: 3
+												258 文本 大纲
+										259 按钮 时间线 Section
+											260 文本 
+											261 标题 时间线, Value: 3
+												262 文本 时间线
+							263 container
+								264 container
+									265 container 第 1 组 (空)
+										266 container
+											267 定义列表
+												268 container 显示所有命令
+													269 文本 显示所有命令
+												270 container Command+K Command+P
+													271 text ⌘ K ⌘ P
+											272 定义列表
+												273 container Go to File
+													274 文本 Go to File
+												275 container Command+P
+													276 text ⌘ P
+											277 定义列表
+												278 container 在文件中查找
+													279 文本 在文件中查找
+												280 container Shift+Command+F
+													281 text ⇧ ⌘ F
+											282 定义列表
+												283 container 开始调试
+													284 文本 开始调试
+												285 文本 F5
+											286 定义列表
+												287 container 切换终端
+													288 文本 切换终端
+												289 container Control+`
+													290 text ⌃ `
+								291 container
+									292 标签组 活动视图切换器
+										293 标签 (settable, integer) 构建, Value: 0
+											294 container 构建
+												295 文本 构建
+										296 标签 (selected) Description: 调试器 - Errors: 0, Warnings: 18, Value: 1
+											297 文本 调试器
+											298 文本 18
+										299 标签 (settable, integer) Description: 问题 (⌘K ⇧⌘M) - 总计 0 个问题, Value: 0
+											300 文本 问题
+										301 标签 (settable, integer) Description: 输出, Value: 0
+											302 文本 输出
+										303 标签 (settable, integer) 调试控制台 (⇧⌘Y), Value: 0
+											304 container 调试控制台 (⇧⌘Y)
+												305 文本 调试控制台
+										306 标签 (settable, integer) 终端 (⌃`), Value: 0
+											307 container 终端 (⌃`)
+												308 文本 终端
+										309 标签 (settable, integer) 代码质量, Value: 0
+											310 container 代码质量
+												311 文本 代码质量
+									312 工具栏 调试器操作
+									313 工具栏
+										314 按钮 最大化面板大小
+											315 文本 
+										316 按钮 关闭面板
+											317 文本 
+									318 container
+										319 container
+											320 HTML 内容 devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@61dafe6541432a46304ba3c84a0a6135b7cddd69/&can_dock=&toolbarColor=rgba(223,223,223,1)&textColor=rgba(0,0,0,1)&experiments=true
+												321 container
+													322 container
+														323 切换按钮 Description: Select an element in the page to inspect it, Value: 0
+														324 标签组 Panels
+															325 标签 (settable, integer) Description: Wxml, Value: 0
+															326 标签 (selected) Description: Console, Value: 1
+															327 标签 (settable, integer) Description: Sources, Value: 0
+															328 标签 (settable, integer) Description: Network, Value: 0
+															329 标签 (settable, integer) Description: Performance, Value: 0
+															330 标签 (settable, integer) Description: Memory, Value: 0
+														331 弹出式按钮 More tabs
+														332 container
+															333 container 18 warnings
+														334 按钮 Settings
+														335 弹出式按钮 Customize and control DevTools
+														336 container Undock into separate window
+														337 container Console panel
+															338 container console
+																339 container
+																	340 按钮 Show console sidebar
+																	341 按钮 Clear console
+																	342 按钮 JavaScript context: top
+																	343 按钮 Create live expression
+																	344 弹出式按钮 Log level: Default levels
+																		345 文本 Default levels
+																	346 切换按钮 Description: Console settings, Value: 0
+																	347 container
+																		348 container
+																			349 container
+																				350 链接 WAServiceMainContext…t=wechat&v=3.17.3:1
+																					351 文本 WAServiceMainContext
+																					352 文本 …
+																					353 文本 t=wechat&v=3.17.3:1
+																				354 text [system] WeChatLib: 3.17.3 (2026.9.30 08:19:56)
+																			355 container
+																				356 链接 WAServiceMainContext…t=wechat&v=3.17.3:1
+																					357 文本 WAServiceMainContext
+																					358 文本 …
+																					359 文本 t=wechat&v=3.17.3:1
+																				360 text [system] Subpackages: N/A
+																			361 container
+																				362 链接 WAServiceMainContext…t=wechat&v=3.17.3:1
+																					363 文本 WAServiceMainContext
+																					364 文本 …
+																					365 文本 t=wechat&v=3.17.3:1
+																				366 text [system] LazyCodeLoading: true
+																			367 container
+																				368 链接 WAServiceMainContext…t=wechat&v=3.17.3:1
+																					369 文本 WAServiceMainContext
+																					370 文本 …
+																					371 文本 t=wechat&v=3.17.3:1
+																				372 text Lazy code loading is enabled. Only injecting required components.
+																			373 container
+																				374 container Warning
+																				375 文本 [基础库] 正在使用灰度中的基础库 3.17.3 进行调试。如有问题，请前往工具栏-详情-本地设置更改基础库版本。
+																			376 文本 Fri Oct 02 2026 22:28:40 GMT+0800 (中国标准时间) 配置中关闭合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书检查
+																			377 row Warning WAServiceMainContext…t=wechat&v=3.17.3:1 工具未校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书。
+																				378 container
+																					379 container Warning
+																					380 链接 WAServiceMainContext…t=wechat&v=3.17.3:1
+																						381 文本 WAServiceMainContext
+																						382 文本 …
+																						383 文本 t=wechat&v=3.17.3:1
+																					384 text 工具未校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书。
+																			385 container
+																				386 container Warning
+																				387 文本 [pages/index/index] [Component] <wx-image>: 图片链接 
+																				388 链接 http://127.0.0.1:8787/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b
+																					389 文本 http://127.0.0.1:8787/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b
+																				390 文本  不再支持 HTTP 协议，请升级到 HTTPS
+																			391 container
+																				392 container Warning
+																				393 文本 [pages/index/index] [Component] <wx-image>: 图片链接 
+																				394 链接 http://127.0.0.1:8787/assets/c1.jpg
+																					395 文本 http://127.0.0.1:8787/assets/c1.jpg
+																				396 文本  不再支持 HTTP 协议，请升级到 HTTPS
+																			397 container
+																				398 container Warning
+																				399 文本 [pages/index/index] [Component] <wx-image>: 图片链接 
+																				400 链接 http://127.0.0.1:8787/assets/workshop.jpg
+																					401 文本 http://127.0.0.1:8787/assets/workshop.jpg
+																				402 文本  不再支持 HTTP 协议，请升级到 HTTPS
+																			403 container
+																				404 container Warning
+																				405 文本 [pages/index/index] [Component] <wx-image>: 图片链接 
+																				406 链接 http://127.0.0.1:8787/assets/green.jpg
+																					407 文本 http://127.0.0.1:8787/assets/green.jpg
+																				408 文本  不再支持 HTTP 协议，请升级到 HTTPS
+																			409 container
+																				410 container Warning
+																				411 文本 [自动热重载] 已开启代码文件保存后自动热重载
+																			412 container Warning Repeat 8
+																				413 文本 8
+																			414 文本 [pages/study/index] [Component] <wx-image>: 图片链接 <URL> 不再支持 HTTP 协议，请升级到 HTTPS
+																			415 container Warning Repeat 2
+																				416 文本 2
+																			417 文本 [自动热重载] 已开启代码文件保存后自动热重载
+																			418 row Warning WAWorker.js:1 [worker] reportRealtimeAction:fail not support
+																				419 container
+																					420 container Warning
+																					421 链接 WAWorker.js:1
+																						422 文本 WAWorker.js:1
+																					423 text [worker] reportRealtimeAction:fail not support
+																		424 container
+																			425 container
+																				426 文本输入区 (settable) Console prompt
+						427 container
+							428 container huangqiao-app (Git) - main*, Checkout Branch/Tag...
+								429 按钮 huangqiao-app (Git) - main*, Checkout Branch/Tag...
+									430 文本 
+									431 文本  main*
+							432 container huangqiao-app (Git) - Push 9 commits to origin/main
+								433 按钮 huangqiao-app (Git) - Push 9 commits to origin/main
+									434 文本 
+									435 文本  0↓ 9↑
+							436 container 没有问题
+								437 按钮 没有问题
+									438 文本 
+									439 文本  0 
+									440 文本 
+									441 文本  0
+							442 container 进度和简要通知
+							443 container 已为屏幕阅读器优化
+								444 按钮 已为屏幕阅读器优化
+							445 container undefined
+	446 关闭按钮
+	447 全屏幕按钮 Help: 此按钮也可以执行缩放窗口的操作, Secondary Actions: 缩放窗口
+	448 最小化按钮
+449 menu bar
+	450 微信开发者工具
+	451 项目
+	452 文件
+	453 编辑
+	454 工具
+	455 跳转
+	456 选择
+	457 界面
+	458 设置
+	459 插件
+	460 帮助
+
+The focused UI element is 1 HTML 内容 file:///Applications/wechatwebdevtools.app/Contents/Resources/app.asar/html/electron-project.html?projectpath=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&projectname=huangqiao-miniprogram&projectid=%2FUsers%2Faaron%2FDocuments%2Fhuangqiao-app%2Fminiprogram&theme=dark&skeletonPath=%2FUsers%2Faaron%2FLibrary%2FApplication%20Support%2F%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%2Fd1e8765721a6c23d43b14c95b1843e6b%2FWeappCache%2FskeletonCache%2Fd447ea02741771c901da221b03e3a10f%2Fpageskeleton.html&trustProject=1&openSource=cli&autoPort=9420&frame=0&devid=s0&runtimeid=0&devtype=miniprogram&proxyPort=54922&userDataPath=%2FUsers%2Faaron%2FLibrary%2FApplication%2520Support%2F%25E5%25BE%25AE%25E4%25BF%25A1%25E5%25BC%2580%25E5%258F%2591%25E8%2580%2585%25E5%25B7%25A5%25E5%2585%25B7%2Fd1e8765721a6c23d43b14c95b1843e6b&appVersion=2.02.2608070&appVersionType=0

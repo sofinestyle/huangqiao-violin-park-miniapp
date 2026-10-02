@@ -4,5 +4,60 @@
     <image class="visitor-logo" src="/assets/yorray-logo.png" mode="aspectFit" aria-label="YorRay"/>
     <text class="visitor-brand-name">工业研学</text>
   </view>
-  <view class="page"><view class="h1">工业研学·一把琴的诞生课堂</view><view class="intro">走进真实制琴现场，从听琴到做琴，把作品带回家。</view><view class="panel"><view class="h3">参加已成团的研学活动</view><view class="muted">查看活动日期、时段和集合地点，提交跟团报名申请。</view><button bindtap="enroll">研学报名</button></view><view class="panel"><view class="h3">黄桥提琴产业概况</view><view class="muted">研学课程与真实生产场景相联系。走进制琴工坊，了解乐器文化与制造工艺。</view></view><template is="state" data="{{loading,error}}"/><view class="card" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="open"><image class="cover" src="{{item.cover}}" mode="aspectFill"/><view class="card-body"><view class="tag">{{item.code}}</view><view class="h3">{{item.name}}</view><view class="muted">{{item.ageNote}} · {{item.durationNote}}</view><view class="intro">{{item.description}}</view><view class="muted">单人参考价 ¥{{item.referenceSinglePrice}} / 张；适用对象待核定</view><button class="secondary" data-id="{{item.id}}" catchtap="open">查看套餐与预约说明</button></view></view><button bindtap="group">团体需求申请</button><view class="support-note">提交预约申请后，工作人员将联系您确认安排。</view></view>
+  <view class="study-content">
+    <view class="study-hero">
+      <image class="study-hero-image" src="{{heroImage}}" mode="aspectFill" aria-label="亲子手工研学课堂"/>
+      <view class="study-hero-shade"/>
+      <view class="study-hero-caption">
+        <view class="study-eyebrow">INDUSTRIAL STUDY TOUR</view>
+        <view class="study-hero-title">工业研学 · 一把琴的诞生课堂</view>
+        <view class="study-hero-note">走进真实制琴现场，从听琴到做琴，把作品带回家</view>
+      </view>
+    </view>
+    <view class="study-heading"><text class="study-number">02</text><text class="study-title">工业研学</text></view>
+    <view class="study-subtitle">一站式打包 · 亲子同行 · 亲手制作 · 带走专属记忆</view>
+    <view class="study-intro">黄桥，江苏泰兴腹地的千年古镇，更是“中国提琴产业之都”。上世纪六十年代，上海提琴厂老艺人返乡传艺，从此一把提琴要经历选料、开料、刨木、雕刻、装配、上漆等上百道工序。如今的黄桥，正以“琴韵小镇”之姿，让制琴工艺与文旅体验深度相拥。</view>
+    <view class="study-stats">
+      <view class="study-stat"><text class="study-stat-value">110万把</text><text class="study-stat-label">年产各类提琴</text></view>
+      <view class="study-stat"><text class="study-stat-value">70%+</text><text class="study-stat-label">全国市场份额</text></view>
+      <view class="study-stat"><text class="study-stat-value">30%+</text><text class="study-stat-label">全球市场份额</text></view>
+    </view>
+    <view class="study-guarantees">
+      <view class="study-guarantee"><image src="/assets/study/mentor.png"/><text>专业研学导师</text></view>
+      <view class="study-guarantee"><image src="/assets/study/gift.png"/><text>作品可带走</text></view>
+      <view class="study-guarantee"><image src="/assets/study/group.png"/><text>10人团体优惠</text></view>
+      <view class="study-guarantee"><image src="/assets/study/shield.png"/><text>全程安全观摩</text></view>
+    </view>
+    <view class="study-section-heading">研学套餐<view class="study-heading-line"/></view>
+    <template is="state" data="{{loading,error}}"/>
+    <view wx:if="{{!loading && !error && !items.length}}" class="empty">暂无已发布的研学套餐</view>
+    <view class="study-package" wx:for="{{items}}" wx:for-item="pkg" wx:for-index="cardIndex" wx:key="id">
+      <view class="study-gallery">
+        <swiper wx:if="{{pkg.images.length}}" class="study-swiper" indicator-dots="{{pkg.images.length > 1}}" circular="{{pkg.images.length > 1}}" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#e2c88f">
+          <swiper-item wx:for="{{pkg.images}}" wx:for-item="photo" wx:for-index="photoIndex" wx:key="*this">
+            <view wx:if="{{pkg.failedImages[photoIndex]}}" class="study-image-empty">图片暂时无法显示</view>
+            <image wx:else src="{{photo}}" mode="aspectFill" data-card="{{cardIndex}}" data-index="{{photoIndex}}" binderror="imageError" aria-label="{{pkg.name}}图片{{photoIndex + 1}}"/>
+          </swiper-item>
+        </swiper>
+        <view wx:else class="study-image-empty">暂无套餐图片</view>
+        <text wx:if="{{pkg.code}}" class="study-package-number">{{pkg.code}}</text>
+      </view>
+      <view class="study-package-body">
+        <view class="study-package-title">{{pkg.name}}</view>
+        <view class="study-meta"><text wx:if="{{pkg.durationNote}}">全程约 {{pkg.durationNote}}</text><text wx:if="{{pkg.ageNote}}">{{pkg.ageNote}}</text></view>
+        <view class="study-points"><view class="study-point" wx:for="{{pkg.points}}" wx:for-item="point" wx:key="index"><text class="study-bullet">•</text><text class="study-point-text">{{point}}</text></view></view>
+        <view class="study-prices">
+          <view class="study-price"><view class="study-price-label">亲子票</view><view class="study-price-value" wx:if="{{pkg.hasParentPrice}}">¥{{pkg.referenceParentPrice}}<text> / 份</text></view><view wx:else class="study-price-pending">请咨询</view></view>
+          <view class="study-price"><view class="study-price-label">单人体验票</view><view class="study-price-value" wx:if="{{pkg.hasSinglePrice}}">¥{{pkg.referenceSinglePrice}}<text> / 人</text></view><view wx:else class="study-price-pending">请咨询</view></view>
+        </view>
+        <button class="study-book" data-id="{{pkg.id}}" bindtap="book">立即预约</button>
+      </view>
+    </view>
+    <view class="study-more">
+      <view class="study-more-title">参加已成团的研学活动</view>
+      <view class="study-more-note">查看活动日期、时段和集合地点，提交跟团报名申请。</view>
+      <view class="study-more-actions"><button bindtap="enroll">研学报名</button><button bindtap="group">团体需求申请</button></view>
+      <view class="study-more-note">提交预约申请后，工作人员将联系您确认安排。</view>
+    </view>
+  </view>
 </view>
