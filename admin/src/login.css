@@ -18,7 +18,7 @@
   padding: clamp(56px, 8vh, 96px) clamp(40px, 7vw, 112px) 52px;
   justify-content: space-between;
   align-items: flex-start;
-  background: #251a12 url('./assets/login-luthier-v3.png') center center / cover no-repeat;
+  background: #251a12 url('./assets/login-luthier-european-v4.png') center center / cover no-repeat;
   isolation: isolate;
 }
 
