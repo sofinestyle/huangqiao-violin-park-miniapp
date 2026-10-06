@@ -1,0 +1,27 @@
+{
+  "baseline": "57b9c8cf8a9ef7dd83e4bbfa0fbecf841ad22bdc",
+  "branch": "main",
+  "initialWorktree": "clean",
+  "remoteHead": "57b9c8cf8a9ef7dd83e4bbfa0fbecf841ad22bdc",
+  "allowedPaths": [
+    "admin/src/Operations.jsx",
+    "admin/src/admin-phase-2a.css",
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "docs/验收清单.md",
+    "docs/design/admin-ui-phase-2a-1/"
+  ],
+  "protected": [
+    "API",
+    "Server",
+    "Shared",
+    "Visitor",
+    "Login",
+    "Sidebar",
+    "Header",
+    "Phase 1",
+    "Media",
+    "Accounts",
+    "Audit"
+  ]
+}

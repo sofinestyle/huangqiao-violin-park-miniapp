@@ -47,6 +47,12 @@
 .ops-records th:nth-child(4) { width: 114px; }
 .ops-records th:nth-child(5) { width: 140px; }
 .ops-records th:nth-child(6) { width: 106px; }
+.ops-reservations table { min-width: 1140px; }
+.ops-reservations th:first-child { width: 264px; }
+.ops-reservations th:nth-child(3) { width: 124px; }
+.ops-reservations th:nth-child(4) { width: 114px; }
+.ops-reservations th:nth-child(6) { width: 152px; }
+.ops-reservations :is(th,td):last-child { width: 84px; }
 .ops-consultations th:first-child { width: 164px; }
 .ops-consultations th:nth-child(3) { width: 146px; }
 .ops-consultations th:nth-child(4) { width: 112px; }
@@ -83,11 +89,16 @@
 .ops-page .drawer .icon-button { padding: 8px; width: 40px; min-width: 40px; background: transparent; border: 0; color: var(--admin-text); }
 .ops-drawer-body { flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; padding: 24px; scroll-padding-block: 16px; }
 .ops-drawer-footer { flex-shrink: 0; padding: 16px 24px 20px; border-top: 1px solid var(--admin-border); background: var(--admin-bg); }
-.ops-page .ops-drawer-footer .action-grid { margin: 0; gap: 10px; }
-.ops-page .ops-drawer-footer .action-grid button { min-width: 128px; flex: 1; }
+.ops-page .ops-drawer-footer .action-grid { margin: 0; gap: 12px; justify-content: flex-end; }
+.ops-page .ops-drawer-footer .action-grid button { min-width: 104px; flex: 0 1 auto; }
+.ops-page .ops-drawer-footer .action-grid button:not(.secondary):not(.ops-danger) { min-width: 148px; }
+.ops-page .ops-drawer-footer .ops-danger { background: transparent; }
+.ops-page .ops-drawer-footer { display: flex; justify-content: flex-end; }
+.ops-page .ops-drawer-footer > .full { width: auto; min-width: 168px; }
 .ops-page .ops-slot-form { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 .ops-detail-section { margin-bottom: 24px; }
 .ops-detail-section > h3 { font-size: 16px; font-weight: 600; line-height: 1.5; margin-bottom: 16px; }
+.ops-reading-body { padding: 16px; background: var(--admin-bg); border-radius: 8px; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
 .ops-page .detail-list { grid-template-columns: 88px minmax(0,1fr); gap: 12px 16px; font-size: 14px; line-height: 1.6; padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
 .ops-page .detail-list dt { color: var(--admin-secondary); }
 .ops-page .detail-list dd { overflow-wrap: anywhere; }

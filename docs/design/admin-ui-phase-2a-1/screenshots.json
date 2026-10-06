@@ -1,0 +1,168 @@
+{
+  "count": 18,
+  "pixelEditing": false,
+  "files": [
+    {
+      "file": "01-reservations-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "b10ac7052925c778ba9a00387e46fbb8a729f65330974959acbda795d604e21d",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "01-reservations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e0abf83d7aec5a160d9fce4d54355bec25e5b182b505b0bdf630b9ec703104f6",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "01-reservations-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "3ad9128b1826af4f8f7d364d69cb4a7475e22a7393379ece569c5cef042433f8",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "02-reservation-detail-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "07841fa649874e96c042684ef1df26c0f1be900cb7eb2f33f51ed6fd67ffe303",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "02-reservation-detail-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "b2f4cc986b58b49c232618a8c0eaa43c7b112c3f58f8dba63a4e133ddf922ec6",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "02-reservation-detail-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "26190ed7c49919cb81cd651f92be91ea448a890daf3031a10281faf881446019",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "03-consultation-detail-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "453264aaff16005b44d7f577fa67be6548eab0c64730c71dc836d7965f3837f2",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "03-consultation-detail-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "c2ae75191be58f1cb55fe5c651e503452f654af2ed1495cfbbab9aefd53af605",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "03-consultation-detail-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "ff4395ba4a0e14557e3271a9012f1cf0b7820664e702dfc546479bbe198dbc0e",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "04-session-editor-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "3b3c5d9614035bf945d7e503d96787d6975b9467f8eb6a35fcbc04dce371f28c",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "04-session-editor-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e9085ed4be7a9b12b3d1a0d557a6d3fb63c55a8bb29c4b98653d7544f3cc09e6",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "04-session-editor-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "dd85b430f4d5c60bccde2bd7e033bb16f64b2493bac56f4a31a9f37506d920a4",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "05-sessions-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "b66be3f6c6b96133abe579322e46a39c8073049c77adbae4d3e79930705602d5",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "05-sessions-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e30d4e956c3a2d1ceb23624888318183267fd87b0e4f51ce1248d00f3e44f2ce",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "05-sessions-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "84e4fab87aa214c44a6b477dce8db5188d445355a284e61c2322e93fbac0e5b5",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "06-consultations-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "59be8acc5dc42889136e5c7767bff7995d9fdc22f363d5debbf78c9550d238dd",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "06-consultations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e42d22db255158f87877070be5a91678f1862ed724f5a9028052fd16871311bf",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    },
+    {
+      "file": "06-consultations-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "fdb073be45b8c44d60e30fe1c0103837f5401790460c3073b6c9a6cc0d97b285",
+      "source": "Actual current UI; isolated synthetic SQLite data"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "baseline": "57b9c8cf8a9ef7dd83e4bbfa0fbecf841ad22bdc",
+  "checks": [
+    "AST unchanged: view",
+    "AST unchanged: exportRows",
+    "AST unchanged: act",
+    "AST unchanged: compatible",
+    "AST unchanged: change",
+    "AST unchanged: changeActivity",
+    "AST unchanged: save",
+    "AST unchanged: eligible",
+    "AST unchanged: occupied",
+    "AST unchanged: remote",
+    "AST unchanged: staff",
+    "AST unchanged: slots",
+    "AST unchanged: bookings",
+    "AST unchanged: labels",
+    "All original events, disabled guards, form constraints and values preserved as AST multiset",
+    "Original business visibility conditions retained",
+    "App unchanged from Phase 2A; login, roles, navigation and user menu unchanged",
+    "All Design System rules/tokens unchanged after approval paragraph",
+    "Phase 1, login, six protected modules, API/server/model/status/visitor/dependencies/tests/originals unchanged",
+    "Tracked changes confined to whitelist"
+  ],
+  "status": "PASS",
+  "sha256": {
+    "before": "e7089001aa0ef2cc653976e07409f411872f2b2cda5d9788011053d0f5aeb785",
+    "after": "c855d3ab69027367d633c8c96fa56c9725f0e3ba08057ce3e5e907a30f5d458c"
+  }
+}
