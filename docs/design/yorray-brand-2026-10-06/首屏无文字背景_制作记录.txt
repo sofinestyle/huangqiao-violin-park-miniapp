@@ -1,0 +1,33 @@
+2026-10-06
+用户要求：首屏无文字背景；2K以上；增强漆面光泽和柔和丁达尔效应，避免刺眼。
+输入：/Users/aaron/Desktop/首屏.png，原件未编辑。
+方式：Codex 内置 imagegen，两次参考图生成。
+第1次：首屏无文字背景_柔光版_863x1822.png；实际863×1822，视觉检查无品牌文字与UI图层，漆面和窗光已增强。物理乐谱的自然音符保留。
+第2次：首屏无文字背景_第二次生成_863x1823.png；明确请求提高实际输出尺寸，但工具仍返回863×1823。不能宣称2K完成。
+当前状态：视觉背景已完成，2K尺寸要求尚未满足。已询问用户是否接受本地高质量等比例放大，并明确区别于原生高分辨率。
+用户后续明确选择“暂不放大，保留当前原图”。按此指令交付柔光版863×1822生成原图，不进行放大；第二次生成保留作为历史版本。实际分辨率仍低于最初2K要求，未作虚假高分辨率标注。
+首屏V5及小程序未修改。
+
+第1次提示词：
+Use case: precise-object-edit and lighting refinement.
+Edit the attached approved violin hero image into a TEXT-FREE photographic background.
+OUTPUT RESOLUTION REQUIREMENT: render a genuinely high resolution portrait, target 2048 x 4320 pixels (same original ~0.473 width/height ratio), or the nearest supported high-resolution portrait with SHORT EDGE AT LEAST2048px. This is a 2K-or-higher source background, not a small preview. Preserve the original framing and composition, don't crop the instrument or change aspect ratio.
+
+REMOVE ALL graphic overlay elements: white YorRay logo upper left, Chinese headline "以诗入琴", small "瑜瑞 · YorRay", top right translucent mini-program capsule including dots and circle, bottom left downward arrow. Seamlessly inpaint the wall/window/table behind these elements. No text, letters, logos, interface controls, arrows, captions, labels or watermark anywhere. Musical notation naturally printed on the physical score is part of the scene and may stay, but no readable word titles on it.
+
+KEEP THE EXACT SCENE AND MAIN SUBJECT: one front-facing amber-brown violin in same center-right position and same scale, upright on the same discreet padded support over dark protective cloth; same outline, scroll, tuning pegs, fingerboard, four strings, bridge, f holes, fine VERTICAL spruce grain, asymmetrical brown chinrest, wooden tailpiece and small gold fitting. Same European concert-hall backstage room, aged walnut paneling, blurred chair left, tall window right with softly blurred trees, old wooden table, music score lower left, open small rosin case. No second violin. No new props, no instrument redesign, no cracks or additional artificial distress. Keep quiet upper-left negative space.
+
+REFINE VARNISH: reveal the real optical depth and luster of translucent polished amber varnish. Broad soft elongated window reflections gently wrap around the convex arching, with slim edge highlights and nuanced sheen on shoulders and bouts; preserve underlying natural wood grain in highlighted areas. The surface should feel lovingly polished, luminous and tactile, never plastic, metallic, wet or lacquer-dripping. No sharp white reflection patches, starbursts or aggressive sharpening. Maintain correct wood color and readable shadows.
+
+REFINE LIGHT: sunlight streams softly from the right window diagonally toward the lower left, a subtly visible luminous shaft crossing BEHIND and slightly around the violin. Delicate Tyndall effect with a sparse few tiny suspended dust motes revealed only in the beam. Natural localized air scattering, not a foggy room, heavy smoke, magical glitter or thick stage spotlight. The beam should be visible but gentle, with soft feathered edges, no harsh white streaks. Protect highlights at window and on violin, reduce excessively bright glare. Overall warm, restrained, medium-dark cinematic exposure, rich shadows with detail, slightly luminous product against the room. Keep the depth of field and soft antique interior mood from the original. Do not globally brighten the image.
+
+Deliver only ONE finished high-resolution text-free background photograph. All changes limited to overlay removal and the specified subtle lighting/varnish enhancement.
+
+第2次提示词：
+HIGH RESOLUTION RE-RENDER / UPSCALE of the provided approved text-free image. Output resolution MUST be 1536 x 3248 pixels, or 1792 x 3792 pixels. IMPORTANT: DO NOT output at the small input's 863 x 1822 dimensions. The requested deliverable must have at least 3000 pixels on its long edge, above 2K resolution. Enlarge the actual output canvas and render native detail, not just a tiny preview. Keep the exact original portrait aspect ratio. This call exists specifically to deliver higher pixel resolution.
+
+Preserve the provided picture faithfully, same single violin, position, scale within composition, crop, wood grain, amber varnish, bridge, strings, f-holes, brown chinrest and tailpiece, discreet support, European wood-paneled room, right-side tall window, soft background, sheet music, open rosin box, cloth and wooden tabletop. Same subdued cinematic warm color, dark negative space in upper left. Preserve the delicate diagonal sunbeams with tiny floating dust particles (Tyndall scattering) and broad soft varnish reflections. Fine natural grain visible beneath rich transparent sheen. Window and reflections soft and controlled, no blown highlights, no harsh sun glare, no heavy fog. No new objects, no extra violin.
+
+Absolutely no overlays: no brand logo, Chinese or English words, UI capsule, dots, circle, arrow, watermark. Only natural music notation on the existing physical score may stay.
+
+Return ONE high-resolution clean photographic background file. Prioritize the explicit1536x3248 or1792x3792 pixel output size; do not inherit the input resolution.

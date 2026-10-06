@@ -1,0 +1,59 @@
+YorRay 品牌页后续效果图
+日期：2026-10-06
+确认人：项目用户（姓名未提供）
+用户原文：首屏确认，请根据首屏风格制作剩余效果图，结尾查看乐器、联系咨询按钮去除。
+已确认 C：首屏 V5；后续沿用其视觉风格；设计稿末尾移除两个按钮。此确认不等于代码实施批准。
+本轮新稿：品牌页后续效果图_01_品牌文化.png；品牌页后续效果图_02_企业介绍.png。
+连续审阅：品牌页连续效果图_首屏V5及后续.html。直接展示三张原尺寸比例图片，不重绘已确认首屏。
+文案：保留附件名字、命名、世界有形、瑜瑞释义、以诗入琴及结语。企业全称作标题，后接完整现有公司介绍正文；不删减信息。
+视觉：现代黑体取代早期宋体；暖米白正文与深木色摄影；仅正面琴局部，不恢复后方背面琴。
+制作方式：Codex 内置 imagegen，生成后原样保存；HTML 为本地审阅容器，不是小程序实现。
+来源：首屏 V5 为风格参考；images/c1.jpg 为企业外景参考。AI 生成图片并非逐像素保真的实拍，正式使用仍需核对产品、建筑及品牌素材。
+人工目视核查：两张新图主文字与文案基准一致；公司内容完整；结尾不存在查看乐器/联系咨询按钮；没有商城、价格、认证或其他新业务宣称。
+范围：只新增设计文件并补记决策，保留 V1—V5 和旧方案。V1.0 的宋体、首屏排版及两个页尾入口属于历史稿，后续设计以本轮和 DEC048 为准；不将新稿自动视为用户已批准。
+未执行：原生编译、真机、业务交互、发布。未修改小程序、后台或数据。
+交付前核查：190份受保护文件SHA-256与既有基准一致；原件校验脚本通过，25份业务原件大小和SHA-256一致；三张图片及连续审阅HTML均存在。两张新增图片已经目视审阅。该检查不等于原生页面验收。
+
+图1生成提示词：
+Use case: ui-mockup. Create ONE high-fidelity mobile BRAND PAGE CONTINUATION design, portrait 9:20 approximately. This is the section scrolled BELOW an already approved first screen. The supplied image is the APPROVED FIRST SCREEN used strictly as photographic/color/typography reference; DO NOT regenerate or repeat its hero, title or navigation. Match its cultured European concert-hall interior, warm amber varnish, dark walnut, soft window light and modern Chinese sans-serif typography. Output a single flat portrait page segment, no device frame, no boards or annotations.
+
+This section contains the complete brand culture narrative and the meanings of 瑜 and 瑞. Design in an exquisite quiet editorial style with generous spacing, warm parchment ivory #F5F0E7 background, deep walnut text, medium-weight modern Chinese HEITI sans-serif throughout. NO Songti/Ming, no serifs, no brush writing. No cards, boxed grids, icons, gold ornaments, fake jade objects, no buttons, no status bar, no logo/navigation repeated at top.
+
+LAYOUT in top to bottom order:
+1. First approximately 10% is an uninterrupted dark atmospheric photographic band showing just the blurred walnut tabletop, soft cloth and music-sheet edge from the bottom of the reference, no violin repeated in this band. Its bottom ends cleanly against ivory, suggesting continuity from the approved hero.
+2. On ivory, generous 8% side margins and top whitespace, small understated sans-serif label "品牌文化". Below, a confidently sized medium-weight heading, exact words over two lines:
+"名字是世界上"
+"最短的诗。"
+At 390px logical width heading about30px, body about16px and1.9 line-height. Under the heading with generous gap, exact body:
+"当人们开始为万物命名，"
+"日月星辰，山川湖海，"
+"从此世界有了模样、想象有了形状。"
+Use natural readable line breaks if needed, preserve ALL characters verbatim; no invented or repeated copy.
+3. Across full width a cinematic horizontal macro photographic crop (about22% total height) of the SAME front-facing violin's convex amber surface, fine vertical spruce grain, f-hole and illuminated edge, softly lit by the same right-side window. Fine realistic translucent varnish and wood detail; no rear violin and no tools. This is a detail crop of the existing main violin, not another product or additional instrument. No text over photograph, no rounded border.
+4. Return to the SAME ivory background, spacious two vertically stacked OPEN typographic meaning rows with 8% margins. First row a large modern sans-serif Chinese character "瑜" at left and exact phrase "玉之光彩也。" at right. Second row large "瑞" at left and exact phrase "以玉为信也。" at right. Large glyphs medium weight, beautiful clean modern forms, NOT calligraphic or serif. Keep rows uncluttered, no cards, no decorative dividers needed. Provide substantial breathable spacing.
+5. End with generous ivory bottom padding. Do not include the next poem, company intro or any CTA.
+
+All typography is sober, readable and balanced, like a sophisticated music institution editorial page continuing the reference hero, not a sales poster. Exact content matters. Make the main heading clear but not gigantic, and leave enough room for full text. No extra English, claims, or slogan. Render one finished design image only.
+
+图2生成提示词：
+Use case: ui-mockup. Create ONE elegant mobile brand-page continuation and ENDING design, portrait about9:21. A single flat mobile scroll segment, no device frame, no collage board, no app bar or status bar. This comes AFTER the previously designed culture section.
+REFERENCE 1 is the approved first screen: match its walnut concert-hall interior, soft window light, amber wood, cinematic depth, restrained ivory typography. REFERENCE 2 is the supplied real existing building exterior photo. Use this exact building and composition faithfully for the enterprise section: maintain facade, curved roofline, circular plaza, windows and surrounding layout, no invented reconstruction, no palace or workshop replacement. It is an existing park exterior, not a claim of YorRay ownership. REFERENCE 3 is the preceding culture section; match its warm ivory background, deep walnut modern Chinese sans-serif text and editorial spacing.
+
+THREE CLEAR FULL-WIDTH BANDS integrated into ONE continuous page:
+A. Upper about30%: quiet cinematic cropped detail of the approved room: dim walnut wall, the edge of an old music score and dark wooden tabletop, softly defocused, restrained sidelight. No extra violin or back-facing violin. The area behind text is very dark and smooth, excellent legibility. Left-align the following three lines at 8% inset, generous leading and margins, ivory-white MODERN HEITI sans-serif medium, with the first line slightly larger:
+"以诗入琴，"
+"万物有了雅称，"
+"世界便有了美的意义。"
+Only these lines here; exact Chinese punctuation. This is a calm conclusion to the brand poem.
+B. Middle about23%: full-width photographic reproduction of the actual building from reference2, coherent and faithful, gently restrained saturation to sit with warm ivory/walnut design but retain natural daylight. No text overlay, no label implying brand factory or headquarters, no rounded corners, no illustrations.
+C. Lower about47%: clean warm ivory #F5F0E7 editorial enterprise introduction with 8% side padding, dark walnut text. Small label exact "品牌与企业", then small secondary label "运营主体". Next company name as the prominent section heading, medium-weight modern Chinese SANS SERIF, about21px at390px logical width, naturally split into two or three lines but ALL words present and in this order:
+"江苏黄桥乐器文化产业园"
+"投资发展有限公司"
+Below ample space, complete body, no omissions or invented copy:
+"深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。"
+Then a normal paragraph break and:
+"从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+Body about16px logical size with1.9 leading, left aligned ragged right and readable line lengths. ALL company content must fit with comfortable bottom whitespace. Company name in heading plus complete body preserves the full introduction; do not repeat company name inside body.
+The page ends naturally with ivory blank breathing room. Absolutely NO buttons, links, CTAs, arrows at end, no "查看乐器", no "联系咨询", no phone numbers, QR codes, tab bars, copyright notices or extra slogans.
+
+TYPOGRAPHY: modern clean Chinese sans-serif HEITI as preceding approved style, medium headings and normal body. NO serif, Songti, Ming, brush type. No giant characters, no glitter/gold effects, no cards, rounded boxes or shadows. Prioritize verbatim Chinese accuracy, complete content and natural quiet hierarchy. One polished continuation image only.

@@ -1,0 +1,14 @@
+{
+  "clicks": [
+    "首页品牌入口→品牌介绍",
+    "原生返回→首页",
+    "错误提示重新加载→后台站点资料"
+  ],
+  "states": [
+    "loading:渲染注入验证",
+    "error:渲染注入验证",
+    "empty:渲染注入验证"
+  ],
+  "errors": [],
+  "completeCompanyIntro": true
+}

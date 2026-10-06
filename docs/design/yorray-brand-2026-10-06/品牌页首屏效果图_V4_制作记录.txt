@@ -1,0 +1,33 @@
+YorRay 品牌页首屏效果图 V4
+日期：2026-10-06
+授权：用户确认上一轮修改方案，并要求生成效果图。
+范围：仅视觉效果图，未修改小程序。V1—V3 保留。
+输出：品牌页首屏效果图_V4.png
+方式：Codex 内置 imagegen；生成结果原样保存。
+参考：附件电商图2.jpg（正面）、电商图3.jpg（背面）、项目 images/yorray-logo.png。参考原件未编辑。
+设计：古典音乐厅后台欧式窗边、深木色环境、前景正面提琴、后方同款背面提琴、乐谱与松香、柔和侧窗光、现代黑体标题。
+目视核查：主标题及品牌文字可读；正反面在同一空间内展示；主琴纹理及配件可辨；无展台、抽象雕塑和分区拼图。图片属于 AI 视觉效果稿，产品与标志的正式使用仍需细节校对，不属于原生小程序运行或交互验收。
+
+生成提示词：
+Create ONE exquisite photorealistic mobile brand page FIRST SCREEN mockup for YorRay violins, tall portrait approximately 9:19, high resolution. A single uninterrupted cinematic photograph covering the entire screen, typography over quiet negative space. No device frame, no collage, no panels, no lower inset close-up, no split screen.
+
+REFERENCES: Image 1 is the actual violin FRONT. Preserve this product's silhouette, amber-brown varnish color, fine vertical spruce grain, dark fingerboard, four strings, bridge, f holes, distinctive brown asymmetrical chinrest, wooden tailpiece with small gold fitting and pegs. Image 2 is the BACK of that model: preserve its naturally figured transverse maple grain and amber shading. Use it for a second, rear-facing violin behind the main one. These are TWO believable physical instruments of the same model in one scene, not impossible simultaneous front/back of one instrument. Image 3 is the original transparent WHITE YorRay script logo, reuse faithfully with its underline flourish. The brick-colored background shown in the reference is not part of the logo; do not create a red rectangle or redraw the brand.
+
+APPROVED ART DIRECTION:
+An intimate backstage musicians' room in a historic European classical concert hall, by a tall old wood-framed window. A quietly beautiful, well-maintained interior with deep walnut wall paneling, subtle aged plaster, an old dark wooden table, very softly blurred traditional chair in the distant background. Soft indistinct trees visible beyond the window. Authentic cultured atmosphere, warmth and accumulated time, like a still from an elegantly photographed chamber music film. NOT a shop, showroom, gallery pedestal or workshop. NO abstract sculptures, display plinths, white studio background, tools, wood shavings, chandeliers or excessive gilding. No ruined walls or dirty neglected space.
+
+COMPOSITION:
+Leave the upper left roughly third of image largely quiet dark wall / blurred paneling for typography. Window is farther right with restrained brightness, not behind headline. The instruments dominate the middle and lower two thirds with large tactile bodies. Main front-facing violin center-right foreground, very slightly turned so edge thickness and graceful arching catch light, supported plausibly on a dark folded protective cloth and a discreet hidden instrument support on the wood table. Entire main silhouette readable, no awkward crop of the scroll or lower body, anatomically correct proportions.
+The second rear-facing violin stands just behind to the LEFT of main violin, turned gently to reveal some rib/side, about 35-45% of its body overlapped by the main instrument. Its beautiful maple back remains recognizably visible. It is slightly darker and a little softer in focus, but NOT so blurred that the wood figure disappears. Position its scroll lower or slightly aside so outlines do not tangle. A natural asymmetrical arrangement with emotional depth, not two rigidly parallel catalog cutouts.
+Sparse props: a naturally opened or loosely spread old music score on the lower left table, a small piece of rosin in its modest open case, and part of the dark protective cloth. Props subordinate and partially softened by depth of field. No bow required. No labels or promotional claims.
+
+LIGHT AND MATERIAL:
+A soft slanting shaft of window daylight enters from the upper right side/back. It gently skims the scroll, shoulders and convex front of the main violin, with beautiful continuous broad soft reflections revealing translucent polished varnish and fine underlying wood grain. Fine edge highlights, deep but legible shadows and subtle fill to see strings and dark fittings. Saturation restrained, rich amber-brown, warm neutral shadows, overall medium-dark low-key image with clear product readability. Never bright orange, plastic, metallic or white blown highlights. Warm highlights need not turn the entire scene sepia.
+A few delicate airborne dust particles catch light only near the window beam, understated Tyndall effect, no obvious fog, no glitter, no heavy smoke. Strong cinematic depth of field: sharp on front violin bridge, f holes and grain; rear maple figure slightly softer but readable; background architecture, music-score edges and outdoor greenery softly defocused. 85mm portrait-photography feeling.
+Do NOT invent cracks, distressing, scrapes or historical age on the supplied instrument. The sense of time belongs to the room and lighting. Never apply the back's striped maple grain to the front spruce face.
+
+UI:
+Tiny faithful original white YorRay logo at top left with generous 8% screen margins, width about22% of screen. Small subtle native mini-program ellipsis-and-circle capsule at top right, no clock/battery/device hardware.
+Main title exact Chinese "以诗入琴", one line, at upper left around19% of total height, leaving comfortable space below logo. Modern elegant Chinese HEITI sans-serif of medium weight, like PingFang SC Medium, confident and crisp, no Songti/Ming/serif/brush lettering, no stroke contrast serifs. Size about40px at390px logical width, restrained letterspacing, soft ivory color. Under it much smaller sans-serif exact text "瑜瑞 · YorRay". Main title does not overlap instruments, window highlight or patterned background.
+At lower left only a very subtle thin downward arrow. NO quote, NO additional slogan, NO next-section block, NO CTA, NO price, no extra English.
+Deliver one coherent, sophisticated premium mobile first-screen visual with believable actual product details, cultured interior and inviting low-key light.

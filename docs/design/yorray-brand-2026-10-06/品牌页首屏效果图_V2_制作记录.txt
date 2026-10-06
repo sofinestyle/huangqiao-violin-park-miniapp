@@ -1,0 +1,27 @@
+YorRay 品牌页首屏视觉探索 V2
+制作日期：2026-10-06
+交付范围：一张 AI 生成的首屏视觉效果图；未修改小程序，保留 V1。
+文件：品牌页首屏效果图_V2.png
+制作方式：Codex 内置 imagegen；图片输出原样保存，未局部合成。
+参考：images/yorray-logo.png；本设计目录 assets/hero.png。
+设计重点：单一连续摄影画面、左对齐宋体主标题“以诗入琴”、小尺寸品牌标志、精简文字、暖深色光影与底部象牙白文化区。
+用途：视觉方向审阅。图片不是小程序运行截图；正式实施应使用原始品牌标志与可维护文本。
+
+生成提示词：
+Create ONE exceptionally refined, high-fidelity mobile mini-program BRAND PAGE UI mockup for YorRay 瑜瑞 musical instruments. Portrait aspect ratio approximately 9:19. A single flat screen design, edge-to-edge, no phone hardware frame, no perspective, no collage, no presentation board, no explanations or annotations outside the UI.
+
+Reference image 1 is the existing official WHITE TRANSPARENT YorRay script logo. Reuse its precise lettering, underline flourish, proportions, and white color faithfully. The brick color visible behind it is NOT part of the logo: no rectangular logo background. Do not redesign or retype the logo. Reference image 2 supplies the violin form, amber wood and lighting inspiration. You may recompose the scene for an elegant premium editorial hero; it is not a claim of a real branded product. Simplify drastically: remove workshop clutter, tools, wood shavings, lamps, little background instruments. Preserve anatomically credible violin details and strings.
+
+DESIGN GOAL: spacious, calm, sophisticated, a luxury musical instrument house editorial page with Chinese literary sensibility. Main improvement is first-screen sophistication, visual simplicity, hierarchy and uninterrupted photographic composition. NOT a centered stack of logo, brand name, heading, tagline followed by a disconnected photo. No generic cards, rounded boxes, badges, shopping icons, numerical claims, prices, gold ornaments, gold gradients or decorative music notes.
+
+COMPOSITION:
+The top 84 percent of the entire image is ONE uninterrupted cinematic photograph/hero in deep warm charcoal and subtle walnut tones, carefully art-directed with generous smooth quiet negative space in the top half and on the left. It should feel expansive, not crowded or muddy. A softly lit exquisite amber violin occupies the lower right two-thirds of the hero, extending toward the lower edge, with a restrained soft sidelight emphasizing real wood grain and a graceful silhouette. The violin neck rises diagonally through the right side. The soft background smoothly integrates top and bottom; no hard horizontal division between text and photograph. Avoid blown highlights, intense orange saturation, artificial glossy plastic, and overly busy workshop environment. Photographic realism, elegant tactile materials.
+
+At top, generous breathing space, a very small white original YorRay logo placed top left about 18 percent of screen width, x=8 percent, y=5 percent. Discreet native mini-program capsule at upper right with simple ellipsis and circle, subtle thin white outline. No fake battery, clock or full phone status bar.
+The sole primary headline is the exact four Chinese characters "以诗入琴" in one horizontal line, elegant refined Song/Ming Chinese serif, ivory white, thin-to-regular strokes, large but not gigantic, beautifully balanced letter spacing. Position left aligned at x=8 percent, y=23 percent. Plenty of empty space above and below. Under the headline, at y=32 percent, set the small exact label "瑜瑞 · YorRay" in restrained light ivory sans serif. No other headline, no appended slogan, no English marketing phrase.
+Keep the photographic violin below and right of the words; no text intersects the violin.
+At bottom left of hero, tiny fine-line downward arrow, with no label, suggesting scroll. No call to action over the photograph.
+
+The lower 16 percent of overall image is a simple warm ivory editorial next-section preview, full width, flat clean transition, generous left/right padding 8 percent. Small muted walnut label "品牌文化" near its top left. Below it the exact text "名字是世界上最短的诗。" as a refined dark warm gray serif sentence, readable but much smaller than main headline. Only these two text elements in this ivory section, ample whitespace, no boxes, no rule lines, no extra content.
+
+Render all Chinese accurately. The design must feel like a professionally art-directed actual mobile screen at 390px logical width, high-resolution crisp UI typography with realistic photographic hero, visually quiet and grand. Use only the specified textual content. Deliver only ONE polished mockup image.

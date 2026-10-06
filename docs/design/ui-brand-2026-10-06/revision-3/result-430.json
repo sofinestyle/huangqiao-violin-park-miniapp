@@ -1,0 +1,52 @@
+{
+  "width": 430,
+  "model": "iPhone 14 Pro Max",
+  "errors": [],
+  "checks": [
+    "one logo in sticky brand bar",
+    "no logo overlay in hero",
+    "user image loaded at 863x1822",
+    "image frame begins at brand bar top",
+    "sticky top = 0 after scroll and in company section",
+    "actual down arrow click"
+  ],
+  "bar": {
+    "position": "sticky",
+    "size": {
+      "width": 430,
+      "height": 55
+    },
+    "before": {
+      "left": 0,
+      "top": 0
+    },
+    "afterScroll": {
+      "left": 0,
+      "top": 0
+    },
+    "afterArrow": {
+      "left": 0,
+      "top": 0
+    },
+    "atCompany": {
+      "left": 0,
+      "top": 0
+    }
+  },
+  "mediaOffset": {
+    "left": 0,
+    "top": 0
+  },
+  "image": {
+    "errMsg": "getImageInfo:ok",
+    "width": 863,
+    "height": 1822,
+    "type": "jpeg",
+    "orientation": "up",
+    "path": "assets/brand/hero-user-v3.jpg"
+  },
+  "cultureOffset": {
+    "left": 0,
+    "top": 55
+  }
+}

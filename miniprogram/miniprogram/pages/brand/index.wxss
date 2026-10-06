@@ -1,22 +1,53 @@
-/* Brand page only: approved Design System values, no shared token changes. */
-.brand-page { --brand-bg: #F7F3E9; --brand-surface: #FFFDF7; --brand-walnut: #3C2B24; --brand-text: #3C2C20; --brand-secondary: #6C5948; --brand-error: #A13E35; --brand-serif: "Songti SC", STSong, "Noto Serif CJK SC", serif; --brand-sans: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
-.brand-page { min-height: 100vh; box-sizing: border-box; background: var(--brand-bg); color: var(--brand-text); font-family: var(--brand-sans); padding-bottom: 32px; }
-.brand-heading { padding: 28px 24px 24px; text-align: center; }
-.brand-logo { width: 112px; height: 64px; background: var(--brand-walnut); border-radius: 4px; }
-.brand-title { margin-top: 16px; font-family: var(--brand-serif); font-size: 28px; font-weight: 700; line-height: 1.4; }
-.brand-subtitle { margin-top: 6px; color: var(--brand-secondary); font-size: 14px; line-height: 1.6; }
-.brand-photo { display: block; width: 100%; height: 240px; background: var(--brand-walnut); }
-.brand-content { padding: 28px 24px 0; }
-.brand-section-title { color: var(--brand-secondary); font-size: 14px; line-height: 1.6; }
-.brand-company { margin-top: 8px; font-family: var(--brand-serif); font-size: 20px; font-weight: 600; line-height: 1.6; }
-.brand-intro { margin-top: 18px; font-size: 15px; line-height: 1.9; white-space: pre-line; }
-.brand-actions { display: flex; gap: 12px; padding: 28px 24px 0; }
-.brand-actions button { flex: 1; margin: 0; min-height: 48px; padding: 12px 8px; border: 0; border-radius: 8px; font-size: 15px; line-height: 1.6; }
-.brand-actions button::after { border: 0; }
-.brand-actions .brand-primary { background: var(--brand-walnut); color: var(--brand-surface); }
-.brand-actions .brand-secondary { background: #EDE5D7; color: var(--brand-walnut); }
-.brand-empty, .brand-page .loading, .brand-page .error { margin: 24px; padding: 20px; background: var(--brand-surface); color: var(--brand-secondary); font-size: 15px; line-height: 1.7; }
-.brand-page .error { color: var(--brand-error); }
-.brand-page .error button { min-height: 44px; background: var(--brand-walnut); color: var(--brand-surface); font-size: 15px; }
-.brand-pressed { opacity: .72; }
-@media (max-width:340px) { .brand-heading { padding-top: 24px; } .brand-content { padding-left: 20px; padding-right: 20px; } .brand-actions { padding-left: 20px; padding-right: 20px; } }
+/* DEC049: page-local three-chapter layout; shared navigation stays unchanged. */
+.brand-page { min-height: 100vh; padding-bottom: calc(52px + env(safe-area-inset-bottom)); background: #f5f0e7; color: #3c2b24; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.brand-page .brand-bar { position: sticky; top: 0; z-index: 10; box-sizing: border-box; height: 55px; display: flex; align-items: center; gap: 24rpx; padding: 0 32rpx; background: rgba(60,43,36,.9); }
+.brand-page .brand-bar .brand-logo { display: block; flex-shrink: 0; width: 139.2rpx; height: 86.4rpx; background: transparent; padding: 0; margin: 0; border-radius: 4rpx; }
+.brand-hero { position: relative; height: calc(100vh - 107px - env(safe-area-inset-bottom)); min-height: 1160rpx; overflow: visible; background: #251c16; color: #fff5e3; }
+/* DEC051: extend the photograph behind the 55px sticky brand bar, as on home. */
+.brand-hero-media { position: absolute; top: -55px; left: 0; right: 0; height: calc(100% + 55px); overflow: hidden; background: #251c16; }
+.brand-hero-photo { display: block; width: 100%; height: 100%; }
+.brand-hero-copy { position: absolute; top: 176rpx; left: 46rpx; right: 40rpx; }
+.brand-hero-title { font-size: 68rpx; line-height: 1.3; font-weight: 400; letter-spacing: 5rpx; }
+.brand-hero-subtitle { margin-top: 10rpx; font-size: 28rpx; line-height: 1.5; font-weight: 400; }
+.brand-next { position: absolute; bottom: 35rpx; left: 30rpx; width: 48px; height: 48px; margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; }
+.brand-next::after { border: 0; }
+.brand-arrow { position: absolute; top: 12px; left: 18px; width: 1px; height: 24px; background: #fff5e3; }
+.brand-arrow::after { position: absolute; content: ""; width: 17px; height: 17px; border-right: 1px solid #fff5e3; border-bottom: 1px solid #fff5e3; transform: rotate(45deg); left: -8px; bottom: 0; }
+.brand-culture { padding: 112rpx 56rpx 128rpx; }
+.brand-section-label { font-size: 32rpx; line-height: 1.4; font-weight: 500; }
+.brand-section-english { margin-top: 6rpx; color: #6b574b; font-size: 21rpx; line-height: 1.5; letter-spacing: 3rpx; }
+.brand-opening { margin-top: 120rpx; }
+.brand-quote { font-size: 60rpx; font-weight: 500; line-height: 1.32; letter-spacing: 1rpx; }
+.brand-quote-english { margin-top: 18rpx; font-size: 30rpx; line-height: 1.5; color: #6b574b; }
+.brand-narrative { margin-top: 94rpx; }
+.brand-chinese { font-size: 30rpx; line-height: 1.7; }
+.brand-english { margin-top: 20rpx; font-size: 25rpx; line-height: 1.6; color: #6b574b; overflow-wrap: break-word; }
+.brand-meanings { margin-top: 102rpx; }
+.brand-meaning { display: flex; align-items: flex-start; gap: 48rpx; }
+.brand-meaning + .brand-meaning { margin-top: 70rpx; }
+.brand-glyph { flex-shrink: 0; width: 104rpx; font-size: 84rpx; line-height: 1.15; font-weight: 400; }
+.brand-meaning-copy { flex: 1; min-width: 0; }
+.brand-meaning-copy .brand-english { margin-top: 8rpx; }
+.brand-poem { margin-top: 94rpx; }
+.brand-rule { width: 140rpx; height: 1px; margin-bottom: 58rpx; background: #3c2b24; }
+.brand-poem-chinese { font-size: 33rpx; line-height: 1.6; }
+.brand-poem .brand-english { margin-top: 24rpx; }
+.brand-company-section { padding: 114rpx 36rpx 130rpx; }
+.brand-company-heading, .brand-company-copy { padding: 0 14rpx; }
+.brand-company-title { font-size: 52rpx; line-height: 1.4; font-weight: 500; }
+.brand-company-heading .brand-section-english { font-size: 28rpx; letter-spacing: 3rpx; }
+.brand-building-frame { position: relative; overflow: hidden; width: 100%; padding-top: 69.9875%; margin-top: 68rpx; background: #e7e0d4; }
+.brand-building { position: absolute; width: 110.4608%; top: -62.9893%; left: -5.2304%; }
+.brand-photo-error { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #6b574b; font-size: 28rpx; }
+.brand-company-copy { margin-top: 64rpx; }
+.brand-operator { color: #6b574b; font-size: 28rpx; line-height: 1.6; }
+.brand-company-name { margin-top: 14rpx; font-size: 40rpx; line-height: 1.6; overflow-wrap: break-word; }
+.brand-company-intro { margin-top: 54rpx; font-size: 29rpx; line-height: 1.85; white-space: pre-line; overflow-wrap: break-word; }
+.brand-empty, .brand-page .loading, .brand-page .error { margin: 24px; padding: 20px 0; color: #6b574b; font-size: 15px; line-height: 1.7; }
+.brand-page .error { color: #a13e35; }
+.brand-page .error button { min-height: 44px; background: #3c2b24; color: #fffdf7; font-size: 15px; }
+@media (max-width: 340px) {
+ .brand-english { font-size: 13px; }
+ .brand-chinese, .brand-company-intro { font-size: 14px; }
+ .brand-meaning { gap: 30rpx; }
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-06",
+  "environment": "WeChat developer tools Stable 2.02.2608070 / 320px simulator",
+  "method": "CUA actual UI clicks with accessibility state inspection",
+  "results": [
+    {"from": "home brand entry", "to": "pages/brand/index", "status": "passed"},
+    {"from": "brand instruments tab", "to": "pages/instruments/index", "status": "passed"},
+    {"from": "brand gifts tab", "to": "pages/gifts/index", "status": "passed"},
+    {"from": "brand study tab", "to": "pages/study/index", "status": "passed"},
+    {"from": "brand mine tab", "to": "pages/mine/index", "status": "passed"},
+    {"from": "brand home tab", "to": "pages/index/index", "status": "passed"}
+  ],
+  "automationLimit": "Official automator could not select the reused navigation custom component; CUA actual clicks were used instead. Earlier route timing assertions were not product defects."
+}

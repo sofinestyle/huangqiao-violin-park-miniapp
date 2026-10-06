@@ -1,0 +1,11 @@
+YorRay 品牌页首屏效果图 V5
+范围：按用户要求移除 V4 后方背面提琴，仅保留正面提琴；未修改小程序，保留既有版本。
+方式：Codex 内置 imagegen 局部编辑；生成结果原样保存。
+输入：品牌页首屏效果图_V4.png
+输出：品牌页首屏效果图_V5.png
+目视核查：后方提琴已移除，原遮挡区域补全为墙面和深色织物；保留正面提琴、窗边场景、乐谱、松香及标题排版。生成编辑不代表逐像素无损。
+
+提示词：
+Use case: precise-object-edit. Edit this supplied mobile brand-page image with ONLY ONE change: completely remove the REAR, BACK-FACING violin on the LEFT behind the front violin. Remove all of that rear instrument: its scroll, tuning pegs, pale neck, figured maple back, ribs, and any rear-instrument-only support. Seamlessly reconstruct the previously occluded dim historic room, walnut wall paneling, blurred chair and dark cloth on the table, consistent with the surrounding background, window lighting and depth of field. The final image must contain EXACTLY ONE violin: the existing FRONT-FACING violin on the RIGHT.
+
+Strict invariants: keep the front-facing violin at its exact original location, scale, angle, shape, with the same scroll, pegs, strings, bridge, f-holes, grain, amber varnish sheen, chinrest, tailpiece, gold fitting and support. Do not reposition, enlarge or redesign the remaining instrument. Preserve the entire surrounding composition, tall window at right, outdoors bokeh, cinematic warm low-key illumination, wall, table, sheet music, rosin in its open box, dark cloth, all UI typography and positioning, precise white YorRay script logo, Chinese title "以诗入琴", small "瑜瑞 · YorRay", top right mini-program capsule and lower left arrow. Keep the same portrait aspect ratio, crop and resolution. No new objects or text, no added instrument, no collateral retouching, no global color or brightness changes. Result is the same refined cinematic screen with only the rear violin removed.

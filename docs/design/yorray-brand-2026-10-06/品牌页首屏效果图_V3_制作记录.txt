@@ -1,0 +1,30 @@
+YorRay 品牌页首屏视觉探索 V3
+日期：2026-10-06
+范围：仅制作效果图；未修改小程序，保留 V1、V2。
+方式：Codex 内置 imagegen，输出原样保存。
+文件：品牌页首屏效果图_V3.png
+参考原件：/Users/aaron/Desktop/抖音宣传视频/产品照片/电商图2.jpg（正面）；电商图3.jpg（背面）；项目 images/yorray-logo.png（标志）。原件未编辑。
+用户要求：突出提琴高雅、高贵感，突出光泽和纹理，重新设计场景，标题替换宋体。
+设计响应：石质展台与中性灰艺术展陈空间；正面提琴为主体，背板纹理作为下方细节图；现代黑体主标题和正文。
+核查：已目视检查主标题、品牌名及文化引语；字体为无衬线方向，主琴与参考主要轮廓和配件一致。AI 生成素材不属于逐像素保真的商品实拍，正式使用前需校对产品细节和标志。
+本图为设计方向，非小程序运行截图；未执行原生适配或交互验证。
+
+生成提示词：
+Use case: ui-mockup, reference-based product compositing.
+Create ONE premium mobile brand-page visual for YorRay, portrait approximately 9:19.5, high resolution, flat screen edge to edge, no device frame, no side-by-side variants, no annotations. This is a NEW V3 design direction emphasizing nobility, elegance, beautiful real violin varnish and wood grain in a contemporary fine-art exhibition setting.
+
+INPUTS: Image 1 is the actual product FRONT photograph. Preserve this specific violin faithfully: outline, narrow waist, antique amber-brown color, fine vertical spruce grain, dark fingerboard, four strings, bridge, f holes, brown asymmetrical chinrest, dark wooden tailpiece and small gold fitting. Do not substitute a generic violin. Image 2 is the BACK photograph of the same product: use ONLY for the lower back-detail image, preserving the distinctive wavy transverse maple grain and amber shading. Do NOT transfer its tiger stripes to the front spruce surface. Image 3 is the official WHITE TRANSPARENT YorRay logo: preserve script and underline flourish as given; the background is transparent, do not put it on a red rectangle.
+
+NEW SCENE AND DIRECTION:
+An exquisite contemporary instrument gallery / private fine-art exhibition. One austere pale honed limestone display plinth, a seamless spacious gallery background in muted neutral graphite and soft warm stone-gray. An architectural broad wash of soft light on the background wall gives depth, no decorative moldings. Color impression elegant smoke-gray, parchment and luminous amber wood, distinctly NOT brown workshop photography. No wooden workbench, tools, shavings, windows, amber sunset, velvet, chandelier, curtains, gold decorations, fake museum plaques, smoke or fog. Do not make a generic luxury palace.
+Hero occupies upper 82% of screen. The actual front-view violin from image 1 is displayed upright, almost frontal with only a subtle natural tilt, entirely visible including scroll and bottom, on a discreet practically invisible support above the pale stone plinth. Position at center-right and below headline. Hero violin large and substantial, spanning about 55% of total image height and 52% of width; scroll starts below headline area. Keep true slender reference silhouette. Tiny support can be visible if necessary for credible physical support, never let violin float.
+Product photography is exceptional: a broad softbox-style reflection wraps gently across the varnished arching to visibly communicate satin-gloss depth and luster; thin rim highlights define the edges, transparent varnish reveals the original fine grain, clear light/dark modeling. Retain amber-brown natural color, no overly orange saturation, no blown-out white highlights erasing the grain, no plastic or metallic sheen. Crisp photographic wood details. Show real subtle reflection on varnish, not artificial starbursts. Use professional cross-lighting and fill so dark fittings remain legible. Plinth and background must be subordinate.
+
+UI AND TYPOGRAPHY:
+Small original white YorRay logo at upper left, width approximately 22% of screen, ample 8% page margins. A subtle white mini-program capsule at upper right, simple ellipsis and circle, no phone status bar.
+Main heading exactly "以诗入琴" in one line at upper left below the logo, at about 17% screen height. CRITICAL: use MODERN CHINESE SANS-SERIF / HEITI, like clean PingFang SC Medium, regular geometric stroke width, confident medium weight, NO Songti, NO Ming, NO serifs, NO brush calligraphy, NO overly thin strokes, NO compressed block letters. Spacious yet restrained tracking. Ivory-white letters, about 40px at a logical width of390px. Sufficient empty space around heading. Beneath it small "瑜瑞 · YorRay" in clean regular sans serif. No other hero marketing text or subhead. Typography and subject must not overlap. Tiny understated downward arrow near lower left of hero.
+
+LOWER 18%:
+A flat warm ivory editorial section with no border, shadow or rounded card. Left 54% generous padding: small sans serif label "品牌文化", then exact sentence "名字是世界上最短的诗。" split naturally across two lines, modern Chinese SANS-SERIF medium, not serif. Right 46% an exquisitely lit macro photograph of the BACK of the violin taken from image 2, filling that area with the authentic amber figured maple grain, graceful curved edge and controlled varnish highlight. It is clearly a separate detail of the same instrument, not a second violin in the gallery. No title over the wood. Maintain strong readable contrast and editorial quietness.
+
+Only the specified text; no claims about instrument age, provenance, price or quality certification. Deliver one coherent, exceptionally clean brand page mockup. Product identity and accurate Chinese text take priority.

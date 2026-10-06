@@ -2,7 +2,6 @@
 <view class="home">
   <view class="home-brand">
     <image class="home-logo" src="/assets/yorray-logo.png" mode="aspectFit"/>
-    <text class="home-brand-name">黄桥琴旅</text>
   </view>
   <template is="state" data="{{loading,error}}"/>
   <block wx:if="{{site}}">

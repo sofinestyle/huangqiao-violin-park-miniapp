@@ -1,0 +1,12 @@
+[
+  {
+    "file": "miniprogram/miniprogram/assets/brand/hero.jpg",
+    "bytes": 330589,
+    "sha256": "2eeb7928edc12aa5860b718416e780702a427713d6ecdbfdc2035ecfcc4d4ab0"
+  },
+  {
+    "file": "miniprogram/miniprogram/assets/brand/company-reference.jpg",
+    "bytes": 353371,
+    "sha256": "e24d8789352c822c9edbffba6b6c388ce58b1ac97de6f0a68b0507fff1729e2c"
+  }
+]

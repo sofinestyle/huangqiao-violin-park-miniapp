@@ -1,0 +1,60 @@
+日期：2026-10-06
+确认依据：用户确认上一轮第二屏双语文化、第三屏单图企业介绍方案，并要求生成效果图。
+产物：品牌页第二屏_中英文文化_V2.png；品牌页第三屏_企业介绍_V2.png。
+方式：内置 imagegen；新图片原样保存。首屏V5原文件保持，早期后续两张图保留。
+连续审阅：更新品牌页连续效果图_首屏V5及后续.html；更新前审阅HTML归档为品牌页连续效果图_后续初版归档.html。
+第二屏：取消全部摄影；加入附件英文；保留中文命名叙事、瑜瑞释义和结尾三句；缩小释义字、通过双语组织内容。
+第三屏：采用P1-2.jpg下方平视建筑照片为参考；仅一张建筑图片，边距留白；保留企业全称与完整介绍；无查看乐器/联系咨询按钮。
+文案目视检查：两屏中文与基准一致；第二屏对应英文沿用附件，没有把润色稿伪装为原文。公司介绍全称作标题，正文信息完整。
+范围核查：190份受保护文件与既有基准摘要一致；25份原件大小与SHA-256校验通过；审阅HTML引用的三张图片均存在。
+限制：AI效果稿，不是原生小程序页面；建筑与品牌素材正式使用仍需核对原片。未执行原生编译、真机及交互测试，未修改小程序。
+
+第二屏提示词：
+Create ONE refined mobile brand-page SECOND SECTION mockup, a tall portrait editorial reading page approximately 9:21.5, high-resolution crisp typography. This is the revised bilingual culture section of YorRay, continuing after a cinematic walnut-toned first screen. The supplied reference contains source bilingual copy, NOT the desired layout. Do not imitate the centered brochure. Do not include its building, logo or blue heading.
+
+CRITICAL DESIGN: absolutely NO photographs, violin, musical score, window, illustrations, card boxes, giant decorative characters, nav, phone hardware, buttons or footer actions. Solid uniform warm ivory #F5F0E7 background. All text deep walnut #3C2B24, secondary English restrained readable taupe #6B5B4E. Modern Chinese HEITI sans serif throughout, English clean sans serif. No Songti, Ming, brush or serif. Balanced small-to-medium editorial typography, content-rich but breathable. User rejected huge headings and empty page: substantially REDUCE heading and glyph size, let bilingual content occupy the page naturally. Consistent left alignment and 7% side margins. At390px logical width, section label14px, main quote23px medium, body15px regular, English13px regular, meaning glyphs34px medium. English only slightly smaller than Chinese, legible. No overbold heavy display lettering.
+
+TOP: understated label "品牌文化" and immediately below small uppercase "BRAND CULTURE". Gentle 24px-like gap before main opening block.
+OPENING block: exact Chinese heading "名字是世界上最短的诗。" on at most TWO balanced lines, and immediately below its English:
+"A name is the shortest poem in the world."
+NARRATIVE block, after moderate gap, Chinese first as a compact paragraph with natural line wrapping:
+"当人们开始为万物命名，日月星辰，山川湖海，从此世界有了模样、想象有了形状。"
+Then the exact original English as ONE grouped paragraph, not interleaved sentence-by-sentence:
+"When people began to name everything, the sun, moon, stars, mountains, rivers, lakes, and oceans,"
+"The world then took shape, and imaginations had form."
+Keep both English sentences, naturally wrapped. Don't enlarge text to fill space.
+
+MEANINGS block: two modest vertical open rows, no boxes. Left narrow column "瑜" in34px logical modern sans, right column "玉之光彩也。" in16px and under it "Yu represents the luster of jade." in13px. Next row left "瑞", right "以玉为信也。" with English "Rui represents jade as a token of trust." Glyphs and explanatory text form compact units with comfortable row spacing, not enormous glyphs.
+
+CLOSING POEM: separated by a short very fine quiet walnut rule or extra modest whitespace, left aligned. Chinese as three lines, only17-18px logical medium, clearly subordinate to opening title:
+"以诗入琴，"
+"万物有了雅称，"
+"世界便有了美的意义。"
+Below it the following original English grouped in one paragraph with readable wrapping, preserve exact wording (do not silently correct source grammar):
+"Integrating poetry with musical instrument,"
+"Everything has an elegant name,"
+"And the world is filled with the meaning of beauty."
+
+Include all text verbatim, correctly spelled, no omissions, no duplicate headings or body. The relative size of all letters must look appropriate for a readable actual mobile page, not an oversized advertising poster. Set paragraph grouping and vertical rhythm with 6-8px-like Chinese-English gap,24-30px-like gaps between groups, moderate top/bottom padding. End plain warm ivory. Entire cultural narrative and poem must fit, allowing this scroll segment to be longer if needed. Render only the finished flat bilingual page image.
+
+第三屏提示词：
+Create ONE refined mobile brand-page THIRD SECTION / ENDING mockup. Flat portrait approximately9:18, high-resolution, no device frame. It follows the bilingual cultural section. Reference1 is the original bilingual brochure: use ONLY its LOWER EXTERIOR PHOTOGRAPH as the photo source. Reference2 is the newly approved-direction culture layout: MATCH its solid warm ivory background, dark walnut modern Chinese sans-serif, clean English sans-serif, consistent left alignment, understated editorial rhythm. Do NOT copy its text into this section.
+
+This page must have EXACTLY ONE photograph: the REAL eye-level exterior from the lower half of reference1, showing the curved classical arcade facade, central recessed glass entrance and foreground plaza. Faithfully preserve the actual building's architecture, windows, roof, proportions, camera perspective and site layout. Do not use aerial view, do not invent a replacement building or facade. Show the curved building in one coherent photo, with less excess empty pavement and enough sky to breathe. Gentle subdued color, natural daylight, not artificially sepia or sunset. This is a reference-based visual, not grounds to alter architectural facts. No violin, indoor image, sheet music, rosin or second photograph anywhere.
+
+LAYOUT in order:
+1. Top solid warm ivory #F5F0E7 background, 7% side margins and about36px logical top padding. Medium-size Chinese heading "品牌与企业" about23px at390px logical width, medium weight modern HEITI sans-serif, NOT oversized or bold black. Immediately below small uppercase English "BRAND & COMPANY" about12px in readable warm taupe. This small heading group introduces the change of topic before the image.
+2. After about24px logical gap, the single exterior photo in a3:2 horizontal rectangular window. LEFT AND RIGHT IVORY MARGINS retained, aligned to the text grid. No full-bleed photo, no rounded corners, border, shadow or text overlay. Building arcades and central entry remain visible, no distortion.
+3. About28px logical below photo, small dark taupe label "运营主体".
+4. About10px logical below label, complete company name, modern sans-serif MEDIUM, about19-20px logical, naturally wrap to two or three lines:
+"江苏黄桥乐器文化产业园"
+"投资发展有限公司"
+Keep all characters exactly. Company name should look modest and clear, not a gigantic corporate poster.
+5. About20px logical gap then full introduction in15-16px logical modern Chinese sans-serif REGULAR, dark walnut #3C2B24,1.8 line-height, comfortable ragged-right wrapping:
+"深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。"
+Normal paragraph gap, then:
+"从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+Preserve both complete paragraphs. The company name in the heading plus body conveys all existing company introduction; don't repeat company name in body, don't abbreviate or rewrite wording.
+6. End with modest32-40px logical ivory breathing room. NO buttons, links, CTAs, "查看乐器", "联系咨询", arrows, logo, copyright, phone or QR code, no invented claims.
+
+All content should naturally fit; avoid huge vacant areas or overscaled type. This is one calm editorial chapter ending, with harmonious image/text balance, same small-to-medium typography system as the previous bilingual page. No Songti/Ming/serif/brush characters; no cards or decorative widgets. Exact Chinese text and faithful reference building are essential. Only output the finished single portrait mockup.

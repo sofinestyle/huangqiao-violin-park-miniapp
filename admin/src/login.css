@@ -1,0 +1,238 @@
+/* Reference-led login presentation; all rules remain local to this page. */
+.login.login--refined {
+  --login-surface: #faf8f4;
+  --login-wood: #3c2b24;
+  --login-muted: #665e55;
+  --login-border: #8b8176;
+  --login-focus: #765637;
+  min-height: 100vh;
+  min-height: 100svh;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background: var(--login-surface);
+}
+
+.login--refined .login-brand {
+  position: relative;
+  min-width: 0;
+  min-height: 760px;
+  padding: clamp(56px, 8vh, 96px) clamp(40px, 7vw, 112px) 52px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #251a12 url('./assets/login-luthier-v3.png') center center / cover no-repeat;
+  isolation: isolate;
+}
+
+.login--refined .login-brand::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgb(17 12 8 / 48%), rgb(17 12 8 / 16%) 70%, transparent);
+}
+
+.login--refined .login-brand img {
+  display: block;
+  width: 144px;
+  height: 72px;
+  margin-bottom: 24px;
+  object-fit: contain;
+}
+
+.login--refined .login-brand h1 {
+  margin: 0 0 14px;
+  color: #fff9ec;
+  font-size: clamp(28px, 2.45vw, 39px);
+  line-height: 1.5;
+  font-weight: 600;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  text-shadow: 0 1px 5px rgb(0 0 0 / 30%);
+}
+
+.login--refined .login-brand h1::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 1px;
+  margin-bottom: 28px;
+  background: #d4c4a4;
+}
+
+.login--refined .login-brand p { margin: 0; color: #fff9ec; }
+.login--refined .login-brand .login-brand-motto {
+  font-family: 'Songti SC', STSong, serif;
+  font-size: 18px;
+  letter-spacing: .2em;
+  line-height: 1.9;
+}
+.login--refined .login-brand .login-brand-services {
+  margin-top: 36px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.login--refined .login-brand .login-brand-signature {
+  margin-top: 240px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11px;
+  letter-spacing: .18em;
+  line-height: 1.8;
+}
+.login--refined .login-brand-signature::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: #d4c4a4;
+  margin-bottom: 12px;
+}
+
+.login--refined .login-panel {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px clamp(36px, 5vw, 80px) 48px;
+  isolation: isolate;
+  overflow: hidden;
+}
+.login--refined .login-panel-caption {
+  margin: 0 0 56px;
+  text-align: right;
+  color: var(--login-muted);
+  font-size: 12px;
+  letter-spacing: .12em;
+  line-height: 1.8;
+}
+.login--refined .login-form {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 512px;
+  min-width: 0;
+  padding: 0;
+  margin: auto;
+}
+.login--refined .login-form h2 {
+  margin: 0 0 10px;
+  font-family: 'Songti SC', STSong, serif;
+  font-size: clamp(30px, 2.7vw, 42px);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .05em;
+  color: var(--login-wood);
+}
+.login--refined .login-form > p {
+  margin-bottom: 44px;
+  color: var(--login-muted);
+  font-size: 16px;
+  letter-spacing: .06em;
+}
+.login--refined .field { position: relative; margin-bottom: 16px; }
+/* Keep real labels for assistive technology; placeholders match the reference. */
+.login--refined .field > span:first-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.login--refined .login-input-shell { position: relative; display: block; }
+.login--refined .login-input-shell > svg {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  color: var(--login-muted);
+  pointer-events: none;
+}
+.login--refined input {
+  min-height: 58px;
+  padding: 16px 18px 16px 56px;
+  border: 1px solid var(--login-border);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--login-wood);
+  background: rgb(255 255 255 / 65%);
+}
+.login--refined input::placeholder { color: var(--login-muted); opacity: 1; }
+.login--refined button.full {
+  position: relative;
+  margin-top: 24px;
+  min-height: 64px;
+  padding: 16px 56px;
+  border: 1px solid #5a3f2d;
+  border-radius: 10px;
+  background: #5a3f2d;
+  color: #fff;
+  font-family: 'Songti SC', STSong, serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  box-shadow: 0 8px 20px rgb(60 43 36 / 10%);
+}
+.login--refined button.full > svg { position: absolute; right: 24px; }
+.login--refined input:focus-visible,
+.login--refined button:focus-visible { outline: 3px solid var(--login-focus); outline-offset: 3px; }
+.login--refined .login-form > small {
+  margin-top: 24px;
+  color: var(--login-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.login--refined .error { overflow-wrap: anywhere; }
+.login--refined .login-panel-watermark {
+  position: relative;
+  height: 112px;
+  flex-shrink: 0;
+  margin-top: 48px;
+  pointer-events: none;
+  user-select: none;
+}
+.login--refined .login-panel-watermark > svg {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  right: -95px;
+  bottom: -100px;
+  color: #eee8df;
+  z-index: -1;
+}
+.login--refined .login-panel-watermark p {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  font: 11px/1.8 Georgia, 'Times New Roman', serif;
+  letter-spacing: .18em;
+  color: #8a7968;
+}
+.login--refined .login-panel-watermark p::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin: 0 0 12px auto;
+  background: currentColor;
+}
+@media (max-width: 899px) {
+  .login.login--refined { grid-template-columns: minmax(0, 1fr); }
+  .login--refined .login-brand { min-height: 500px; padding: 40px 32px; background-position: center 58%; }
+  .login--refined .login-brand::before { background: rgb(17 12 8 / 62%); }
+  .login--refined .login-brand h1 { font-size: 30px; }
+  .login--refined .login-brand .login-brand-signature { margin-top: 60px; }
+  .login--refined .login-panel { padding: 28px 32px 32px; }
+  .login--refined .login-panel-caption { margin-bottom: 36px; }
+  .login--refined .login-form h2 { font-size: 30px; }
+  .login--refined .login-panel-watermark { height: 72px; margin-top: 28px; }
+}
+@media (max-width: 400px) {
+  .login--refined .login-brand { padding: 32px 24px; }
+  .login--refined .login-brand h1 { font-size: 27px; }
+  .login--refined .login-brand .login-brand-motto { font-size: 16px; letter-spacing: .08em; }
+  .login--refined .login-panel { padding-inline: 24px; }
+}

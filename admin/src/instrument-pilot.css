@@ -1,0 +1,88 @@
+/* Approved instrument pilot only. Shared navigation and other content views are unchanged. */
+.instrument-pilot {
+  --pilot-text: #302821;
+  --pilot-muted: #665e55;
+  --pilot-wood: #3c2b24;
+  --pilot-link: #765637;
+  --pilot-line: #e1d8cc;
+  --pilot-control: #8b8176;
+  --pilot-soft: #f7f4ee;
+  color: var(--pilot-text);
+  min-width: 0;
+}
+.main:has(.instrument-pilot) { padding: 24px; }
+.main:has(.instrument-pilot) > .page-heading h1 { font-family: inherit; font-size: 24px; }
+.main:has(.instrument-pilot .drawer) { padding-right: 544px; }
+.instrument-pilot .tabs { gap: 24px; margin-bottom: 24px; border-color: var(--pilot-line); }
+.instrument-pilot .tabs button { color: var(--pilot-muted); padding: 8px 4px 12px; }
+.instrument-pilot .tabs button.active { color: var(--pilot-wood); border-bottom: 3px solid var(--pilot-wood); }
+.instrument-pilot .toolbar { gap: 12px; }
+.instrument-pilot .search-input { flex: 1 1 200px; width: auto; min-width: 0; }
+.instrument-pilot button { background: var(--pilot-wood); border-color: var(--pilot-wood); min-height: 42px; }
+.instrument-pilot .secondary { color: var(--pilot-wood); background: white; border-color: var(--pilot-control); }
+.instrument-pilot .text-button, .instrument-pilot .icon-button { background: transparent; color: var(--pilot-link); }
+.instrument-pilot .icon-button { min-width: 42px; flex-shrink: 0; }
+.instrument-pilot .tabs button { background: transparent; }
+.instrument-pilot button:hover { filter: none; box-shadow: inset 0 0 0 1px currentColor; }
+.instrument-pilot button:disabled { box-shadow: none; }
+.instrument-pilot :is(button,input,select,textarea,.table-region):focus-visible { outline: 3px solid var(--pilot-link); outline-offset: 2px; }
+.instrument-pilot :is(input,select,textarea) { border-color: var(--pilot-control); min-width: 0; }
+.instrument-pilot input[type=checkbox] { min-height: 18px; accent-color: var(--pilot-wood); }
+.instrument-pilot :is(small,.muted,.empty,.loading) { color: var(--pilot-muted); font-size: 13px; }
+.instrument-pilot .table-region { border-color: var(--pilot-line); border-radius: 8px; min-height: 360px; scroll-padding-inline: 16px 144px; }
+.instrument-pilot table { min-width: 760px; table-layout: fixed; font-size: 14px; }
+.instrument-pilot :is(th,td) { padding: 12px; max-width: none; border-bottom-color: var(--pilot-line); }
+.instrument-pilot th { font-weight: 600; color: var(--pilot-muted); background: #f0ebe3; border-left: 0; }
+.instrument-pilot th:nth-child(1), .instrument-pilot td:nth-child(1) { width: 80px; min-width: 80px; }
+.instrument-pilot th:nth-child(2) { width: 280px; }
+.instrument-pilot th:nth-child(3), .instrument-pilot th:nth-child(4) { width: 100px; }
+.instrument-pilot th:nth-child(5) { width: 72px; }
+.instrument-pilot th:nth-child(6) { width: 128px; }
+.instrument-pilot :is(th,td):last-child { position: sticky; right: 0; border-left: 1px solid var(--pilot-line); background: white; }
+.instrument-pilot th:last-child { background: #f0ebe3; }
+.instrument-pilot td:last-child button { white-space: nowrap; padding: 4px 8px; }
+.instrument-pilot tbody tr:hover td { background: #faf8f4; }
+.instrument-pilot .instrument-name { display: block; font-weight: 600; line-height: 1.6; margin-bottom: 4px; }
+.instrument-pilot td small { overflow-wrap: anywhere; }
+.instrument-pilot .thumbnail { display: block; width: 56px; height: 56px; border-radius: 4px; object-fit: cover; }
+.instrument-pilot .status { font-size: 13px; color: var(--pilot-muted); background: #f0ebe3; }
+.instrument-pilot .status.published { color: #315f43; background: #eaf3ed; }
+.instrument-pilot .status.archived { color: #8d3e32; background: #fbeeea; }
+.instrument-pilot .drawer { width: 520px; padding: 0; display: flex; flex-direction: column; overflow: hidden; box-shadow: none; border-color: var(--pilot-line); }
+.instrument-pilot .drawer-heading { flex-shrink: 0; align-items: flex-start; gap: 16px; padding: 20px 24px 16px; margin: 0; border-bottom: 1px solid var(--pilot-line); }
+.instrument-pilot .drawer-context { min-width: 0; }
+.instrument-pilot .drawer-heading h2 { font-family: inherit; font-size: 18px; }
+.instrument-pilot .drawer-context p { margin: 4px 0 0; font-size: 14px; color: var(--pilot-muted); overflow-wrap: anywhere; }
+.instrument-pilot .instrument-form { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.instrument-pilot .instrument-form-body { overflow-y: auto; overflow-x: hidden; min-height: 0; padding: 24px; scroll-padding-block: 16px; }
+.instrument-pilot .instrument-form-footer { flex-shrink: 0; padding: 16px 24px 20px; border-top: 1px solid var(--pilot-line); background: var(--pilot-soft); }
+.instrument-pilot .instrument-form-footer p { margin-bottom: 10px; }
+.instrument-pilot .field { margin-bottom: 20px; min-width: 0; }
+.instrument-pilot fieldset { min-width: 0; margin-bottom: 24px; padding: 16px; border-color: var(--pilot-line); border-radius: 8px; }
+.instrument-pilot legend { color: var(--pilot-text); font-weight: 600; padding: 0 8px; }
+.instrument-pilot .history { margin-top: 20px; padding-top: 20px; border-color: var(--pilot-line); }
+.instrument-pilot .spec-heading { font-size: 14px; color: var(--pilot-muted); margin-bottom: 16px; }
+.instrument-pilot .image-edit { align-items: center; }
+.instrument-pilot .image-edit button { flex-shrink: 0; }
+.instrument-pilot .inline-upload { border-color: var(--pilot-line); }
+.instrument-pilot .error { color: #8d3e32; background: #fbeeea; }
+.instrument-pilot .success { color: #315f43; background: #eaf3ed; }
+@media(min-width:1400px) {
+  .main:has(.instrument-pilot .drawer) { padding-right: 584px; }
+  .instrument-pilot .drawer { width: 560px; }
+}
+/* At narrow/zoomed widths keep this non-modal editor in document flow,
+   so keyboard users can still reach the list without an obscuring overlay. */
+@media(max-width:1100px) {
+  .main:has(.instrument-pilot .drawer) { padding-right: 24px; }
+  .instrument-pilot .drawer { position: relative; inset: auto; width: 100%; height: 80vh; min-height: 380px; margin-top: 24px; border: 1px solid var(--pilot-line); border-radius: 8px; }
+}
+@media(max-width:700px) {
+  .main:has(.instrument-pilot) { padding: 20px 16px; }
+  .main:has(.instrument-pilot .drawer) { padding-right: 16px; }
+  .instrument-pilot .tabs { gap: 12px; }
+  .instrument-pilot .drawer-heading, .instrument-pilot .instrument-form-body, .instrument-pilot .instrument-form-footer { padding: 16px; }
+  .instrument-pilot .pair { grid-template-columns: 1fr; gap: 0; }
+  .instrument-pilot .image-edit { flex-wrap: wrap; }
+  .instrument-pilot .image-edit select { flex-basis: 100%; }
+}

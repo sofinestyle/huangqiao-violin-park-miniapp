@@ -1,0 +1,303 @@
+{
+  "environment": "Installed Chrome driven by bundled Playwright / local standalone design HTML",
+  "checkedAt": "2026-10-06T03:44:11.287Z",
+  "scope": "Design only; no WeChat or backend requests",
+  "checks": [
+    {
+      "kind": "layout",
+      "width": 320,
+      "large": false,
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scrollWidth": 320,
+        "height": 2387,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 280,
+            "height": 48
+          },
+          {
+            "text": "联系咨询",
+            "width": 280,
+            "height": 48
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 320,
+      "large": true,
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scrollWidth": 320,
+        "height": 2615,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 280,
+            "height": 52.796875
+          },
+          {
+            "text": "联系咨询",
+            "width": 280,
+            "height": 52.796875
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 375,
+      "large": false,
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scrollWidth": 375,
+        "height": 2349,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 157.5,
+            "height": 48
+          },
+          {
+            "text": "联系咨询",
+            "width": 157.5,
+            "height": 48
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 375,
+      "large": true,
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scrollWidth": 375,
+        "height": 2663,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 327,
+            "height": 52.796875
+          },
+          {
+            "text": "联系咨询",
+            "width": 327,
+            "height": 52.796875
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 390,
+      "large": false,
+      "passed": true,
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "height": 2370,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 165,
+            "height": 48
+          },
+          {
+            "text": "联系咨询",
+            "width": 165,
+            "height": 48
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 390,
+      "large": true,
+      "passed": true,
+      "metrics": {
+        "width": 390,
+        "scrollWidth": 390,
+        "height": 2685,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 342,
+            "height": 52.796875
+          },
+          {
+            "text": "联系咨询",
+            "width": 342,
+            "height": 52.796875
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 430,
+      "large": false,
+      "passed": true,
+      "metrics": {
+        "width": 430,
+        "scrollWidth": 430,
+        "height": 2398,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 185,
+            "height": 48
+          },
+          {
+            "text": "联系咨询",
+            "width": 185,
+            "height": 48
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "layout",
+      "width": 430,
+      "large": true,
+      "passed": true,
+      "metrics": {
+        "width": 430,
+        "scrollWidth": 430,
+        "height": 2672,
+        "failed": 0,
+        "overflow": [],
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。",
+        "buttons": [
+          {
+            "text": "查看乐器",
+            "width": 382,
+            "height": 52.796875
+          },
+          {
+            "text": "联系咨询",
+            "width": 382,
+            "height": 52.796875
+          }
+        ],
+        "heading": "以诗入琴"
+      }
+    },
+    {
+      "kind": "state",
+      "state": "loading",
+      "passed": true
+    },
+    {
+      "kind": "state",
+      "state": "error",
+      "passed": true
+    },
+    {
+      "kind": "state",
+      "state": "empty",
+      "passed": true
+    },
+    {
+      "kind": "state",
+      "state": "image-error",
+      "passed": true
+    },
+    {
+      "kind": "review-controls",
+      "passed": true,
+      "width": true,
+      "stateRetry": true,
+      "large": true,
+      "actions": true
+    },
+    {
+      "kind": "review-responsive",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "kind": "review-responsive",
+      "width": 660,
+      "passed": true
+    },
+    {
+      "kind": "review-responsive",
+      "width": 900,
+      "passed": true
+    },
+    {
+      "kind": "review-responsive",
+      "width": 1100,
+      "passed": true
+    },
+    {
+      "kind": "review-responsive",
+      "width": 1400,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "contrast": [
+    {
+      "foreground": "#3C2C20",
+      "background": "#F7F3E9",
+      "ratio": 12.046126314940972,
+      "passed": true
+    },
+    {
+      "foreground": "#6C5948",
+      "background": "#F7F3E9",
+      "ratio": 5.99707879561354,
+      "passed": true
+    },
+    {
+      "foreground": "#FFFDF7",
+      "background": "#3C2B24",
+      "ratio": 13.207365207637284,
+      "passed": true
+    },
+    {
+      "foreground": "#3C2B24",
+      "background": "#EDE5D7",
+      "ratio": 10.741009078977608,
+      "passed": true
+    }
+  ]
+}

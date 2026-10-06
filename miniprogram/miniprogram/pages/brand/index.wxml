@@ -1,11 +1,45 @@
 <import src="../../templates/state.wxml"/>
 <view class="brand-page">
+  <view class="brand-bar"><image class="brand-logo" src="/assets/yorray-logo.png" mode="aspectFit" aria-label="YorRay"/></view>
   <template is="state" data="{{loading,error}}"/>
-  <block wx:if="{{site}}">
-    <view class="brand-heading"><image class="brand-logo" src="/assets/yorray-logo.png" mode="aspectFit"/><view class="brand-title">黄桥琴旅</view><view class="brand-subtitle">品牌介绍</view></view>
-    <image wx:if="{{site.images[1]}}" class="brand-photo" src="{{site.images[1]}}" mode="aspectFill"/>
-    <view class="brand-content"><view class="brand-section-title">运营主体</view><view class="brand-company"><view>江苏黄桥乐器文化产业园</view><view>投资发展有限公司</view></view><view class="brand-intro">{{site.intro}}</view></view>
-    <view class="brand-actions"><button class="brand-primary" bindtap="instruments" hover-class="brand-pressed">查看乐器</button><button class="brand-secondary" bindtap="consult" hover-class="brand-pressed">联系咨询</button></view>
+  <block wx:if="{{!loading && !error && site}}">
+    <view class="brand-hero">
+      <view class="brand-hero-media"><image wx:if="{{!heroFailed}}" class="brand-hero-photo" src="/assets/brand/hero-user-v3.jpg" mode="aspectFill" binderror="heroError" aria-label="窗边的手工提琴"/></view>
+      <view class="brand-hero-copy"><view class="brand-hero-title">以诗入琴</view><view class="brand-hero-subtitle">瑜瑞 · YorRay</view></view>
+      <button class="brand-next" bindtap="readCulture" aria-label="向下阅读品牌文化"><view class="brand-arrow"/></button>
+    </view>
+    <view id="brand-culture" class="brand-culture">
+      <view class="brand-section-label">品牌文化</view>
+      <view class="brand-section-english">BRAND CULTURE</view>
+      <view class="brand-opening">
+        <view class="brand-quote">名字是世界上<view>最短的诗。</view></view>
+        <view class="brand-quote-english">A name is the shortest poem in the world.</view>
+      </view>
+      <view class="brand-narrative">
+        <view class="brand-chinese">当人们开始为万物命名，日月星辰，山川湖海，从此世界有了模样、想象有了形状。</view>
+        <view class="brand-english">When people began to name everything, the sun, moon, stars, mountains, rivers, lakes, and oceans,<view>The world then took shape, and imaginations had form.</view></view>
+      </view>
+      <view class="brand-meanings">
+        <view class="brand-meaning"><view class="brand-glyph">瑜</view><view class="brand-meaning-copy"><view class="brand-chinese">玉之光彩也。</view><view class="brand-english">Yu represents the luster of jade.</view></view></view>
+        <view class="brand-meaning"><view class="brand-glyph">瑞</view><view class="brand-meaning-copy"><view class="brand-chinese">以玉为信也。</view><view class="brand-english">Rui represents jade as a token of trust.</view></view></view>
+      </view>
+      <view class="brand-poem">
+        <view class="brand-rule"/>
+        <view class="brand-poem-chinese"><view>以诗入琴，</view><view>万物有了雅称，</view><view>世界便有了美的意义。</view></view>
+        <view class="brand-english"><view>Integrating poetry with musical instrument,</view><view>Everything has an elegant name,</view><view>And the world is filled with the meaning of beauty.</view></view>
+      </view>
+    </view>
+    <view id="brand-company" class="brand-company-section">
+      <view class="brand-company-heading"><view class="brand-company-title">品牌与企业</view><view class="brand-section-english">BRAND & COMPANY</view></view>
+      <!-- Preserve the reference composition; expose only its photographic region. -->
+      <view class="brand-building-frame"><image wx:if="{{!buildingFailed}}" class="brand-building" src="/assets/brand/company-reference.jpg" mode="widthFix" binderror="buildingError" aria-label="园区城市客厅建筑外景"/><view wx:else class="brand-photo-error">园区图片暂时无法显示</view></view>
+      <view class="brand-company-copy">
+        <view class="brand-operator">运营主体</view>
+        <view class="brand-company-name"><view>江苏黄桥乐器文化产业园</view><view>投资发展有限公司</view></view>
+        <view class="brand-company-intro" wx:for="{{introParagraphs}}" wx:key="index">{{item}}</view>
+      </view>
+    </view>
   </block>
   <view wx:if="{{!loading && !error && !site}}" class="brand-empty">品牌资料暂未发布，请稍后再试。</view>
+  <park-navigation/>
 </view>

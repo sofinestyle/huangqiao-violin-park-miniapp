@@ -1,0 +1,19 @@
+{
+  "tool": "built-in imagegen",
+  "input": ".local/brand-check-2026-10-06/hero-clean.png",
+  "output": "miniprogram/miniprogram/assets/brand/hero-detail-v2.jpg",
+  "master": "docs/design/ui-brand-2026-10-06/revision-2/assets/hero-detail-v2.png",
+  "actualDimensions": [
+    864,
+    1821
+  ],
+  "requestedDimensions": [
+    1728,
+    3648
+  ],
+  "requestedPixelIncreaseAchieved": false,
+  "encoding": "JPEG quality 97, original dimensions",
+  "outputBytes": 450926,
+  "sha256": "7dcc2f6973a2cd874d609071f03afa72c579c93b805e8e7da57ff59937d31784",
+  "prompt": "image-prompt.txt"
+}

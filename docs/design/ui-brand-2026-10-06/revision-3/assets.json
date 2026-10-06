@@ -1,0 +1,13 @@
+{
+  "source": "/Users/aaron/Desktop/download.png",
+  "archive": "docs/design/ui-brand-2026-10-06/revision-3/assets/user-background.png",
+  "sourceSha256": "faaab3111b8c623203d2cf0ce98a3aa79fd76501b884e416ff1ce5072a63c22f",
+  "display": "miniprogram/miniprogram/assets/brand/hero-user-v3.jpg",
+  "displaySha256": "b8d2c8d447b90c1b4e86835c993642b830d0c00d510250acf6a34e4ec70fc748",
+  "dimensions": [
+    863,
+    1822
+  ],
+  "processing": "sips JPEG quality 100; no resize, retouch, crop or AI generation; original PNG preserved",
+  "displayBytes": 1516765
+}
