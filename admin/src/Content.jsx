@@ -4,17 +4,37 @@ import {Drawer,Field,ErrorBox,Empty,Loading,useRemote} from './ui';
 import {CONTENT_KINDS,INSTRUMENT_CATEGORIES,PRODUCT_CATEGORIES} from '../../shared/status.mjs';
 import MediaUpload from './MediaUpload';
 import './instrument-pilot.css';
+import {AdminIcon} from './AdminUI';
 import {prepareVideoCover,durationText} from './video-cover.mjs';
 const views=[{key:'instrument',kind:'product',category:'instrument',name:'乐器'}, {key:'gift',kind:'product',category:'gift',name:'文创'}, ...Object.entries(CONTENT_KINDS).filter(([k])=>k!=='product').map(([key,name])=>({key,kind:key,name}))];
 const states={draft:'草稿',published:'已发布',archived:'已下架'};
-export default function Content() {
-  const [view,setView]=useState('instrument'),[q,setQ]=useState(''),[editing,setEditing]=useState(null),[error,setError]=useState('');
-  const triggerRef=useRef(null);
-  const pilot=view==='instrument', Container=pilot?'section':React.Fragment;
+function createDraft(view) {
+  const kind=views.find(v=>v.key===view).kind;
+  return {kind,name:'',state:'draft',sort:0,isTest:true,...(kind==='product'?{category:view==='gift'?'gift':'violin',priceMode:'inquiry',specs:[]}:{}),...(kind==='lesson'?{type:'article'}:{}),images:[]};
+}
+export default function Content({initialView='instrument',createOnOpen=false}) {
+  const [view,setView]=useState(initialView),[q,setQ]=useState(''),[editing,setEditing]=useState(()=>createOnOpen?createDraft(initialView):null),[error,setError]=useState('');
+  const triggerRef=useRef(null),createButtonRef=useRef(null);
+  const pilot=view==='instrument';
   const current=views.find(v=>v.key===view),kind=current.kind;
   const remote=useRemote(`content?${new URLSearchParams({kind,q,...(current.category?{category:current.category}:{})})}`);
   const edit=async item=>{try{setEditing(await api(`content/${item.id}`));}catch(e){setError(e.message);}};
-  return <Container {...(pilot?{className:'instrument-pilot',onClickCapture:e=>{const button=e.target.closest('button');if(button?.hasAttribute('data-editor-trigger'))triggerRef.current=button;}}:{})}><div className="tabs">{views.map(({key,name})=><button key={key} aria-pressed={pilot?view===key:undefined} className={view===key?'active':''} onClick={()=>{setView(key);setQ('');setEditing(null);setError('');}}>{name}</button>)}</div><div className="toolbar"><input className="search-input" aria-label="搜索内容" placeholder="检索名称、编码或系列" value={q} onChange={e=>setQ(e.target.value)}/><button data-editor-trigger={pilot || undefined} data-editor-key={pilot?'new':undefined} disabled={kind==='site' && !!remote.data?.length} onClick={()=>setEditing({kind,name:'',state:'draft',sort:0,isTest:true,...(kind==='product'?{category:view==='gift'?'gift':'violin',priceMode:'inquiry',specs:[]}:{}),...(kind==='lesson'?{type:'article'}:{}),images:[]})}>新增内容</button><button className="secondary" onClick={remote.refresh}>刷新</button></div><ErrorBox error={error || remote.error}/><Loading loading={remote.loading}/><div className="table-region" {...(pilot?{tabIndex:0,role:"region","aria-label":"乐器列表，可横向滚动查看全部列"}:{})}><table><thead><tr><th>封面</th><th>名称 / 编码</th><th>分类</th><th>状态</th><th>排序</th><th>操作</th></tr></thead><tbody>{remote.data?.map(c=><tr key={c.id}><td>{c.images?.[0]?<img className="thumbnail" src={c.images[0].startsWith('/api/media/')?c.images[0].replace('/api/media/','/api/admin/media/')+'/file':c.images[0]} alt=""/>:<span className="muted">未设置</span>}</td><td>{pilot?<strong className="instrument-name">{c.name}</strong>:c.name}<small>{c.code || c.id}</small></td><td>{PRODUCT_CATEGORIES[c.category] || c.category || c.type || '—'}</td><td><span className={`status ${c.state}`}>{states[c.state]}</span></td><td>{c.sort}</td><td><button className="text-button" data-editor-trigger={pilot || undefined} data-editor-key={pilot?c.id:undefined} aria-label={pilot?`维护 / 预览：${c.name}`:undefined} onClick={()=>edit(c)}>维护 / 预览</button></td></tr>)}</tbody></table>{!remote.loading && !remote.data?.length?<Empty>暂无内容，可新增草稿</Empty>:null}</div>{editing?<ContentEditor key={editing.id || `${view}-new`} value={editing} pilot={pilot} returnFocusTo={triggerRef.current} onClose={()=>setEditing(null)} onSaved={()=>{setEditing(null);remote.refresh();}}/>:null}</Container>;
+  const create=()=>setEditing(createDraft(view));
+  const close=()=>{setEditing(null);if(pilot && !triggerRef.current)queueMicrotask(()=>createButtonRef.current?.focus());};
+  return <section className={`admin-content ${pilot?'instrument-pilot':''}`} onClickCapture={e=>{const button=e.target.closest('button');if(pilot && button?.hasAttribute('data-editor-trigger'))triggerRef.current=button;}}>
+    <div className="admin-content-header"><div><h1>内容维护</h1><p>管理小程序中的乐器、文创、研学和教学内容</p></div><button ref={createButtonRef} data-editor-trigger={pilot || undefined} data-editor-key={pilot?'new':undefined} disabled={kind==='site' && !!remote.data?.length} onClick={create}><AdminIcon name="plus" size={18}/>新增{current.name}</button></div>
+    <div className="tabs" role="group" aria-label="内容类别">{views.map(({key,name})=><button key={key} aria-pressed={view===key} className={view===key?'active':''} onClick={()=>{setView(key);setQ('');setEditing(null);setError('');}}>{name}</button>)}</div>
+    <div className="toolbar admin-content-toolbar"><label className="admin-search"><AdminIcon name="search" size={19}/><input className="search-input" aria-label="搜索内容" placeholder="检索名称、编码或系列" value={q} onChange={e=>setQ(e.target.value)}/></label><button className="secondary admin-refresh" onClick={remote.refresh} title="刷新内容列表" aria-label="刷新内容列表"><AdminIcon name="refresh" size={18}/><span>刷新</span></button></div>
+    <ErrorBox error={error || remote.error}/>{remote.error?<button className="secondary admin-retry" onClick={remote.refresh}>重新加载内容</button>:null}<Loading loading={remote.loading}/>
+    {pilot?<div className="admin-list-heading"><h2>乐器</h2><span>{remote.loading?'正在读取':remote.error?'读取失败':`${remote.data?.length ?? 0} 条${q?'检索结果':'记录'}`}</span></div>:null}
+    <div className="table-region" aria-busy={remote.loading} {...(pilot?{tabIndex:0,role:'region','aria-label':'乐器列表，可横向滚动查看全部列'}:{})}>
+      {!remote.loading && !remote.error && !remote.data?.length && pilot?<div className="admin-empty"><AdminIcon name="instrument" size={28}/><h2>{q?'暂无匹配的乐器内容':'暂无乐器内容'}</h2><p>{q?'请调整名称、编码或系列后检索。':'可先新增草稿，维护完成后再发布。'}</p>{q?<button className="secondary" onClick={()=>setQ('')}>清空搜索</button>:<button data-editor-trigger data-editor-key="empty-new" onClick={create}><AdminIcon name="plus" size={16}/>新增乐器</button>}</div>:<>
+        <table><thead><tr><th>封面</th><th>名称 / 编码</th><th>分类</th><th>状态</th><th>排序</th><th>操作</th></tr></thead><tbody>{remote.data?.map(c=><tr key={c.id}><td>{c.images?.[0]?<img className="thumbnail" src={c.images[0].startsWith('/api/media/')?c.images[0].replace('/api/media/','/api/admin/media/')+'/file':c.images[0]} alt=""/>:<span className="muted">未设置</span>}</td><td>{pilot?<strong className="instrument-name">{c.name}</strong>:c.name}<small>{c.code || c.id}</small></td><td>{PRODUCT_CATEGORIES[c.category] || c.category || c.type || '—'}</td><td><span className={`status ${c.state}`}>{states[c.state]}</span></td><td>{c.sort}</td><td><button className="text-button" data-editor-trigger={pilot || undefined} data-editor-key={pilot?c.id:undefined} aria-label={pilot?`维护 / 预览：${c.name}`:undefined} onClick={()=>edit(c)}>维护 / 预览</button></td></tr>)}</tbody></table>
+        {!remote.loading && !remote.error && !remote.data?.length && !pilot?<Empty>暂无内容，可新增草稿</Empty>:null}
+      </>}
+    </div>
+    {editing?<ContentEditor key={editing.id || `${view}-new`} value={editing} pilot={pilot} returnFocusTo={triggerRef.current} onClose={close} onSaved={()=>{setEditing(null);remote.refresh();}}/>:null}
+  </section>;
 }
 const textFields={
   site:[['heroTitle','首屏主标题'],['heroSubtitle','首屏第二行'],['intro','企业介绍'],['notice','公告'],['phone','已审核服务电话'],['address','已审核地址'],['privacy','隐私说明'],['serviceNote','服务说明']],

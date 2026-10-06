@@ -1,0 +1,18 @@
+{
+  "baseline": "73c6dd9564eb14e4a737759f2e88a7fc674871c5",
+  "changedExistingFiles": [
+    "admin/src/App.jsx",
+    "admin/src/Content.jsx",
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "docs/验收清单.md"
+  ],
+  "unchangedTrackedFiles": 1432,
+  "LoginBlock": "byte-equivalent",
+  "ContentEditor": "byte-equivalent",
+  "menuAndPermissionFilter": "identical",
+  "logoutHandler": "identical",
+  "reference": "byte-for-byte identical",
+  "frozenFiles": "PASS",
+  "whitelist": "PASS"
+}

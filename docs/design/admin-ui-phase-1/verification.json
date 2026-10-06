@@ -1,0 +1,303 @@
+{
+  "executedAt": "2026-10-06T16:30:40.904Z",
+  "browser": "Installed Chrome via bundled Playwright (Browser plugin unavailable)",
+  "checks": [
+    {
+      "name": "现有登录成功",
+      "status": "PASS",
+      "detail": "私有进程读取本地凭据，未输出或保存"
+    },
+    {
+      "name": "工作台四项数据与真实API逐项一致",
+      "status": "PASS",
+      "detail": {
+        "contentCount": 57,
+        "pendingBookings": 1,
+        "pendingConsultations": 0,
+        "todayBookings": 0
+      }
+    },
+    {
+      "name": "刷新后登录态保留",
+      "status": "PASS"
+    },
+    {
+      "name": "导航回归：场次管理",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：研学预约",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：咨询管理",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：素材库",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：账号权限",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：操作记录",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：内容维护",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "导航回归：工作台",
+      "status": "PASS",
+      "detail": "仅打开，不写入，不保存含个人资料截图"
+    },
+    {
+      "name": "工作台Metric跳转",
+      "status": "PASS"
+    },
+    {
+      "name": "真实待办汇总入口",
+      "status": "PASS"
+    },
+    {
+      "name": "快捷新增乐器、文创、教学内容",
+      "status": "PASS",
+      "detail": "打开现有表单并取消，未写入共享数据库"
+    },
+    {
+      "name": "快捷配置场次",
+      "status": "PASS"
+    },
+    {
+      "name": "六类内容Tab及新增上下文",
+      "status": "PASS"
+    },
+    {
+      "name": "真实搜索及带搜索条件刷新",
+      "status": "PASS"
+    },
+    {
+      "name": "检索无结果与清空恢复",
+      "status": "PASS"
+    },
+    {
+      "name": "维护、真实图片预览、固定抽屉区、滚动与Escape返回焦点",
+      "status": "PASS",
+      "detail": {
+        "width": 560,
+        "header": 64,
+        "footer": 900,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "新增取消与返回焦点",
+      "status": "PASS"
+    },
+    {
+      "name": "桌面布局及列表滚动 1280",
+      "status": "PASS",
+      "detail": {
+        "dashboard": {
+          "overflow": false,
+          "maxWidth": 996,
+          "metrics": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        "content": {
+          "overflow": false,
+          "rowHeight": 70,
+          "tableWidth": 994,
+          "windowScroll": true
+        }
+      }
+    },
+    {
+      "name": "桌面布局及列表滚动 1440",
+      "status": "PASS",
+      "detail": {
+        "dashboard": {
+          "overflow": false,
+          "maxWidth": 1156,
+          "metrics": [
+            147,
+            147,
+            147,
+            147
+          ]
+        },
+        "content": {
+          "overflow": false,
+          "rowHeight": 70,
+          "tableWidth": 1154,
+          "windowScroll": true
+        }
+      }
+    },
+    {
+      "name": "桌面布局及列表滚动 1728",
+      "status": "PASS",
+      "detail": {
+        "dashboard": {
+          "overflow": false,
+          "maxWidth": 1440,
+          "metrics": [
+            147,
+            147,
+            147,
+            147
+          ]
+        },
+        "content": {
+          "overflow": false,
+          "rowHeight": 70,
+          "tableWidth": 1438,
+          "windowScroll": false
+        }
+      }
+    },
+    {
+      "name": "Focus及减少动效",
+      "status": "PASS",
+      "detail": {
+        "focus": {
+          "outline": "solid",
+          "shadow": "none"
+        },
+        "motion": "0s"
+      }
+    },
+    {
+      "name": "内容真实请求失败提示及恢复",
+      "status": "PASS",
+      "detail": "隔离浏览器传输故障注入，无业务Mock"
+    },
+    {
+      "name": "Dashboard真实请求延迟Loading",
+      "status": "PASS"
+    },
+    {
+      "name": "Dashboard失败与已有请求重试",
+      "status": "PASS"
+    },
+    {
+      "name": "原退出逻辑、会话清除与菜单Escape",
+      "status": "PASS"
+    },
+    {
+      "name": "隔离真实上传、新增草稿和持久保存",
+      "status": "PASS",
+      "detail": "独立临时SQLite与uploads，真实现有API；共享数据未写入"
+    },
+    {
+      "name": "隔离维护保存及草稿、已发布、已下架状态",
+      "status": "PASS"
+    },
+    {
+      "name": "长名称、长编码和排序10000",
+      "status": "PASS",
+      "detail": {
+        "height": 101.875,
+        "operationVisible": true,
+        "codeWrap": "anywhere",
+        "sortWrap": "nowrap"
+      }
+    },
+    {
+      "name": "隔离真实空列表与新增CTA",
+      "status": "PASS"
+    },
+    {
+      "name": "原岗位权限保留：content",
+      "status": "PASS",
+      "detail": {
+        "visibleMenus": [
+          "工作台",
+          "内容维护",
+          "素材库"
+        ]
+      }
+    },
+    {
+      "name": "原岗位权限保留：reception",
+      "status": "PASS",
+      "detail": {
+        "visibleMenus": [
+          "工作台",
+          "场次管理",
+          "研学预约",
+          "咨询管理"
+        ]
+      }
+    },
+    {
+      "name": "所有实际Chrome页面无未处理运行时异常",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "06-instrument-drawer-after-1440.png",
+    "07-dashboard-after-1280.png",
+    "08-content-instruments-after-1280.png",
+    "02-dashboard-after-1440.png",
+    "03-content-instruments-after-1440.png",
+    "04-dashboard-after-1728.png",
+    "05-content-instruments-after-1728.png",
+    "01-login-after.png",
+    "09-isolated-long-text-1440.png"
+  ],
+  "errors": [],
+  "browserVersion": "154.0.8037.98",
+  "status": "PASS",
+  "contrast": [
+    {
+      "foreground": "27231F",
+      "background": "F7F7F5",
+      "ratio": 14.54
+    },
+    {
+      "foreground": "73706B",
+      "background": "FFFFFF",
+      "ratio": 4.931
+    },
+    {
+      "foreground": "73706B",
+      "background": "F7F7F5",
+      "ratio": 4.597
+    },
+    {
+      "foreground": "FFFFFF",
+      "background": "49352B",
+      "ratio": 11.492
+    },
+    {
+      "foreground": "315F43",
+      "background": "EAF3ED",
+      "ratio": 6.509
+    },
+    {
+      "foreground": "8D3E32",
+      "background": "FBEEEA",
+      "ratio": 6.458
+    },
+    {
+      "foreground": "8C6428",
+      "background": "F7EEDF",
+      "ratio": 4.599
+    }
+  ]
+}

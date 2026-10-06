@@ -1,0 +1,37 @@
+{
+  "executedAt": "2026-10-06T16:33:27.508811+00:00",
+  "build": {
+    "command": "npm run build",
+    "status": "PASS",
+    "adminModules": 38,
+    "jsBytes": 261830,
+    "cssBytes": 38500,
+    "includes": "Vite production admin build and miniprogram TypeScript"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "status": "PASS",
+    "scope": "miniprogram/tsconfig.json; JSX compiled by Vite, no independent JSX typechecker configured"
+  },
+  "tests": {
+    "command": "npm test",
+    "status": "PASS",
+    "tests": 57,
+    "passed": 57,
+    "failed": 0,
+    "environment": "local isolated fixtures, elevated local port binding after sandbox EPERM; unchanged business code"
+  },
+  "originals": {
+    "command": "python3 scripts/verify_originals.py",
+    "status": "PASS",
+    "count": 25
+  },
+  "runtime": {
+    "browser": "154.0.8037.98",
+    "checks": 35,
+    "status": "PASS",
+    "unhandledPageErrors": 0
+  },
+  "scope": "Phase 1 whitelist only",
+  "noDeployment": true
+}

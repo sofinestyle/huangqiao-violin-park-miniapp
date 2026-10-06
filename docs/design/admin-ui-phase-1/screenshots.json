@@ -1,0 +1,79 @@
+[
+  {
+    "file": "01-login-after.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "3f1bc0dfed02955575e3e9894e3ef998df3933d7a49882976d82d6d2effda88f",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "02-dashboard-after-1440.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "3c3c93fbf04b2ffa2542e4d3d0c814d3afffd984976d08b2ed6c6eb2a7d93157",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "03-content-instruments-after-1440.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "ec7c6e173f4b8173197b95644d6aaff87069d92054984743eba609aca6be8771",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "04-dashboard-after-1728.png",
+    "width": 1728,
+    "height": 1000,
+    "sha256": "7231219e8f52bf46f268447e056f5104ca9f841062c0ad5bda0ddf170195fc13",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "05-content-instruments-after-1728.png",
+    "width": 1728,
+    "height": 1000,
+    "sha256": "8fa90fba251aa951e8803e4fd80d36be6266572747e45fb098dd9092acb9dd02",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "06-instrument-drawer-after-1440.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7f014b407292b907504a2eeddd67bc402c112765ba7826bb5b9adfe570a94634",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "07-dashboard-after-1280.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "461852d9ba07e2df8091cf8a256c54ea19166a70e418fbdbc0d43c6b46e2153b",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "08-content-instruments-after-1280.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "c04d6bb1a73f90d7e3372de1de4283b6de5cbaa7b5f8e477eedf42f59174034d",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "09-isolated-long-text-1440.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "1952e1dfe537e8639b754e9cddfd4c23e4e931a552a71ff35e2be168ab834c87",
+    "source": "isolated real HTTP/SQLite fixture"
+  },
+  {
+    "file": "content-before-1440.png",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "d01214f9db1948cb689a0bd8a6afdbd9c8e413ddc0a5a6b83daa6dff0fccd68f",
+    "source": "actual local Chrome page"
+  },
+  {
+    "file": "dashboard-before-1440.png",
+    "width": 1440,
+    "height": 1000,
+    "sha256": "f9aa50e5536a283e809a07e2a65b8171f7e871c186e11fa960a1a60f4eb67d1a",
+    "source": "actual local Chrome page"
+  }
+]
