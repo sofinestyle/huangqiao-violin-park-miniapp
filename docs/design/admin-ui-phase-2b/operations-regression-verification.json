@@ -1,0 +1,204 @@
+{
+  "baseline": "2776a58824c43fb5378a5843213c836dc3aacf4e",
+  "date": "2026-10-06T17:34:05.280Z",
+  "browser": "154.0.8037.98",
+  "environment": "Temporary SQLite + original Service/HTTP + compiled admin/dist; process-private synthetic accounts; deleted after run",
+  "sharedBusinessDatabaseAffected": "NO",
+  "mockedBusinessSuccess": false,
+  "results": [
+    {
+      "name": "1440/1280/1728 list and Drawer layouts, stable action columns, genuine isolated screenshots",
+      "status": "PASS"
+    },
+    {
+      "name": "Five authorized polish points preserve full information and lightweight footer",
+      "status": "PASS"
+    },
+    {
+      "name": "All existing booking, consultation, publishing, paused and capacity status labels",
+      "status": "PASS"
+    },
+    {
+      "name": "Search, status, unassigned, enrollment and refresh keep real existing query semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard Tab, Shift+Tab, Enter, Escape and returned focus after opening/closing Drawer",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual slot POST/PUT: create draft, pause, resume, publish, archive and server capacity error",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking assignment, followup, required-note error, confirm, arrive and complete",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking rejection, cancellation, no-show and enrolled-slot restriction",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking change approve/reject and cancellation change with preserved history",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual consultation assignment, followup, close; full long content; original closed-state rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "Authorized real CSV export remains all rows and writes audit in isolated database",
+      "status": "PASS"
+    },
+    {
+      "name": "Reception/content permission boundaries, export denial and direct unauthorized reads/writes",
+      "status": "PASS"
+    },
+    {
+      "name": "All eight Sidebar pages open, preserved identity, logout and login",
+      "status": "PASS"
+    },
+    {
+      "name": "Loading/Error/refresh recovery for all three actual list endpoints without fulfilled mocks",
+      "status": "PASS"
+    },
+    {
+      "name": "Readable status contrast, visible focus, reduced motion and long text scrolling",
+      "status": "PASS"
+    },
+    {
+      "name": "Genuine empty tables after isolated fixture cleanup, no phantom records or business states",
+      "status": "PASS"
+    },
+    {
+      "name": "No runtime errors; every browser write confined to ephemeral isolated HTTP origin",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "ops-regression-05-sessions-1440.png",
+    "ops-regression-04-session-editor-1440.png",
+    "ops-regression-01-reservations-1440.png",
+    "ops-regression-02-reservation-detail-1440.png",
+    "ops-regression-06-consultations-1440.png",
+    "ops-regression-03-consultation-detail-1440.png",
+    "ops-regression-05-sessions-1280.png",
+    "ops-regression-04-session-editor-1280.png",
+    "ops-regression-01-reservations-1280.png",
+    "ops-regression-02-reservation-detail-1280.png",
+    "ops-regression-06-consultations-1280.png",
+    "ops-regression-03-consultation-detail-1280.png",
+    "ops-regression-05-sessions-1728.png",
+    "ops-regression-04-session-editor-1728.png",
+    "ops-regression-01-reservations-1728.png",
+    "ops-regression-02-reservation-detail-1728.png",
+    "ops-regression-06-consultations-1728.png",
+    "ops-regression-03-consultation-detail-1728.png"
+  ],
+  "writeRequests": [
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/slots",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/slots/93d1dec3-2bef-402c-b3aa-04be821288ba",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/93d1dec3-2bef-402c-b3aa-04be821288ba",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/93d1dec3-2bef-402c-b3aa-04be821288ba",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/93d1dec3-2bef-402c-b3aa-04be821288ba",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-3CC74570",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-A7637713",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-D94DD825",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-F6F748E6",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-5AB6B27F",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-6B554725",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-121E73BF",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-7C485CDB",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-A122F251",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-A122F251",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-A122F251",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-A122F251",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    }
+  ],
+  "knownOriginalBehavior": [
+    "Closed consultations still expose assignment/followup; original server rejects modifications.",
+    "CSV exports all authorized records regardless of UI filters."
+  ]
+}

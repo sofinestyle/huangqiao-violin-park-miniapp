@@ -1,0 +1,156 @@
+{
+  "baseline": "2776a58824c43fb5378a5843213c836dc3aacf4e",
+  "browser": "154.0.8037.98",
+  "date": "2026-10-06T17:33:58.956Z",
+  "environment": "Temporary SQLite + original Service/HTTP + compiled actual admin, synthetic accounts and video; deleted after execution",
+  "mockedBusinessSuccess": false,
+  "sharedDatabaseAffected": false,
+  "results": [
+    {
+      "name": "Genuine persistent uploads, original bytes and published/draft/archived/spec associations",
+      "status": "PASS"
+    },
+    {
+      "name": "Real temporary WebM upload, admin Range serving and native playback",
+      "status": "PASS"
+    },
+    {
+      "name": "1440/1280/1728 three page layouts, account Drawer and actual screenshots",
+      "status": "PASS"
+    },
+    {
+      "name": "Account create in real Drawer, original field validation and default roles",
+      "status": "PASS"
+    },
+    {
+      "name": "Original duplicate-name and empty-role rejection preserve stored account",
+      "status": "PASS"
+    },
+    {
+      "name": "Role/export edit, blank password preservation and invalidation of existing target sessions",
+      "status": "PASS"
+    },
+    {
+      "name": "Account disable/re-enable and password reset retain original server authentication behavior",
+      "status": "PASS"
+    },
+    {
+      "name": "Last administrator protection remains real rejection; no administrator account changed",
+      "status": "PASS"
+    },
+    {
+      "name": "Drawer keyboard, Escape and original trigger focus; visible focus and reduced motion",
+      "status": "PASS"
+    },
+    {
+      "name": "Content editor still directly uploads and associates images without visiting Media Library",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit rows originate in real operations and retain complete original JSON; native keyboard details",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous/content/reception permissions: actual list/file reads and forbidden writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Loading/error distinguish Empty, original refresh recovery without success mocks",
+      "status": "PASS"
+    },
+    {
+      "name": "All eight Sidebar pages, current identity, logout/login; no phantom library actions",
+      "status": "PASS"
+    },
+    {
+      "name": "Genuine empty Media/Audit after isolated cleanup, no fulfilled data fixtures",
+      "status": "PASS"
+    },
+    {
+      "name": "No browser runtime errors; all browser writes isolated; no real account or shared business database modified",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "07-video-preview-1440.png",
+    "01-media-1440.png",
+    "04-media-detail-1440.png",
+    "02-accounts-1440.png",
+    "05-account-editor-1440.png",
+    "03-audit-1440.png",
+    "06-audit-detail-1440.png",
+    "01-media-1280.png",
+    "04-media-detail-1280.png",
+    "02-accounts-1280.png",
+    "05-account-editor-1280.png",
+    "03-audit-1280.png",
+    "06-audit-detail-1280.png",
+    "01-media-1728.png",
+    "04-media-detail-1728.png",
+    "02-accounts-1728.png",
+    "05-account-editor-1728.png",
+    "03-audit-1728.png",
+    "06-audit-detail-1728.png"
+  ],
+  "writeRequests": [
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts/54738cdb-918e-4aed-9acd-7de6d94d4e94",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/accounts/54738cdb-918e-4aed-9acd-7de6d94d4e94",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/accounts/54738cdb-918e-4aed-9acd-7de6d94d4e94",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/accounts/54738cdb-918e-4aed-9acd-7de6d94d4e94",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/accounts/5c083d00-dbf2-4f33-8fce-70d1e1eaac02",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/media",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/content",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    }
+  ],
+  "notApplicable": [
+    "Media upload/delete/copy UI absent by original design; direct Content upload tested",
+    "Audit search/filter/export absent",
+    "Empty Accounts inaccessible with valid administrator; no mock used"
+  ],
+  "knownOriginalBehavior": [
+    "Account POST always activates the created account; existing create form active checkbox unchanged",
+    "Account Drawer can close while saving, original behavior retained",
+    "Audit reads latest 500; no pagination or result field",
+    "Media image preview has no original onError handler"
+  ]
+}

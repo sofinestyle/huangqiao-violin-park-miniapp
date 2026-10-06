@@ -1,0 +1,95 @@
+{
+  "baseline": "2776a58824c43fb5378a5843213c836dc3aacf4e",
+  "method": "Unmasked full-page RGB pixel comparison of actual same-data Chrome screenshots; final compiled styles",
+  "comparisons": [
+    {
+      "page": "consultations",
+      "baseline": "regression-consultations-baseline-1440.png",
+      "current": "regression-consultations-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "consultations-drawer",
+      "baseline": "regression-consultations-drawer-baseline-1440.png",
+      "current": "regression-consultations-drawer-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "content",
+      "baseline": "regression-content-baseline-1440.png",
+      "current": "regression-content-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "dashboard",
+      "baseline": "regression-dashboard-baseline-1440.png",
+      "current": "regression-dashboard-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "reservations",
+      "baseline": "regression-reservations-baseline-1440.png",
+      "current": "regression-reservations-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "reservations-drawer",
+      "baseline": "regression-reservations-drawer-baseline-1440.png",
+      "current": "regression-reservations-drawer-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "sessions",
+      "baseline": "regression-sessions-baseline-1440.png",
+      "current": "regression-sessions-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    },
+    {
+      "page": "sessions-drawer",
+      "baseline": "regression-sessions-drawer-baseline-1440.png",
+      "current": "regression-sessions-drawer-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "changedPixels": 0,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,104 @@
+/* Phase 2B rollout only. Values come from approved Admin Design System v1.0. */
+.admin-management { min-width: 0; color: var(--admin-text); }
+.admin-management :is(h1,h2,h3) { font-family: inherit; }
+.admin-management-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.admin-management-header h1 { margin: 0 0 6px; font-size: 26px; line-height: 1.35; font-weight: 600; letter-spacing: -.02em; }
+.admin-management-header p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--admin-secondary); }
+.admin-management-header > button { flex-shrink: 0; }
+.admin-management button { min-height: 40px; padding: 9px 16px; border-radius: var(--admin-control-radius); border: 1px solid var(--admin-brand); background: var(--admin-brand); color: white; font-weight: 500; box-shadow: none; transition: background-color 160ms, border-color 160ms, color 160ms; }
+.admin-management button:hover { filter: none; }
+.admin-management button:disabled { opacity: .55; cursor: not-allowed; }
+.admin-management .secondary { background: var(--admin-surface); border-color: var(--admin-border); color: var(--admin-text); }
+.admin-management .secondary:hover { background: var(--admin-hover); }
+.admin-management .text-button { min-height: 36px; padding: 6px 2px; border: 0; border-radius: 4px; background: transparent; color: var(--admin-brand); font-size: 13px; white-space: nowrap; }
+.admin-management .text-button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.admin-management :is(button,input,select,textarea,summary,.table-region):focus-visible { outline: 3px solid var(--admin-focus); outline-offset: 3px; }
+.admin-management :is(input,select,textarea) { min-height: 40px; min-width: 0; border-radius: 8px; border-color: #b7b0a7; font-size: 14px; }
+.admin-management input[type=checkbox] { min-height: 18px; accent-color: var(--admin-brand); flex-shrink: 0; }
+.admin-management .muted { color: var(--admin-secondary); font-size: 13px; }
+.admin-management-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.admin-management-toolbar p, .admin-management-note { margin: 0; font-size: 13px; line-height: 1.7; color: var(--admin-secondary); }
+.admin-management-toolbar p { flex: 1; max-width: 880px; }
+.admin-management-toolbar button { flex-shrink: 0; }
+.admin-management-note { margin-bottom: 24px; }
+.admin-management-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; }
+.admin-management-list-heading h2 { margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600; }
+.admin-management-list-heading span { color: var(--admin-secondary); font-size: 13px; }
+.admin-management .table-region { min-height: 0; overflow-x: auto; border: 1px solid var(--admin-border); border-radius: 10px; box-shadow: none; scroll-padding-inline: 16px 104px; }
+.admin-management table { width: 100%; table-layout: fixed; font-size: 14px; line-height: 1.5; }
+.admin-management th { height: 44px; padding: 10px 16px; border-left: 0; border-bottom: 1px solid var(--admin-border); color: var(--admin-secondary); background: #faf9f7; font-size: 14px; font-weight: 500; }
+.admin-management td { height: 70px; padding: 10px 16px; border-bottom: 1px solid #eeece8; background: var(--admin-surface); vertical-align: middle; overflow-wrap: anywhere; max-width: none; }
+.admin-management tbody tr:last-child td { border-bottom: 0; }
+.admin-management tbody tr:hover td { background: #f7f6f3; }
+.admin-management td small { color: var(--admin-secondary); font-size: 12px; line-height: 1.6; margin-top: 2px; }
+.admin-management :is(.admin-file-name,.admin-account-name,.admin-audit-actor) { font-size: 14px; font-weight: 500; }
+.admin-media-page table { min-width: 1120px; }
+.admin-media-page th:first-child { width: 250px; }
+.admin-media-page th:nth-child(2) { width: 160px; }
+.admin-media-page th:nth-child(4) { width: 240px; }
+.admin-media-page th:nth-child(5) { width: 168px; }
+.admin-media-page :is(th,td):last-child { width: 84px; }
+.admin-management:is(.admin-media-page,.admin-accounts-page) :is(th,td):last-child { position: sticky; right: 0; white-space: nowrap; background: var(--admin-surface); }
+.admin-management:is(.admin-media-page,.admin-accounts-page) th:last-child { background: #faf9f7; }
+.admin-file-identity { display: flex; align-items: center; gap: 12px; }
+.admin-file-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 6px; flex-shrink: 0; color: var(--admin-brand); background: var(--admin-bg); }
+.admin-file-name { min-width: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.admin-media-reference { display: flex; align-items: flex-start; gap: 8px; margin: 3px 0; font-size: 13px; }
+.admin-media-reference > span:first-child { flex: 1; min-width: 0; }
+.admin-media-reference .status { flex-shrink: 0; }
+.admin-management .status { display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; border-radius: 5px; font-size: 12px; line-height: 1.5; white-space: nowrap; background: var(--admin-bg); color: var(--admin-secondary); }
+.admin-management .status::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+.admin-management .status:is(.published,.account-active) { background: var(--admin-success-bg); color: var(--admin-success); }
+.admin-management .status.archived { background: var(--admin-danger-bg); color: var(--admin-danger); }
+.admin-export-authorized { color: var(--admin-info); }
+.admin-media-preview { padding: 20px 24px; margin-bottom: 24px; border: 1px solid var(--admin-border); border-radius: 10px; background: var(--admin-surface); }
+.admin-preview-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+.admin-preview-heading h2 { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; min-width: 0; }
+.admin-preview-heading button { flex-shrink: 0; }
+.admin-management .admin-media-preview :is(.cover-preview,.media-preview) { width: 100%; max-height: 320px; object-fit: contain; border-radius: 6px; margin: 16px 0 0; background: var(--admin-bg); }
+.admin-accounts-page table { min-width: 760px; }
+.admin-accounts-page th:nth-child(2) { width: 240px; }
+.admin-accounts-page th:nth-child(3) { width: 100px; }
+.admin-accounts-page th:nth-child(4) { width: 120px; }
+.admin-accounts-page :is(th,td):last-child { width: 100px; }
+.admin-account-name { display: block; overflow-wrap: anywhere; }
+.admin-audit-page table { min-width: 1080px; }
+.admin-audit-page th:first-child { width: 176px; }
+.admin-audit-page th:nth-child(2) { width: 180px; }
+.admin-audit-page th:nth-child(3) { width: 196px; }
+.admin-audit-page th:nth-child(4) { width: 190px; }
+.admin-audit-page td { height: 64px; padding-top: 14px; vertical-align: top; font-variant-numeric: tabular-nums; }
+.admin-audit-action { font-weight: 500; }
+.admin-audit-page details summary { color: var(--admin-brand); width: fit-content; min-height: 36px; display: list-item; align-content: center; }
+.admin-audit-page pre { margin: 8px 0; padding: 12px; background: var(--admin-bg); border-radius: 6px; max-width: none; max-height: 320px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; line-height: 1.7; color: var(--admin-text); }
+.admin-management .error { color: var(--admin-danger); background: var(--admin-danger-bg); border: 1px solid #e4c7bf; border-radius: 8px; }
+.admin-management .loading { font-size: 13px; color: var(--admin-secondary); }
+.admin-management .empty { padding: 56px 24px; background: var(--admin-surface); color: var(--admin-secondary); font-size: 14px; }
+.admin-shell .main:has(.admin-account-drawer .drawer) { padding-right: 552px; }
+.admin-management .admin-account-drawer .drawer { width: 520px; top: 64px; padding: 0; display: flex; flex-direction: column; overflow: hidden; border-color: var(--admin-border); box-shadow: -8px 0 24px rgb(44 33 28 / 5%); }
+.admin-management .drawer-heading { flex-shrink: 0; padding: 20px 24px 16px; gap: 16px; margin: 0; border-bottom: 1px solid var(--admin-border); }
+.admin-management .drawer-heading h2 { margin: 0; font-size: 18px; line-height: 1.5; font-weight: 600; }
+.admin-management .drawer .icon-button { padding: 8px; width: 40px; min-width: 40px; background: transparent; border: 0; color: var(--admin-text); }
+.admin-account-form { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.admin-account-body { flex: 1; min-height: 0; overflow-y: auto; padding: 24px; scroll-padding-block: 16px; }
+.admin-account-section { margin-bottom: 24px; }
+.admin-account-section h3 { font-size: 16px; line-height: 1.5; font-weight: 600; margin-bottom: 16px; }
+.admin-management .drawer .field { margin-bottom: 20px; }
+.admin-management .drawer small { color: var(--admin-secondary); font-size: 13px; line-height: 1.6; }
+.admin-management .drawer fieldset { padding: 16px; margin-bottom: 24px; border-color: var(--admin-border); border-radius: 8px; min-width: 0; }
+.admin-management .drawer legend { font-weight: 600; color: var(--admin-text); }
+.admin-management .drawer .check-row { font-size: 14px; }
+.admin-account-warning { padding: 14px 16px; margin: 20px 0 0; background: var(--admin-warning-bg); color: var(--admin-warning); border-radius: 8px; font-size: 13px; line-height: 1.7; }
+.admin-account-footer { display: flex; justify-content: flex-end; flex-shrink: 0; padding: 16px 24px 20px; background: var(--admin-bg); border-top: 1px solid var(--admin-border); }
+.admin-account-footer button { min-width: 148px; }
+@media (min-width: 1400px) {
+  .admin-management .admin-account-drawer .drawer { width: 560px; }
+  .admin-shell .main:has(.admin-account-drawer .drawer) { padding-right: 592px; }
+}
+@media (max-width: 1100px) {
+  .admin-shell .main:has(.admin-account-drawer .drawer) { padding-right: 24px; }
+  .admin-management .admin-account-drawer .drawer { position: relative; inset: auto; width: 100%; height: 80vh; min-height: 380px; margin-top: 24px; border: 1px solid var(--admin-border); border-radius: 8px; box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .admin-management *, .admin-management *::before { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}

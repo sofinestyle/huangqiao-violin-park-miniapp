@@ -1,0 +1,20 @@
+{
+  "baseline": "2776a58824c43fb5378a5843213c836dc3aacf4e",
+  "build": "PASS",
+  "viteModules": 40,
+  "typecheck": "PASS: original miniprogram TypeScript only; JSX verified by Vite build",
+  "existingTests": {
+    "pass": 57,
+    "fail": 0,
+    "skipped": 0
+  },
+  "originals": {
+    "pass": 25,
+    "changed": 0
+  },
+  "browser": "Chrome154.0.8037.98 / existing Playwright",
+  "functionalGroups": 16,
+  "operationsRegressionGroups": 17,
+  "sharedBusinessWrites": "NO",
+  "realAccountsAffected": "NO"
+}

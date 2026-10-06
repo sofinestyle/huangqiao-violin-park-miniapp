@@ -1,0 +1,429 @@
+{
+  "count": 53,
+  "screenshots": [
+    {
+      "file": "01-media-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 143503,
+      "sha256": "e81bdc2791e76b7ab443e97569fc0275df8a359d6bd116f3043ae40d19aafb1f",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "01-media-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 154754,
+      "sha256": "8aadafdaa58947f830717f3a343c8bf071439ab383f7cee310c6a2da7ab9a3f3",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "01-media-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 155582,
+      "sha256": "22643e146ecdda9aaf1f6c46645805a972dc5d98b5a1c3b9c6d730653189dba5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "02-accounts-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 84084,
+      "sha256": "331b49d84931e32b17d88982dfb5a3ea6f51c67775d363ebcde4f9706e462169",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "02-accounts-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 85858,
+      "sha256": "1a40d3dba53bb0e021e269cdaebee6f234e1771b1190f953e9745d9a23fe4ca6",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "02-accounts-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 86873,
+      "sha256": "c0e92bc891f1eca089ff0ab415d455bd4028cb9b09b8c84119feda082741db2a",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "03-audit-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 139118,
+      "sha256": "5483d1817477e8ab0b71ad0701c12ec03afeb784ce660305470ac1b63e7e7cd7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "03-audit-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 141749,
+      "sha256": "acedbaf4efafcba2234dcb9795d797ff8f5848984ddf6710a5bec064795ff8f1",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "03-audit-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 143722,
+      "sha256": "201d623c79945316ebddee807be0ee48b3d88b009a272a421d824dbea704e6b8",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "04-media-detail-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 146767,
+      "sha256": "4d4f78a7792ef3a5b5169e158c238c3f7fcf02989d4fa1e123f22af519a6cc5c",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "04-media-detail-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 154958,
+      "sha256": "2bc6e8569d2188d3eb5d7284fc29fef788d2d3f48ccf58a2c14a6b802998d0f5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "04-media-detail-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 155697,
+      "sha256": "b194ea4cf9b0e4215136bd657ddddd7a333a6af69bcf42dd38efa4ad4c3bec5e",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "05-account-editor-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 124061,
+      "sha256": "e7f262840f6345427e176599b2cea66ce6525a50110f13991839badf7fa07d82",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "05-account-editor-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 129664,
+      "sha256": "998dc2ed7d25dea6a9ebde606224a54fa6c07f901334f2c802efe2c787591af7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "05-account-editor-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 137278,
+      "sha256": "9aff3471cf01a78fbd33e23d5eb4695925692ba3d6682ca5e887ada044623d41",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "06-audit-detail-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 120185,
+      "sha256": "6143966d0ce0ebf10d6ec544c7fc2cc79408fe2585133767a0d9499d01186ebd",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "06-audit-detail-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 125178,
+      "sha256": "568d849cca2bee37ba1319f0e1d18367e19441959ab522891973b5d3e21cc05f",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "06-audit-detail-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 132666,
+      "sha256": "36d0c1b717b16e527e450c1a36e8c58ba89af9799331a2a4bafbb8286614fc6a",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "07-video-preview-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 115663,
+      "sha256": "d76f0d9c0cd11c009cc3b4cbc99843d01acebed30a7cbb326f58e06a59a8a52e",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-01-reservations-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 173822,
+      "sha256": "ad30e65e8227a492e8f092838a656c2fec1fac8fe22465f6302196ccb9484fe3",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-01-reservations-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 198118,
+      "sha256": "420a06f8f49987b9bd2c8bae696675d2e20ff27babdf4cb1b01a48af67edf41f",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-01-reservations-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 198515,
+      "sha256": "2ba62a7940db589179b2a90e18a49915e31ddd3ca6a31cc7849e352756933089",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-02-reservation-detail-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 169433,
+      "sha256": "6a7dd8d1d2239f66a6249f469b99f95cd405f01eadb9146b31ed3a62b4faef9b",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-02-reservation-detail-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 205379,
+      "sha256": "d5565b2f763c2dddcd339c2929721b10e938af1d90eb89c74eda05508e0f7a39",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-02-reservation-detail-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 240101,
+      "sha256": "0b2e39f0be012cb5ffcafe4ed6be1723743516101b691baee28b301c00b98e31",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-03-consultation-detail-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 220771,
+      "sha256": "021728672f9a82a9ca0765a88adbbcff1fdcb4d20e3ab1bc14e22f66927e9708",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-03-consultation-detail-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 236732,
+      "sha256": "442fe326df113bd2f8529d8007e2a91ce355f35eb45cf7fe4555add836902587",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-03-consultation-detail-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 257569,
+      "sha256": "c9bac86c1c5d57e3a784c0cc7c916af0a93c96c59b988756dca3590f8b9e170a",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-04-session-editor-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 174144,
+      "sha256": "5e7f0f2bf648a6b9493dda054980dc05fea4b62f4d0c9f3e8173b351054ba572",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-04-session-editor-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 197582,
+      "sha256": "e9085ed4be7a9b12b3d1a0d557a6d3fb63c55a8bb29c4b98653d7544f3cc09e6",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-04-session-editor-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 206891,
+      "sha256": "dd85b430f4d5c60bccde2bd7e033bb16f64b2493bac56f4a31a9f37506d920a4",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-05-sessions-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 144264,
+      "sha256": "b66be3f6c6b96133abe579322e46a39c8073049c77adbae4d3e79930705602d5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-05-sessions-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 152481,
+      "sha256": "be571076308884c109817e3ea378bbd315b53a47cf2abb16dc9fcf60e78408df",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-05-sessions-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 154195,
+      "sha256": "84e4fab87aa214c44a6b477dce8db5188d445355a284e61c2322e93fbac0e5b5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-06-consultations-1280.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 149098,
+      "sha256": "ed31c71beb590723c4bafb6d788fe6d7aaae660227b48eb96a0340425f84b697",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-06-consultations-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 154041,
+      "sha256": "2d96515e9d5875012c8ddca1416c2c5cd62bfe5f8992d5c92d05bf7851266bfa",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "ops-regression-06-consultations-1728.png",
+      "width": 1728,
+      "height": 900,
+      "bytes": 166694,
+      "sha256": "3913e715990c40445af54a6366df0c19586dd830bcde288dde699c83d2a6f395",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-consultations-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 153986,
+      "sha256": "433875c8a80d07e0b106be38355c0c79d6e917d6c48b1c4e086e4e5e7535f1e7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-consultations-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 153986,
+      "sha256": "433875c8a80d07e0b106be38355c0c79d6e917d6c48b1c4e086e4e5e7535f1e7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-consultations-drawer-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 236639,
+      "sha256": "31d10036fa10580fa81d6c4da861710a419dfc8060c24ef8776d6bc1a92e44b7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-consultations-drawer-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 236639,
+      "sha256": "31d10036fa10580fa81d6c4da861710a419dfc8060c24ef8776d6bc1a92e44b7",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-content-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 135800,
+      "sha256": "a208e5eed4c4dff988baa021d84f6b23bf314fc8bbc77cec4cc66bcf0cbaa005",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-content-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 135800,
+      "sha256": "a208e5eed4c4dff988baa021d84f6b23bf314fc8bbc77cec4cc66bcf0cbaa005",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-dashboard-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 116741,
+      "sha256": "4be9bea3ca9c41be269fbb905c6dbc9734eacf5f369f5e03b2c1cf3c077f6eb8",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-dashboard-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 116741,
+      "sha256": "4be9bea3ca9c41be269fbb905c6dbc9734eacf5f369f5e03b2c1cf3c077f6eb8",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-reservations-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 198888,
+      "sha256": "b6974201082d66a2c0310800a190e498a303a7c75f544850c00437cefe1b7a91",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-reservations-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 198888,
+      "sha256": "b6974201082d66a2c0310800a190e498a303a7c75f544850c00437cefe1b7a91",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-reservations-drawer-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 209697,
+      "sha256": "34cfaad6f979d3f95894a5a79021b3c33545a1b2c2623656d353f374f8fc59a5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-reservations-drawer-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 209697,
+      "sha256": "34cfaad6f979d3f95894a5a79021b3c33545a1b2c2623656d353f374f8fc59a5",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-sessions-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 152503,
+      "sha256": "46838eb79865daa67fc44ddbe9db6732336355faaa1cca613c25f2a446d29ca1",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-sessions-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 152503,
+      "sha256": "46838eb79865daa67fc44ddbe9db6732336355faaa1cca613c25f2a446d29ca1",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-sessions-drawer-baseline-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 197595,
+      "sha256": "e5a0ad85ebd1d6da73ce6e7bf2a5a8a609fa1a693aeef361aa81f0f622614c65",
+      "source": "actual Chrome capture; synthetic isolated data"
+    },
+    {
+      "file": "regression-sessions-drawer-current-1440.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 197595,
+      "sha256": "e5a0ad85ebd1d6da73ce6e7bf2a5a8a609fa1a693aeef361aa81f0f622614c65",
+      "source": "actual Chrome capture; synthetic isolated data"
+    }
+  ]
+}

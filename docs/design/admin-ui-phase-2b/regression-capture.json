@@ -1,0 +1,23 @@
+{
+  "baseline": "2776a58824c43fb5378a5843213c836dc3aacf4e",
+  "browser": "154.0.8037.98",
+  "environment": "Same temporary SQLite, original HTTP and installed Chrome, baseline built from git archive (not a worktree); no shared database",
+  "screenshots": [
+    "regression-dashboard-baseline-1440.png",
+    "regression-content-baseline-1440.png",
+    "regression-sessions-baseline-1440.png",
+    "regression-sessions-drawer-baseline-1440.png",
+    "regression-reservations-baseline-1440.png",
+    "regression-reservations-drawer-baseline-1440.png",
+    "regression-consultations-baseline-1440.png",
+    "regression-consultations-drawer-baseline-1440.png",
+    "regression-dashboard-current-1440.png",
+    "regression-content-current-1440.png",
+    "regression-sessions-current-1440.png",
+    "regression-sessions-drawer-current-1440.png",
+    "regression-reservations-current-1440.png",
+    "regression-reservations-drawer-current-1440.png",
+    "regression-consultations-current-1440.png",
+    "regression-consultations-drawer-current-1440.png"
+  ]
+}
