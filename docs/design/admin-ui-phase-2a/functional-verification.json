@@ -1,0 +1,200 @@
+{
+  "baseline": "b6339129600f0c29869c222e44f038b9a2b6d59b",
+  "date": "2026-10-06T17:01:34.271Z",
+  "browser": "154.0.8037.98",
+  "environment": "Temporary SQLite + original Service/HTTP + compiled admin/dist; process-private synthetic accounts; deleted after run",
+  "sharedBusinessDatabaseAffected": "NO",
+  "mockedBusinessSuccess": false,
+  "results": [
+    {
+      "name": "1440/1280/1728 list and Drawer layouts, stable action columns, genuine isolated screenshots",
+      "status": "PASS"
+    },
+    {
+      "name": "All existing booking, consultation, publishing, paused and capacity status labels",
+      "status": "PASS"
+    },
+    {
+      "name": "Search, status, unassigned, enrollment and refresh keep real existing query semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard Tab, Shift+Tab, Enter, Escape and returned focus after opening/closing Drawer",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual slot POST/PUT: create draft, pause, resume, publish, archive and server capacity error",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking assignment, followup, required-note error, confirm, arrive and complete",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking rejection, cancellation, no-show and enrolled-slot restriction",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual booking change approve/reject and cancellation change with preserved history",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual consultation assignment, followup, close; full long content; original closed-state rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "Authorized real CSV export remains all rows and writes audit in isolated database",
+      "status": "PASS"
+    },
+    {
+      "name": "Reception/content permission boundaries, export denial and direct unauthorized reads/writes",
+      "status": "PASS"
+    },
+    {
+      "name": "All eight Sidebar pages open, preserved identity, logout and login",
+      "status": "PASS"
+    },
+    {
+      "name": "Loading/Error/refresh recovery for all three actual list endpoints without fulfilled mocks",
+      "status": "PASS"
+    },
+    {
+      "name": "Readable status contrast, visible focus, reduced motion and long text scrolling",
+      "status": "PASS"
+    },
+    {
+      "name": "Genuine empty tables after isolated fixture cleanup, no phantom records or business states",
+      "status": "PASS"
+    },
+    {
+      "name": "No runtime errors; every browser write confined to ephemeral isolated HTTP origin",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-sessions-1440.png",
+    "04-session-editor-1440.png",
+    "02-reservations-1440.png",
+    "05-reservation-detail-1440.png",
+    "03-consultations-1440.png",
+    "06-consultation-detail-1440.png",
+    "01-sessions-1280.png",
+    "04-session-editor-1280.png",
+    "02-reservations-1280.png",
+    "05-reservation-detail-1280.png",
+    "03-consultations-1280.png",
+    "06-consultation-detail-1280.png",
+    "01-sessions-1728.png",
+    "04-session-editor-1728.png",
+    "02-reservations-1728.png",
+    "05-reservation-detail-1728.png",
+    "03-consultations-1728.png",
+    "06-consultation-detail-1728.png"
+  ],
+  "writeRequests": [
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/slots",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/slots/989f377d-c7ac-4edc-9af3-25b68adda923",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/989f377d-c7ac-4edc-9af3-25b68adda923",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/989f377d-c7ac-4edc-9af3-25b68adda923",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/slots/989f377d-c7ac-4edc-9af3-25b68adda923",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-BBE904AD",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-23170503",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-8B137ADC",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-DF705BA1",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-18BD3928",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-52D18B02",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-E73EF51B",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/bookings/HQ-20261006-CFA4295D",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-2074F15C",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-2074F15C",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-2074F15C",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/consultations/ZX-20261006-2074F15C",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    }
+  ],
+  "knownOriginalBehavior": [
+    "Closed consultations still expose assignment/followup; original server rejects modifications.",
+    "CSV exports all authorized records regardless of UI filters."
+  ]
+}

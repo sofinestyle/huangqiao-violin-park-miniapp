@@ -1,0 +1,250 @@
+{
+  "actualRuntimeScreenshots": true,
+  "pixelEditing": false,
+  "count": 27,
+  "files": [
+    {
+      "file": "01-sessions-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "57b8f460e3cee45d10b4a9364ecdc567dede62cf921f1584219d24d087ee75da",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "01-sessions-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "c28b9954d1c7a9c8439001bc749f75f4e37fd14e206df7568cf27035e333eee1",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "01-sessions-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "8f9189d2cdf817538ee6c05b149644ca99f40ed48c9b24d004b3ca0848521222",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "02-reservations-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "89039519a3bc22f8e07842c448f34acf0850b8b61aa03f4ace33013f13ceb575",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "02-reservations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "230c2d55e3ab04210607bb4da38734cf1e8014785672ceeccdbff6d44cc8945e",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "02-reservations-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "4701099a4392cdfd652417a378a7b93fafc45b18b9a5196a6c018f72d6c225f1",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "03-consultations-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "2c8d8bb5faccb5a5379ca25c661c8971779fdea295c5a1855c4b648659fe94b0",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "03-consultations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "2a507bd8ee4f0fc5f33077c3bd6d628c9aa18cb99cbb30de291af2e898901226",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "03-consultations-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "b5ad00d33f35b69a863bc20cbc1d7c7518afd883ea741a4301e90e95d78c9aab",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "04-session-editor-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "48179d67fbe6bd0f4ea9f68493199f06727a63b0d21a7ee202b78cafa3151d9f",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "04-session-editor-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "44f1d317e814bae09677cc56816bb5e48667b4a77c783aa41e4b1ec168ec4876",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "04-session-editor-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "1b129e7943fc41698f83840376c3c579e07b4faa73c36558e6b8de641e8d6d34",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "05-reservation-detail-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "d91b42bbcd2df9ec0f50eeaf33804a039f6a7179bbe1f271b45708a8ab8d653e",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "05-reservation-detail-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "051b7653be6f9275946355eb1ff69cb78cd4d9bcc2dd9d5f5aa42e910b58ef9b",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "05-reservation-detail-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "2b8c087d8aeddd5f48d95fad02bf024d44f513194f06b50f31e0a175db6c5919",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "06-consultation-detail-1280.png",
+      "size": [
+        1280,
+        900
+      ],
+      "sha256": "c8f6abd9bafb47c71d8cd047af12a31daac957963321a5a7844120a80d7942f3",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "06-consultation-detail-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "dc779d7ca82c5c175d2b9f0ee240815e0b24d1a33fec69d8c4b940a309953c58",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "06-consultation-detail-1728.png",
+      "size": [
+        1728,
+        900
+      ],
+      "sha256": "3c3eda3b601a3f02cc6325be4ab8f45a17a54420a7b115b34aad93f319948586",
+      "source": "Current actual UI with synthetic isolated data"
+    },
+    {
+      "file": "07-phase1-dashboard-regression-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "e1d081fb3800fe8905da08604d6c8fc62ee51482983be20046ae78506edda1b8",
+      "source": "Current shared local service read-only Phase 1 page; no personal records"
+    },
+    {
+      "file": "08-phase1-content-regression-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "988d70596fbfab16624c7ce76579e4f97fc8bcc5335379be9eb7939a4dc9d247",
+      "source": "Current shared local service read-only Phase 1 page; no personal records"
+    },
+    {
+      "file": "baseline-consultations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "40fde9b89f5e92342d9cefcc8f39be8b3d15171579a59351cb9fc982720bbf2b",
+      "source": "Pre-change approved b633912 UI with synthetic isolated data"
+    },
+    {
+      "file": "baseline-reservations-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "315356aa470eb3a3886370d2aa7c8ac347da2f8b72c7e2d6b7e6fab26ea71730",
+      "source": "Pre-change approved b633912 UI with synthetic isolated data"
+    },
+    {
+      "file": "baseline-sessions-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "37d3d1b99243883b3ca5e8b3fa0ecf87fa118b874db928158d769de6a04a2a0a",
+      "source": "Pre-change approved b633912 UI with synthetic isolated data"
+    },
+    {
+      "file": "controlled-content-baseline-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "a208e5eed4c4dff988baa021d84f6b23bf314fc8bbc77cec4cc66bcf0cbaa005",
+      "source": "Approved baseline/current actual compiled UI in same synthetic isolated database"
+    },
+    {
+      "file": "controlled-content-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "a208e5eed4c4dff988baa021d84f6b23bf314fc8bbc77cec4cc66bcf0cbaa005",
+      "source": "Approved baseline/current actual compiled UI in same synthetic isolated database"
+    },
+    {
+      "file": "controlled-dashboard-baseline-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "4be9bea3ca9c41be269fbb905c6dbc9734eacf5f369f5e03b2c1cf3c077f6eb8",
+      "source": "Approved baseline/current actual compiled UI in same synthetic isolated database"
+    },
+    {
+      "file": "controlled-dashboard-current-1440.png",
+      "size": [
+        1440,
+        900
+      ],
+      "sha256": "4be9bea3ca9c41be269fbb905c6dbc9734eacf5f369f5e03b2c1cf3c077f6eb8",
+      "source": "Approved baseline/current actual compiled UI in same synthetic isolated database"
+    }
+  ]
+}

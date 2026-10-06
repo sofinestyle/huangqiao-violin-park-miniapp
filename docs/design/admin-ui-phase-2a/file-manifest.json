@@ -1,0 +1,181 @@
+{
+  "baseline": "b6339129600f0c29869c222e44f038b9a2b6d59b",
+  "files": [
+    {
+      "path": "admin/src/App.jsx",
+      "category": "源码"
+    },
+    {
+      "path": "admin/src/Operations.jsx",
+      "category": "源码"
+    },
+    {
+      "path": "admin/src/admin-phase-2a.css",
+      "category": "样式"
+    },
+    {
+      "path": "docs/ADMIN_DESIGN_SYSTEM.md",
+      "category": "文档"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/01-sessions-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/01-sessions-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/01-sessions-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/02-reservations-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/02-reservations-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/02-reservations-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/03-consultations-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/03-consultations-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/03-consultations-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/04-session-editor-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/04-session-editor-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/04-session-editor-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/05-reservation-detail-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/05-reservation-detail-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/05-reservation-detail-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/06-consultation-detail-1280.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/06-consultation-detail-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/06-consultation-detail-1728.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/07-phase1-dashboard-regression-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/08-phase1-content-regression-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/ADMIN_UI_PHASE_2A_ACCEPTANCE.md",
+      "category": "文档"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/BUSINESS_AUDIT.md",
+      "category": "文档"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/baseline-consultations-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/baseline-reservations-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/baseline-sessions-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/baseline.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/controlled-content-baseline-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/controlled-content-current-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/controlled-dashboard-baseline-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/controlled-dashboard-current-1440.png",
+      "category": "截图"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/engineering-verification.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/file-manifest.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/frozen-verification.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/functional-verification.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/phase1-pixel-comparison.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/phase1-regression.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/design/admin-ui-phase-2a/screenshots.json",
+      "category": "测试证据"
+    },
+    {
+      "path": "docs/决策与变更记录.md",
+      "category": "文档"
+    },
+    {
+      "path": "docs/待确认事项.md",
+      "category": "文档"
+    },
+    {
+      "path": "docs/验收清单.md",
+      "category": "文档"
+    }
+  ]
+}

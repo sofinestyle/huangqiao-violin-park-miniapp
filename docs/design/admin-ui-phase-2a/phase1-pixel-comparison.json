@@ -1,0 +1,46 @@
+{
+  "Dashboard": {
+    "size": [
+      1440,
+      900
+    ],
+    "changedPixels": 22201,
+    "changedFraction": 0.0171304012345679,
+    "differenceBounds": [
+      0,
+      30,
+      220,
+      248
+    ],
+    "pixelIdentical": false,
+    "controlledComparison": {
+      "environment": "Same temporary SQLite, original HTTP, approved b633912 compiled UI vs current compiled UI; Chrome, decoded images, identical pointer position",
+      "changedPixels": 0,
+      "differenceBounds": null,
+      "baselineScreenshot": "controlled-dashboard-baseline-1440.png",
+      "currentScreenshot": "controlled-dashboard-current-1440.png"
+    }
+  },
+  "Content": {
+    "size": [
+      1440,
+      900
+    ],
+    "changedPixels": 30778,
+    "changedFraction": 0.023748456790123457,
+    "differenceBounds": [
+      0,
+      30,
+      309,
+      900
+    ],
+    "pixelIdentical": false,
+    "controlledComparison": {
+      "environment": "Same temporary SQLite, original HTTP, approved b633912 compiled UI vs current compiled UI; Chrome, decoded images, identical pointer position",
+      "changedPixels": 0,
+      "differenceBounds": null,
+      "baselineScreenshot": "controlled-content-baseline-1440.png",
+      "currentScreenshot": "controlled-content-current-1440.png"
+    }
+  }
+}

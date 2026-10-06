@@ -1,0 +1,349 @@
+{
+  "baseline": "b6339129600f0c29869c222e44f038b9a2b6d59b",
+  "browser": "154.0.8037.98",
+  "environment": "Existing local Vite/API service; read-only Dashboard/Content; ordinary authentication only",
+  "sharedBusinessTablesUnchanged": true,
+  "before": {
+    "slots": {
+      "count": 3,
+      "sha256": "5863083d6981af346acffa675966394e03f95875935f86be1f839c2eba0fcca5"
+    },
+    "bookings": {
+      "count": 2,
+      "sha256": "6198583ce15ec6641a29f66098ef3edca56529ce15b68b5edd660ab2a7f92dba"
+    },
+    "consultations": {
+      "count": 1,
+      "sha256": "e6b5883d8a52e4e9de4614bfd2e8c5738f7f9146de823fb817105b1ba0725fb4"
+    },
+    "changes": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "content": {
+      "count": 57,
+      "sha256": "80c259735a8c749350ba4215f8e8ecde41682b323be1f1e2ffd6b86985c037cb"
+    },
+    "media": {
+      "count": 13,
+      "sha256": "d9281554f65084d6b6582a9c5340c2b8e4bbf95379c74a5a77f3c6e00d766617"
+    }
+  },
+  "after": {
+    "slots": {
+      "count": 3,
+      "sha256": "5863083d6981af346acffa675966394e03f95875935f86be1f839c2eba0fcca5"
+    },
+    "bookings": {
+      "count": 2,
+      "sha256": "6198583ce15ec6641a29f66098ef3edca56529ce15b68b5edd660ab2a7f92dba"
+    },
+    "consultations": {
+      "count": 1,
+      "sha256": "e6b5883d8a52e4e9de4614bfd2e8c5738f7f9146de823fb817105b1ba0725fb4"
+    },
+    "changes": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "content": {
+      "count": 57,
+      "sha256": "80c259735a8c749350ba4215f8e8ecde41682b323be1f1e2ffd6b86985c037cb"
+    },
+    "media": {
+      "count": 13,
+      "sha256": "d9281554f65084d6b6582a9c5340c2b8e4bbf95379c74a5a77f3c6e00d766617"
+    }
+  },
+  "styles": {
+    "工作台": [
+      {
+        "className": "sidebar",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 220,
+          "height": 900
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(248, 243, 235)",
+        "background": "rgb(44, 33, 28)",
+        "padding": "0px",
+        "border": "0px"
+      },
+      {
+        "className": "topbar",
+        "rect": {
+          "x": 220,
+          "y": 0,
+          "width": 1220,
+          "height": 64
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(247, 247, 245)",
+        "padding": "0px 32px",
+        "border": "0px"
+      },
+      {
+        "className": "admin-page-container",
+        "rect": {
+          "x": 252,
+          "y": 84,
+          "width": 1156,
+          "height": 663.640625
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "border": "0px"
+      },
+      {
+        "className": "admin-metric",
+        "rect": {
+          "x": 252,
+          "y": 213.484375,
+          "width": 277,
+          "height": 147
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "24px 20px 20px",
+        "border": "12px"
+      },
+      {
+        "className": "admin-metric",
+        "rect": {
+          "x": 545,
+          "y": 213.484375,
+          "width": 277,
+          "height": 147
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "24px 20px 20px",
+        "border": "12px"
+      },
+      {
+        "className": "admin-metric",
+        "rect": {
+          "x": 838,
+          "y": 213.484375,
+          "width": 277,
+          "height": 147
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "24px 20px 20px",
+        "border": "12px"
+      },
+      {
+        "className": "admin-metric",
+        "rect": {
+          "x": 1131,
+          "y": 213.484375,
+          "width": 277,
+          "height": 147
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "24px 20px 20px",
+        "border": "12px"
+      }
+    ],
+    "内容维护": [
+      {
+        "className": "sidebar",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 220,
+          "height": 900
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(248, 243, 235)",
+        "background": "rgb(44, 33, 28)",
+        "padding": "0px",
+        "border": "0px"
+      },
+      {
+        "className": "topbar",
+        "rect": {
+          "x": 220,
+          "y": 0,
+          "width": 1220,
+          "height": 64
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(247, 247, 245)",
+        "padding": "0px 32px",
+        "border": "0px"
+      },
+      {
+        "className": "admin-page-container",
+        "rect": {
+          "x": 252,
+          "y": 84,
+          "width": 1156,
+          "height": 853.484375
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 1292,
+          "y": 95.234375,
+          "width": 116,
+          "height": 41
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(73, 53, 43)",
+        "padding": "9px 16px",
+        "border": "8px"
+      },
+      {
+        "className": "active",
+        "rect": {
+          "x": 252,
+          "y": 169.484375,
+          "width": 32,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(73, 53, 43)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 312,
+          "y": 169.484375,
+          "width": 32,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(115, 112, 107)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 372,
+          "y": 169.484375,
+          "width": 74,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(115, 112, 107)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 474,
+          "y": 169.484375,
+          "width": 60,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(115, 112, 107)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 562,
+          "y": 169.484375,
+          "width": 60,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(115, 112, 107)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "",
+        "rect": {
+          "x": 650,
+          "y": 169.484375,
+          "width": 60,
+          "height": 43
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(115, 112, 107)",
+        "background": "rgba(0, 0, 0, 0)",
+        "padding": "8px 2px 12px",
+        "border": "0px"
+      },
+      {
+        "className": "secondary admin-refresh",
+        "rect": {
+          "x": 1320,
+          "y": 233.984375,
+          "width": 88,
+          "height": 41
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "9px 16px",
+        "border": "8px"
+      },
+      {
+        "className": "table-region",
+        "rect": {
+          "x": 252,
+          "y": 331.484375,
+          "width": 1156,
+          "height": 606
+        },
+        "font": "-apple-system, \"system-ui\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "size": "14px",
+        "color": "rgb(39, 35, 31)",
+        "background": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "border": "10px"
+      }
+    ]
+  }
+}

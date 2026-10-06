@@ -1,0 +1,38 @@
+{
+  "baseline": "b6339129600f0c29869c222e44f038b9a2b6d59b",
+  "date": "2026-10-07",
+  "build": {
+    "command": "npm run build",
+    "status": "PASS",
+    "scope": "Vite admin production build and existing miniprogram tsc"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "status": "PASS",
+    "scope": "Existing miniprogram tsconfig only; admin JSX compiled by Vite"
+  },
+  "tests": {
+    "command": "npm test",
+    "pass": 57,
+    "fail": 0,
+    "skip": 0
+  },
+  "originals": {
+    "command": "python3 scripts/verify_originals.py",
+    "pass": 25,
+    "changed": 0
+  },
+  "browser": "Chrome 154.0.8037.98 via installed bundled Playwright",
+  "runtime": "Node 26.3.1 / React 19.2.0 / Vite 7.1.7",
+  "notExecuted": [
+    "Safari",
+    "Firefox",
+    "Edge",
+    "Full screen-reader/WCAG certification",
+    "All zoom levels/mobile admin",
+    "Production cloud/deployment/WeChat real device/release",
+    "Shared customer business writes",
+    "Other admin body visual and complete business acceptance",
+    "Human visual acceptance"
+  ]
+}

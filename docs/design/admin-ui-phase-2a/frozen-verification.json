@@ -1,0 +1,30 @@
+{
+  "baseline": "b6339129600f0c29869c222e44f038b9a2b6d59b",
+  "checks": [
+    "AST unchanged: view",
+    "AST unchanged: exportRows",
+    "AST unchanged: act",
+    "AST unchanged: compatible",
+    "AST unchanged: change",
+    "AST unchanged: changeActivity",
+    "AST unchanged: save",
+    "AST unchanged: eligible",
+    "AST unchanged: occupied",
+    "AST unchanged: remote",
+    "AST unchanged: staff",
+    "AST unchanged: slots",
+    "AST unchanged: bookings",
+    "AST unchanged: labels",
+    "All original events, disabled guards, form constraints and values preserved as AST multiset",
+    "Original business visibility conditions retained",
+    "App only suppresses three duplicated headers; login, roles, navigation and user menu unchanged",
+    "All Design System rules/tokens unchanged after approval paragraph",
+    "Phase 1, login, six protected modules, API/server/model/status/visitor/dependencies/tests/originals unchanged",
+    "Tracked changes confined to whitelist"
+  ],
+  "status": "PASS",
+  "sha256": {
+    "before": "f899c627837b5c313af8ca38367d8cf04fdd265b48fa605ee4aadbcc8d4312a2",
+    "after": "e7089001aa0ef2cc653976e07409f411872f2b2cda5d9788011053d0f5aeb785"
+  }
+}
