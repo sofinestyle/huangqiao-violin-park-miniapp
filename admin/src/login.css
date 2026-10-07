@@ -40,6 +40,7 @@
 
 .login--refined .login-brand h1 {
   margin: 0 0 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   color: #fff9ec;
   font-size: clamp(28px, 2.45vw, 39px);
   line-height: 1.5;
@@ -60,7 +61,7 @@
 
 .login--refined .login-brand p { margin: 0; color: #fff9ec; }
 .login--refined .login-brand .login-brand-motto {
-  font-family: 'Songti SC', STSong, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 18px;
   letter-spacing: .2em;
   line-height: 1.9;
@@ -114,7 +115,7 @@
 }
 .login--refined .login-form h2 {
   margin: 0 0 10px;
-  font-family: 'Songti SC', STSong, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: clamp(30px, 2.7vw, 42px);
   font-weight: 700;
   line-height: 1.4;
