@@ -1,0 +1,407 @@
+{
+  "baseline": "c351092da1cc99f49a91a67f4ad62124dcf5e716",
+  "observed_at": "2026-10-07T04:55:53.706346+00:00",
+  "source": ".local/huangqiao.sqlite",
+  "scope": "development/test product content only; no accounts, sessions, consultation requests or personal data exported",
+  "read_only": {
+    "uri_mode": "ro",
+    "query_only": 1,
+    "application_openDatabase_used": false,
+    "writes_executed": false
+  },
+  "all_products": {
+    "products": 28,
+    "products_with_specs": 28,
+    "zero_spec_products": 0,
+    "single_spec_products": 21,
+    "multi_spec_products": 7,
+    "spec_count": 56,
+    "max_specs": 5,
+    "spec_count_distribution": {
+      "1": 21,
+      "5": 7
+    },
+    "states": {
+      "archived": 1,
+      "published": 27
+    },
+    "categories": {
+      "guitar": 1,
+      "gift": 20,
+      "violin": 7
+    },
+    "isTest_true_products": 28,
+    "product_json_keys": [
+      "brand",
+      "category",
+      "code",
+      "description",
+      "images",
+      "isTest",
+      "price",
+      "priceMode",
+      "priceNote",
+      "series",
+      "specs"
+    ],
+    "spec_json_keys": [
+      "description",
+      "images",
+      "name"
+    ],
+    "blank_spec_names": 0,
+    "products_with_duplicate_spec_names": 0,
+    "blank_spec_descriptions": 55,
+    "specs_with_explicit_price": 0,
+    "specs_with_own_images": 1,
+    "spec_image_references": 1,
+    "specs_without_own_images": 55,
+    "product_image_references": 29,
+    "price_modes": {
+      "inquiry": 8,
+      "reference": 20
+    }
+  },
+  "instruments": {
+    "products": 8,
+    "products_with_specs": 8,
+    "zero_spec_products": 0,
+    "single_spec_products": 1,
+    "multi_spec_products": 7,
+    "spec_count": 36,
+    "max_specs": 5,
+    "spec_count_distribution": {
+      "1": 1,
+      "5": 7
+    },
+    "states": {
+      "archived": 1,
+      "published": 7
+    },
+    "categories": {
+      "guitar": 1,
+      "violin": 7
+    },
+    "isTest_true_products": 8,
+    "product_json_keys": [
+      "brand",
+      "category",
+      "code",
+      "description",
+      "images",
+      "isTest",
+      "price",
+      "priceMode",
+      "series",
+      "specs"
+    ],
+    "spec_json_keys": [
+      "description",
+      "images",
+      "name"
+    ],
+    "blank_spec_names": 0,
+    "products_with_duplicate_spec_names": 0,
+    "blank_spec_descriptions": 35,
+    "specs_with_explicit_price": 0,
+    "specs_with_own_images": 1,
+    "spec_image_references": 1,
+    "specs_without_own_images": 35,
+    "product_image_references": 9,
+    "price_modes": {
+      "inquiry": 7,
+      "reference": 1
+    }
+  },
+  "gifts": {
+    "products": 20,
+    "products_with_specs": 20,
+    "zero_spec_products": 0,
+    "single_spec_products": 20,
+    "multi_spec_products": 0,
+    "spec_count": 20,
+    "max_specs": 1,
+    "spec_count_distribution": {
+      "1": 20
+    },
+    "states": {
+      "published": 20
+    },
+    "categories": {
+      "gift": 20
+    },
+    "isTest_true_products": 20,
+    "product_json_keys": [
+      "category",
+      "code",
+      "description",
+      "images",
+      "isTest",
+      "price",
+      "priceMode",
+      "priceNote",
+      "series",
+      "specs"
+    ],
+    "spec_json_keys": [
+      "description",
+      "name"
+    ],
+    "blank_spec_names": 0,
+    "products_with_duplicate_spec_names": 0,
+    "blank_spec_descriptions": 20,
+    "specs_with_explicit_price": 0,
+    "specs_with_own_images": 0,
+    "spec_image_references": 0,
+    "specs_without_own_images": 20,
+    "product_image_references": 20,
+    "price_modes": {
+      "reference": 19,
+      "inquiry": 1
+    }
+  },
+  "samples": {
+    "spec_names": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "3/4",
+      "4/4",
+      "示例规格"
+    ],
+    "spec_descriptions": [
+      "",
+      "3年自然风干欧洲木材"
+    ],
+    "instrument_product_prices": [
+      {
+        "code": "QA-R1",
+        "priceMode": "inquiry",
+        "price": "<absent>",
+        "spec_prices": [
+          "<absent>"
+        ]
+      },
+      {
+        "code": "L1101",
+        "priceMode": "inquiry",
+        "price": "<absent>",
+        "spec_prices": [
+          "<absent>",
+          "<absent>",
+          "<absent>",
+          "<absent>",
+          "<absent>"
+        ]
+      },
+      {
+        "code": "L1201",
+        "priceMode": "inquiry",
+        "price": "<absent>",
+        "spec_prices": [
+          "<absent>",
+          "<absent>",
+          "<absent>",
+          "<absent>",
+          "<absent>"
+        ]
+      }
+    ],
+    "gift_reference_prices": [
+      15,
+      18,
+      20,
+      24,
+      26,
+      29,
+      38,
+      48
+    ]
+  },
+  "common_material_text": {
+    "instrument_products_with_material_terms": 7,
+    "instrument_specs_with_material_terms": 0,
+    "product_description_example": "实木普级小提琴\n面板 / 背板：欧洲云杉 · 枫木\n工艺：普及油漆\n琴弦 / 马桥：普级琴弦 · 普级马桥\n琴弓 / 琴盒：乌木琴弓 · 三角盒带绣标\n配套：琴码1、松香2、备用弦1副、肩托、调音器、擦琴布"
+  },
+  "schema": {
+    "content": {
+      "sql": "CREATE TABLE content (\n      id TEXT PRIMARY KEY, kind TEXT NOT NULL, name TEXT NOT NULL, data TEXT NOT NULL,\n      state TEXT NOT NULL DEFAULT 'draft', sort INTEGER NOT NULL DEFAULT 0, version INTEGER NOT NULL DEFAULT 1,\n      created_at TEXT NOT NULL, updated_at TEXT NOT NULL)",
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_content_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0
+        }
+      ],
+      "foreign_keys": []
+    },
+    "media": {
+      "sql": "CREATE TABLE media (id TEXT PRIMARY KEY, filename TEXT NOT NULL, mime TEXT NOT NULL,\n      size INTEGER NOT NULL, sha256 TEXT NOT NULL, stored_name TEXT NOT NULL, rights TEXT NOT NULL,\n      duration REAL, created_at TEXT NOT NULL)",
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_media_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0
+        }
+      ],
+      "foreign_keys": []
+    },
+    "consultations": {
+      "sql": "CREATE TABLE consultations (id TEXT PRIMARY KEY, owner TEXT NOT NULL REFERENCES visitors(id),\n      snapshot TEXT NOT NULL, request TEXT NOT NULL, state TEXT NOT NULL, assignee TEXT REFERENCES accounts(id),\n      followups TEXT NOT NULL DEFAULT '[]', public_note TEXT NOT NULL DEFAULT '', version INTEGER NOT NULL DEFAULT 1,\n      created_at TEXT NOT NULL, updated_at TEXT NOT NULL)",
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "consultations_owner",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_consultations_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "accounts",
+          "from": "assignee",
+          "to": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "visitors",
+          "from": "owner",
+          "to": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ]
+    },
+    "audit": {
+      "sql": "CREATE TABLE audit (id INTEGER PRIMARY KEY AUTOINCREMENT, actor TEXT NOT NULL,\n      action TEXT NOT NULL, object TEXT NOT NULL, detail TEXT NOT NULL, created_at TEXT NOT NULL)",
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "audit_action_created_at_id",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0
+        },
+        {
+          "seq": 1,
+          "name": "audit_actor_created_at_id",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0
+        },
+        {
+          "seq": 2,
+          "name": "audit_created_at_id",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0
+        }
+      ],
+      "foreign_keys": []
+    },
+    "migrations": {
+      "sql": "CREATE TABLE migrations (version INTEGER PRIMARY KEY, applied_at TEXT NOT NULL)",
+      "indexes": [],
+      "foreign_keys": []
+    }
+  },
+  "migration_versions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "product_records_sha256": "817a9f2f50e9d6bfcdb82a5d4e8e133aa48be2d2aa1d9fe86fcbda4b034f6ef0",
+  "missing_media_references": 0,
+  "image_reference_types": {
+    "uploaded_media": 4,
+    "static_asset": 26
+  },
+  "code_duplicates": [],
+  "database_file_checks": {
+    "before": {
+      "huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+      "huangqiao.sqlite-wal": "db6d32008b56272ee0448625dc8214e801cbdb0fdb5fb680b5f24409e9db0eef"
+    },
+    "after": {
+      "huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+      "huangqiao.sqlite-wal": "db6d32008b56272ee0448625dc8214e801cbdb0fdb5fb680b5f24409e9db0eef"
+    },
+    "unchanged": true,
+    "after_audit": {
+      "huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+      "huangqiao.sqlite-wal": "db6d32008b56272ee0448625dc8214e801cbdb0fdb5fb680b5f24409e9db0eef"
+    },
+    "unchanged_through_audit": true
+  },
+  "supplementary": {
+    "reference_price_examples": [
+      {
+        "code": "L201",
+        "category": "violin",
+        "price": 450
+      }
+    ],
+    "unique_image_urls": 6
+  },
+  "audit_boundary": {
+    "source_changes": false,
+    "database_changes": false,
+    "migrations_added": false,
+    "api_changes": false,
+    "admin_changes": false,
+    "mini_program_changes": false,
+    "business_tests_executed": false,
+    "build_executed": false,
+    "originals_verified": 25,
+    "erp_or_website_connected": false
+  },
+  "source_evidence": [
+    "server/db.mjs",
+    "server/service.mjs",
+    "server/http.mjs",
+    "server/media.mjs",
+    "server/seed.mjs",
+    "server/test-catalog.json",
+    "server/content-migration.mjs",
+    "server/backup.mjs",
+    "shared/status.mjs",
+    "admin/src/Content.jsx",
+    "admin/src/MediaUpload.jsx",
+    "admin/src/Operations.jsx",
+    "miniprogram/miniprogram/lib/api.ts",
+    "miniprogram/miniprogram/lib/list-page.ts",
+    "miniprogram/miniprogram/lib/detail-page.ts",
+    "miniprogram/miniprogram/pages/product/index.ts",
+    "miniprogram/miniprogram/pages/product/index.wxml",
+    "miniprogram/miniprogram/pages/consult/index.ts",
+    "miniprogram/miniprogram/pages/record/index.wxml",
+    "tests/round1.test.mjs",
+    "tests/business.test.mjs",
+    "tests/admin-business-fixture.mjs"
+  ],
+  "document_checks": {
+    "markdown_files": 6,
+    "local_links_valid": true,
+    "original_files_verified": 25
+  }
+}
