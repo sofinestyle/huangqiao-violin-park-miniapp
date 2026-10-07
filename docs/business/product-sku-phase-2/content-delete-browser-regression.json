@@ -1,0 +1,85 @@
+{
+  "browser": "154.0.8037.99",
+  "date": "2026-10-07T15:24:25.778Z",
+  "environment": "isolated SQLite/media, real compiled Admin and HTTP",
+  "sharedBusinessDataAffected": false,
+  "results": [
+    {
+      "name": "Four content tabs delete, published disabled, confirmation cancellation and refresh",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical references preflight has no executable delete",
+      "status": "PASS"
+    },
+    {
+      "name": "Deletion rechecks late publication and reference after confirmation opens",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft option/value delete removes local temporary combinations; cancel leaves DB untouched",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted dimension delete confirms 10 combos; cancel without save retains DB",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted value delete saves structure retirement with manual reason and data preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Same historical value prompts restore, original value and SKU IDs return",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted dimension delete and same-name restoration reuse original identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Last value blocks deletion, last dimension respects simple conversion guards",
+      "status": "PASS"
+    },
+    {
+      "name": "SKU delete then stale version cannot overwrite",
+      "status": "PASS"
+    },
+    {
+      "name": "Content delete busy prevents duplicate requests and modal dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit Chinese/raw delete entry and all eight backend pages healthy",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "Not republished: prior-stage screenshots generated only in temporary regression directory"
+  ],
+  "runtimeErrors": [],
+  "network": [
+    {
+      "path": "/api/admin/me",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/content/ae811923-af6a-421c-9b63-6d8edc4fdd83",
+      "status": 409
+    },
+    {
+      "path": "/api/admin/content/ae811923-af6a-421c-9b63-6d8edc4fdd83",
+      "status": 409
+    },
+    {
+      "path": "/api/admin/content/afa73c09-3230-46c6-920f-99e1a547a1c1",
+      "status": 409
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ]
+}

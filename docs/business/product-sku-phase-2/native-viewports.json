@@ -1,0 +1,74 @@
+[
+  {
+    "dimensions": "two",
+    "width": 390,
+    "chipCount": 7,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 253.3828125,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "three-long",
+    "width": 390,
+    "chipCount": 9,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 334.1875,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "two",
+    "width": 320,
+    "chipCount": 7,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 226.984375,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "three-long",
+    "width": 320,
+    "chipCount": 9,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 304.6796875,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "two",
+    "width": 375,
+    "chipCount": 7,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 253.3828125,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "three-long",
+    "width": 375,
+    "chipCount": 9,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 334.1875,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "two",
+    "width": 430,
+    "chipCount": 7,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 268.984375,
+    "price": "参考价 ¥450"
+  },
+  {
+    "dimensions": "three-long",
+    "width": 430,
+    "chipCount": 9,
+    "minTouchHeight": 44,
+    "horizontalOverflow": false,
+    "groupHeight": 349.984375,
+    "price": "参考价 ¥450"
+  }
+]

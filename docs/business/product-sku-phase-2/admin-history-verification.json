@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "environment": "temporary SQLite + isolated media + Chrome",
+  "legacySpecVisible": true,
+  "missingSkuFieldHidden": true,
+  "runtimeErrors": [],
+  "sharedDataAffected": false
+}

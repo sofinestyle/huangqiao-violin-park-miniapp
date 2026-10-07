@@ -13,3 +13,5 @@ D. reset-sku-dev只允许development、专用临时目录和标记，拒绝共�
 E. 执行前使用backupData备份SQLite+media（含hashmanifest），恢复至新隔离目录演练；不覆盖原库。保留版本与操作人/时间。正式清理脚本/实际路径需要未来另行批准。
 
 F. 执行后验证：Schema/Migration正确、FK/quick_check、无测试业务数据/旧Session；管理员权限正确；人工录入正式产品/Options/SKU/媒体并逐条发布审核；无自动测试商品；可公开图片/咨询/记录闭环；备份恢复验证。正式价格、产品资料、媒体版权、微信账号/域名不由此阶段测试确认。
+
+隔离启动验证补充：HQ_SEED_MODE=none的新库保留既有Schema Migration的审计，不把系统迁移审计当作测试业务清理。Migration2是原开发文案迁移，关闭Seed时空库无该旧文案，不为凑版本号写入假记录；核心Migration5存在且可幂等启动。当前Admin新产品默认isTest=true；正式录入准备必须在获批初始化环境中明确正式标记的导入/审核机制，不能直接把测试Seed或默认开发录入当成正式商品。

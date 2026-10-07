@@ -17,3 +17,5 @@ referencePrice只记录提交时有效参考价，不代表成交；inquiry=null
 错误：400 SKU_REQUIRED；404 SKU_NOT_FOUND；400 SKU_PRODUCT_MISMATCH；409 SKU_UNAVAILABLE；404 PRODUCT_UNAVAILABLE。请求规格文字/价格/码均不作为权威。普通服务或lesson/package/spot咨询保留原行为，无SKU。无contentId传skuId拒绝。
 
 Admin仅在新snapshot.sku存在时显示规格组合及SKU编码、参考价上下文；旧snapshot.spec fallback。游客记录响应对sku裁剪为specLabel/referencePrice，界面只展示产品及可读规格。历史兼容显示函数Admin/shared与Mini TS保持同契约测试；不改CSV字段、权限或咨询状态机。创建成功沿{id,state,message}不额外暴露快照。
+
+原生Page生命周期补充：onLoad每次生成新的幂等键并清空请求指纹；同一页面的同payload重试保留键。修复连续进入不同产品咨询时旧Page定义键复用导致的409，未改变Server幂等协议。

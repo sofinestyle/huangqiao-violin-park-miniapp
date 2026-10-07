@@ -6,8 +6,10 @@ const path=require('node:path');
 const mode=process.argv[2] || 'views';
 const resultsPath='/tmp/huangqiao-native-check.json';
 const lessonId=process.env.HQ_TEST_LESSON_ID;
+const productId=process.env.HQ_TEST_PRODUCT_ID || 'violin-L201';
+if(['create','business'].includes(mode) && (!process.env.HQ_NATIVE_PROJECT_PATH || process.env.HQ_NATIVE_ISOLATED!=='1' || !process.env.HQ_TEST_PRODUCT_ID))throw Error('写验证请使用SKU2隔离脚本或明确隔离项目与测试产品');
 (async()=>{
- const m=await automator.launch({projectPath:path.resolve('miniprogram'),trustProject:true,timeout:45000});
+ const m=await automator.launch({projectPath:path.resolve(process.env.HQ_NATIVE_PROJECT_PATH || 'miniprogram'),trustProject:true,timeout:45000});
  if(!m)throw Error('微信自动化连接失败');
  const exceptions=[];m.on('exception',e=>exceptions.push(String(e.message || e)));
  const results={environment:'WeChat developer tools simulator / local API',mode,checkedAt:new Date().toISOString(),pages:[],exceptions};
@@ -19,14 +21,14 @@ const lessonId=process.env.HQ_TEST_LESSON_ID;
   if(mode==='views' || mode==='create') {
    let p=await open('/pages/index/index');assert.equal((await p.data('stats')).packages,5);await m.screenshot({path:'/tmp/huangqiao-native-home.png'});
    for(const route of ['/pages/instruments/index','/pages/gifts/index','/pages/study/index','/pages/mine/index','/pages/product/index?id=violin-L201','/pages/package/index?id=package-1','/pages/booking/index?id=package-1','/pages/booking/index?group=1','/pages/consult/index','/pages/teaching/index','/pages/tour/index','/pages/about/index','/pages/records/index']) {await open(route);results.pages.push(route);}
-   p=await open('/pages/product/index?id=violin-L201');await p.callMethod('select',{currentTarget:{dataset:{index:1}}});await p.callMethod('consult');p=await routed('pages/consult/index');assert.equal(p.path,'pages/consult/index');assert.ok(await p.data('spec'));results.specCarried=true;
+   p=await open('/pages/product/index?id='+productId);if(await p.data('canConsult')){const skuId=await p.data('selectedSkuId');await p.callMethod('consult');p=await routed('pages/consult/index');assert.equal(p.path,'pages/consult/index');await ready(p);assert.equal(await p.data('skuId'),skuId);results.skuCarried=true;}else results.productWithoutSku='consultation disabled';
    if(lessonId){p=await open('/pages/lesson/index?id='+lessonId);await p.waitFor(500);const v=await p.$('video');console.log('VIDEO_COMPONENT',!!v);await m.screenshot({path:'/tmp/huangqiao-native-video.png'});assert.ok(v);await v.callContextMethod('play');await p.waitFor(2300);assert.equal(await p.data('playbackError'),false);assert.ok((await p.data('playTime'))>0 || (await p.data('ended')));results.video={played:true,time:await p.data('playTime'),ended:await p.data('ended'),visitorSessionBefore:!!(await m.callWxMethod('getStorageSync','hq-visitor-token'))};await m.screenshot({path:'/tmp/huangqiao-native-video.png'});console.log('VIDEO_PLAYBACK',JSON.stringify(results.video));}
   }
   if(mode==='create' || mode==='business') {
    let p,r; if(mode==='business'){r=await open('/pages/record/index?kind=bookings&id='+process.env.HQ_TEST_BOOKING_ID);results.bookingId=await r.data('id');assert.equal((await r.data('row')).state,'pending');} else { p=await open('/pages/booking/index?id=package-1');await p.callMethod('date',{detail:{value:'2099-10-20'}});
    for(const [key,value] of Object.entries({adults:'1',children:'1',contactName:'虚拟测试访客（原生联调）',phone:'13800000000',note:'仅机制验证，不用于真实接待'})){const e=await p.$(`[data-key="${key}"]`);assert.ok(e);await e.input(value);}
    await p.callMethod('consent',{detail:{value:['agree']}});const submit=await button(p,'提交预约申请');await submit.tap();r=await routed('pages/record/index');assert.equal(r.path,'pages/record/index');await ready(r);results.bookingId=await r.data('id');assert.equal((await r.data('row')).state,'pending');}
-   p=await open('/pages/consult/index?id=violin-L201&spec=4%2F4');for(const [key,value] of Object.entries({contactName:'虚拟咨询访客（原生联调）',phone:'13800000000',message:'测试了解4/4规格，仅机制验证'})){await (await p.$(`[data-key="${key}"]`)).input(value);}await p.callMethod('consent',{detail:{value:['agree']}});await (await button(p,'提交咨询')).tap();r=await routed('pages/record/index');assert.equal(r.path,'pages/record/index');await ready(r);results.consultationId=await r.data('id');assert.equal((await r.data('row')).state,'pending');await m.screenshot({path:'/tmp/huangqiao-native-consultation.png'});
+   p=await open('/pages/product/index?id='+productId);assert.equal(await p.data('canConsult'),true);await p.callMethod('consult');p=await ready(await routed('pages/consult/index'));for(const [key,value] of Object.entries({contactName:'虚拟咨询访客（原生联调）',phone:'13800000000',message:'测试了解4/4规格，仅机制验证'})){await (await p.$(`[data-key="${key}"]`)).input(value);}await p.callMethod('consent',{detail:{value:['agree']}});await (await button(p,'提交咨询')).tap();r=await routed('pages/record/index');assert.equal(r.path,'pages/record/index');await ready(r);results.consultationId=await r.data('id');assert.equal((await r.data('row')).state,'pending');await m.screenshot({path:'/tmp/huangqiao-native-consultation.png'});
   }
   if(mode==='verify') {
    const prev=JSON.parse(fs.readFileSync(resultsPath,'utf8'));
