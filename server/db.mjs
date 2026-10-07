@@ -1,6 +1,7 @@
 import { DatabaseSync } from 'node:sqlite';
 import { mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { migrateAuditIndexes } from './migrations/004-admin-audit-indexes.mjs';
 
 export function openDatabase(path) {
   if (path !== ':memory:') mkdirSync(dirname(path), { recursive: true, mode: 0o700 });
@@ -53,6 +54,7 @@ export function openDatabase(path) {
     db.prepare('INSERT INTO migrations VALUES (3,?)').run(now());
     db.prepare('INSERT INTO audit(actor,action,object,detail,created_at) VALUES (?,?,?,?,?)').run('system','schema.slot-enrollment.migrate','slots',JSON.stringify({version:3,existingSlots:'draft',externalCount:0}),now());
   });
+  migrateAuditIndexes(db);
   return db;
 }
 
