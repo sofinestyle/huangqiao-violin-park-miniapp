@@ -23,7 +23,7 @@ export async function upload(db,actor,request,uploads) {
   permit(actor,'content');
   const mime=request.headers['content-type']?.split(';')[0];
   requireValue(['video/mp4','video/webm','image/png','image/jpeg'].includes(mime),'支持MP4、WebM、PNG、JPG文件',415);
-  const rights=text(decodeURIComponent(request.headers['x-media-rights'] || ''),'权属说明',800);
+  const rights=text(decodeURIComponent(request.headers['x-media-rights'] || ''),'权属说明',800,mime.startsWith('image/'));
   const filename=text(decodeURIComponent(request.headers['x-file-name'] || ''),'文件名',180);
   const expected=Number(request.headers['content-length']);
   requireValue(Number.isFinite(expected) && expected>0 && expected<=MAX_UPLOAD,'文件为空或超过64MB上传上限',413);

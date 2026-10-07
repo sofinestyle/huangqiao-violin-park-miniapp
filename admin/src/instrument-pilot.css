@@ -86,3 +86,12 @@
   .instrument-pilot .image-edit { flex-wrap: wrap; }
   .instrument-pilot .image-edit select { flex-basis: 100%; }
 }
+
+/* Product gallery preview: keep every selected image visible without cropping. */
+.admin-content .product-gallery-preview { margin: 20px 0; }
+.admin-content .product-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(128px,1fr)); gap: 12px; }
+.admin-content .product-gallery-grid figure { margin: 0; min-width: 0; }
+.admin-content .product-gallery-grid a { display: block; border-radius: 8px; }
+.admin-content .product-gallery-grid a:focus-visible { outline: 2px solid var(--wood); outline-offset: 3px; }
+.admin-content .product-gallery-grid img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; background: #f7f7f5; border-radius: 8px; }
+.admin-content .product-gallery-grid figcaption { margin-top: 6px; font-size: 13px; color: var(--muted); }

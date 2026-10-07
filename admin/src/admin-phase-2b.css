@@ -32,11 +32,11 @@
 .admin-management tbody tr:hover td { background: #f7f6f3; }
 .admin-management td small { color: var(--admin-secondary); font-size: 12px; line-height: 1.6; margin-top: 2px; }
 .admin-management :is(.admin-file-name,.admin-account-name,.admin-audit-actor) { font-size: 14px; font-weight: 500; }
-.admin-media-page table { min-width: 1120px; }
+.admin-media-page table { min-width: 920px; }
 .admin-media-page th:first-child { width: 250px; }
 .admin-media-page th:nth-child(2) { width: 160px; }
-.admin-media-page th:nth-child(4) { width: 240px; }
-.admin-media-page th:nth-child(5) { width: 168px; }
+.admin-media-page th:nth-child(3) { width: 240px; }
+.admin-media-page th:nth-child(4) { width: 168px; }
 .admin-media-page :is(th,td):last-child { width: 84px; }
 .admin-management:is(.admin-media-page,.admin-accounts-page) :is(th,td):last-child { position: sticky; right: 0; white-space: nowrap; background: var(--admin-surface); }
 .admin-management:is(.admin-media-page,.admin-accounts-page) th:last-child { background: #faf9f7; }
