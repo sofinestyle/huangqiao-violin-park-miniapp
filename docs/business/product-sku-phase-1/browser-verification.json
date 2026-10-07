@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-07T07:06:24.594Z",
+  "browser": "154.0.8037.99",
+  "viewports": [
+    1440,
+    1280,
+    1728
+  ],
+  "browserPlugin": "not available; existing Playwright Chrome",
+  "environment": "temporary SQLite and isolated uploads; actual compiled Admin and HTTP",
+  "sharedBusinessDataAffected": false,
+  "results": [
+    {
+      "name": "A: create simple via UI, inherited image/price and server stable ID",
+      "status": "PASS"
+    },
+    {
+      "name": "B: create 5 sizes x 2 colors from UI, 10 compact rows at 1440/1280/1728",
+      "status": "PASS"
+    },
+    {
+      "name": "Bulk450, individual480, 0 and explicit inheritance; gallery batch and independent upload",
+      "status": "PASS"
+    },
+    {
+      "name": "D/E/F: disable value confirmation, restore exact IDs, rename keeps IDs/codes",
+      "status": "PASS"
+    },
+    {
+      "name": "Batch disable/enable and single invalid combination independent of value",
+      "status": "PASS"
+    },
+    {
+      "name": "Server SKU code conflict locates row and retains values",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate option and value locate their fields, preserve edits and allow correction",
+      "status": "PASS"
+    },
+    {
+      "name": "C: add third dimension; 10 to20, original IDs/codes retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Mode conversion guards, simple identity reuse and options->simple preservation",
+      "status": "PASS"
+    },
+    {
+      "name": "50 SKU browser open/save timing",
+      "status": "PASS",
+      "milliseconds": 135
+    },
+    {
+      "name": "50 SKU opens and saves, 21-50 warning, >50 preview blocks generation",
+      "status": "PASS"
+    },
+    {
+      "name": "Server version conflict shown; stale editor cannot overwrite",
+      "status": "PASS"
+    },
+    {
+      "name": "Save busy prevents repeated submits and closing; real request then completes",
+      "status": "PASS"
+    },
+    {
+      "name": "Gift product opens 12 SKU and saves in existing content tab",
+      "status": "PASS"
+    },
+    {
+      "name": "Full backend eight pages; legacy notice; login/logout; no runtime overlays",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-simple-product.png",
+    "02-options-editor-10-sku.png",
+    "after-sku-matrix.png",
+    "10-sku-1280.png",
+    "10-sku-1728.png",
+    "04-sku-batch-toolbar.png",
+    "05-sku-image-editor.png",
+    "06-option-disable-confirm.png",
+    "07-sku-validation-error.png",
+    "03-options-editor-20-sku.png"
+  ],
+  "runtimeErrors": [],
+  "httpErrors": [
+    {
+      "path": "/api/admin/me",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/content/19410cd8-153b-4dcc-a8c4-a221a756098c",
+      "status": 409
+    },
+    {
+      "path": "/api/admin/content/19410cd8-153b-4dcc-a8c4-a221a756098c",
+      "status": 400
+    },
+    {
+      "path": "/api/admin/content/19410cd8-153b-4dcc-a8c4-a221a756098c",
+      "status": 400
+    },
+    {
+      "path": "/api/admin/content/9eef3bea-ba66-4004-9d52-79f130a539e1",
+      "status": 409
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ],
+  "metrics": {
+    "editorHeight": 1125.875,
+    "rowHeight": 60,
+    "formHeight": 3030
+  }
+}

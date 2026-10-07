@@ -1,7 +1,7 @@
 export async function api(path,options={}) {
   let response;try{response=await fetch(`/api/admin/${path}`,{...options,credentials:'same-origin',headers:{'Content-Type':'application/json','X-HQ-Action':'1',...options.headers},signal:options.signal || AbortSignal.timeout(10000)});}catch{throw new Error('暂时无法连接服务，请稍后重试');}
   const result=await response.json().catch(()=>{throw new Error('服务响应暂时异常，请保留填写内容并重试');});
-  if(!response.ok){if(response.status===401 && path!=='login')window.dispatchEvent(new Event('hq-session-expired'));throw new Error(result.error || '请求失败，请重试');}
+  if(!response.ok){if(response.status===401 && path!=='login')window.dispatchEvent(new Event('hq-session-expired'));const error=new Error(result.error || '请求失败，请重试');error.field=result.field;error.code=result.code;throw error;}
   return result;
 }
 export const post=(path,data)=>api(path,{method:'POST',body:JSON.stringify(data)});

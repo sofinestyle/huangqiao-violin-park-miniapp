@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-07",
+  "baseline": "235f864dfcfb213fa1ae1b03935adec6356d194e",
+  "foundation": "c2e98eb6248206802f12319746fc7f01b5dbfb15",
+  "tests": {
+    "original": 71,
+    "new": 23,
+    "total": 94,
+    "passed": 94,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "functionalGroups": 14,
+    "passed": 14,
+    "timingRecords": 1,
+    "version": "154.0.8037.99",
+    "runtimeErrors": [],
+    "sku50": {
+      "name": "50 SKU browser open/save timing",
+      "status": "PASS",
+      "milliseconds": 135
+    }
+  },
+  "commands": {
+    "npm test": "PASS",
+    "npm run build": "PASS",
+    "npm run typecheck": "PASS",
+    "python3 scripts/verify_originals.py": "PASS 25",
+    "git diff --check": "PASS"
+  },
+  "verification": {
+    "migration": {
+      "status": "PASS",
+      "test": "tests/product-sku.test.mjs",
+      "checks": [
+        "empty",
+        "old-schema data intact",
+        "idempotent restart",
+        "safe empty rollback/reapply",
+        "nonempty rollback refused",
+        "SKU PK/FK/NOCASE/combination constraints"
+      ]
+    },
+    "api": {
+      "status": "PASS",
+      "test": "tests/product-sku.test.mjs",
+      "checks": [
+        "existing content GET/POST/PUT",
+        "simple/options payload",
+        "201 admin/content",
+        "403 reception",
+        "401 anonymous",
+        "400 invalid/old-write",
+        "409 code/version",
+        "atomic rollback",
+        "readonly specs projection"
+      ]
+    },
+    "media": {
+      "status": "PASS",
+      "tests": [
+        "tests/product-sku.test.mjs",
+        "scripts/product-sku-browser.mjs"
+      ],
+      "checks": [
+        "inheritance without copies",
+        "independent upload",
+        "usedBy including retired",
+        "minimal public bridge only",
+        "upload busy guard"
+      ],
+      "fullPublicSkuAcceptance": false
+    },
+    "backupRestore": {
+      "status": "PASS",
+      "test": "tests/product-sku.test.mjs",
+      "checks": [
+        "actual isolated backup/restore",
+        "SKU row equality",
+        "foreign_key_check"
+      ]
+    },
+    "mini": {
+      "status": "PASS host harness only",
+      "test": "tests/product-sku-mini.test.mjs",
+      "nativeWeChatExecuted": false
+    }
+  },
+  "sharedBusinessDataAffected": false,
+  "sharedHashesBefore": {
+    ".local/huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+    ".local/huangqiao.sqlite-wal": "db6d32008b56272ee0448625dc8214e801cbdb0fdb5fb680b5f24409e9db0eef"
+  },
+  "sharedHashesAfter": {
+    ".local/huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+    ".local/huangqiao.sqlite-wal": "db6d32008b56272ee0448625dc8214e801cbdb0fdb5fb680b5f24409e9db0eef"
+  },
+  "before": {
+    "width": 1440,
+    "height": 1000,
+    "count": 10,
+    "formHeight": 9714
+  },
+  "after": {
+    "width": 1440,
+    "height": 1100,
+    "count": 10,
+    "editorHeight": 1125.875,
+    "rowHeight": 60,
+    "formHeight": 3030
+  },
+  "changedFiles": [
+    "\"docs/\\345\\206\\263\\347\\255\\226\\344\\270\\216\\345\\217\\230\\346\\233\\264\\350\\256\\260\\345\\275\\225.md\"",
+    "\"docs/\\345\\276\\205\\347\\241\\256\\350\\256\\244\\344\\272\\213\\351\\241\\271.md\"",
+    "\"docs/\\351\\252\\214\\346\\224\\266\\346\\270\\205\\345\\215\\225.md\"",
+    "admin/src/Content.jsx",
+    "admin/src/SkuEditor.jsx",
+    "admin/src/api.js",
+    "admin/src/sku-editor.css",
+    "docs/business/product-sku-phase-1/01-simple-product.png",
+    "docs/business/product-sku-phase-1/02-options-editor-10-sku.png",
+    "docs/business/product-sku-phase-1/03-options-editor-20-sku.png",
+    "docs/business/product-sku-phase-1/04-sku-batch-toolbar.png",
+    "docs/business/product-sku-phase-1/05-sku-image-editor.png",
+    "docs/business/product-sku-phase-1/06-option-disable-confirm.png",
+    "docs/business/product-sku-phase-1/07-sku-validation-error.png",
+    "docs/business/product-sku-phase-1/10-sku-1280.png",
+    "docs/business/product-sku-phase-1/10-sku-1728.png",
+    "docs/business/product-sku-phase-1/ACCEPTANCE.md",
+    "docs/business/product-sku-phase-1/ADMIN_SPEC.md",
+    "docs/business/product-sku-phase-1/API_CONTRACT.md",
+    "docs/business/product-sku-phase-1/DATA_MODEL.md",
+    "docs/business/product-sku-phase-1/DCR.md",
+    "docs/business/product-sku-phase-1/TEST_PLAN.md",
+    "docs/business/product-sku-phase-1/TEST_REPORT.md",
+    "docs/business/product-sku-phase-1/after-sku-matrix.png",
+    "docs/business/product-sku-phase-1/before-spec-editor.png",
+    "docs/business/product-sku-phase-1/browser-verification.json",
+    "docs/business/product-sku-phase-1/final-verification.json",
+    "docs/business/product-sku-phase-1/foundation-verification.json",
+    "scripts/product-sku-browser.mjs",
+    "scripts/reset-sku-dev.mjs",
+    "server/db.mjs",
+    "server/http.mjs",
+    "server/media.mjs",
+    "server/migrations/005-product-sku-foundation.mjs",
+    "server/product-sku.mjs",
+    "server/service.mjs",
+    "server/sku-seed.mjs",
+    "shared/sku-model.mjs",
+    "tests/business.test.mjs",
+    "tests/product-sku-helper.mjs",
+    "tests/product-sku-mini.test.mjs",
+    "tests/product-sku.test.mjs",
+    "tests/round1.test.mjs"
+  ],
+  "status": "READY FOR HUMAN ACCEPTANCE"
+}
