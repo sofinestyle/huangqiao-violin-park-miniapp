@@ -1,0 +1,35 @@
+import {decode} from './db.mjs';
+import {requireValue} from './security.mjs';
+const allowed = new Set(['page','pageSize','from','to','actor','action']);
+export function auditQuery(db, params) {
+  for (const key of params.keys()) requireValue(allowed.has(key) && params.getAll(key).length===1,'审计查询参数无效');
+  const pageValue=params.get('page') ?? '1', sizeValue=params.get('pageSize') ?? '50';
+  requireValue(/^[1-9]\d*$/.test(pageValue) && Number.isSafeInteger(+pageValue) && +pageValue<=Math.floor(Number.MAX_SAFE_INTEGER/100),'page须为有效正整数');
+  requireValue(['20','50','100'].includes(sizeValue),'pageSize仅支持20、50、100');
+  const page=+pageValue,pageSize=+sizeValue,where=[],values=[];
+  const timestamp=key=>{
+    const value=params.get(key);if(!value)return null;
+    requireValue(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:Z|[+-]\d{2}:\d{2})$/.test(value),'时间须为带时区的ISO8601格式');
+    // Reject calendar overflow rather than silently normalizing e.g. February 30.
+    const [datePart,timePart]=value.split('T'), date=new Date(datePart+'T00:00:00Z');
+    requireValue(+timePart.slice(0,2)<24 && +timePart.slice(3,5)<60 && +timePart.slice(6,8)<60,'时间无效');
+    requireValue(Number.isFinite(+date) && date.toISOString().slice(0,10)===datePart && Number.isFinite(Date.parse(value)),'时间无效');
+    return new Date(value).toISOString();
+  };
+  const from=timestamp('from'),to=timestamp('to');requireValue(!from || !to || from<=to,'开始时间不能晚于结束时间');
+  if(from){where.push('audit.created_at>=?');values.push(from);}
+  if(to){where.push('audit.created_at<=?');values.push(to);}
+  for(const key of ['actor','action']){
+    const value=params.get(key);if(value){requireValue(value.length<=200,'审计筛选值过长');where.push(`audit.${key}=?`);values.push(value);}
+  }
+  const clause=where.length?' WHERE '+where.join(' AND '):'';
+  const total=db.prepare('SELECT COUNT(*) AS n FROM audit'+clause).get(...values).n;
+  const items=db.prepare('SELECT audit.*,accounts.username AS actor_name FROM audit LEFT JOIN accounts ON accounts.id=audit.actor'+clause+' ORDER BY audit.created_at DESC,audit.id DESC LIMIT ? OFFSET ?').all(...values,pageSize,(page-1)*pageSize).map(a=>({...a,detail:decode(a.detail)}));
+  return {items,total,page,pageSize};
+}
+export function auditOptions(db) {
+  return {
+    actions:db.prepare('SELECT DISTINCT action FROM audit ORDER BY action').all().map(a=>a.action),
+    actors:db.prepare('SELECT DISTINCT audit.actor AS id,accounts.username AS name FROM audit LEFT JOIN accounts ON accounts.id=audit.actor ORDER BY COALESCE(accounts.username,audit.actor)').all(),
+  };
+}

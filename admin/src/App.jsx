@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import {api,post} from './api';
 import {Field,Icon,ErrorBox} from './ui';
 import Operations,{Slots} from './Operations';
@@ -12,13 +12,15 @@ import './admin-phase-1.css';
 const menu=[['home','工作台','all'],['content','内容维护','content'],['slots','场次管理','reception'],['bookings','研学预约','reception'],['consultations','咨询管理','reception'],['media','素材库','content'],['accounts','账号权限','admin'],['audit','操作记录','admin']];
 export default function App() {
   const [user,setUser]=useState(null),[checking,setChecking]=useState(true),[page,setPage]=useState('home'),[contentEntry,setContentEntry]=useState(null);
+  const savingRef=useRef(false),[accountSaving,setAccountSaving]=useState(false);
+  const accountSavingChanged=value=>{savingRef.current=value;setAccountSaving(value);};
   useEffect(()=>{api('me').then(setUser).catch(()=>{}).finally(()=>setChecking(false));const expire=()=>setUser(null);window.addEventListener('hq-session-expired',expire);return()=>window.removeEventListener('hq-session-expired',expire);},[]);
   if(checking)return <main className="startup">正在连接管理服务…</main>;
   if(!user)return <Login onLogin={u=>{setUser(u);setPage('home');}}/>;
-  const logout=async()=>{try{await post('logout',{});}finally{setUser(null);}};
-  const navigate=key=>{setContentEntry(null);setPage(key);};
+  const logout=async()=>{if(savingRef.current)return;try{await post('logout',{});}finally{setUser(null);}};
+  const navigate=key=>{if(savingRef.current)return;setContentEntry(null);setPage(key);};
   const createContent=view=>{setContentEntry({view,create:true});setPage('content');};
-  return <div className="shell admin-shell"><aside className="sidebar"><div className="brand"><img src="/assets/yorray-logo.png" alt="YorRay"/><p>黄桥乐器文化产业园</p><span>内容运营与接待管理</span></div><nav aria-label="后台导航">{menu.filter(([, ,role])=>role==='all' || user.roles.includes('admin') || user.roles.includes(role)).map(([key,label])=><button key={key} aria-current={page===key?'page':undefined} className={page===key?'selected':''} onClick={()=>navigate(key)}><Icon name={key}/><span>{label}</span></button>)}</nav><div className="sidebar-bottom">YorRay · 园区管理后台</div></aside><header className="topbar"><span className="admin-header-context">内容运营 / {menu.find(m=>m[0]===page)?.[1]}</span><UserMenu user={user} onLogout={logout}/></header><main className="main"><div className="admin-page-container">{!['home','content','slots','bookings','consultations','media','accounts','audit'].includes(page)?<div className="page-heading"><h1>{menu.find(m=>m[0]===page)?.[1]}</h1></div>:null}{page==='home'?<AdminOverview onNavigate={navigate} onCreate={createContent} user={user}/>:null}{page==='content'?<Content initialView={contentEntry?.view} createOnOpen={contentEntry?.create}/>:null}{page==='slots'?<Slots/>:null}{page==='bookings' || page==='consultations'?<Operations key={page} kind={page} user={user}/>:null}{page==='media'?<Media/>:null}{page==='accounts'?<Accounts/>:null}{page==='audit'?<Audit/>:null}</div></main></div>;
+  return <div className="shell admin-shell"><aside className="sidebar"><div className="brand"><img src="/assets/yorray-logo.png" alt="YorRay"/><p>黄桥乐器文化产业园</p><span>内容运营与接待管理</span></div><nav aria-label="后台导航">{menu.filter(([, ,role])=>role==='all' || user.roles.includes('admin') || user.roles.includes(role)).map(([key,label])=><button disabled={accountSaving} key={key} aria-current={page===key?'page':undefined} className={page===key?'selected':''} onClick={()=>navigate(key)}><Icon name={key}/><span>{label}</span></button>)}</nav><div className="sidebar-bottom">YorRay · 园区管理后台</div></aside><header className="topbar"><span className="admin-header-context">内容运营 / {menu.find(m=>m[0]===page)?.[1]}</span><UserMenu disabled={accountSaving} user={user} onLogout={logout}/></header><main className="main"><div className="admin-page-container">{!['home','content','slots','bookings','consultations','media','accounts','audit'].includes(page)?<div className="page-heading"><h1>{menu.find(m=>m[0]===page)?.[1]}</h1></div>:null}{page==='home'?<AdminOverview onNavigate={navigate} onCreate={createContent} user={user}/>:null}{page==='content'?<Content initialView={contentEntry?.view} createOnOpen={contentEntry?.create}/>:null}{page==='slots'?<Slots/>:null}{page==='bookings' || page==='consultations'?<Operations key={page} kind={page} user={user}/>:null}{page==='media'?<Media/>:null}{page==='accounts'?<Accounts onSavingChange={accountSavingChanged}/>:null}{page==='audit'?<Audit/>:null}</div></main></div>;
 }
 function Login({onLogin}) {
   const [username,setUsername]=useState(''),[password,setPassword]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false);

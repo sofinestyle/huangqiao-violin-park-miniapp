@@ -1,0 +1,45 @@
+{
+  "auditRows": 1225,
+  "measurements": {
+    "first": {
+      "ms": 0.126,
+      "total": 1225,
+      "returned": 50
+    },
+    "middle": {
+      "ms": 0.127,
+      "total": 1225,
+      "returned": 50
+    },
+    "last": {
+      "ms": 0.159,
+      "total": 1225,
+      "returned": 25
+    },
+    "actor": {
+      "ms": 0.094,
+      "total": 402,
+      "returned": 50
+    },
+    "action": {
+      "ms": 0.095,
+      "total": 607,
+      "returned": 50
+    },
+    "time": {
+      "ms": 0.111,
+      "total": 183,
+      "returned": 50
+    },
+    "combined": {
+      "ms": 0.103,
+      "total": 31,
+      "returned": 31
+    }
+  },
+  "kind": "single local SQLite SQL query measurement, not production benchmark",
+  "syntheticRowsInserted": 1205,
+  "pageSize": 50,
+  "stableOrder": "created_at DESC,id DESC",
+  "sharedBusinessDataAffected": false
+}

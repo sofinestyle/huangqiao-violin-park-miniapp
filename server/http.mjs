@@ -1,4 +1,5 @@
 import http from 'node:http';
+import {auditQuery,auditOptions} from './audit-query.mjs';
 import { randomUUID } from 'node:crypto';
 import { createReadStream, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve, extname } from 'node:path';
@@ -139,16 +140,23 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
             requireValue(Array.isArray(b.roles) && b.roles.length && b.roles.every(r=>['admin','content','reception'].includes(r)),'角色无效');
             if(prev.active && decode(prev.roles).includes('admin') && (!b.active || !b.roles.includes('admin')))requireValue(db.prepare("SELECT * FROM accounts WHERE active=1 AND id<>?").all(prev.id).some(a=>decode(a.roles).includes('admin')),'不能停用或移除最后一个管理员');
             db.prepare('UPDATE accounts SET roles=?,can_export=?,active=?,password_hash=? WHERE id=?').run(JSON.stringify(b.roles),+!!b.canExport,+!!b.active,b.password?hashPassword(b.password):prev.password_hash,prev.id);
-            db.prepare('DELETE FROM sessions WHERE owner=? AND type=?').run(prev.id,'admin');
+            const previousRoles=new Set(decode(prev.roles)), nextRoles=new Set(b.roles);
+            const rolesChanged=previousRoles.size!==nextRoles.size || [...previousRoles].some(r=>!nextRoles.has(r));
+            if(b.password || rolesChanged || !!prev.active!==!!b.active) db.prepare('DELETE FROM sessions WHERE owner=? AND type=?').run(prev.id,'admin');
             audit(db,actor,'account.update',prev.id,{roles:b.roles,active:!!b.active,canExport:!!b.canExport,passwordReset:!!b.password});
             return safeAccount(db.prepare('SELECT * FROM accounts WHERE id=?').get(prev.id));
           }));
         }
-        if(path==='/api/admin/audit' && method==='GET'){permit(actor,'admin');return json(res,db.prepare('SELECT audit.*,accounts.username AS actor_name FROM audit LEFT JOIN accounts ON accounts.id=audit.actor ORDER BY audit.id DESC LIMIT 500').all().map(a=>({...a,detail:decode(a.detail)})));}
+        if(path==='/api/admin/audit/options' && method==='GET'){permit(actor,'admin');return json(res,auditOptions(db));}
+        if(path==='/api/admin/audit' && method==='GET'){
+          permit(actor,'admin');const result=auditQuery(db,url.searchParams);
+          res.setHeader('X-Total-Count',String(result.total));
+          return json(res,url.searchParams.size?result:result.items);
+        }
         if(path==='/api/admin/export' && method==='GET') {
           permit(actor,'reception');requireValue(actor.canExport,'没有名单导出权限',403);
           const kind=url.searchParams.get('kind')==='consultations'?'consultations':'bookings';
-          const rows=service.adminRecords(actor,kind);
+          const rows=service.adminRecords(actor,kind,Object.fromEntries(url.searchParams));
           const escape=v=>`"${String(v??'').replace(/^[=+@-]/,"'$&").replaceAll('"','""')}"`;
           const csv='\ufeff'+[['导出时间',now()],['编号','联系人','手机号','状态','意向日期','人数'],...rows.map(r=>[r.id,r.request.contactName,r.request.phone,r.state,r.request.date,r.headcount])].map(r=>r.map(escape).join(',')).join('\r\n');
           audit(db,actor,'records.export',kind,{count:rows.length});res.writeHead(200,{'Content-Type':'text/csv; charset=utf-8','Cache-Control':'no-store','Content-Disposition':`attachment; filename="${kind}.csv"`});return res.end(csv);

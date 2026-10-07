@@ -15,7 +15,7 @@ export function AdminIcon({name, size=20}) {
   return paths[name]?<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]}/></svg>:<Icon name={name} size={size}/>;
 }
 
-export function UserMenu({user,onLogout}) {
+export function UserMenu({user,onLogout,disabled=false}) {
   const [open,setOpen]=useState(false);
   const root=useRef(null),trigger=useRef(null);
   useEffect(()=>{
@@ -27,10 +27,10 @@ export function UserMenu({user,onLogout}) {
     return()=>{document.removeEventListener('pointerdown',outside);document.removeEventListener('keydown',escape);};
   },[open]);
   return <div className="admin-user" ref={root} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))setOpen(false);}}>
-    <button ref={trigger} className="admin-user-trigger" aria-expanded={open} aria-controls="admin-account-actions" onClick={()=>setOpen(v=>!v)}>
+    <button disabled={disabled} ref={trigger} className="admin-user-trigger" aria-expanded={open} aria-controls="admin-account-actions" onClick={()=>setOpen(v=>!v)}>
       <span className="admin-avatar" aria-hidden="true">{user.username.slice(0,1).toUpperCase()}</span><span>{user.username}</span><AdminIcon name="down" size={14}/>
     </button>
-    {open?<div className="admin-user-popover" id="admin-account-actions"><p>当前登录账户</p><strong>{user.username}</strong><button className="admin-logout" onClick={onLogout}><Icon name="logout"/>退出登录</button></div>:null}
+    {open?<div className="admin-user-popover" id="admin-account-actions"><p>当前登录账户</p><strong>{user.username}</strong><button disabled={disabled} className="admin-logout" onClick={onLogout}><Icon name="logout"/>退出登录</button></div>:null}
   </div>;
 }
 

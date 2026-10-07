@@ -31,3 +31,7 @@ server/db.mjs；server/migrations/004-admin-audit-indexes.mjs；server/audit-que
 ## 回滚及冻结
 
 回滚应用到 Pre-ABI Baseline 的另一个正常提交，不重写历史；索引可保留供旧版本使用，必要时由受控 rollback 删除索引。账号状态/权限修改的测试只发生在临时库，无正式业务数据要恢复。保持游客端、媒体业务、预约/场次/咨询状态机、角色、密码规则、CSV字段及审计历史不变。无未经批准 Breaking Change；旧 audit 无参数消费者仍得到数组，但最近窗口由500收敛至有界50，已明确记录此分页行为调整。禁止 force push/rebase/squash/amend。
+
+## 实施验证补充（2026-10-07）
+
+实际 Chrome 154 发现原账号 pattern 中短横线未按 HTML pattern 的 v 模式转义，导致原生格式校验失效并产生控制台错误。ABI-03/05 同一账号表单内作等价转义修复，允许字符和服务端规则均不变；增加非法名称原生校验验证，不扩大业务范围。

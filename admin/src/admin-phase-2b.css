@@ -102,3 +102,14 @@
 @media (prefers-reduced-motion: reduce) {
   .admin-management *, .admin-management *::before { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* ABI-06/07: necessary audit controls, using the accepted v1.0 tokens. */
+.admin-audit-filters{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:20px 0 12px}
+.admin-audit-filters>label{display:flex;flex:1 1 180px;min-width:0;flex-direction:column;gap:6px;color:var(--admin-secondary);font-size:13px}
+.admin-audit-filters input,.admin-audit-filters select{width:100%;min-width:0}
+.admin-audit-filter-actions{display:flex;gap:8px;flex-wrap:wrap}
+.admin-audit-pagination{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:16px;font-size:13px;color:var(--admin-secondary);flex-wrap:wrap}
+.admin-audit-pagination>span:first-child{margin-right:auto}
+.admin-audit-pagination label{display:flex;align-items:center;gap:8px}
+.admin-audit-pagination select{width:86px}
+.admin-audit-action small{display:block;margin-top:4px;color:var(--admin-secondary);font-size:12px}

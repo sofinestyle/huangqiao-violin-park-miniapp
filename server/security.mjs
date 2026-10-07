@@ -19,11 +19,12 @@ export function checkPassword(password, stored) {
   const actual = scryptSync(password, salt, 64);
   return timingSafeEqual(actual, Buffer.from(hash, 'hex'));
 }
-export function createAccount(db, { username, password, roles = ['admin'], canExport = false }) {
+export function createAccount(db, { username, password, roles = ['admin'], canExport = false, active = true }) {
   requireValue(/^[a-zA-Z0-9_-]{3,40}$/.test(username), '账号名称须为3—40位字母、数字、下划线或短横线');
   requireValue(Array.isArray(roles) && roles.length && roles.every(x => ['admin','content','reception'].includes(x)), '角色无效');
-  const account = { id: randomUUID(), username, roles, canExport };
-  db.prepare('INSERT INTO accounts VALUES (?,?,?,?,?,1,?)').run(account.id, username, hashPassword(password), JSON.stringify(roles), +canExport, now());
+  requireValue(typeof active === 'boolean', '启用状态须为布尔值');
+  const account = { id: randomUUID(), username, roles, canExport, active };
+  db.prepare('INSERT INTO accounts VALUES (?,?,?,?,?,?,?)').run(account.id, username, hashPassword(password), JSON.stringify(roles), +canExport, +active, now());
   return account;
 }
 export function issueSession(db, owner, type) {

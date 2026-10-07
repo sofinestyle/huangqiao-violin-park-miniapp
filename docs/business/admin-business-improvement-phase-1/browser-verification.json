@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-07T02:37:42.770Z",
+  "preAbiBaseline": "6181efab945a5ed792f97ba00b9b6b21eee6fe30",
+  "browser": "154.0.8037.99",
+  "browserPlugin": "not available; existing Playwright runtime used",
+  "viewports": [
+    1280,
+    1440,
+    1728
+  ],
+  "environment": "compiled actual admin, original Service/HTTP, temporary SQLite, synthetic accounts/customers, random runtime passwords",
+  "sharedBusinessDataAffected": false,
+  "mockedBusinessSuccess": false,
+  "results": [
+    {
+      "name": "Login and page identity / no blank screen / no framework overlay",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-01 closed consultation read-only, contact and history retained; pending/following controls legal",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-02 actual filtered reservation download equals list and submitted filter values",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-03 real new account unchecked active creates disabled account and displays stopped state",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-05 actual delayed save blocks X/Escape/sidebar/user/background/duplicate and succeeds once",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-05 genuine server failure retains Drawer, real error and retry succeeds, focus restored",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-06 actual filters, page size/next/previous, time validation and total; no client 500 slicing",
+      "status": "PASS"
+    },
+    {
+      "name": "ABI-07 known Chinese plus raw action, raw filter request, unknown fallback and complete JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "Full backend regression, Sidebar, 1280/1440/1728 desktop and authentication logout",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-consultation-closed.png",
+    "02-reservation-filtered-export.png",
+    "03-account-create-disabled.png",
+    "04-account-saving.png",
+    "05-audit-filter-pagination.png",
+    "06-audit-action-label.png"
+  ],
+  "runtimeErrors": [],
+  "expectedHttpResponses": [
+    {
+      "path": "/api/admin/me",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/accounts",
+      "status": 500
+    },
+    {
+      "path": "/api/admin/me",
+      "status": 401
+    }
+  ],
+  "expectedConsoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "writeRequests": [
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts/2f0c3d33-3a46-446d-8081-d6cbfcfc3aaf",
+      "method": "PUT"
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/accounts",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/admin/login",
+      "method": "POST"
+    }
+  ]
+}
