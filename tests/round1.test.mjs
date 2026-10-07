@@ -26,17 +26,17 @@ test('五类乐器可维护、聚合检索，文创独立，草稿与下架仍�
 test('移除生成提示保留内部标记、价格和自填内容；一次性迁移不会覆盖后续维护',t=>{
   const {db,service}=fixture(t);const site=service.content('site');assert.equal(site.notice,'');assert.equal(site.isTest,true);
   assert.equal(service.content('package-1').referenceParentPrice,118);
-  const c=service.content('violin-L201');assert.equal(c.description.includes('测试资料'),false);
+  const c=service.content('violin-L201',false);assert.equal(c.description.includes('测试资料'),false);
   db.prepare('DELETE FROM migrations WHERE version=2').run();
   const original={...c,description:'管理员自行填写的产品说明',specs:[{name:'尺寸',description:'真实规格待管理员核实'}]};
   db.prepare('UPDATE content SET data=? WHERE id=?').run(JSON.stringify(original),c.id);migrateContentCopy(db);
-  assert.equal(service.content(c.id).description,original.description);assert.deepEqual(service.content(c.id).specs,original.specs);
-  const version=service.content(c.id).version;migrateContentCopy(db);assert.equal(service.content(c.id).version,version);
+  assert.equal(service.content(c.id,false).description,original.description);assert.deepEqual(service.content(c.id,false).specs,original.specs);
+  const version=service.content(c.id,false).version;migrateContentCopy(db);assert.equal(service.content(c.id,false).version,version);
 });
 test('素材库提供图片、规格图库和视频的关联状态；未关联文件保持可查',t=>{
   const {db,service}=fixture(t);const mediaId=randomUUID(),unused=randomUUID();
   for(const id of [mediaId,unused])db.prepare('INSERT INTO media VALUES (?,?,?,?,?,?,?,?,?)').run(id,'sample.png','image/png',123,'hash',id+'.png','generated',null,new Date().toISOString());
-  const c=service.content('violin-L201');skuWrite(service,actor,{version:c.version,name:c.name,state:'draft',data:{...c,images:[],specs:[{name:'4/4',description:'',images:['/api/media/'+mediaId]}]}},c.id);
+  const c=service.content('violin-L201',false);skuWrite(service,actor,{version:c.version,name:c.name,state:'draft',data:{...c,images:[],specs:[{name:'4/4',description:'',images:['/api/media/'+mediaId]}]}},c.id);
   const list=listMedia(db);assert.equal(list.find(m=>m.id===mediaId).usedBy[0].id,c.id);assert.equal(list.find(m=>m.id===mediaId).usedBy[0].state,'draft');assert.equal(list.find(m=>m.id===unused).usedBy.length,0);
   assert.equal(Object.hasOwn(list[0],'stored_name'),false);
 });

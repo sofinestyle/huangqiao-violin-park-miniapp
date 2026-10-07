@@ -10,7 +10,10 @@ import { createHttpServer } from './http.mjs';
 if(process.env.APP_ENV && process.env.APP_ENV!=='development')throw new Error('当前交付为本地开发服务，正式云环境须完成验证与配置后另行部署');
 const root=resolve(fileURLToPath(new URL('../',import.meta.url)));
 const dataDir=resolve(process.env.HQ_DATA_DIR || join(root,'.local'));
-const db=openDatabase(join(dataDir,'huangqiao.sqlite'));seed(db);
+const seedMode=process.env.HQ_SEED_MODE || 'development';
+if(!['development','none'].includes(seedMode))throw new Error('HQ_SEED_MODE须为development或none');
+const db=openDatabase(join(dataDir,'huangqiao.sqlite'));
+if(seedMode==='development')seed(db);
 if(!db.prepare('SELECT id FROM accounts LIMIT 1').get()) {
   const password=randomBytes(18).toString('base64url');
   createAccount(db,{username:'admin',password,roles:['admin'],canExport:false});

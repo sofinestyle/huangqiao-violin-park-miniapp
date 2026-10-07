@@ -93,10 +93,11 @@ test('本地业务与状态规则',async t=>{
     const historical=f.service.getBooking(b.id,f.a).snapshot;assert.equal(historical.name,original.name);assert.equal(historical.referenceParentPrice,118);fault(()=>f.service.content(id),'CONTENT_UNAVAILABLE');
   });
   await t.test('咨询自动保留对象和规格；本人可查询跟进及结束结果',()=>{
-    const payload={contentId:'violin-L201',spec:'4/4',source:'提琴详情',contactName:'虚拟咨询访客',phone:'13800000000',message:'测试了解规格',consent:true};const key=randomUUID();
+    const old=f.service.content('violin-L201',false);const product=skuWrite(f.service,f.admin,{kind:old.kind,name:old.name,state:old.state,version:old.version,data:old},old.id);
+    const payload={contentId:product.id,skuId:product.skus.find(s=>s.current&&s.enabled).id,source:'提琴详情',contactName:'虚拟咨询访客',phone:'13800000000',message:'测试了解规格',consent:true};const key=randomUUID();
     const r=f.service.createConsultation(f.a,payload,key);assert.equal(f.service.createConsultation(f.a,payload,key).id,r.id);fault(()=>f.service.getConsultation(r.id,f.b),'NOT_FOUND');
     const a=f.service.handleConsultation(f.reception,r.id,{action:'followup',version:1,note:'内部测试联系备注'});assert.equal(a.state,'following');
-    const mine=f.service.getConsultation(r.id,f.a);assert.equal(mine.followups,undefined);assert.equal(mine.snapshot.spec,'4/4');
+    const mine=f.service.getConsultation(r.id,f.a);assert.equal(mine.followups,undefined);assert.equal(mine.snapshot.sku.specLabel,'4/4');
     const c=f.service.handleConsultation(f.reception,r.id,{action:'close',version:a.version,note:'测试咨询已解答'});assert.equal(c.state,'closed');assert.equal(f.service.getConsultation(r.id,f.a).public_note,'测试咨询已解答');
   });
   await t.test('停用人员不能继续使用旧会话；无效负责人不得指派',()=>{
@@ -146,7 +147,7 @@ test('HTTP身份、权限、发布媒体和异常路径',async t=>{
     const bytes=readFileSync('images/yorray-logo.png');const r=await fetch(base+'/api/admin/media',{method:'POST',headers:{Cookie:cookie,'X-HQ-Action':'1','Content-Type':'image/png','X-File-Name':encodeURIComponent('测试标志.png'),'X-Media-Rights':encodeURIComponent('原项目测试素材，仅机制验证')},body:bytes});assert.equal(r.status,201);uploaded=await r.json();const m=f.db.prepare('SELECT * FROM media WHERE id=?').get(uploaded.id);assert.equal(readFileSync(join(dir,'uploads',m.stored_name)).length,bytes.length);assert.equal(m.sha256,digest(bytes));assert.equal((await fetch(base+'/api/media/'+uploaded.id)).status,410);
   });
   await t.test('发布后匿名可读及拖动Range，下架后旧媒体地址和详情失效',async()=>{
-    const c=f.service.content('violin-L201'),{id,kind,name,sort,version,...data}=c;
+    const c=f.service.content('violin-L201',false),{id,kind,name,sort,version,...data}=c;
     const live=skuWrite(f.service,f.admin,{kind,name,sort,version,state:'published',data:{...data,images:[uploaded.url]}},id);
     let r=await fetch(base+uploaded.url,{headers:{Range:'bytes=0-15'}});assert.equal(r.status,206);assert.equal((await r.arrayBuffer()).byteLength,16);assert.equal(r.headers.get('cache-control'),'no-store');assert.equal(r.headers.get('cross-origin-resource-policy'),'cross-origin');assert.equal(r.headers.get('access-control-allow-origin'),'*');
     r=await fetch(base+uploaded.url,{headers:{Range:'bytes=999999999-'}});assert.equal(r.status,416);

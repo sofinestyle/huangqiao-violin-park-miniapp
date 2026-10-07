@@ -1,3 +1,4 @@
+import {skuWrite} from './product-sku-helper.mjs';
 import {mkdtempSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
@@ -28,7 +29,7 @@ export async function fixture(){
  records.rejected=act(book({contactName:'验证无法接待访客',adults:1,children:0}),'reject');
  records.change=act(book({contactName:'验证变更访客',adults:1,children:0}),'confirm');service.requestChange(visitor,records.change.id,{type:'reschedule',reason:'隔离改期验证',date:'2099-11-02',adults:2,children:0});records.change=service.getBooking(records.change.id,null,true);
  records.long=book({group:true,packageId:null,team:'隔离长团队名称用于桌面边界检查'.repeat(3),contactName:'隔离长联系人名称'.repeat(4),total:9999,date:'2099-11-05',note:'隔离团体需求长说明。'.repeat(40)});
- const consult=(extra={})=>{const c=service.createConsultation(visitor,{contentId:service.listContent({kind:'product',category:'instrument'})[0].id,spec:'4/4',source:'乐器规格咨询',contactName:'验证咨询访客',phone:'13800000000',message:'希望了解产品规格与线下咨询安排。仅隔离验证。',consent:true,...extra},randomUUID());return service.getConsultation(c.id,null,true);};
+ const consult=(extra={})=>{const contentId=extra.contentId||'violin-L201';let product=service.content(contentId,false);if(product.kind==='product'&&product.variantModelVersion!==2)product=skuWrite(service,actor,{kind:product.kind,name:product.name,state:product.state,sort:product.sort,version:product.version,data:product},contentId);const c=service.createConsultation(visitor,{contentId,skuId:product.skus?.find(s=>s.current&&s.enabled)?.id,source:'乐器规格咨询',contactName:'验证咨询访客',phone:'13800000000',message:'希望了解产品规格与线下咨询安排。仅隔离验证。',consent:true,...extra},randomUUID());return service.getConsultation(c.id,null,true);};
  records.consultPending=consult({contactName:'验证咨询待处理'});records.consultFollowing=consult({contactName:'验证咨询跟进'});records.consultFollowing=service.handleConsultation(actor,records.consultFollowing.id,{action:'followup',version:records.consultFollowing.version,note:'隔离验证：已联系，待进一步跟进。'});
  records.consultClosed=consult({contactName:'验证咨询已结束'});records.consultClosed=service.handleConsultation(actor,records.consultClosed.id,{action:'close',version:records.consultClosed.version,note:'隔离验证：沟通结果已记录。'});
  records.consultLong=consult({contactName:'隔离长咨询联系人'.repeat(3),message:'这是一段隔离长咨询内容，用于检查摘要、换行及完整详情阅读，不代表实际客户问题。\n'.repeat(20)});

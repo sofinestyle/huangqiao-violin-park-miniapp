@@ -6,7 +6,7 @@ function fixture(t){const dir=mkdtempSync(join(tmpdir(),'content-delete-')),db=o
 function create(s,kind='product',state='draft',extra={}){const payload=kind==='product'?productPayload('隔离删除产品',[option('尺寸',['4/4','3/4'])],extra):{kind,name:'隔离删除'+kind,data:{isTest:true,images:[],...extra}};payload.state=state;return s.saveContent(actor,payload);}
 function state(s,p,value){const {id,kind,name,sort,version,skus,specs,state,...data}=s.content(p.id,false);return s.saveContent(actor,{kind,name,sort,version,state:value,data,...(skus?{skus:skus.filter(s=>s.current)}:{})},id);}
 function visitor(db){const id=randomUUID();db.prepare('INSERT INTO visitors VALUES (?,NULL,?)').run(id,'now');return {id};}
-function consultation(s,db,p){return s.createConsultation(visitor(db),{contentId:p.id,contactName:'合成访客',phone:'13800000000',message:'隔离测试',consent:true},randomUUID());}
+function consultation(s,db,p){return s.createConsultation(visitor(db),{contentId:p.id,skuId:p.skus?.find(s=>s.current&&s.enabled)?.id,contactName:'合成访客',phone:'13800000000',message:'隔离测试',consent:true},randomUUID());}
 function booking(s,db,p,extra={}){return s.createBooking(visitor(db),{packageId:p.id,date:'2099-11-01',contactName:'合成访客',phone:'13800000000',adults:1,children:0,consent:true,...extra},randomUUID());}
 function slot(s,p,extra={}){return s.saveSlot(actor,{date:'2099-11-01',start:'09:00',end:'11:00',capacity:20,packageIds:[p.id],note:'隔离',enrollment:{state:'draft'},...extra});}
 const rejects=(fn,code)=>assert.throws(fn,e=>e.code===code);

@@ -16,9 +16,7 @@ export function readSkuProduct(db,product,publicRead=false,rows){
  if(product.kind!=='product'||product.variantModelVersion!==2)return product;
  const keys=new Set((combinations(product.variantMode,product.options)||[]).map(combinationKey));
  const skus=(rows||skuRows(db,product.id)).map(s=>({...s,current:keys.has(combinationKey(s.option_values)),label:skuLabel(s.option_values,product.options),effectiveReferencePrice:product.priceMode==='reference'?(s.reference_price??product.price):null,effectiveImages:s.images.length?s.images:(product.images||[])}));
- const visible=skus.filter(s=>s.current&&s.enabled);
- const specs=visible.map(s=>({name:s.label,description:'',...(product.priceMode==='reference'?{price:s.effectiveReferencePrice}:{}),images:s.images}));
- return {...product,...(publicRead&&product.priceMode==='inquiry'?{price:null}:{}),skus:publicRead?visible.map(({disable_reason,combination_key,...s})=>({...s,...(product.priceMode==='inquiry'?{reference_price:null}:{})})):skus,specs};
+ return {...product,skus};
 }
 export function prepareSkuSave(db,productId,data,input,previous){
  check(data.variantModelVersion===2 && ['simple','options'].includes(data.variantMode) && !Object.hasOwn(data,'specs'),'产品已使用新版规格模型，请刷新或使用新版后台维护。','variantMode',400,'MODEL_UPGRADE_REQUIRED');

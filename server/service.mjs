@@ -1,3 +1,5 @@
+import {publicProduct} from './public-product.mjs';
+import {productConsultationSnapshot} from './consultation-sku.mjs';
 import {contentDeleteCheck,deleteContent} from './content-delete.mjs';
 import {prepareSkuSave,writeSkus,readSkuProduct} from './product-sku.mjs';
 import { randomUUID } from 'node:crypto';
@@ -13,6 +15,7 @@ const visitorRecord = row => {
   const r = record(row);
   if (!r) return null;
   delete r.owner; delete r.contact_log; delete r.followups;
+  if(r.snapshot?.sku)r.snapshot={...r.snapshot,sku:{specLabel:r.snapshot.sku.specLabel,referencePrice:r.snapshot.sku.referencePrice}};
   return r;
 };
 const id = prefix => `${prefix}-${new Date().toISOString().slice(0,10).replaceAll('-','')}-${randomUUID().slice(0,8).toUpperCase()}`;
@@ -22,13 +25,13 @@ export class Service {
   content(id, published = true) {
     const row = this.db.prepare('SELECT * FROM content WHERE id=?').get(id);
     requireValue(row && (!published || row.state === 'published'), '内容已下架或不存在', 404, 'CONTENT_UNAVAILABLE');
-    return readSkuProduct(this.db,publicContent(row),published);
+    return published?publicProduct(this.db,publicContent(row)):readSkuProduct(this.db,publicContent(row));
   }
   listContent({ kind, category, q = '' } = {}, admin = false) {
     const rows = this.db.prepare(`SELECT * FROM content ${admin ? '' : "WHERE state='published'"} ORDER BY sort,id`).all().map(publicContent);
-    const allSkus=this.db.prepare('SELECT * FROM product_skus ORDER BY sort_order,id').all();
+    const allSkus=admin?this.db.prepare('SELECT * FROM product_skus ORDER BY sort_order,id').all():[];
     const grouped=new Map();for(const s of allSkus){const list=grouped.get(s.product_id)||[];list.push({...s,enabled:!!s.enabled,option_values:decode(s.option_values),images:decode(s.images)});grouped.set(s.product_id,list);}
-    return rows.map(r=>readSkuProduct(this.db,r,!admin,grouped.get(r.id)||[])).filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
+    return rows.map(r=>admin?readSkuProduct(this.db,r,false,grouped.get(r.id)||[]):publicProduct(this.db,r,{detail:false})).filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
   }
   contentDeleteCheck(actor,id) { return transaction(this.db,()=>contentDeleteCheck(this.db,actor,id)); }
   deleteContent(actor,id,version) { return deleteContent(this.db,actor,id,version); }
@@ -324,12 +327,14 @@ export class Service {
       const request={...contact(data),message:text(data.message,'咨询内容',1500),source:text(data.source || '联系咨询','来源',120)};
       let snapshot=null;
       if (data.contentId) {
-        const c=this.content(data.contentId);
+        const row=this.db.prepare('SELECT * FROM content WHERE id=?').get(data.contentId);
+        requireValue(row && row.state==='published','产品或内容已下架，请返回重新选择',404,'PRODUCT_UNAVAILABLE');
+        const c=publicContent(row);
         requireValue(['product','lesson','package','spot'].includes(c.kind),'咨询关联对象无效');
-        const spec=data.spec || '';
-        if (spec) requireValue(c.kind==='product' && c.specs?.some(s=>s.name===spec),'所选规格不存在');
-        snapshot={id:c.id,name:c.name,code:c.code || '',category:c.category || '',spec,version:c.version};
+        if(c.kind==='product')snapshot=productConsultationSnapshot(this.db,c,data.skuId);
+        else {requireValue(!data.skuId,'该内容不支持产品规格',400,'SKU_PRODUCT_MISMATCH');snapshot={id:c.id,name:c.name,code:c.code||'',category:c.category||'',spec:'',version:c.version};}
       }
+      requireValue(data.contentId || !data.skuId,'请指定规格所属产品',400,'SKU_PRODUCT_MISMATCH');
       const key=id('ZX');
       this.db.prepare("INSERT INTO consultations(id,owner,snapshot,request,state,created_at,updated_at) VALUES (?,?,?,?,'pending',?,?)").run(key,visitor.id,JSON.stringify(snapshot),JSON.stringify(request),now(),now());
       return {id:key,state:'pending',message:'咨询已提交，工作人员将与您联系'};

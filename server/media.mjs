@@ -1,4 +1,4 @@
-import {readSkuProduct} from './product-sku.mjs';
+import {visibleProductSkus} from './public-product.mjs';
 import { randomUUID, createHash } from 'node:crypto';
 import { createWriteStream, createReadStream, mkdirSync, unlinkSync, statSync } from 'node:fs';
 import { join } from 'node:path';
@@ -54,7 +54,7 @@ export function serveMedia(db,request,response,key,uploads,admin=false) {
   requireValue(media,'媒体不存在',404);
   if(!admin) {
     const refs=db.prepare("SELECT id,kind,data FROM content WHERE state='published'").all();
-    requireValue(refs.some(r=>{const d=readSkuProduct(db,{id:r.id,kind:r.kind,...JSON.parse(r.data)},true);return d.mediaId===key || d.images?.includes(`/api/media/${key}`) || d.specs?.some(s=>s.images?.includes(`/api/media/${key}`));}), '内容已下架或尚未发布',410,'MEDIA_UNAVAILABLE');
+    requireValue(refs.some(r=>{const d={id:r.id,kind:r.kind,...JSON.parse(r.data)};return d.mediaId===key || d.images?.includes(`/api/media/${key}`) || (r.kind==='product' && visibleProductSkus(db,d).some(s=>s.images.includes(`/api/media/${key}`)));}), '内容已下架或尚未发布',410,'MEDIA_UNAVAILABLE');
   }
   const path=join(uploads,media.stored_name); let size;
   try{size=statSync(path).size;}catch{requireValue(false,'媒体文件不可用',404);}
