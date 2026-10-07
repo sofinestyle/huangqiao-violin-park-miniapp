@@ -1,3 +1,4 @@
+import {skuWrite} from './product-sku-helper.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
@@ -36,7 +37,7 @@ test('本地业务与状态规则',async t=>{
   });
   await t.test('没有媒体文件不能发布视频；草稿允许后续维护',()=>{
     const prev=f.service.content('lesson-1',false);const {id,kind,name,sort,version,...data}=prev;
-    fault(()=>f.service.saveContent(f.admin,{kind,name,sort,version,data,state:'published'},id));
+    fault(()=>skuWrite(f.service,f.admin,{kind,name,sort,version,data,state:'published'},id));
     assert.equal(f.service.content(id,false).state,'draft');
   });
   await t.test('拒绝错误联系信息、过去或无效日期、零人、负数和缺少授权',()=>{
@@ -88,7 +89,7 @@ test('本地业务与状态规则',async t=>{
   });
   await t.test('套餐更新、改价、下架不破坏预约快照',()=>{
     const b=book(f);const original=f.service.getBooking(b.id,f.a).snapshot;const pkg=f.service.content('package-1');const {id,kind,name,state,sort,version,...data}=pkg;
-    f.service.saveContent(f.admin,{kind,name:'测试新名称',state:'archived',sort,version,data:{...data,referenceParentPrice:999}},id);
+    skuWrite(f.service,f.admin,{kind,name:'测试新名称',state:'archived',sort,version,data:{...data,referenceParentPrice:999}},id);
     const historical=f.service.getBooking(b.id,f.a).snapshot;assert.equal(historical.name,original.name);assert.equal(historical.referenceParentPrice,118);fault(()=>f.service.content(id),'CONTENT_UNAVAILABLE');
   });
   await t.test('咨询自动保留对象和规格；本人可查询跟进及结束结果',()=>{
@@ -146,10 +147,10 @@ test('HTTP身份、权限、发布媒体和异常路径',async t=>{
   });
   await t.test('发布后匿名可读及拖动Range，下架后旧媒体地址和详情失效',async()=>{
     const c=f.service.content('violin-L201'),{id,kind,name,sort,version,...data}=c;
-    const live=f.service.saveContent(f.admin,{kind,name,sort,version,state:'published',data:{...data,images:[uploaded.url]}},id);
+    const live=skuWrite(f.service,f.admin,{kind,name,sort,version,state:'published',data:{...data,images:[uploaded.url]}},id);
     let r=await fetch(base+uploaded.url,{headers:{Range:'bytes=0-15'}});assert.equal(r.status,206);assert.equal((await r.arrayBuffer()).byteLength,16);assert.equal(r.headers.get('cache-control'),'no-store');assert.equal(r.headers.get('cross-origin-resource-policy'),'cross-origin');assert.equal(r.headers.get('access-control-allow-origin'),'*');
     r=await fetch(base+uploaded.url,{headers:{Range:'bytes=999999999-'}});assert.equal(r.status,416);
-    f.service.saveContent(f.admin,{kind,name,sort,version:live.version,state:'archived',data:{...data,images:[uploaded.url]}},id);assert.equal((await fetch(base+uploaded.url)).status,410);assert.equal((await call('/api/public/content/'+id)).status,404);
+    skuWrite(f.service,f.admin,{kind,name,sort,version:live.version,state:'archived',data:{...data,images:[uploaded.url]}},id);assert.equal((await fetch(base+uploaded.url)).status,410);assert.equal((await call('/api/public/content/'+id)).status,404);
   });
   await t.test('假扩展名 / 错误容器签名被拒绝且不留下媒体记录',async()=>{
     const n=f.db.prepare('SELECT count(*) AS n FROM media').get().n;
@@ -157,10 +158,10 @@ test('HTTP身份、权限、发布媒体和异常路径',async t=>{
   });
   await t.test('规格独立图片的公开引用与校验，不受公共图库为空影响',async()=>{
     const c=f.service.content('violin-L201',false),{id,kind,name,sort,version,...data}=c;
-    const live=f.service.saveContent(f.admin,{kind,name,sort,version,state:'published',data:{...data,images:[],specs:[{name:'4/4测试',description:'虚拟规格',price:120,images:[uploaded.url]}]}},id);
+    const live=skuWrite(f.service,f.admin,{kind,name,sort,version,state:'published',data:{...data,images:[],specs:[{name:'4/4测试',description:'虚拟规格',price:120,images:[uploaded.url]}]}},id);
     assert.equal((await fetch(base+uploaded.url)).status,200);
-    fault(()=>f.service.saveContent(f.admin,{kind,name,sort,version:live.version,state:'published',data:{...data,images:[],specs:[{name:'bad',description:'bad',images:['https://unknown.example/test.png']}]}},id));
-    f.service.saveContent(f.admin,{kind,name,sort,version:live.version,state:'archived',data:{...data,images:[]}},id);
+    fault(()=>skuWrite(f.service,f.admin,{kind,name,sort,version:live.version,state:'published',data:{...data,images:[],specs:[{name:'bad',description:'bad',images:['https://unknown.example/test.png']}]}},id));
+    skuWrite(f.service,f.admin,{kind,name,sort,version:live.version,state:'archived',data:{...data,images:[]}},id);
     assert.equal((await fetch(base+uploaded.url)).status,410);
   });
   await t.test('独立导出授权、CSV公式保护与导出审计',async()=>{

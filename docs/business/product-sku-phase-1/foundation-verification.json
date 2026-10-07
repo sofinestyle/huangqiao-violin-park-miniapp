@@ -1,0 +1,26 @@
+{
+  "baseline": "235f864dfcfb213fa1ae1b03935adec6356d194e",
+  "tests": {
+    "original": 71,
+    "new": 22,
+    "total": 93,
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": "PASS",
+  "typecheck": "PASS",
+  "originals": 25,
+  "migration": "PASS: empty, old content, idempotence, safe rollback, populated rollback rejected",
+  "backupRestore": "PASS: isolated SKU rows identical and foreign keys valid",
+  "permissions": "PASS: admin/content201, reception403, anonymous401",
+  "version": "PASS:409 and late-trigger rollback",
+  "media": "PASS: independent and retired references; existing publication regression",
+  "sku50": "PASS: create/read/save, sampled 5ms not SLA",
+  "sharedDatabaseCleared": false,
+  "browserBefore": {
+    "scrollHeight": 9714,
+    "clientHeight": 735,
+    "specCount": 10
+  }
+}

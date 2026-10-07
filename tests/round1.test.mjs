@@ -1,3 +1,4 @@
+import {skuWrite} from './product-sku-helper.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
@@ -11,16 +12,16 @@ const actor={id:'round1',roles:['admin']};
 function fixture(t){const db=openDatabase(':memory:');seed(db);t.after(()=>db.close());return {db,service:new Service(db)};}
 test('五类乐器可维护、聚合检索，文创独立，草稿与下架仍隔离',t=>{
   const {service}=fixture(t);
-  for(const category of Object.keys(INSTRUMENT_CATEGORIES))service.saveContent(actor,{kind:'product',name:category,state:'published',data:{category,priceMode:'inquiry',specs:[]}});
+  for(const category of Object.keys(INSTRUMENT_CATEGORIES))skuWrite(service,actor,{kind:'product',name:category,state:'published',data:{category,priceMode:'inquiry',specs:[]}});
   const instruments=service.listContent({kind:'product',category:'instrument'});
   assert.equal(instruments.length,12);assert.equal(instruments.some(x=>x.category==='gift'),false);
   assert.deepEqual([...new Set(instruments.map(x=>x.category))].sort(),Object.keys(INSTRUMENT_CATEGORIES).sort());
   assert.equal(service.listContent({kind:'product',category:'gift'}).length,20);
-  const item=service.saveContent(actor,{kind:'product',name:'draft guitar',data:{category:'guitar',priceMode:'inquiry',specs:[]}});
+  const item=skuWrite(service,actor,{kind:'product',name:'draft guitar',data:{category:'guitar',priceMode:'inquiry',specs:[]}});
   assert.equal(service.listContent({kind:'product',category:'instrument'}).some(x=>x.id===item.id),false);
-  service.saveContent(actor,{version:item.version,name:item.name,state:'archived',data:{...item}},item.id);
+  skuWrite(service,actor,{version:item.version,name:item.name,state:'archived',data:{...item}},item.id);
   assert.equal(service.listContent({category:'instrument'},true).some(x=>x.id===item.id),true);
-  assert.throws(()=>service.saveContent(actor,{kind:'product',name:'invalid',data:{category:'invalid',priceMode:'inquiry',specs:[]}}));
+  assert.throws(()=>skuWrite(service,actor,{kind:'product',name:'invalid',data:{category:'invalid',priceMode:'inquiry',specs:[]}}));
 });
 test('移除生成提示保留内部标记、价格和自填内容；一次性迁移不会覆盖后续维护',t=>{
   const {db,service}=fixture(t);const site=service.content('site');assert.equal(site.notice,'');assert.equal(site.isTest,true);
@@ -35,7 +36,7 @@ test('移除生成提示保留内部标记、价格和自填内容；一次性�
 test('素材库提供图片、规格图库和视频的关联状态；未关联文件保持可查',t=>{
   const {db,service}=fixture(t);const mediaId=randomUUID(),unused=randomUUID();
   for(const id of [mediaId,unused])db.prepare('INSERT INTO media VALUES (?,?,?,?,?,?,?,?,?)').run(id,'sample.png','image/png',123,'hash',id+'.png','generated',null,new Date().toISOString());
-  const c=service.content('violin-L201');service.saveContent(actor,{version:c.version,name:c.name,state:'draft',data:{...c,images:[],specs:[{name:'4/4',description:'',images:['/api/media/'+mediaId]}]}},c.id);
+  const c=service.content('violin-L201');skuWrite(service,actor,{version:c.version,name:c.name,state:'draft',data:{...c,images:[],specs:[{name:'4/4',description:'',images:['/api/media/'+mediaId]}]}},c.id);
   const list=listMedia(db);assert.equal(list.find(m=>m.id===mediaId).usedBy[0].id,c.id);assert.equal(list.find(m=>m.id===mediaId).usedBy[0].state,'draft');assert.equal(list.find(m=>m.id===unused).usedBy.length,0);
   assert.equal(Object.hasOwn(list[0],'stored_name'),false);
 });

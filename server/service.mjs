@@ -1,3 +1,4 @@
+import {prepareSkuSave,writeSkus,readSkuProduct} from './product-sku.mjs';
 import { randomUUID } from 'node:crypto';
 import { transaction, decode, now } from './db.mjs';
 import { requireValue, text, number, futureDate, contact, permit, audit, digest } from './security.mjs';
@@ -20,11 +21,13 @@ export class Service {
   content(id, published = true) {
     const row = this.db.prepare('SELECT * FROM content WHERE id=?').get(id);
     requireValue(row && (!published || row.state === 'published'), '内容已下架或不存在', 404, 'CONTENT_UNAVAILABLE');
-    return publicContent(row);
+    return readSkuProduct(this.db,publicContent(row),published);
   }
   listContent({ kind, category, q = '' } = {}, admin = false) {
     const rows = this.db.prepare(`SELECT * FROM content ${admin ? '' : "WHERE state='published'"} ORDER BY sort,id`).all().map(publicContent);
-    return rows.filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
+    const allSkus=this.db.prepare('SELECT * FROM product_skus ORDER BY sort_order,id').all();
+    const grouped=new Map();for(const s of allSkus){const list=grouped.get(s.product_id)||[];list.push({...s,enabled:!!s.enabled,option_values:decode(s.option_values),images:decode(s.images)});grouped.set(s.product_id,list);}
+    return rows.map(r=>readSkuProduct(this.db,r,!admin,grouped.get(r.id)||[])).filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
   }
   saveContent(actor, data, existingId) {
     permit(actor, 'content');
@@ -39,7 +42,7 @@ export class Service {
       requireValue(['draft','published','archived'].includes(state), '发布状态无效');
       requireValue(typeof data.data === 'object' && data.data && !Array.isArray(data.data), '内容格式错误');
       requireValue(JSON.stringify(data.data).length <= 50000, '单条内容过大');
-      const allowed = ['code','category','series','brand','description','images','specs','priceMode','price','priceNote',
+      const allowed = ['variantModelVersion','variantMode','options','code','category','series','brand','description','images','specs','priceMode','price','priceNote',
         'itinerary','ageNote','durationNote','referenceParentPrice','referenceSinglePrice','included','excluded','materials',
         'meetingPoint','transfer','bookingNote','cancelNote','type','mediaId','rights','duration','audience','form','place',
         'courseTime','courseFee','address','opening','visitNote','phone','heroTitle','heroSubtitle','intro','notice',
@@ -48,7 +51,10 @@ export class Service {
         requireValue(kind === 'spot', '点位标签和参观项目仅适用于园区点位');
         allowed.push('tags', 'visitItems');
       }
+      const key = existingId || randomUUID();
+      const skuPlan=kind==='product'?prepareSkuSave(this.db,key,data.data,data.skus,prev):null;
       const detail = Object.fromEntries(allowed.filter(k => Object.hasOwn(data.data,k)).map(k => [k,data.data[k]]));
+      if(skuPlan){delete detail.specs;detail.options=skuPlan.options;}
       requireValue(detail.isTest !== false, '本地开发环境内容必须标记为测试资料');
       detail.isTest = true;
       for (const [key, value] of Object.entries(detail)) {
@@ -73,7 +79,7 @@ export class Service {
         requireValue(Object.hasOwn(PRODUCT_CATEGORIES,detail.category), '请选择有效的乐器品类或文创');
         requireValue(['inquiry','reference'].includes(detail.priceMode), '请选择参考价格或咨询报价');
         if (detail.priceMode === 'reference') requireValue(typeof detail.price === 'number' && detail.price >= 0 && detail.price <= 1e7, '参考价格无效');
-        requireValue(Array.isArray(detail.specs) && detail.specs.length <= 50 && detail.specs.every(s => s && typeof s.name === 'string' && s.name.length <= 80 && typeof s.description === 'string' && s.description.length <= 3000 && (s.price == null || (typeof s.price === 'number' && Number.isFinite(s.price) && s.price >= 0 && s.price<=1e7)) && (s.images==null || (Array.isArray(s.images) && s.images.length<=12))), '规格格式无效');
+
       }
       if (detail.images || detail.specs?.some(s=>s.images?.length)) {
         detail.images=detail.images || [];
@@ -95,11 +101,11 @@ export class Service {
         requireValue(detail.coordinateVerified === true && Number.isFinite(detail.latitude) && Number.isFinite(detail.longitude)
           && Math.abs(detail.latitude) <= 90 && Math.abs(detail.longitude) <= 180, '地图坐标须经过核实');
       }
-      const key = existingId || randomUUID();
       const sort = number(data.sort ?? prev?.sort ?? 0, '排序', 0, 10000);
       if (prev) this.db.prepare('UPDATE content SET name=?,data=?,state=?,sort=?,version=version+1,updated_at=? WHERE id=?').run(name, JSON.stringify(detail), state, sort, now(), key);
       else this.db.prepare('INSERT INTO content VALUES (?,?,?,?,?,?,1,?,?)').run(key, kind, name, JSON.stringify(detail), state, sort, now(), now());
-      audit(this.db, actor, prev ? 'content.update' : 'content.create', key, { from: prev?.state, to: state, version: (prev?.version || 0)+1 });
+      const skuChanges=skuPlan?writeSkus(this.db,skuPlan):null;
+      audit(this.db, actor, prev ? 'content.update' : 'content.create', key, { from: prev?.state, to: state, version: (prev?.version || 0)+1,...(skuChanges?{skuChanges}:{}) });
       return this.content(key, false);
     });
   }

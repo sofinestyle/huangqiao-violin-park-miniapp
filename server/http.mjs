@@ -180,7 +180,7 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
     } catch(e) {
       if(res.headersSent){res.destroy();return;}
       if(!(e instanceof Fault))console.error('请求处理异常:',e.message); // Never log request bodies, tokens, or credentials.
-      json(res,{error:e instanceof Fault?e.message:'服务处理失败，请重试',code:e.code || 'INTERNAL_ERROR'},e.status || 500);
+      json(res,{error:e instanceof Fault?e.message:'服务处理失败，请重试',code:e.code || 'INTERNAL_ERROR',...(e instanceof Fault && e.field?{field:e.field}:{})},e.status || 500);
     }
   });
   server.requestTimeout=120000;server.headersTimeout=15000;

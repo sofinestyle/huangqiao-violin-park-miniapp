@@ -1,6 +1,7 @@
 import { DatabaseSync } from 'node:sqlite';
 import { mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { migrateProductSku } from './migrations/005-product-sku-foundation.mjs';
 import { migrateAuditIndexes } from './migrations/004-admin-audit-indexes.mjs';
 
 export function openDatabase(path) {
@@ -55,6 +56,7 @@ export function openDatabase(path) {
     db.prepare('INSERT INTO audit(actor,action,object,detail,created_at) VALUES (?,?,?,?,?)').run('system','schema.slot-enrollment.migrate','slots',JSON.stringify({version:3,existingSlots:'draft',externalCount:0}),now());
   });
   migrateAuditIndexes(db);
+  migrateProductSku(db);
   return db;
 }
 

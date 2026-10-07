@@ -1,3 +1,4 @@
+import {readSkuProduct} from './product-sku.mjs';
 import { randomUUID, createHash } from 'node:crypto';
 import { createWriteStream, createReadStream, mkdirSync, unlinkSync, statSync } from 'node:fs';
 import { join } from 'node:path';
@@ -8,7 +9,8 @@ import { now } from './db.mjs';
 export const MAX_UPLOAD=64*1024*1024; // Local validation limit; production budget and format policy remain pending.
 export function listMedia(db) {
   const contents=db.prepare('SELECT id,kind,name,state,data FROM content').all().map(c=>({...c,data:JSON.parse(c.data)}));
-  return db.prepare('SELECT id,filename,mime,size,sha256,rights,duration,created_at FROM media ORDER BY created_at DESC').all().map(m=>({...m,usedBy:contents.filter(c=>c.data.mediaId===m.id || c.data.images?.includes(`/api/media/${m.id}`) || c.data.specs?.some(s=>s.images?.includes(`/api/media/${m.id}`))).map(({id,kind,name,state})=>({id,kind,name,state}))}));
+  const skuRefs=db.prepare('SELECT product_id,images FROM product_skus').all().map(s=>({...s,images:JSON.parse(s.images)}));
+  return db.prepare('SELECT id,filename,mime,size,sha256,rights,duration,created_at FROM media ORDER BY created_at DESC').all().map(m=>({...m,usedBy:contents.filter(c=>skuRefs.some(s=>s.product_id===c.id&&s.images.includes(`/api/media/${m.id}`)) || c.data.mediaId===m.id || c.data.images?.includes(`/api/media/${m.id}`) || c.data.specs?.some(s=>s.images?.includes(`/api/media/${m.id}`))).map(({id,kind,name,state})=>({id,kind,name,state}))}));
 }
 function validHeader(mime,buffer) {
   if(mime==='video/mp4') return buffer.length>12 && buffer.subarray(4,8).toString()==='ftyp';
@@ -51,8 +53,8 @@ export function serveMedia(db,request,response,key,uploads,admin=false) {
   const media=db.prepare('SELECT * FROM media WHERE id=?').get(key);
   requireValue(media,'媒体不存在',404);
   if(!admin) {
-    const refs=db.prepare("SELECT data FROM content WHERE state='published'").all();
-    requireValue(refs.some(r=>{const d=JSON.parse(r.data);return d.mediaId===key || d.images?.includes(`/api/media/${key}`) || d.specs?.some(s=>s.images?.includes(`/api/media/${key}`));}), '内容已下架或尚未发布',410,'MEDIA_UNAVAILABLE');
+    const refs=db.prepare("SELECT id,kind,data FROM content WHERE state='published'").all();
+    requireValue(refs.some(r=>{const d=readSkuProduct(db,{id:r.id,kind:r.kind,...JSON.parse(r.data)},true);return d.mediaId===key || d.images?.includes(`/api/media/${key}`) || d.specs?.some(s=>s.images?.includes(`/api/media/${key}`));}), '内容已下架或尚未发布',410,'MEDIA_UNAVAILABLE');
   }
   const path=join(uploads,media.stored_name); let size;
   try{size=statSync(path).size;}catch{requireValue(false,'媒体文件不可用',404);}
