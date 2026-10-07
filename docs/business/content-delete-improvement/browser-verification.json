@@ -1,0 +1,92 @@
+{
+  "browser": "154.0.8037.99",
+  "date": "2026-10-07T13:43:53.234Z",
+  "environment": "isolated SQLite/media, real compiled Admin and HTTP",
+  "sharedBusinessDataAffected": false,
+  "results": [
+    {
+      "name": "Four content tabs delete, published disabled, confirmation cancellation and refresh",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical references preflight has no executable delete",
+      "status": "PASS"
+    },
+    {
+      "name": "Deletion rechecks late publication and reference after confirmation opens",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft option/value delete removes local temporary combinations; cancel leaves DB untouched",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted dimension delete confirms 10 combos; cancel without save retains DB",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted value delete saves structure retirement with manual reason and data preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Same historical value prompts restore, original value and SKU IDs return",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted dimension delete and same-name restoration reuse original identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Last value blocks deletion, last dimension respects simple conversion guards",
+      "status": "PASS"
+    },
+    {
+      "name": "SKU delete then stale version cannot overwrite",
+      "status": "PASS"
+    },
+    {
+      "name": "Content delete busy prevents duplicate requests and modal dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit Chinese/raw delete entry and all eight backend pages healthy",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-content-delete-action.png",
+    "02-content-delete-confirm.png",
+    "03-content-delete-reference-blocked.png",
+    "04-option-delete.png",
+    "05-option-delete-confirm.png",
+    "06-value-delete-confirm.png",
+    "07-restore-historical-value.png",
+    "08-restored-value-result.png"
+  ],
+  "runtimeErrors": [],
+  "network": [
+    {
+      "path": "/api/admin/me",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/content/60073250-6ca6-43c8-b3ac-a7bffd9ba678",
+      "status": 409
+    },
+    {
+      "path": "/api/admin/content/60073250-6ca6-43c8-b3ac-a7bffd9ba678",
+      "status": 409
+    },
+    {
+      "path": "/api/admin/content/c168461a-5032-4a0e-a24a-9201f7a1cf13",
+      "status": 409
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ]
+}

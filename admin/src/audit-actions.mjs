@@ -1,7 +1,7 @@
 // Display only. API filters and stored audit actions always use the original code.
 export const AUDIT_ACTION_LABELS=Object.freeze({
  'account.login':'工作人员登录','account.create':'创建工作人员账号','account.update':'更新工作人员账号',
- 'content.create':'创建内容','content.update':'更新内容','slot.save':'保存研学场次',
+ 'content.create':'创建内容','content.update':'更新内容','content.delete':'删除内容','slot.save':'保存研学场次',
  'media.upload':'上传素材','records.export':'导出名单',
  'booking.withdraw':'游客撤回预约','booking.change.request':'提交预约变更申请',
  'booking.assign':'指派接待负责人','booking.followup':'登记预约跟进','booking.confirm':'确认研学预约',

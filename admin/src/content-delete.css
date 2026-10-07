@@ -1,0 +1,13 @@
+.admin-shell .admin-content button.content-delete-action{color:var(--admin-danger,#9d4942);background:transparent;border:0;margin-left:12px;padding:6px 2px;box-shadow:none;font-size:13px;min-height:36px}
+.admin-shell .admin-content button.content-delete-action:disabled{color:var(--admin-text-secondary,#73706b);opacity:.7;cursor:not-allowed}
+.content-delete-dialog{width:min(440px,calc(100vw - 48px));border:1px solid #e8e5e0;border-radius:14px;padding:24px;background:#fff;color:#27231f;box-shadow:0 16px 50px #2c211c24;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.content-delete-dialog::backdrop{background:#27231f40}
+.content-delete-dialog h2{font-weight:600;line-height:1.5;font-family:inherit;font-size:18px;margin:0 0 14px;overflow-wrap:anywhere}
+.content-delete-dialog p{font-size:14px;line-height:1.8;margin:0 0 20px;color:#625e58}
+.content-delete-actions{display:flex;gap:10px;justify-content:flex-end}
+.content-delete-dialog button{border-radius:8px;min-height:40px;padding:8px 18px;font-size:14px}
+.admin-shell .content-delete-dialog button.secondary{background:white;color:#49352b;border:1px solid #b7b0a7}
+.admin-shell .content-delete-dialog button.content-delete-danger{background:#984c44;border:1px solid #984c44;color:white;box-shadow:none}
+.admin-content .content-delete-success{font-size:14px;color:#3e6a50;padding:10px 0}
+.admin-shell .admin-content:has(.content-delete-action) > .table-region th:last-child{width:180px}
+.admin-shell .admin-content > .table-region td:last-child{white-space:nowrap}

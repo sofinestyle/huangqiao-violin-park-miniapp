@@ -100,9 +100,11 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
           if(method==='GET')return json(res,service.listContent(Object.fromEntries(url.searchParams),true));
           if(method==='POST')return json(res,service.saveContent(actor,await body(req)),201);
         }
+        if((m=match(/^\/api\/admin\/content\/([^/]+)\/delete-check$/)) && method==='GET')return json(res,service.contentDeleteCheck(actor,m[1]));
         if((m=match(/^\/api\/admin\/content\/([^/]+)$/))) {
           if(method==='GET'){permit(actor,'content');return json(res,service.content(m[1],false));}
           if(method==='PUT')return json(res,service.saveContent(actor,await body(req),m[1]));
+          if(method==='DELETE'){permit(actor,'content');return json(res,service.deleteContent(actor,m[1],(await body(req)).version));}
         }
         if(path==='/api/admin/slots') {
           permit(actor,'reception');
@@ -180,7 +182,7 @@ export function createHttpServer({db,uploads,root,devAuth=true}) {
     } catch(e) {
       if(res.headersSent){res.destroy();return;}
       if(!(e instanceof Fault))console.error('请求处理异常:',e.message); // Never log request bodies, tokens, or credentials.
-      json(res,{error:e instanceof Fault?e.message:'服务处理失败，请重试',code:e.code || 'INTERNAL_ERROR',...(e instanceof Fault && e.field?{field:e.field}:{})},e.status || 500);
+      json(res,{error:e instanceof Fault?e.message:'服务处理失败，请重试',code:e.code || 'INTERNAL_ERROR',...(e instanceof Fault && e.field?{field:e.field}:{}),...(e instanceof Fault && e.references?{references:e.references}:{})},e.status || 500);
     }
   });
   server.requestTimeout=120000;server.headersTimeout=15000;

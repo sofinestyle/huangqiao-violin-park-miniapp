@@ -1,3 +1,4 @@
+import {contentDeleteCheck,deleteContent} from './content-delete.mjs';
 import {prepareSkuSave,writeSkus,readSkuProduct} from './product-sku.mjs';
 import { randomUUID } from 'node:crypto';
 import { transaction, decode, now } from './db.mjs';
@@ -29,6 +30,8 @@ export class Service {
     const grouped=new Map();for(const s of allSkus){const list=grouped.get(s.product_id)||[];list.push({...s,enabled:!!s.enabled,option_values:decode(s.option_values),images:decode(s.images)});grouped.set(s.product_id,list);}
     return rows.map(r=>readSkuProduct(this.db,r,!admin,grouped.get(r.id)||[])).filter(r => (!kind || r.kind === kind) && (!category || (category==='instrument' ? Object.hasOwn(INSTRUMENT_CATEGORIES,r.category) : r.category === category)) && (!q || `${r.name} ${r.code || ''} ${r.series || ''}`.toLowerCase().includes(q.toLowerCase())));
   }
+  contentDeleteCheck(actor,id) { return transaction(this.db,()=>contentDeleteCheck(this.db,actor,id)); }
+  deleteContent(actor,id,version) { return deleteContent(this.db,actor,id,version); }
   saveContent(actor, data, existingId) {
     permit(actor, 'content');
     return transaction(this.db, () => {

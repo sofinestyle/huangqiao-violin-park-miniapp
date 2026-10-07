@@ -1,0 +1,86 @@
+{
+  "baseline": "b4b95b5b3627c27360709590c32a13256fa05c78",
+  "status": "READY FOR HUMAN ACCEPTANCE",
+  "tests": {
+    "original": 94,
+    "new": 15,
+    "total": 109,
+    "passed": 109,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "cdGroups": 12,
+    "skuRegressionGroups": 14,
+    "skuTimingRecords": 1,
+    "runtimeErrors": []
+  },
+  "checks": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "originals": 25,
+    "diffCheck": "PASS",
+    "migration": "NO MIGRATION",
+    "permissions": "admin/content200 reception403 anonymous401",
+    "audit": "content.delete survives physical deletion; Chinese/raw visible",
+    "media": "product/shared/SKU/package/lesson image and video files kept; usedBy recomputed",
+    "versionAndLateReferences": "PASS",
+    "adminEightPages": "PASS",
+    "mini": "unchanged list/detail host harness PASS; native/device not executed"
+  },
+  "sharedData": {
+    "deleted": false,
+    "modified": false,
+    "protectedFileCount": 36,
+    "hashesMatched": true,
+    "runtimeOnlyChanged": [
+      ".local/admin-runtime.log"
+    ],
+    "databaseHashes": {
+      ".local/huangqiao.sqlite": "b53ad25b502f94bd60644018a089357ed31c8961680c68b603aeaa95c32b2591",
+      ".local/huangqiao.sqlite-wal": "59ca93dba7f8265fdcc777d68a5557fef0f1c906a28e2d6fbed436d22851c97e"
+    }
+  },
+  "changedFiles": [
+    "admin/src/Content.jsx",
+    "admin/src/ContentDeleteDialog.jsx",
+    "admin/src/SkuEditor.jsx",
+    "admin/src/audit-actions.mjs",
+    "admin/src/content-delete.css",
+    "admin/src/sku-delete.mjs",
+    "admin/src/sku-editor.css",
+    "docs/business/content-delete-improvement/01-content-delete-action.png",
+    "docs/business/content-delete-improvement/02-content-delete-confirm.png",
+    "docs/business/content-delete-improvement/03-content-delete-reference-blocked.png",
+    "docs/business/content-delete-improvement/04-option-delete.png",
+    "docs/business/content-delete-improvement/05-option-delete-confirm.png",
+    "docs/business/content-delete-improvement/06-value-delete-confirm.png",
+    "docs/business/content-delete-improvement/07-restore-historical-value.png",
+    "docs/business/content-delete-improvement/08-restored-value-result.png",
+    "docs/business/content-delete-improvement/ACCEPTANCE.md",
+    "docs/business/content-delete-improvement/DCR.md",
+    "docs/business/content-delete-improvement/TEST_REPORT.md",
+    "docs/business/content-delete-improvement/browser-verification.json",
+    "docs/business/content-delete-improvement/sku-regression.json",
+    "docs/business/content-delete-improvement/verification.json",
+    "docs/决策与变更记录.md",
+    "docs/待确认事项.md",
+    "docs/验收清单.md",
+    "scripts/content-delete-browser.mjs",
+    "scripts/product-sku-browser.mjs",
+    "server/content-delete.mjs",
+    "server/http.mjs",
+    "server/service.mjs",
+    "tests/content-delete.test.mjs"
+  ],
+  "notExecuted": [
+    "Safari",
+    "Firefox",
+    "WeChat native/device",
+    "full accessibility audit",
+    "long stress test",
+    "shared or production delete",
+    "deployment",
+    "SKU-2"
+  ]
+}
