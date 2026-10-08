@@ -19,6 +19,19 @@ export class CloudBaseStorage{
  async request(url,options={}){let r;try{r=await this.fetch(url,{...options,redirect:'error',signal:options.signal||AbortSignal.timeout(120000),headers:{...options.headers,Authorization:'Bearer '+this.token}});}catch{throw new Error('云存储连接失败');}if(!r.ok){await r.body?.cancel();const e=new Error('云存储操作失败');e.storageStatus=r.status;throw e;}return r;}
  async put(key,body,{mime,size}={}){const r=await this.request(this.url(key),{method:'POST',headers:{'Content-Type':mime||'application/octet-stream','Content-Length':String(size),'x-upsert':'false','Cache-Control':'no-store'},body,duplex:'half'});await r.body?.cancel();}
  async metadata(key){const r=await this.request(this.url(key),{method:'HEAD'});const raw=r.headers.get('content-length');const size=raw===null?NaN:Number(raw);if(!Number.isSafeInteger(size)||size<0)throw new Error('云存储大小无效');return {size};}
+ async videoMetadata(key){const r=await this.request(this.url(key),{method:'HEAD'});const raw=r.headers.get('content-length'),size=raw===null?NaN:Number(raw);if(!Number.isSafeInteger(size)||size<0)throw new Error('云存储大小无效');return {size,mime:r.headers.get('content-type')?.split(';')[0]};}
+ async signVideoUpload(key){
+  const endpoint=this.url(key,'object/upload/sign'),issuedAt=Date.now();
+  const r=await this.request(endpoint,{method:'POST',headers:{'x-upsert':'false'}}),data=await r.json();
+  // CloudBase issues/verifies the signature. We only fail closed on its scope/TTL.
+  const url=new URL(data.fullURL||data.fullSignedURL||data.url, new URL(this.base).origin);
+  if(data.token&&!url.searchParams.has('token'))url.searchParams.set('token',data.token);
+  const token=url.searchParams.get('token');let claims;
+  try{claims=JSON.parse(Buffer.from(token.split('.')[1],'base64url').toString());}catch{throw new Error('上传签名有效期无效');}
+  const expiresAt=claims.exp*1000;
+  if(url.origin!==new URL(this.base).origin||url.pathname!==new URL(endpoint).pathname||url.username||url.password||url.hash||!token||token===this.token||[...url.searchParams.keys()].some(k=>k!=='token')||!Number.isFinite(expiresAt)||expiresAt<=Date.now()+5000||expiresAt>issuedAt+300000)throw new Error('上传签名范围或有效期无效');
+  return {url:url.href,expiresAt};
+ }
  async read(key,{start,end}={}){const range=start!==undefined?`bytes=${start}-${end??''}`:null;const r=await this.request(this.url(key),{headers:range?{Range:range}:{}});if(range&&r.status!==206){await r.body?.cancel();throw new Error('云存储未按范围返回');}return Readable.fromWeb(r.body);}
  async delete(key){try{const r=await this.request(this.url(key),{method:'DELETE'});await r.body?.cancel();}catch(e){if(e.storageStatus!==404)throw e;}}
  async signedUrl(key,expiresIn=60){if(!Number.isInteger(expiresIn)||expiresIn<1||expiresIn>300)throw new Error('签名有效期无效');const r=await this.request(this.url(key,'object/sign'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({expiresIn})});const data=await r.json();const url=new URL(data.fullSignedURL||data.signedURL,this.base);if(url.protocol!=='https:'||url.origin!==new URL(this.base).origin)throw new Error('云存储签名URL无效');return url.href;}

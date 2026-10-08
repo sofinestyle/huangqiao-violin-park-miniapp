@@ -7,6 +7,7 @@ import { Service } from './service.mjs';
 import { Fault, requireValue, authenticate, checkPassword, issueSession, createAccount, hashPassword, permit, audit, digest, text } from './security.mjs';
 import { now, decode, transaction } from './db.mjs';
 import { upload, serveMedia, listMedia } from './media.mjs';
+import {authorizeVideo,completeVideo,getVideoTask,videoUploadWorker} from './video-uploads.mjs';
 const json = (res, value, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
 // Buffer responses until commit: never acknowledge a write that later rolls back.
 async function atomicAdminResponse(db,res,fn){
@@ -43,6 +44,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
     if(environment!=='development'&&devAuth)throw new Error('非开发环境禁止Dev Auth');
     const secureCookie=environment==='development'?'':'; Secure';
     const mediaStorage=storage||uploads;
+    const videoWorker=videoUploadWorker(db,mediaStorage);
     const server = http.createServer(async (req, res) => {
         res.setHeader('X-Content-Type-Options', 'nosniff');
         res.setHeader('Referrer-Policy', 'same-origin');
@@ -133,6 +135,15 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
                 });
             }
             // Streaming media must not hold a DB transaction while bytes traverse the network.
+            if(path==='/api/admin/media/video-uploads'&&method==='POST'){
+                const actor=await authenticate(db,cookieToken(req),'admin');
+                return json(res,await authorizeVideo(db,actor,mediaStorage,await body(req)),201);
+            }
+            if((m=match(/^\/api\/admin\/media\/video-uploads\/([^/]+)(\/complete)?$/))){
+                const actor=await authenticate(db,cookieToken(req),'admin');
+                if(method==='POST'&&m[2]){const task=await completeVideo(db,actor,m[1],await body(req));void videoWorker.tick();return json(res,task,task.state==='done'?200:202);}
+                if(method==='GET'&&!m[2])return json(res,await getVideoTask(db,actor,m[1]));
+            }
             if(path==='/api/admin/media'&&method==='POST'){
                 const actor=await authenticate(db,cookieToken(req),'admin');permit(actor,'content');
                 return json(res,await upload(db,actor,req,mediaStorage,async()=>{await db.lockKey('hq:accounts');const current=await authenticate(db,cookieToken(req),'admin');permit(current,'content');}),201);
@@ -300,7 +311,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
                 requireValue(existsSync(file), '网页后台尚未构建，请运行 npm run dev', 503);
                 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml' };
                 res.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store',
-                    'Content-Security-Policy': "default-src 'self'; img-src 'self' blob:; media-src 'self' blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'" });
+                    'Content-Security-Policy': `default-src 'self'; img-src 'self' blob:; media-src 'self' blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'${mediaStorage?.base?' '+new URL(mediaStorage.base).origin:''}; frame-ancestors 'none'; object-src 'none'` });
                 createReadStream(file).pipe(res);
                 return;
             }
@@ -317,5 +328,5 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
     });
     server.requestTimeout = 120000;
     server.headersTimeout = 15000;
-    return { server, service };
+    return { server, service, videoWorker };
 }
