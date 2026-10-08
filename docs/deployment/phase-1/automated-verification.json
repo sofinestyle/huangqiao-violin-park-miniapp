@@ -1,0 +1,48 @@
+{
+  "baseline": "55542ba036f38eca0fc37636f1d1c05df2418f92",
+  "foundation": "8c50b2d6af120de75ee889aaae5d97431f8c555e",
+  "node": "26.3.1",
+  "postgres": "18.4",
+  "date": "2026-10-08",
+  "nodeTests": {
+    "original": 135,
+    "foundationAdded": 5,
+    "fullMigrationAdded": 7,
+    "passed": 147,
+    "failed": 0,
+    "skipped": 0
+  },
+  "adminBrowserGroups": 9,
+  "deleteBrowserGroups": 12,
+  "skuBrowserGroups": 15,
+  "nativeWechatEvidenceGroups": 12,
+  "screenshots": 36,
+  "build": "PASS",
+  "typeCheck": "PASS",
+  "originalFiles": {
+    "passed": 25,
+    "failed": 0
+  },
+  "sharedSqliteDeleted": false,
+  "sharedBusinessWrites": false,
+  "cloudBaseRealTest": false,
+  "dockerImageBuild": false,
+  "productionDeployment": false,
+  "wechatUploadOrRelease": false,
+  "productionDependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "developmentDependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 6,
+    "high": 2,
+    "critical": 3,
+    "total": 11
+  }
+}

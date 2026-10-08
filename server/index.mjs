@@ -1,28 +1,17 @@
-import { fileURLToPath } from 'node:url';
-import { resolve, join } from 'node:path';
-import { existsSync, writeFileSync, chmodSync } from 'node:fs';
-import { randomBytes } from 'node:crypto';
-import { openDatabase } from './db.mjs';
-import { seed } from './seed.mjs';
-import { createAccount } from './security.mjs';
-import { createHttpServer } from './http.mjs';
-
-if(process.env.APP_ENV && process.env.APP_ENV!=='development')throw new Error('当前交付为本地开发服务，正式云环境须完成验证与配置后另行部署');
-const root=resolve(fileURLToPath(new URL('../',import.meta.url)));
-const dataDir=resolve(process.env.HQ_DATA_DIR || join(root,'.local'));
-const seedMode=process.env.HQ_SEED_MODE || 'development';
-if(!['development','none'].includes(seedMode))throw new Error('HQ_SEED_MODE须为development或none');
-const db=openDatabase(join(dataDir,'huangqiao.sqlite'));
-if(seedMode==='development')seed(db);
-if(!db.prepare('SELECT id FROM accounts LIMIT 1').get()) {
-  const password=randomBytes(18).toString('base64url');
-  createAccount(db,{username:'admin',password,roles:['admin'],canExport:false});
-  const access=join(dataDir,'admin-access.txt');
-  writeFileSync(access,`本地开发后台初始账号\n账号：admin\n密码：${password}\n此文件仅保存在本机，不纳入Git；请勿转发。\n`,{mode:0o600});chmodSync(access,0o600);
-  console.log('初始管理员登录信息已保存至 .local/admin-access.txt');
-}
-const port=Number(process.env.PORT || 8787);
-const {server}=createHttpServer({db,uploads:join(dataDir,'uploads'),root,devAuth:process.env.LOCAL_DEV_AUTH!=='0'});
-server.listen(port,'127.0.0.1',()=>console.log(`本地业务服务：http://127.0.0.1:${port}；本地持久数据库已连接`));
-const shutdown=()=>server.close(()=>{db.close();process.exit(0);});
-process.on('SIGTERM',shutdown);process.on('SIGINT',shutdown);
+import {fileURLToPath} from 'node:url';
+import {openDatabase} from './db.mjs';
+import {seed} from './seed.mjs';
+import {createHttpServer} from './http.mjs';
+import {configuration} from './config.mjs';
+import {LocalStorage,CloudBaseStorage} from './storage/index.mjs';
+const config=configuration(),db=openDatabase(config.database);
+try{
+ await db.one('SELECT version FROM migrations WHERE version=1');
+ if(config.seed==='development')await seed(db,{environment:config.environment});
+ const storage=config.storage==='local'?new LocalStorage(config.uploads):new CloudBaseStorage(config.cloudbase);
+ const {server}=createHttpServer({...config,db,storage,root:fileURLToPath(new URL('../',import.meta.url))});
+ server.listen(config.port,'0.0.0.0',()=>console.log(`业务服务已启动，端口${config.port}，环境${config.environment}`));
+ let closing=false;
+ const shutdown=()=>{if(closing)return;closing=true;const timer=setTimeout(()=>process.exit(1),15000);timer.unref();server.close(async()=>{await db.close();clearTimeout(timer);});server.closeIdleConnections();};
+ process.on('SIGTERM',shutdown);process.on('SIGINT',shutdown);
+}catch{await db.close();console.error('服务启动失败：请检查数据库配置、连接及迁移状态。');process.exitCode=1;}

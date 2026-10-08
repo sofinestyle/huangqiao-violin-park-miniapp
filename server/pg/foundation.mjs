@@ -23,7 +23,7 @@ const visitorRecord = row => {
 const id = prefix => `${prefix}-${new Date().toISOString().slice(0, 10).replaceAll('-', '')}-${randomUUID().slice(0, 8).toUpperCase()}`;
 async function audit(db, actor, action, object, detail = {}) { await db.execute('INSERT INTO audit(actor,action,object,detail,created_at) VALUES($1,$2,$3,$4,$5)', [actor.id, action, object, JSON.stringify(detail), now()]); }
 export class Foundation {
-    constructor(db) { this.db = db; }
+    constructor(db,{environment='development'}={}) { this.db = db; this.environment=environment; }
     async content(id, published = true) {
         const row = (await this.db.maybeOne("SELECT * FROM content WHERE id=$1", [id]));
         requireValue(row && (!published || row.state === 'published'), '内容已下架或不存在', 404, 'CONTENT_UNAVAILABLE');
@@ -62,8 +62,7 @@ export class Foundation {
                 delete detail.specs;
                 detail.options = skuPlan.options;
             }
-            requireValue(detail.isTest !== false, '本地开发环境内容必须标记为测试资料');
-            detail.isTest = true;
+            if(this.environment==='production'){requireValue(detail.isTest!==true,'生产环境禁止测试内容');detail.isTest=false;}else{requireValue(detail.isTest!==false,'开发/测试环境内容必须标记为测试资料');detail.isTest=true;}
             for (const [key, value] of Object.entries(detail)) {
                 requireValue(value === null || ['string', 'number', 'boolean'].includes(typeof value) || Array.isArray(value), `${key}类型无效`);
                 if (typeof value === 'string')

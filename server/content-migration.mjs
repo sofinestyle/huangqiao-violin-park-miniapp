@@ -1,6 +1,3 @@
-import {transaction,now} from './db.mjs';
-import {audit} from './security.mjs';
-
 // Change only known generated default copy, never rewrite custom operator content or historical snapshots.
 export function neutralDefault(kind,data) {
   const d=structuredClone(data);
@@ -25,17 +22,4 @@ export function neutralDefault(kind,data) {
   if(kind==='spot' && d.visitNote==='测试点位资料；不填入未经确认的地址或坐标')d.visitNote='到访前请联系工作人员确认开放与接待安排。';
   if(kind==='lesson' && d.description==='原展示稿教学标题，仅作草稿；上传可用视频并登记权属、实际时长后发布。')d.description='';
   return d;
-}
-export function migrateContentCopy(db) {
-  if(db.prepare('SELECT 1 FROM migrations WHERE version=2').get())return;
-  transaction(db,()=>{
-    const changed=[];
-    for(const row of db.prepare('SELECT * FROM content').all()) {
-      if(!/^(site|violin-.+|gift-\d+|package-\d+|spot-\d+|lesson-\d+)$/.test(row.id))continue;
-      const value=JSON.stringify(neutralDefault(row.kind,JSON.parse(row.data)));
-      if(value!==row.data){db.prepare('UPDATE content SET data=?,version=version+1,updated_at=? WHERE id=?').run(value,now(),row.id);changed.push(row.id);}
-    }
-    db.prepare('INSERT INTO migrations VALUES (2,?)').run(now());
-    audit(db,{id:'system'},'content.default-copy.migrate','round1',{version:2,changed,reason:'用户要求界面移除固定测试提示；保留内部测试标识与原始资料'});
-  });
 }

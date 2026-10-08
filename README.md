@@ -1,6 +1,6 @@
 # 黄桥乐器文化产业园微信小程序
 
-当前版本为**可运行的本地开发版本**：微信原生 TypeScript 小程序、独立 React 网页后台和持久业务服务同期实现。可以在微信开发者工具模拟器中联调，通过后台维护内容和处理真实保存的测试申请。尚未部署云端、开放真实接待、上传代码或发布小程序；正式架构和业务规则仍需核定。
+当前版本为**可运行的本地开发版本**：微信原生 TypeScript 小程序、独立 React 网页后台和持久业务服务同期实现。可以在微信开发者工具模拟器中联调，通过后台维护内容和处理真实保存的测试申请。尚未部署云端、开放真实接待、上传代码或发布小程序；运行时现已适配PostgreSQL，真实CloudBase环境与正式业务资料仍需后续验证。
 
 项目目录为 `/Users/aaron/Documents/huangqiao-app`，使用用户已确认的 Documents 位置。需求依据为原《黄桥乐器文化产业园微信小程序需求说明_V1.0_细化稿.docx》及后续用户指令；旧 HTML 仅作视觉参考，冲突以新版需求为准。DOCX、HTML 和23张原始图片全部保留并校验。原教学条目、提琴、文创均为测试资料，正式资料由管理员后续维护和上传。
 
@@ -26,39 +26,42 @@
 
 GitHub同步代码、文档及已归档验证证据；本机数据库、后台上传素材、凭据和备份不会随Git推送。换电脑后需要单独按备份恢复流程迁移，不能将新克隆仓库视为具有当前后台的全部内容。仓库同步不等于微信上传、云部署或发布。
 
-## 本机启动
+## Deployment Phase 1：本机PostgreSQL启动
 
-需要 Node.js 22.13或以上（当前实际验证环境为26.3.1）、npm、已安装的微信开发者工具。
+需要Node.js 22.13以上、PostgreSQL（本轮实际18.4）、npm和微信开发者工具。正式服务不再创建或读取SQLite。迁移不会自动导入旧开发资料，也不会自动创建管理员。
 
-```sh
-npm ci
-npm run dev
-```
+1. `npm ci`，将`.env.example`复制为忽略Git的`.env`，设置独立本机`DATABASE_URL`、`PGSCHEMA`。可用已安装PG，或填写`LOCAL_PG_PASSWORD`后执行`docker compose up -d postgres`。不要使用共享/生产库运行测试。
+2. `npm run db:migrate`，创建13表的PG初始Schema。Migration检查校验和，重复执行不重做；启动不自动迁移。
+3. 首个管理员通过服务端临时`BOOTSTRAP_PASSWORD`环境变量运行`npm run account:create -- <用户名> admin`创建。密码不在参数、日志或Git中；完成后清除此变量。已有账号库禁止重复Bootstrap，其它账号由后台建立。
+4. 如需合成开发资料，在`.env`显式设置`HQ_SEED_MODE=development`；开发身份需显式`LOCAL_DEV_AUTH=true`。默认均关闭，非开发环境禁止开启。
+5. `npm run dev`读取`.env`并运行Node服务和Vite；后台`http://127.0.0.1:5173/admin/`，健康检查`http://127.0.0.1:8787/api/health`。Node绑定`0.0.0.0`以兼容容器，请保持开发电脑网络访问受控。
 
-后台地址：<http://127.0.0.1:5173/admin/>；业务接口：<http://127.0.0.1:8787/api/health>。首次启动自动创建本地管理员，账号和随机密码仅写入 `.local/admin-access.txt`，不要转发或提交。业务数据库和上传文件位于 `.local/`，退出后台后数据仍保留；Git不包含业务数据和密码。
+上传对象在`HQ_UPLOAD_DIR`（默认`.local/uploads`），PG数据由PG管理。旧`.local/huangqiao.sqlite`及旧媒体完整保留，但不再作为新运行时数据源。启动新的PG开发环境后，应显式Seed或重新维护测试资料；Git克隆不包含数据库、账号或媒体。
 
-微信开发者工具导入目录为 **`/Users/aaron/Documents/huangqiao-app/miniprogram`**，不是内部第二层同名目录。点击“编译”查看首页。当前配置使用测试 AppID、本地回环接口与开发身份。私有开发配置允许本地HTTP联调，不作为正式域名配置；开启“设置→安全设置→服务端口”后可运行原生自动检查。手机不能访问电脑的 `127.0.0.1`，扫码真机和正式微信身份需另接测试云环境与公司账号。
+微信开发者工具导入`miniprogram/`进行本地开发。`npm run build:mini`生成`build/mini-development/`隔离环境包并做Type Check。Staging/Production包须提供对应`APP_ENV`和`MINI_API_BASE=https://...及MINI_APPID`，自动切换为真实微信身份；配置中不得放AppSecret。未配置云端API时拒绝生成正式环境包。手机不能访问电脑回环地址。微信编译/真机、上传和发布是独立步骤。
 
-`.env.example` 是配置说明模板，当前启动器**不会自动读取 `.env`**；需要配置时通过进程环境变量传入，不把密钥写入代码。服务只绑定本机回环地址，并拒绝按非开发环境直接启动。
-
-## 核查与备份
+## 验证与备份恢复
 
 ```sh
 npm run build
-npm test
+npm run build:mini
+TEST_DATABASE_URL=<专用本机hq_test_数据库连接> npm test
 npm run verify:originals
 npm run backup -- backups/manual-001
-npm run restore -- backups/manual-001 .local-restored-001
 ```
 
-恢复只写入新的目标目录，不能覆盖正在使用的数据；数据库和媒体一起校验，恢复后旧会话失效。详细操作、数据位置及恢复切换见操作说明。原生自动检查 `node scripts/native-check.cjs views` 会打开本地项目；`create` 模式会生成明确标识的虚拟预约和咨询，请仅在隔离开发环境使用。
+测试通过真实PG随机Schema运行，要求回环地址及`hq_test_`数据库；备份恢复测试创建并删除独立临时测试数据库，需要仅在测试实例授予CREATEDB能力。生产应用账号不需要此权限。
+
+备份使用匹配服务器版本的`pg_dump`，同一快照保存DB及媒体manifest，包含记录数、Migration校验和、对象大小/SHA-256。`PREVIOUS_BACKUP`可指定已验证备份，复用相同对象而不重新下载，生成独立可恢复集合。恢复需`RESTORE_DATABASE_URL`指向**新建空数据库**，`RESTORE_CONFIRM=new-empty-target`后执行`npm run restore -- <备份目录> <新媒体目录>`；非空目标被拒绝，恢复后旧Session失效。
+
+SQLite只读开发归档工具：`node scripts/archive-sqlite.mjs <旧数据目录> <新归档目录> <基准CommitSHA>`。原SQLite Migration移至`scripts/legacy-sqlite/`保留历史；不能用于PG。完整运行配置、备份策略、真实验证及CloudBase后续门槛见[Deployment Phase 1验收](docs/deployment/phase-1/ACCEPTANCE.md)。
 
 ## 项目结构与文档
 
 - `miniprogram/`：微信工程及原生页面，原用户模板已单独提交保留。
 - `admin/`：工作人员网页后台，React + Vite；构建输出在忽略版本管理的 `admin/dist/`。
-- `server/`：本地HTTP、SQLite、业务事务、身份权限、媒体和备份服务。
+- `server/`：Node HTTP、PostgreSQL异步事务、身份权限、Local/CloudBase Storage与备份服务。
 - `shared/`：业务状态名称；`tests/`：业务、HTTP、权限、并发和恢复测试。
 - `docs/`：[开发计划](docs/开发计划.md)、[待确认事项](docs/待确认事项.md)、[验收清单](docs/验收清单.md)、[技术评估](docs/技术评估.md)、[操作说明](docs/本地开发与操作说明.md)、[初版交付与验证](docs/开发交付与验证_2026-10-01.md)、[CR001修改](docs/需求变更_CR001.md)、[当前CR002跟团报名](docs/需求变更_CR002.md)、[设计核对](docs/design/设计规则与核对.md)、[决策记录](docs/决策与变更记录.md)。
 
-当前SQLite用于本地机制验证，不等于正式云数据库定案。优先方案仍为微信原生、独立后台与CloudBase；需验证正式账号、云数据库一致性、媒体播放和费用后选定。详细已通过与未执行项目以交付报告为准，不将本地测试当作微信真机或上线验收。
+当前批准架构为微信原生、Node容器、PostgreSQL、CloudBase私有Storage和独立静态Admin；本轮仅完成适配和本机验证。云资源、HTTPS、真实微信身份、费用/配额和生产发布须按Phase 2清单另行验证。

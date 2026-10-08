@@ -1,0 +1,10 @@
+.git
+.env*
+.local
+.qa
+node_modules
+**/dist
+backups
+**/*.sqlite*
+**/*.log
+docs

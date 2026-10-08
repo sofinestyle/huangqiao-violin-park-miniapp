@@ -1,0 +1,82 @@
+{
+  "environment": "isolated PostgreSQL/uploads and isolated native WeChat project copy",
+  "sharedDatabaseAffected": false,
+  "systemInfo": {
+    "brand": "devtools",
+    "model": "iPhone 12/13 (Pro)",
+    "platform": "devtools",
+    "pixelRatio": 3,
+    "screenWidth": 390,
+    "screenHeight": 844,
+    "windowWidth": 390,
+    "windowHeight": 753,
+    "SDKVersion": "3.17.3"
+  },
+  "chrome": "154.0.8037.99",
+  "results": [
+    {
+      "name": "Admin creates and publishes 10 SKU product with 450/0/480 prices, galleries and disabled combination",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin creates and publishes simple product",
+      "status": "PASS"
+    },
+    {
+      "name": "Native product list -> default real enabled SKU; unavailable combination disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "Native 4/4 brown -> unique SKU, gallery/price switch and carousel reset",
+      "status": "PASS"
+    },
+    {
+      "name": "Native consultation -> immutable SKU snapshot -> visitor record -> Admin detail",
+      "status": "PASS"
+    },
+    {
+      "name": "Native simple auto SKU without technical label and successful consultation",
+      "status": "PASS"
+    },
+    {
+      "name": "Native 20 SKU three dimensions and gift 12 SKU select and consult",
+      "status": "PASS"
+    },
+    {
+      "name": "Native stale SKU rejected, form retained, current model reloaded and no auto resubmit",
+      "status": "PASS"
+    },
+    {
+      "name": "Native historical snapshot survives rename/code/price change and legacy spec remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "native50loadAndSelect",
+      "status": "PASS",
+      "milliseconds": 4361
+    },
+    {
+      "name": "Native 50 SKU product with three dimensions loads and selects",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin eight pages no blank page or runtime failure",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "01-product-options-default.png",
+    "03-product-option-unavailable.png",
+    "02-product-options-switch.png",
+    "05-product-sku-price-switch.png",
+    "04-product-sku-image-switch.png",
+    "06-consult-sku-summary.png",
+    "07-my-record-sku-snapshot.png",
+    "09-admin-consult-sku.png",
+    "08-simple-product.png",
+    "10-product-three-options.png",
+    "11-gift-options.png",
+    "12-stale-sku-recovery.png"
+  ],
+  "errors": []
+}

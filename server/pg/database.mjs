@@ -12,7 +12,7 @@ export function databaseError(error){
  const mappings={23505:[409,'记录已存在，请检查重复编码','UNIQUE_CONFLICT'],23503:[409,'记录仍有关联或关联对象不存在','REFERENCE_CONFLICT'],23514:[400,'数据不符合约束','INVALID_DATA'],23502:[400,'缺少必要字段','INVALID_DATA'],22:[400,'数据格式无效','INVALID_DATA'],40001:[409,'数据已改变，请重试','TRANSACTION_RETRY'], '40P01':[409,'并发操作冲突，请重试','TRANSACTION_RETRY']};
  const m=mappings[error.code]||(String(error.code).startsWith('22')?mappings[22]:null);
  if(!m)return error;
- const e=new Error(m[1]);[e.status,,e.code]=m;e.pgCode=error.code;
+ const e=new Error(m[1]);[e.status,,e.code]=m;e.pgCode=error.code;e.safe=true;
  if(error.code==='23505'&&error.constraint==='product_skus_code_ci'){e.code='SKU_CODE_CONFLICT';e.message='SKU编码已被使用';}
  return e;
 }
@@ -20,6 +20,7 @@ export function openPostgres({connectionString=process.env.DATABASE_URL,schema=p
  if(!identifier.test(schema))throw new Error('无效数据库Schema');
  if(!connectionString&&!process.env.PGHOST)throw new Error('必须配置PostgreSQL连接');
  const pool=new pg.Pool({...options,connectionString,max,types,connectionTimeoutMillis:5000,idleTimeoutMillis:30000,options:`-c search_path=${schema},pg_catalog -c timezone=UTC -c statement_timeout=15000 -c lock_timeout=5000 -c idle_in_transaction_session_timeout=20000`});
+ pool.on('error',e=>console.error('数据库连接池异常',{code:typeof e.code==='string'?e.code:'CONNECTION_ERROR'}));
  const context=new AsyncLocalStorage();
  const db={pool,schema,
   async query(sql,values=[]){try{return await (context.getStore()||pool).query(sql,values);}catch(e){throw databaseError(e);}},

@@ -1,0 +1,19 @@
+# Local isolated PostgreSQL only. No cloud resource is created.
+services:
+  postgres:
+    image: postgres:18-bookworm
+    environment:
+      POSTGRES_DB: hq_development
+      POSTGRES_USER: hq_dev
+      POSTGRES_PASSWORD: ${LOCAL_PG_PASSWORD:?set LOCAL_PG_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - hq_pg:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hq_dev -d hq_development"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  hq_pg:
