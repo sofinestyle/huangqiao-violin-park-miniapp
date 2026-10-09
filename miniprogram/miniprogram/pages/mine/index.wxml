@@ -4,6 +4,7 @@
     <text class="mine-brand-title">我的主页</text>
   </view>
 <view class="mine-page">
+  <environment-status/>
   <view class="mine-identity">
     <view class="mine-identity-title">{{hasIdentity?'已登录并查看记录':'查看本人申请与咨询'}}</view>
     <view class="mine-identity-note">公开内容无需登录。提交业务与查询记录时验证身份；联系电话不作为查询凭据。</view>

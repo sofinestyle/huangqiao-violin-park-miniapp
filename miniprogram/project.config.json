@@ -35,7 +35,24 @@
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "Development · 本地",
+          "pathName": "pages/mine/index",
+          "query": "miniEnvironment=development",
+          "scene": 1001
+        },
+        {
+          "name": "Staging · 云端",
+          "pathName": "pages/mine/index",
+          "query": "miniEnvironment=staging",
+          "scene": 1001
+        }
+      ]
+    }
+  },
   "srcMiniprogramRoot": "miniprogram/",
   "editorSetting": {
     "tabIndent": "insertSpaces",

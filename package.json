@@ -18,7 +18,8 @@
     "restore": "node --env-file-if-exists=.env scripts/restore.mjs",
     "account:create": "node --env-file-if-exists=.env scripts/create-account.mjs",
     "db:migrate": "node --env-file-if-exists=.env scripts/migrate-pg.mjs",
-    "build:mini": "node scripts/build-mini.mjs"
+    "build:mini": "node scripts/build-mini.mjs",
+    "mini:prepare": "node scripts/prepare-mini-environments.mjs"
   },
   "dependencies": {
     "pg": "^8.16.3",

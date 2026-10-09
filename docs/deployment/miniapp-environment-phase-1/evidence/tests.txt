@@ -1,0 +1,20 @@
+✔ Native default resolves real existing loopback; query selects fixed Staging, never an arbitrary URL (53.646208ms)
+✔ Trial is always Staging and hides debug; release/unknown fail closed before any request (30.885958ms)
+✔ Target package chooses Staging in develop; selection remains fixed during navigation/query mutation (2.007417ms)
+✔ Requests and all decorated image/video/SKU URLs follow same target and reject absolute paths (17.006167ms)
+✔ Tokens do not cross targets or reuse legacy token; auth and idempotency protocol remains intact (11.155083ms)
+✔ Development identity remains on local auth; trial cannot call development auth (12.465416ms)
+✔ Status component visible only in develop, hides even blocked release (8.641708ms)
+✔ Production builds and out-of-SSOT overrides rejected before any package is emitted (840.644375ms)
+✔ All page origins absent, wx.request only centralized, one environment SSOT and five tabs retained (4.530042ms)
+✔ Compile-mode preparation preserves domain/security and existing private conditions and is idempotent (97.390417ms)
+✔ 页面注册与源文件一致，所有固定跳转和首页动态入口有目标 (8.438041ms)
+✔ 共用列表只为实际详情类型提供跳转，点位同页保持只读 (28.357583ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1267.016208

@@ -1,1 +1,1 @@
-{"usingComponents": {}, "navigationBarTitleText": "我的主页"}
+{"usingComponents": {"environment-status": "/components/environment-status/index"}, "navigationBarTitleText": "我的主页"}

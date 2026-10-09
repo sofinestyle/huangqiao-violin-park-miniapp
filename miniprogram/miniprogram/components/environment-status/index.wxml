@@ -1,0 +1,4 @@
+<view wx:if="{{visible}}" class="environment-status" aria-role="status">
+  <text class="environment-label">{{label}}</text>
+  <text class="environment-note">{{note}}</text>
+</view>

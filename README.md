@@ -38,7 +38,7 @@ GitHub同步代码、文档及已归档验证证据；本机数据库、后台�
 
 上传对象在`HQ_UPLOAD_DIR`（默认`.local/uploads`），PG数据由PG管理。旧`.local/huangqiao.sqlite`及旧媒体完整保留，但不再作为新运行时数据源。启动新的PG开发环境后，应显式Seed或重新维护测试资料；Git克隆不包含数据库、账号或媒体。
 
-微信开发者工具导入`miniprogram/`进行本地开发。`npm run build:mini`生成`build/mini-development/`隔离环境包并做Type Check。Staging/Production包须提供对应`APP_ENV`和`MINI_API_BASE=https://...及MINI_APPID`，自动切换为真实微信身份；配置中不得放AppSecret。未配置云端API时拒绝生成正式环境包。手机不能访问电脑回环地址。微信编译/真机、上传和发布是独立步骤。
+微信开发者工具导入`miniprogram/`；执行一次`npm run mini:prepare`准备Development / Staging编译模式，负责人以后通过顶部下拉菜单切换，并在“我的”页核对环境。单点配置与操作见[MINIAPP_ENVIRONMENT_SWITCH.md](MINIAPP_ENVIRONMENT_SWITCH.md)。`npm run build:mini`生成独立Development包；`APP_ENV=staging MINI_APPID=<已确认AppID> npm run build:mini`生成Staging包，使用同一SSOT网关。Production未批准，构建与release API均阻断；MINI_API_BASE不能覆盖SSOT。手机不能访问电脑回环地址，微信编译/真机、上传和发布仍是独立步骤。
 
 ## 验证与备份恢复
 

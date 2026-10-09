@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-09T06:20:41.394Z",
+  "meta": {
+    "environment": "development",
+    "base": "http://127.0.0.1:8787",
+    "version": "develop",
+    "query": {
+      "miniEnvironment": "development"
+    }
+  },
+  "pages": [
+    {
+      "page": "pages/index/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": [],
+      "spots": []
+    },
+    {
+      "page": "pages/instruments/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": []
+    },
+    {
+      "page": "pages/gifts/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": []
+    },
+    {
+      "page": "pages/study/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": []
+    },
+    {
+      "page": "pages/teaching/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": []
+    },
+    {
+      "page": "pages/tour/index",
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "records": []
+    },
+    {
+      "page": "pages/mine/index",
+      "error": "",
+      "count": 0,
+      "records": [],
+      "environmentLabel": "native-screenshot",
+      "hasIdentity": false
+    }
+  ],
+  "exceptions": [],
+  "health": {
+    "status": 0,
+    "error": "connection-failed"
+  }
+}
