@@ -1,0 +1,381 @@
+[
+  {
+    "environment": "development",
+    "contentCount": 40,
+    "legacy": [
+      {
+        "id": "site",
+        "kind": "site",
+        "name": "黄桥乐器文化产业园",
+        "field": "images.0",
+        "value": "/assets/yorray-logo.png"
+      },
+      {
+        "id": "violin-L301",
+        "kind": "product",
+        "name": "L301",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "violin-L501",
+        "kind": "product",
+        "name": "L501",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "violin-L701",
+        "kind": "product",
+        "name": "L701",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "violin-L901",
+        "kind": "product",
+        "name": "L901",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "violin-L1101",
+        "kind": "product",
+        "name": "L1101",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "violin-L1201",
+        "kind": "product",
+        "name": "L1201",
+        "field": "images.0",
+        "value": "/assets/hero-violin.jpg"
+      },
+      {
+        "id": "gift-1",
+        "kind": "product",
+        "name": "地图冰箱贴",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-2",
+        "kind": "product",
+        "name": "古镇冰箱贴",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-3",
+        "kind": "product",
+        "name": "音乐冰箱贴",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-4",
+        "kind": "product",
+        "name": "亚克力拼图冰箱贴",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-5",
+        "kind": "product",
+        "name": "纪念币",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-6",
+        "kind": "product",
+        "name": "金属直尺",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-7",
+        "kind": "product",
+        "name": "提琴书签",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-8",
+        "kind": "product",
+        "name": "手机支架",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-9",
+        "kind": "product",
+        "name": "帆布包",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-10",
+        "kind": "product",
+        "name": "紫色提琴玩偶",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-11",
+        "kind": "product",
+        "name": "琵琶玩偶",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-12",
+        "kind": "product",
+        "name": "尤克里里玩偶",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-13",
+        "kind": "product",
+        "name": "棕色小提琴玩偶",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-14",
+        "kind": "product",
+        "name": "迷你乐器",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-15",
+        "kind": "product",
+        "name": "提琴包挂",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-16",
+        "kind": "product",
+        "name": "榉木笔筒夜灯",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-17",
+        "kind": "product",
+        "name": "文创礼盒",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-18",
+        "kind": "product",
+        "name": "1/64 木盒",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-19",
+        "kind": "product",
+        "name": "1/64 纸盒",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "gift-20",
+        "kind": "product",
+        "name": "小提琴紫砂壶",
+        "field": "images.0",
+        "value": "/assets/wenchuang.jpg"
+      },
+      {
+        "id": "package-1",
+        "kind": "package",
+        "name": "琴韵初体验",
+        "field": "images.0",
+        "value": "/assets/workshop.jpg"
+      },
+      {
+        "id": "package-2",
+        "kind": "package",
+        "name": "提琴匠心深度游",
+        "field": "images.0",
+        "value": "/assets/green.jpg"
+      },
+      {
+        "id": "package-3",
+        "kind": "package",
+        "name": "制琴工坊探秘",
+        "field": "images.0",
+        "value": "/assets/industry.jpg"
+      },
+      {
+        "id": "package-4",
+        "kind": "package",
+        "name": "提琴文化艺术营",
+        "field": "images.0",
+        "value": "/assets/city.jpg"
+      },
+      {
+        "id": "package-5",
+        "kind": "package",
+        "name": "小小制琴师·工序体验营",
+        "field": "images.0",
+        "value": "/assets/workshop.jpg"
+      },
+      {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "field": "images.0",
+        "value": "/assets/city.jpg"
+      },
+      {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "field": "images.1",
+        "value": "/assets/c1.jpg"
+      },
+      {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "field": "images.2",
+        "value": "/assets/c2.jpg"
+      },
+      {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "field": "images.3",
+        "value": "/assets/c3.jpg"
+      },
+      {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "field": "images.4",
+        "value": "/assets/c4.jpg"
+      },
+      {
+        "id": "spot-2",
+        "kind": "spot",
+        "name": "音乐生态湖",
+        "field": "images.0",
+        "value": "/assets/lake.jpg"
+      },
+      {
+        "id": "spot-2",
+        "kind": "spot",
+        "name": "音乐生态湖",
+        "field": "images.1",
+        "value": "/assets/l1.jpg"
+      },
+      {
+        "id": "spot-2",
+        "kind": "spot",
+        "name": "音乐生态湖",
+        "field": "images.2",
+        "value": "/assets/l2.jpg"
+      },
+      {
+        "id": "spot-2",
+        "kind": "spot",
+        "name": "音乐生态湖",
+        "field": "images.3",
+        "value": "/assets/l3.jpg"
+      },
+      {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "field": "images.0",
+        "value": "/assets/industry.jpg"
+      },
+      {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "field": "images.1",
+        "value": "/assets/i1.jpg"
+      },
+      {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "field": "images.2",
+        "value": "/assets/i2.jpg"
+      },
+      {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "field": "images.3",
+        "value": "/assets/i3.jpg"
+      },
+      {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "field": "images.4",
+        "value": "/assets/i4.jpg"
+      },
+      {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "field": "images.0",
+        "value": "/assets/green.jpg"
+      },
+      {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "field": "images.1",
+        "value": "/assets/g1.jpg"
+      },
+      {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "field": "images.2",
+        "value": "/assets/g2.jpg"
+      },
+      {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "field": "images.3",
+        "value": "/assets/g3.jpg"
+      },
+      {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "field": "images.4",
+        "value": "/assets/g4.jpg"
+      }
+    ],
+    "mediaReferences": 8
+  },
+  {
+    "environment": "staging",
+    "transport": "微信开发者工具实际wx.request，未使用Mock",
+    "contentCount": 39,
+    "legacy": [
+      {
+        "id": "site",
+        "kind": "site",
+        "name": "黄桥乐器文化产业园",
+        "field": "images.0",
+        "value": "/assets/yorray-logo-CFmraOUS.png"
+      }
+    ],
+    "mediaReferences": 57
+  }
+]

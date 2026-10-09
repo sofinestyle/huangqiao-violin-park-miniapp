@@ -1,0 +1,1001 @@
+{
+  "sourceFiles": 94,
+  "references": [
+    {
+      "file": "config.ts",
+      "line": 24,
+      "value": "localhost",
+      "kind": "D",
+      "configuration": true,
+      "reason": "环境SSOT或本机API安全校验，并非静态资源"
+    },
+    {
+      "file": "custom-tab-bar/index.wxml",
+      "line": 3,
+      "value": "/assets/tab-icons/{{item.icon}}-{{selected===index?",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "environment-settings.ts",
+      "line": 3,
+      "value": "http://127.0.0.1:8787",
+      "kind": "D",
+      "configuration": true,
+      "reason": "环境SSOT或本机API安全校验，并非静态资源"
+    },
+    {
+      "file": "environment-settings.ts",
+      "line": 9,
+      "value": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "kind": "D",
+      "configuration": true,
+      "reason": "环境SSOT或本机API安全校验，并非静态资源"
+    },
+    {
+      "file": "pages/booking/index.wxml",
+      "line": 2,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/brand/index.wxml",
+      "line": 3,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/brand/index.wxml",
+      "line": 7,
+      "value": "/assets/brand/hero-user-v3.jpg",
+      "kind": "A",
+      "targets": [
+        "/assets/brand/hero-user-v3.jpg"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/brand/index.wxml",
+      "line": 35,
+      "value": "/assets/brand/company-reference.jpg",
+      "kind": "A",
+      "targets": [
+        "/assets/brand/company-reference.jpg"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 10,
+      "value": "/assets/tab-icons/home-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/home-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 14,
+      "value": "/assets/tab-icons/instrument-{{item && item.kind === ",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 18,
+      "value": "/assets/tab-icons/gift-{{item && item.kind === ",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 22,
+      "value": "/assets/tab-icons/study-{{item && item.kind === ",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/consult/index.wxml",
+      "line": 26,
+      "value": "/assets/tab-icons/mine-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/mine-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/enrollment/index.wxml",
+      "line": 2,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/enrollment/index.wxml",
+      "line": 3,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/enrollments/index.wxml",
+      "line": 2,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/enrollments/index.wxml",
+      "line": 6,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/gifts/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/gifts/index.wxml",
+      "line": 7,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 10,
+      "value": "{{site.images[1]}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 22,
+      "value": "/assets/home-nav/violin.png",
+      "kind": "A",
+      "targets": [
+        "/assets/home-nav/violin.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 25,
+      "value": "/assets/home-nav/brand.png",
+      "kind": "A",
+      "targets": [
+        "/assets/home-nav/brand.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 28,
+      "value": "/assets/home-nav/teaching.png",
+      "kind": "A",
+      "targets": [
+        "/assets/home-nav/teaching.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 31,
+      "value": "/assets/home-nav/map.png",
+      "kind": "A",
+      "targets": [
+        "/assets/home-nav/map.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 34,
+      "value": "/assets/home-nav/consult.png",
+      "kind": "A",
+      "targets": [
+        "/assets/home-nav/consult.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 41,
+      "value": "{{spots[0].images[1] || spots[0].cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 52,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 59,
+      "value": "/assets/tab-icons/gift-gold.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-gold.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 60,
+      "value": "/assets/tab-icons/instrument-gold.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/instrument-gold.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/index/index.wxml",
+      "line": 61,
+      "value": "/assets/tab-icons/group-gold.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/group-gold.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/instruments/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/instruments/index.wxml",
+      "line": 7,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 2,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 3,
+      "value": "{{item.videoUrl}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 3,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 6,
+      "value": "/assets/tab-icons/home-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/home-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 10,
+      "value": "/assets/tab-icons/instrument-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/instrument-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 14,
+      "value": "/assets/tab-icons/gift-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 18,
+      "value": "/assets/tab-icons/study-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/lesson/index.wxml",
+      "line": 22,
+      "value": "/assets/tab-icons/mine-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/mine-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/mine/index.wxml",
+      "line": 3,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/mine/index.wxss",
+      "line": 23,
+      "value": "\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%225%22%20width%3D%2218%22%20height%3D%2216%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22M7%203v4m10-4v4M3%2010h18%22%2F%3E%3C%2Fsvg%3E\"",
+      "kind": "A",
+      "targets": [],
+      "exists": true,
+      "embedded": true,
+      "reason": "内嵌SVG图标，无外部请求"
+    },
+    {
+      "file": "pages/mine/index.wxss",
+      "line": 24,
+      "value": "\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2011.5a8.5%208.5%200%200%201-8.5%208.5%209%209%200%200%201-4-.9L3%2021l1.9-5.5a9%209%200%200%201-.9-4A8.5%208.5%200%200%201%2012.5%203%208.5%208.5%200%200%201%2021%2011.5Z%22%2F%3E%3Cpath%20d%3D%22M8%2010h8m-8%204h5%22%2F%3E%3C%2Fsvg%3E\"",
+      "kind": "A",
+      "targets": [],
+      "exists": true,
+      "embedded": true,
+      "reason": "内嵌SVG图标，无外部请求"
+    },
+    {
+      "file": "pages/mine/index.wxss",
+      "line": 25,
+      "value": "\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2016.8v3a2%202%200%200%201-2.2%202%2019.8%2019.8%200%200%201-8.6-3.1%2019.5%2019.5%200%200%201-6-6A19.8%2019.8%200%200%201%201.1%204%202%202%200%200%201%203.1%202h3a2%202%200%200%201%202%201.7c.1%201%20.4%201.9.7%202.8a2%202%200%200%201-.5%202.1L7%209.9a16%2016%200%200%200%206%206l1.3-1.3a2%202%200%200%201%202.1-.5c.9.3%201.8.6%202.8.7a2%202%200%200%201%201.8%202Z%22%2F%3E%3C%2Fsvg%3E\"",
+      "kind": "A",
+      "targets": [],
+      "exists": true,
+      "embedded": true,
+      "reason": "内嵌SVG图标，无外部请求"
+    },
+    {
+      "file": "pages/mine/index.wxss",
+      "line": 26,
+      "value": "\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M12%2011v6m0-10v.1%22%2F%3E%3C%2Fsvg%3E\"",
+      "kind": "A",
+      "targets": [],
+      "exists": true,
+      "embedded": true,
+      "reason": "内嵌SVG图标，无外部请求"
+    },
+    {
+      "file": "pages/mine/index.wxss",
+      "line": 27,
+      "value": "\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23483421%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%203%203.8%206.5v5.4c0%204.8%203.8%208.2%208.2%2010%204.4-1.8%208.2-5.2%208.2-10V6.5L12%203Z%22%2F%3E%3Cpath%20d%3D%22m8%2012%203%203%205-6%22%2F%3E%3C%2Fsvg%3E\"",
+      "kind": "A",
+      "targets": [],
+      "exists": true,
+      "embedded": true,
+      "reason": "内嵌SVG图标，无外部请求"
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 7,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 10,
+      "value": "/assets/tab-icons/home-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/home-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 14,
+      "value": "/assets/tab-icons/instrument-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/instrument-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 18,
+      "value": "/assets/tab-icons/gift-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 22,
+      "value": "/assets/tab-icons/study-active.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/study-active.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/package/index.wxml",
+      "line": 26,
+      "value": "/assets/tab-icons/mine-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/mine-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 7,
+      "value": "{{item}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 10,
+      "value": "/assets/tab-icons/home-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/home-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 14,
+      "value": "/assets/tab-icons/instrument-{{item && item.category !== ",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 18,
+      "value": "/assets/tab-icons/gift-{{item && item.category === ",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-active.png",
+        "/assets/tab-icons/gift-gold.png",
+        "/assets/tab-icons/gift-muted.png",
+        "/assets/tab-icons/group-gold.png",
+        "/assets/tab-icons/home-active.png",
+        "/assets/tab-icons/home-muted.png",
+        "/assets/tab-icons/instrument-active.png",
+        "/assets/tab-icons/instrument-gold.png",
+        "/assets/tab-icons/instrument-muted.png",
+        "/assets/tab-icons/mine-active.png",
+        "/assets/tab-icons/mine-muted.png",
+        "/assets/tab-icons/study-active.png",
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 22,
+      "value": "/assets/tab-icons/study-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/product/index.wxml",
+      "line": 26,
+      "value": "/assets/tab-icons/mine-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/mine-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.ts",
+      "line": 4,
+      "value": "/assets/images/workshop.jpg",
+      "kind": "A",
+      "targets": [
+        "/assets/images/workshop.jpg"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 9,
+      "value": "{{heroImage}}",
+      "kind": "A",
+      "targets": [
+        "/assets/images/workshop.jpg"
+      ],
+      "exists": true,
+      "viaApi": false,
+      "reason": "同页固定背景数据绑定"
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 26,
+      "value": "/assets/study/mentor.png",
+      "kind": "A",
+      "targets": [
+        "/assets/study/mentor.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 27,
+      "value": "/assets/study/gift.png",
+      "kind": "A",
+      "targets": [
+        "/assets/study/gift.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 28,
+      "value": "/assets/study/group.png",
+      "kind": "A",
+      "targets": [
+        "/assets/study/group.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 29,
+      "value": "/assets/study/shield.png",
+      "kind": "A",
+      "targets": [
+        "/assets/study/shield.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/study/index.wxml",
+      "line": 39,
+      "value": "{{photo}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 2,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 3,
+      "value": "{{item.cover}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 6,
+      "value": "/assets/tab-icons/home-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/home-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 10,
+      "value": "/assets/tab-icons/instrument-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/instrument-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 14,
+      "value": "/assets/tab-icons/gift-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/gift-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 18,
+      "value": "/assets/tab-icons/study-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/study-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/teaching/index.wxml",
+      "line": 22,
+      "value": "/assets/tab-icons/mine-muted.png",
+      "kind": "A",
+      "targets": [
+        "/assets/tab-icons/mine-muted.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/tour/index.wxml",
+      "line": 4,
+      "value": "/assets/yorray-logo.png",
+      "kind": "A",
+      "targets": [
+        "/assets/yorray-logo.png"
+      ],
+      "exists": true,
+      "viaApi": false
+    },
+    {
+      "file": "pages/tour/index.wxml",
+      "line": 13,
+      "value": "{{photo}}",
+      "kind": "B",
+      "reason": "后台业务内容、图库或视频地址绑定；继续由API/media提供"
+    }
+  ],
+  "fixedFiles": [
+    {
+      "path": "/assets/brand/company-reference.jpg",
+      "bytes": 353371
+    },
+    {
+      "path": "/assets/brand/hero-user-v3.jpg",
+      "bytes": 1516765
+    },
+    {
+      "path": "/assets/home-nav/brand.png",
+      "bytes": 55474
+    },
+    {
+      "path": "/assets/home-nav/consult.png",
+      "bytes": 64914
+    },
+    {
+      "path": "/assets/home-nav/map.png",
+      "bytes": 65835
+    },
+    {
+      "path": "/assets/home-nav/teaching.png",
+      "bytes": 60516
+    },
+    {
+      "path": "/assets/home-nav/violin.png",
+      "bytes": 73514
+    },
+    {
+      "path": "/assets/images/workshop.jpg",
+      "bytes": 657075
+    },
+    {
+      "path": "/assets/study/gift.png",
+      "bytes": 1483
+    },
+    {
+      "path": "/assets/study/group.png",
+      "bytes": 4895
+    },
+    {
+      "path": "/assets/study/mentor.png",
+      "bytes": 3892
+    },
+    {
+      "path": "/assets/study/shield.png",
+      "bytes": 3392
+    },
+    {
+      "path": "/assets/tab-icons/gift-active.png",
+      "bytes": 1921
+    },
+    {
+      "path": "/assets/tab-icons/gift-gold.png",
+      "bytes": 2214
+    },
+    {
+      "path": "/assets/tab-icons/gift-muted.png",
+      "bytes": 2035
+    },
+    {
+      "path": "/assets/tab-icons/group-gold.png",
+      "bytes": 3007
+    },
+    {
+      "path": "/assets/tab-icons/home-active.png",
+      "bytes": 1502
+    },
+    {
+      "path": "/assets/tab-icons/home-muted.png",
+      "bytes": 1690
+    },
+    {
+      "path": "/assets/tab-icons/instrument-active.png",
+      "bytes": 3133
+    },
+    {
+      "path": "/assets/tab-icons/instrument-gold.png",
+      "bytes": 3573
+    },
+    {
+      "path": "/assets/tab-icons/instrument-muted.png",
+      "bytes": 3456
+    },
+    {
+      "path": "/assets/tab-icons/mine-active.png",
+      "bytes": 1669
+    },
+    {
+      "path": "/assets/tab-icons/mine-muted.png",
+      "bytes": 1812
+    },
+    {
+      "path": "/assets/tab-icons/study-active.png",
+      "bytes": 2224
+    },
+    {
+      "path": "/assets/tab-icons/study-muted.png",
+      "bytes": 2492
+    },
+    {
+      "path": "/assets/yorray-logo.png",
+      "bytes": 14516
+    }
+  ],
+  "unreferencedAssets": [
+    {
+      "path": "/assets/brand/hero-detail-v2.jpg",
+      "bytes": 450926,
+      "kind": "C",
+      "reason": "源码未引用的历史文件；本轮保留，不擅自删除"
+    },
+    {
+      "path": "/assets/brand/hero.jpg",
+      "bytes": 330589,
+      "kind": "C",
+      "reason": "源码未引用的历史文件；本轮保留，不擅自删除"
+    }
+  ],
+  "missingFixed": [],
+  "serverDependentFixed": [],
+  "unresolved": [],
+  "assetBytes": 3687885
+}

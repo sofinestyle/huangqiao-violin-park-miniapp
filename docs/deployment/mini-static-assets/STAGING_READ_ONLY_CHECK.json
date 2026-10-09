@@ -1,0 +1,19 @@
+[
+  {
+    "path": "/api/health",
+    "status": 200,
+    "data": {
+      "ok": true,
+      "database": true,
+      "environment": "staging"
+    }
+  },
+  {
+    "path": "/api/public/content",
+    "status": 200,
+    "dataHash": "e486b71b3bd545d1972ead1be238ba1c545cd5622039f61a2bcc9994c301bf8d",
+    "count": 39,
+    "beforeDataHash": "e486b71b3bd545d1972ead1be238ba1c545cd5622039f61a2bcc9994c301bf8d",
+    "scope": "published public content only; no database/storage write operations performed"
+  }
+]

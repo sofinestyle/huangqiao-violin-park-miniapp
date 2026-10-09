@@ -1,0 +1,348 @@
+[
+  {
+    "environment": "development",
+    "page": "pages/index/index",
+    "error": "",
+    "count": null,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b",
+      "/assets/home-nav/violin.png",
+      "/assets/home-nav/brand.png",
+      "/assets/home-nav/teaching.png",
+      "/assets/home-nav/map.png",
+      "/assets/home-nav/consult.png",
+      "http://127.0.0.1:8787/assets/c1.jpg",
+      "http://127.0.0.1:8787/assets/workshop.jpg",
+      "http://127.0.0.1:8787/assets/green.jpg",
+      "/assets/tab-icons/gift-gold.png",
+      "/assets/tab-icons/instrument-gold.png",
+      "/assets/tab-icons/group-gold.png"
+    ],
+    "mediaSample": {
+      "url": "http://127.0.0.1:8787/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1292,
+        "height": 1218,
+        "type": "png",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "development",
+    "page": "pages/instruments/index",
+    "error": "",
+    "count": 8,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/api/media/43981165-3680-43cb-9e64-b8d92c434f12",
+      "http://127.0.0.1:8787/api/media/cfb24f56-575e-4642-b21f-af180025f954",
+      "http://127.0.0.1:8787/assets/hero-violin.jpg"
+    ],
+    "mediaSample": {
+      "url": "http://127.0.0.1:8787/api/media/43981165-3680-43cb-9e64-b8d92c434f12",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1024,
+        "height": 1024,
+        "type": "png",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "development",
+    "page": "pages/gifts/index",
+    "error": "",
+    "count": 20,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/assets/wenchuang.jpg"
+    ]
+  },
+  {
+    "environment": "development",
+    "page": "pages/study/index",
+    "error": "",
+    "count": 5,
+    "heroImage": "/assets/images/workshop.jpg",
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "/assets/images/workshop.jpg",
+      "/assets/study/mentor.png",
+      "/assets/study/gift.png",
+      "/assets/study/group.png",
+      "/assets/study/shield.png",
+      "http://127.0.0.1:8787/assets/workshop.jpg",
+      "http://127.0.0.1:8787/assets/green.jpg",
+      "http://127.0.0.1:8787/assets/industry.jpg",
+      "http://127.0.0.1:8787/assets/city.jpg"
+    ],
+    "heroInfo": {
+      "errMsg": "getImageInfo:ok",
+      "width": 1152,
+      "height": 1536,
+      "type": "jpeg",
+      "orientation": "up"
+    }
+  },
+  {
+    "environment": "development",
+    "page": "pages/mine/index",
+    "error": "",
+    "count": null,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png"
+    ]
+  },
+  {
+    "environment": "development",
+    "page": "pages/teaching/index",
+    "error": "",
+    "count": 2,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+      "http://127.0.0.1:8787/api/media/800d0973-f050-425c-85a4-43f27b01427f",
+      "/assets/tab-icons/home-muted.png",
+      "/assets/tab-icons/instrument-muted.png",
+      "/assets/tab-icons/gift-muted.png",
+      "/assets/tab-icons/study-muted.png",
+      "/assets/tab-icons/mine-muted.png"
+    ],
+    "mediaSample": {
+      "url": "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 720,
+        "height": 1280,
+        "type": "jpeg",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "development",
+    "page": "pages/tour/index",
+    "error": "",
+    "count": 4,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "http://127.0.0.1:8787/assets/city.jpg",
+      "http://127.0.0.1:8787/assets/c1.jpg",
+      "http://127.0.0.1:8787/assets/c2.jpg",
+      "http://127.0.0.1:8787/assets/c3.jpg",
+      "http://127.0.0.1:8787/assets/c4.jpg",
+      "http://127.0.0.1:8787/assets/lake.jpg",
+      "http://127.0.0.1:8787/assets/l1.jpg",
+      "http://127.0.0.1:8787/assets/l2.jpg",
+      "http://127.0.0.1:8787/assets/l3.jpg",
+      "http://127.0.0.1:8787/assets/industry.jpg",
+      "http://127.0.0.1:8787/assets/i1.jpg",
+      "http://127.0.0.1:8787/assets/i2.jpg",
+      "http://127.0.0.1:8787/assets/i3.jpg",
+      "http://127.0.0.1:8787/assets/i4.jpg",
+      "http://127.0.0.1:8787/assets/green.jpg",
+      "http://127.0.0.1:8787/assets/g1.jpg",
+      "http://127.0.0.1:8787/assets/g2.jpg",
+      "http://127.0.0.1:8787/assets/g3.jpg",
+      "http://127.0.0.1:8787/assets/g4.jpg"
+    ]
+  },
+  {
+    "environment": "staging",
+    "page": "pages/mine/index",
+    "error": "",
+    "count": null,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png"
+    ]
+  },
+  {
+    "environment": "staging",
+    "page": "pages/index/index",
+    "error": "",
+    "count": null,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/32bc298a-54b2-422b-9f54-533c39cebc05",
+      "/assets/home-nav/violin.png",
+      "/assets/home-nav/brand.png",
+      "/assets/home-nav/teaching.png",
+      "/assets/home-nav/map.png",
+      "/assets/home-nav/consult.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/3e3a8570-85af-494c-8805-ec9158adada0",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/16709e66-3a12-5978-ba28-283791a470d5",
+      "/assets/tab-icons/gift-gold.png",
+      "/assets/tab-icons/instrument-gold.png",
+      "/assets/tab-icons/group-gold.png"
+    ],
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/32bc298a-54b2-422b-9f54-533c39cebc05",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1292,
+        "height": 1218,
+        "type": "png",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "staging",
+    "page": "pages/instruments/index",
+    "error": "",
+    "count": 8,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+    ],
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1024,
+        "height": 1024,
+        "type": "png",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "staging",
+    "page": "pages/gifts/index",
+    "error": "",
+    "count": 20,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+    ],
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1152,
+        "height": 1536,
+        "type": "jpeg",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "staging",
+    "page": "pages/study/index",
+    "error": "",
+    "count": 5,
+    "heroImage": "/assets/images/workshop.jpg",
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "/assets/images/workshop.jpg",
+      "/assets/study/mentor.png",
+      "/assets/study/gift.png",
+      "/assets/study/group.png",
+      "/assets/study/shield.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/3e3a8570-85af-494c-8805-ec9158adada0",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/16709e66-3a12-5978-ba28-283791a470d5",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/8d36e5e0-6b52-49c1-a117-425cdcba3842"
+    ],
+    "heroInfo": {
+      "errMsg": "getImageInfo:ok",
+      "width": 1152,
+      "height": 1536,
+      "type": "jpeg",
+      "orientation": "up"
+    },
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/3e3a8570-85af-494c-8805-ec9158adada0",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 7008,
+        "height": 4672,
+        "type": "jpeg",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "staging",
+    "page": "pages/teaching/index",
+    "error": "",
+    "count": 1,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382",
+      "/assets/tab-icons/home-muted.png",
+      "/assets/tab-icons/instrument-muted.png",
+      "/assets/tab-icons/gift-muted.png",
+      "/assets/tab-icons/study-muted.png",
+      "/assets/tab-icons/mine-muted.png"
+    ],
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1280,
+        "height": 720,
+        "type": "jpeg",
+        "orientation": "up"
+      }
+    }
+  },
+  {
+    "environment": "staging",
+    "page": "pages/tour/index",
+    "error": "",
+    "count": 4,
+    "heroImage": null,
+    "imageSources": [
+      "/assets/yorray-logo.png",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/68548eda-35be-5dc2-946c-05b2349cc77a",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/2232c217-4d2c-5949-aa26-70f120e1d176",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/c5945292-a4c6-5232-b1b6-922937b752c8",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/16709e66-3a12-5978-ba28-283791a470d5",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0"
+    ],
+    "mediaSample": {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "info": {
+        "errMsg": "getImageInfo:ok",
+        "width": 1400,
+        "height": 1049,
+        "type": "jpeg",
+        "orientation": "up"
+      }
+    }
+  }
+]

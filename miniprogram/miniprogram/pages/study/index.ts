@@ -1,7 +1,7 @@
-import {api,Content,decorate,go,mediaUrl,message} from '../../lib/api';
+import {api,Content,decorate,go,message} from '../../lib/api';
 
 Page({
-  data:{items:[] as Content[],loading:true,error:'',heroImage:mediaUrl('/assets/workshop.jpg')},
+  data:{items:[] as Content[],loading:true,error:'',heroImage:'/assets/images/workshop.jpg'},
   onShow(){this.load();},
   async load(){
     this.setData({loading:true,error:''});
