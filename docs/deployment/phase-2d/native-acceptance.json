@@ -1,0 +1,1000 @@
+{
+  "checkedAt": "2026-10-09T12:41:40.144Z",
+  "meta": {
+    "environment": "staging",
+    "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+    "version": "develop",
+    "query": {
+      "miniEnvironment": "staging"
+    }
+  },
+  "pages": [
+    {
+      "page": "pages/index/index",
+      "error": "",
+      "count": 2,
+      "ids": [
+        "22c5b91a-16b3-4862-8c01-e7bb1a76c82c",
+        "8325afe2-ce9f-45d5-b318-64aa95f285af"
+      ],
+      "names": [
+        "琴韵初体验",
+        "提琴匠心深度游"
+      ],
+      "imageError": false,
+      "stats": {
+        "packages": 5,
+        "gifts": 20,
+        "instruments": 8,
+        "series": 1
+      },
+      "site": {
+        "id": "site",
+        "name": "黄桥乐器文化产业园",
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+      }
+    },
+    {
+      "page": "pages/about/index",
+      "error": "",
+      "count": 0,
+      "ids": [],
+      "names": [],
+      "imageError": false,
+      "stats": null,
+      "site": {
+        "id": "site",
+        "name": "黄桥乐器文化产业园",
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+      }
+    },
+    {
+      "page": "pages/brand/index",
+      "error": "",
+      "count": 0,
+      "ids": [],
+      "names": [],
+      "imageError": false,
+      "stats": null,
+      "site": {
+        "id": "site",
+        "name": "黄桥乐器文化产业园",
+        "intro": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+      }
+    },
+    {
+      "page": "pages/mine/index",
+      "error": "",
+      "count": 0,
+      "ids": [],
+      "names": [],
+      "imageError": false,
+      "stats": null,
+      "site": null,
+      "environmentText": null,
+      "hasIdentity": false
+    },
+    {
+      "page": "pages/tour/index",
+      "error": "",
+      "count": 4,
+      "ids": [
+        "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+        "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+        "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+        "981fd3f8-4d08-561d-ae9b-0983214e0b87"
+      ],
+      "names": [
+        "城市客厅",
+        "音乐生态湖",
+        "产业园·中小企业集聚区",
+        "绿岛·智能环保表面处理中心"
+      ],
+      "imageError": false,
+      "stats": null,
+      "site": null
+    },
+    {
+      "page": "pages/instruments/index",
+      "error": "",
+      "count": 8,
+      "ids": [
+        "80d79606-9251-4884-9010-b86aa6daae25",
+        "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+        "6c2a045d-739a-493f-b313-37e18a15f8c7",
+        "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+        "99780888-8c52-4319-95b8-9a3a034ef60e",
+        "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+        "93ebf835-d7ee-4346-80ab-38445427a2a1",
+        "78b4a325-038a-4084-98c6-869a475ec24c"
+      ],
+      "names": [
+        "L1普及小提琴",
+        "L2初学者实木小提琴",
+        "L301",
+        "L501",
+        "L701",
+        "L901",
+        "L1101",
+        "L1201"
+      ],
+      "imageError": false,
+      "stats": null,
+      "site": null
+    },
+    {
+      "page": "pages/gifts/index",
+      "error": "",
+      "count": 20,
+      "ids": [
+        "cc2158ab-aa01-4c2d-ae85-34221b457981",
+        "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+        "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+        "b96c77b7-0910-405f-849a-e6c76f62965e",
+        "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+        "e95eb404-3e24-4673-8975-ddff21c75670",
+        "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+        "eaa1dead-a24c-45e1-a469-247638f951f2",
+        "41346998-856a-476e-8862-67133ee56c2e",
+        "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+        "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+        "191d0ed1-9d55-441e-9b67-5b4992a14569",
+        "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+        "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+        "84810900-e21d-467c-b486-6148b826a9d1",
+        "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+        "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+        "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+        "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+        "6c4a8600-90b4-488a-89d4-810e217fcac2"
+      ],
+      "names": [
+        "地图冰箱贴",
+        "古镇冰箱贴",
+        "音乐冰箱贴",
+        "亚克力拼图冰箱贴",
+        "纪念币",
+        "金属直尺",
+        "提琴书签",
+        "手机支架",
+        "帆布包",
+        "紫色提琴玩偶",
+        "琵琶玩偶",
+        "尤克里里玩偶",
+        "棕色小提琴玩偶",
+        "迷你乐器",
+        "提琴包挂",
+        "榉木笔筒夜灯",
+        "文创礼盒",
+        "1/64 木盒",
+        "1/64 纸盒",
+        "小提琴紫砂壶"
+      ],
+      "imageError": false,
+      "stats": null,
+      "site": null
+    },
+    {
+      "page": "pages/study/index",
+      "error": "",
+      "count": 5,
+      "ids": [
+        "22c5b91a-16b3-4862-8c01-e7bb1a76c82c",
+        "8325afe2-ce9f-45d5-b318-64aa95f285af",
+        "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+        "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+        "1e6e4395-cd7f-426a-bda1-943b8be315e9"
+      ],
+      "names": [
+        "琴韵初体验",
+        "提琴匠心深度游",
+        "制琴工坊探秘",
+        "提琴文化艺术营",
+        "小小制琴师·工序体验营"
+      ],
+      "imageError": false,
+      "stats": null,
+      "site": null
+    },
+    {
+      "page": "pages/teaching/index",
+      "error": "",
+      "count": 1,
+      "ids": [
+        "db4e68f6-2ef6-41da-85df-fc20a760c627"
+      ],
+      "names": [
+        "L12视频"
+      ],
+      "imageError": false,
+      "stats": null,
+      "site": null
+    }
+  ],
+  "products": [
+    {
+      "id": "80d79606-9251-4884-9010-b86aa6daae25",
+      "name": "L1普及小提琴",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "b587f347-e667-4b82-a3fd-6807a2264d58",
+          "label": "1/8 / 亮光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/35196160-9f66-4087-b31b-f62fbf172b52"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "edb77db2-d321-4b42-bf77-d4134f3f91e0",
+          "label": "1/8 / 哑光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "6104828e-5023-4443-9740-63b59a6850f8",
+          "label": "1/4 / 亮光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "d6c16d7f-d15e-41eb-8e13-839443e37b7e",
+          "label": "1/4 / 哑光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "7ff9f735-3548-4c99-ac24-26285d67d6a9",
+          "label": "1/2 / 亮光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "d912d301-d38e-440c-af68-60617057119f",
+          "label": "1/2 / 哑光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "0b90714f-1b86-41ad-85a1-4e113a485053",
+          "label": "3/4 / 亮光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "7c4b7f60-052d-463f-962b-13f7c6905cc6",
+          "label": "3/4 / 哑光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "24d2b534-97f7-4701-9606-08135f689f97",
+          "label": "4/4 / 亮光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "b31bc055-0627-477e-9da5-1428b37bddc4",
+          "label": "4/4 / 哑光棕色",
+          "priceLabel": "参考价 ¥320",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "name": "L301",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "fdda3c90-37d6-4ffc-baaa-5a006ff37609",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "4af70e4d-c261-4e5a-ad5e-ac9008990376",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "031a825e-8f29-4d1d-ae88-434a4e7a2285",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "0ab27641-df29-4b47-bdc7-7c43f4b16de0",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "104273ec-9603-47dd-aa2c-ee558e077638",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "name": "L501",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "10a556ce-1799-4488-b4ab-9c6e5cca4d14",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "c40fc4c8-4d9e-4812-aed3-4d84689978e5",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "d2cd085c-76c3-43b5-acd7-9782b65cba04",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "d3402cab-75c8-473d-8d0b-e2d66ac69265",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "db1ac385-5437-4da7-8e94-2a6ac02fbf8f",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "name": "L701",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "548f986e-0f7c-418b-bd8f-3598fd74b645",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "8726e8a4-1ac8-4b1a-ac67-c8f55cf9f48f",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "2def44b0-4fd2-4644-9f3c-34daf07fba82",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "06df4f1c-04a2-423c-bcec-1094386fbd26",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "e5154750-b36e-4500-bb1a-2b5d75dc8269",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "name": "L901",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "31642c99-5c39-4ffe-a11d-af4943613634",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "e6ea5f7a-6a78-46ec-9451-159cac89a28b",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "9cdeac64-a665-4b06-9e5c-d1e19bcd7251",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "dd387994-4a59-4f20-a601-4de717dfef90",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "708cf605-12cb-46c3-8e8b-43bb77674dcc",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "name": "L1101",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "67302828-8f46-4dc8-9dfc-83e6c93ac7b9",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "6f7fd0a6-dea8-40cd-b535-76fc9f14b988",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "45254cb8-0007-4646-9740-cbbab740724d",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "8d669932-35ef-4d17-982f-5a4c6a5553bb",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "a4ad06f4-1329-4ceb-a91c-c0b368ac7254",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "name": "L1201",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "f9eea2e8-d086-469f-86e6-1776c540423c",
+          "label": "4/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "da032249-ed3d-4ad4-87c6-5ee18ed90b31",
+          "label": "3/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "9ae5def2-919a-403e-a8ee-4eb96e681825",
+          "label": "1/2",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "ccf327ab-39dc-44f0-b542-9481470e310a",
+          "label": "1/4",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        },
+        {
+          "skuId": "3ad3d14e-e957-4293-bee5-64021255d80d",
+          "label": "1/8",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "name": "地图冰箱贴",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "8427c319-89c1-452b-9efb-8222dacc58ab",
+          "label": "",
+          "priceLabel": "参考价 ¥24",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "name": "古镇冰箱贴",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "1163f89c-3e17-4c69-926f-43a689f1918d",
+          "label": "",
+          "priceLabel": "参考价 ¥26",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "name": "音乐冰箱贴",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "091b31ba-2952-4cd9-8eb7-254ed2da5ab4",
+          "label": "",
+          "priceLabel": "咨询报价",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "name": "亚克力拼图冰箱贴",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "b3eacb7b-66b7-44e7-bfc8-f294d12f847d",
+          "label": "",
+          "priceLabel": "参考价 ¥24",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "name": "纪念币",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "8550ca46-e600-4bb8-be01-56f418022588",
+          "label": "",
+          "priceLabel": "参考价 ¥20",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "name": "金属直尺",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "95711d0f-7f26-4f02-9a3a-f128a4846299",
+          "label": "",
+          "priceLabel": "参考价 ¥15",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "name": "提琴书签",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "c0e1f68b-9737-4a08-900a-926de229f809",
+          "label": "",
+          "priceLabel": "参考价 ¥15",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "name": "手机支架",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "d24cd195-7ef9-4880-b715-38779f7c8af6",
+          "label": "",
+          "priceLabel": "参考价 ¥18",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "41346998-856a-476e-8862-67133ee56c2e",
+      "name": "帆布包",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "fff73e5d-92f1-4013-a17d-3bcbd968d9cb",
+          "label": "",
+          "priceLabel": "参考价 ¥38",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "name": "紫色提琴玩偶",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "0f3fadc4-84e1-4ac7-ab76-c4e01d5674ac",
+          "label": "",
+          "priceLabel": "参考价 ¥48",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "name": "琵琶玩偶",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "b9c6f915-fba6-4a8c-ad55-e51d6a3a7793",
+          "label": "",
+          "priceLabel": "参考价 ¥48",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "name": "尤克里里玩偶",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "b0d999f4-a215-494f-9b00-8466e166af98",
+          "label": "",
+          "priceLabel": "参考价 ¥48",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "name": "棕色小提琴玩偶",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "04e7d65d-d899-4e84-a36c-447310483109",
+          "label": "",
+          "priceLabel": "参考价 ¥48",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "name": "迷你乐器",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "1c4a93b9-57a1-4a84-9940-ca3fd10b4f06",
+          "label": "",
+          "priceLabel": "参考价 ¥48",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "84810900-e21d-467c-b486-6148b826a9d1",
+      "name": "提琴包挂",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "3703e688-82f6-4408-9cf3-a19e104b965d",
+          "label": "",
+          "priceLabel": "参考价 ¥29",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "name": "榉木笔筒夜灯",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "ada97df7-7af8-4d76-b3da-fd48e15187b5",
+          "label": "",
+          "priceLabel": "参考价 ¥108",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "name": "文创礼盒",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "24a2983e-f978-4d5c-a8f3-e13245a036b0",
+          "label": "",
+          "priceLabel": "参考价 ¥128",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "name": "1/64 木盒",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "e65e50c0-07a2-4747-a7a7-7f6510f73e1b",
+          "label": "",
+          "priceLabel": "参考价 ¥399",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "name": "1/64 纸盒",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "e80b14ca-f9c7-41e4-9602-b799a602cd74",
+          "label": "",
+          "priceLabel": "参考价 ¥399",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "name": "小提琴紫砂壶",
+      "status": "PASS",
+      "skus": [
+        {
+          "skuId": "d5293faf-969e-49a0-979b-0515ccdf42ac",
+          "label": "",
+          "priceLabel": "参考价 ¥600",
+          "images": [
+            "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+          ],
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "8325afe2-ce9f-45d5-b318-64aa95f285af",
+      "name": "提琴匠心深度游",
+      "status": "PASS",
+      "images": [
+        "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/16709e66-3a12-5978-ba28-283791a470d5"
+      ]
+    },
+    {
+      "id": "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+      "name": "制琴工坊探秘",
+      "status": "PASS",
+      "images": [
+        "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5"
+      ]
+    },
+    {
+      "id": "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+      "name": "提琴文化艺术营",
+      "status": "PASS",
+      "images": [
+        "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e"
+      ]
+    },
+    {
+      "id": "1e6e4395-cd7f-426a-bda1-943b8be315e9",
+      "name": "小小制琴师·工序体验营",
+      "status": "PASS",
+      "images": [
+        "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "skuValidationTime": "2026-10-09T12:29:01.565Z",
+  "status": "PASS"
+}

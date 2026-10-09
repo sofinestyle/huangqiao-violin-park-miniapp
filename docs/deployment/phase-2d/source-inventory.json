@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-09T11:45:05.080Z",
+  "source": {
+    "host": "127.0.0.1/32",
+    "port": 55433,
+    "database": "hq_development",
+    "runtime_user": "hq_dev",
+    "schema": "app"
+  },
+  "sourceKind": "当前本地Development PostgreSQL，未查询SQLite",
+  "modules": {
+    "site": {
+      "records": 1,
+      "states": {
+        "published": 1
+      },
+      "registeredMedia": 1,
+      "staticImages": 1,
+      "images": 2,
+      "videos": 0,
+      "modernSkus": 0,
+      "legacySpecProducts": 0
+    },
+    "spot": {
+      "records": 4,
+      "states": {
+        "published": 4
+      },
+      "registeredMedia": 0,
+      "staticImages": 19,
+      "images": 19,
+      "videos": 0,
+      "modernSkus": 0,
+      "legacySpecProducts": 0
+    },
+    "instrument": {
+      "records": 8,
+      "states": {
+        "published": 8
+      },
+      "registeredMedia": 6,
+      "staticImages": 1,
+      "images": 7,
+      "videos": 0,
+      "modernSkus": 10,
+      "legacySpecProducts": 7
+    },
+    "cultural": {
+      "records": 20,
+      "states": {
+        "published": 20
+      },
+      "registeredMedia": 0,
+      "staticImages": 1,
+      "images": 1,
+      "videos": 0,
+      "modernSkus": 0,
+      "legacySpecProducts": 20
+    },
+    "study": {
+      "records": 6,
+      "states": {
+        "archived": 1,
+        "published": 5
+      },
+      "registeredMedia": 2,
+      "staticImages": 4,
+      "images": 6,
+      "videos": 0,
+      "modernSkus": 0,
+      "legacySpecProducts": 0
+    },
+    "teaching": {
+      "records": 18,
+      "states": {
+        "archived": 2,
+        "published": 2,
+        "draft": 14
+      },
+      "registeredMedia": 6,
+      "staticImages": 1,
+      "images": 3,
+      "videos": 4,
+      "modernSkus": 0,
+      "legacySpecProducts": 0
+    }
+  },
+  "counts": {
+    "content": 57,
+    "media": 15,
+    "skus": 10
+  }
+}

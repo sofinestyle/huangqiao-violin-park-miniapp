@@ -1,0 +1,193 @@
+{
+  "executeBaselineTime": "2026-10-09T20:09:50.851848+08:00",
+  "afterTime": "2026-10-09T20:27:50.730827+08:00",
+  "tables": [
+    {
+      "table": "accounts",
+      "beforeCount": 1,
+      "afterCount": 1,
+      "beforeHash": "94ad28f3b94ff75d20d10629dc119505e9d6b340c06fc7ee37f54b906b4b085e",
+      "afterHash": "94ad28f3b94ff75d20d10629dc119505e9d6b340c06fc7ee37f54b906b4b085e",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "audit",
+      "beforeCount": 12,
+      "afterCount": 12,
+      "beforeHash": "845815ddd835334739bc9cdbbfe98e098d47c3d89acd8f3b0017098539d0a748",
+      "afterHash": "845815ddd835334739bc9cdbbfe98e098d47c3d89acd8f3b0017098539d0a748",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "bookings",
+      "beforeCount": 0,
+      "afterCount": 0,
+      "beforeHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "changes",
+      "beforeCount": 0,
+      "afterCount": 0,
+      "beforeHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "consultations",
+      "beforeCount": 0,
+      "afterCount": 0,
+      "beforeHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "idempotency",
+      "beforeCount": 4,
+      "afterCount": 4,
+      "beforeHash": "73a152c0d4a38b4be9166bef4a7c441df5c5d1e05e72e93013a4546581ff5b07",
+      "afterHash": "73a152c0d4a38b4be9166bef4a7c441df5c5d1e05e72e93013a4546581ff5b07",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "migrations",
+      "beforeCount": 1,
+      "afterCount": 1,
+      "beforeHash": "16a3572312f8b4f208b81ad220f11c13fba35abbed5fccbb039fa2ab9a3900ac",
+      "afterHash": "16a3572312f8b4f208b81ad220f11c13fba35abbed5fccbb039fa2ab9a3900ac",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "sessions",
+      "beforeCount": 2,
+      "afterCount": 2,
+      "beforeHash": "d5379c5514ab4a2b853c220eb60e8910a3ff6b0af7b132c2f67dc708e6521106",
+      "afterHash": "d5379c5514ab4a2b853c220eb60e8910a3ff6b0af7b132c2f67dc708e6521106",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "slots",
+      "beforeCount": 0,
+      "afterCount": 0,
+      "beforeHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    },
+    {
+      "table": "visitors",
+      "beforeCount": 0,
+      "afterCount": 0,
+      "beforeHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "primaryKeysEqual": true,
+      "keyFieldsEqual": true,
+      "allRowHashesEqual": true,
+      "status": "PASS"
+    }
+  ],
+  "readOnlyObservationDrift": [
+    {
+      "table": "idempotency",
+      "pk": {
+        "route": "admin:direct-video:v1",
+        "key_digest": "392bdcf2a29121d9bb242e844ba3507d24eeab229142974203a45a9fb2c9d89a",
+        "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+      },
+      "initialHash": "55fc589e3c51c2418bf000867aacfb20c6c88c5e5df77f9e5f9b65dafacd8c24",
+      "executeBaselineHash": "1d886bb39ac7582fcb6cb1229d3fd8292b3228b0c287c7b08bc325c9d6ed956e",
+      "baselineKeyFields": {
+        "fields": {},
+        "uploadTask": {
+          "code": "UPLOAD_EXPIRED",
+          "state": "expired",
+          "cleanupAt": 1791508018514,
+          "createdAt": 1791507118514,
+          "expiresAt": 1791507718514,
+          "leaseUntil": 0,
+          "nextCleanupAt": 1791550796345
+        }
+      },
+      "observation": "发生于Execute之前的只读观察期；与既有过期上传清理机制一致，不归为迁移写入"
+    },
+    {
+      "table": "idempotency",
+      "pk": {
+        "route": "admin:direct-video:v1",
+        "key_digest": "bd3997ce859541f4b36779751fee7e4f2aa733c7044b86e9c4e720c37ff2378e",
+        "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+      },
+      "initialHash": "86b7546f620d1d68c95af7592bcac1e3fafaa69d60e700f862b63f054b45c515",
+      "executeBaselineHash": "ed1d8d2680f1edbe112e1dc3961dfce75c3213b845b4ab553d38471cec6eb1e4",
+      "baselineKeyFields": {
+        "fields": {},
+        "uploadTask": {
+          "code": "UPLOAD_EXPIRED",
+          "state": "expired",
+          "cleanupAt": 1791508025303,
+          "createdAt": 1791507125303,
+          "expiresAt": 1791507725303,
+          "leaseUntil": 0,
+          "nextCleanupAt": 1791550796386
+        }
+      },
+      "observation": "发生于Execute之前的只读观察期；与既有过期上传清理机制一致，不归为迁移写入"
+    },
+    {
+      "table": "idempotency",
+      "pk": {
+        "route": "admin:direct-video:v1",
+        "key_digest": "56662b121dedf98bdaf91edc819fbc2ed17e53e915536c9447a0587c356bd0eb",
+        "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+      },
+      "initialHash": "a6ac2175c5e18c6a70e7cd7e03c781a39a4db537cceb893bca7b1cfde077a006",
+      "executeBaselineHash": "624329dfecdaa2507eff7ecddc92e69004e3de03b3776d724cf6476219a5f1d5",
+      "baselineKeyFields": {
+        "fields": {},
+        "uploadTask": {
+          "code": "UPLOAD_EXPIRED",
+          "state": "expired",
+          "cleanupAt": 1791508790489,
+          "createdAt": 1791507890489,
+          "expiresAt": 1791508490489,
+          "leaseUntil": 0,
+          "nextCleanupAt": 1791550796291
+        }
+      },
+      "observation": "发生于Execute之前的只读观察期；与既有过期上传清理机制一致，不归为迁移写入"
+    }
+  ],
+  "logoCompatibilityTransaction": {
+    "beforeTime": "2026-10-09T20:34:45.229038+08:00",
+    "afterTime": "2026-10-09T20:38:35.136076+08:00",
+    "allTenTablesAllRowsUnchanged": true
+  },
+  "normalAdminLoginDeltaFile": "admin-login-protection-delta.json"
+}

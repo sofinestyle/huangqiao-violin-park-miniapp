@@ -1,0 +1,1706 @@
+{
+  "sourceTime": "2026-10-09T11:58:36.743Z",
+  "targetTime": "2026-10-09T19:46:19.574901+08:00",
+  "source": {
+    "host": "127.0.0.1/32",
+    "port": 55433,
+    "database": "hq_development",
+    "runtime_user": "hq_dev",
+    "schema": "app"
+  },
+  "summary": {
+    "APPROVED": 33,
+    "ALREADY_MIGRATED": 4,
+    "SKIPPED_VIDEO": 18,
+    "MANUAL_REVIEW": 2,
+    "CONFLICT": 0,
+    "MEDIA_TO_UPLOAD": 7,
+    "MEDIA_REUSE": 3,
+    "SKIPPED_VIDEO_FILES": 4,
+    "SKU": 60
+  },
+  "sourceInventory": [
+    {
+      "module": "site",
+      "count": 1,
+      "states": {
+        "published": 1
+      }
+    },
+    {
+      "module": "spot",
+      "count": 4,
+      "states": {
+        "published": 4
+      }
+    },
+    {
+      "module": "instrument",
+      "count": 8,
+      "states": {
+        "published": 8
+      }
+    },
+    {
+      "module": "cultural",
+      "count": 20,
+      "states": {
+        "published": 20
+      }
+    },
+    {
+      "module": "study",
+      "count": 6,
+      "states": {
+        "archived": 1,
+        "published": 5
+      }
+    },
+    {
+      "module": "teaching",
+      "count": 18,
+      "states": {
+        "archived": 2,
+        "published": 2,
+        "draft": 14
+      }
+    }
+  ],
+  "APPROVED": [
+    {
+      "sourceId": "0925947c-81f2-48c9-a64e-8e2b8e5e0659",
+      "targetId": "80d79606-9251-4884-9010-b86aa6daae25",
+      "name": "L1普及小提琴",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "CURRENT_SKU_2"
+    },
+    {
+      "sourceId": "61b919a4-9ffe-4c55-b2b2-7a477b91c274",
+      "targetId": "7bdebda8-753d-4d33-a9a2-53f971f06dc3",
+      "name": "研学界面验证样例（未发布）",
+      "module": "study",
+      "status": "APPROVED"
+    },
+    {
+      "sourceId": "site",
+      "targetId": "site",
+      "name": "黄桥乐器文化产业园",
+      "module": "site",
+      "status": "APPROVED"
+    },
+    {
+      "sourceId": "violin-L301",
+      "targetId": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "name": "L301",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "violin-L501",
+      "targetId": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "name": "L501",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "violin-L701",
+      "targetId": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "name": "L701",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "violin-L901",
+      "targetId": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "name": "L901",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "violin-L1101",
+      "targetId": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "name": "L1101",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "violin-L1201",
+      "targetId": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "name": "L1201",
+      "module": "instrument",
+      "status": "APPROVED",
+      "conversion": "EXPLICIT_SIZE_TO_OPTION_VALUE_SKU"
+    },
+    {
+      "sourceId": "gift-1",
+      "targetId": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "name": "地图冰箱贴",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-2",
+      "targetId": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "name": "古镇冰箱贴",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-3",
+      "targetId": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "name": "音乐冰箱贴",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-4",
+      "targetId": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "name": "亚克力拼图冰箱贴",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-5",
+      "targetId": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "name": "纪念币",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-6",
+      "targetId": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "name": "金属直尺",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-7",
+      "targetId": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "name": "提琴书签",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-8",
+      "targetId": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "name": "手机支架",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-9",
+      "targetId": "41346998-856a-476e-8862-67133ee56c2e",
+      "name": "帆布包",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-10",
+      "targetId": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "name": "紫色提琴玩偶",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-11",
+      "targetId": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "name": "琵琶玩偶",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-12",
+      "targetId": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "name": "尤克里里玩偶",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-13",
+      "targetId": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "name": "棕色小提琴玩偶",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-14",
+      "targetId": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "name": "迷你乐器",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-15",
+      "targetId": "84810900-e21d-467c-b486-6148b826a9d1",
+      "name": "提琴包挂",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-16",
+      "targetId": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "name": "榉木笔筒夜灯",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-17",
+      "targetId": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "name": "文创礼盒",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-18",
+      "targetId": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "name": "1/64 木盒",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-19",
+      "targetId": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "name": "1/64 纸盒",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "gift-20",
+      "targetId": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "name": "小提琴紫砂壶",
+      "module": "cultural",
+      "status": "APPROVED",
+      "conversion": "DEFAULT_SPEC_TO_SIMPLE_SKU"
+    },
+    {
+      "sourceId": "package-2",
+      "targetId": "8325afe2-ce9f-45d5-b318-64aa95f285af",
+      "name": "提琴匠心深度游",
+      "module": "study",
+      "status": "APPROVED"
+    },
+    {
+      "sourceId": "package-3",
+      "targetId": "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+      "name": "制琴工坊探秘",
+      "module": "study",
+      "status": "APPROVED"
+    },
+    {
+      "sourceId": "package-4",
+      "targetId": "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+      "name": "提琴文化艺术营",
+      "module": "study",
+      "status": "APPROVED"
+    },
+    {
+      "sourceId": "package-5",
+      "targetId": "1e6e4395-cd7f-426a-bda1-943b8be315e9",
+      "name": "小小制琴师·工序体验营",
+      "module": "study",
+      "status": "APPROVED"
+    }
+  ],
+  "ALREADY_MIGRATED": [
+    {
+      "module": "spot",
+      "sourceId": "spot-1",
+      "targetId": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+      "name": "城市客厅",
+      "status": "ALREADY_MIGRATED",
+      "targetHash": "2448dd9300b1cecf3949a2ed3344e1aeab63b9a921ee85882715c08fb27b78b9"
+    },
+    {
+      "module": "spot",
+      "sourceId": "spot-2",
+      "targetId": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+      "name": "音乐生态湖",
+      "status": "ALREADY_MIGRATED",
+      "targetHash": "f0d9d80d777ae49139d24e4022581f0438a801eb1e7f62c64b8c3b38691b3c18"
+    },
+    {
+      "module": "spot",
+      "sourceId": "spot-3",
+      "targetId": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+      "name": "产业园·中小企业集聚区",
+      "status": "ALREADY_MIGRATED",
+      "targetHash": "b09fe90a192306cbce3a202feefc7ca4c9a54521e0e572de1c04def32f36109b"
+    },
+    {
+      "module": "spot",
+      "sourceId": "spot-4",
+      "targetId": "981fd3f8-4d08-561d-ae9b-0983214e0b87",
+      "name": "绿岛·智能环保表面处理中心",
+      "status": "ALREADY_MIGRATED",
+      "targetHash": "54e97dcc74d93d08e1399f7cd2896d050220bb56ce47a1c52fd30dab38e9b646"
+    }
+  ],
+  "SKIPPED_VIDEO": [
+    {
+      "sourceId": "10d80295-1e5b-452d-ba94-21a70080b998",
+      "name": "虚拟测试信号 · 非教学视频",
+      "state": "archived",
+      "type": "video",
+      "mediaId": "13349018-4e8a-4d1b-ac8c-3406fb8bbc9f",
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "3892cd93-f402-47eb-b6fe-c4ef4e354338",
+      "name": "琴弓的正确使用方法",
+      "state": "published",
+      "type": "video",
+      "mediaId": "3367754f-596e-467b-b529-bfe414b490e9",
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+      "name": "开箱教学",
+      "state": "published",
+      "type": "video",
+      "mediaId": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "fb27e38b-2906-44f7-b00e-5f04e5d987dd",
+      "name": "播放联调样例（非教学视频）",
+      "state": "archived",
+      "type": "video",
+      "mediaId": "0b12721c-f563-4e7e-9d38-7f0555f926c6",
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-1",
+      "name": "琴弓浮毛修剪",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-2",
+      "name": "琴弓松紧的分寸",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-3",
+      "name": "松香用量的学问",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-4",
+      "name": "极简调音三步法",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-5",
+      "name": "断弦更换与选配",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-6",
+      "name": "肩托稳固安装",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-7",
+      "name": "指板贴定位与贴法",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-8",
+      "name": "旋轴打滑怎么办",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-9",
+      "name": "琴码摆正与调平",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-10",
+      "name": "新弦为何总跑音",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-11",
+      "name": "琴与弓的日常养护",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-12",
+      "name": "拉弦板微调器用法",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-13",
+      "name": "弱音器的妙用",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "lesson-14",
+      "name": "提琴存放与温湿度",
+      "state": "draft",
+      "type": "video",
+      "mediaId": null,
+      "status": "SKIPPED_VIDEO"
+    }
+  ],
+  "MANUAL_REVIEW": [
+    {
+      "module": "instrument",
+      "sourceId": "violin-L201",
+      "name": "L201普及实木小提琴",
+      "status": "MANUAL_REVIEW",
+      "reason": "旧规格附加说明无法无损映射到当前SKU字段，或维度/重复规格无法可靠判定",
+      "specs": [
+        {
+          "name": "4/4",
+          "description": "3年自然风干欧洲木材"
+        },
+        {
+          "name": "3/4",
+          "description": ""
+        },
+        {
+          "name": "1/2",
+          "description": ""
+        },
+        {
+          "name": "1/4",
+          "description": ""
+        },
+        {
+          "name": "1/8",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "module": "study",
+      "sourceId": "package-1",
+      "name": "琴韵初体验",
+      "status": "MANUAL_REVIEW",
+      "reason": "同名套餐业务字段冲突；负责人决定两个版本保留，Development新名称和编码尚待另行明确",
+      "targetId": "22c5b91a-16b3-4862-8c01-e7bb1a76c82c"
+    }
+  ],
+  "CONFLICT": [],
+  "MEDIA_TO_UPLOAD": [
+    {
+      "id": "35196160-9f66-4087-b31b-f62fbf172b52",
+      "filename": "codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png",
+      "mime": "image/png",
+      "size": 2165842,
+      "sha256": "2c97eeca045d77c47879ec8e2025cadf88c263a7703b44eacc418316657ae883",
+      "object_key": "35196160-9f66-4087-b31b-f62fbf172b52.png",
+      "rights": "",
+      "duration": null,
+      "created_at": "2026-10-07T14:46:58.205Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/14bca797-7a42-4f82-a8e7-22cbb281ed45"
+      ]
+    },
+    {
+      "id": "1757a532-c887-4563-93ae-aef2af1c7a06",
+      "filename": "dmx-image-1786262930716-1-v1.png",
+      "mime": "image/png",
+      "size": 1439924,
+      "sha256": "712e31e739a3a39b5e159bbd9d58c303b43fbd61be6d2a17ba74467a7d0f1880",
+      "object_key": "1757a532-c887-4563-93ae-aef2af1c7a06.png",
+      "rights": "客户上传",
+      "duration": null,
+      "created_at": "2026-10-07T14:04:54.249Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/43981165-3680-43cb-9e64-b8d92c434f12"
+      ]
+    },
+    {
+      "id": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+      "filename": "dmx-image-1786333620164-1-v1.png",
+      "mime": "image/png",
+      "size": 1662437,
+      "sha256": "becfde58c546684487b94f01dccd8064150c3a44759f430cd406d774a333dcfb",
+      "object_key": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f.png",
+      "rights": "客户上传",
+      "duration": null,
+      "created_at": "2026-10-07T14:06:00.155Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/86826998-114c-4c98-bb44-e71ae4a012d6"
+      ]
+    },
+    {
+      "id": "99493b2d-1906-43c5-9665-2f6aabe80428",
+      "filename": "dmx-image-1786333537583-1-v1.png",
+      "mime": "image/png",
+      "size": 1491544,
+      "sha256": "0fc7d779d6f2655c08bfd1780f87d19e66f59380359b460ea3a053af5571afc9",
+      "object_key": "99493b2d-1906-43c5-9665-2f6aabe80428.png",
+      "rights": "",
+      "duration": null,
+      "created_at": "2026-10-07T14:48:03.140Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/711a911b-fd9b-460f-986f-e8da98f5464d"
+      ]
+    },
+    {
+      "id": "31586cf2-2922-44f0-af53-0b9220cf1f81",
+      "filename": "workshop.jpg",
+      "mime": "image/jpeg",
+      "size": 657075,
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "object_key": "31586cf2-2922-44f0-af53-0b9220cf1f81.jpg",
+      "rights": "用户提供的项目原始素材；仅用于本地未发布验证，不新增对外使用授权。",
+      "duration": null,
+      "created_at": "2026-10-02T14:23:55.455Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/873b92f3-219b-4efe-9353-1d00c4c9e803",
+        "/assets/wenchuang.jpg",
+        "/assets/workshop.jpg"
+      ]
+    },
+    {
+      "id": "32bc298a-54b2-422b-9f54-533c39cebc05",
+      "filename": "homepage-workshop-background-20261001.png",
+      "mime": "image/png",
+      "size": 1877874,
+      "sha256": "16b302c48c0b61b3ea2bea964fa28130e43acac67c14606c59feee88a75eeeb0",
+      "object_key": "32bc298a-54b2-422b-9f54-533c39cebc05.png",
+      "rights": "用户于2026年10月1日提供并明确要求用于首页的视觉背景；不是园区实拍证明。原图保留，本轮仅用于已授权的首页视觉调整。",
+      "duration": null,
+      "created_at": "2026-10-01T10:38:40.494Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b"
+      ]
+    },
+    {
+      "id": "5adb7593-369e-47eb-b429-e968b21763e0",
+      "filename": "hero-violin.jpg",
+      "mime": "image/jpeg",
+      "size": 478879,
+      "sha256": "1432fe600bcd0b246b52999030ad7edafc80969ca32832a95e1a14b8ee465ee4",
+      "object_key": "5adb7593-369e-47eb-b429-e968b21763e0.jpg",
+      "rights": "",
+      "duration": null,
+      "created_at": "2026-10-09T11:40:00.000Z",
+      "action": "MEDIA_TO_UPLOAD",
+      "sourceUrls": [
+        "/assets/hero-violin.jpg"
+      ]
+    }
+  ],
+  "MEDIA_REUSE": [
+    {
+      "id": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "mime": "image/jpeg",
+      "size": 342073,
+      "rights": "",
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "duration": null,
+      "filename": "city.jpg",
+      "created_at": "2026-10-09T09:55:08.83+08:00",
+      "object_key": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e.jpg",
+      "action": "MEDIA_REUSE",
+      "sourceUrls": [
+        "/api/media/9db07b35-770b-4983-b87d-39e2daa2af39"
+      ]
+    },
+    {
+      "id": "16709e66-3a12-5978-ba28-283791a470d5",
+      "mime": "image/jpeg",
+      "size": 167195,
+      "rights": "",
+      "sha256": "d653a7245c9ced5724ac996d67b39a8df0ceac6be51202d755b396b5242aabd2",
+      "duration": null,
+      "filename": "green.jpg",
+      "created_at": "2026-10-09T09:55:08.83+08:00",
+      "object_key": "16709e66-3a12-5978-ba28-283791a470d5.jpg",
+      "action": "MEDIA_REUSE",
+      "sourceUrls": [
+        "/assets/green.jpg"
+      ]
+    },
+    {
+      "id": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "mime": "image/jpeg",
+      "size": 225273,
+      "rights": "",
+      "sha256": "4a58eb780ab8992de21e8586fec140db70e28a8ea8d9775d9a7302a232722e7d",
+      "duration": null,
+      "filename": "industry.jpg",
+      "created_at": "2026-10-09T09:55:08.83+08:00",
+      "object_key": "0d7b9c57-e19f-55c4-a412-93b62fac95a5.jpg",
+      "action": "MEDIA_REUSE",
+      "sourceUrls": [
+        "/assets/industry.jpg"
+      ]
+    }
+  ],
+  "SKIPPED_VIDEO_FILES": [
+    {
+      "sourceId": "0b12721c-f563-4e7e-9d38-7f0555f926c6",
+      "filename": "hq-test-signal.mp4",
+      "sha256": "a88a369e6567643d8bd3192853cbb19c904d43001f609f60da69889343a22fa9",
+      "size": 20232,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "13349018-4e8a-4d1b-ac8c-3406fb8bbc9f",
+      "filename": "hq-test-signal.mp4",
+      "sha256": "a88a369e6567643d8bd3192853cbb19c904d43001f609f60da69889343a22fa9",
+      "size": 20232,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "3367754f-596e-467b-b529-bfe414b490e9",
+      "filename": "ccb72c1d0bcd1be1ae084b04be81a532.mp4",
+      "sha256": "8043c57fb280718579f4eaeb0b6a63db0ff55a8c8e17300f963ea87ea5ff6469",
+      "size": 4614448,
+      "status": "SKIPPED_VIDEO"
+    },
+    {
+      "sourceId": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+      "filename": "56698adddfc6bebe64903608fab3587d_raw.mp4",
+      "sha256": "91f09626c4941d91984936a8b0f897fd2a5f31c2f2b71726f7bad7c0b5e9f161",
+      "size": 15989120,
+      "status": "SKIPPED_VIDEO"
+    }
+  ],
+  "specMappings": [
+    {
+      "sourceId": "violin-L301",
+      "targetId": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "name": "L301",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "574a33cb-df1b-4ab5-bd15-399a1dce9a7a",
+          "valueId": "27522c95-13fb-4851-98dc-1a43bd9ce563",
+          "skuId": "fdda3c90-37d6-4ffc-baaa-5a006ff37609",
+          "skuCode": "MIG-c1284566545791e62b7a9f10",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "574a33cb-df1b-4ab5-bd15-399a1dce9a7a",
+          "valueId": "54d03f98-4e94-46fb-87a3-a7753a0da6c8",
+          "skuId": "4af70e4d-c261-4e5a-ad5e-ac9008990376",
+          "skuCode": "MIG-c42df10ae8c709930a0538cb",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "574a33cb-df1b-4ab5-bd15-399a1dce9a7a",
+          "valueId": "c4c5ee28-928b-46f4-a141-578ef911cced",
+          "skuId": "031a825e-8f29-4d1d-ae88-434a4e7a2285",
+          "skuCode": "MIG-589855ddb080a860639ae2d0",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "574a33cb-df1b-4ab5-bd15-399a1dce9a7a",
+          "valueId": "ab3e3473-28ad-4f28-b84e-0809fd41e05c",
+          "skuId": "0ab27641-df29-4b47-bdc7-7c43f4b16de0",
+          "skuCode": "MIG-556cbff56c273d1a2f6cc0c2",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "574a33cb-df1b-4ab5-bd15-399a1dce9a7a",
+          "valueId": "cee828d1-3c47-4d17-b67b-32aecab8f944",
+          "skuId": "104273ec-9603-47dd-aa2c-ee558e077638",
+          "skuCode": "MIG-2e23c4ef658b72544f07ee5b",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "violin-L501",
+      "targetId": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "name": "L501",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "74ae7363-051d-4ffa-85db-48ce88958dba",
+          "valueId": "14ffb502-1f98-4639-bc96-68fe282ce8e6",
+          "skuId": "10a556ce-1799-4488-b4ab-9c6e5cca4d14",
+          "skuCode": "MIG-33361a441b6a6821d48d0ff6",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "74ae7363-051d-4ffa-85db-48ce88958dba",
+          "valueId": "e19ed92c-6d37-4050-97cd-b2c14ef396ad",
+          "skuId": "c40fc4c8-4d9e-4812-aed3-4d84689978e5",
+          "skuCode": "MIG-766040a61f0788a6f5cf984e",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "74ae7363-051d-4ffa-85db-48ce88958dba",
+          "valueId": "9c19d0d7-447c-4b21-a46b-8fecce23a47b",
+          "skuId": "d2cd085c-76c3-43b5-acd7-9782b65cba04",
+          "skuCode": "MIG-6190f79db6d3fadd5995ccbb",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "74ae7363-051d-4ffa-85db-48ce88958dba",
+          "valueId": "ac165630-c4dd-4daa-9cac-92ff6e358330",
+          "skuId": "d3402cab-75c8-473d-8d0b-e2d66ac69265",
+          "skuCode": "MIG-41e1642d48f1dda228f52dce",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "74ae7363-051d-4ffa-85db-48ce88958dba",
+          "valueId": "13223309-dc12-4d5f-b9f1-1fecad2ec744",
+          "skuId": "db1ac385-5437-4da7-8e94-2a6ac02fbf8f",
+          "skuCode": "MIG-503f560c9bcbc2d0e2f75a35",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "violin-L701",
+      "targetId": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "name": "L701",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "2c274e37-2123-41e4-8618-55fe76dc4f42",
+          "valueId": "05cc2976-a91e-4c61-ba30-b2b42c6368fe",
+          "skuId": "548f986e-0f7c-418b-bd8f-3598fd74b645",
+          "skuCode": "MIG-821cfa4a7326cbf683eedb35",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "2c274e37-2123-41e4-8618-55fe76dc4f42",
+          "valueId": "ad56bf19-3eb9-4968-9d00-3c6bf42a66d2",
+          "skuId": "8726e8a4-1ac8-4b1a-ac67-c8f55cf9f48f",
+          "skuCode": "MIG-b832ec68b6924309ea4705fe",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "2c274e37-2123-41e4-8618-55fe76dc4f42",
+          "valueId": "e16e6660-a5bd-4054-bdba-4d6ac6e6da88",
+          "skuId": "2def44b0-4fd2-4644-9f3c-34daf07fba82",
+          "skuCode": "MIG-71733b9f21e41159d1034f09",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "2c274e37-2123-41e4-8618-55fe76dc4f42",
+          "valueId": "d450ad46-05d5-4b33-9bff-b9afaf48f4c1",
+          "skuId": "06df4f1c-04a2-423c-bcec-1094386fbd26",
+          "skuCode": "MIG-24495690514cea166875b50b",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "2c274e37-2123-41e4-8618-55fe76dc4f42",
+          "valueId": "3d23a98a-a37d-4aac-8c1a-99549240ff9d",
+          "skuId": "e5154750-b36e-4500-bb1a-2b5d75dc8269",
+          "skuCode": "MIG-6257eeb8fecdb6f7769a4c00",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "violin-L901",
+      "targetId": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "name": "L901",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "c2265c94-0add-4c7b-a56c-ed56f08c8b41",
+          "valueId": "3dc5f75a-b4f1-4105-a5c5-0150dff720ef",
+          "skuId": "31642c99-5c39-4ffe-a11d-af4943613634",
+          "skuCode": "MIG-c73495aed5dff6c8946a3bb9",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "c2265c94-0add-4c7b-a56c-ed56f08c8b41",
+          "valueId": "b0af3d45-24c1-4bd9-bb27-ef24829245fc",
+          "skuId": "e6ea5f7a-6a78-46ec-9451-159cac89a28b",
+          "skuCode": "MIG-0afec60bc73077909d8fc771",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "c2265c94-0add-4c7b-a56c-ed56f08c8b41",
+          "valueId": "cfd8c651-8e24-4ae0-905b-b56805336287",
+          "skuId": "9cdeac64-a665-4b06-9e5c-d1e19bcd7251",
+          "skuCode": "MIG-32762dd68ba766398432bafb",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "c2265c94-0add-4c7b-a56c-ed56f08c8b41",
+          "valueId": "b24cccb8-3e77-440b-b141-75697156431a",
+          "skuId": "dd387994-4a59-4f20-a601-4de717dfef90",
+          "skuCode": "MIG-194e46db3efeff336e81c1fa",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "c2265c94-0add-4c7b-a56c-ed56f08c8b41",
+          "valueId": "d2dee37a-752d-40e2-a113-30a4ae717442",
+          "skuId": "708cf605-12cb-46c3-8e8b-43bb77674dcc",
+          "skuCode": "MIG-03a056521a3495e25a3b0d50",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "violin-L1101",
+      "targetId": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "name": "L1101",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "72231530-eed6-46b1-92a3-e3440430d896",
+          "valueId": "ce11d0bc-63e1-46e3-8050-ea718ad9f036",
+          "skuId": "67302828-8f46-4dc8-9dfc-83e6c93ac7b9",
+          "skuCode": "MIG-cba94406158260efb44425ca",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "72231530-eed6-46b1-92a3-e3440430d896",
+          "valueId": "adbbbf41-0113-46ff-bc20-f8d05a5118d4",
+          "skuId": "6f7fd0a6-dea8-40cd-b535-76fc9f14b988",
+          "skuCode": "MIG-b796e394c6e8cc70243486ca",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "72231530-eed6-46b1-92a3-e3440430d896",
+          "valueId": "d6dd6566-0415-4df7-8029-8ac0e0eb25dd",
+          "skuId": "45254cb8-0007-4646-9740-cbbab740724d",
+          "skuCode": "MIG-622595cd3dc8864c82c98a29",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "72231530-eed6-46b1-92a3-e3440430d896",
+          "valueId": "9209a084-12b0-4cab-800b-35f0d5ca2749",
+          "skuId": "8d669932-35ef-4d17-982f-5a4c6a5553bb",
+          "skuCode": "MIG-e1ce5b616d8cd0851b96c4b2",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "72231530-eed6-46b1-92a3-e3440430d896",
+          "valueId": "eeedbffb-709a-4dd3-9c26-d2fff141c08b",
+          "skuId": "a4ad06f4-1329-4ceb-a91c-c0b368ac7254",
+          "skuCode": "MIG-a9492b9cf11a811296791d22",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "violin-L1201",
+      "targetId": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "name": "L1201",
+      "dimension": "尺寸",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "4/4",
+            "description": ""
+          },
+          "optionId": "3a5b33c9-a274-4f28-8616-d5d0816cdc14",
+          "valueId": "cd966836-f829-4cd8-bc2a-beebef5b5086",
+          "skuId": "f9eea2e8-d086-469f-86e6-1776c540423c",
+          "skuCode": "MIG-96fffcd3d6d13e42f243377a",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "3/4",
+            "description": ""
+          },
+          "optionId": "3a5b33c9-a274-4f28-8616-d5d0816cdc14",
+          "valueId": "8972aa5c-bcce-46ca-b7ac-d7e4191009ea",
+          "skuId": "da032249-ed3d-4ad4-87c6-5ee18ed90b31",
+          "skuCode": "MIG-23dee21b7ed178b6b1cf8f8c",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/2",
+            "description": ""
+          },
+          "optionId": "3a5b33c9-a274-4f28-8616-d5d0816cdc14",
+          "valueId": "4fdd8b1d-c967-4b7d-a2a6-b82c92210287",
+          "skuId": "9ae5def2-919a-403e-a8ee-4eb96e681825",
+          "skuCode": "MIG-d2dae254144acf6b41d0f246",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/4",
+            "description": ""
+          },
+          "optionId": "3a5b33c9-a274-4f28-8616-d5d0816cdc14",
+          "valueId": "1765919d-ebbd-4821-98ff-a329ef78f19a",
+          "skuId": "ccf327ab-39dc-44f0-b542-9481470e310a",
+          "skuCode": "MIG-6c3f2f184a0a9ff7236dbdf4",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        },
+        {
+          "oldSpec": {
+            "name": "1/8",
+            "description": ""
+          },
+          "optionId": "3a5b33c9-a274-4f28-8616-d5d0816cdc14",
+          "valueId": "7ad5febf-7e7e-457e-9c2e-5f9c3b78dbee",
+          "skuId": "3ad3d14e-e957-4293-bee5-64021255d80d",
+          "skuCode": "MIG-2e135809303d029c1659b1ab",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-1",
+      "targetId": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "name": "地图冰箱贴",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "8427c319-89c1-452b-9efb-8222dacc58ab",
+          "skuCode": "MIG-732f1c6a28c206c538324836",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-2",
+      "targetId": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "name": "古镇冰箱贴",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "1163f89c-3e17-4c69-926f-43a689f1918d",
+          "skuCode": "MIG-28f76c2f75c7fde395cc9277",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-3",
+      "targetId": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "name": "音乐冰箱贴",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "091b31ba-2952-4cd9-8eb7-254ed2da5ab4",
+          "skuCode": "MIG-68c0a5b84b1e1fa20e14732d",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-4",
+      "targetId": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "name": "亚克力拼图冰箱贴",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "b3eacb7b-66b7-44e7-bfc8-f294d12f847d",
+          "skuCode": "MIG-dd5846d614b81c54d7bd203d",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-5",
+      "targetId": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "name": "纪念币",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "8550ca46-e600-4bb8-be01-56f418022588",
+          "skuCode": "MIG-dd9ff3901a533f7b91cc126b",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-6",
+      "targetId": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "name": "金属直尺",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "95711d0f-7f26-4f02-9a3a-f128a4846299",
+          "skuCode": "MIG-5cc50fef0cf59f7f08ac74be",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-7",
+      "targetId": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "name": "提琴书签",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "c0e1f68b-9737-4a08-900a-926de229f809",
+          "skuCode": "MIG-dfc17fa30c417b358754781b",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-8",
+      "targetId": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "name": "手机支架",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "d24cd195-7ef9-4880-b715-38779f7c8af6",
+          "skuCode": "MIG-bcbdd1086b5c7b51c6d47b03",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-9",
+      "targetId": "41346998-856a-476e-8862-67133ee56c2e",
+      "name": "帆布包",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "fff73e5d-92f1-4013-a17d-3bcbd968d9cb",
+          "skuCode": "MIG-d87771c1b47b0dacfd3e31cb",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-10",
+      "targetId": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "name": "紫色提琴玩偶",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "0f3fadc4-84e1-4ac7-ab76-c4e01d5674ac",
+          "skuCode": "MIG-e67f15bf776ef238dd393138",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-11",
+      "targetId": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "name": "琵琶玩偶",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "b9c6f915-fba6-4a8c-ad55-e51d6a3a7793",
+          "skuCode": "MIG-d902439732d47f21944d7d46",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-12",
+      "targetId": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "name": "尤克里里玩偶",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "b0d999f4-a215-494f-9b00-8466e166af98",
+          "skuCode": "MIG-ffd8f9b8e4f411f9be90b20d",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-13",
+      "targetId": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "name": "棕色小提琴玩偶",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "04e7d65d-d899-4e84-a36c-447310483109",
+          "skuCode": "MIG-ee28e789bb989aa501ddd4c2",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-14",
+      "targetId": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "name": "迷你乐器",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "1c4a93b9-57a1-4a84-9940-ca3fd10b4f06",
+          "skuCode": "MIG-d9080d6b841687964ff1eea6",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-15",
+      "targetId": "84810900-e21d-467c-b486-6148b826a9d1",
+      "name": "提琴包挂",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "3703e688-82f6-4408-9cf3-a19e104b965d",
+          "skuCode": "MIG-15cce8bd626cbf494dd4bbea",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-16",
+      "targetId": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "name": "榉木笔筒夜灯",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "ada97df7-7af8-4d76-b3da-fd48e15187b5",
+          "skuCode": "MIG-4a3b5064f57a69c2223f4e6f",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-17",
+      "targetId": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "name": "文创礼盒",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "24a2983e-f978-4d5c-a8f3-e13245a036b0",
+          "skuCode": "MIG-4defde07cc6adf243fe9f5ff",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-18",
+      "targetId": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "name": "1/64 木盒",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "e65e50c0-07a2-4747-a7a7-7f6510f73e1b",
+          "skuCode": "MIG-3bfbd5fb3f28df6d9330e76f",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-19",
+      "targetId": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "name": "1/64 纸盒",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "e80b14ca-f9c7-41e4-9602-b799a602cd74",
+          "skuCode": "MIG-73660e9259768079b822b593",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    },
+    {
+      "sourceId": "gift-20",
+      "targetId": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "name": "小提琴紫砂壶",
+      "dimension": "单规格（默认规格）",
+      "values": [
+        {
+          "oldSpec": {
+            "name": "默认规格",
+            "description": ""
+          },
+          "optionId": null,
+          "valueId": null,
+          "skuId": "d5293faf-969e-49a0-979b-0515ccdf42ac",
+          "skuCode": "MIG-bc46ce1c921313e9f8d1a45b",
+          "price": "继承产品参考价；咨询报价产品不新增价格",
+          "imageRule": "继承产品图库及顺序"
+        }
+      ]
+    }
+  ],
+  "urlMappings": {
+    "/assets/city.jpg": "/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+    "/assets/c1.jpg": "/api/media/c2da474c-e6f3-5f46-b764-fe971db216d7",
+    "/assets/c2.jpg": "/api/media/b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+    "/assets/c3.jpg": "/api/media/ee75c8ea-7a79-56d9-8408-390945a93bd8",
+    "/assets/c4.jpg": "/api/media/5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+    "/assets/lake.jpg": "/api/media/68548eda-35be-5dc2-946c-05b2349cc77a",
+    "/assets/l1.jpg": "/api/media/2232c217-4d2c-5949-aa26-70f120e1d176",
+    "/assets/l2.jpg": "/api/media/9a80ca22-5121-5b25-937b-0b642117bc9c",
+    "/assets/l3.jpg": "/api/media/fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+    "/assets/industry.jpg": "/api/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+    "/assets/i1.jpg": "/api/media/e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+    "/assets/i2.jpg": "/api/media/d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+    "/assets/i3.jpg": "/api/media/c5945292-a4c6-5232-b1b6-922937b752c8",
+    "/assets/i4.jpg": "/api/media/08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+    "/assets/green.jpg": "/api/media/16709e66-3a12-5978-ba28-283791a470d5",
+    "/assets/g1.jpg": "/api/media/f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+    "/assets/g2.jpg": "/api/media/613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+    "/assets/g3.jpg": "/api/media/c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+    "/assets/g4.jpg": "/api/media/60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+    "/api/media/14bca797-7a42-4f82-a8e7-22cbb281ed45": "/api/media/35196160-9f66-4087-b31b-f62fbf172b52",
+    "/api/media/43981165-3680-43cb-9e64-b8d92c434f12": "/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+    "/api/media/86826998-114c-4c98-bb44-e71ae4a012d6": "/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+    "/api/media/711a911b-fd9b-460f-986f-e8da98f5464d": "/api/media/99493b2d-1906-43c5-9665-2f6aabe80428",
+    "/api/media/873b92f3-219b-4efe-9353-1d00c4c9e803": "/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+    "/api/media/9db07b35-770b-4983-b87d-39e2daa2af39": "/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+    "/assets/yorray-logo.png": "/assets/yorray-logo-CFmraOUS.png",
+    "/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b": "/api/media/32bc298a-54b2-422b-9f54-533c39cebc05",
+    "/assets/hero-violin.jpg": "/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+    "/assets/wenchuang.jpg": "/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+    "/assets/workshop.jpg": "/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+  },
+  "guideMedia": [
+    {
+      "id": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "object_key": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "sha256": "5ff0f482f76007a8f417f000aa09313676fa09beda933ecacbe23fa22d3c41e7",
+      "object_key": "c2da474c-e6f3-5f46-b764-fe971db216d7.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "sha256": "5b40c754ca250fbb0d277ea0a669330e754b36ad2f466cedeab68fdf1889fd42",
+      "object_key": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "sha256": "dc8230ef77e9b23af6bb204f998c344290f779e4912a4af2f00917d5e4877dc8",
+      "object_key": "ee75c8ea-7a79-56d9-8408-390945a93bd8.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "sha256": "24e64d1882ed4775358d1cc7a2118a3b79e927385f26cbd92e853473d260d1d0",
+      "object_key": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "68548eda-35be-5dc2-946c-05b2349cc77a",
+      "sha256": "1b3e6ce424b42e18fb73289b87f22d91c3375896153418368a87b7eee02ff5c3",
+      "object_key": "68548eda-35be-5dc2-946c-05b2349cc77a.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "2232c217-4d2c-5949-aa26-70f120e1d176",
+      "sha256": "d00607ca3d94c26710cc894eeaf08d95c37e87dd9c05f11fb88f07d5fcecf875",
+      "object_key": "2232c217-4d2c-5949-aa26-70f120e1d176.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "sha256": "3bc3f28bac57d52aa96cf26f27827084c3db5326e322ac3c79afba546788039e",
+      "object_key": "9a80ca22-5121-5b25-937b-0b642117bc9c.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "sha256": "f01bc09c9d45a6fbd0d4d7a29c56186623d25858c005d6ce930951010d3c82ef",
+      "object_key": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "sha256": "4a58eb780ab8992de21e8586fec140db70e28a8ea8d9775d9a7302a232722e7d",
+      "object_key": "0d7b9c57-e19f-55c4-a412-93b62fac95a5.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "sha256": "143804173d53cd55e86aa39a6d0e230caaeff55f618e5681e693e731db85c0c6",
+      "object_key": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "sha256": "e019b8247943741bfbbd2f172c34c6df6a1845fb86ab0896465d1746c55d0685",
+      "object_key": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "c5945292-a4c6-5232-b1b6-922937b752c8",
+      "sha256": "ead20d1239cdaec70026874a2fa544bf232c35cb7b247eb5deb4c3e51c2011f5",
+      "object_key": "c5945292-a4c6-5232-b1b6-922937b752c8.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "sha256": "251584dcfd579947d88f65f11f4d59f86bd0890593d49dfa97945163f3fd603f",
+      "object_key": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "16709e66-3a12-5978-ba28-283791a470d5",
+      "sha256": "d653a7245c9ced5724ac996d67b39a8df0ceac6be51202d755b396b5242aabd2",
+      "object_key": "16709e66-3a12-5978-ba28-283791a470d5.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "sha256": "9c242f08aa7f90e938c2b940ec442a87ea453bf4c7408e2275fa1cd04bebbd72",
+      "object_key": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "sha256": "18048dfdcf6d896811c40ddbaf8d157827adfb5a5831c3772c5dbba2024cfd17",
+      "object_key": "613a9c16-36e2-58d4-b97a-ddeef2c503bf.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "sha256": "fcd0176db3b460f7183694e140ab65a50c2c804bd952b66bb291eacf3c9f032a",
+      "object_key": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa.jpg",
+      "status": "ALREADY_MIGRATED"
+    },
+    {
+      "id": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+      "sha256": "5b03c77125332aaa6735240b6d5961602ad568a13948592ed0dcf31e39886dc5",
+      "object_key": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0.jpg",
+      "status": "ALREADY_MIGRATED"
+    }
+  ],
+  "planHash": "eced9b84b41d8111c0e44efca2c8e4746d48383a70acddc12a3a6f01096d5b97",
+  "executed": false,
+  "initialPlanHash": "9aeddccba567067afe85da8e0f656f663399da4cee966dfc48d1e42a6bdf0957",
+  "protectionEvidence": "protected-before.json",
+  "siteIdentity": "site (existing detail API singleton contract)",
+  "systemAssets": [
+    "/assets/yorray-logo.png",
+    "/assets/yorray-logo-CFmraOUS.png"
+  ],
+  "systemAssetMappings": {
+    "/assets/yorray-logo.png": "/assets/yorray-logo-CFmraOUS.png"
+  },
+  "phase": "final mapping review; see execution and compatibility result files for actual writes"
+}

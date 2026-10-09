@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-09T12:08:47.275Z",
+  "bucket": "huangqiao-media",
+  "objects": [
+    {
+      "id": "35196160-9f66-4087-b31b-f62fbf172b52",
+      "objectKey": "35196160-9f66-4087-b31b-f62fbf172b52.png",
+      "size": 2165842,
+      "sha256": "2c97eeca045d77c47879ec8e2025cadf88c263a7703b44eacc418316657ae883",
+      "matches": true
+    },
+    {
+      "id": "1757a532-c887-4563-93ae-aef2af1c7a06",
+      "objectKey": "1757a532-c887-4563-93ae-aef2af1c7a06.png",
+      "size": 1439924,
+      "sha256": "712e31e739a3a39b5e159bbd9d58c303b43fbd61be6d2a17ba74467a7d0f1880",
+      "matches": true
+    },
+    {
+      "id": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+      "objectKey": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f.png",
+      "size": 1662437,
+      "sha256": "becfde58c546684487b94f01dccd8064150c3a44759f430cd406d774a333dcfb",
+      "matches": true
+    },
+    {
+      "id": "99493b2d-1906-43c5-9665-2f6aabe80428",
+      "objectKey": "99493b2d-1906-43c5-9665-2f6aabe80428.png",
+      "size": 1491544,
+      "sha256": "0fc7d779d6f2655c08bfd1780f87d19e66f59380359b460ea3a053af5571afc9",
+      "matches": true
+    },
+    {
+      "id": "31586cf2-2922-44f0-af53-0b9220cf1f81",
+      "objectKey": "31586cf2-2922-44f0-af53-0b9220cf1f81.jpg",
+      "size": 657075,
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "matches": true
+    },
+    {
+      "id": "32bc298a-54b2-422b-9f54-533c39cebc05",
+      "objectKey": "32bc298a-54b2-422b-9f54-533c39cebc05.png",
+      "size": 1877874,
+      "sha256": "16b302c48c0b61b3ea2bea964fa28130e43acac67c14606c59feee88a75eeeb0",
+      "matches": true
+    },
+    {
+      "id": "5adb7593-369e-47eb-b429-e968b21763e0",
+      "objectKey": "5adb7593-369e-47eb-b429-e968b21763e0.jpg",
+      "size": 478879,
+      "sha256": "1432fe600bcd0b246b52999030ad7edafc80969ca32832a95e1a14b8ee465ee4",
+      "matches": true
+    }
+  ]
+}

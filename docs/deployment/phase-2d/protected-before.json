@@ -1,0 +1,950 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "table": "content",
+      "column": "id"
+    },
+    {
+      "type": "text",
+      "table": "content",
+      "column": "kind"
+    },
+    {
+      "type": "text",
+      "table": "content",
+      "column": "name"
+    },
+    {
+      "type": "jsonb",
+      "table": "content",
+      "column": "data"
+    },
+    {
+      "type": "text",
+      "table": "content",
+      "column": "state"
+    },
+    {
+      "type": "integer",
+      "table": "content",
+      "column": "sort"
+    },
+    {
+      "type": "integer",
+      "table": "content",
+      "column": "version"
+    },
+    {
+      "type": "timestamp with time zone",
+      "table": "content",
+      "column": "created_at"
+    },
+    {
+      "type": "timestamp with time zone",
+      "table": "content",
+      "column": "updated_at"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "id"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "filename"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "mime"
+    },
+    {
+      "type": "bigint",
+      "table": "media",
+      "column": "size"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "sha256"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "object_key"
+    },
+    {
+      "type": "text",
+      "table": "media",
+      "column": "rights"
+    },
+    {
+      "type": "double precision",
+      "table": "media",
+      "column": "duration"
+    },
+    {
+      "type": "timestamp with time zone",
+      "table": "media",
+      "column": "created_at"
+    },
+    {
+      "type": "text",
+      "table": "product_skus",
+      "column": "id"
+    },
+    {
+      "type": "text",
+      "table": "product_skus",
+      "column": "product_id"
+    },
+    {
+      "type": "text",
+      "table": "product_skus",
+      "column": "sku_code"
+    },
+    {
+      "type": "jsonb",
+      "table": "product_skus",
+      "column": "option_values"
+    },
+    {
+      "type": "text",
+      "table": "product_skus",
+      "column": "combination_key"
+    },
+    {
+      "type": "numeric",
+      "table": "product_skus",
+      "column": "reference_price"
+    },
+    {
+      "type": "jsonb",
+      "table": "product_skus",
+      "column": "images"
+    },
+    {
+      "type": "boolean",
+      "table": "product_skus",
+      "column": "enabled"
+    },
+    {
+      "type": "integer",
+      "table": "product_skus",
+      "column": "sort_order"
+    },
+    {
+      "type": "text",
+      "table": "product_skus",
+      "column": "disable_reason"
+    },
+    {
+      "type": "timestamp with time zone",
+      "table": "product_skus",
+      "column": "created_at"
+    },
+    {
+      "type": "timestamp with time zone",
+      "table": "product_skus",
+      "column": "updated_at"
+    }
+  ],
+  "objects": [
+    {
+      "name": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"9a2642c926a140196bfd8d6c9ea45968\"",
+        "size": 127530,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:25Z",
+        "contentLength": 127530,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:25.756436+08:00"
+    },
+    {
+      "name": "0b0569ef-b1e3-4479-a719-64a7477e15b9.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"0f03b4397a5625ab13594f7b9fa8cc50\"",
+        "size": 1166560,
+        "mimetype": "image/png",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-08T16:11:39Z",
+        "contentLength": 1166560,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T00:11:39.21567+08:00"
+    },
+    {
+      "name": "0d7b9c57-e19f-55c4-a412-93b62fac95a5.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"1b6f4f11c44b4b8217257b819f5b631e\"",
+        "size": 225273,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:23Z",
+        "contentLength": 225273,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:23.2099+08:00"
+    },
+    {
+      "name": "16709e66-3a12-5978-ba28-283791a470d5.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"178945145933931f8bfcd2622baa941e\"",
+        "size": 167195,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:26Z",
+        "contentLength": 167195,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:26.690907+08:00"
+    },
+    {
+      "name": "1757a532-c887-4563-93ae-aef2af1c7a06.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"62d6ed54249fe592c0a69ae99b51f32a\"",
+        "size": 1439924,
+        "mimetype": "image/png",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:46Z",
+        "contentLength": 1439924,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:46.439711+08:00"
+    },
+    {
+      "name": "2232c217-4d2c-5949-aa26-70f120e1d176.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"02c147658e2b411695d3eff8fd5e5682\"",
+        "size": 135818,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:20Z",
+        "contentLength": 135818,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:21.029546+08:00"
+    },
+    {
+      "name": "2e2f87d5-3a55-43ba-a74b-e88391f3f633.mp4",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"85cdaa241178bb1dd3f8a2c03519ba5f\"",
+        "size": 35722048,
+        "mimetype": "video/mp4",
+        "cacheControl": "no-cache",
+        "lastModified": "2026-10-09T01:23:36Z",
+        "contentLength": 35722048,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T09:23:39.054365+08:00"
+    },
+    {
+      "name": "31586cf2-2922-44f0-af53-0b9220cf1f81.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"4e3f2d0af2e111a49c8fbfe2e2108685\"",
+        "size": 657075,
+        "mimetype": "image/jpeg",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:46Z",
+        "contentLength": 657075,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:46.864789+08:00"
+    },
+    {
+      "name": "32bc298a-54b2-422b-9f54-533c39cebc05.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"3cc7d0a6b597152e4bd3df29425c26e6\"",
+        "size": 1877874,
+        "mimetype": "image/png",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:45Z",
+        "contentLength": 1877874,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:45.889627+08:00"
+    },
+    {
+      "name": "35196160-9f66-4087-b31b-f62fbf172b52.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"ed26d76d4b43ed8e90a3455d2bf50898\"",
+        "size": 2165842,
+        "mimetype": "image/png",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:47Z",
+        "contentLength": 2165842,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:48.306199+08:00"
+    },
+    {
+      "name": "5adb7593-369e-47eb-b429-e968b21763e0.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"76b5e891e9e3b420f105286e0ed8b27b\"",
+        "size": 478879,
+        "mimetype": "image/jpeg",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:04:55Z",
+        "contentLength": 478879,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:04:56.114566+08:00"
+    },
+    {
+      "name": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"0a31c56bc5fdd5598e3668db51f876b5\"",
+        "size": 53294,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:19Z",
+        "contentLength": 53294,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:19.404464+08:00"
+    },
+    {
+      "name": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"34bc0aabae955137490c249667c7a724\"",
+        "size": 59956,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:29Z",
+        "contentLength": 59956,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:29.160201+08:00"
+    },
+    {
+      "name": "613a9c16-36e2-58d4-b97a-ddeef2c503bf.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"6fb167db9516cd593a9d575cf5ed5e24\"",
+        "size": 103317,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:27Z",
+        "contentLength": 103317,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:28.078491+08:00"
+    },
+    {
+      "name": "68548eda-35be-5dc2-946c-05b2349cc77a.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"b6053c5ac26e64f28264382ebd056baf\"",
+        "size": 221562,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:20Z",
+        "contentLength": 221562,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:20.178204+08:00"
+    },
+    {
+      "name": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"fbb3e1115256653df871831aef238b69\"",
+        "size": 1662437,
+        "mimetype": "image/png",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:47Z",
+        "contentLength": 1662437,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:47.711846+08:00"
+    },
+    {
+      "name": "99493b2d-1906-43c5-9665-2f6aabe80428.png",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"425217b884a624f8d4cabe9aa35aa179\"",
+        "size": 1491544,
+        "mimetype": "image/png",
+        "cacheControl": "max-age=3600",
+        "lastModified": "2026-10-09T12:06:47Z",
+        "contentLength": 1491544,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T20:06:47.249597+08:00"
+    },
+    {
+      "name": "9a80ca22-5121-5b25-937b-0b642117bc9c.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"b939d02e828d816ab14c8be2a49e9226\"",
+        "size": 129446,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:21Z",
+        "contentLength": 129446,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:21.584591+08:00"
+    },
+    {
+      "name": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"93264973a8a8706e7711371b2c18c305\"",
+        "size": 140252,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:18Z",
+        "contentLength": 140252,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:18.211095+08:00"
+    },
+    {
+      "name": "baeafb30-fa8b-4490-9486-5f33ff96a382.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"2df415aa8c16abae6a0f06818d55c5f8\"",
+        "size": 37721,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T01:23:46Z",
+        "contentLength": 37721,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T09:23:46.134854+08:00"
+    },
+    {
+      "name": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"4570dc69f856ff458dec141f460db555\"",
+        "size": 83222,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:28Z",
+        "contentLength": 83222,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:28.570881+08:00"
+    },
+    {
+      "name": "c2da474c-e6f3-5f46-b764-fe971db216d7.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"cb75f0d54ea63a4d0371a753bf9bd013\"",
+        "size": 160505,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:17Z",
+        "contentLength": 160505,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:17.367785+08:00"
+    },
+    {
+      "name": "c5945292-a4c6-5232-b1b6-922937b752c8.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"7b030e05b2fe4096409c521f021fa987\"",
+        "size": 102935,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:25Z",
+        "contentLength": 102935,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:25.104923+08:00"
+    },
+    {
+      "name": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"50603456a834c5a63a3c5ff791e4afe8\"",
+        "size": 84456,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:24Z",
+        "contentLength": 84456,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:24.541208+08:00"
+    },
+    {
+      "name": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"c2c58f8c716841e22a3a0f9330338cb6\"",
+        "size": 94775,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:23Z",
+        "contentLength": 94775,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:23.939228+08:00"
+    },
+    {
+      "name": "ee75c8ea-7a79-56d9-8408-390945a93bd8.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"ead5d7857effcfb262d8c6574a22eae5\"",
+        "size": 94954,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:18Z",
+        "contentLength": 94954,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:18.855979+08:00"
+    },
+    {
+      "name": "f0a29d9b-aa7b-4e1c-bdd8-815f2e839406.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"8aa528b0fa8d485bfbb3952be861c2ea\"",
+        "size": 514952,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-08T16:05:53Z",
+        "contentLength": 514952,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T00:05:53.188408+08:00"
+    },
+    {
+      "name": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"6eadd3e05dc4b2f79d5b6aea25cb02be\"",
+        "size": 99304,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:27Z",
+        "contentLength": 99304,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:27.561044+08:00"
+    },
+    {
+      "name": "f91fd528-6d29-45e1-badd-1e61a86555d8.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"7afd71af57064104e6f7114c75696167\"",
+        "size": 1003392,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-08T16:36:20Z",
+        "contentLength": 1003392,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T00:36:20.51+08:00"
+    },
+    {
+      "name": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"74674f70d40d70edd2b2b2d1770ef89c\"",
+        "size": 342073,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:16Z",
+        "contentLength": 342073,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:16.363048+08:00"
+    },
+    {
+      "name": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a.jpg",
+      "bucket": "huangqiao-media",
+      "metadata": {
+        "eTag": "\"2077f89a96f370ed0b3ccb1209ca04dc\"",
+        "size": 53144,
+        "mimetype": "image/jpeg",
+        "cacheControl": "no-store",
+        "lastModified": "2026-10-09T04:46:22Z",
+        "contentLength": 53144,
+        "httpStatusCode": 200
+      },
+      "created_at": "2026-10-09T12:46:22.432793+08:00"
+    }
+  ],
+  "database": "postgres-i56vqlwu",
+  "triggers": [],
+  "checkedAt": "2026-10-09T20:09:50.851848+08:00",
+  "protected": [
+    {
+      "rows": [
+        {
+          "pk": {
+            "id": "9e0f0d9f-e6f6-4ab1-b024-7eedd515c023"
+          },
+          "row_hash": "94ad28f3b94ff75d20d10629dc119505e9d6b340c06fc7ee37f54b906b4b085e",
+          "key_fields": {
+            "fields": {
+              "roles": [
+                "admin"
+              ],
+              "active": true,
+              "can_export": false,
+              "created_at": "2026-10-08T23:54:04.966+08:00"
+            },
+            "uploadTask": {}
+          }
+        }
+      ],
+      "row_count": 1,
+      "table_hash": "94ad28f3b94ff75d20d10629dc119505e9d6b340c06fc7ee37f54b906b4b085e",
+      "table_name": "accounts"
+    },
+    {
+      "rows": [
+        {
+          "pk": {
+            "id": 1
+          },
+          "row_hash": "12a5cadbfe58c7789f87bd43fc44a78974625e9b4d5bc2781299370b2b654571",
+          "key_fields": {
+            "fields": {
+              "action": "account.create",
+              "created_at": "2026-10-08T23:54:04.969+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 10
+          },
+          "row_hash": "3b48ea2877525b720ba662fc3cd11a3c5e3c4e8f3db957d4d11868cd6059d755",
+          "key_fields": {
+            "fields": {
+              "action": "media.upload",
+              "created_at": "2026-10-09T09:23:41.151+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 11
+          },
+          "row_hash": "7236a2f5ec2760e0dbf5257407df919b87437826f1aa97c1032197d1b582ec69",
+          "key_fields": {
+            "fields": {
+              "action": "media.upload",
+              "created_at": "2026-10-09T09:23:46.177+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 12
+          },
+          "row_hash": "4268b539ee126a71a5f4bfee7af50e61fba937f6260be6376f8d264db499d3a6",
+          "key_fields": {
+            "fields": {
+              "action": "content.create",
+              "created_at": "2026-10-09T09:23:46.27+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 2
+          },
+          "row_hash": "75e58ab48459d080328cfeed494272dd5fee1ee973f133a331d0951f3b2d2df1",
+          "key_fields": {
+            "fields": {
+              "action": "account.login",
+              "created_at": "2026-10-09T00:01:00.751+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 3
+          },
+          "row_hash": "b84df80f2695a55056049253c0ee6ff1c3daaa6a1b805fe83cc2338da413e05b",
+          "key_fields": {
+            "fields": {
+              "action": "media.upload",
+              "created_at": "2026-10-09T00:05:53.223+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 4
+          },
+          "row_hash": "d8a4f8aac8d3220be7ac847d12477d9e63f7d83d6df978cd985b4976f485d8d2",
+          "key_fields": {
+            "fields": {
+              "action": "content.create",
+              "created_at": "2026-10-09T00:06:22.281+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 5
+          },
+          "row_hash": "3b6b1b802b394376e7e9cc708a75eb9592cdcf087c7ec61210d3041740196bc8",
+          "key_fields": {
+            "fields": {
+              "action": "media.upload",
+              "created_at": "2026-10-09T00:11:39.316+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 6
+          },
+          "row_hash": "5d1672f32bc25ecd998b6d8eff4eee51e68e0fa72e9a335a6dd83005ab9cf635",
+          "key_fields": {
+            "fields": {
+              "action": "content.update",
+              "created_at": "2026-10-09T00:11:42.607+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 7
+          },
+          "row_hash": "91375ae3ac954a74458a63a6849c8e810185d1fc89073a00bd6bb20fda26e5ca",
+          "key_fields": {
+            "fields": {
+              "action": "media.upload",
+              "created_at": "2026-10-09T00:36:20.562+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 8
+          },
+          "row_hash": "c0f654230f6cbaab0d344ff79182e549871fb1417cef411b6ec12ea08584ff8f",
+          "key_fields": {
+            "fields": {
+              "action": "content.create",
+              "created_at": "2026-10-09T00:36:25.196+08:00"
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "id": 9
+          },
+          "row_hash": "0247a2895315a8d6360db30353eda67da3986cc45fd349950e465f39f7f08bd1",
+          "key_fields": {
+            "fields": {
+              "action": "account.login",
+              "created_at": "2026-10-09T08:51:30.753+08:00"
+            },
+            "uploadTask": {}
+          }
+        }
+      ],
+      "row_count": 12,
+      "table_hash": "845815ddd835334739bc9cdbbfe98e098d47c3d89acd8f3b0017098539d0a748",
+      "table_name": "audit"
+    },
+    {
+      "rows": [],
+      "row_count": 0,
+      "table_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "table_name": "bookings"
+    },
+    {
+      "rows": [],
+      "row_count": 0,
+      "table_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "table_name": "changes"
+    },
+    {
+      "rows": [],
+      "row_count": 0,
+      "table_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "table_name": "consultations"
+    },
+    {
+      "rows": [
+        {
+          "pk": {
+            "route": "admin:direct-video:v1",
+            "key_digest": "35769f4122424051afa2725f9968a9485088d49b0f9280fef4f123780f614207",
+            "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+          },
+          "row_hash": "1e2cd8e45d77ce12a625cb9f2c43e1f5b2cd4dfc961bfa84cd0489155582f0ac",
+          "key_fields": {
+            "fields": {},
+            "uploadTask": {
+              "state": "done",
+              "cleanupAt": 1791509916644,
+              "createdAt": 1791509016644,
+              "expiresAt": 1791509616644,
+              "leaseUntil": 0
+            }
+          }
+        },
+        {
+          "pk": {
+            "route": "admin:direct-video:v1",
+            "key_digest": "392bdcf2a29121d9bb242e844ba3507d24eeab229142974203a45a9fb2c9d89a",
+            "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+          },
+          "row_hash": "1d886bb39ac7582fcb6cb1229d3fd8292b3228b0c287c7b08bc325c9d6ed956e",
+          "key_fields": {
+            "fields": {},
+            "uploadTask": {
+              "code": "UPLOAD_EXPIRED",
+              "state": "expired",
+              "cleanupAt": 1791508018514,
+              "createdAt": 1791507118514,
+              "expiresAt": 1791507718514,
+              "leaseUntil": 0,
+              "nextCleanupAt": 1791550796345
+            }
+          }
+        },
+        {
+          "pk": {
+            "route": "admin:direct-video:v1",
+            "key_digest": "bd3997ce859541f4b36779751fee7e4f2aa733c7044b86e9c4e720c37ff2378e",
+            "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+          },
+          "row_hash": "ed1d8d2680f1edbe112e1dc3961dfce75c3213b845b4ab553d38471cec6eb1e4",
+          "key_fields": {
+            "fields": {},
+            "uploadTask": {
+              "code": "UPLOAD_EXPIRED",
+              "state": "expired",
+              "cleanupAt": 1791508025303,
+              "createdAt": 1791507125303,
+              "expiresAt": 1791507725303,
+              "leaseUntil": 0,
+              "nextCleanupAt": 1791550796386
+            }
+          }
+        },
+        {
+          "pk": {
+            "route": "admin:direct-video:v1",
+            "key_digest": "56662b121dedf98bdaf91edc819fbc2ed17e53e915536c9447a0587c356bd0eb",
+            "owner_digest": "ebf4c5bdcd98a6947b9d4ac71757042f1e5a7a1aad40faba89444db189764bc7"
+          },
+          "row_hash": "624329dfecdaa2507eff7ecddc92e69004e3de03b3776d724cf6476219a5f1d5",
+          "key_fields": {
+            "fields": {},
+            "uploadTask": {
+              "code": "UPLOAD_EXPIRED",
+              "state": "expired",
+              "cleanupAt": 1791508790489,
+              "createdAt": 1791507890489,
+              "expiresAt": 1791508490489,
+              "leaseUntil": 0,
+              "nextCleanupAt": 1791550796291
+            }
+          }
+        }
+      ],
+      "row_count": 4,
+      "table_hash": "73a152c0d4a38b4be9166bef4a7c441df5c5d1e05e72e93013a4546581ff5b07",
+      "table_name": "idempotency"
+    },
+    {
+      "rows": [
+        {
+          "pk": {
+            "version": 1
+          },
+          "row_hash": "16a3572312f8b4f208b81ad220f11c13fba35abbed5fccbb039fa2ab9a3900ac",
+          "key_fields": {
+            "fields": {
+              "version": 1,
+              "applied_at": "2026-10-08T19:17:51.919027+08:00"
+            },
+            "uploadTask": {}
+          }
+        }
+      ],
+      "row_count": 1,
+      "table_hash": "16a3572312f8b4f208b81ad220f11c13fba35abbed5fccbb039fa2ab9a3900ac",
+      "table_name": "migrations"
+    },
+    {
+      "rows": [
+        {
+          "pk": {
+            "token_hash_digest": "52579740cb15acdbfc07ec7b0bec3a9525be81095f1f690e7f15d07d19eac8b6"
+          },
+          "row_hash": "6bcc665a0dc2bd02e5b04cdb068e279f6426a65f73bcdb235e1b63ae2ba646fb",
+          "key_fields": {
+            "fields": {
+              "type": "admin",
+              "expires_at": 1791504060749
+            },
+            "uploadTask": {}
+          }
+        },
+        {
+          "pk": {
+            "token_hash_digest": "d779fec5c035d9cbd1311aed172d75daa1395c840d6b850327f258b9340bdb82"
+          },
+          "row_hash": "220016c304b2db29070b9aecd8ce5c1bbbb035e60c17445ec21371af3c974d28",
+          "key_fields": {
+            "fields": {
+              "type": "admin",
+              "expires_at": 1791535890751
+            },
+            "uploadTask": {}
+          }
+        }
+      ],
+      "row_count": 2,
+      "table_hash": "d5379c5514ab4a2b853c220eb60e8910a3ff6b0af7b132c2f67dc708e6521106",
+      "table_name": "sessions"
+    },
+    {
+      "rows": [],
+      "row_count": 0,
+      "table_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "table_name": "slots"
+    },
+    {
+      "rows": [],
+      "row_count": 0,
+      "table_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "table_name": "visitors"
+    }
+  ]
+}

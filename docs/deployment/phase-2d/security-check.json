@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checkedTextFiles": 33,
+  "credentialFindings": 0,
+  "localRuntimeMediaSnapshotsIgnored": true,
+  "requiredReportSectionsComplete": true,
+  "adminNativeApiEvidencePass": true,
+  "note": "只提交迁移工具、专项测试、治理文档与不含凭据的验收证据；DATABASE_URL仅作为环境变量字段名使用，不包含值"
+}

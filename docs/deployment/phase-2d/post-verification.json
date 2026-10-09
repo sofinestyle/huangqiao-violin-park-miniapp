@@ -1,0 +1,1396 @@
+{
+  "checkedAt": "2026-10-09T12:39:44.350Z",
+  "database": "postgres-i56vqlwu",
+  "planHash": "eced9b84b41d8111c0e44efca2c8e4746d48383a70acddc12a3a6f01096d5b97",
+  "databaseChecks": [
+    {
+      "table": "content",
+      "id": "22c5b91a-16b3-4862-8c01-e7bb1a76c82c",
+      "hash": "63d83e7b6fe5a4d3b693454a31f3e07c055748813fcf6b3c0d910ac69862cfb3",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+      "hash": "94d136e143536b0b267fec616dfda7cd449c772403529436547d053dfa566c6d",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+      "hash": "898197f5b1568aa586737d1f9d52e223362d3851b0c6127b7a75d3ed375264cd",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+      "hash": "2448dd9300b1cecf3949a2ed3344e1aeab63b9a921ee85882715c08fb27b78b9",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+      "hash": "f0d9d80d777ae49139d24e4022581f0438a801eb1e7f62c64b8c3b38691b3c18",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+      "hash": "b09fe90a192306cbce3a202feefc7ca4c9a54521e0e572de1c04def32f36109b",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "981fd3f8-4d08-561d-ae9b-0983214e0b87",
+      "hash": "54e97dcc74d93d08e1399f7cd2896d050220bb56ce47a1c52fd30dab38e9b646",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "content",
+      "id": "80d79606-9251-4884-9010-b86aa6daae25",
+      "hash": "2fe15c4e759f5c1eac9320ca19cbfdf5c63fca376e980a6111a76dd5ff3e167f",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "7bdebda8-753d-4d33-a9a2-53f971f06dc3",
+      "hash": "4165ab02833ffa318521ca500bffe3beb3982b4f22be0a755bad7fc8c23ccf93",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "site",
+      "hash": "c455abeec007bf8427eb4ba593a697f962663bc65f5b39557fb555d835be4274",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "hash": "b4bdc3365c30b82933e71b2c7a831e666149eab0f167f20ffd8a9a1736e07a65",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "hash": "ba236060365b58343a0d70c41ac9b84b3c76df430e79d28d6903253a367effeb",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "hash": "c70a052f9015060dee7bd1f221ebd86e6d2a85a7907df4d3878a3f394bddc976",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "hash": "a563e4f59b910b2e04d6e83b65fa2542c031dd3e5ded2434fa75489dce5598b1",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "hash": "659ea1539f9675545527d092ea55ca07e3b4c0fc72b02a24ca8734ee005f0645",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "hash": "79f946979fdce6dc6a99889b48241f884e0df1cd7356d2e80320c90a31a7984a",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "hash": "a7c693bb1e8ed169e6378906d15b4623777c0c014c8d2d19719051fa2928cdc9",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "hash": "9dcf15368fa5c7abf1176493858ebcb0fbefddb589adcc4d37674d1a684aaa0f",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "hash": "0bfcdee097b4eb4e7b2e86915633a6a4eb68d81bbac7081adc50bec739d5d8bd",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "hash": "17236be6e90862e722694b35f325ca5fa05c3ed58fe26b8c6c72880cf4896451",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "hash": "26d3bbf0f73ea71d21f84942b3b3d0feb4d532e53800f304ec4068ff045dd396",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "hash": "360ce48f91d58834d7bb203338540cde0ec89c28027cb9ab061ea662effc188d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "hash": "3faf715624db0d269ad1c4f87aab4c12a84166453ccef0e86e44fcb725633205",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "hash": "e78432b2ac67d6ef41de8a43732bf13709a2cfe6d047d148ecbb59cdf085ef1d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "41346998-856a-476e-8862-67133ee56c2e",
+      "hash": "c193a7b414035bf02500d49a557d47e817672ecd8703f57092c268c9730dc198",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "hash": "6a3ad2ac1c902b8a98a48222e81b399e45ffd2ca89644a56b5a5445fd9d9d5dc",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "hash": "205ed797ae62571a1a6cea4ce0ba59a73a1b3198c60215d85f3a8d4a86d4bfbd",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "hash": "a5d3c4e3dc6f1047c00aa6d130b8318d7679a6d2616ee2df59c6d211d479bc30",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "hash": "bb0830155412c9546fb88aee3cac4333112a4d0ad60c0808e361f185c8bc6e77",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "hash": "adb9e26aa991ef53de9b66edbcfc34418b9dc20afbbae45427bc4735e95c289a",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "84810900-e21d-467c-b486-6148b826a9d1",
+      "hash": "3dd296c2a06091af7d3f03088081e410656f9924ca00bf6dcec67b4c9641632c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "hash": "5c81594f4def2bcaa32aca6c482758eae48bdc3c0095fe769d40c0c37521760f",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "hash": "c8dccbd458ee7b0b11c056e408d136d305741ed66ef49b10f6ee22ffd195dc04",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "hash": "71a9f767f2c27371ceb8bbf4bab79ff909ae69561d6b01c087cc5d3c857a53fd",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "hash": "05f67e94ba0e7208e7bd87629d93a10d1ba2149ba2da39c0d17bca41e5086a6b",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "hash": "b8dfc4282c42d4f2937dccdba455577ed9a5ecf3c88e277752a9769587d24cc7",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "8325afe2-ce9f-45d5-b318-64aa95f285af",
+      "hash": "cc13a783b5233acf617968311175e622ea5a2bc50193b4e227717f4edcc8a2ae",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+      "hash": "c3ddd13ce44df30afc9e00c1572772c384a6e8eb99d02eda9ac1dd5df7bff9d0",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+      "hash": "251561192239d50126d35fd76c9e37a10774a49fb16b75d1f871006b32f318ff",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "content",
+      "id": "1e6e4395-cd7f-426a-bda1-943b8be315e9",
+      "hash": "43e56e17742696de3b129867bd635b7aafb0e3625824bf0f7a7190e5e11b8e34",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "hash": "341b36835b44ae411b1aa6c0c584ca2f5e3d24b73f926f94b7d61173a6fa6710",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "0b0569ef-b1e3-4479-a719-64a7477e15b9",
+      "hash": "2167d92e34af4d46558943c6bf7ef025164a9fa6e18f105cd865220a9483f9de",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "hash": "c0e3752624ca0b31e399564ac064e17b0824320378dde05743a08c3ede657427",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "16709e66-3a12-5978-ba28-283791a470d5",
+      "hash": "531536f7d8c9f37a526c288676600d42fafafdc69688dcc456d3bc4586558a82",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "2232c217-4d2c-5949-aa26-70f120e1d176",
+      "hash": "1bde2aad3a9f10ccc7d779af252e8f68d811b794d72da4e4667960d6d6b1536a",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+      "hash": "74015f28d9f6b86f383fe7afe1aa25477f6b522cc36c11c8c6d87687453f86de",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "hash": "5f61e4c800815043be20c4357171e0c2aa35d988bbf55b5cd29be9e1b027c869",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+      "hash": "f4f71b9e4449848dcc2edfe2d8b199432f260ac47ddafd001d8e87dedface1f5",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "hash": "4dbbf5e969361e8a74d2c74f9b720537856abb1c91237eb053de0a07fbd26a48",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "68548eda-35be-5dc2-946c-05b2349cc77a",
+      "hash": "d0e3888b4382edd2b9d4374c2a2e44e3e763e4ff41209be9a5f719b9ae5784c1",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "hash": "3ad3d76a2c1db745a12e50a278232cfcb02ef236050c72c0dabaceb5b8e60f5b",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "hash": "4e475a64a12d9b866a0688bcdbb15b800d581753e680f2a3c23eaaeb3656a9a9",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "baeafb30-fa8b-4490-9486-5f33ff96a382",
+      "hash": "aa3d08e90be2b4601de2d05412a3c2402f385cd0c8f1613443d2336c627695ca",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "hash": "30f2444656049a24de72ea995045539cdeb2ad9463c32c4e6992c1a1860ff778",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "hash": "2497fe59c058ec83e9d9319b13366af15068c93e53294ab35f98118802424048",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "c5945292-a4c6-5232-b1b6-922937b752c8",
+      "hash": "6699e6b3af940b7cc48d40e6ce033819cf1081d817f2a1a3bdbfc31df69ee9ad",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "hash": "18c16f6fa2802cf59cbbaa61f8eac512fc6124a830631a57f089e8152cd22f8d",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "hash": "55d0558db22de0977d98a4e4a1c79d5937abd31c48fa2331506fd6e062f14655",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "hash": "d2709b87788799571d86e88dc4124a32dd91a545c07d19c2ac1d502d51664945",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+      "hash": "0ac1fa148955a43def3fcdc98108297f46f84d085602648fa96ff0656ba50aad",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "hash": "09201bdcfce68b305e9edff5481aad216aec3e7ce37457d500ae86107ee7c8d9",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "f91fd528-6d29-45e1-badd-1e61a86555d8",
+      "hash": "6d253b6ff66a7144cda976b3125e915c7dbac11b4178815a8d73f725106eac38",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "hash": "6da14b9aa6aecfa772f950bc2dfacfd36517ea10ca0bca15f800ecd969f81d6e",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "hash": "ee0cdb2aefc05d52e10430d6ef01e120a8ba6cc640aeb539f15150a2b7512252",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "media",
+      "id": "35196160-9f66-4087-b31b-f62fbf172b52",
+      "hash": "aabff6970a2f2c5f3ec5c09a402872879f0a20226b0a7aa1ef2388d98233a8eb",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "1757a532-c887-4563-93ae-aef2af1c7a06",
+      "hash": "593a91ccecedefb82f0bb0d437e5f684e0a429507fd15e0a2fa0cc042efa8f61",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+      "hash": "fd6733cace4296614aa4e77a895d92413b5d29572837dfc6055533941af18584",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "99493b2d-1906-43c5-9665-2f6aabe80428",
+      "hash": "9cbfcc365e21af5db1e9ba5b837dcdcfc5cc5f2491da7debb91aa544ee6a4a2c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "31586cf2-2922-44f0-af53-0b9220cf1f81",
+      "hash": "2d7e991113b9cc6b8fb8dccc1d1207f25a05bd2306d4df770caf90c4d66b7d2e",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "32bc298a-54b2-422b-9f54-533c39cebc05",
+      "hash": "00490080d32090bfc5cfedacf0d0be8951347ca5f5efe5a12c7b7ea47b7b4e4c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "media",
+      "id": "5adb7593-369e-47eb-b429-e968b21763e0",
+      "hash": "3895d0cc0b8cdfdcdf5a340b16c36c0bec5cd94c0a8ab0f519a94999f434d044",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "6748bd62-dbd7-41b5-be22-78ef42c5ceff",
+      "hash": "b0908b9ba33d212dec2dfcbc6a896d3ebd2a01fe6547bbddf59b4f04f0a2ac6d",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "400b48e5-8764-4746-8085-573a21ba7a71",
+      "hash": "d41f8567b2757ca7f4d3ccb8beee5744c7212da549343a3dd84d1a15360ac2a9",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "8399fd07-4a28-43d4-bd6c-633d578b025e",
+      "hash": "72927595b6929895736d47df78d7ff16f0a77938774e91f9eac66dd90a62f06b",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "d4e33c4b-2975-4234-a203-0e36404b298f",
+      "hash": "18f38f452e442afaee0c2f5a8efb461d171fdf11c3665366bb9c33877e007015",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "b2683099-1715-409f-bc30-12e16a958ed0",
+      "hash": "e35b390bcd8734e3c0c5d570e672ff28f513cc8c159e7e25241eb3e4b73c8764",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "98aa163d-8195-41eb-a8b0-eb0f6c5f2de8",
+      "hash": "ed14773b874c6e20b8f1ef671cd472a5b9f539d1ec214d911e411d8f3ee46f1c",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "b0e06ada-3ac2-47a5-a35d-7572f7e1dfa0",
+      "hash": "3ff0a352a189daf22e1699b63451e284601d6868f9f705f28c2d04c6f25336ac",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "db1e7e4b-6b63-4382-b3e5-ac55310d6a06",
+      "hash": "11148640224841e6e80ce078f7feece034032386fb1c7b60fce34d3f75cf427a",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "054d8515-9d01-4378-9e4c-c5342bb262a6",
+      "hash": "a846d837e7864ccedcdc49a43299c8f80a553d2ad8fae3937f7b09813d0abbe4",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "88e1c31c-2d41-47ee-91d3-e811d1f39285",
+      "hash": "3c3b7256a2c01fae95e5507ec255492467c33456e9ed5b8e90ba236a5ce777e2",
+      "status": "EXISTING_UNCHANGED"
+    },
+    {
+      "table": "skus",
+      "id": "b587f347-e667-4b82-a3fd-6807a2264d58",
+      "hash": "bbe034d20acad9379b13c25b0816f6aa43dfafa695912070dcbbdf8cbd17af23",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "edb77db2-d321-4b42-bf77-d4134f3f91e0",
+      "hash": "3bc5a4d56960e2436a7caeb7afc05eea90a414376d22fc8967f08754d1637794",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "6104828e-5023-4443-9740-63b59a6850f8",
+      "hash": "be429f4413ff37d911400bb684f8c1a3b9fc20c3f3fb9810a8bbebf6a9776afd",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d6c16d7f-d15e-41eb-8e13-839443e37b7e",
+      "hash": "d22c9bed061ada1ac8ef35953a6a3ae49478a5432be0582229ceaaa751c40e5c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "7ff9f735-3548-4c99-ac24-26285d67d6a9",
+      "hash": "755f25e7f78ae84ffd31bea9f73c91d453d2230843202d7f64ecdfb0b29b3e14",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d912d301-d38e-440c-af68-60617057119f",
+      "hash": "785be20abbeec7eda1b5e4ba8ffe4b1af0e34715d227819199c35c9ee97c1dd8",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "0b90714f-1b86-41ad-85a1-4e113a485053",
+      "hash": "a72bd8580b69b9367041c94425a83cfbcf797d2a1770c4a1d5917b904c6b6bac",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "7c4b7f60-052d-463f-962b-13f7c6905cc6",
+      "hash": "749e79685313dd4bb4915e955c2cf2601450c6bf79c2099c2cf891478ae40c9d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "24d2b534-97f7-4701-9606-08135f689f97",
+      "hash": "da57651db8aee1696d9a6160dd4185598f089708c519ebb7442a578d2cceffec",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "b31bc055-0627-477e-9da5-1428b37bddc4",
+      "hash": "19d90279b9d10590e1f389c934dafd9f728f3c2410ccadf3196c12014d9c5f19",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "fdda3c90-37d6-4ffc-baaa-5a006ff37609",
+      "hash": "e1ecc4ec05a614d33893516efae2320595ce8384b0a17555c01fe0cf9ebdc954",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "4af70e4d-c261-4e5a-ad5e-ac9008990376",
+      "hash": "ac538a15121871a42e411c9d5060a66ef2d9a5936d2b5df84b51caa04e32ac4c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "031a825e-8f29-4d1d-ae88-434a4e7a2285",
+      "hash": "75d43a7dbe0d588a98fa5d02b0c3aa54b3f0d33b16905973bfc7eb4fc475fac8",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "0ab27641-df29-4b47-bdc7-7c43f4b16de0",
+      "hash": "410a144287bad79e74a222857830959b46eac70b71b368569c3b25dee59f023d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "104273ec-9603-47dd-aa2c-ee558e077638",
+      "hash": "655d29cc8c12f061836a4bb83a563a57e49735441ce46ac24cc46b1745a04ecb",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "10a556ce-1799-4488-b4ab-9c6e5cca4d14",
+      "hash": "53bb3672f351113c3449dcdedcc0915753533bba3e14b950a7f9e2e5d33b2483",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "c40fc4c8-4d9e-4812-aed3-4d84689978e5",
+      "hash": "8f7ab649629027b8909a0683843d4ff4b18eeaebec993be5125d50c557a469b6",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d2cd085c-76c3-43b5-acd7-9782b65cba04",
+      "hash": "e15ad5d331e4365d78d2834a481e87b76c7966b75f34d15106639bd2e0a2d894",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d3402cab-75c8-473d-8d0b-e2d66ac69265",
+      "hash": "fe8fa4c6e7121b82fcc5963b5e27c57696236d0b338773c4c14f2ac383992e5b",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "db1ac385-5437-4da7-8e94-2a6ac02fbf8f",
+      "hash": "b23b25a1eeb50c97ae919f9834be1ea75276c3c84461518759f918f458f62729",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "548f986e-0f7c-418b-bd8f-3598fd74b645",
+      "hash": "1e0fa96f97a92ee86e9fc1a11ea5cf64ca687dbf0d05a6b89a8996d6d3433e30",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "8726e8a4-1ac8-4b1a-ac67-c8f55cf9f48f",
+      "hash": "9b775cc903c918fa0988c158e89083292d3d12e0738a3157fde024270679eb41",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "2def44b0-4fd2-4644-9f3c-34daf07fba82",
+      "hash": "b940cc9aab2eb5d1be590c704bc6336c7ffeefe0006576a8cd10a51cc030abd1",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "06df4f1c-04a2-423c-bcec-1094386fbd26",
+      "hash": "a4574b014144d20e84e6efd8f5d4a1858f194cf89ff594cbfd4ed700eab7c6ce",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "e5154750-b36e-4500-bb1a-2b5d75dc8269",
+      "hash": "b37c52abe952dd203450ed02481e42ef3ae0a7823763ecd083611e72bd3f5cdb",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "31642c99-5c39-4ffe-a11d-af4943613634",
+      "hash": "d06c9b0da4ac424ec896f10198e98d67c5ea99f7870d782ed64e67b959424504",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "e6ea5f7a-6a78-46ec-9451-159cac89a28b",
+      "hash": "761ce2ff90983212f9d82bbd9b5c828325188e929e0216a6497a5e78813c3824",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "9cdeac64-a665-4b06-9e5c-d1e19bcd7251",
+      "hash": "bc0475c8998ac99be777f6d4d696db5577d1372d1221839830b3c020df864c41",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "dd387994-4a59-4f20-a601-4de717dfef90",
+      "hash": "397ebb40f7851a31bbfce81fe7870021062639e82a734964c7ca6bc51911e125",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "708cf605-12cb-46c3-8e8b-43bb77674dcc",
+      "hash": "49fbcf178cfa7a765f1c7a37f9eaf6fdb517a0a97505aebc325b254e90fee8b2",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "67302828-8f46-4dc8-9dfc-83e6c93ac7b9",
+      "hash": "c33193ca46590aec963bb4a3d2958efa69d0b0de93ddc0d93b13723c2d188efa",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "6f7fd0a6-dea8-40cd-b535-76fc9f14b988",
+      "hash": "8b530711d8decbe15f04c9160bd0eb102171a730755f386a0878215a015c5c3a",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "45254cb8-0007-4646-9740-cbbab740724d",
+      "hash": "7e534e29c3cf08c04e6194bc12e9d68b40e9c1ec8c3af4bbe86d74f96e907e05",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "8d669932-35ef-4d17-982f-5a4c6a5553bb",
+      "hash": "8870f9c9da6de858e33172bc1a61ec79cd735d8e5d8a0446f095142d024f6938",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "a4ad06f4-1329-4ceb-a91c-c0b368ac7254",
+      "hash": "eebf45c46e618b2539704aefaf833875558df112c78d3dee6fff53877d87e75e",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "f9eea2e8-d086-469f-86e6-1776c540423c",
+      "hash": "62dbaab5791faf37875d0f31f5497c42d73569a4155adbbae091074f8f038281",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "da032249-ed3d-4ad4-87c6-5ee18ed90b31",
+      "hash": "ecd5f7239e50fe0e2349fae747f13e36f5b889e092faf836744d5b242fe13870",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "9ae5def2-919a-403e-a8ee-4eb96e681825",
+      "hash": "c081b0d402250d5e290dedf2be20490a7d661e96df5ed5d14239c5e332922241",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "ccf327ab-39dc-44f0-b542-9481470e310a",
+      "hash": "a1d1d23667e547dfe35d770a33e78d77e0288312eb73908667b05ac169e8ac87",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "3ad3d14e-e957-4293-bee5-64021255d80d",
+      "hash": "77c3ba1ab775527f1e64e6151eb94ec07ca283433515c48c11625f26b103f2cf",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "8427c319-89c1-452b-9efb-8222dacc58ab",
+      "hash": "d5b595fc2d955de3d746d5437bbdb5c82bf07a6df1a73e5d29a40ce93e76cebc",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "1163f89c-3e17-4c69-926f-43a689f1918d",
+      "hash": "c5774493a082d2fd16d7b294d3adb57be9d2e0e679900cdb2fb93f4bbce9e03d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "091b31ba-2952-4cd9-8eb7-254ed2da5ab4",
+      "hash": "83af36e8d073dff8b5ec6b213a0c6c30db4722e321a3e5d6be382356026b2575",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "b3eacb7b-66b7-44e7-bfc8-f294d12f847d",
+      "hash": "42a12688aa71830fe813f232e9a301552b3715f2b14e9306c1bb5cee586d2de9",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "8550ca46-e600-4bb8-be01-56f418022588",
+      "hash": "756819a7c7f9c64a0e203b3ba181819f579b6e36e85582b9daa170f2120167aa",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "95711d0f-7f26-4f02-9a3a-f128a4846299",
+      "hash": "7e206050b60e25d6b9b9624d18672efa7cbae4dca26351478f0453509d851a4e",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "c0e1f68b-9737-4a08-900a-926de229f809",
+      "hash": "341dca3209cee140c86a22fd2771986223f3a47d5217b5b2680d6660b2ef063b",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d24cd195-7ef9-4880-b715-38779f7c8af6",
+      "hash": "e35bf1404728aa5a5bdcb7c765a78a756c1a30abca4533c7c7710600d74aab90",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "fff73e5d-92f1-4013-a17d-3bcbd968d9cb",
+      "hash": "8d7d821bbc4d83fd2a94d92f9a973a66ed29347ccb619de6760bfad30b3fdb2c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "0f3fadc4-84e1-4ac7-ab76-c4e01d5674ac",
+      "hash": "2b2930c66efc90fd17a322acf5bef10bbdcea13f841bff9d9bfbac416ec83727",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "b9c6f915-fba6-4a8c-ad55-e51d6a3a7793",
+      "hash": "83a702787a82b20ba13b2796e8616f44e301b74c43afe6db4dea5129a44f1f57",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "b0d999f4-a215-494f-9b00-8466e166af98",
+      "hash": "98e2e23e8075a609bf149433b5ea50e1cdaa74e2b192ad89bd2b23a852a12428",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "04e7d65d-d899-4e84-a36c-447310483109",
+      "hash": "0965d1e0d40a27bab41774abacd3e5d47c49e524d6d5faca63b5c95f8d02bc93",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "1c4a93b9-57a1-4a84-9940-ca3fd10b4f06",
+      "hash": "250b09bdfff8916add9db17a22e156707bc9a9481db2c711146521ac5e7a7a1d",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "3703e688-82f6-4408-9cf3-a19e104b965d",
+      "hash": "6ab7b56f97cb92ce3415dcaca544fda7c3c5eac0dea6bcfee1fd10ba89b68e5f",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "ada97df7-7af8-4d76-b3da-fd48e15187b5",
+      "hash": "68b495369982fcf37f7badb819d945e224944ec4cdf63535c072957178b42ea7",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "24a2983e-f978-4d5c-a8f3-e13245a036b0",
+      "hash": "008bf56298ea8a31d39b165d19ad88fbca91889d0cc45169c2293e7d8ae1468c",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "e65e50c0-07a2-4747-a7a7-7f6510f73e1b",
+      "hash": "a87bc68dd82d9b19c61966f2b40c95320ae8c3dffd7e9ea24c469c73b2903cc0",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "e80b14ca-f9c7-41e4-9602-b799a602cd74",
+      "hash": "042a2d0d9f87b346bea445f85818dd855f55c7c183045844fe8c41063269ab13",
+      "status": "INSERT_VERIFIED"
+    },
+    {
+      "table": "skus",
+      "id": "d5293faf-969e-49a0-979b-0515ccdf42ac",
+      "hash": "748e9bf50028c0b17bf20eceec711a4e7a54e9eef06a8b29e12d249950cd32b4",
+      "status": "INSERT_VERIFIED"
+    }
+  ],
+  "orphanObjects": [],
+  "missingObjects": [],
+  "health": {
+    "ok": true,
+    "database": true,
+    "environment": "staging"
+  },
+  "content": [
+    {
+      "id": "22c5b91a-16b3-4862-8c01-e7bb1a76c82c",
+      "name": "琴韵初体验",
+      "module": "study",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "80d79606-9251-4884-9010-b86aa6daae25",
+      "name": "L1普及小提琴",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 10,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+      "name": "L2初学者实木小提琴",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 10,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+      "name": "L12视频",
+      "module": "teaching",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "name": "L301",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "site",
+      "name": "黄桥乐器文化产业园",
+      "module": "site",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "name": "L501",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "name": "L701",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "name": "L901",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "name": "L1101",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "name": "L1201",
+      "module": "instrument",
+      "status": 200,
+      "skuCount": 5,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "name": "地图冰箱贴",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "name": "音乐冰箱贴",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "name": "古镇冰箱贴",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "name": "亚克力拼图冰箱贴",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "name": "提琴书签",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "name": "纪念币",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "name": "金属直尺",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "41346998-856a-476e-8862-67133ee56c2e",
+      "name": "帆布包",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "name": "手机支架",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "name": "紫色提琴玩偶",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "name": "尤克里里玩偶",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "name": "琵琶玩偶",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "name": "棕色小提琴玩偶",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "name": "榉木笔筒夜灯",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "name": "迷你乐器",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "84810900-e21d-467c-b486-6148b826a9d1",
+      "name": "提琴包挂",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "name": "1/64 木盒",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "name": "1/64 纸盒",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "name": "文创礼盒",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "8325afe2-ce9f-45d5-b318-64aa95f285af",
+      "name": "提琴匠心深度游",
+      "module": "study",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "name": "小提琴紫砂壶",
+      "module": "cultural",
+      "status": 200,
+      "skuCount": 1,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+      "name": "制琴工坊探秘",
+      "module": "study",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "1e6e4395-cd7f-426a-bda1-943b8be315e9",
+      "name": "小小制琴师·工序体验营",
+      "module": "study",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+      "name": "城市客厅",
+      "module": "spot",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+      "name": "提琴文化艺术营",
+      "module": "study",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+      "name": "产业园·中小企业集聚区",
+      "module": "spot",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+      "name": "音乐生态湖",
+      "module": "spot",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    },
+    {
+      "id": "981fd3f8-4d08-561d-ae9b-0983214e0b87",
+      "name": "绿岛·智能环保表面处理中心",
+      "module": "spot",
+      "status": 200,
+      "skuCount": 0,
+      "fieldImagePriceCheck": "PASS"
+    }
+  ],
+  "media": [
+    {
+      "id": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "status": 200,
+      "size": 127530,
+      "sha256": "251584dcfd579947d88f65f11f4d59f86bd0890593d49dfa97945163f3fd603f",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "0b0569ef-b1e3-4479-a719-64a7477e15b9",
+      "status": 200,
+      "size": 1166560,
+      "sha256": "3fb76b5dca5617f9d46d3746d5d5c612e45550c17731a586b24383eaa2cb4de2",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "status": 200,
+      "size": 225273,
+      "sha256": "4a58eb780ab8992de21e8586fec140db70e28a8ea8d9775d9a7302a232722e7d",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "2232c217-4d2c-5949-aa26-70f120e1d176",
+      "status": 200,
+      "size": 135818,
+      "sha256": "d00607ca3d94c26710cc894eeaf08d95c37e87dd9c05f11fb88f07d5fcecf875",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "16709e66-3a12-5978-ba28-283791a470d5",
+      "status": 200,
+      "size": 167195,
+      "sha256": "d653a7245c9ced5724ac996d67b39a8df0ceac6be51202d755b396b5242aabd2",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "1757a532-c887-4563-93ae-aef2af1c7a06",
+      "status": 200,
+      "size": 1439924,
+      "sha256": "712e31e739a3a39b5e159bbd9d58c303b43fbd61be6d2a17ba74467a7d0f1880",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "35196160-9f66-4087-b31b-f62fbf172b52",
+      "status": 200,
+      "size": 2165842,
+      "sha256": "2c97eeca045d77c47879ec8e2025cadf88c263a7703b44eacc418316657ae883",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "31586cf2-2922-44f0-af53-0b9220cf1f81",
+      "status": 200,
+      "size": 657075,
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "32bc298a-54b2-422b-9f54-533c39cebc05",
+      "status": 200,
+      "size": 1877874,
+      "sha256": "16b302c48c0b61b3ea2bea964fa28130e43acac67c14606c59feee88a75eeeb0",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+      "status": 200,
+      "size": 59956,
+      "sha256": "5b03c77125332aaa6735240b6d5961602ad568a13948592ed0dcf31e39886dc5",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "status": 200,
+      "size": 53294,
+      "sha256": "24e64d1882ed4775358d1cc7a2118a3b79e927385f26cbd92e853473d260d1d0",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "5adb7593-369e-47eb-b429-e968b21763e0",
+      "status": 200,
+      "size": 478879,
+      "sha256": "1432fe600bcd0b246b52999030ad7edafc80969ca32832a95e1a14b8ee465ee4",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "status": 200,
+      "size": 103317,
+      "sha256": "18048dfdcf6d896811c40ddbaf8d157827adfb5a5831c3772c5dbba2024cfd17",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "68548eda-35be-5dc2-946c-05b2349cc77a",
+      "status": 200,
+      "size": 221562,
+      "sha256": "1b3e6ce424b42e18fb73289b87f22d91c3375896153418368a87b7eee02ff5c3",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+      "status": 200,
+      "size": 1662437,
+      "sha256": "becfde58c546684487b94f01dccd8064150c3a44759f430cd406d774a333dcfb",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "status": 200,
+      "size": 140252,
+      "sha256": "5b40c754ca250fbb0d277ea0a669330e754b36ad2f466cedeab68fdf1889fd42",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "status": 200,
+      "size": 129446,
+      "sha256": "3bc3f28bac57d52aa96cf26f27827084c3db5326e322ac3c79afba546788039e",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "99493b2d-1906-43c5-9665-2f6aabe80428",
+      "status": 200,
+      "size": 1491544,
+      "sha256": "0fc7d779d6f2655c08bfd1780f87d19e66f59380359b460ea3a053af5571afc9",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "baeafb30-fa8b-4490-9486-5f33ff96a382",
+      "status": 200,
+      "size": 37721,
+      "sha256": "decac7e0d8e4f48e03f86de7ee0a916bddf79398e764181e32aac66edde3fdeb",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "status": 200,
+      "size": 160505,
+      "sha256": "5ff0f482f76007a8f417f000aa09313676fa09beda933ecacbe23fa22d3c41e7",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "status": 200,
+      "size": 83222,
+      "sha256": "fcd0176db3b460f7183694e140ab65a50c2c804bd952b66bb291eacf3c9f032a",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "status": 200,
+      "size": 94775,
+      "sha256": "143804173d53cd55e86aa39a6d0e230caaeff55f618e5681e693e731db85c0c6",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "status": 200,
+      "size": 84456,
+      "sha256": "e019b8247943741bfbbd2f172c34c6df6a1845fb86ab0896465d1746c55d0685",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "c5945292-a4c6-5232-b1b6-922937b752c8",
+      "status": 200,
+      "size": 102935,
+      "sha256": "ead20d1239cdaec70026874a2fa544bf232c35cb7b247eb5deb4c3e51c2011f5",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "status": 200,
+      "size": 94954,
+      "sha256": "dc8230ef77e9b23af6bb204f998c344290f779e4912a4af2f00917d5e4877dc8",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "status": 200,
+      "size": 99304,
+      "sha256": "9c242f08aa7f90e938c2b940ec442a87ea453bf4c7408e2275fa1cd04bebbd72",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+      "status": 200,
+      "size": 514952,
+      "sha256": "585fb9983e6397568e69325784bef1302f2e763f4205eaf1255ee09f6ebf4390",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "status": 200,
+      "size": 53144,
+      "sha256": "f01bc09c9d45a6fbd0d4d7a29c56186623d25858c005d6ce930951010d3c82ef",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "status": 200,
+      "size": 342073,
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "byteHashCheck": "PASS"
+    },
+    {
+      "id": "f91fd528-6d29-45e1-badd-1e61a86555d8",
+      "status": 200,
+      "size": 1003392,
+      "sha256": "4a3263249458e0fab4c3379a395f1a5878ecf89dae4deabe9df44b6d2d299bff",
+      "byteHashCheck": "PASS"
+    }
+  ],
+  "transportRetries": [],
+  "publicInventory": {
+    "site": 1,
+    "spot": 4,
+    "instrument": 8,
+    "cultural": 20,
+    "study": 5,
+    "teaching": 1
+  },
+  "status": "PASS"
+}

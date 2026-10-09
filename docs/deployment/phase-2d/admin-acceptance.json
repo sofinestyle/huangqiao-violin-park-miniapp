@@ -1,0 +1,1073 @@
+{
+  "checkedAt": "2026-10-09T12:46:53.142Z",
+  "categories": [
+    {
+      "name": "乐器",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增乐器\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n乐器\n8 条记录\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\n\t\nL1普及小提琴\nL1\n\t提琴\t已发布\t0\t维护 / 预览删除\n\n\t\nL2初学者实木小提琴\nL2\n\t提琴\t已发布\t0\t维护 / 预览删除\n\n\t\nL301\nL301\n\t提琴\t已发布\t11\t维护 / 预览删除\n\n\t\nL501\nL501\n\t提琴\t已发布\t12\t维护 / 预览删除\n\n\t\nL701\nL701\n\t提琴\t已发布\t13\t维护 / 预览删除\n\n\t\nL901\nL901\n\t提琴\t已发布\t14\t维护 / 预览删除\n\n\t\nL1101\nL1101\n\t提琴\t已发布\t15\t维护 / 预览删除\n\n\t\nL1201\nL1201\n\t提琴\t已发布\t16\t维护 / 预览删除",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/1757a532-c887-4563-93ae-aef2af1c7a06/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        }
+      ],
+      "rows": [
+        "\t\nL1普及小提琴\nL1\n\t提琴\t已发布\t0\t维护 / 预览删除",
+        "\t\nL2初学者实木小提琴\nL2\n\t提琴\t已发布\t0\t维护 / 预览删除",
+        "\t\nL301\nL301\n\t提琴\t已发布\t11\t维护 / 预览删除",
+        "\t\nL501\nL501\n\t提琴\t已发布\t12\t维护 / 预览删除",
+        "\t\nL701\nL701\n\t提琴\t已发布\t13\t维护 / 预览删除",
+        "\t\nL901\nL901\n\t提琴\t已发布\t14\t维护 / 预览删除",
+        "\t\nL1101\nL1101\n\t提琴\t已发布\t15\t维护 / 预览删除",
+        "\t\nL1201\nL1201\n\t提琴\t已发布\t16\t维护 / 预览删除"
+      ]
+    },
+    {
+      "name": "文创",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增文创\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\t地图冰箱贴\nWC-001\n\t文创\t已发布\t30\t维护 / 预览删除\n\t古镇冰箱贴\nWC-002\n\t文创\t已发布\t31\t维护 / 预览删除\n\t音乐冰箱贴\nWC-003\n\t文创\t已发布\t32\t维护 / 预览删除\n\t亚克力拼图冰箱贴\nWC-004\n\t文创\t已发布\t33\t维护 / 预览删除\n\t纪念币\nWC-005\n\t文创\t已发布\t34\t维护 / 预览删除\n\t金属直尺\nWC-006\n\t文创\t已发布\t35\t维护 / 预览删除\n\t提琴书签\nWC-007\n\t文创\t已发布\t36\t维护 / 预览删除\n\t手机支架\nWC-008\n\t文创\t已发布\t37\t维护 / 预览删除\n\t帆布包\nWC-009\n\t文创\t已发布\t38\t维护 / 预览删除\n\t紫色提琴玩偶\nWC-010\n\t文创\t已发布\t39\t维护 / 预览删除\n\t琵琶玩偶\nWC-011\n\t文创\t已发布\t40\t维护 / 预览删除\n\t尤克里里玩偶\nWC-012\n\t文创\t已发布\t41\t维护 / 预览删除\n\t棕色小提琴玩偶\nWC-013\n\t文创\t已发布\t42\t维护 / 预览删除\n\t迷你乐器\nWC-014\n\t文创\t已发布\t43\t维护 / 预览删除\n\t提琴包挂\nWC-015\n\t文创\t已发布\t44\t维护 / 预览删除\n\t榉木笔筒夜灯\nWC-016\n\t文创\t已发布\t45\t维护 / 预览删除\n\t文创礼盒\nWC-017\n\t文创\t已发布\t46\t维护 / 预览删除\n\t1/64 木盒\nWC-018\n\t文创\t已发布\t47\t维护 / 预览删除\n\t1/64 纸盒\nWC-019\n\t文创\t已发布\t48\t维护 / 预览删除\n\t小提琴紫砂壶\nWC-020\n\t文创\t已发布\t49\t维护 / 预览删除",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        }
+      ],
+      "rows": [
+        "\t地图冰箱贴\nWC-001\n\t文创\t已发布\t30\t维护 / 预览删除",
+        "\t古镇冰箱贴\nWC-002\n\t文创\t已发布\t31\t维护 / 预览删除",
+        "\t音乐冰箱贴\nWC-003\n\t文创\t已发布\t32\t维护 / 预览删除",
+        "\t亚克力拼图冰箱贴\nWC-004\n\t文创\t已发布\t33\t维护 / 预览删除",
+        "\t纪念币\nWC-005\n\t文创\t已发布\t34\t维护 / 预览删除",
+        "\t金属直尺\nWC-006\n\t文创\t已发布\t35\t维护 / 预览删除",
+        "\t提琴书签\nWC-007\n\t文创\t已发布\t36\t维护 / 预览删除",
+        "\t手机支架\nWC-008\n\t文创\t已发布\t37\t维护 / 预览删除",
+        "\t帆布包\nWC-009\n\t文创\t已发布\t38\t维护 / 预览删除",
+        "\t紫色提琴玩偶\nWC-010\n\t文创\t已发布\t39\t维护 / 预览删除",
+        "\t琵琶玩偶\nWC-011\n\t文创\t已发布\t40\t维护 / 预览删除",
+        "\t尤克里里玩偶\nWC-012\n\t文创\t已发布\t41\t维护 / 预览删除",
+        "\t棕色小提琴玩偶\nWC-013\n\t文创\t已发布\t42\t维护 / 预览删除",
+        "\t迷你乐器\nWC-014\n\t文创\t已发布\t43\t维护 / 预览删除",
+        "\t提琴包挂\nWC-015\n\t文创\t已发布\t44\t维护 / 预览删除",
+        "\t榉木笔筒夜灯\nWC-016\n\t文创\t已发布\t45\t维护 / 预览删除",
+        "\t文创礼盒\nWC-017\n\t文创\t已发布\t46\t维护 / 预览删除",
+        "\t1/64 木盒\nWC-018\n\t文创\t已发布\t47\t维护 / 预览删除",
+        "\t1/64 纸盒\nWC-019\n\t文创\t已发布\t48\t维护 / 预览删除",
+        "\t小提琴紫砂壶\nWC-020\n\t文创\t已发布\t49\t维护 / 预览删除"
+      ]
+    },
+    {
+      "name": "首页与企业",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增首页与企业\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\t黄桥乐器文化产业园\nsite\n\t—\t已发布\t0\t维护 / 预览",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        }
+      ],
+      "rows": [
+        "\t黄桥乐器文化产业园\nsite\n\t—\t已发布\t0\t维护 / 预览"
+      ]
+    },
+    {
+      "name": "研学套餐",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增研学套餐\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\t琴韵初体验\n0001\n\t—\t已发布\t0\t维护 / 预览删除\n\t研学界面验证样例（未发布）\n7bdebda8-753d-4d33-a9a2-53f971f06dc3\n\t—\t已下架\t0\t维护 / 预览删除\n\t提琴匠心深度游\n02\n\t—\t已发布\t61\t维护 / 预览删除\n\t制琴工坊探秘\n03\n\t—\t已发布\t62\t维护 / 预览删除\n\t提琴文化艺术营\n04\n\t—\t已发布\t63\t维护 / 预览删除\n\t小小制琴师·工序体验营\n05\n\t—\t已发布\t64\t维护 / 预览删除",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/f91fd528-6d29-45e1-badd-1e61a86555d8/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/16709e66-3a12-5978-ba28-283791a470d5/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        }
+      ],
+      "rows": [
+        "\t琴韵初体验\n0001\n\t—\t已发布\t0\t维护 / 预览删除",
+        "\t研学界面验证样例（未发布）\n7bdebda8-753d-4d33-a9a2-53f971f06dc3\n\t—\t已下架\t0\t维护 / 预览删除",
+        "\t提琴匠心深度游\n02\n\t—\t已发布\t61\t维护 / 预览删除",
+        "\t制琴工坊探秘\n03\n\t—\t已发布\t62\t维护 / 预览删除",
+        "\t提琴文化艺术营\n04\n\t—\t已发布\t63\t维护 / 预览删除",
+        "\t小小制琴师·工序体验营\n05\n\t—\t已发布\t64\t维护 / 预览删除"
+      ]
+    },
+    {
+      "name": "教学内容",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增教学内容\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\tL12视频\ndb4e68f6-2ef6-41da-85df-fc20a760c627\n\tvideo\t已发布\t0\t维护 / 预览删除",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/baeafb30-fa8b-4490-9486-5f33ff96a382/file"
+        }
+      ],
+      "rows": [
+        "\tL12视频\ndb4e68f6-2ef6-41da-85df-fc20a760c627\n\tvideo\t已发布\t0\t维护 / 预览删除"
+      ]
+    },
+    {
+      "name": "点位导览",
+      "content": "黄桥乐器文化产业园\n\n内容运营与接待管理\n工作台\n内容维护\n场次管理\n研学预约\n咨询管理\n素材库\n账号权限\n操作记录\nYorRay · 园区管理后台\n内容运营 / 内容维护\nH\nhqadmin\n内容维护\n\n管理小程序中的乐器、文创、研学和教学内容\n\n新增点位导览\n乐器\n文创\n首页与企业\n研学套餐\n教学内容\n点位导览\n刷新\n封面\t名称 / 编码\t分类\t状态\t排序\t操作\n\t城市客厅\n2177d369-4cb6-5ee8-8246-cdbc0e18fe79\n\t—\t已发布\t80\t维护 / 预览\n\t音乐生态湖\n61610c9a-3bb3-508d-97a4-ff3a455a5ef1\n\t—\t已发布\t81\t维护 / 预览\n\t产业园·中小企业集聚区\n7d48f1df-e2aa-5c9e-ae2f-75f88396b798\n\t—\t已发布\t82\t维护 / 预览\n\t绿岛·智能环保表面处理中心\n981fd3f8-4d08-561d-ae9b-0983214e0b87\n\t—\t已发布\t83\t维护 / 预览",
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/68548eda-35be-5dc2-946c-05b2349cc77a/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/0d7b9c57-e19f-55c4-a412-93b62fac95a5/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/16709e66-3a12-5978-ba28-283791a470d5/file"
+        }
+      ],
+      "rows": [
+        "\t城市客厅\n2177d369-4cb6-5ee8-8246-cdbc0e18fe79\n\t—\t已发布\t80\t维护 / 预览",
+        "\t音乐生态湖\n61610c9a-3bb3-508d-97a4-ff3a455a5ef1\n\t—\t已发布\t81\t维护 / 预览",
+        "\t产业园·中小企业集聚区\n7d48f1df-e2aa-5c9e-ae2f-75f88396b798\n\t—\t已发布\t82\t维护 / 预览",
+        "\t绿岛·智能环保表面处理中心\n981fd3f8-4d08-561d-ae9b-0983214e0b87\n\t—\t已发布\t83\t维护 / 预览"
+      ]
+    }
+  ],
+  "previews": [
+    {
+      "name": "L1",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增乐器\":\n    - text: 新增乐器\n  - group \"内容类别\":\n    - button \"乐器\" [pressed]\n    - button \"文创\"\n    - button \"首页与企业\"\n    - button \"研学套餐\"\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - heading \"乐器\" [level=2]\n  - generic: 8 条记录\n  - region \"乐器列表，可横向滚动查看全部列\":\n    - table:\n      - rowgroup:\n        - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n          - columnheader \"封面\"\n          - columnheader \"名称 / 编码\"\n          - columnheader \"分类\"\n          - columnheader \"状态\"\n          - columnheader \"排序\"\n          - columnheader \"操作\"\n      - rowgroup:\n        - row \"L1普及小提琴 L1 提琴 已发布 0 维护 / 预览：L1普及小提琴 删除乐器：L1普及小提琴\":\n          - cell\n          - cell \"L1普及小提琴 L1\":\n            - strong: L1普及小提琴\n            - generic: L1\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"0\"\n          - cell \"维护 / 预览：L1普及小提琴 删除乐器：L1普及小提琴\":\n            - button \"维护 / 预览：L1普及小提琴\": 维护 / 预览\n            - button \"删除乐器：L1普及小提琴\" [disabled]: 删除\n        - row \"L2初学者实木小提琴 L2 提琴 已发布 0 维护 / 预览：L2初学者实木小提琴 删除乐器：L2初学者实木小提琴\":\n          - cell\n          - cell \"L2初学者实木小提琴 L2\":\n            - strong: L2初学者实木小提琴\n            - generic: L2\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"0\"\n          - cell \"维护 / 预览：L2初学者实木小提琴 删除乐器：L2初学者实木小提琴\":\n            - button \"维护 / 预览：L2初学者实木小提琴\": 维护 / 预览\n            - button \"删除乐器：L2初学者实木小提琴\" [disabled]: 删除\n        - row \"L301 L301 提琴 已发布 11 维护 / 预览：L301 删除乐器：L301\":\n          - cell\n          - cell \"L301 L301\":\n            - strong: L301\n            - generic: L301\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"11\"\n          - cell \"维护 / 预览：L301 删除乐器：L301\":\n            - button \"维护 / 预览：L301\": 维护 / 预览\n            - button \"删除乐器：L301\" [disabled]: 删除\n        - row \"L501 L501 提琴 已发布 12 维护 / 预览：L501 删除乐器：L501\":\n          - cell\n          - cell \"L501 L501\":\n            - strong: L501\n            - generic: L501\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"12\"\n          - cell \"维护 / 预览：L501 删除乐器：L501\":\n            - button \"维护 / 预览：L501\": 维护 / 预览\n            - button \"删除乐器：L501\" [disabled]: 删除\n        - row \"L701 L701 提琴 已发布 13 维护 / 预览：L701 删除乐器：L701\":\n          - cell\n          - cell \"L701 L701\":\n            - strong: L701\n            - generic: L701\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"13\"\n          - cell \"维护 / 预览：L701 删除乐器：L701\":\n            - button \"维护 / 预览：L701\": 维护 / 预览\n            - button \"删除乐器：L701\" [disabled]: 删除\n        - row \"L901 L901 提琴 已发布 14 维护 / 预览：L901 删除乐器：L901\":\n          - cell\n          - cell \"L901 L901\":\n            - strong: L901\n            - generic: L901\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"14\"\n          - cell \"维护 / 预览：L901 删除乐器：L901\":\n            - button \"维护 / 预览：L901\": 维护 / 预览\n            - button \"删除乐器：L901\" [disabled]: 删除\n        - row \"L1101 L1101 提琴 已发布 15 维护 / 预览：L1101 删除乐器：L1101\":\n          - cell\n          - cell \"L1101 L1101\":\n            - strong: L1101\n            - generic: L1101\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"15\"\n          - cell \"维护 / 预览：L1101 删除乐器：L1101\":\n            - button \"维护 / 预览：L1101\": 维护 / 预览\n            - button \"删除乐器：L1101\" [disabled]: 删除\n        - row \"L1201 L1201 提琴 已发布 16 维护 / 预览：L1201 删除乐器：L1201\":\n          - cell\n          - cell \"L1201 L1201\":\n            - strong: L1201\n            - generic: L1201\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"16\"\n          - cell \"维护 / 预览：L1201 删除乐器：L1201\":\n            - button \"维护 / 预览：L1201\": 维护 / 预览\n            - button \"删除乐器：L1201\" [disabled]: 删除\n  - dialog \"乐器 · 维护：L1普及小提琴\":\n    - heading \"乐器 · 维护\" [level=2]\n    - paragraph: L1普及小提琴\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\": L1普及小提琴\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\" [selected]\n      - option \"已下架\"\n    - generic: 排序\n    - spinbutton \"排序\": \"0\"\n    - generic: 乐器品类\n    - combobox \"乐器品类\":\n      - option \"提琴\" [selected]\n      - option \"吉他\"\n      - option \"尤克里里\"\n      - option \"口琴\"\n      - option \"其他\"\n    - generic: 价格展示\n    - combobox \"价格展示\":\n      - option \"咨询报价\"\n      - option \"参考价格\" [selected]\n    - generic: 参考价（元）\n    - spinbutton \"参考价（元）\": \"320\"\n    - region \"产品规格管理\":\n      - heading \"规格管理\" [level=3]\n      - paragraph: 一次维护产品，按需设置规格差异。\n      - group \"规格模式\":\n        - button \"单规格\"\n        - button \"多规格\" [pressed]\n      - textbox \"维度1名称\":\n        - /placeholder: 例如：尺寸\n        - text: 尺寸\n      - button \"上移维度1\" [disabled]: ↑\n      - button \"下移维度1\": ↓\n      - button \"删除维度：尺寸\": 删除维度\n      - textbox \"尺寸值1\":\n        - /placeholder: 规格值\n        - text: 1/8\n      - button \"上移尺寸值1\" [disabled]: ↑\n      - button \"下移尺寸值1\": ↓\n      - button \"删除尺寸值1\": 删除\n      - textbox \"尺寸值2\":\n        - /placeholder: 规格值\n        - text: 1/4\n      - button \"上移尺寸值2\": ↑\n      - button \"下移尺寸值2\": ↓\n      - button \"删除尺寸值2\": 删除\n      - textbox \"尺寸值3\":\n        - /placeholder: 规格值\n        - text: 1/2\n      - button \"上移尺寸值3\": ↑\n      - button \"下移尺寸值3\": ↓\n      - button \"删除尺寸值3\": 删除\n      - textbox \"尺寸值4\":\n        - /placeholder: 规格值\n        - text: 3/4\n      - button \"上移尺寸值4\": ↑\n      - button \"下移尺寸值4\": ↓\n      - button \"删除尺寸值4\": 删除\n      - textbox \"尺寸值5\":\n        - /placeholder: 规格值\n        - text: 4/4\n      - button \"上移尺寸值5\": ↑\n      - button \"下移尺寸值5\" [disabled]: ↓\n      - button \"删除尺寸值5\": 删除\n      - button \"＋ 添加尺寸值\"\n      - textbox \"维度2名称\":\n        - /placeholder: 例如：尺寸\n        - text: 颜色\n      - button \"上移维度2\": ↑\n      - button \"下移维度2\" [disabled]: ↓\n      - button \"删除维度：颜色\": 删除维度\n      - textbox \"颜色值1\":\n        - /placeholder: 规格值\n        - text: 亮光棕色\n      - button \"上移颜色值1\" [disabled]: ↑\n      - button \"下移颜色值1\": ↓\n      - button \"删除颜色值1\": 删除\n      - textbox \"颜色值2\":\n        - /placeholder: 规格值\n        - text: 哑光棕色\n      - button \"上移颜色值2\": ↑\n      - button \"下移颜色值2\" [disabled]: ↓\n      - button \"删除颜色值2\": 删除\n      - button \"＋ 添加颜色值\"\n      - button \"＋ 添加规格维度\"\n      - generic: 预计组合：10 项\n      - button \"更新组合\"\n      - heading \"SKU组合 10 项\" [level=4]:\n        - text: SKU组合\n        - generic: 10 项\n      - generic: 留空参考价继承产品；0为有效参考价。\n      - table:\n        - rowgroup:\n          - row \"选择全部SKU 规格组合 SKU编码 参考价 图片 状态\":\n            - columnheader \"选择全部SKU\":\n              - checkbox \"选择全部SKU\"\n            - columnheader \"规格组合\"\n            - columnheader \"SKU编码\"\n            - columnheader \"参考价\"\n            - columnheader \"图片\"\n            - columnheader \"状态\"\n        - rowgroup:\n          - row \"选择SKU 1 1/8 / 亮光棕色 SKU-213ebac499d243bd96f0 管理SKU 1 图片 SKU 1 启用 启用\":\n            - cell \"选择SKU 1\":\n              - checkbox \"选择SKU 1\"\n            - cell \"1/8 / 亮光棕色\":\n              - strong: 1/8 / 亮光棕色\n            - cell \"SKU-213ebac499d243bd96f0\":\n              - textbox \"SKU 1 编码\": SKU-213ebac499d243bd96f0\n            - cell:\n              - spinbutton \"SKU 1 参考价\"\n            - cell \"管理SKU 1 图片\":\n              - button \"管理SKU 1 图片\" [active]: 独立图库 · 1张\n            - cell \"SKU 1 启用 启用\":\n              - checkbox \"SKU 1 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 2 1/8 / 哑光棕色 SKU-02843d0abdac440c 管理SKU 2 图片 SKU 2 启用 启用\":\n            - cell \"选择SKU 2\":\n              - checkbox \"选择SKU 2\"\n            - cell \"1/8 / 哑光棕色\":\n              - strong: 1/8 / 哑光棕色\n            - cell \"SKU-02843d0abdac440c\":\n              - textbox \"SKU 2 编码\": SKU-02843d0abdac440c\n            - cell:\n              - spinbutton \"SKU 2 参考价\"\n            - cell \"管理SKU 2 图片\":\n              - button \"管理SKU 2 图片\": 产品图库（继承）\n            - cell \"SKU 2 启用 启用\":\n              - checkbox \"SKU 2 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 3 1/4 / 亮光棕色 SKU-77079f1ed54a4322 管理SKU 3 图片 SKU 3 启用 启用\":\n            - cell \"选择SKU 3\":\n              - checkbox \"选择SKU 3\"\n            - cell \"1/4 / 亮光棕色\":\n              - strong: 1/4 / 亮光棕色\n            - cell \"SKU-77079f1ed54a4322\":\n              - textbox \"SKU 3 编码\": SKU-77079f1ed54a4322\n            - cell:\n              - spinbutton \"SKU 3 参考价\"\n            - cell \"管理SKU 3 图片\":\n              - button \"管理SKU 3 图片\": 产品图库（继承）\n            - cell \"SKU 3 启用 启用\":\n              - checkbox \"SKU 3 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 4 1/4 / 哑光棕色 SKU-62d8eb6b215f49c6 管理SKU 4 图片 SKU 4 启用 启用\":\n            - cell \"选择SKU 4\":\n              - checkbox \"选择SKU 4\"\n            - cell \"1/4 / 哑光棕色\":\n              - strong: 1/4 / 哑光棕色\n            - cell \"SKU-62d8eb6b215f49c6\":\n              - textbox \"SKU 4 编码\": SKU-62d8eb6b215f49c6\n            - cell:\n              - spinbutton \"SKU 4 参考价\"\n            - cell \"管理SKU 4 图片\":\n              - button \"管理SKU 4 图片\": 产品图库（继承）\n            - cell \"SKU 4 启用 启用\":\n              - checkbox \"SKU 4 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 5 1/2 / 亮光棕色 SKU-9a8acc96248f45dc 管理SKU 5 图片 SKU 5 启用 启用\":\n            - cell \"选择SKU 5\":\n              - checkbox \"选择SKU 5\"\n            - cell \"1/2 / 亮光棕色\":\n              - strong: 1/2 / 亮光棕色\n            - cell \"SKU-9a8acc96248f45dc\":\n              - textbox \"SKU 5 编码\": SKU-9a8acc96248f45dc\n            - cell:\n              - spinbutton \"SKU 5 参考价\"\n            - cell \"管理SKU 5 图片\":\n              - button \"管理SKU 5 图片\": 产品图库（继承）\n            - cell \"SKU 5 启用 启用\":\n              - checkbox \"SKU 5 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 6 1/2 / 哑光棕色 SKU-75a466ea7f294e7c 管理SKU 6 图片 SKU 6 启用 启用\":\n            - cell \"选择SKU 6\":\n              - checkbox \"选择SKU 6\"\n            - cell \"1/2 / 哑光棕色\":\n              - strong: 1/2 / 哑光棕色\n            - cell \"SKU-75a466ea7f294e7c\":\n              - textbox \"SKU 6 编码\": SKU-75a466ea7f294e7c\n            - cell:\n              - spinbutton \"SKU 6 参考价\"\n            - cell \"管理SKU 6 图片\":\n              - button \"管理SKU 6 图片\": 产品图库（继承）\n            - cell \"SKU 6 启用 启用\":\n              - checkbox \"SKU 6 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 7 3/4 / 亮光棕色 SKU-b4b2f140aea34304 管理SKU 7 图片 SKU 7 启用 启用\":\n            - cell \"选择SKU 7\":\n              - checkbox \"选择SKU 7\"\n            - cell \"3/4 / 亮光棕色\":\n              - strong: 3/4 / 亮光棕色\n            - cell \"SKU-b4b2f140aea34304\":\n              - textbox \"SKU 7 编码\": SKU-b4b2f140aea34304\n            - cell:\n              - spinbutton \"SKU 7 参考价\"\n            - cell \"管理SKU 7 图片\":\n              - button \"管理SKU 7 图片\": 产品图库（继承）\n            - cell \"SKU 7 启用 启用\":\n              - checkbox \"SKU 7 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 8 3/4 / 哑光棕色 SKU-33745b5a48d1499b 管理SKU 8 图片 SKU 8 启用 启用\":\n            - cell \"选择SKU 8\":\n              - checkbox \"选择SKU 8\"\n            - cell \"3/4 / 哑光棕色\":\n              - strong: 3/4 / 哑光棕色\n            - cell \"SKU-33745b5a48d1499b\":\n              - textbox \"SKU 8 编码\": SKU-33745b5a48d1499b\n            - cell:\n              - spinbutton \"SKU 8 参考价\"\n            - cell \"管理SKU 8 图片\":\n              - button \"管理SKU 8 图片\": 产品图库（继承）\n            - cell \"SKU 8 启用 启用\":\n              - checkbox \"SKU 8 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 9 4/4 / 亮光棕色 SKU-ad651fd19a3647b2 管理SKU 9 图片 SKU 9 启用 启用\":\n            - cell \"选择SKU 9\":\n              - checkbox \"选择SKU 9\"\n            - cell \"4/4 / 亮光棕色\":\n              - strong: 4/4 / 亮光棕色\n            - cell \"SKU-ad651fd19a3647b2\":\n              - textbox \"SKU 9 编码\": SKU-ad651fd19a3647b2\n            - cell:\n              - spinbutton \"SKU 9 参考价\"\n            - cell \"管理SKU 9 图片\":\n              - button \"管理SKU 9 图片\": 产品图库（继承）\n            - cell \"SKU 9 启用 启用\":\n              - checkbox \"SKU 9 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 10 4/4 / 哑光棕色 SKU-78e35606ad9f47cc 管理SKU 10 图片 SKU 10 启用 启用\":\n            - cell \"选择SKU 10\":\n              - checkbox \"选择SKU 10\"\n            - cell \"4/4 / 哑光棕色\":\n              - strong: 4/4 / 哑光棕色\n            - cell \"SKU-78e35606ad9f47cc\":\n              - textbox \"SKU 10 编码\": SKU-78e35606ad9f47cc\n            - cell:\n              - spinbutton \"SKU 10 参考价\"\n            - cell \"管理SKU 10 图片\":\n              - button \"管理SKU 10 图片\": 产品图库（继承）\n            - cell \"SKU 10 启用 启用\":\n              - checkbox \"SKU 10 启用\" [checked]\n              - generic: 启用\n      - generic \"SKU图片管理\":\n        - heading \"1/8 / 亮光棕色 · 图片\" [level=4]\n        - button \"收起图片管理\"\n        - paragraph: SKU独立图库，优先显示。\n        - img \"图片1\"\n        - button \"移除图片1\"\n        - generic: 复用已有图片\n        - combobox \"SKU复用图片\":\n          - option \"选择已有图片\" [selected]\n          - option \"hero-violin.jpg\"\n          - option \"i1.jpg\"\n          - option \"l2.jpg\"\n          - option \"l3.jpg\"\n          - option \"industry.jpg\"\n          - option \"i2.jpg\"\n          - option \"i3.jpg\"\n          - option \"i4.jpg\"\n          - option \"green.jpg\"\n          - option \"g1.jpg\"\n          - option \"g2.jpg\"\n          - option \"g3.jpg\"\n          - option \"g4.jpg\"\n          - option \"city.jpg\"\n          - option \"c1.jpg\"\n          - option \"c2.jpg\"\n          - option \"c3.jpg\"\n          - option \"c4.jpg\"\n          - option \"lake.jpg\"\n          - option \"l1.jpg\"\n          - option \"video-first-frame.jpg\"\n          - option \"IMG_3425.jpg\"\n          - option \"dmx-image-1785425809948-1-v1.png\"\n          - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n          - option \"dmx-image-1786333537583-1-v1.png\"\n          - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n          - option \"dmx-image-1786333620164-1-v1.png\"\n          - option \"dmx-image-1786262930716-1-v1.png\"\n          - option \"workshop.jpg\"\n          - option \"homepage-workshop-background-20261001.png\"\n        - region \"上传SKU独立图片\":\n          - generic: 上传SKU独立图片\n          - button \"上传SKU独立图片 支持JPG、PNG，单个文件不超过64MB。\"\n          - generic: 支持JPG、PNG，单个文件不超过64MB。\n          - button \"上传并添加图片\"\n          - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n        - button \"恢复产品图库继承\"\n    - generic: 产品编码\n    - textbox \"产品编码\": L1\n    - generic: 品牌\n    - textbox \"品牌\": YorRay\n    - generic: 产品系列 / 文创分类\n    - textbox \"产品系列 / 文创分类\": 初学者系列\n    - generic: 介绍及材料说明\n    - textbox \"介绍及材料说明\": 材质： 面板椴木，背板贴皮虎纹 油漆工艺： 普及油漆 琴弦： 爱丽丝704 琴盒： 三角绣标帆布琴盒 外包装： 彩盒包装\n    - generic: 价格说明\n    - textbox \"价格说明\"\n    - group \"内容图片\":\n      - generic: 内容图片\n      - generic: 可直接上传新图片，也可复用素材库；第一张作为封面。\n      - combobox \"内容图片 1（封面）\":\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\" [selected]\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除内容图片 1\": 移除\n      - combobox \"内容图片 2\":\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\" [selected]\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除内容图片 2\": 移除\n      - combobox \"内容图片 3\":\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\" [selected]\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除内容图片 3\": 移除\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - region \"产品图库预览\":\n      - heading \"产品图库 · 3张\" [level=3]\n      - paragraph: 第一张为封面。点击图片可查看原图；未设置独立图片的SKU使用此图库。\n      - figure \"1 · 封面\":\n        - link \"查看产品图片 1原图（新窗口）\":\n          - /url: /api/admin/media/1757a532-c887-4563-93ae-aef2af1c7a06/file\n          - img \"产品图片 1（封面）\"\n        - generic: 1 · 封面\n      - figure \"2 · 产品图片\":\n        - link \"查看产品图片 2原图（新窗口）\":\n          - /url: /api/admin/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f/file\n          - img \"产品图片 2\"\n        - generic: 2 · 产品图片\n      - figure \"3 · 产品图片\":\n        - link \"查看产品图片 3原图（新窗口）\":\n          - /url: /api/admin/media/99493b2d-1906-43c5-9665-2f6aabe80428/file\n          - img \"产品图片 3\"\n        - generic: 3 · 产品图片\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "L1普及小提琴"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "0"
+        },
+        {
+          "label": "乐器品类\n提琴\n吉他\n尤克里里\n口琴\n其他",
+          "value": "violin"
+        },
+        {
+          "label": "价格展示\n咨询报价\n参考价格",
+          "value": "reference"
+        },
+        {
+          "label": "参考价（元）",
+          "value": "320"
+        },
+        {
+          "label": "维度1名称",
+          "value": "尺寸"
+        },
+        {
+          "label": "尺寸值1",
+          "value": "1/8"
+        },
+        {
+          "label": "尺寸值2",
+          "value": "1/4"
+        },
+        {
+          "label": "尺寸值3",
+          "value": "1/2"
+        },
+        {
+          "label": "尺寸值4",
+          "value": "3/4"
+        },
+        {
+          "label": "尺寸值5",
+          "value": "4/4"
+        },
+        {
+          "label": "维度2名称",
+          "value": "颜色"
+        },
+        {
+          "label": "颜色值1",
+          "value": "亮光棕色"
+        },
+        {
+          "label": "颜色值2",
+          "value": "哑光棕色"
+        },
+        {
+          "label": "选择全部SKU",
+          "value": false
+        },
+        {
+          "label": "选择SKU 1",
+          "value": false
+        },
+        {
+          "label": "SKU 1 编码",
+          "value": "SKU-213ebac499d243bd96f0"
+        },
+        {
+          "label": "SKU 1 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 1 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 2",
+          "value": false
+        },
+        {
+          "label": "SKU 2 编码",
+          "value": "SKU-02843d0abdac440c"
+        },
+        {
+          "label": "SKU 2 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 2 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 3",
+          "value": false
+        },
+        {
+          "label": "SKU 3 编码",
+          "value": "SKU-77079f1ed54a4322"
+        },
+        {
+          "label": "SKU 3 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 3 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 4",
+          "value": false
+        },
+        {
+          "label": "SKU 4 编码",
+          "value": "SKU-62d8eb6b215f49c6"
+        },
+        {
+          "label": "SKU 4 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 4 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 5",
+          "value": false
+        },
+        {
+          "label": "SKU 5 编码",
+          "value": "SKU-9a8acc96248f45dc"
+        },
+        {
+          "label": "SKU 5 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 5 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 6",
+          "value": false
+        },
+        {
+          "label": "SKU 6 编码",
+          "value": "SKU-75a466ea7f294e7c"
+        },
+        {
+          "label": "SKU 6 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 6 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 7",
+          "value": false
+        },
+        {
+          "label": "SKU 7 编码",
+          "value": "SKU-b4b2f140aea34304"
+        },
+        {
+          "label": "SKU 7 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 7 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 8",
+          "value": false
+        },
+        {
+          "label": "SKU 8 编码",
+          "value": "SKU-33745b5a48d1499b"
+        },
+        {
+          "label": "SKU 8 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 8 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 9",
+          "value": false
+        },
+        {
+          "label": "SKU 9 编码",
+          "value": "SKU-ad651fd19a3647b2"
+        },
+        {
+          "label": "SKU 9 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 9 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 10",
+          "value": false
+        },
+        {
+          "label": "SKU 10 编码",
+          "value": "SKU-78e35606ad9f47cc"
+        },
+        {
+          "label": "SKU 10 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 10 启用",
+          "value": true
+        },
+        {
+          "label": "SKU复用图片",
+          "value": ""
+        },
+        {
+          "label": "上传SKU独立图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        },
+        {
+          "label": "产品编码",
+          "value": "L1"
+        },
+        {
+          "label": "品牌",
+          "value": "YorRay"
+        },
+        {
+          "label": "产品系列 / 文创分类",
+          "value": "初学者系列"
+        },
+        {
+          "label": "介绍及材料说明",
+          "value": "材质：\n面板椴木，背板贴皮虎纹\n油漆工艺：\n普及油漆\n琴弦：\n爱丽丝704\n琴盒：\n三角绣标帆布琴盒\n外包装：\n彩盒包装"
+        },
+        {
+          "label": "价格说明",
+          "value": ""
+        },
+        {
+          "label": "内容图片 1（封面）",
+          "value": "/api/media/1757a532-c887-4563-93ae-aef2af1c7a06"
+        },
+        {
+          "label": "内容图片 2",
+          "value": "/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f"
+        },
+        {
+          "label": "内容图片 3",
+          "value": "/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/35196160-9f66-4087-b31b-f62fbf172b52/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/1757a532-c887-4563-93ae-aef2af1c7a06/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f/file"
+        },
+        {
+          "loaded": true,
+          "src": "/api/admin/media/99493b2d-1906-43c5-9665-2f6aabe80428/file"
+        }
+      ]
+    },
+    {
+      "name": "L301",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增乐器\":\n    - text: 新增乐器\n  - group \"内容类别\":\n    - button \"乐器\" [pressed]\n    - button \"文创\"\n    - button \"首页与企业\"\n    - button \"研学套餐\"\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - heading \"乐器\" [level=2]\n  - generic: 8 条记录\n  - region \"乐器列表，可横向滚动查看全部列\":\n    - table:\n      - rowgroup:\n        - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n          - columnheader \"封面\"\n          - columnheader \"名称 / 编码\"\n          - columnheader \"分类\"\n          - columnheader \"状态\"\n          - columnheader \"排序\"\n          - columnheader \"操作\"\n      - rowgroup:\n        - row \"L1普及小提琴 L1 提琴 已发布 0 维护 / 预览：L1普及小提琴 删除乐器：L1普及小提琴\":\n          - cell\n          - cell \"L1普及小提琴 L1\":\n            - strong: L1普及小提琴\n            - generic: L1\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"0\"\n          - cell \"维护 / 预览：L1普及小提琴 删除乐器：L1普及小提琴\":\n            - button \"维护 / 预览：L1普及小提琴\": 维护 / 预览\n            - button \"删除乐器：L1普及小提琴\" [disabled]: 删除\n        - row \"L2初学者实木小提琴 L2 提琴 已发布 0 维护 / 预览：L2初学者实木小提琴 删除乐器：L2初学者实木小提琴\":\n          - cell\n          - cell \"L2初学者实木小提琴 L2\":\n            - strong: L2初学者实木小提琴\n            - generic: L2\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"0\"\n          - cell \"维护 / 预览：L2初学者实木小提琴 删除乐器：L2初学者实木小提琴\":\n            - button \"维护 / 预览：L2初学者实木小提琴\": 维护 / 预览\n            - button \"删除乐器：L2初学者实木小提琴\" [disabled]: 删除\n        - row \"L301 L301 提琴 已发布 11 维护 / 预览：L301 删除乐器：L301\":\n          - cell\n          - cell \"L301 L301\":\n            - strong: L301\n            - generic: L301\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"11\"\n          - cell \"维护 / 预览：L301 删除乐器：L301\":\n            - button \"维护 / 预览：L301\": 维护 / 预览\n            - button \"删除乐器：L301\" [disabled]: 删除\n        - row \"L501 L501 提琴 已发布 12 维护 / 预览：L501 删除乐器：L501\":\n          - cell\n          - cell \"L501 L501\":\n            - strong: L501\n            - generic: L501\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"12\"\n          - cell \"维护 / 预览：L501 删除乐器：L501\":\n            - button \"维护 / 预览：L501\": 维护 / 预览\n            - button \"删除乐器：L501\" [disabled]: 删除\n        - row \"L701 L701 提琴 已发布 13 维护 / 预览：L701 删除乐器：L701\":\n          - cell\n          - cell \"L701 L701\":\n            - strong: L701\n            - generic: L701\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"13\"\n          - cell \"维护 / 预览：L701 删除乐器：L701\":\n            - button \"维护 / 预览：L701\": 维护 / 预览\n            - button \"删除乐器：L701\" [disabled]: 删除\n        - row \"L901 L901 提琴 已发布 14 维护 / 预览：L901 删除乐器：L901\":\n          - cell\n          - cell \"L901 L901\":\n            - strong: L901\n            - generic: L901\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"14\"\n          - cell \"维护 / 预览：L901 删除乐器：L901\":\n            - button \"维护 / 预览：L901\": 维护 / 预览\n            - button \"删除乐器：L901\" [disabled]: 删除\n        - row \"L1101 L1101 提琴 已发布 15 维护 / 预览：L1101 删除乐器：L1101\":\n          - cell\n          - cell \"L1101 L1101\":\n            - strong: L1101\n            - generic: L1101\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"15\"\n          - cell \"维护 / 预览：L1101 删除乐器：L1101\":\n            - button \"维护 / 预览：L1101\": 维护 / 预览\n            - button \"删除乐器：L1101\" [disabled]: 删除\n        - row \"L1201 L1201 提琴 已发布 16 维护 / 预览：L1201 删除乐器：L1201\":\n          - cell\n          - cell \"L1201 L1201\":\n            - strong: L1201\n            - generic: L1201\n          - cell \"提琴\"\n          - cell \"已发布\":\n            - generic: 已发布\n          - cell \"16\"\n          - cell \"维护 / 预览：L1201 删除乐器：L1201\":\n            - button \"维护 / 预览：L1201\": 维护 / 预览\n            - button \"删除乐器：L1201\" [disabled]: 删除\n  - dialog \"乐器 · 维护：L301\":\n    - heading \"乐器 · 维护\" [level=2]\n    - paragraph: L301\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\" [active]: L301\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\" [selected]\n      - option \"已下架\"\n    - generic: 排序\n    - spinbutton \"排序\": \"11\"\n    - generic: 乐器品类\n    - combobox \"乐器品类\":\n      - option \"提琴\" [selected]\n      - option \"吉他\"\n      - option \"尤克里里\"\n      - option \"口琴\"\n      - option \"其他\"\n    - generic: 价格展示\n    - combobox \"价格展示\":\n      - option \"咨询报价\" [selected]\n      - option \"参考价格\"\n    - region \"产品规格管理\":\n      - heading \"规格管理\" [level=3]\n      - paragraph: 一次维护产品，按需设置规格差异。\n      - group \"规格模式\":\n        - button \"单规格\"\n        - button \"多规格\" [pressed]\n      - textbox \"维度1名称\":\n        - /placeholder: 例如：尺寸\n        - text: 尺寸\n      - button \"上移维度1\" [disabled]: ↑\n      - button \"下移维度1\" [disabled]: ↓\n      - button \"删除维度：尺寸\": 删除维度\n      - textbox \"尺寸值1\":\n        - /placeholder: 规格值\n        - text: 4/4\n      - button \"上移尺寸值1\" [disabled]: ↑\n      - button \"下移尺寸值1\": ↓\n      - button \"删除尺寸值1\": 删除\n      - textbox \"尺寸值2\":\n        - /placeholder: 规格值\n        - text: 3/4\n      - button \"上移尺寸值2\": ↑\n      - button \"下移尺寸值2\": ↓\n      - button \"删除尺寸值2\": 删除\n      - textbox \"尺寸值3\":\n        - /placeholder: 规格值\n        - text: 1/2\n      - button \"上移尺寸值3\": ↑\n      - button \"下移尺寸值3\": ↓\n      - button \"删除尺寸值3\": 删除\n      - textbox \"尺寸值4\":\n        - /placeholder: 规格值\n        - text: 1/4\n      - button \"上移尺寸值4\": ↑\n      - button \"下移尺寸值4\": ↓\n      - button \"删除尺寸值4\": 删除\n      - textbox \"尺寸值5\":\n        - /placeholder: 规格值\n        - text: 1/8\n      - button \"上移尺寸值5\": ↑\n      - button \"下移尺寸值5\" [disabled]: ↓\n      - button \"删除尺寸值5\": 删除\n      - button \"＋ 添加尺寸值\"\n      - button \"＋ 添加规格维度\"\n      - generic: 预计组合：5 项\n      - button \"更新组合\"\n      - heading \"SKU组合 5 项\" [level=4]:\n        - text: SKU组合\n        - generic: 5 项\n      - generic: 留空参考价继承产品；0为有效参考价。\n      - table:\n        - rowgroup:\n          - row \"选择全部SKU 规格组合 SKU编码 参考价 图片 状态\":\n            - columnheader \"选择全部SKU\":\n              - checkbox \"选择全部SKU\"\n            - columnheader \"规格组合\"\n            - columnheader \"SKU编码\"\n            - columnheader \"参考价\"\n            - columnheader \"图片\"\n            - columnheader \"状态\"\n        - rowgroup:\n          - row \"选择SKU 1 4/4 MIG-c1284566545791e62b7a9f10 管理SKU 1 图片 SKU 1 启用 启用\":\n            - cell \"选择SKU 1\":\n              - checkbox \"选择SKU 1\"\n            - cell \"4/4\":\n              - strong: 4/4\n            - cell \"MIG-c1284566545791e62b7a9f10\":\n              - textbox \"SKU 1 编码\": MIG-c1284566545791e62b7a9f10\n            - cell:\n              - spinbutton \"SKU 1 参考价\"\n            - cell \"管理SKU 1 图片\":\n              - button \"管理SKU 1 图片\": 产品图库（继承）\n            - cell \"SKU 1 启用 启用\":\n              - checkbox \"SKU 1 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 2 3/4 MIG-c42df10ae8c709930a0538cb 管理SKU 2 图片 SKU 2 启用 启用\":\n            - cell \"选择SKU 2\":\n              - checkbox \"选择SKU 2\"\n            - cell \"3/4\":\n              - strong: 3/4\n            - cell \"MIG-c42df10ae8c709930a0538cb\":\n              - textbox \"SKU 2 编码\": MIG-c42df10ae8c709930a0538cb\n            - cell:\n              - spinbutton \"SKU 2 参考价\"\n            - cell \"管理SKU 2 图片\":\n              - button \"管理SKU 2 图片\": 产品图库（继承）\n            - cell \"SKU 2 启用 启用\":\n              - checkbox \"SKU 2 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 3 1/2 MIG-589855ddb080a860639ae2d0 管理SKU 3 图片 SKU 3 启用 启用\":\n            - cell \"选择SKU 3\":\n              - checkbox \"选择SKU 3\"\n            - cell \"1/2\":\n              - strong: 1/2\n            - cell \"MIG-589855ddb080a860639ae2d0\":\n              - textbox \"SKU 3 编码\": MIG-589855ddb080a860639ae2d0\n            - cell:\n              - spinbutton \"SKU 3 参考价\"\n            - cell \"管理SKU 3 图片\":\n              - button \"管理SKU 3 图片\": 产品图库（继承）\n            - cell \"SKU 3 启用 启用\":\n              - checkbox \"SKU 3 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 4 1/4 MIG-556cbff56c273d1a2f6cc0c2 管理SKU 4 图片 SKU 4 启用 启用\":\n            - cell \"选择SKU 4\":\n              - checkbox \"选择SKU 4\"\n            - cell \"1/4\":\n              - strong: 1/4\n            - cell \"MIG-556cbff56c273d1a2f6cc0c2\":\n              - textbox \"SKU 4 编码\": MIG-556cbff56c273d1a2f6cc0c2\n            - cell:\n              - spinbutton \"SKU 4 参考价\"\n            - cell \"管理SKU 4 图片\":\n              - button \"管理SKU 4 图片\": 产品图库（继承）\n            - cell \"SKU 4 启用 启用\":\n              - checkbox \"SKU 4 启用\" [checked]\n              - generic: 启用\n          - row \"选择SKU 5 1/8 MIG-2e23c4ef658b72544f07ee5b 管理SKU 5 图片 SKU 5 启用 启用\":\n            - cell \"选择SKU 5\":\n              - checkbox \"选择SKU 5\"\n            - cell \"1/8\":\n              - strong: 1/8\n            - cell \"MIG-2e23c4ef658b72544f07ee5b\":\n              - textbox \"SKU 5 编码\": MIG-2e23c4ef658b72544f07ee5b\n            - cell:\n              - spinbutton \"SKU 5 参考价\"\n            - cell \"管理SKU 5 图片\":\n              - button \"管理SKU 5 图片\": 产品图库（继承）\n            - cell \"SKU 5 启用 启用\":\n              - checkbox \"SKU 5 启用\" [checked]\n              - generic: 启用\n    - generic: 产品编码\n    - textbox \"产品编码\": L301\n    - generic: 品牌\n    - textbox \"品牌\": YorRay\n    - generic: 产品系列 / 文创分类\n    - textbox \"产品系列 / 文创分类\": 实木\n    - generic: 介绍及材料说明\n    - textbox \"介绍及材料说明\": 实木普级 · 虎纹 面板 / 背板：云杉 · 枫木（虎纹头筋工艺虎纹） 配件：乌木 + 碳纤维拉板 琴弦 / 马桥：普级琴弦 · 普级马桥 琴弓 / 琴盒：乌木鱼眼琴弓 · 方盒带绣标 配套：含实木肩托、弱音器\n    - generic: 价格说明\n    - textbox \"价格说明\"\n    - group \"内容图片\":\n      - generic: 内容图片\n      - generic: 可直接上传新图片，也可复用素材库；第一张作为封面。\n      - combobox \"内容图片 1（封面）\":\n        - option \"hero-violin.jpg\" [selected]\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除内容图片 1\": 移除\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - region \"产品图库预览\":\n      - heading \"产品图库 · 1张\" [level=3]\n      - paragraph: 第一张为封面。点击图片可查看原图；未设置独立图片的SKU使用此图库。\n      - figure \"1 · 封面\":\n        - link \"查看产品图片 1原图（新窗口）\":\n          - /url: /api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file\n          - img \"产品图片 1（封面）\"\n        - generic: 1 · 封面\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "L301"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "11"
+        },
+        {
+          "label": "乐器品类\n提琴\n吉他\n尤克里里\n口琴\n其他",
+          "value": "violin"
+        },
+        {
+          "label": "价格展示\n咨询报价\n参考价格",
+          "value": "inquiry"
+        },
+        {
+          "label": "维度1名称",
+          "value": "尺寸"
+        },
+        {
+          "label": "尺寸值1",
+          "value": "4/4"
+        },
+        {
+          "label": "尺寸值2",
+          "value": "3/4"
+        },
+        {
+          "label": "尺寸值3",
+          "value": "1/2"
+        },
+        {
+          "label": "尺寸值4",
+          "value": "1/4"
+        },
+        {
+          "label": "尺寸值5",
+          "value": "1/8"
+        },
+        {
+          "label": "选择全部SKU",
+          "value": false
+        },
+        {
+          "label": "选择SKU 1",
+          "value": false
+        },
+        {
+          "label": "SKU 1 编码",
+          "value": "MIG-c1284566545791e62b7a9f10"
+        },
+        {
+          "label": "SKU 1 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 1 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 2",
+          "value": false
+        },
+        {
+          "label": "SKU 2 编码",
+          "value": "MIG-c42df10ae8c709930a0538cb"
+        },
+        {
+          "label": "SKU 2 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 2 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 3",
+          "value": false
+        },
+        {
+          "label": "SKU 3 编码",
+          "value": "MIG-589855ddb080a860639ae2d0"
+        },
+        {
+          "label": "SKU 3 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 3 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 4",
+          "value": false
+        },
+        {
+          "label": "SKU 4 编码",
+          "value": "MIG-556cbff56c273d1a2f6cc0c2"
+        },
+        {
+          "label": "SKU 4 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 4 启用",
+          "value": true
+        },
+        {
+          "label": "选择SKU 5",
+          "value": false
+        },
+        {
+          "label": "SKU 5 编码",
+          "value": "MIG-2e23c4ef658b72544f07ee5b"
+        },
+        {
+          "label": "SKU 5 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 5 启用",
+          "value": true
+        },
+        {
+          "label": "产品编码",
+          "value": "L301"
+        },
+        {
+          "label": "品牌",
+          "value": "YorRay"
+        },
+        {
+          "label": "产品系列 / 文创分类",
+          "value": "实木"
+        },
+        {
+          "label": "介绍及材料说明",
+          "value": "实木普级 · 虎纹\n面板 / 背板：云杉 · 枫木（虎纹头筋工艺虎纹）\n配件：乌木 + 碳纤维拉板\n琴弦 / 马桥：普级琴弦 · 普级马桥\n琴弓 / 琴盒：乌木鱼眼琴弓 · 方盒带绣标\n配套：含实木肩托、弱音器"
+        },
+        {
+          "label": "价格说明",
+          "value": ""
+        },
+        {
+          "label": "内容图片 1（封面）",
+          "value": "/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/5adb7593-369e-47eb-b429-e968b21763e0/file"
+        }
+      ]
+    },
+    {
+      "name": "地图冰箱贴",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增文创\":\n    - text: 新增文创\n  - group \"内容类别\":\n    - button \"乐器\"\n    - button \"文创\" [pressed]\n    - button \"首页与企业\"\n    - button \"研学套餐\"\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - table:\n    - rowgroup:\n      - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n        - columnheader \"封面\"\n        - columnheader \"名称 / 编码\"\n        - columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"排序\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"地图冰箱贴 WC-001 文创 已发布 30 维护 / 预览 删除文创：地图冰箱贴\":\n        - cell\n        - cell \"地图冰箱贴 WC-001\":\n          - text: 地图冰箱贴\n          - generic: WC-001\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"30\"\n        - cell \"维护 / 预览 删除文创：地图冰箱贴\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：地图冰箱贴\" [disabled]: 删除\n      - row \"古镇冰箱贴 WC-002 文创 已发布 31 维护 / 预览 删除文创：古镇冰箱贴\":\n        - cell\n        - cell \"古镇冰箱贴 WC-002\":\n          - text: 古镇冰箱贴\n          - generic: WC-002\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"31\"\n        - cell \"维护 / 预览 删除文创：古镇冰箱贴\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：古镇冰箱贴\" [disabled]: 删除\n      - row \"音乐冰箱贴 WC-003 文创 已发布 32 维护 / 预览 删除文创：音乐冰箱贴\":\n        - cell\n        - cell \"音乐冰箱贴 WC-003\":\n          - text: 音乐冰箱贴\n          - generic: WC-003\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"32\"\n        - cell \"维护 / 预览 删除文创：音乐冰箱贴\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：音乐冰箱贴\" [disabled]: 删除\n      - row \"亚克力拼图冰箱贴 WC-004 文创 已发布 33 维护 / 预览 删除文创：亚克力拼图冰箱贴\":\n        - cell\n        - cell \"亚克力拼图冰箱贴 WC-004\":\n          - text: 亚克力拼图冰箱贴\n          - generic: WC-004\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"33\"\n        - cell \"维护 / 预览 删除文创：亚克力拼图冰箱贴\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：亚克力拼图冰箱贴\" [disabled]: 删除\n      - row \"纪念币 WC-005 文创 已发布 34 维护 / 预览 删除文创：纪念币\":\n        - cell\n        - cell \"纪念币 WC-005\":\n          - text: 纪念币\n          - generic: WC-005\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"34\"\n        - cell \"维护 / 预览 删除文创：纪念币\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：纪念币\" [disabled]: 删除\n      - row \"金属直尺 WC-006 文创 已发布 35 维护 / 预览 删除文创：金属直尺\":\n        - cell\n        - cell \"金属直尺 WC-006\":\n          - text: 金属直尺\n          - generic: WC-006\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"35\"\n        - cell \"维护 / 预览 删除文创：金属直尺\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：金属直尺\" [disabled]: 删除\n      - row \"提琴书签 WC-007 文创 已发布 36 维护 / 预览 删除文创：提琴书签\":\n        - cell\n        - cell \"提琴书签 WC-007\":\n          - text: 提琴书签\n          - generic: WC-007\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"36\"\n        - cell \"维护 / 预览 删除文创：提琴书签\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：提琴书签\" [disabled]: 删除\n      - row \"手机支架 WC-008 文创 已发布 37 维护 / 预览 删除文创：手机支架\":\n        - cell\n        - cell \"手机支架 WC-008\":\n          - text: 手机支架\n          - generic: WC-008\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"37\"\n        - cell \"维护 / 预览 删除文创：手机支架\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：手机支架\" [disabled]: 删除\n      - row \"帆布包 WC-009 文创 已发布 38 维护 / 预览 删除文创：帆布包\":\n        - cell\n        - cell \"帆布包 WC-009\":\n          - text: 帆布包\n          - generic: WC-009\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"38\"\n        - cell \"维护 / 预览 删除文创：帆布包\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：帆布包\" [disabled]: 删除\n      - row \"紫色提琴玩偶 WC-010 文创 已发布 39 维护 / 预览 删除文创：紫色提琴玩偶\":\n        - cell\n        - cell \"紫色提琴玩偶 WC-010\":\n          - text: 紫色提琴玩偶\n          - generic: WC-010\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"39\"\n        - cell \"维护 / 预览 删除文创：紫色提琴玩偶\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：紫色提琴玩偶\" [disabled]: 删除\n      - row \"琵琶玩偶 WC-011 文创 已发布 40 维护 / 预览 删除文创：琵琶玩偶\":\n        - cell\n        - cell \"琵琶玩偶 WC-011\":\n          - text: 琵琶玩偶\n          - generic: WC-011\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"40\"\n        - cell \"维护 / 预览 删除文创：琵琶玩偶\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：琵琶玩偶\" [disabled]: 删除\n      - row \"尤克里里玩偶 WC-012 文创 已发布 41 维护 / 预览 删除文创：尤克里里玩偶\":\n        - cell\n        - cell \"尤克里里玩偶 WC-012\":\n          - text: 尤克里里玩偶\n          - generic: WC-012\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"41\"\n        - cell \"维护 / 预览 删除文创：尤克里里玩偶\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：尤克里里玩偶\" [disabled]: 删除\n      - row \"棕色小提琴玩偶 WC-013 文创 已发布 42 维护 / 预览 删除文创：棕色小提琴玩偶\":\n        - cell\n        - cell \"棕色小提琴玩偶 WC-013\":\n          - text: 棕色小提琴玩偶\n          - generic: WC-013\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"42\"\n        - cell \"维护 / 预览 删除文创：棕色小提琴玩偶\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：棕色小提琴玩偶\" [disabled]: 删除\n      - row \"迷你乐器 WC-014 文创 已发布 43 维护 / 预览 删除文创：迷你乐器\":\n        - cell\n        - cell \"迷你乐器 WC-014\":\n          - text: 迷你乐器\n          - generic: WC-014\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"43\"\n        - cell \"维护 / 预览 删除文创：迷你乐器\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：迷你乐器\" [disabled]: 删除\n      - row \"提琴包挂 WC-015 文创 已发布 44 维护 / 预览 删除文创：提琴包挂\":\n        - cell\n        - cell \"提琴包挂 WC-015\":\n          - text: 提琴包挂\n          - generic: WC-015\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"44\"\n        - cell \"维护 / 预览 删除文创：提琴包挂\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：提琴包挂\" [disabled]: 删除\n      - row \"榉木笔筒夜灯 WC-016 文创 已发布 45 维护 / 预览 删除文创：榉木笔筒夜灯\":\n        - cell\n        - cell \"榉木笔筒夜灯 WC-016\":\n          - text: 榉木笔筒夜灯\n          - generic: WC-016\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"45\"\n        - cell \"维护 / 预览 删除文创：榉木笔筒夜灯\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：榉木笔筒夜灯\" [disabled]: 删除\n      - row \"文创礼盒 WC-017 文创 已发布 46 维护 / 预览 删除文创：文创礼盒\":\n        - cell\n        - cell \"文创礼盒 WC-017\":\n          - text: 文创礼盒\n          - generic: WC-017\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"46\"\n        - cell \"维护 / 预览 删除文创：文创礼盒\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：文创礼盒\" [disabled]: 删除\n      - row \"1/64 木盒 WC-018 文创 已发布 47 维护 / 预览 删除文创：1/64 木盒\":\n        - cell\n        - cell \"1/64 木盒 WC-018\":\n          - text: 1/64 木盒\n          - generic: WC-018\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"47\"\n        - cell \"维护 / 预览 删除文创：1/64 木盒\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：1/64 木盒\" [disabled]: 删除\n      - row \"1/64 纸盒 WC-019 文创 已发布 48 维护 / 预览 删除文创：1/64 纸盒\":\n        - cell\n        - cell \"1/64 纸盒 WC-019\":\n          - text: 1/64 纸盒\n          - generic: WC-019\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"48\"\n        - cell \"维护 / 预览 删除文创：1/64 纸盒\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：1/64 纸盒\" [disabled]: 删除\n      - row \"小提琴紫砂壶 WC-020 文创 已发布 49 维护 / 预览 删除文创：小提琴紫砂壶\":\n        - cell\n        - cell \"小提琴紫砂壶 WC-020\":\n          - text: 小提琴紫砂壶\n          - generic: WC-020\n        - cell \"文创\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"49\"\n        - cell \"维护 / 预览 删除文创：小提琴紫砂壶\":\n          - button \"维护 / 预览\"\n          - button \"删除文创：小提琴紫砂壶\" [disabled]: 删除\n  - dialog \"文创 · 维护：地图冰箱贴\":\n    - heading \"文创 · 维护\" [level=2]\n    - paragraph: 地图冰箱贴\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\" [active]: 地图冰箱贴\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\" [selected]\n      - option \"已下架\"\n    - generic: 排序\n    - spinbutton \"排序\": \"30\"\n    - generic: 产品类型\n    - combobox \"产品类型\" [disabled]:\n      - option \"文创\" [selected]\n    - generic: 价格展示\n    - combobox \"价格展示\":\n      - option \"咨询报价\"\n      - option \"参考价格\" [selected]\n    - generic: 参考价（元）\n    - spinbutton \"参考价（元）\": \"24\"\n    - region \"产品规格管理\":\n      - heading \"规格管理\" [level=3]\n      - paragraph: 一次维护产品，按需设置规格差异。\n      - group \"规格模式\":\n        - button \"单规格\" [pressed]\n        - button \"多规格\"\n      - heading \"单规格资料 1 项\" [level=4]:\n        - text: 单规格资料\n        - generic: 1 项\n      - generic: 留空参考价继承产品；0为有效参考价。\n      - generic: SKU编码\n      - textbox \"SKU 1 编码\": MIG-732f1c6a28c206c538324836\n      - generic: 参考价（留空继承产品）\n      - spinbutton \"SKU 1 参考价\"\n      - button \"管理SKU 1 图片\": 产品图库（继承）\n      - checkbox \"SKU 1 启用\" [checked] [disabled]\n      - generic: 启用\n      - generic: 单规格须保持启用\n    - generic: 产品编码\n    - textbox \"产品编码\": WC-001\n    - generic: 品牌\n    - textbox \"品牌\"\n    - generic: 产品系列 / 文创分类\n    - textbox \"产品系列 / 文创分类\": 琴城印记\n    - generic: 介绍及材料说明\n    - textbox \"介绍及材料说明\": 琴城印记\n    - generic: 价格说明\n    - textbox \"价格说明\": 参考价格，具体规格与报价请咨询工作人员\n    - group \"内容图片\":\n      - generic: 内容图片\n      - generic: 可直接上传新图片，也可复用素材库；第一张作为封面。\n      - combobox \"内容图片 1（封面）\":\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\" [selected]\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除内容图片 1\": 移除\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - region \"产品图库预览\":\n      - heading \"产品图库 · 1张\" [level=3]\n      - paragraph: 第一张为封面。点击图片可查看原图；未设置独立图片的SKU使用此图库。\n      - figure \"1 · 封面\":\n        - link \"查看产品图片 1原图（新窗口）\":\n          - /url: /api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file\n          - img \"产品图片 1（封面）\"\n        - generic: 1 · 封面\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "地图冰箱贴"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "30"
+        },
+        {
+          "label": "产品类型\n文创",
+          "value": "gift"
+        },
+        {
+          "label": "价格展示\n咨询报价\n参考价格",
+          "value": "reference"
+        },
+        {
+          "label": "参考价（元）",
+          "value": "24"
+        },
+        {
+          "label": "SKU 1 编码",
+          "value": "MIG-732f1c6a28c206c538324836"
+        },
+        {
+          "label": "SKU 1 参考价",
+          "value": ""
+        },
+        {
+          "label": "SKU 1 启用",
+          "value": true
+        },
+        {
+          "label": "产品编码",
+          "value": "WC-001"
+        },
+        {
+          "label": "品牌",
+          "value": ""
+        },
+        {
+          "label": "产品系列 / 文创分类",
+          "value": "琴城印记"
+        },
+        {
+          "label": "介绍及材料说明",
+          "value": "琴城印记"
+        },
+        {
+          "label": "价格说明",
+          "value": "参考价格，具体规格与报价请咨询工作人员"
+        },
+        {
+          "label": "内容图片 1（封面）",
+          "value": "/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        }
+      ]
+    },
+    {
+      "name": "site",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增首页与企业\" [disabled]:\n    - text: 新增首页与企业\n  - group \"内容类别\":\n    - button \"乐器\"\n    - button \"文创\"\n    - button \"首页与企业\" [pressed]\n    - button \"研学套餐\"\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - table:\n    - rowgroup:\n      - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n        - columnheader \"封面\"\n        - columnheader \"名称 / 编码\"\n        - columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"排序\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"黄桥乐器文化产业园 site — 已发布 0 维护 / 预览\":\n        - cell\n        - cell \"黄桥乐器文化产业园 site\":\n          - text: 黄桥乐器文化产业园\n          - generic: site\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"0\"\n        - cell \"维护 / 预览\":\n          - button \"维护 / 预览\" [active]\n  - dialog \"首页与企业 · 维护\":\n    - heading \"首页与企业 · 维护\" [level=2]\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\": 黄桥乐器文化产业园\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\" [selected]\n      - option \"已下架\"\n    - generic: 排序\n    - spinbutton \"排序\": \"0\"\n    - generic: 首屏主标题\n    - textbox \"首屏主标题\": 一把琴的旅程\n    - generic: 首屏第二行\n    - textbox \"首屏第二行\": 从这里出发\n    - generic: 企业介绍\n    - textbox \"企业介绍\": 江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。\n    - generic: 公告\n    - textbox \"公告\"\n    - generic: 已审核服务电话\n    - textbox \"已审核服务电话\"\n    - generic: 已审核地址\n    - textbox \"已审核地址\"\n    - generic: 隐私说明\n    - textbox \"隐私说明\": 浏览公开内容无需登录。提交预约或咨询时，我们保存联系人、联系电话、意向日期、参加人数及必要说明，用于处理您的申请和咨询。请仅填写办理服务所需的信息。如需查询、更正或删除已提交资料，请联系工作人员。\n    - generic: 服务说明\n    - textbox \"服务说明\": 预约申请经工作人员人工确认后生效。乐器和文创提供产品展示与咨询，具体费用和服务安排请与工作人员联系确认。\n    - checkbox \"开放预约申请\" [checked]\n    - text: 开放预约申请\n    - group \"内容图片\":\n      - generic: 内容图片\n      - generic: 可直接上传新图片，也可复用素材库；第一张作为封面。\n      - combobox:\n        - option \"当前图片（未在素材库中，请上传或选择替换）\" [selected]\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除\"\n      - combobox:\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\" [selected]\n      - button \"移除\"\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - img \"封面预览\"\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "黄桥乐器文化产业园"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "0"
+        },
+        {
+          "label": "首屏主标题",
+          "value": "一把琴的旅程"
+        },
+        {
+          "label": "首屏第二行",
+          "value": "从这里出发"
+        },
+        {
+          "label": "企业介绍",
+          "value": "江苏黄桥乐器文化产业园投资发展有限公司，深耕提琴制造与乐器文化产业，建设集乐器博览、工业研学、文创开发、提琴产销与艺术教学于一体的文化产业园区。从一块云杉到一把成琴，从城市客厅到智能工坊，在这里读懂一把琴的诞生，也把黄桥的琴音带回家。"
+        },
+        {
+          "label": "公告",
+          "value": ""
+        },
+        {
+          "label": "已审核服务电话",
+          "value": ""
+        },
+        {
+          "label": "已审核地址",
+          "value": ""
+        },
+        {
+          "label": "隐私说明",
+          "value": "浏览公开内容无需登录。提交预约或咨询时，我们保存联系人、联系电话、意向日期、参加人数及必要说明，用于处理您的申请和咨询。请仅填写办理服务所需的信息。如需查询、更正或删除已提交资料，请联系工作人员。"
+        },
+        {
+          "label": "服务说明",
+          "value": "预约申请经工作人员人工确认后生效。乐器和文创提供产品展示与咨询，具体费用和服务安排请与工作人员联系确认。"
+        },
+        {
+          "label": "开放预约申请",
+          "value": true
+        },
+        {
+          "label": "",
+          "value": "/assets/yorray-logo-CFmraOUS.png"
+        },
+        {
+          "label": "",
+          "value": "/api/media/32bc298a-54b2-422b-9f54-533c39cebc05"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/assets/yorray-logo-CFmraOUS.png"
+        }
+      ]
+    },
+    {
+      "name": "琴韵初体验-保留",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增研学套餐\":\n    - text: 新增研学套餐\n  - group \"内容类别\":\n    - button \"乐器\"\n    - button \"文创\"\n    - button \"首页与企业\"\n    - button \"研学套餐\" [pressed]\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - table:\n    - rowgroup:\n      - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n        - columnheader \"封面\"\n        - columnheader \"名称 / 编码\"\n        - columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"排序\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"琴韵初体验 0001 — 已发布 0 维护 / 预览 删除研学套餐：琴韵初体验\":\n        - cell\n        - cell \"琴韵初体验 0001\":\n          - text: 琴韵初体验\n          - generic: \"0001\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：琴韵初体验\":\n          - button \"维护 / 预览\" [active]\n          - button \"删除研学套餐：琴韵初体验\" [disabled]: 删除\n      - row \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3 — 已下架 0 维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n        - cell\n        - cell \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3\":\n          - text: 研学界面验证样例（未发布）\n          - generic: 7bdebda8-753d-4d33-a9a2-53f971f06dc3\n        - cell \"—\"\n        - cell \"已下架\":\n          - generic: 已下架\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：研学界面验证样例（未发布）\": 删除\n      - row \"提琴匠心深度游 02 — 已发布 61 维护 / 预览 删除研学套餐：提琴匠心深度游\":\n        - cell\n        - cell \"提琴匠心深度游 02\":\n          - text: 提琴匠心深度游\n          - generic: \"02\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"61\"\n        - cell \"维护 / 预览 删除研学套餐：提琴匠心深度游\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：提琴匠心深度游\" [disabled]: 删除\n      - row \"制琴工坊探秘 03 — 已发布 62 维护 / 预览 删除研学套餐：制琴工坊探秘\":\n        - cell\n        - cell \"制琴工坊探秘 03\":\n          - text: 制琴工坊探秘\n          - generic: \"03\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"62\"\n        - cell \"维护 / 预览 删除研学套餐：制琴工坊探秘\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：制琴工坊探秘\" [disabled]: 删除\n      - row \"提琴文化艺术营 04 — 已发布 63 维护 / 预览 删除研学套餐：提琴文化艺术营\":\n        - cell\n        - cell \"提琴文化艺术营 04\":\n          - text: 提琴文化艺术营\n          - generic: \"04\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"63\"\n        - cell \"维护 / 预览 删除研学套餐：提琴文化艺术营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：提琴文化艺术营\" [disabled]: 删除\n      - row \"小小制琴师·工序体验营 05 — 已发布 64 维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n        - cell\n        - cell \"小小制琴师·工序体验营 05\":\n          - text: 小小制琴师·工序体验营\n          - generic: \"05\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"64\"\n        - cell \"维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：小小制琴师·工序体验营\" [disabled]: 删除",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "琴韵初体验"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "0"
+        },
+        {
+          "label": "套餐编码",
+          "value": "0001"
+        },
+        {
+          "label": "套餐介绍（每行一项）\n每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。",
+          "value": "城市客厅：数字沙盘 •乐器博览馆 •路演厅•古琴馆\n尤克里里组装彩绘：白胚一彩绘—试音，约60分钟\n 含白胚、颜料、琴包、调音器，作品可带走"
+        },
+        {
+          "label": "适合年龄说明",
+          "value": "6岁以上"
+        },
+        {
+          "label": "时长说明",
+          "value": "3小时"
+        },
+        {
+          "label": "亲子参考价（元 / 组）",
+          "value": "118"
+        },
+        {
+          "label": "单人参考价（元 / 张）",
+          "value": "88"
+        },
+        {
+          "label": "首页推荐",
+          "value": true
+        },
+        {
+          "label": "",
+          "value": "/api/media/f91fd528-6d29-45e1-badd-1e61a86555d8"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/f91fd528-6d29-45e1-badd-1e61a86555d8/file"
+        }
+      ]
+    },
+    {
+      "name": "研学下架样例",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增研学套餐\":\n    - text: 新增研学套餐\n  - group \"内容类别\":\n    - button \"乐器\"\n    - button \"文创\"\n    - button \"首页与企业\"\n    - button \"研学套餐\" [pressed]\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - table:\n    - rowgroup:\n      - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n        - columnheader \"封面\"\n        - columnheader \"名称 / 编码\"\n        - columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"排序\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"琴韵初体验 0001 — 已发布 0 维护 / 预览 删除研学套餐：琴韵初体验\":\n        - cell\n        - cell \"琴韵初体验 0001\":\n          - text: 琴韵初体验\n          - generic: \"0001\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：琴韵初体验\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：琴韵初体验\" [disabled]: 删除\n      - row \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3 — 已下架 0 维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n        - cell\n        - cell \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3\":\n          - text: 研学界面验证样例（未发布）\n          - generic: 7bdebda8-753d-4d33-a9a2-53f971f06dc3\n        - cell \"—\"\n        - cell \"已下架\":\n          - generic: 已下架\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n          - button \"维护 / 预览\" [active]\n          - button \"删除研学套餐：研学界面验证样例（未发布）\": 删除\n      - row \"提琴匠心深度游 02 — 已发布 61 维护 / 预览 删除研学套餐：提琴匠心深度游\":\n        - cell\n        - cell \"提琴匠心深度游 02\":\n          - text: 提琴匠心深度游\n          - generic: \"02\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"61\"\n        - cell \"维护 / 预览 删除研学套餐：提琴匠心深度游\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：提琴匠心深度游\" [disabled]: 删除\n      - row \"制琴工坊探秘 03 — 已发布 62 维护 / 预览 删除研学套餐：制琴工坊探秘\":\n        - cell\n        - cell \"制琴工坊探秘 03\":\n          - text: 制琴工坊探秘\n          - generic: \"03\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"62\"\n        - cell \"维护 / 预览 删除研学套餐：制琴工坊探秘\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：制琴工坊探秘\" [disabled]: 删除\n      - row \"提琴文化艺术营 04 — 已发布 63 维护 / 预览 删除研学套餐：提琴文化艺术营\":\n        - cell\n        - cell \"提琴文化艺术营 04\":\n          - text: 提琴文化艺术营\n          - generic: \"04\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"63\"\n        - cell \"维护 / 预览 删除研学套餐：提琴文化艺术营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：提琴文化艺术营\" [disabled]: 删除\n      - row \"小小制琴师·工序体验营 05 — 已发布 64 维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n        - cell\n        - cell \"小小制琴师·工序体验营 05\":\n          - text: 小小制琴师·工序体验营\n          - generic: \"05\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"64\"\n        - cell \"维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：小小制琴师·工序体验营\" [disabled]: 删除\n  - dialog \"研学套餐 · 维护\":\n    - heading \"研学套餐 · 维护\" [level=2]\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\": 研学界面验证样例（未发布）\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\"\n      - option \"已下架\" [selected]\n    - generic: 排序\n    - spinbutton \"排序\": \"0\"\n    - generic: 套餐编码\n    - textbox \"套餐编码\"\n    - generic: 套餐介绍（每行一项）\n    - textbox \"套餐介绍（每行一项） 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。\": 第一项：轮播与分项介绍验证 第二项：换行保存验证\n    - generic: 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。\n    - generic: 适合年龄说明\n    - textbox \"适合年龄说明\"\n    - generic: 时长说明\n    - textbox \"时长说明\"\n    - generic: 亲子参考价（元 / 组）\n    - spinbutton \"亲子参考价（元 / 组）\"\n    - generic: 单人参考价（元 / 张）\n    - spinbutton \"单人参考价（元 / 张）\"\n    - checkbox \"首页推荐\"\n    - text: 首页推荐\n    - paragraph: 票型对象、优惠及作品数量待公司核定；此处维护参考信息，不自动计算预约费用。\n    - group \"套餐轮播图片\":\n      - generic: 套餐轮播图片\n      - generic: 最多12张，可逐张上传或复用素材库；按下方顺序轮播，第一张作为封面。前台以4∶3显示，原图保留。\n      - combobox:\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\" [selected]\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除\"\n      - combobox:\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\"\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\" [selected]\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除\"\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - img \"封面预览\"\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "研学界面验证样例（未发布）"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "archived"
+        },
+        {
+          "label": "排序",
+          "value": "0"
+        },
+        {
+          "label": "套餐编码",
+          "value": ""
+        },
+        {
+          "label": "套餐介绍（每行一项）\n每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。",
+          "value": "第一项：轮播与分项介绍验证\n第二项：换行保存验证"
+        },
+        {
+          "label": "适合年龄说明",
+          "value": ""
+        },
+        {
+          "label": "时长说明",
+          "value": ""
+        },
+        {
+          "label": "亲子参考价（元 / 组）",
+          "value": ""
+        },
+        {
+          "label": "单人参考价（元 / 张）",
+          "value": ""
+        },
+        {
+          "label": "首页推荐",
+          "value": false
+        },
+        {
+          "label": "",
+          "value": "/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        },
+        {
+          "label": "",
+          "value": "/api/media/f953afa4-bd2b-51c1-9b1d-ac3a7693d69e"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/31586cf2-2922-44f0-af53-0b9220cf1f81/file"
+        }
+      ]
+    },
+    {
+      "name": "提琴匠心深度游",
+      "snapshot": "- complementary:\n  - img \"YorRay\"\n  - paragraph: 黄桥乐器文化产业园\n  - generic: 内容运营与接待管理\n  - navigation \"后台导航\":\n    - button \"工作台\":\n      - generic: 工作台\n    - button \"内容维护\":\n      - generic: 内容维护\n    - button \"场次管理\":\n      - generic: 场次管理\n    - button \"研学预约\":\n      - generic: 研学预约\n    - button \"咨询管理\":\n      - generic: 咨询管理\n    - button \"素材库\":\n      - generic: 素材库\n    - button \"账号权限\":\n      - generic: 账号权限\n    - button \"操作记录\":\n      - generic: 操作记录\n  - generic: YorRay · 园区管理后台\n- banner:\n  - generic: 内容运营 / 内容维护\n  - button \"hqadmin\":\n    - generic: H\n    - generic: hqadmin\n- main:\n  - heading \"内容维护\" [level=1]\n  - paragraph: 管理小程序中的乐器、文创、研学和教学内容\n  - button \"新增研学套餐\":\n    - text: 新增研学套餐\n  - group \"内容类别\":\n    - button \"乐器\"\n    - button \"文创\"\n    - button \"首页与企业\"\n    - button \"研学套餐\" [pressed]\n    - button \"教学内容\"\n    - button \"点位导览\"\n  - textbox \"搜索内容\":\n    - /placeholder: 检索名称、编码或系列\n  - button \"刷新内容列表\":\n    - generic: 刷新\n  - table:\n    - rowgroup:\n      - row \"封面 名称 / 编码 分类 状态 排序 操作\":\n        - columnheader \"封面\"\n        - columnheader \"名称 / 编码\"\n        - columnheader \"分类\"\n        - columnheader \"状态\"\n        - columnheader \"排序\"\n        - columnheader \"操作\"\n    - rowgroup:\n      - row \"琴韵初体验 0001 — 已发布 0 维护 / 预览 删除研学套餐：琴韵初体验\":\n        - cell\n        - cell \"琴韵初体验 0001\":\n          - text: 琴韵初体验\n          - generic: \"0001\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：琴韵初体验\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：琴韵初体验\" [disabled]: 删除\n      - row \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3 — 已下架 0 维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n        - cell\n        - cell \"研学界面验证样例（未发布） 7bdebda8-753d-4d33-a9a2-53f971f06dc3\":\n          - text: 研学界面验证样例（未发布）\n          - generic: 7bdebda8-753d-4d33-a9a2-53f971f06dc3\n        - cell \"—\"\n        - cell \"已下架\":\n          - generic: 已下架\n        - cell \"0\"\n        - cell \"维护 / 预览 删除研学套餐：研学界面验证样例（未发布）\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：研学界面验证样例（未发布）\": 删除\n      - row \"提琴匠心深度游 02 — 已发布 61 维护 / 预览 删除研学套餐：提琴匠心深度游\":\n        - cell\n        - cell \"提琴匠心深度游 02\":\n          - text: 提琴匠心深度游\n          - generic: \"02\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"61\"\n        - cell \"维护 / 预览 删除研学套餐：提琴匠心深度游\":\n          - button \"维护 / 预览\" [active]\n          - button \"删除研学套餐：提琴匠心深度游\" [disabled]: 删除\n      - row \"制琴工坊探秘 03 — 已发布 62 维护 / 预览 删除研学套餐：制琴工坊探秘\":\n        - cell\n        - cell \"制琴工坊探秘 03\":\n          - text: 制琴工坊探秘\n          - generic: \"03\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"62\"\n        - cell \"维护 / 预览 删除研学套餐：制琴工坊探秘\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：制琴工坊探秘\" [disabled]: 删除\n      - row \"提琴文化艺术营 04 — 已发布 63 维护 / 预览 删除研学套餐：提琴文化艺术营\":\n        - cell\n        - cell \"提琴文化艺术营 04\":\n          - text: 提琴文化艺术营\n          - generic: \"04\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"63\"\n        - cell \"维护 / 预览 删除研学套餐：提琴文化艺术营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：提琴文化艺术营\" [disabled]: 删除\n      - row \"小小制琴师·工序体验营 05 — 已发布 64 维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n        - cell\n        - cell \"小小制琴师·工序体验营 05\":\n          - text: 小小制琴师·工序体验营\n          - generic: \"05\"\n        - cell \"—\"\n        - cell \"已发布\":\n          - generic: 已发布\n        - cell \"64\"\n        - cell \"维护 / 预览 删除研学套餐：小小制琴师·工序体验营\":\n          - button \"维护 / 预览\"\n          - button \"删除研学套餐：小小制琴师·工序体验营\" [disabled]: 删除\n  - dialog \"研学套餐 · 维护\":\n    - heading \"研学套餐 · 维护\" [level=2]\n    - button \"关闭详情\":\n    - generic: 名称\n    - textbox \"名称\": 提琴匠心深度游\n    - generic: 发布状态\n    - combobox \"发布状态\":\n      - option \"草稿\"\n      - option \"已发布\" [selected]\n      - option \"已下架\"\n    - generic: 排序\n    - spinbutton \"排序\": \"61\"\n    - generic: 套餐编码\n    - textbox \"套餐编码\": \"02\"\n    - generic: 套餐介绍（每行一项）\n    - textbox \"套餐介绍（每行一项） 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。\": 城市客厅； 产业园生产讲解＋观摩制琴； 绿岛喷涂； 尤克里里。\n    - generic: 每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。\n    - generic: 适合年龄说明\n    - textbox \"适合年龄说明\": 适合6岁以上\n    - generic: 时长说明\n    - textbox \"时长说明\": 3.5小时\n    - generic: 亲子参考价（元 / 组）\n    - spinbutton \"亲子参考价（元 / 组）\": \"158\"\n    - generic: 单人参考价（元 / 张）\n    - spinbutton \"单人参考价（元 / 张）\": \"118\"\n    - checkbox \"首页推荐\" [checked]\n    - text: 首页推荐\n    - paragraph: 票型对象、优惠及作品数量待公司核定；此处维护参考信息，不自动计算预约费用。\n    - group \"套餐轮播图片\":\n      - generic: 套餐轮播图片\n      - generic: 最多12张，可逐张上传或复用素材库；按下方顺序轮播，第一张作为封面。前台以4∶3显示，原图保留。\n      - combobox:\n        - option \"hero-violin.jpg\"\n        - option \"i1.jpg\"\n        - option \"l2.jpg\"\n        - option \"l3.jpg\"\n        - option \"industry.jpg\"\n        - option \"i2.jpg\"\n        - option \"i3.jpg\"\n        - option \"i4.jpg\"\n        - option \"green.jpg\" [selected]\n        - option \"g1.jpg\"\n        - option \"g2.jpg\"\n        - option \"g3.jpg\"\n        - option \"g4.jpg\"\n        - option \"city.jpg\"\n        - option \"c1.jpg\"\n        - option \"c2.jpg\"\n        - option \"c3.jpg\"\n        - option \"c4.jpg\"\n        - option \"lake.jpg\"\n        - option \"l1.jpg\"\n        - option \"video-first-frame.jpg\"\n        - option \"IMG_3425.jpg\"\n        - option \"dmx-image-1785425809948-1-v1.png\"\n        - option \"dmx-gemini-image-1785425383872-1-v1.jpg\"\n        - option \"dmx-image-1786333537583-1-v1.png\"\n        - option \"codex-local-edit-L101-BR-image3-fingerboard-sticker-v3-1786359000000.png\"\n        - option \"dmx-image-1786333620164-1-v1.png\"\n        - option \"dmx-image-1786262930716-1-v1.png\"\n        - option \"workshop.jpg\"\n        - option \"homepage-workshop-background-20261001.png\"\n      - button \"移除\"\n      - region \"上传图片\":\n        - generic: 上传新图片\n        - button \"上传新图片 支持JPG、PNG，单个文件不超过64MB。\"\n        - generic: 支持JPG、PNG，单个文件不超过64MB。\n        - button \"上传并添加图片\"\n        - generic: 保存内容前，文件仅存入素材库；草稿不会对外展示。\n      - button \"从素材库添加图片\"\n    - img \"封面预览\"\n    - paragraph: 草稿不会出现在小程序中，发布后即可展示。\n    - button \"保存内容\"",
+      "fields": [
+        {
+          "label": "名称",
+          "value": "提琴匠心深度游"
+        },
+        {
+          "label": "发布状态\n草稿\n已发布\n已下架",
+          "value": "published"
+        },
+        {
+          "label": "排序",
+          "value": "61"
+        },
+        {
+          "label": "套餐编码",
+          "value": "02"
+        },
+        {
+          "label": "套餐介绍（每行一项）\n每行填写一项，前台自动显示圆点；无需手动输入项目符号。旧资料中的分号也会分项显示。",
+          "value": "城市客厅；\n产业园生产讲解＋观摩制琴；\n绿岛喷涂；\n尤克里里。"
+        },
+        {
+          "label": "适合年龄说明",
+          "value": "适合6岁以上"
+        },
+        {
+          "label": "时长说明",
+          "value": "3.5小时"
+        },
+        {
+          "label": "亲子参考价（元 / 组）",
+          "value": "158"
+        },
+        {
+          "label": "单人参考价（元 / 张）",
+          "value": "118"
+        },
+        {
+          "label": "首页推荐",
+          "value": true
+        },
+        {
+          "label": "",
+          "value": "/api/media/16709e66-3a12-5978-ba28-283791a470d5"
+        },
+        {
+          "label": "上传新图片\n支持JPG、PNG，单个文件不超过64MB。",
+          "value": ""
+        }
+      ],
+      "images": [
+        {
+          "loaded": true,
+          "src": "/api/admin/media/16709e66-3a12-5978-ba28-283791a470d5/file"
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "status": "PASS"
+}

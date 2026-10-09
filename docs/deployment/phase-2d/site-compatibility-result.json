@@ -1,0 +1,11 @@
+{
+  "oldPlanHash": "28771e3c3fa548c7effcd78b012c19a0777e4442f3a5fe3246737c6a86713152",
+  "finalPlanHash": "b64d3c6f89458752454ee54cb12e2b9802ebbc625388f07223bef8c8fd86e209",
+  "sqlHash": "a97ad80254f2bfbddecf5cda2e3c7d84a1df875f6e5900d712da30c53bf1490c",
+  "previousSiteId": "64914a7b-6223-4b44-8758-9471b1902a39",
+  "siteId": "site",
+  "guard": "全部40条content完整值匹配后，只修改本批新建site的ID；10保护表事务前后Hash检查；其他字段/媒体/SKU保持",
+  "status": "SITE_ID_COMPATIBILITY_CORRECTED",
+  "afterTime": "2026-10-09T20:27:50.730827+08:00",
+  "protectedChecks": "PASS"
+}

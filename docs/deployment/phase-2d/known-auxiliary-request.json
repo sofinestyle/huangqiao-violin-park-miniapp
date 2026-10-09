@@ -1,0 +1,18 @@
+{
+  "initialObservation": {
+    "checkedAt": "2026-10-09T12:24:17.990Z",
+    "path": "/api/public/content/site",
+    "status": 404,
+    "body": {
+      "error": "内容已下架或不存在",
+      "code": "CONTENT_UNAVAILABLE"
+    },
+    "classification": "产品/套餐详情既有辅助请求使用固定site字面ID；迁移site采用稳定目标UUID，主页面使用kind=site列表读取成功；该辅助请求的失败被既有catch处理，不影响详情展示，但不能宣称所有网络请求无404"
+  },
+  "resolution": {
+    "status": 200,
+    "siteId": "site",
+    "checkedAt": "2026-10-09T12:28:35.802Z",
+    "result": "已校正本批新建site标识，既有辅助请求返回200；未改变API或业务字段"
+  }
+}

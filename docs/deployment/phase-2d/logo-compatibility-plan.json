@@ -1,0 +1,6 @@
+{
+  "previousPlanHash": "b64d3c6f89458752454ee54cb12e2b9802ebbc625388f07223bef8c8fd86e209",
+  "finalPlanHash": "eced9b84b41d8111c0e44efca2c8e4746d48383a70acddc12a3a6f01096d5b97",
+  "sqlHash": "782f863718b6b394998a621fb831029b3567fafb1040cf2dfc16c5097fb8e66b",
+  "change": "仅本批新建site.data.images[0]；系统Logo仍为原件，使用当前已部署静态地址；不新增媒体"
+}

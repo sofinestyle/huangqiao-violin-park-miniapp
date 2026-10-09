@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-09T12:36:55.975Z",
+  "database": "hq_test_business_migration",
+  "atomicRollback": "PASS",
+  "identicalRerun": "PASS",
+  "existingContentConflict": "PASS",
+  "siteSingletonPublicApi": "PASS",
+  "counts": {
+    "before": {
+      "c": 7,
+      "m": 24,
+      "s": 10
+    },
+    "first": {
+      "c": 40,
+      "m": 31,
+      "s": 70
+    },
+    "second": {
+      "c": 40,
+      "m": 31,
+      "s": 70
+    }
+  }
+}

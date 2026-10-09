@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-09T20:34:45.229038+08:00",
+  "reason": "迁移后Staging后台正常登录；非Development历史导入",
+  "tables": [
+    {
+      "table": "accounts",
+      "oldCount": 1,
+      "newCount": 1,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "audit",
+      "oldCount": 12,
+      "newCount": 13,
+      "existingRowsUnchanged": true,
+      "addedRows": [
+        {
+          "pk": {
+            "id": 13
+          },
+          "row_hash": "182272bd0b7e639e53d65d633ce53ad07057bf53aacf5b58a146c1cc12b073c3",
+          "key_fields": {
+            "fields": {
+              "action": "account.login",
+              "created_at": "2026-10-09T20:30:29.764+08:00"
+            },
+            "uploadTask": {}
+          }
+        }
+      ]
+    },
+    {
+      "table": "bookings",
+      "oldCount": 0,
+      "newCount": 0,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "changes",
+      "oldCount": 0,
+      "newCount": 0,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "consultations",
+      "oldCount": 0,
+      "newCount": 0,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "idempotency",
+      "oldCount": 4,
+      "newCount": 4,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "migrations",
+      "oldCount": 1,
+      "newCount": 1,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "sessions",
+      "oldCount": 2,
+      "newCount": 3,
+      "existingRowsUnchanged": true,
+      "addedRows": [
+        {
+          "pk": {
+            "token_hash_digest": "3a6cbbeac33aab5413f69fd107e8a6e21ee484768f8ecb71e3df7ad93730e709"
+          },
+          "row_hash": "2083ee3adc355a038589156969b3cddb156daa559cb04e0dcb2270572e657d88",
+          "key_fields": {
+            "fields": {
+              "type": "admin",
+              "expires_at": 1791577829761
+            },
+            "uploadTask": {}
+          }
+        }
+      ]
+    },
+    {
+      "table": "slots",
+      "oldCount": 0,
+      "newCount": 0,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    },
+    {
+      "table": "visitors",
+      "oldCount": 0,
+      "newCount": 0,
+      "existingRowsUnchanged": true,
+      "addedRows": []
+    }
+  ]
+}

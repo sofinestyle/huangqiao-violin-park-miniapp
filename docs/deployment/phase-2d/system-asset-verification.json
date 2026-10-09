@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-09T12:34:20.415Z",
+  "source": "/assets/yorray-logo.png",
+  "target": "/assets/yorray-logo-CFmraOUS.png",
+  "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb",
+  "size": 14516,
+  "status": 200,
+  "systemAssetMappings": {
+    "/assets/yorray-logo.png": "/assets/yorray-logo-CFmraOUS.png"
+  },
+  "note": "既有已部署系统Logo，与原件字节相同；不上传、不建立业务media记录；仅修正site JSON静态资源引用"
+}

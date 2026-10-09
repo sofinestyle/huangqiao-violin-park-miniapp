@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-09T12:50:32.430Z",
+  "source": {
+    "host": "127.0.0.1/32",
+    "port": 55433,
+    "database": "hq_development",
+    "runtime_user": "hq_dev",
+    "schema": "app"
+  },
+  "beforeHash": "5c06e8618db3f84da50198796ad641016f922277ac5d3030632c3a32adb284a9",
+  "afterHash": "5c06e8618db3f84da50198796ad641016f922277ac5d3030632c3a32adb284a9",
+  "unchanged": true,
+  "counts": {
+    "content": 57,
+    "media": 15,
+    "skus": 10
+  }
+}
