@@ -1,0 +1,20 @@
+{
+  "manifestSha256": "14dfa0bbae30eec3959e0780e79b7505f5b6ea237ca57a48d02ab6ad4faf37ba",
+  "target": {
+    "environment": "staging",
+    "cloudbaseEnv": "huangqiao-staging-d2d1dj1bb4ad90",
+    "bucket": "huangqiao-media",
+    "database": "postgres-i56vqlwu",
+    "schema": "app"
+  },
+  "checkedAt": "2026-10-09T10:00:08.616965+08:00",
+  "database": "postgres-i56vqlwu",
+  "content": [],
+  "media": [],
+  "counts": {
+    "content": 3,
+    "media": 5
+  },
+  "storageObjects": [],
+  "evidence": "CloudBase SQL Editor, single read-only SELECT; target IDs/names/object keys checked; no mutations"
+}

@@ -6,6 +6,7 @@ import Content from './Content';
 import Media from './Media';
 import Accounts,{Audit} from './Accounts';
 import './login.css';
+import yorrayLogo from '../../images/yorray-logo.png';
 import AdminOverview from './AdminOverview';
 import {UserMenu} from './AdminUI';
 import './admin-phase-1.css';
@@ -20,7 +21,7 @@ export default function App() {
   const logout=async()=>{if(savingRef.current)return;try{await post('logout',{});}finally{setUser(null);}};
   const navigate=key=>{if(savingRef.current)return;setContentEntry(null);setPage(key);};
   const createContent=view=>{setContentEntry({view,create:true});setPage('content');};
-  return <div className="shell admin-shell"><aside className="sidebar"><div className="brand"><img src="/assets/yorray-logo.png" alt="YorRay"/><p>黄桥乐器文化产业园</p><span>内容运营与接待管理</span></div><nav aria-label="后台导航">{menu.filter(([, ,role])=>role==='all' || user.roles.includes('admin') || user.roles.includes(role)).map(([key,label])=><button disabled={accountSaving} key={key} aria-current={page===key?'page':undefined} className={page===key?'selected':''} onClick={()=>navigate(key)}><Icon name={key}/><span>{label}</span></button>)}</nav><div className="sidebar-bottom">YorRay · 园区管理后台</div></aside><header className="topbar"><span className="admin-header-context">内容运营 / {menu.find(m=>m[0]===page)?.[1]}</span><UserMenu disabled={accountSaving} user={user} onLogout={logout}/></header><main className="main"><div className="admin-page-container">{!['home','content','slots','bookings','consultations','media','accounts','audit'].includes(page)?<div className="page-heading"><h1>{menu.find(m=>m[0]===page)?.[1]}</h1></div>:null}{page==='home'?<AdminOverview onNavigate={navigate} onCreate={createContent} user={user}/>:null}{page==='content'?<Content initialView={contentEntry?.view} createOnOpen={contentEntry?.create}/>:null}{page==='slots'?<Slots/>:null}{page==='bookings' || page==='consultations'?<Operations key={page} kind={page} user={user}/>:null}{page==='media'?<Media/>:null}{page==='accounts'?<Accounts onSavingChange={accountSavingChanged}/>:null}{page==='audit'?<Audit/>:null}</div></main></div>;
+  return <div className="shell admin-shell"><aside className="sidebar"><div className="brand"><img src={yorrayLogo} alt="YorRay"/><p>黄桥乐器文化产业园</p><span>内容运营与接待管理</span></div><nav aria-label="后台导航">{menu.filter(([, ,role])=>role==='all' || user.roles.includes('admin') || user.roles.includes(role)).map(([key,label])=><button disabled={accountSaving} key={key} aria-current={page===key?'page':undefined} className={page===key?'selected':''} onClick={()=>navigate(key)}><Icon name={key}/><span>{label}</span></button>)}</nav><div className="sidebar-bottom">YorRay · 园区管理后台</div></aside><header className="topbar"><span className="admin-header-context">内容运营 / {menu.find(m=>m[0]===page)?.[1]}</span><UserMenu disabled={accountSaving} user={user} onLogout={logout}/></header><main className="main"><div className="admin-page-container">{!['home','content','slots','bookings','consultations','media','accounts','audit'].includes(page)?<div className="page-heading"><h1>{menu.find(m=>m[0]===page)?.[1]}</h1></div>:null}{page==='home'?<AdminOverview onNavigate={navigate} onCreate={createContent} user={user}/>:null}{page==='content'?<Content initialView={contentEntry?.view} createOnOpen={contentEntry?.create}/>:null}{page==='slots'?<Slots/>:null}{page==='bookings' || page==='consultations'?<Operations key={page} kind={page} user={user}/>:null}{page==='media'?<Media/>:null}{page==='accounts'?<Accounts onSavingChange={accountSavingChanged}/>:null}{page==='audit'?<Audit/>:null}</div></main></div>;
 }
 function Login({onLogin}) {
   const [username,setUsername]=useState(''),[password,setPassword]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false);
@@ -28,7 +29,7 @@ function Login({onLogin}) {
   return <main className="login login--refined">
     <section className="login-brand">
       <div className="login-brand-copy">
-        <img src="/assets/yorray-logo.png" alt="YorRay"/>
+        <img src={yorrayLogo} alt="YorRay"/>
         <h1>黄桥乐器文化产业园</h1>
         <p className="login-brand-motto">让世界听见黄桥的琴音</p>
         <p className="login-brand-services">产品与内容维护 · 研学接待 · 客户咨询</p>

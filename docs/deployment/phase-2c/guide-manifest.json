@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "category": "guide",
+  "batch": "guide-staging-v1",
+  "target": {
+    "environment": "staging",
+    "cloudbaseEnv": "huangqiao-staging-d2d1dj1bb4ad90",
+    "bucket": "huangqiao-media",
+    "database": "postgres-i56vqlwu",
+    "schema": "app"
+  },
+  "source": ".local/huangqiao.sqlite",
+  "batchTime": "2026-10-09T01:55:08.830Z",
+  "records": [
+    {
+      "source": {
+        "id": "spot-1",
+        "kind": "spot",
+        "name": "城市客厅",
+        "data": {
+          "description": "黄桥的\"金色名片\"。数字沙盘看产业脉络，乐器博览馆探提琴文化，路演厅听演奏、古琴馆赏名琴，一站式读懂提琴故事。",
+          "images": [
+            "/assets/city.jpg",
+            "/assets/c1.jpg",
+            "/assets/c2.jpg",
+            "/assets/c3.jpg",
+            "/assets/c4.jpg"
+          ],
+          "address": "",
+          "opening": "开放安排尚待核定，请先咨询",
+          "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+          "isTest": true,
+          "tags": [
+            "数字沙盘",
+            "乐器博览馆",
+            "路演厅",
+            "古琴馆"
+          ],
+          "visitItems": [
+            {
+              "name": "数字沙盘",
+              "description": "了解黄桥发展脉络",
+              "durationNote": "20 分钟"
+            },
+            {
+              "name": "乐器博览馆",
+              "description": "深入探究提琴文化",
+              "durationNote": "20 分钟"
+            },
+            {
+              "name": "路演厅",
+              "description": "提琴知识普及与演奏欣赏",
+              "durationNote": "20 分钟"
+            },
+            {
+              "name": "古琴馆",
+              "description": "欣赏古典提琴",
+              "durationNote": "10 分钟"
+            }
+          ]
+        },
+        "state": "published",
+        "sort": 80,
+        "version": 4,
+        "created_at": "2026-09-30T16:15:44.750Z",
+        "updated_at": "2026-10-02T08:50:39.922Z"
+      },
+      "targetId": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79"
+    },
+    {
+      "source": {
+        "id": "spot-2",
+        "kind": "spot",
+        "name": "音乐生态湖",
+        "data": {
+          "description": "小镇的灵动明珠。音乐喷泉随旋律起伏起舞，草坪音乐会露天开唱，湖畔漫步，把琴韵融入湖光。",
+          "images": [
+            "/assets/lake.jpg",
+            "/assets/l1.jpg",
+            "/assets/l2.jpg",
+            "/assets/l3.jpg"
+          ],
+          "address": "",
+          "opening": "开放安排尚待核定，请先咨询",
+          "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+          "isTest": true,
+          "tags": [
+            "音乐喷泉",
+            "草坪音乐会"
+          ],
+          "visitItems": [
+            {
+              "name": "音乐喷泉",
+              "description": "",
+              "durationNote": "约 1 小时"
+            },
+            {
+              "name": "草坪音乐会",
+              "description": "",
+              "durationNote": "约 1 小时"
+            }
+          ]
+        },
+        "state": "published",
+        "sort": 81,
+        "version": 3,
+        "created_at": "2026-09-30T16:15:44.750Z",
+        "updated_at": "2026-10-02T08:44:07.275Z"
+      },
+      "targetId": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1"
+    },
+    {
+      "source": {
+        "id": "spot-3",
+        "kind": "spot",
+        "name": "产业园·中小企业集聚区",
+        "data": {
+          "description": "沉浸式走进提琴全产业链。沿通道参观生产流程，在制作工坊近距离观摩大师制琴，研学体验中心亲手组装尤克里里。",
+          "images": [
+            "/assets/industry.jpg",
+            "/assets/i1.jpg",
+            "/assets/i2.jpg",
+            "/assets/i3.jpg",
+            "/assets/i4.jpg"
+          ],
+          "address": "",
+          "opening": "开放安排尚待核定，请先咨询",
+          "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+          "isTest": true,
+          "tags": [
+            "生产工厂",
+            "制作工坊",
+            "尤克里里体验"
+          ],
+          "visitItems": [
+            {
+              "name": "生产工厂",
+              "description": "介绍小提琴具体制作流程",
+              "durationNote": "30 分钟"
+            },
+            {
+              "name": "制作工坊",
+              "description": "观摩大师制琴",
+              "durationNote": "30 分钟"
+            },
+            {
+              "name": "研学体验中心",
+              "description": "尤克里里制作体验",
+              "durationNote": "60 分钟"
+            }
+          ]
+        },
+        "state": "published",
+        "sort": 82,
+        "version": 3,
+        "created_at": "2026-09-30T16:15:44.750Z",
+        "updated_at": "2026-10-02T08:44:07.277Z"
+      },
+      "targetId": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798"
+    },
+    {
+      "source": {
+        "id": "spot-4",
+        "kind": "spot",
+        "name": "绿岛·智能环保表面处理中心",
+        "data": {
+          "description": "绿色生产与精工制造的融合之地。大师工坊切磋工艺，静电喷漆、机器人喷涂手臂整齐作业，看科技如何守护一把琴的漆面。",
+          "images": [
+            "/assets/green.jpg",
+            "/assets/g1.jpg",
+            "/assets/g2.jpg",
+            "/assets/g3.jpg",
+            "/assets/g4.jpg"
+          ],
+          "address": "",
+          "opening": "开放安排尚待核定，请先咨询",
+          "visitNote": "到访前请联系工作人员确认开放与接待安排。",
+          "isTest": true,
+          "tags": [
+            "大师工坊",
+            "静电喷漆",
+            "机器人喷漆"
+          ],
+          "visitItems": [
+            {
+              "name": "大师工坊",
+              "description": "与大师探讨制琴工艺",
+              "durationNote": "20 分钟"
+            },
+            {
+              "name": "静电喷漆",
+              "description": "观看静电喷漆技术",
+              "durationNote": "20 分钟"
+            },
+            {
+              "name": "机器人喷漆",
+              "description": "高科技喷漆体验",
+              "durationNote": "20 分钟"
+            }
+          ]
+        },
+        "state": "published",
+        "sort": 83,
+        "version": 3,
+        "created_at": "2026-09-30T16:15:44.750Z",
+        "updated_at": "2026-10-02T08:44:07.279Z"
+      },
+      "targetId": "981fd3f8-4d08-561d-ae9b-0983214e0b87"
+    }
+  ],
+  "media": [
+    {
+      "sourcePath": "images/city.jpg",
+      "sourceUrl": "/assets/city.jpg",
+      "targetId": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "objectKey": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e.jpg",
+      "filename": "city.jpg",
+      "mime": "image/jpeg",
+      "size": 342073,
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/c1.jpg",
+      "sourceUrl": "/assets/c1.jpg",
+      "targetId": "c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "objectKey": "c2da474c-e6f3-5f46-b764-fe971db216d7.jpg",
+      "filename": "c1.jpg",
+      "mime": "image/jpeg",
+      "size": 160505,
+      "sha256": "5ff0f482f76007a8f417f000aa09313676fa09beda933ecacbe23fa22d3c41e7",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/c2.jpg",
+      "sourceUrl": "/assets/c2.jpg",
+      "targetId": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "objectKey": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569.jpg",
+      "filename": "c2.jpg",
+      "mime": "image/jpeg",
+      "size": 140252,
+      "sha256": "5b40c754ca250fbb0d277ea0a669330e754b36ad2f466cedeab68fdf1889fd42",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/c3.jpg",
+      "sourceUrl": "/assets/c3.jpg",
+      "targetId": "ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "objectKey": "ee75c8ea-7a79-56d9-8408-390945a93bd8.jpg",
+      "filename": "c3.jpg",
+      "mime": "image/jpeg",
+      "size": 94954,
+      "sha256": "dc8230ef77e9b23af6bb204f998c344290f779e4912a4af2f00917d5e4877dc8",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/c4.jpg",
+      "sourceUrl": "/assets/c4.jpg",
+      "targetId": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "objectKey": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce.jpg",
+      "filename": "c4.jpg",
+      "mime": "image/jpeg",
+      "size": 53294,
+      "sha256": "24e64d1882ed4775358d1cc7a2118a3b79e927385f26cbd92e853473d260d1d0",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/lake.jpg",
+      "sourceUrl": "/assets/lake.jpg",
+      "targetId": "68548eda-35be-5dc2-946c-05b2349cc77a",
+      "objectKey": "68548eda-35be-5dc2-946c-05b2349cc77a.jpg",
+      "filename": "lake.jpg",
+      "mime": "image/jpeg",
+      "size": 221562,
+      "sha256": "1b3e6ce424b42e18fb73289b87f22d91c3375896153418368a87b7eee02ff5c3",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/l1.jpg",
+      "sourceUrl": "/assets/l1.jpg",
+      "targetId": "2232c217-4d2c-5949-aa26-70f120e1d176",
+      "objectKey": "2232c217-4d2c-5949-aa26-70f120e1d176.jpg",
+      "filename": "l1.jpg",
+      "mime": "image/jpeg",
+      "size": 135818,
+      "sha256": "d00607ca3d94c26710cc894eeaf08d95c37e87dd9c05f11fb88f07d5fcecf875",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/l2.jpg",
+      "sourceUrl": "/assets/l2.jpg",
+      "targetId": "9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "objectKey": "9a80ca22-5121-5b25-937b-0b642117bc9c.jpg",
+      "filename": "l2.jpg",
+      "mime": "image/jpeg",
+      "size": 129446,
+      "sha256": "3bc3f28bac57d52aa96cf26f27827084c3db5326e322ac3c79afba546788039e",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/l3.jpg",
+      "sourceUrl": "/assets/l3.jpg",
+      "targetId": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "objectKey": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a.jpg",
+      "filename": "l3.jpg",
+      "mime": "image/jpeg",
+      "size": 53144,
+      "sha256": "f01bc09c9d45a6fbd0d4d7a29c56186623d25858c005d6ce930951010d3c82ef",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/industry.jpg",
+      "sourceUrl": "/assets/industry.jpg",
+      "targetId": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "objectKey": "0d7b9c57-e19f-55c4-a412-93b62fac95a5.jpg",
+      "filename": "industry.jpg",
+      "mime": "image/jpeg",
+      "size": 225273,
+      "sha256": "4a58eb780ab8992de21e8586fec140db70e28a8ea8d9775d9a7302a232722e7d",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/i1.jpg",
+      "sourceUrl": "/assets/i1.jpg",
+      "targetId": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "objectKey": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8.jpg",
+      "filename": "i1.jpg",
+      "mime": "image/jpeg",
+      "size": 94775,
+      "sha256": "143804173d53cd55e86aa39a6d0e230caaeff55f618e5681e693e731db85c0c6",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/i2.jpg",
+      "sourceUrl": "/assets/i2.jpg",
+      "targetId": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "objectKey": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616.jpg",
+      "filename": "i2.jpg",
+      "mime": "image/jpeg",
+      "size": 84456,
+      "sha256": "e019b8247943741bfbbd2f172c34c6df6a1845fb86ab0896465d1746c55d0685",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/i3.jpg",
+      "sourceUrl": "/assets/i3.jpg",
+      "targetId": "c5945292-a4c6-5232-b1b6-922937b752c8",
+      "objectKey": "c5945292-a4c6-5232-b1b6-922937b752c8.jpg",
+      "filename": "i3.jpg",
+      "mime": "image/jpeg",
+      "size": 102935,
+      "sha256": "ead20d1239cdaec70026874a2fa544bf232c35cb7b247eb5deb4c3e51c2011f5",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/i4.jpg",
+      "sourceUrl": "/assets/i4.jpg",
+      "targetId": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "objectKey": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be.jpg",
+      "filename": "i4.jpg",
+      "mime": "image/jpeg",
+      "size": 127530,
+      "sha256": "251584dcfd579947d88f65f11f4d59f86bd0890593d49dfa97945163f3fd603f",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/green.jpg",
+      "sourceUrl": "/assets/green.jpg",
+      "targetId": "16709e66-3a12-5978-ba28-283791a470d5",
+      "objectKey": "16709e66-3a12-5978-ba28-283791a470d5.jpg",
+      "filename": "green.jpg",
+      "mime": "image/jpeg",
+      "size": 167195,
+      "sha256": "d653a7245c9ced5724ac996d67b39a8df0ceac6be51202d755b396b5242aabd2",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/g1.jpg",
+      "sourceUrl": "/assets/g1.jpg",
+      "targetId": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "objectKey": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7.jpg",
+      "filename": "g1.jpg",
+      "mime": "image/jpeg",
+      "size": 99304,
+      "sha256": "9c242f08aa7f90e938c2b940ec442a87ea453bf4c7408e2275fa1cd04bebbd72",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/g2.jpg",
+      "sourceUrl": "/assets/g2.jpg",
+      "targetId": "613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "objectKey": "613a9c16-36e2-58d4-b97a-ddeef2c503bf.jpg",
+      "filename": "g2.jpg",
+      "mime": "image/jpeg",
+      "size": 103317,
+      "sha256": "18048dfdcf6d896811c40ddbaf8d157827adfb5a5831c3772c5dbba2024cfd17",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/g3.jpg",
+      "sourceUrl": "/assets/g3.jpg",
+      "targetId": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "objectKey": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa.jpg",
+      "filename": "g3.jpg",
+      "mime": "image/jpeg",
+      "size": 83222,
+      "sha256": "fcd0176db3b460f7183694e140ab65a50c2c804bd952b66bb291eacf3c9f032a",
+      "rights": ""
+    },
+    {
+      "sourcePath": "images/g4.jpg",
+      "sourceUrl": "/assets/g4.jpg",
+      "targetId": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+      "objectKey": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0.jpg",
+      "filename": "g4.jpg",
+      "mime": "image/jpeg",
+      "size": 59956,
+      "sha256": "5b03c77125332aaa6735240b6d5961602ad568a13948592ed0dcf31e39886dc5",
+      "rights": ""
+    }
+  ]
+}

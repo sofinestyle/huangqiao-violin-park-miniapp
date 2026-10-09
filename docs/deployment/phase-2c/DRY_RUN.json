@@ -1,0 +1,25 @@
+{
+  "mode": "dry-run",
+  "manifestSha256": "14dfa0bbae30eec3959e0780e79b7505f5b6ea237ca57a48d02ab6ad4faf37ba",
+  "targetCheck": "empty",
+  "before": {
+    "content": 3,
+    "media": 5
+  },
+  "projectedAfter": {
+    "content": 7,
+    "media": 24
+  },
+  "planned": {
+    "content": 4,
+    "media": 19,
+    "bytes": 2479011
+  },
+  "uploaded": 0,
+  "reusedObjects": 0,
+  "inserted": {
+    "content": 0,
+    "media": 0
+  },
+  "status": "DRY_RUN_READY"
+}
