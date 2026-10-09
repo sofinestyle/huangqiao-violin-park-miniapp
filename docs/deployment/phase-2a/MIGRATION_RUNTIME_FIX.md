@@ -36,9 +36,11 @@ content、accounts、visitors、sessions、slots、bookings、changes、consulta
 
 001 定义 12 张业务表；迁移器另建 migrations，保存 version=1、001 原文件 SHA-256 和执行时间。audit 的 identity 列关联 1 个自动序列。重复执行验证 checksum 并跳过；不写入业务 Seed。这里不计 CloudBase 预置的系统 schema/表，不新建数据库。
 
-## huangqiao_app 最小权限清单（未在云端执行）
+## huangqiao_app 最小权限清单（Staging / Production，2026-10-09 更新）
 
-按当前正常 Server SQL 的表级权限汇总；不是迁移、恢复、测试 Seed 或运维账号权限。角色须具备 LOGIN，且不能通过角色继承间接获得更高权限。
+Phase 2B 治理收口：用户确认下述 response 列 UPDATE 已在真实 Staging 执行并验证；本次治理仅更新文档和隔离测试，不执行云授权。Production 初始化沿用此清单，但 CONNECT 的数据库名称须替换为经批准的 Production 库名，不得沿用 Staging 库名。
+
+按当前正常 Server SQL 的表级及列级权限汇总；不是迁移、恢复、测试 Seed 或运维账号权限。角色须具备 LOGIN，且不能通过角色继承间接获得更高权限。
 
 | 对象 | 权限 |
 |---|---|
@@ -48,9 +50,12 @@ content、accounts、visitors、sessions、slots、bookings、changes、consulta
 | accounts、visitors、slots、bookings、changes、consultations | SELECT、INSERT、UPDATE |
 | sessions | SELECT、INSERT、DELETE |
 | idempotency、media、audit | SELECT、INSERT |
+| idempotency.response（仅该列） | UPDATE |
 | migrations | SELECT |
 
-供后续授权审查的清单 SQL（本轮未执行）：
+授权清单 SQL（本轮仅在隔离测试库执行，未在云端执行；自动测试直接读取此代码块）：
+
+<!-- runtime-grants:start -->
 
 ```sql
 GRANT CONNECT ON DATABASE "postgres-i56vqlwu" TO huangqiao_app;
@@ -60,8 +65,12 @@ GRANT SELECT, INSERT, UPDATE ON app.accounts, app.visitors, app.slots,
   app.bookings, app.changes, app.consultations TO huangqiao_app;
 GRANT SELECT, INSERT, DELETE ON app.sessions TO huangqiao_app;
 GRANT SELECT, INSERT ON app.idempotency, app.media, app.audit TO huangqiao_app;
+GRANT UPDATE (response) ON TABLE app.idempotency TO huangqiao_app;
 GRANT SELECT ON app.migrations TO huangqiao_app;
 ```
+<!-- runtime-grants:end -->
+
+Phase 2B 的 complete、worker 租约、校验结果和过期补偿复用 idempotency.response；缺少该列 UPDATE 会在 complete 返回 500、任务保持 pending。保留原 SELECT/INSERT，不授予 idempotency 整表 UPDATE。授权后用 `has_column_privilege('huangqiao_app','app.idempotency','response','UPDATE')` 验证为 true；整表 UPDATE 应仍为 false。对已有角色须检查其他列、角色继承及 PUBLIC 的有效权限；本清单的 GRANT 不负责撤销既有过宽权限。补齐权限后现有 worker 可恢复处理，包括过期未登记对象清理，操作前保留诊断证据。
 
 不授予 SUPERUSER、CREATEDB、CREATEROLE、BYPASSRLS、对象所有权、schema/database CREATE、TRUNCATE、GRANT OPTION 或 migrations 写权限。需另行核查已有 PUBLIC/角色继承授权，追加 GRANT 不会撤销原有高权限；本轮不修改云端 ACL。
 
