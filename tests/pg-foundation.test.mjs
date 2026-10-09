@@ -17,6 +17,32 @@ async function fixture(t){const db=openPostgres(testConfig());t.after(async()=>{
 const actor={id:'synthetic-admin',roles:['admin']};
 const edit=p=>{const {id,kind,name,state,sort,version,skus,...data}=p;return {kind,name,state,sort,version,data,skus:skus.filter(s=>s.current)};};
 
+test('教学业务类型持久化且不能绕过原有视频发布校验；旧视频保持兼容',async t=>{
+ const {db,s}=await fixture(t);
+ const lesson=(teachingType,type,state='draft',extra={})=>({kind:'lesson',name:'合成教学类型验证',state,data:{type,teachingType,isTest:true,images:[],...extra}});
+ for(const [choice,format] of [['unboxing','video'],['product_video','video'],['violin_course','course'],['article','article'],['other','article']]){
+  const saved=await s.saveContent(actor,lesson(choice,format));
+  assert.equal((await s.content(saved.id,false)).teachingType,choice);
+  assert.equal(saved.type,format);
+ }
+ for(const choice of ['unboxing','product_video','other']){
+  await assert.rejects(s.saveContent(actor,lesson(choice,'video','published')),/实际上传视频/);
+ }
+ await assert.rejects(s.saveContent(actor,lesson('unboxing','article','published')),/内容格式不一致/);
+ await assert.rejects(s.saveContent(actor,lesson('invalid','article')),/请选择有效/);
+ await assert.rejects(s.saveContent(actor,lesson(['article'],'article')),/请选择有效/);
+ await db.execute('INSERT INTO media VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9)',['synthetic-video','synthetic.mp4','video/mp4',1,'0'.repeat(64),'synthetic.mp4','合成测试授权',null,now()]);
+ for(const choice of ['unboxing','product_video','other']){
+  await assert.rejects(s.saveContent(actor,lesson(choice,'video','published',{mediaId:'synthetic-video',duration:0})),/实际时长/);
+  const saved=await s.saveContent(actor,lesson(choice,'video','published',{mediaId:'synthetic-video',duration:12.34}));
+  assert.equal((await s.content(saved.id)).type,'video');
+ }
+ const legacy=lesson(undefined,'video','published',{mediaId:'synthetic-video',duration:12.34});
+ delete legacy.data.teachingType;
+ const saved=await s.saveContent(actor,legacy);
+ assert.equal(saved.type,'video');assert.equal(saved.teachingType,undefined);
+});
+
 test('PG A: initial schema, repeat migration, JSONB, FK/check/unique and rollback',async t=>{
  const {db,s}=await fixture(t);await migrate(db);
  assert.equal((await db.one('SELECT count(*) n FROM migrations')).n,1);

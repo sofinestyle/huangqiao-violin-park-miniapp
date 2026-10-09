@@ -5,6 +5,7 @@ import { randomUUID } from 'node:crypto';
 import { transaction, decode, now } from './database.mjs';
 import { requireValue, text, number, futureDate, contact, permit, digest } from '../security.mjs';
 import { INSTRUMENT_CATEGORIES, PRODUCT_CATEGORIES } from '../../shared/status.mjs';
+import { TEACHING_TYPES } from '../../shared/teaching-types.mjs';
 import { enrollmentData, publicEnrollment } from '../enrollment.mjs';
 export const publicContent = row => ({ id: row.id, kind: row.kind, name: row.name, ...decode(row.data), state: row.state, sort: row.sort, version: row.version });
 const record = row => row && ({ ...row, snapshot: decode(row.snapshot), request: decode(row.request),
@@ -48,7 +49,7 @@ export class Foundation {
             requireValue(JSON.stringify(data.data).length <= 50000, '单条内容过大');
             const allowed = ['variantModelVersion', 'variantMode', 'options', 'code', 'category', 'series', 'brand', 'description', 'images', 'specs', 'priceMode', 'price', 'priceNote',
                 'itinerary', 'ageNote', 'durationNote', 'referenceParentPrice', 'referenceSinglePrice', 'included', 'excluded', 'materials',
-                'meetingPoint', 'transfer', 'bookingNote', 'cancelNote', 'type', 'mediaId', 'rights', 'duration', 'audience', 'form', 'place',
+                'meetingPoint', 'transfer', 'bookingNote', 'cancelNote', 'type', 'teachingType', 'mediaId', 'rights', 'duration', 'audience', 'form', 'place',
                 'courseTime', 'courseFee', 'address', 'opening', 'visitNote', 'phone', 'heroTitle', 'heroSubtitle', 'intro', 'notice',
                 'privacy', 'serviceNote', 'bookingEnabled', 'isTest', 'highlight', 'latitude', 'longitude', 'coordinateVerified'];
             if (Object.hasOwn(data.data, 'tags') || Object.hasOwn(data.data, 'visitItems')) {
@@ -99,6 +100,11 @@ export class Foundation {
                         requireValue(m && m.mime.startsWith('image/'), '关联图片不存在');
                     }
                 }
+            }
+            if (Object.hasOwn(detail, 'teachingType')) {
+                requireValue(kind === 'lesson' && typeof detail.teachingType === 'string' && Object.hasOwn(TEACHING_TYPES, detail.teachingType), '请选择有效的教学内容类型');
+                const format = TEACHING_TYPES[detail.teachingType].format;
+                requireValue(format ? detail.type === format : ['article','video','course'].includes(detail.type), '教学内容类型与内容格式不一致');
             }
             if (kind === 'lesson' && detail.type === 'video' && state === 'published') {
                 const media = (await this.db.maybeOne("SELECT * FROM media WHERE id=$1", [detail.mediaId || '']));
