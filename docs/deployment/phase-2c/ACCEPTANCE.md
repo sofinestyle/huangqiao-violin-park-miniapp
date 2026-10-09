@@ -50,3 +50,7 @@ Build PASS；Type Check PASS；25份原件大小/SHA-256 PASS；git diff --check
 真实CloudBase HEAD/GET/POST导入及4点位公开展示未执行；既有Storage Provider沿用，经隔离替身验证不冒充真实云上传。Staging PG17.11实际写事务/权限和云端源文件传入流程，需在下一轮显式授权execute后验证。本轮无账号/Schema/Migration/权限/Cloud配置变化；没有清理孤儿或迁移其他类别。Admin需重新构建部署后才修复线上Logo，本轮未部署。
 
 **READY FOR GUIDE MIGRATION**：指工具和本次来源/目标预检就绪，非真实迁移完成。执行前必须重新实时核查目标和Storage，保留审批与运行日志；人工修改或源文件变化即停止。
+
+## 后续真实迁移与收口（2026-10-09）
+
+上文是 Phase 2C.1 工具实施时的历史验收范围，保留不改写。随后经用户单独授权，4 条点位及 19 张图片已真实迁移；本次补齐微信开发者工具原生验收，临时网络校验设置已恢复。整体收口仍为 **PENDING**，唯一阻断为缺少迁移前 idempotency 逐行证据，无法严格归因整表指纹差异。详见 [Guide Migration Acceptance Closeout](GUIDE_MIGRATION_ACCEPTANCE.md)。未重新迁移或回滚。

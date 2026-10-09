@@ -1,0 +1,189 @@
+{
+  "nativeTool": "WeChat Web Devtools 2.02.2608070",
+  "page": "pages/tour/index",
+  "requestCount": 32,
+  "httpErrors": 0,
+  "records": [
+    {
+      "id": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+      "name": "城市客厅",
+      "images": 5,
+      "fields": {
+        "description": true,
+        "address": true,
+        "opening": true,
+        "visitNote": true,
+        "isTest": true,
+        "tags": true,
+        "visitItems": true,
+        "name": true,
+        "imagesOrder": true
+      }
+    },
+    {
+      "id": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+      "name": "音乐生态湖",
+      "images": 4,
+      "fields": {
+        "description": true,
+        "address": true,
+        "opening": true,
+        "visitNote": true,
+        "isTest": true,
+        "tags": true,
+        "visitItems": true,
+        "name": true,
+        "imagesOrder": true
+      }
+    },
+    {
+      "id": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+      "name": "产业园·中小企业集聚区",
+      "images": 5,
+      "fields": {
+        "description": true,
+        "address": true,
+        "opening": true,
+        "visitNote": true,
+        "isTest": true,
+        "tags": true,
+        "visitItems": true,
+        "name": true,
+        "imagesOrder": true
+      }
+    },
+    {
+      "id": "981fd3f8-4d08-561d-ae9b-0983214e0b87",
+      "name": "绿岛·智能环保表面处理中心",
+      "images": 5,
+      "fields": {
+        "description": true,
+        "address": true,
+        "opening": true,
+        "visitNote": true,
+        "isTest": true,
+        "tags": true,
+        "visitItems": true,
+        "name": true,
+        "imagesOrder": true
+      }
+    }
+  ],
+  "media": [
+    {
+      "id": "f953afa4-bd2b-51c1-9b1d-ac3a7693d69e",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "c2da474c-e6f3-5f46-b764-fe971db216d7",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "b9a89ecd-3d7f-5210-ad90-33d4aaa04569",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "ee75c8ea-7a79-56d9-8408-390945a93bd8",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "5fb05472-3b03-54d9-80d1-5ad7b6c635ce",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "68548eda-35be-5dc2-946c-05b2349cc77a",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "2232c217-4d2c-5949-aa26-70f120e1d176",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "9a80ca22-5121-5b25-937b-0b642117bc9c",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "fb2f6bbe-e8e0-5c7a-9291-b8276c0d796a",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "0d7b9c57-e19f-55c4-a412-93b62fac95a5",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "e5ec6fae-b7dc-5fb8-82d4-c3b431bc3ec8",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "d1cf8d1d-48a6-5fe5-abcd-d6d29511a616",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "c5945292-a4c6-5232-b1b6-922937b752c8",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "08c9a6ed-f4b2-5e94-a403-ff6de6baf9be",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "16709e66-3a12-5978-ba28-283791a470d5",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "f3acb25f-dd6b-58a1-a8d2-d1d1b183efb7",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "613a9c16-36e2-58d4-b97a-ddeef2c503bf",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "c1a9cee6-dbd3-5481-8c0f-a9f0d630bcaa",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    },
+    {
+      "id": "60a9a3f6-3fda-57a8-af2a-9dddaaf7bed0",
+      "status": 200,
+      "mime": "image/jpeg",
+      "bodyHashMatches": true
+    }
+  ],
+  "domainValidationRestored": true
+}

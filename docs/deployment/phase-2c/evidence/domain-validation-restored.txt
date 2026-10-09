@@ -1,0 +1,4 @@
+微信开发者工具原生 AX 状态（2026-10-09，恢复后）
+						65 复选框 0
+						66 文本 不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书
+隔离项目 project.private.config.json: setting.urlCheck=true

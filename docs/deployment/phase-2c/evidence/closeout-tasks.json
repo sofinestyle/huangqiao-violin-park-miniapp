@@ -1,0 +1,93 @@
+{
+  "rows": [
+    {
+      "key": "2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+      "route": "admin:direct-video:v1",
+      "response": {
+        "id": "2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+        "mime": "video/mp4",
+        "size": 35722048,
+        "lease": null,
+        "state": "done",
+        "filename": "L1201.mp4",
+        "cleanupAt": 1791509916644,
+        "createdAt": 1791509016644,
+        "expiresAt": 1791509616644,
+        "objectKey": "2e2f87d5-3a55-43ba-a74b-e88391f3f633.mp4",
+        "leaseUntil": 0
+      },
+      "fingerprint": "2e2f87d5-3a55-43ba-a74b-e88391f3f633"
+    },
+    {
+      "key": "68a0ffb1-e1de-4d61-8269-b8f28b9fc03f",
+      "route": "admin:direct-video:v1",
+      "response": {
+        "id": "68a0ffb1-e1de-4d61-8269-b8f28b9fc03f",
+        "code": "UPLOAD_EXPIRED",
+        "mime": "video/mp4",
+        "size": 35722048,
+        "error": "上传授权已过期，请重新上传",
+        "lease": null,
+        "state": "expired",
+        "filename": "L1201.mp4",
+        "cleanupAt": 1791508018514,
+        "createdAt": 1791507118514,
+        "expiresAt": 1791507718514,
+        "objectKey": "68a0ffb1-e1de-4d61-8269-b8f28b9fc03f.mp4",
+        "leaseUntil": 0,
+        "nextCleanupAt": 1791524090809
+      },
+      "fingerprint": "68a0ffb1-e1de-4d61-8269-b8f28b9fc03f"
+    },
+    {
+      "key": "e243d621-7ecd-44b6-9e8b-1b304ff2ef4b",
+      "route": "admin:direct-video:v1",
+      "response": {
+        "id": "e243d621-7ecd-44b6-9e8b-1b304ff2ef4b",
+        "code": "UPLOAD_EXPIRED",
+        "mime": "video/mp4",
+        "size": 35722048,
+        "error": "上传授权已过期，请重新上传",
+        "lease": null,
+        "state": "expired",
+        "filename": "L1201.mp4",
+        "cleanupAt": 1791508025303,
+        "createdAt": 1791507125303,
+        "expiresAt": 1791507725303,
+        "objectKey": "e243d621-7ecd-44b6-9e8b-1b304ff2ef4b.mp4",
+        "leaseUntil": 0,
+        "nextCleanupAt": 1791524090836
+      },
+      "fingerprint": "e243d621-7ecd-44b6-9e8b-1b304ff2ef4b"
+    },
+    {
+      "key": "eaee386e-88fc-473e-b070-6ff106d0fd64",
+      "route": "admin:direct-video:v1",
+      "response": {
+        "id": "eaee386e-88fc-473e-b070-6ff106d0fd64",
+        "code": "UPLOAD_EXPIRED",
+        "mime": "video/mp4",
+        "size": 35722048,
+        "error": "上传授权已过期，请重新上传",
+        "lease": null,
+        "state": "expired",
+        "filename": "L1201.mp4",
+        "cleanupAt": 1791508790489,
+        "createdAt": 1791507890489,
+        "expiresAt": 1791508490489,
+        "objectKey": "eaee386e-88fc-473e-b070-6ff106d0fd64.mp4",
+        "leaseUntil": 0,
+        "nextCleanupAt": 1791524090830
+      },
+      "fingerprint": "eaee386e-88fc-473e-b070-6ff106d0fd64"
+    }
+  ],
+  "columns": [
+    "owner",
+    "route",
+    "key",
+    "fingerprint",
+    "response"
+  ],
+  "triggers": []
+}
