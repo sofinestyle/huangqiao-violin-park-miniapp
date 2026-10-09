@@ -1,0 +1,14 @@
+{
+  "nodeTests": 200,
+  "passed": 200,
+  "failed": 0,
+  "skipped": 0,
+  "testDatabase": "hq_test_recovery on 127.0.0.1:55433",
+  "concurrency": 1,
+  "build": "PASS includes TypeScript",
+  "originals": {
+    "status": "PASS",
+    "files": 25
+  },
+  "legacySourceSha256": "34935a1e6f2934f4b1cacff68c8000e4e855a6620480b66595ce342b1786b792"
+}

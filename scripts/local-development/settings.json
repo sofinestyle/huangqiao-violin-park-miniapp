@@ -1,0 +1,10 @@
+{
+  "host": "127.0.0.1",
+  "port": 55433,
+  "database": "hq_development",
+  "user": "hq_dev",
+  "adminUser": "hq_local_admin",
+  "schema": "app",
+  "apiPort": 8787,
+  "directory": ".local/development-runtime"
+}

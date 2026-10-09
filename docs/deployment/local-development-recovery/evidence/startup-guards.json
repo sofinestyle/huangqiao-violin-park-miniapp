@@ -1,0 +1,27 @@
+[
+  {
+    "name": "remote_database",
+    "rejected": true,
+    "beforeServerStart": true
+  },
+  {
+    "name": "staging",
+    "rejected": true,
+    "beforeServerStart": true
+  },
+  {
+    "name": "production",
+    "rejected": true,
+    "beforeServerStart": true
+  },
+  {
+    "name": "cloud_bucket",
+    "rejected": true,
+    "beforeServerStart": true
+  },
+  {
+    "name": "cloud_storage",
+    "rejected": true,
+    "beforeServerStart": true
+  }
+]

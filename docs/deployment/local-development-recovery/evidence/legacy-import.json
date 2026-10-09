@@ -1,0 +1,148 @@
+{
+  "scope": "LOCAL DEVELOPMENT / TEST ONLY",
+  "action": "resumed",
+  "sourceFingerprint": "8186bf4c0d583f9279b1b90eb3381ffaff3bc717bf69ae2eed833fc3f196a3a8",
+  "sourceDatabaseHash": "34935a1e6f2934f4b1cacff68c8000e4e855a6620480b66595ce342b1786b792",
+  "counts": {
+    "content": 57,
+    "media": 15,
+    "product_skus": 10
+  },
+  "excludedTables": [
+    "accounts",
+    "sessions",
+    "audit",
+    "idempotency",
+    "migrations",
+    "visitors",
+    "bookings",
+    "consultations",
+    "changes",
+    "slots"
+  ],
+  "staticImages": [
+    "/assets/c1.jpg",
+    "/assets/c2.jpg",
+    "/assets/c3.jpg",
+    "/assets/c4.jpg",
+    "/assets/city.jpg",
+    "/assets/g1.jpg",
+    "/assets/g2.jpg",
+    "/assets/g3.jpg",
+    "/assets/g4.jpg",
+    "/assets/green.jpg",
+    "/assets/hero-violin.jpg",
+    "/assets/i1.jpg",
+    "/assets/i2.jpg",
+    "/assets/i3.jpg",
+    "/assets/i4.jpg",
+    "/assets/industry.jpg",
+    "/assets/l1.jpg",
+    "/assets/l2.jpg",
+    "/assets/l3.jpg",
+    "/assets/lake.jpg",
+    "/assets/wenchuang.jpg",
+    "/assets/workshop.jpg",
+    "/assets/yorray-logo.png"
+  ],
+  "media": [
+    {
+      "id": "0b12721c-f563-4e7e-9d38-7f0555f926c6",
+      "objectKey": "0b12721c-f563-4e7e-9d38-7f0555f926c6.mp4",
+      "sha256": "a88a369e6567643d8bd3192853cbb19c904d43001f609f60da69889343a22fa9",
+      "size": 20232
+    },
+    {
+      "id": "13349018-4e8a-4d1b-ac8c-3406fb8bbc9f",
+      "objectKey": "13349018-4e8a-4d1b-ac8c-3406fb8bbc9f.mp4",
+      "sha256": "a88a369e6567643d8bd3192853cbb19c904d43001f609f60da69889343a22fa9",
+      "size": 20232
+    },
+    {
+      "id": "14bca797-7a42-4f82-a8e7-22cbb281ed45",
+      "objectKey": "14bca797-7a42-4f82-a8e7-22cbb281ed45.png",
+      "sha256": "2c97eeca045d77c47879ec8e2025cadf88c263a7703b44eacc418316657ae883",
+      "size": 2165842
+    },
+    {
+      "id": "3367754f-596e-467b-b529-bfe414b490e9",
+      "objectKey": "3367754f-596e-467b-b529-bfe414b490e9.mp4",
+      "sha256": "8043c57fb280718579f4eaeb0b6a63db0ff55a8c8e17300f963ea87ea5ff6469",
+      "size": 4614448
+    },
+    {
+      "id": "39c683bf-3c09-465a-9f2a-8db7bdc3db6b",
+      "objectKey": "39c683bf-3c09-465a-9f2a-8db7bdc3db6b.png",
+      "sha256": "16b302c48c0b61b3ea2bea964fa28130e43acac67c14606c59feee88a75eeeb0",
+      "size": 1877874
+    },
+    {
+      "id": "43981165-3680-43cb-9e64-b8d92c434f12",
+      "objectKey": "43981165-3680-43cb-9e64-b8d92c434f12.png",
+      "sha256": "712e31e739a3a39b5e159bbd9d58c303b43fbd61be6d2a17ba74467a7d0f1880",
+      "size": 1439924
+    },
+    {
+      "id": "68ec815c-6c83-494e-95a6-b8dc1ed32aef",
+      "objectKey": "68ec815c-6c83-494e-95a6-b8dc1ed32aef.png",
+      "sha256": "3fb76b5dca5617f9d46d3746d5d5c612e45550c17731a586b24383eaa2cb4de2",
+      "size": 1166560
+    },
+    {
+      "id": "711a911b-fd9b-460f-986f-e8da98f5464d",
+      "objectKey": "711a911b-fd9b-460f-986f-e8da98f5464d.png",
+      "sha256": "0fc7d779d6f2655c08bfd1780f87d19e66f59380359b460ea3a053af5571afc9",
+      "size": 1491544
+    },
+    {
+      "id": "800d0973-f050-425c-85a4-43f27b01427f",
+      "objectKey": "800d0973-f050-425c-85a4-43f27b01427f.jpg",
+      "sha256": "23491d4b625af40c2b126cae16c53156e8c3f04f1b4c060bc83715f07459a6c4",
+      "size": 88882
+    },
+    {
+      "id": "86826998-114c-4c98-bb44-e71ae4a012d6",
+      "objectKey": "86826998-114c-4c98-bb44-e71ae4a012d6.png",
+      "sha256": "becfde58c546684487b94f01dccd8064150c3a44759f430cd406d774a333dcfb",
+      "size": 1662437
+    },
+    {
+      "id": "873b92f3-219b-4efe-9353-1d00c4c9e803",
+      "objectKey": "873b92f3-219b-4efe-9353-1d00c4c9e803.jpg",
+      "sha256": "f8ea3ec0a74436e222b158247997d89de152495e330f69ed02b11e269080624f",
+      "size": 657075
+    },
+    {
+      "id": "9db07b35-770b-4983-b87d-39e2daa2af39",
+      "objectKey": "9db07b35-770b-4983-b87d-39e2daa2af39.jpg",
+      "sha256": "529e27143a567f58b73750e4b1548fe7ea1ec31e64f091cb3bed026f72eb531e",
+      "size": 342073
+    },
+    {
+      "id": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+      "objectKey": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4.mp4",
+      "sha256": "91f09626c4941d91984936a8b0f897fd2a5f31c2f2b71726f7bad7c0b5e9f161",
+      "size": 15989120
+    },
+    {
+      "id": "cfb24f56-575e-4642-b21f-af180025f954",
+      "objectKey": "cfb24f56-575e-4642-b21f-af180025f954.png",
+      "sha256": "724ce07dc1996eaaae2a67d75df1ab92fbc7d91d737e9b821e271f083624abc7",
+      "size": 993905
+    },
+    {
+      "id": "dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+      "objectKey": "dbce1ada-23a4-47ed-a1b8-e17ae3d8729e.jpg",
+      "sha256": "ff3947d68171bb5ac7807c3d10d53d72a791e2505b5e881e0fc61a6e56cf347a",
+      "size": 80416
+    }
+  ],
+  "checkedAt": "2026-10-09T07:39:22.609Z",
+  "target": {
+    "host": "127.0.0.1",
+    "port": 55433,
+    "database": "hq_development",
+    "user": "hq_dev",
+    "schema": "app"
+  }
+}

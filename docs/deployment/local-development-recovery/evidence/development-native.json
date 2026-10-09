@@ -1,0 +1,358 @@
+{
+  "checkedAt": "2026-10-09T07:40:52.640Z",
+  "meta": {
+    "environment": "development",
+    "base": "http://127.0.0.1:8787",
+    "version": "develop",
+    "query": {
+      "miniEnvironment": "development"
+    }
+  },
+  "pages": [
+    {
+      "page": "pages/index/index",
+      "error": "",
+      "count": 2,
+      "records": [
+        {
+          "id": "package-1",
+          "name": "琴韵初体验",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/workshop.jpg"
+        },
+        {
+          "id": "package-2",
+          "name": "提琴匠心深度游",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/green.jpg"
+        }
+      ],
+      "spots": [
+        "spot-1",
+        "spot-2",
+        "spot-3",
+        "spot-4"
+      ],
+      "site": {
+        "id": "site",
+        "name": "黄桥乐器文化产业园"
+      }
+    },
+    {
+      "page": "pages/instruments/index",
+      "error": "",
+      "count": 8,
+      "records": [
+        {
+          "id": "0925947c-81f2-48c9-a64e-8e2b8e5e0659",
+          "name": "L1普及小提琴",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787"
+        },
+        {
+          "id": "violin-L201",
+          "name": "L201普及实木小提琴",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787"
+        },
+        {
+          "id": "violin-L301",
+          "name": "L301",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        },
+        {
+          "id": "violin-L501",
+          "name": "L501",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        },
+        {
+          "id": "violin-L701",
+          "name": "L701",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        },
+        {
+          "id": "violin-L901",
+          "name": "L901",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        },
+        {
+          "id": "violin-L1101",
+          "name": "L1101",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        },
+        {
+          "id": "violin-L1201",
+          "name": "L1201",
+          "kind": "product",
+          "category": "violin",
+          "coverOrigin": "http://127.0.0.1:8787/assets/hero-violin.jpg"
+        }
+      ]
+    },
+    {
+      "page": "pages/gifts/index",
+      "error": "",
+      "count": 20,
+      "records": [
+        {
+          "id": "gift-1",
+          "name": "地图冰箱贴",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-2",
+          "name": "古镇冰箱贴",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-3",
+          "name": "音乐冰箱贴",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-4",
+          "name": "亚克力拼图冰箱贴",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-5",
+          "name": "纪念币",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-6",
+          "name": "金属直尺",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-7",
+          "name": "提琴书签",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-8",
+          "name": "手机支架",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-9",
+          "name": "帆布包",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-10",
+          "name": "紫色提琴玩偶",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-11",
+          "name": "琵琶玩偶",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-12",
+          "name": "尤克里里玩偶",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-13",
+          "name": "棕色小提琴玩偶",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-14",
+          "name": "迷你乐器",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-15",
+          "name": "提琴包挂",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-16",
+          "name": "榉木笔筒夜灯",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-17",
+          "name": "文创礼盒",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-18",
+          "name": "1/64 木盒",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-19",
+          "name": "1/64 纸盒",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        },
+        {
+          "id": "gift-20",
+          "name": "小提琴紫砂壶",
+          "kind": "product",
+          "category": "gift",
+          "coverOrigin": "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        }
+      ]
+    },
+    {
+      "page": "pages/study/index",
+      "error": "",
+      "count": 5,
+      "records": [
+        {
+          "id": "package-1",
+          "name": "琴韵初体验",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/workshop.jpg"
+        },
+        {
+          "id": "package-2",
+          "name": "提琴匠心深度游",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/green.jpg"
+        },
+        {
+          "id": "package-3",
+          "name": "制琴工坊探秘",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/industry.jpg"
+        },
+        {
+          "id": "package-4",
+          "name": "提琴文化艺术营",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/city.jpg"
+        },
+        {
+          "id": "package-5",
+          "name": "小小制琴师·工序体验营",
+          "kind": "package",
+          "coverOrigin": "http://127.0.0.1:8787/assets/workshop.jpg"
+        }
+      ]
+    },
+    {
+      "page": "pages/teaching/index",
+      "error": "",
+      "count": 2,
+      "records": [
+        {
+          "id": "3892cd93-f402-47eb-b6fe-c4ef4e354338",
+          "name": "琴弓的正确使用方法",
+          "kind": "lesson",
+          "category": "开箱视频",
+          "coverOrigin": "http://127.0.0.1:8787"
+        },
+        {
+          "id": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+          "name": "开箱教学",
+          "kind": "lesson",
+          "category": "购琴教学",
+          "coverOrigin": "http://127.0.0.1:8787"
+        }
+      ]
+    },
+    {
+      "page": "pages/tour/index",
+      "error": "",
+      "count": 4,
+      "records": [
+        {
+          "id": "spot-1",
+          "name": "城市客厅",
+          "kind": "spot",
+          "coverOrigin": "http://127.0.0.1:8787/assets/city.jpg"
+        },
+        {
+          "id": "spot-2",
+          "name": "音乐生态湖",
+          "kind": "spot",
+          "coverOrigin": "http://127.0.0.1:8787/assets/lake.jpg"
+        },
+        {
+          "id": "spot-3",
+          "name": "产业园·中小企业集聚区",
+          "kind": "spot",
+          "coverOrigin": "http://127.0.0.1:8787/assets/industry.jpg"
+        },
+        {
+          "id": "spot-4",
+          "name": "绿岛·智能环保表面处理中心",
+          "kind": "spot",
+          "coverOrigin": "http://127.0.0.1:8787/assets/green.jpg"
+        }
+      ]
+    },
+    {
+      "page": "pages/mine/index",
+      "error": "",
+      "count": 0,
+      "records": [],
+      "environmentLabel": "native-screenshot",
+      "hasIdentity": false
+    }
+  ],
+  "exceptions": [],
+  "health": {
+    "status": 200,
+    "data": {
+      "ok": true,
+      "database": true,
+      "environment": "development"
+    }
+  }
+}

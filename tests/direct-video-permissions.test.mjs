@@ -16,7 +16,8 @@ async function fixture(t) {
   const doc = await readFile(new URL('../docs/deployment/phase-2a/MIGRATION_RUNTIME_FIX.md', import.meta.url), 'utf8');
   const grants = doc.match(/<!-- runtime-grants:start -->\s*```sql\n([\s\S]*?)```\s*<!-- runtime-grants:end -->/)?.[1];
   assert.ok(grants, 'Production/Staging grant block must remain testable');
-  await owner.query(`CREATE ROLE ${role} LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT NOREPLICATION NOBYPASSRLS`);
+  const password=randomUUID();
+  await owner.query(`CREATE ROLE ${role} LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT NOREPLICATION NOBYPASSRLS PASSWORD '${password}'`);
   let db;
   t.after(async () => {
     try { if (db) await db.close(); }
@@ -25,7 +26,7 @@ async function fixture(t) {
   const sql = grants.replaceAll('"postgres-i56vqlwu"', '"' + database + '"')
     .replace(/\bapp\b/g, owner.schema).replaceAll('huangqiao_app', role);
   await owner.query(sql);
-  url.username = role; url.password = '';
+  url.username = role; url.password = password;
   db = openPostgres({connectionString: url.toString(), schema: owner.schema, max: 2});
   assert.equal((await db.one('SELECT current_user AS role')).role, role);
   const actor = await createAccount(db, {username: 'synthetic', password: randomUUID(), roles: ['content']});

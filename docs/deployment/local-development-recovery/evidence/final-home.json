@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "environment": "development",
+    "base": "http://127.0.0.1:8787",
+    "version": "develop"
+  },
+  "error": "",
+  "site": "site",
+  "spots": 4
+}

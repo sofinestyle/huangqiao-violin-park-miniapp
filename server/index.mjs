@@ -11,7 +11,7 @@ try{
  const storage=config.storage==='local'?new LocalStorage(config.uploads):new CloudBaseStorage(config.cloudbase);
  const {server,videoWorker}=createHttpServer({...config,db,storage,root:fileURLToPath(new URL('../',import.meta.url))});
  const videoTimer=setInterval(()=>void videoWorker.tick(),15000);videoTimer.unref();void videoWorker.tick();
- server.listen(config.port,'0.0.0.0',()=>console.log(`业务服务已启动，端口${config.port}，环境${config.environment}`));
+ server.listen(config.port,config.environment==='development'?'127.0.0.1':'0.0.0.0',()=>console.log(`业务服务已启动，端口${config.port}，环境${config.environment}`));
  let closing=false;
  const shutdown=()=>{if(closing)return;closing=true;clearInterval(videoTimer);const timer=setTimeout(()=>process.exit(1),15000);timer.unref();server.close(async()=>{await db.close();clearTimeout(timer);});server.closeIdleConnections();};
  process.on('SIGTERM',shutdown);process.on('SIGINT',shutdown);

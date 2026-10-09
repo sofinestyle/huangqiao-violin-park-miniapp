@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "node scripts/dev.mjs",
-    "dev:server": "node --env-file-if-exists=.env server/index.mjs",
+    "dev:server": "node scripts/dev.mjs --server-only",
     "dev:admin": "vite admin --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vite build admin && tsc --noEmit -p miniprogram/tsconfig.json",
     "typecheck": "tsc --noEmit -p miniprogram/tsconfig.json",
@@ -19,7 +19,8 @@
     "account:create": "node --env-file-if-exists=.env scripts/create-account.mjs",
     "db:migrate": "node --env-file-if-exists=.env scripts/migrate-pg.mjs",
     "build:mini": "node scripts/build-mini.mjs",
-    "mini:prepare": "node scripts/prepare-mini-environments.mjs"
+    "mini:prepare": "node scripts/prepare-mini-environments.mjs",
+    "dev:recover": "node scripts/recover-local-development.mjs"
   },
   "dependencies": {
     "pg": "^8.16.3",

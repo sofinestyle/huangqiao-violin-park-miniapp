@@ -1,0 +1,490 @@
+{
+  "checkedAt": "2026-10-09T07:46:52.721Z",
+  "target": {
+    "host": "127.0.0.1",
+    "port": 55433,
+    "database": "hq_development",
+    "user": "hq_dev",
+    "schema": "app"
+  },
+  "sourceDatabaseHash": "34935a1e6f2934f4b1cacff68c8000e4e855a6620480b66595ce342b1786b792",
+  "media": [
+    {
+      "id": "0b12721c-f563-4e7e-9d38-7f0555f926c6",
+      "mime": "video/mp4",
+      "status": 410
+    },
+    {
+      "id": "13349018-4e8a-4d1b-ac8c-3406fb8bbc9f",
+      "mime": "video/mp4",
+      "status": 410
+    },
+    {
+      "id": "14bca797-7a42-4f82-a8e7-22cbb281ed45",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "3367754f-596e-467b-b529-bfe414b490e9",
+      "mime": "video/mp4",
+      "status": 200,
+      "hashMatch": true,
+      "range": {
+        "status": 206,
+        "header": "bytes 0-15/4614448",
+        "size": 16
+      }
+    },
+    {
+      "id": "39c683bf-3c09-465a-9f2a-8db7bdc3db6b",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "43981165-3680-43cb-9e64-b8d92c434f12",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "68ec815c-6c83-494e-95a6-b8dc1ed32aef",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "711a911b-fd9b-460f-986f-e8da98f5464d",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "800d0973-f050-425c-85a4-43f27b01427f",
+      "mime": "image/jpeg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "86826998-114c-4c98-bb44-e71ae4a012d6",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "873b92f3-219b-4efe-9353-1d00c4c9e803",
+      "mime": "image/jpeg",
+      "status": 410
+    },
+    {
+      "id": "9db07b35-770b-4983-b87d-39e2daa2af39",
+      "mime": "image/jpeg",
+      "status": 410
+    },
+    {
+      "id": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+      "mime": "video/mp4",
+      "status": 200,
+      "hashMatch": true,
+      "range": {
+        "status": 206,
+        "header": "bytes 0-15/15989120",
+        "size": 16
+      }
+    },
+    {
+      "id": "cfb24f56-575e-4642-b21f-af180025f954",
+      "mime": "image/png",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "id": "dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+      "mime": "image/jpeg",
+      "status": 200,
+      "hashMatch": true
+    }
+  ],
+  "staticImages": [
+    {
+      "path": "/assets/c1.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/c2.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/c3.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/c4.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/city.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/g1.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/g2.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/g3.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/g4.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/green.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/hero-violin.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/i1.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/i2.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/i3.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/i4.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/industry.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/l1.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/l2.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/l3.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/lake.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/wenchuang.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/workshop.jpg",
+      "status": 200,
+      "hashMatch": true
+    },
+    {
+      "path": "/assets/yorray-logo.png",
+      "status": 200,
+      "hashMatch": true
+    }
+  ],
+  "excluded": {
+    "accounts": 0,
+    "sessions": 0,
+    "audit": 0,
+    "idempotency": 0,
+    "visitors": 0,
+    "bookings": 0,
+    "consultations": 0,
+    "changes": 0,
+    "slots": 0
+  },
+  "public": {
+    "site": {
+      "status": 200,
+      "count": 1,
+      "records": [
+        {
+          "id": "site",
+          "name": "黄桥乐器文化产业园"
+        }
+      ]
+    },
+    "spot": {
+      "status": 200,
+      "count": 4,
+      "records": [
+        {
+          "id": "spot-1",
+          "name": "城市客厅"
+        },
+        {
+          "id": "spot-2",
+          "name": "音乐生态湖"
+        },
+        {
+          "id": "spot-3",
+          "name": "产业园·中小企业集聚区"
+        },
+        {
+          "id": "spot-4",
+          "name": "绿岛·智能环保表面处理中心"
+        }
+      ]
+    },
+    "product": {
+      "status": 200,
+      "count": 28,
+      "records": [
+        {
+          "id": "0925947c-81f2-48c9-a64e-8e2b8e5e0659",
+          "name": "L1普及小提琴",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L201",
+          "name": "L201普及实木小提琴",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L301",
+          "name": "L301",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L501",
+          "name": "L501",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L701",
+          "name": "L701",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L901",
+          "name": "L901",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L1101",
+          "name": "L1101",
+          "category": "violin"
+        },
+        {
+          "id": "violin-L1201",
+          "name": "L1201",
+          "category": "violin"
+        },
+        {
+          "id": "gift-1",
+          "name": "地图冰箱贴",
+          "category": "gift"
+        },
+        {
+          "id": "gift-2",
+          "name": "古镇冰箱贴",
+          "category": "gift"
+        },
+        {
+          "id": "gift-3",
+          "name": "音乐冰箱贴",
+          "category": "gift"
+        },
+        {
+          "id": "gift-4",
+          "name": "亚克力拼图冰箱贴",
+          "category": "gift"
+        },
+        {
+          "id": "gift-5",
+          "name": "纪念币",
+          "category": "gift"
+        },
+        {
+          "id": "gift-6",
+          "name": "金属直尺",
+          "category": "gift"
+        },
+        {
+          "id": "gift-7",
+          "name": "提琴书签",
+          "category": "gift"
+        },
+        {
+          "id": "gift-8",
+          "name": "手机支架",
+          "category": "gift"
+        },
+        {
+          "id": "gift-9",
+          "name": "帆布包",
+          "category": "gift"
+        },
+        {
+          "id": "gift-10",
+          "name": "紫色提琴玩偶",
+          "category": "gift"
+        },
+        {
+          "id": "gift-11",
+          "name": "琵琶玩偶",
+          "category": "gift"
+        },
+        {
+          "id": "gift-12",
+          "name": "尤克里里玩偶",
+          "category": "gift"
+        },
+        {
+          "id": "gift-13",
+          "name": "棕色小提琴玩偶",
+          "category": "gift"
+        },
+        {
+          "id": "gift-14",
+          "name": "迷你乐器",
+          "category": "gift"
+        },
+        {
+          "id": "gift-15",
+          "name": "提琴包挂",
+          "category": "gift"
+        },
+        {
+          "id": "gift-16",
+          "name": "榉木笔筒夜灯",
+          "category": "gift"
+        },
+        {
+          "id": "gift-17",
+          "name": "文创礼盒",
+          "category": "gift"
+        },
+        {
+          "id": "gift-18",
+          "name": "1/64 木盒",
+          "category": "gift"
+        },
+        {
+          "id": "gift-19",
+          "name": "1/64 纸盒",
+          "category": "gift"
+        },
+        {
+          "id": "gift-20",
+          "name": "小提琴紫砂壶",
+          "category": "gift"
+        }
+      ]
+    },
+    "package": {
+      "status": 200,
+      "count": 5,
+      "records": [
+        {
+          "id": "package-1",
+          "name": "琴韵初体验"
+        },
+        {
+          "id": "package-2",
+          "name": "提琴匠心深度游"
+        },
+        {
+          "id": "package-3",
+          "name": "制琴工坊探秘"
+        },
+        {
+          "id": "package-4",
+          "name": "提琴文化艺术营"
+        },
+        {
+          "id": "package-5",
+          "name": "小小制琴师·工序体验营"
+        }
+      ]
+    },
+    "lesson": {
+      "status": 200,
+      "count": 2,
+      "records": [
+        {
+          "id": "3892cd93-f402-47eb-b6fe-c4ef4e354338",
+          "name": "琴弓的正确使用方法",
+          "category": "开箱视频",
+          "mediaId": "3367754f-596e-467b-b529-bfe414b490e9"
+        },
+        {
+          "id": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+          "name": "开箱教学",
+          "category": "购琴教学",
+          "mediaId": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4"
+        }
+      ]
+    }
+  },
+  "health": {
+    "status": 200,
+    "data": {
+      "ok": true,
+      "database": true,
+      "environment": "development"
+    }
+  },
+  "connection": {
+    "host": "127.0.0.1/32",
+    "port": 55433,
+    "database": "hq_development",
+    "runtime_user": "hq_dev",
+    "schema": "app"
+  },
+  "privileges": {
+    "rolsuper": false,
+    "rolcreatedb": false,
+    "rolcreaterole": false,
+    "rolreplication": false,
+    "rolbypassrls": false
+  },
+  "migration": {
+    "version": 1,
+    "checksum": "ecea15a958b16ba8404a759a62ddde2abacb115c21b0fad6ca58e56552773038"
+  },
+  "allContentTest": true,
+  "noCloudConfiguration": true,
+  "sqliteRuntimeUsed": false
+}

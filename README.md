@@ -1,6 +1,6 @@
 # 黄桥乐器文化产业园微信小程序
 
-当前版本为**可运行的本地开发版本**：微信原生 TypeScript 小程序、独立 React 网页后台和持久业务服务同期实现。可以在微信开发者工具模拟器中联调，通过后台维护内容和处理真实保存的测试申请。尚未部署云端、开放真实接待、上传代码或发布小程序；运行时现已适配PostgreSQL，真实CloudBase环境与正式业务资料仍需后续验证。
+当前版本为**可运行的本地开发版本**：微信原生 TypeScript 小程序、独立 React 网页后台和持久业务服务同期实现。可以在微信开发者工具模拟器中联调，通过后台维护内容和处理真实保存的测试申请。运行时使用PostgreSQL；本地Development旧开发资料现已恢复，CloudBase Staging可通过统一网关只读对比。正式资料、真实接待、微信真机与Production上线仍须独立验收。
 
 项目目录为 `/Users/aaron/Documents/huangqiao-app`，使用用户已确认的 Documents 位置。需求依据为原《黄桥乐器文化产业园微信小程序需求说明_V1.0_细化稿.docx》及后续用户指令；旧 HTML 仅作视觉参考，冲突以新版需求为准。DOCX、HTML 和23张原始图片全部保留并校验。原教学条目、提琴、文创均为测试资料，正式资料由管理员后续维护和上传。
 
@@ -26,17 +26,13 @@
 
 GitHub同步代码、文档及已归档验证证据；本机数据库、后台上传素材、凭据和备份不会随Git推送。换电脑后需要单独按备份恢复流程迁移，不能将新克隆仓库视为具有当前后台的全部内容。仓库同步不等于微信上传、云部署或发布。
 
-## Deployment Phase 1：本机PostgreSQL启动
+## 本地Development启动（2026年10月9日更新）
 
-需要Node.js 22.13以上、PostgreSQL（本轮实际18.4）、npm和微信开发者工具。正式服务不再创建或读取SQLite。迁移不会自动导入旧开发资料，也不会自动创建管理员。
+本机已恢复独立PostgreSQL开发实例、旧开发公开资料及本地媒体。打开终端执行 `cd /Users/aaron/Documents/huangqiao-app`，然后执行 `npm run dev` 并保持终端运行。该命令自动启动本地PG、核对现有Migration并启动API和本地后台；无需填写DATABASE_URL。只启动API可用 `npm run dev:server`。本机已安装Node与PostgreSQL 18.4；新电脑首次需安装依赖与PG，Git不包含恢复的数据或凭据。
 
-1. `npm ci`，将`.env.example`复制为忽略Git的`.env`，设置独立本机`DATABASE_URL`、`PGSCHEMA`。可用已安装PG，或填写`LOCAL_PG_PASSWORD`后执行`docker compose up -d postgres`。不要使用共享/生产库运行测试。
-2. `npm run db:migrate`，创建13表的PG初始Schema。Migration检查校验和，重复执行不重做；启动不自动迁移。
-3. 首个管理员通过服务端临时`BOOTSTRAP_PASSWORD`环境变量运行`npm run account:create -- <用户名> admin`创建。密码不在参数、日志或Git中；完成后清除此变量。已有账号库禁止重复Bootstrap，其它账号由后台建立。
-4. 如需合成开发资料，在`.env`显式设置`HQ_SEED_MODE=development`；开发身份需显式`LOCAL_DEV_AUTH=true`。默认均关闭，非开发环境禁止开启。
-5. `npm run dev`读取`.env`并运行Node服务和Vite；后台`http://127.0.0.1:5173/admin/`，健康检查`http://127.0.0.1:8787/api/health`。Node绑定`0.0.0.0`以兼容容器，请保持开发电脑网络访问受控。
+实际开发数据库为 `127.0.0.1:55433/hq_development`，运行用户 `hq_dev`、Schema `app`；API为 `http://127.0.0.1:8787`，仅绑定回环。原Docker模板的55432端口目前由既有测试实例占用，本次使用独立55433，未修改或停止该实例。非敏感配置单点在 `scripts/local-development/settings.json`；密码自动生成于被Git忽略的权限600本地文件。任何Staging/Production、远程数据库或CloudBase配置都会阻止本地启动。恢复后不创建管理员，不沿用旧管理员密码。
 
-上传对象在`HQ_UPLOAD_DIR`（默认`.local/uploads`），PG数据由PG管理。旧`.local/huangqiao.sqlite`及旧媒体完整保留，但不再作为新运行时数据源。启动新的PG开发环境后，应显式Seed或重新维护测试资料；Git克隆不包含数据库、账号或媒体。
+旧SQLite只供离线只读恢复工具使用，API永远读取PostgreSQL。首次明确恢复使用 `npm run dev:recover`，日常不需要重跑；只导入指定内容、关联媒体和兼容SKU，拒绝覆盖已编辑数据，不导入身份或业务历史，也不上传云端。启动命令不会自动导入或重置内容。媒体副本在 `.local/development-runtime/uploads`，原SQLite、`.local/uploads`及`images`完整保留。负责人操作和对比说明见 [LOCAL_DEVELOPMENT_RECOVERY.md](LOCAL_DEVELOPMENT_RECOVERY.md)。
 
 微信开发者工具导入`miniprogram/`；执行一次`npm run mini:prepare`准备Development / Staging编译模式，负责人以后通过顶部下拉菜单切换，并在“我的”页核对环境。单点配置与操作见[MINIAPP_ENVIRONMENT_SWITCH.md](MINIAPP_ENVIRONMENT_SWITCH.md)。`npm run build:mini`生成独立Development包；`APP_ENV=staging MINI_APPID=<已确认AppID> npm run build:mini`生成Staging包，使用同一SSOT网关。Production未批准，构建与release API均阻断；MINI_API_BASE不能覆盖SSOT。手机不能访问电脑回环地址，微信编译/真机、上传和发布仍是独立步骤。
 

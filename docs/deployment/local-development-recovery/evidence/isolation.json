@@ -1,0 +1,16 @@
+{
+  "apiPid": 32229,
+  "sockets": "COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nnode    32229 aaron   13u  IPv4 0xbc95b863adc6ff59      0t0  TCP 127.0.0.1:58541->127.0.0.1:55433 (ESTABLISHED)\nnode    32229 aaron   16u  IPv4 0xf699595ab51de916      0t0  TCP 127.0.0.1:8787 (LISTEN)\nnode    32229 aaron   17u  IPv4 0x9500a24e0aff9b20      0t0  TCP 127.0.0.1:8787->127.0.0.1:59093 (ESTABLISHED)\n",
+  "actualDatabase": "127.0.0.1:55433/hq_development",
+  "runtimeUser": "hq_dev",
+  "stagingDatabaseUrlUsed": false,
+  "developmentDatabaseUrlEqualsStaging": false,
+  "cloudStorageInstantiated": false,
+  "originalUploadsChecked": 19,
+  "originalUploadsHashMatch": true,
+  "originalSQLiteHash": "34935a1e6f2934f4b1cacff68c8000e4e855a6620480b66595ce342b1786b792",
+  "stagingPublicBeforeAfterSame": true,
+  "stagingPublicHash": "0b48acfb56c57003b107886047820cf3c3eaffb63343ff426ba6cf5c6dc3bfd4",
+  "cloudRequests": "GET public content and health only",
+  "checkedAt": "2026-10-09T07:47:32.210Z"
+}
