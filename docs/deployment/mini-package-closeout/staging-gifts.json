@@ -1,0 +1,777 @@
+{
+  "page": "pages/gifts/index",
+  "data": {
+    "title": "文创伴手礼",
+    "items": [
+      {
+        "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+        "kind": "product",
+        "name": "地图冰箱贴",
+        "code": "WC-001",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+        "kind": "product",
+        "name": "古镇冰箱贴",
+        "code": "WC-002",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 26,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥26",
+        "videoUrl": ""
+      },
+      {
+        "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+        "kind": "product",
+        "name": "音乐冰箱贴",
+        "code": "WC-003",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+        "kind": "product",
+        "name": "亚克力拼图冰箱贴",
+        "code": "WC-004",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+        "kind": "product",
+        "name": "纪念币",
+        "code": "WC-005",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 20,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥20",
+        "videoUrl": ""
+      },
+      {
+        "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+        "kind": "product",
+        "name": "金属直尺",
+        "code": "WC-006",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+        "kind": "product",
+        "name": "提琴书签",
+        "code": "WC-007",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+        "kind": "product",
+        "name": "手机支架",
+        "code": "WC-008",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 18,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥18",
+        "videoUrl": ""
+      },
+      {
+        "id": "41346998-856a-476e-8862-67133ee56c2e",
+        "kind": "product",
+        "name": "帆布包",
+        "code": "WC-009",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 38,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥38",
+        "videoUrl": ""
+      },
+      {
+        "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+        "kind": "product",
+        "name": "紫色提琴玩偶",
+        "code": "WC-010",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+        "kind": "product",
+        "name": "琵琶玩偶",
+        "code": "WC-011",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+        "kind": "product",
+        "name": "尤克里里玩偶",
+        "code": "WC-012",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+        "kind": "product",
+        "name": "棕色小提琴玩偶",
+        "code": "WC-013",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+        "kind": "product",
+        "name": "迷你乐器",
+        "code": "WC-014",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "84810900-e21d-467c-b486-6148b826a9d1",
+        "kind": "product",
+        "name": "提琴包挂",
+        "code": "WC-015",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 29,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥29",
+        "videoUrl": ""
+      },
+      {
+        "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+        "kind": "product",
+        "name": "榉木笔筒夜灯",
+        "code": "WC-016",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 108,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥108",
+        "videoUrl": ""
+      },
+      {
+        "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+        "kind": "product",
+        "name": "文创礼盒",
+        "code": "WC-017",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 128,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥128",
+        "videoUrl": ""
+      },
+      {
+        "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+        "kind": "product",
+        "name": "1/64 木盒",
+        "code": "WC-018",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+        "kind": "product",
+        "name": "1/64 纸盒",
+        "code": "WC-019",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+        "kind": "product",
+        "name": "小提琴紫砂壶",
+        "code": "WC-020",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 600,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥600",
+        "videoUrl": ""
+      }
+    ],
+    "all": [
+      {
+        "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+        "kind": "product",
+        "name": "地图冰箱贴",
+        "code": "WC-001",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+        "kind": "product",
+        "name": "古镇冰箱贴",
+        "code": "WC-002",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 26,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥26",
+        "videoUrl": ""
+      },
+      {
+        "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+        "kind": "product",
+        "name": "音乐冰箱贴",
+        "code": "WC-003",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+        "kind": "product",
+        "name": "亚克力拼图冰箱贴",
+        "code": "WC-004",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+        "kind": "product",
+        "name": "纪念币",
+        "code": "WC-005",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 20,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥20",
+        "videoUrl": ""
+      },
+      {
+        "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+        "kind": "product",
+        "name": "金属直尺",
+        "code": "WC-006",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+        "kind": "product",
+        "name": "提琴书签",
+        "code": "WC-007",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+        "kind": "product",
+        "name": "手机支架",
+        "code": "WC-008",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 18,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥18",
+        "videoUrl": ""
+      },
+      {
+        "id": "41346998-856a-476e-8862-67133ee56c2e",
+        "kind": "product",
+        "name": "帆布包",
+        "code": "WC-009",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 38,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥38",
+        "videoUrl": ""
+      },
+      {
+        "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+        "kind": "product",
+        "name": "紫色提琴玩偶",
+        "code": "WC-010",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+        "kind": "product",
+        "name": "琵琶玩偶",
+        "code": "WC-011",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+        "kind": "product",
+        "name": "尤克里里玩偶",
+        "code": "WC-012",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+        "kind": "product",
+        "name": "棕色小提琴玩偶",
+        "code": "WC-013",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+        "kind": "product",
+        "name": "迷你乐器",
+        "code": "WC-014",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "84810900-e21d-467c-b486-6148b826a9d1",
+        "kind": "product",
+        "name": "提琴包挂",
+        "code": "WC-015",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 29,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥29",
+        "videoUrl": ""
+      },
+      {
+        "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+        "kind": "product",
+        "name": "榉木笔筒夜灯",
+        "code": "WC-016",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 108,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥108",
+        "videoUrl": ""
+      },
+      {
+        "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+        "kind": "product",
+        "name": "文创礼盒",
+        "code": "WC-017",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 128,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥128",
+        "videoUrl": ""
+      },
+      {
+        "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+        "kind": "product",
+        "name": "1/64 木盒",
+        "code": "WC-018",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+        "kind": "product",
+        "name": "1/64 纸盒",
+        "code": "WC-019",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+        "kind": "product",
+        "name": "小提琴紫砂壶",
+        "code": "WC-020",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81"
+        ],
+        "priceMode": "reference",
+        "price": 600,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/31586cf2-2922-44f0-af53-0b9220cf1f81",
+        "priceLabel": "参考价 ¥600",
+        "videoUrl": ""
+      }
+    ],
+    "filters": [
+      "全部",
+      "琴城印记",
+      "弦音玩趣",
+      "匠心典藏"
+    ],
+    "selected": "全部",
+    "q": "",
+    "loading": false,
+    "error": "",
+    "__webviewId__": 37
+  }
+}

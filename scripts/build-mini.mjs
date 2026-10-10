@@ -20,5 +20,9 @@ const out=resolve('build/mini-'+environment);rmSync(out,{recursive:true,force:tr
 cpSync('miniprogram',out,{recursive:true,filter:p=>!p.endsWith('project.private.config.json')&&!p.endsWith('.DS_Store')&&!p.endsWith('.js')&&!p.endsWith('.js.map')});
 if(environment==='staging'){const project=JSON.parse(readFileSync(join(out,'project.config.json'),'utf8'));project.appid=process.env.MINI_APPID;writeFileSync(join(out,'project.config.json'),JSON.stringify(project,null,2)+'\n');}
 writeFileSync(join(out,'miniprogram/build-target.ts'),'export default '+JSON.stringify({environment})+';\n');
-execFileSync(process.execPath,['node_modules/typescript/bin/tsc','--noEmit','-p',join(out,'tsconfig.json')],{stdio:'inherit'});
+execFileSync(process.execPath,['node_modules/typescript/bin/tsc','-p',join(out,'tsconfig.json')],{stdio:'inherit'});
+// Emit JavaScript before the official preview compiler consumes this isolated build.
+const project=JSON.parse(readFileSync(join(out,'project.config.json'),'utf8'));
+project.setting.useCompilerPlugins=(project.setting.useCompilerPlugins||[]).filter(name=>name!=='typescript');
+writeFileSync(join(out,'project.config.json'),JSON.stringify(project,null,2)+'\n');
 console.log(`小程序环境包已生成并通过Type Check：${out}；目标${config.label}；原生编译/预览仍需微信开发者工具。`);

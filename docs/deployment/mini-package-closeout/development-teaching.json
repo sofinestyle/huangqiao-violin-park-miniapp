@@ -1,0 +1,108 @@
+{
+  "page": "pages/teaching/index",
+  "data": {
+    "title": "教学课堂",
+    "items": [
+      {
+        "id": "3892cd93-f402-47eb-b6fe-c4ef4e354338",
+        "kind": "lesson",
+        "name": "琴弓的正确使用方法",
+        "type": "video",
+        "images": [
+          "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e"
+        ],
+        "isTest": true,
+        "rights": "自行拍摄",
+        "mediaId": "3367754f-596e-467b-b529-bfe414b490e9",
+        "category": "开箱视频",
+        "duration": 39.27,
+        "description": "新琴琴弓的正确使用方法",
+        "state": "published",
+        "sort": 0,
+        "version": 1,
+        "categoryLabel": "开箱视频",
+        "cover": "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+        "priceLabel": "咨询报价",
+        "videoUrl": "http://127.0.0.1:8787/api/media/3367754f-596e-467b-b529-bfe414b490e9",
+        "durationLabel": "39.27"
+      },
+      {
+        "id": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+        "kind": "lesson",
+        "name": "开箱教学",
+        "type": "video",
+        "images": [
+          "http://127.0.0.1:8787/api/media/800d0973-f050-425c-85a4-43f27b01427f"
+        ],
+        "isTest": true,
+        "rights": "64分之1",
+        "mediaId": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+        "category": "购琴教学",
+        "duration": 14.93,
+        "state": "published",
+        "sort": 0,
+        "version": 4,
+        "categoryLabel": "购琴教学",
+        "cover": "http://127.0.0.1:8787/api/media/800d0973-f050-425c-85a4-43f27b01427f",
+        "priceLabel": "咨询报价",
+        "videoUrl": "http://127.0.0.1:8787/api/media/ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+        "durationLabel": "14.93"
+      }
+    ],
+    "all": [
+      {
+        "id": "3892cd93-f402-47eb-b6fe-c4ef4e354338",
+        "kind": "lesson",
+        "name": "琴弓的正确使用方法",
+        "type": "video",
+        "images": [
+          "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e"
+        ],
+        "isTest": true,
+        "rights": "自行拍摄",
+        "mediaId": "3367754f-596e-467b-b529-bfe414b490e9",
+        "category": "开箱视频",
+        "duration": 39.27,
+        "description": "新琴琴弓的正确使用方法",
+        "state": "published",
+        "sort": 0,
+        "version": 1,
+        "categoryLabel": "开箱视频",
+        "cover": "http://127.0.0.1:8787/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e",
+        "priceLabel": "咨询报价",
+        "videoUrl": "http://127.0.0.1:8787/api/media/3367754f-596e-467b-b529-bfe414b490e9"
+      },
+      {
+        "id": "846dead9-e0f2-4107-b5c8-c50e4cfd34bb",
+        "kind": "lesson",
+        "name": "开箱教学",
+        "type": "video",
+        "images": [
+          "http://127.0.0.1:8787/api/media/800d0973-f050-425c-85a4-43f27b01427f"
+        ],
+        "isTest": true,
+        "rights": "64分之1",
+        "mediaId": "ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4",
+        "category": "购琴教学",
+        "duration": 14.93,
+        "state": "published",
+        "sort": 0,
+        "version": 4,
+        "categoryLabel": "购琴教学",
+        "cover": "http://127.0.0.1:8787/api/media/800d0973-f050-425c-85a4-43f27b01427f",
+        "priceLabel": "咨询报价",
+        "videoUrl": "http://127.0.0.1:8787/api/media/ad7b0030-16f9-4a89-ab8d-b6e8e1f562b4"
+      }
+    ],
+    "filters": [
+      "全部",
+      "开箱视频",
+      "购琴教学"
+    ],
+    "selected": "全部",
+    "q": "",
+    "loading": false,
+    "error": "",
+    "__webviewId__": 47
+  }
+}

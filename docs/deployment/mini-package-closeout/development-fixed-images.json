@@ -1,0 +1,132 @@
+[
+  {
+    "src": "/assets/home-nav/brand.png",
+    "width": 278,
+    "height": 273
+  },
+  {
+    "src": "/assets/home-nav/consult.png",
+    "width": 277,
+    "height": 273
+  },
+  {
+    "src": "/assets/home-nav/map.png",
+    "width": 278,
+    "height": 273
+  },
+  {
+    "src": "/assets/home-nav/teaching.png",
+    "width": 278,
+    "height": 273
+  },
+  {
+    "src": "/assets/home-nav/violin.png",
+    "width": 277,
+    "height": 273
+  },
+  {
+    "src": "/assets/images/workshop.jpg",
+    "width": 1152,
+    "height": 1536
+  },
+  {
+    "src": "/assets/study/gift.png",
+    "width": 96,
+    "height": 96
+  },
+  {
+    "src": "/assets/study/group.png",
+    "width": 96,
+    "height": 96
+  },
+  {
+    "src": "/assets/study/mentor.png",
+    "width": 96,
+    "height": 96
+  },
+  {
+    "src": "/assets/study/shield.png",
+    "width": 96,
+    "height": 96
+  },
+  {
+    "src": "/assets/tab-icons/gift-active.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/gift-gold.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/gift-muted.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/group-gold.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/home-active.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/home-muted.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/instrument-active.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/instrument-gold.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/instrument-muted.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/mine-active.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/mine-muted.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/study-active.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/tab-icons/study-muted.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "src": "/assets/yorray-logo.png",
+    "width": 315,
+    "height": 140
+  },
+  {
+    "src": "/pages/brand/assets/company-reference.jpg",
+    "width": 887,
+    "height": 1774
+  },
+  {
+    "src": "/pages/brand/assets/hero-user-v3.jpg",
+    "width": 863,
+    "height": 1822
+  }
+]

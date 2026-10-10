@@ -1,0 +1,9 @@
+{
+  "page": "pages/mine/index",
+  "data": {
+    "hasIdentity": false,
+    "busy": false,
+    "error": "",
+    "__webviewId__": 32
+  }
+}

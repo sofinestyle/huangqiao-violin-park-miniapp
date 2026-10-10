@@ -1,0 +1,158 @@
+[
+  {
+    "path": "/assets/home-nav/brand.png",
+    "bytes": 55474,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/home-nav/consult.png",
+    "bytes": 64914,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/home-nav/map.png",
+    "bytes": 65835,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/home-nav/teaching.png",
+    "bytes": 60516,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/home-nav/violin.png",
+    "bytes": 73514,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/images/workshop.jpg",
+    "bytes": 657075,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/study/gift.png",
+    "bytes": 1483,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/study/group.png",
+    "bytes": 4895,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/study/mentor.png",
+    "bytes": 3892,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/study/shield.png",
+    "bytes": 3392,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/gift-active.png",
+    "bytes": 1921,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/gift-gold.png",
+    "bytes": 2214,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/gift-muted.png",
+    "bytes": 2035,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/group-gold.png",
+    "bytes": 3007,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/home-active.png",
+    "bytes": 1502,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/home-muted.png",
+    "bytes": 1690,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/instrument-active.png",
+    "bytes": 3133,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/instrument-gold.png",
+    "bytes": 3573,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/instrument-muted.png",
+    "bytes": 3456,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/mine-active.png",
+    "bytes": 1669,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/mine-muted.png",
+    "bytes": 1812,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/study-active.png",
+    "bytes": 2224,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/tab-icons/study-muted.png",
+    "bytes": 2492,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/assets/yorray-logo.png",
+    "bytes": 14516,
+    "class": "A",
+    "reason": "tabBar、首页或共享导航/标志资源，当前最小方案保留主包"
+  },
+  {
+    "path": "/pages/brand/assets/company-reference.jpg",
+    "bytes": 353371,
+    "class": "E",
+    "reason": "品牌页固定视觉，普通品牌分包"
+  },
+  {
+    "path": "/pages/brand/assets/hero-user-v3.jpg",
+    "bytes": 1516765,
+    "class": "E",
+    "reason": "品牌页固定视觉，普通品牌分包"
+  }
+]

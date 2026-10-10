@@ -1,0 +1,19 @@
+{
+  "size": {
+    "total": 3112776,
+    "packages": [
+      {
+        "name": "TOTAL",
+        "size": 3112776
+      },
+      {
+        "name": "main",
+        "size": 1231099
+      },
+      {
+        "name": "/pages/brand/",
+        "size": 1881677
+      }
+    ]
+  }
+}

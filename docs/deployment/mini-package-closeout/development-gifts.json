@@ -1,0 +1,777 @@
+{
+  "page": "pages/gifts/index",
+  "data": {
+    "title": "文创伴手礼",
+    "items": [
+      {
+        "id": "gift-1",
+        "kind": "product",
+        "name": "地图冰箱贴",
+        "code": "WC-001",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-2",
+        "kind": "product",
+        "name": "古镇冰箱贴",
+        "code": "WC-002",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 26,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥26",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-3",
+        "kind": "product",
+        "name": "音乐冰箱贴",
+        "code": "WC-003",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-4",
+        "kind": "product",
+        "name": "亚克力拼图冰箱贴",
+        "code": "WC-004",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-5",
+        "kind": "product",
+        "name": "纪念币",
+        "code": "WC-005",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 20,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥20",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-6",
+        "kind": "product",
+        "name": "金属直尺",
+        "code": "WC-006",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-7",
+        "kind": "product",
+        "name": "提琴书签",
+        "code": "WC-007",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-8",
+        "kind": "product",
+        "name": "手机支架",
+        "code": "WC-008",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 18,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥18",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-9",
+        "kind": "product",
+        "name": "帆布包",
+        "code": "WC-009",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 38,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥38",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-10",
+        "kind": "product",
+        "name": "紫色提琴玩偶",
+        "code": "WC-010",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-11",
+        "kind": "product",
+        "name": "琵琶玩偶",
+        "code": "WC-011",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-12",
+        "kind": "product",
+        "name": "尤克里里玩偶",
+        "code": "WC-012",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-13",
+        "kind": "product",
+        "name": "棕色小提琴玩偶",
+        "code": "WC-013",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-14",
+        "kind": "product",
+        "name": "迷你乐器",
+        "code": "WC-014",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-15",
+        "kind": "product",
+        "name": "提琴包挂",
+        "code": "WC-015",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 29,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥29",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-16",
+        "kind": "product",
+        "name": "榉木笔筒夜灯",
+        "code": "WC-016",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 108,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥108",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-17",
+        "kind": "product",
+        "name": "文创礼盒",
+        "code": "WC-017",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 128,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥128",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-18",
+        "kind": "product",
+        "name": "1/64 木盒",
+        "code": "WC-018",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-19",
+        "kind": "product",
+        "name": "1/64 纸盒",
+        "code": "WC-019",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-20",
+        "kind": "product",
+        "name": "小提琴紫砂壶",
+        "code": "WC-020",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 600,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥600",
+        "videoUrl": ""
+      }
+    ],
+    "all": [
+      {
+        "id": "gift-1",
+        "kind": "product",
+        "name": "地图冰箱贴",
+        "code": "WC-001",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-2",
+        "kind": "product",
+        "name": "古镇冰箱贴",
+        "code": "WC-002",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 26,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥26",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-3",
+        "kind": "product",
+        "name": "音乐冰箱贴",
+        "code": "WC-003",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-4",
+        "kind": "product",
+        "name": "亚克力拼图冰箱贴",
+        "code": "WC-004",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 24,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥24",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-5",
+        "kind": "product",
+        "name": "纪念币",
+        "code": "WC-005",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 20,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥20",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-6",
+        "kind": "product",
+        "name": "金属直尺",
+        "code": "WC-006",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-7",
+        "kind": "product",
+        "name": "提琴书签",
+        "code": "WC-007",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 15,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥15",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-8",
+        "kind": "product",
+        "name": "手机支架",
+        "code": "WC-008",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 18,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥18",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-9",
+        "kind": "product",
+        "name": "帆布包",
+        "code": "WC-009",
+        "category": "gift",
+        "series": "琴城印记",
+        "description": "琴城印记",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 38,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥38",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-10",
+        "kind": "product",
+        "name": "紫色提琴玩偶",
+        "code": "WC-010",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-11",
+        "kind": "product",
+        "name": "琵琶玩偶",
+        "code": "WC-011",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-12",
+        "kind": "product",
+        "name": "尤克里里玩偶",
+        "code": "WC-012",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-13",
+        "kind": "product",
+        "name": "棕色小提琴玩偶",
+        "code": "WC-013",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-14",
+        "kind": "product",
+        "name": "迷你乐器",
+        "code": "WC-014",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 48,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥48",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-15",
+        "kind": "product",
+        "name": "提琴包挂",
+        "code": "WC-015",
+        "category": "gift",
+        "series": "弦音玩趣",
+        "description": "弦音玩趣",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 29,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥29",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-16",
+        "kind": "product",
+        "name": "榉木笔筒夜灯",
+        "code": "WC-016",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 108,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥108",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-17",
+        "kind": "product",
+        "name": "文创礼盒",
+        "code": "WC-017",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 128,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥128",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-18",
+        "kind": "product",
+        "name": "1/64 木盒",
+        "code": "WC-018",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-19",
+        "kind": "product",
+        "name": "1/64 纸盒",
+        "code": "WC-019",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 399,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥399",
+        "videoUrl": ""
+      },
+      {
+        "id": "gift-20",
+        "kind": "product",
+        "name": "小提琴紫砂壶",
+        "code": "WC-020",
+        "category": "gift",
+        "series": "匠心典藏",
+        "description": "匠心典藏",
+        "images": [
+          "http://127.0.0.1:8787/assets/wenchuang.jpg"
+        ],
+        "priceMode": "reference",
+        "price": 600,
+        "priceNote": "参考价格，具体规格与报价请咨询工作人员",
+        "categoryLabel": "文创",
+        "cover": "http://127.0.0.1:8787/assets/wenchuang.jpg",
+        "priceLabel": "参考价 ¥600",
+        "videoUrl": ""
+      }
+    ],
+    "filters": [
+      "全部",
+      "琴城印记",
+      "弦音玩趣",
+      "匠心典藏"
+    ],
+    "selected": "全部",
+    "q": "",
+    "loading": false,
+    "error": "",
+    "__webviewId__": 45
+  }
+}

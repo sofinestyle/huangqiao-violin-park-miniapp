@@ -31,3 +31,11 @@ Staging合法域名尚未完成微信平台配置，本机验证沿用原有“�
 必须另行批准正式环境、真实正式API域名、平台合法域名及正式数据政策；随后由开发人员实施独立Production构建与release防护验收。本阶段不能通过改参数、设置APP_ENV=production或填写MINI_API_BASE绕过禁止启用规则。完成真实微信身份、真机、读写隔离、异常及上线审核后再发布；不直接删除当前防护。
 
 技术配置唯一来源：`miniprogram/miniprogram/environment-settings.ts`；构建只写环境选择器，不重复写域名。验收证据见 [Phase 1验收](docs/deployment/miniapp-environment-phase-1/ACCEPTANCE.md)。
+
+## 包体积与预览补记（2026年10月10日）
+
+开发者工具继续打开原miniprogram项目，顶部两种环境编译模式不变。品牌介绍首次进入会加载一个普通分包，页面入口和返回方式不变；研学背景仍在主包，不依赖API服务器。当前主包约1.17MiB、总包约2.96MiB，已通过官方真实预览检查。
+
+Phase 2D之后Staging已具备首页和文创资料；本轮七页面实际浏览正常。上文2026年10月9日的资料缺失记录为历史状态，当前验收以本次报告为准。
+
+隔离构建继续使用原有build:mini命令，现已生成兼容JavaScript。若开发者工具曾打开构建目录，应在重新生成后使用“清除编译缓存”再预览；只清编译缓存，无需清登录或数据缓存。Staging构建命令为`APP_ENV=staging MINI_APPID=wx5bf0160bd4262e24 npm run build:mini`，打开build/mini-staging。包检查通过不等于正式上线批准；Staging仍有1项旧业务图片地址待处理，见[验收报告](docs/deployment/mini-package-closeout/ACCEPTANCE.md)。

@@ -1,0 +1,246 @@
+{
+  "environment": "dev",
+  "scope": "anonymous public content; drafts not inspected",
+  "rows": 40,
+  "sha256": "cc1d8244c1ee1017b7a744b520f19001fe0efb9b1871a301be87931401532f45",
+  "legacyAssets": [
+    {
+      "field": "site:site.images.0",
+      "value": "/assets/yorray-logo.png"
+    },
+    {
+      "field": "product:violin-L301.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:violin-L501.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:violin-L701.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:violin-L901.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:violin-L1101.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:violin-L1201.images.0",
+      "value": "/assets/hero-violin.jpg"
+    },
+    {
+      "field": "product:gift-1.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-2.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-3.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-4.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-5.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-6.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-7.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-8.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-9.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-10.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-11.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-12.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-13.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-14.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-15.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-16.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-17.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-18.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-19.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "product:gift-20.images.0",
+      "value": "/assets/wenchuang.jpg"
+    },
+    {
+      "field": "package:package-1.images.0",
+      "value": "/assets/workshop.jpg"
+    },
+    {
+      "field": "package:package-2.images.0",
+      "value": "/assets/green.jpg"
+    },
+    {
+      "field": "package:package-3.images.0",
+      "value": "/assets/industry.jpg"
+    },
+    {
+      "field": "package:package-4.images.0",
+      "value": "/assets/city.jpg"
+    },
+    {
+      "field": "package:package-5.images.0",
+      "value": "/assets/workshop.jpg"
+    },
+    {
+      "field": "spot:spot-1.images.0",
+      "value": "/assets/city.jpg"
+    },
+    {
+      "field": "spot:spot-1.images.1",
+      "value": "/assets/c1.jpg"
+    },
+    {
+      "field": "spot:spot-1.images.2",
+      "value": "/assets/c2.jpg"
+    },
+    {
+      "field": "spot:spot-1.images.3",
+      "value": "/assets/c3.jpg"
+    },
+    {
+      "field": "spot:spot-1.images.4",
+      "value": "/assets/c4.jpg"
+    },
+    {
+      "field": "spot:spot-2.images.0",
+      "value": "/assets/lake.jpg"
+    },
+    {
+      "field": "spot:spot-2.images.1",
+      "value": "/assets/l1.jpg"
+    },
+    {
+      "field": "spot:spot-2.images.2",
+      "value": "/assets/l2.jpg"
+    },
+    {
+      "field": "spot:spot-2.images.3",
+      "value": "/assets/l3.jpg"
+    },
+    {
+      "field": "spot:spot-3.images.0",
+      "value": "/assets/industry.jpg"
+    },
+    {
+      "field": "spot:spot-3.images.1",
+      "value": "/assets/i1.jpg"
+    },
+    {
+      "field": "spot:spot-3.images.2",
+      "value": "/assets/i2.jpg"
+    },
+    {
+      "field": "spot:spot-3.images.3",
+      "value": "/assets/i3.jpg"
+    },
+    {
+      "field": "spot:spot-3.images.4",
+      "value": "/assets/i4.jpg"
+    },
+    {
+      "field": "spot:spot-4.images.0",
+      "value": "/assets/green.jpg"
+    },
+    {
+      "field": "spot:spot-4.images.1",
+      "value": "/assets/g1.jpg"
+    },
+    {
+      "field": "spot:spot-4.images.2",
+      "value": "/assets/g2.jpg"
+    },
+    {
+      "field": "spot:spot-4.images.3",
+      "value": "/assets/g3.jpg"
+    },
+    {
+      "field": "spot:spot-4.images.4",
+      "value": "/assets/g4.jpg"
+    }
+  ],
+  "mediaReferences": [
+    {
+      "field": "product:0925947c-81f2-48c9-a64e-8e2b8e5e0659.images.0",
+      "value": "/api/media/43981165-3680-43cb-9e64-b8d92c434f12"
+    },
+    {
+      "field": "product:0925947c-81f2-48c9-a64e-8e2b8e5e0659.images.1",
+      "value": "/api/media/86826998-114c-4c98-bb44-e71ae4a012d6"
+    },
+    {
+      "field": "product:0925947c-81f2-48c9-a64e-8e2b8e5e0659.images.2",
+      "value": "/api/media/711a911b-fd9b-460f-986f-e8da98f5464d"
+    },
+    {
+      "field": "lesson:3892cd93-f402-47eb-b6fe-c4ef4e354338.images.0",
+      "value": "/api/media/dbce1ada-23a4-47ed-a1b8-e17ae3d8729e"
+    },
+    {
+      "field": "lesson:846dead9-e0f2-4107-b5c8-c50e4cfd34bb.images.0",
+      "value": "/api/media/800d0973-f050-425c-85a4-43f27b01427f"
+    },
+    {
+      "field": "site:site.images.1",
+      "value": "/api/media/39c683bf-3c09-465a-9f2a-8db7bdc3db6b"
+    },
+    {
+      "field": "product:violin-L201.images.0",
+      "value": "/api/media/cfb24f56-575e-4642-b21f-af180025f954"
+    },
+    {
+      "field": "product:violin-L201.images.1",
+      "value": "/api/media/68ec815c-6c83-494e-95a6-b8dc1ed32aef"
+    }
+  ]
+}

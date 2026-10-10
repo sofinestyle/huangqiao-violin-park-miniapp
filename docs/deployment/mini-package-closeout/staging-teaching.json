@@ -1,0 +1,57 @@
+{
+  "page": "pages/teaching/index",
+  "data": {
+    "title": "教学课堂",
+    "items": [
+      {
+        "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+        "kind": "lesson",
+        "name": "L12大师级小提琴展示",
+        "type": "video",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382"
+        ],
+        "isTest": true,
+        "rights": "产品视频",
+        "mediaId": "2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+        "duration": 50.57,
+        "state": "published",
+        "sort": 0,
+        "version": 3,
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382",
+        "priceLabel": "咨询报价",
+        "videoUrl": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+        "durationLabel": "50.57"
+      }
+    ],
+    "all": [
+      {
+        "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+        "kind": "lesson",
+        "name": "L12大师级小提琴展示",
+        "type": "video",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382"
+        ],
+        "isTest": true,
+        "rights": "产品视频",
+        "mediaId": "2e2f87d5-3a55-43ba-a74b-e88391f3f633",
+        "duration": 50.57,
+        "state": "published",
+        "sort": 0,
+        "version": 3,
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/baeafb30-fa8b-4490-9486-5f33ff96a382",
+        "priceLabel": "咨询报价",
+        "videoUrl": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/2e2f87d5-3a55-43ba-a74b-e88391f3f633"
+      }
+    ],
+    "filters": [
+      "全部"
+    ],
+    "selected": "全部",
+    "q": "",
+    "loading": false,
+    "error": "",
+    "__webviewId__": 39
+  }
+}

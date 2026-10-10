@@ -4,7 +4,7 @@
   <template is="state" data="{{loading,error}}"/>
   <block wx:if="{{!loading && !error && site}}">
     <view class="brand-hero">
-      <view class="brand-hero-media"><image wx:if="{{!heroFailed}}" class="brand-hero-photo" src="/assets/brand/hero-user-v3.jpg" mode="aspectFill" binderror="heroError" aria-label="窗边的手工提琴"/></view>
+      <view class="brand-hero-media"><image wx:if="{{!heroFailed}}" class="brand-hero-photo" src="/pages/brand/assets/hero-user-v3.jpg" mode="aspectFill" binderror="heroError" aria-label="窗边的手工提琴"/></view>
       <view class="brand-hero-copy"><view class="brand-hero-title">以诗入琴</view><view class="brand-hero-subtitle">瑜瑞 · YorRay</view></view>
       <button class="brand-next" bindtap="readCulture" aria-label="向下阅读品牌文化"><view class="brand-arrow"/></button>
     </view>
@@ -32,7 +32,7 @@
     <view id="brand-company" class="brand-company-section">
       <view class="brand-company-heading"><view class="brand-company-title">品牌与企业</view><view class="brand-section-english">BRAND & COMPANY</view></view>
       <!-- Preserve the reference composition; expose only its photographic region. -->
-      <view class="brand-building-frame"><image wx:if="{{!buildingFailed}}" class="brand-building" src="/assets/brand/company-reference.jpg" mode="widthFix" binderror="buildingError" aria-label="园区城市客厅建筑外景"/><view wx:else class="brand-photo-error">园区图片暂时无法显示</view></view>
+      <view class="brand-building-frame"><image wx:if="{{!buildingFailed}}" class="brand-building" src="/pages/brand/assets/company-reference.jpg" mode="widthFix" binderror="buildingError" aria-label="园区城市客厅建筑外景"/><view wx:else class="brand-photo-error">园区图片暂时无法显示</view></view>
       <view class="brand-company-copy">
         <view class="brand-operator">运营主体</view>
         <view class="brand-company-name"><view>江苏黄桥乐器文化产业园</view><view>投资发展有限公司</view></view>

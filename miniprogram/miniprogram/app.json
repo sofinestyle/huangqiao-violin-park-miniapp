@@ -16,8 +16,7 @@
     "pages/tour/index",
     "pages/about/index",
     "pages/enrollments/index",
-    "pages/enrollment/index",
-    "pages/brand/index"
+    "pages/enrollment/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -57,5 +56,14 @@
   "style": "v2",
   "componentFramework": "glass-easel",
   "lazyCodeLoading": "requiredComponents",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "subPackages": [
+    {
+      "root": "pages/brand",
+      "name": "brand",
+      "pages": [
+        "index"
+      ]
+    }
+  ]
 }

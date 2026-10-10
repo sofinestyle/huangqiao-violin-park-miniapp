@@ -6,11 +6,12 @@ import ts from 'typescript';
 
 const root=new URL('../miniprogram/miniprogram/',import.meta.url).pathname;
 const config=JSON.parse(readFileSync(join(root,'app.json'),'utf8'));
-const registered=new Set(config.pages);
+const allPages=[...config.pages,...(config.subPackages||[]).flatMap(p=>p.pages.map(page=>p.root+'/'+page))];
+const registered=new Set(allPages);
 function files(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(join(dir,e.name)):[join(dir,e.name)]);}
 
 test('页面注册与源文件一致，所有固定跳转和首页动态入口有目标',()=>{
- assert.equal(registered.size,config.pages.length,'不能重复注册页面');
+ assert.equal(registered.size,allPages.length,'不能重复注册页面');
  for(const page of registered)for(const ext of ['ts','json','wxml','wxss'])assert.ok(existsSync(join(root,page+'.'+ext)),page+'.'+ext);
  const diskPages=files(join(root,'pages')).filter(p=>p.endsWith('.wxml')).map(p=>relative(root,p).slice(0,-5));
  assert.deepEqual([...registered].sort(),diskPages.sort(),'不保留未注册的页面源码');
@@ -18,10 +19,10 @@ test('页面注册与源文件一致，所有固定跳转和首页动态入口�
  sources.push(new URL('../scripts/native-check.cjs',import.meta.url).pathname);
  for(const file of sources){
   const text=readFileSync(file,'utf8');
-  for(const match of text.matchAll(/\/pages\/[a-z0-9_-]+\/[a-z0-9_-]+/g))assert.ok(registered.has(match[0].slice(1)),`${file}: ${match[0]}`);
+  for(const match of text.matchAll(/\/pages\/[a-z0-9_-]+\/[a-z0-9_-]+(?![a-z0-9_-]|\/)/g))assert.ok(registered.has(match[0].slice(1)),`${file}: ${match[0]}`);
   for(const match of text.matchAll(/data-page="([a-z0-9_-]+)"/g))assert.ok(registered.has(`pages/${match[1]}/index`),`${file}: ${match[1]}`);
  }
- for(const tab of config.tabBar.list)assert.ok(registered.has(tab.pagePath));
+ for(const tab of config.tabBar.list)assert.ok(config.pages.includes(tab.pagePath),'tabBar必须保留主包');
 });
 
 test('共用列表只为实际详情类型提供跳转，点位同页保持只读',()=>{

@@ -1,0 +1,323 @@
+{
+  "page": "pages/instruments/index",
+  "data": {
+    "title": "乐器展示",
+    "items": [
+      {
+        "id": "80d79606-9251-4884-9010-b86aa6daae25",
+        "kind": "product",
+        "name": "L1普及小提琴",
+        "code": "L1",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "初学者系列",
+        "description": "材质：\n面板椴木，背板贴皮虎纹\n油漆工艺：\n普及油漆\n琴弦：\n爱丽丝704\n琴盒：\n三角绣标帆布琴盒\n外包装：\n彩盒包装",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+        ],
+        "priceMode": "reference",
+        "price": 320,
+        "priceNote": "",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+        "priceLabel": "参考价 ¥320",
+        "videoUrl": ""
+      },
+      {
+        "id": "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+        "kind": "product",
+        "name": "L2初学者实木小提琴",
+        "code": "L2",
+        "category": "violin",
+        "brand": "YorRay",
+        "description": "面板：枫木\n背板：云杉",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/0b0569ef-b1e3-4479-a719-64a7477e15b9"
+        ],
+        "priceMode": "reference",
+        "price": 450,
+        "priceNote": "",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+        "priceLabel": "参考价 ¥450",
+        "videoUrl": ""
+      },
+      {
+        "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+        "kind": "product",
+        "name": "L301",
+        "code": "L301",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "实木",
+        "description": "实木普级 · 虎纹\n面板 / 背板：云杉 · 枫木（虎纹头筋工艺虎纹）\n配件：乌木 + 碳纤维拉板\n琴弦 / 马桥：普级琴弦 · 普级马桥\n琴弓 / 琴盒：乌木鱼眼琴弓 · 方盒带绣标\n配套：含实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+        "kind": "product",
+        "name": "L501",
+        "code": "L501",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "实木",
+        "description": "实木普级\n面板 / 背板：云杉 · B 级枫木（背板花纹，琴头无花）\n工艺：吊木筋哑光磨白边\n琴弦 / 马桥：乙级琴弦 · 乙级马桥\n琴弓 / 琴盒：乌木琴弓 · 方盒带绣标\n配套：含实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+        "kind": "product",
+        "name": "L701",
+        "code": "L701",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "花纹琴",
+        "description": "实木花纹琴\n面板 / 背板：欧洲云杉 · A+ 级枫木\n工艺：手工油漆\n琴弦 / 马桥：乙级琴弦 · 进口马桥\n琴弓 / 琴盒：八角琴弓 · 两边鼓方盒\n配套：方盒松香、实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+        "kind": "product",
+        "name": "L901",
+        "code": "L901",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "手工",
+        "description": "手工制作\n面板 / 背板：欧洲云杉 · AA+ 级枫木\n工艺：腰果漆\n琴弦 / 马桥：德国托尼卡琴弦 · 进口马桥\n琴弓 / 琴盒：蛇皮八角琴弓 · 带表方盒\n配套：罗甸乌木配件，含弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+        "kind": "product",
+        "name": "L1101",
+        "code": "L1101",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "匠制",
+        "description": "手工匠制\n面板 / 背板：欧洲 10 年云杉 · AAA 级枫木\n工艺：柯巴胶\n琴弦 / 马桥：德国托尼卡琴弦 · 进口马桥\n琴弓 / 琴盒：苏木高级琴弓 · 蓝色带表高档方盒\n配套：高级乌木朵子配件，含弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+        "kind": "product",
+        "name": "L1201",
+        "code": "L1201",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "大师",
+        "description": "高级纯手工 · 大师监制\n面板 / 背板：欧洲 15 年云杉 · AAA 级枫木\n工艺：油性漆\n琴弦 / 马桥：奥地利托马斯琴弦 · 法国奥博特马桥\n琴弓 / 琴盒：苏木高级琴弓 · 高级碳纤方盒\n配套：进口乌木 + 老红木配件、分体腮托；可选德国绿美人弦 +350",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      }
+    ],
+    "all": [
+      {
+        "id": "80d79606-9251-4884-9010-b86aa6daae25",
+        "kind": "product",
+        "name": "L1普及小提琴",
+        "code": "L1",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "初学者系列",
+        "description": "材质：\n面板椴木，背板贴皮虎纹\n油漆工艺：\n普及油漆\n琴弦：\n爱丽丝704\n琴盒：\n三角绣标帆布琴盒\n外包装：\n彩盒包装",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/691827ae-c0e4-4ec0-ad24-23a0cc977d9f",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/99493b2d-1906-43c5-9665-2f6aabe80428"
+        ],
+        "priceMode": "reference",
+        "price": 320,
+        "priceNote": "",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/1757a532-c887-4563-93ae-aef2af1c7a06",
+        "priceLabel": "参考价 ¥320",
+        "videoUrl": ""
+      },
+      {
+        "id": "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+        "kind": "product",
+        "name": "L2初学者实木小提琴",
+        "code": "L2",
+        "category": "violin",
+        "brand": "YorRay",
+        "description": "面板：枫木\n背板：云杉",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/0b0569ef-b1e3-4479-a719-64a7477e15b9"
+        ],
+        "priceMode": "reference",
+        "price": 450,
+        "priceNote": "",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/f0a29d9b-aa7b-4e1c-bdd8-815f2e839406",
+        "priceLabel": "参考价 ¥450",
+        "videoUrl": ""
+      },
+      {
+        "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+        "kind": "product",
+        "name": "L301",
+        "code": "L301",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "实木",
+        "description": "实木普级 · 虎纹\n面板 / 背板：云杉 · 枫木（虎纹头筋工艺虎纹）\n配件：乌木 + 碳纤维拉板\n琴弦 / 马桥：普级琴弦 · 普级马桥\n琴弓 / 琴盒：乌木鱼眼琴弓 · 方盒带绣标\n配套：含实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+        "kind": "product",
+        "name": "L501",
+        "code": "L501",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "实木",
+        "description": "实木普级\n面板 / 背板：云杉 · B 级枫木（背板花纹，琴头无花）\n工艺：吊木筋哑光磨白边\n琴弦 / 马桥：乙级琴弦 · 乙级马桥\n琴弓 / 琴盒：乌木琴弓 · 方盒带绣标\n配套：含实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+        "kind": "product",
+        "name": "L701",
+        "code": "L701",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "花纹琴",
+        "description": "实木花纹琴\n面板 / 背板：欧洲云杉 · A+ 级枫木\n工艺：手工油漆\n琴弦 / 马桥：乙级琴弦 · 进口马桥\n琴弓 / 琴盒：八角琴弓 · 两边鼓方盒\n配套：方盒松香、实木肩托、弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+        "kind": "product",
+        "name": "L901",
+        "code": "L901",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "手工",
+        "description": "手工制作\n面板 / 背板：欧洲云杉 · AA+ 级枫木\n工艺：腰果漆\n琴弦 / 马桥：德国托尼卡琴弦 · 进口马桥\n琴弓 / 琴盒：蛇皮八角琴弓 · 带表方盒\n配套：罗甸乌木配件，含弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+        "kind": "product",
+        "name": "L1101",
+        "code": "L1101",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "匠制",
+        "description": "手工匠制\n面板 / 背板：欧洲 10 年云杉 · AAA 级枫木\n工艺：柯巴胶\n琴弦 / 马桥：德国托尼卡琴弦 · 进口马桥\n琴弓 / 琴盒：苏木高级琴弓 · 蓝色带表高档方盒\n配套：高级乌木朵子配件，含弱音器",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      },
+      {
+        "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+        "kind": "product",
+        "name": "L1201",
+        "code": "L1201",
+        "category": "violin",
+        "brand": "YorRay",
+        "series": "大师",
+        "description": "高级纯手工 · 大师监制\n面板 / 背板：欧洲 15 年云杉 · AAA 级枫木\n工艺：油性漆\n琴弦 / 马桥：奥地利托马斯琴弦 · 法国奥博特马桥\n琴弓 / 琴盒：苏木高级琴弓 · 高级碳纤方盒\n配套：进口乌木 + 老红木配件、分体腮托；可选德国绿美人弦 +350",
+        "images": [
+          "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0"
+        ],
+        "priceMode": "inquiry",
+        "categoryLabel": "提琴",
+        "cover": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/media/5adb7593-369e-47eb-b429-e968b21763e0",
+        "priceLabel": "咨询报价",
+        "videoUrl": ""
+      }
+    ],
+    "filters": [
+      "全部",
+      "提琴",
+      "吉他",
+      "尤克里里",
+      "口琴",
+      "其他"
+    ],
+    "selected": "全部",
+    "q": "",
+    "loading": false,
+    "error": "",
+    "__webviewId__": 36
+  }
+}

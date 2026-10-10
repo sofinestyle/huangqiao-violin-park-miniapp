@@ -16,7 +16,7 @@ export function auditMiniStaticAssets(root=join(projectRoot,'miniprogram/minipro
     const code=readFileSync(join(root,'pages/study/index.ts'),'utf8'),path=code.match(/heroImage:\s*['"]([^'"]+)['"]/);
     if(path?.[1].startsWith('/assets/')){add(match.index,value,'A',{targets:[path[1]],exists:existsSync(join(root,path[1])),viaApi:false,reason:'同页固定背景数据绑定'});continue;}
    }
-   if(value.startsWith('/assets/')){
+   if(value.startsWith('/assets/')||value.startsWith('/pages/brand/assets/')){
     let targets;
     if(value.includes('{{')){
      // The only computed fixed paths are the existing navigation icon variants.
