@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-const source=readFileSync(new URL('../admin/src/api.js',import.meta.url),'utf8').replace('import.meta.env.VITE_ADMIN_API_BASE',"''");
+import ts from 'typescript';
+const policy=ts.transpileModule(readFileSync(new URL('../miniprogram/miniprogram/lib/request-policy.ts',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.ES2022,target:ts.ScriptTarget.ES2022}}).outputText;
+const source=readFileSync(new URL('../admin/src/api.js',import.meta.url),'utf8').replace('import.meta.env.VITE_ADMIN_API_BASE',"''").replace("'../../miniprogram/miniprogram/lib/request-policy'",JSON.stringify('data:text/javascript;base64,'+Buffer.from(policy).toString('base64')));
 async function client(t,{local=false,status=200,expired=false,failed=false,poll=false}={}){
  const originals={window:globalThis.window,fetch:globalThis.fetch,XMLHttpRequest:globalThis.XMLHttpRequest};
  t.after(()=>{for(const [k,v]of Object.entries(originals))v===undefined?delete globalThis[k]:globalThis[k]=v;});

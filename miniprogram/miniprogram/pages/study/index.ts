@@ -1,8 +1,9 @@
-import {api,Content,decorate,go,message} from '../../lib/api';
+import {api,Content,decorate,go,message,cancelReadRequests} from '../../lib/api';
 
 Page({
   data:{items:[] as Content[],loading:true,error:'',heroImage:'/assets/images/workshop.jpg'},
   onShow(){this.load();},
+  onHide(){cancelReadRequests(this);},onUnload(){cancelReadRequests(this);},
   async load(){
     this.setData({loading:true,error:''});
     try{

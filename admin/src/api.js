@@ -1,13 +1,48 @@
 // Static Admin is served on the API origin (or via same-origin reverse proxy).
+import {API_TIMEOUT_MS,READ_BUDGET_MS,canRetryRead,retryDelay} from '../../miniprogram/miniprogram/lib/request-policy';
 const configuredBase=import.meta.env.VITE_ADMIN_API_BASE||'/api/admin/';
 const base=new URL(configuredBase,window.location.origin);
 if(base.origin!==window.location.origin||base.pathname!=='/api/admin/'||base.search||base.hash||base.username||base.password)throw new Error('后台API须为同源/api/admin/');
 const adminUrl=path=>base.href+path;
+const pendingReads=new Set();
+window.addEventListener?.('pagehide',()=>{for(const controller of pendingReads)controller.abort(new Error('请求已取消'));});
 export async function api(path,options={}) {
-  let response;try{response=await fetch(adminUrl(path),{...options,credentials:'same-origin',headers:{'Content-Type':'application/json','X-HQ-Action':'1',...options.headers},signal:options.signal || AbortSignal.timeout(10000)});}catch{throw new Error('暂时无法连接服务，请稍后重试');}
-  const result=await response.json().catch(()=>{throw new Error('服务响应暂时异常，请保留填写内容并重试');});
-  if(!response.ok){if(response.status===401 && path!=='login')window.dispatchEvent(new Event('hq-session-expired'));const error=new Error(result.error || '请求失败，请重试');error.field=result.field;error.code=result.code;throw error;}
-  return result;
+  const method=(options.method || 'GET').toUpperCase(),started=Date.now();
+  const controller=method==='GET'?new AbortController():null;
+  if(controller){pendingReads.add(controller);options={...options,signal:options.signal?AbortSignal.any([options.signal,controller.signal]):controller.signal};}
+  try{
+  for(let attempt=0;attempt<2;attempt++){
+    if(options.signal?.aborted)throw options.signal.reason || new Error('请求已取消');
+    const remaining=method==='GET'?READ_BUDGET_MS-(Date.now()-started):API_TIMEOUT_MS;
+    if(remaining<=0)throw new Error('暂时无法连接服务，请稍后重试');
+    const timeout=AbortSignal.timeout(Math.min(API_TIMEOUT_MS,remaining));
+    const signal=options.signal?AbortSignal.any([options.signal,timeout]):timeout;
+    let response,result,failed;
+    try{
+      response=await fetch(adminUrl(path),{...options,credentials:'same-origin',headers:{'Content-Type':'application/json','X-HQ-Action':'1',...options.headers},signal});
+      result=await response.json();
+    }catch(error){
+      if(options.signal?.aborted)throw options.signal.reason || new Error('请求已取消');
+      if(response && !timeout.aborted)throw new Error('服务响应暂时异常，请保留填写内容并重试');
+      failed=error;
+    }
+    if(response?.ok && !failed)return result;
+    const networkFailure=!!failed && globalThis.navigator?.onLine!==false && (timeout.aborted || failed.name==='TypeError' || failed.name==='TimeoutError');
+    const delay=retryDelay();
+    if(canRetryRead(method,attempt,response?.status || 0,networkFailure)&&READ_BUDGET_MS-(Date.now()-started)>delay){
+      await new Promise((resolve,reject)=>{
+        const abort=()=>{clearTimeout(timer);reject(options.signal.reason || new Error('请求已取消'));};
+        const timer=setTimeout(()=>{options.signal?.removeEventListener('abort',abort);resolve();},delay);
+        options.signal?.addEventListener('abort',abort,{once:true});
+        if(options.signal?.aborted)abort();
+      });
+      continue;
+    }
+    if(failed)throw new Error('暂时无法连接服务，请稍后重试');
+    if(response.status===401 && path!=='login')window.dispatchEvent(new Event('hq-session-expired'));
+    const error=new Error(result?.error || '请求失败，请重试');error.field=result?.field;error.code=result?.code;throw error;
+  }
+  }finally{if(controller)pendingReads.delete(controller);}
 }
 export const post=(path,data)=>api(path,{method:'POST',body:JSON.stringify(data)});
 export const put=(path,data)=>api(path,{method:'PUT',body:JSON.stringify(data)});

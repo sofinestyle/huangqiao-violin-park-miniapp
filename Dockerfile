@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN npm ci
 COPY admin ./admin
 COPY shared ./shared
+COPY miniprogram/miniprogram/lib/request-policy.ts ./miniprogram/miniprogram/lib/request-policy.ts
 RUN npx vite build admin
 FROM node:22-bookworm-slim
 ENV NODE_ENV=production PORT=8787

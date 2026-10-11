@@ -1,18 +1,50 @@
 import {getConsultationSpecDisplay, ConsultationSnapshot} from './consultation-display';
 import {getEnvironment,visitorTokenKey,hasVisitorIdentity} from '../config';
+import {API_TIMEOUT_MS,READ_BUDGET_MS,canRetryRead,retryDelay,retryableNetworkMessage} from './request-policy';
 export interface Content { id: string; kind: string; name: string; images?: string[]; [key: string]: any }
 export interface Enrollment {id:string;title:string;date:string;start:string;end:string;packageId:string;packageName:string;cover:string;description:string;meetingPoint:string;feeNote:string;registrationNote:string;remaining:number;canApply:boolean;availabilityLabel:string;version:number}
 export interface BusinessRecord { id: string; state: string; snapshot: (Content & ConsultationSnapshot) | null; request: Record<string, any>; confirmed?: Record<string, any>; changes?: any[]; [key: string]: any }
 export class RequestError extends Error { status: number; code: string; constructor(message: string,status: number,code=''){super(message);this.status=status;this.code=code;} }
+const pendingReads = new Map<object,Set<()=>void>>();
+export function cancelReadRequests(owner?: object): void {
+ for(const [page,requests] of pendingReads)if(!owner || page===owner)for(const cancel of [...requests])cancel();
+}
 export function api<T>(path: string, options: { method?: 'GET'|'POST'; data?: object; auth?: boolean; key?: string } = {}): Promise<T> {
  let base:string,tokenKey:string;
  try{base=getEnvironment().apiBase;tokenKey=visitorTokenKey();if(!path.startsWith('/api/')||/[\\\r\n]/.test(path))throw new Error('API路径无效');}catch(e){return Promise.reject(e);}
  const token=wx.getStorageSync(tokenKey);
- return new Promise((resolve,reject)=>wx.request({url:base+path,method:options.method || 'GET',data:options.data,
- header:{'Content-Type':'application/json',...(options.auth && token?{Authorization:`Bearer ${token}`} : {}),...(options.key?{'Idempotency-Key':options.key}:{})},timeout:10000,
- success(res){if(res.statusCode>=200&&res.statusCode<300)resolve(res.data as T);else{if(res.statusCode===401)wx.removeStorageSync(tokenKey);reject(new RequestError((res.data as {error?:string})?.error || '请求失败，请重试',res.statusCode,(res.data as {code?:string})?.code||''));}},
- fail(){reject(new RequestError('暂时无法连接服务，请稍后重试',0));}
- }));
+ const method=options.method || 'GET',started=Date.now();
+ const pages=typeof getCurrentPages==='function'?getCurrentPages():[],owner=pages[pages.length-1];
+ return new Promise((resolve,reject)=>{
+  let done=false,task:WechatMiniprogram.RequestTask|undefined,timer:ReturnType<typeof setTimeout>|undefined;
+  const cleanup=()=>{if(timer!==undefined)clearTimeout(timer);if(owner){const reads=pendingReads.get(owner);reads?.delete(cancel);if(!reads?.size)pendingReads.delete(owner);}};
+  const finish=(error?:RequestError,data?:T)=>{if(done)return;done=true;cleanup();error?reject(error):resolve(data as T);};
+  const cancel=()=>{finish(new RequestError('请求已取消',0,'REQUEST_CANCELLED'));task?.abort();};
+  if(method==='GET'&&owner){if(!pendingReads.has(owner))pendingReads.set(owner,new Set());pendingReads.get(owner)!.add(cancel);}
+  const retry=(attempt:number,status:number,networkFailure:boolean,error:RequestError)=>{
+   if(done)return;
+   const delay=retryDelay();
+   if(canRetryRead(method,attempt,status,networkFailure)&&READ_BUDGET_MS-(Date.now()-started)>delay){
+    timer=setTimeout(()=>send(attempt+1),delay);
+   }else finish(error);
+  };
+  const send=(attempt:number)=>{
+   if(done)return;
+   try{if(getEnvironment().apiBase!==base){cancel();return;}}catch{cancel();return;}
+   const remaining=method==='GET'?READ_BUDGET_MS-(Date.now()-started):API_TIMEOUT_MS;
+   if(remaining<=0){finish(new RequestError('暂时无法连接服务，请稍后重试',0,'REQUEST_TIMEOUT'));return;}
+   task=wx.request({url:base+path,method,data:options.data,
+    header:{'Content-Type':'application/json',...(options.auth && token?{Authorization:`Bearer ${token}`} : {}),...(options.key?{'Idempotency-Key':options.key}:{})},timeout:Math.min(API_TIMEOUT_MS,remaining),
+    success(res){if(done)return;if(res.statusCode>=200&&res.statusCode<300){finish(undefined,res.data as T);return;}
+     if(res.statusCode===401)wx.removeStorageSync(tokenKey);
+     const error=new RequestError((res.data as {error?:string})?.error || '请求失败，请重试',res.statusCode,(res.data as {code?:string})?.code||'');
+     retry(attempt,res.statusCode,false,error);
+    },
+    fail(error){if(done)return;const text=error.errMsg || '';const code=/abort|cancel/i.test(text)?'REQUEST_CANCELLED':/timeout/i.test(text)?'REQUEST_TIMEOUT':'NETWORK_ERROR';retry(attempt,0,retryableNetworkMessage(text),new RequestError('暂时无法连接服务，请稍后重试',0,code));}
+   });
+  };
+  send(0);
+ });
 }
 export async function ensureIdentity(): Promise<void> {
  if(hasVisitorIdentity())return;
