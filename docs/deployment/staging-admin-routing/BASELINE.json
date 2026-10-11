@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-11T14:54:06.870668+00:00",
+  "responses": [
+    {
+      "host": "webapps",
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "seconds": 0.5554,
+      "sha256": "84bca181e380218b6e9266a0c6eb714b47a002b5accf8ac74203968d721438a5"
+    },
+    {
+      "host": "webapps",
+      "path": "/api/admin/me",
+      "status": 404,
+      "contentType": "text/html",
+      "seconds": 1.1442,
+      "sha256": "731e08aeb7f577a0371c53d61f6178fd76d26031adeb8cf4b5c30c6ae6608945"
+    },
+    {
+      "host": "gateway",
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html",
+      "seconds": 0.4315,
+      "sha256": "84bca181e380218b6e9266a0c6eb714b47a002b5accf8ac74203968d721438a5"
+    },
+    {
+      "host": "gateway",
+      "path": "/api/admin/me",
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "seconds": 0.1324,
+      "sha256": "311202159de4f7526e7b1c22cf530c8c714ba1fc57f52ddc04e15f607b81393b"
+    }
+  ],
+  "sourceCommit": "efa48ab3e80a9c8922b9ce673b4d014126fd34bf",
+  "ADMIN_ORIGIN": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+  "gatewayRoutes": [
+    {
+      "path": "/",
+      "type": "STATIC_STORE",
+      "resource": "huangqiao-admin-staging",
+      "pathTransmission": false
+    },
+    {
+      "path": "/api",
+      "type": "CBR",
+      "resource": "huangqiao-api",
+      "pathTransmission": true
+    }
+  ],
+  "cookieAttributes": [
+    "HttpOnly",
+    "Secure",
+    "SameSite=Strict",
+    "Path=/",
+    "Max-Age=28800"
+  ],
+  "writeGuards": [
+    "X-HQ-Action: 1",
+    "Origin equals ADMIN_ORIGIN when present"
+  ],
+  "automation": "PAUSED by explicit user instruction",
+  "beforeAdminVersion": "005"
+}

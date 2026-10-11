@@ -1,0 +1,606 @@
+{
+  "browser": {
+    "at": "2026-10-11T15:09:38.052Z",
+    "client": "Chrome native browser UI",
+    "login": [
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/admin/login",
+        "method": "POST",
+        "actionHeader": "1",
+        "status": 200
+      }
+    ],
+    "entry": {
+      "at": "2026-10-11T15:08:06.022Z",
+      "finalOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "truncated": true,
+      "hasMore": false,
+      "staticApiRequestCount": 0,
+      "apiResponses": [
+        {
+          "path": "/api/admin/me",
+          "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+          "status": 200
+        }
+      ],
+      "failures": []
+    },
+    "cookie": [
+      {
+        "name": "hq_admin",
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Strict",
+        "path": "/",
+        "domain": "huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com"
+      }
+    ],
+    "pages": [
+      {
+        "name": "素材库",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/media",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 84
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "素材库"
+          ],
+          "loading": false,
+          "rows": 79
+        }
+      },
+      {
+        "name": "工作台",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/overview",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 42
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "工作台"
+          ],
+          "loading": false,
+          "rows": 0
+        }
+      },
+      {
+        "name": "场次管理",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/slots",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 62
+          },
+          {
+            "path": "/api/admin/packages",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 84
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "场次管理"
+          ],
+          "loading": false,
+          "rows": 0
+        }
+      },
+      {
+        "name": "研学预约",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/bookings",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 75
+          },
+          {
+            "path": "/api/admin/staff",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 66
+          },
+          {
+            "path": "/api/admin/slots",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 57
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "研学预约"
+          ],
+          "loading": false,
+          "rows": 0
+        }
+      },
+      {
+        "name": "咨询管理",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/consultations",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 63
+          },
+          {
+            "path": "/api/admin/staff",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 42
+          },
+          {
+            "path": "/api/admin/slots",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 50
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "咨询管理"
+          ],
+          "loading": false,
+          "rows": 0
+        }
+      },
+      {
+        "name": "账号权限",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/accounts",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 37
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "账号权限"
+          ],
+          "loading": false,
+          "rows": 1
+        }
+      },
+      {
+        "name": "操作记录",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/audit",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 42
+          },
+          {
+            "path": "/api/admin/audit/options",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 72
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "操作记录"
+          ],
+          "loading": false,
+          "rows": 50
+        }
+      },
+      {
+        "name": "内容维护",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 57
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 8
+        }
+      },
+      {
+        "name": "内容维护/文创",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 355
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 20
+        }
+      },
+      {
+        "name": "内容维护/首页与企业",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 237
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 1
+        }
+      },
+      {
+        "name": "内容维护/研学套餐",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 433
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 5
+        }
+      },
+      {
+        "name": "内容维护/教学内容",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 242
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 13
+        }
+      },
+      {
+        "name": "内容维护/点位导览",
+        "truncated": false,
+        "hasMore": false,
+        "requests": [
+          {
+            "path": "/api/admin/content",
+            "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+            "method": "GET",
+            "actionHeader": "1",
+            "cookieSent": true,
+            "status": 200,
+            "responseMs": 259
+          }
+        ],
+        "ui": {
+          "alertCount": 0,
+          "headings": [
+            "内容维护"
+          ],
+          "loading": false,
+          "rows": 4
+        }
+      }
+    ],
+    "contentCategories": [
+      {
+        "name": "乐器",
+        "busy": "false",
+        "errors": [],
+        "rows": 8
+      },
+      {
+        "name": "文创",
+        "busy": "false",
+        "errors": [],
+        "rows": 20
+      },
+      {
+        "name": "首页与企业",
+        "busy": "false",
+        "errors": [],
+        "rows": 1
+      },
+      {
+        "name": "研学套餐",
+        "busy": "false",
+        "errors": [],
+        "rows": 5
+      },
+      {
+        "name": "教学内容",
+        "busy": "false",
+        "errors": [],
+        "rows": 13
+      },
+      {
+        "name": "点位导览",
+        "busy": "false",
+        "errors": [],
+        "rows": 4
+      }
+    ],
+    "consoleErrorWarningCount": 0,
+    "actualReadRetryCount": 0,
+    "businessMutationActions": 0,
+    "notes": [
+      "Cross-document CDP entry buffer truncated; visible events show canonical me 200 and zero static API requests. This is not a complete network trace.",
+      "Successful login was performed by the user; no credential or Cookie values retained.",
+      "Only metadata of completed JSON reads retained; no personal record payloads."
+    ]
+  },
+  "securityNegative": {
+    "negativeLoginRequests": [
+      {
+        "label": "missing-action",
+        "status": 403,
+        "seconds": 0.2584,
+        "response": {
+          "error": "请求校验失败",
+          "code": "INVALID_REQUEST"
+        },
+        "setCookiePresent": false
+      },
+      {
+        "label": "foreign-origin",
+        "status": 403,
+        "seconds": 0.1086,
+        "response": {
+          "error": "请求来源不允许",
+          "code": "INVALID_REQUEST"
+        },
+        "setCookiePresent": false
+      },
+      {
+        "label": "old-static-origin",
+        "status": 403,
+        "seconds": 0.1257,
+        "response": {
+          "error": "请求来源不允许",
+          "code": "INVALID_REQUEST"
+        },
+        "setCookiePresent": false
+      }
+    ],
+    "publicContentSha256": "c6f9a9afcb81e68e40170ebc473bd8e908467e1c3604724a6df43abd87ccdcd1"
+  },
+  "isolation": {
+    "at": "2026-10-11T15:11:43.934079+00:00",
+    "serverConfigUnchanged": false,
+    "onlineVersionInfosUnchanged": true,
+    "serverName": "huangqiao-api",
+    "status": "normal",
+    "cpu": 0.25,
+    "memoryGiB": 0.5,
+    "min": 1,
+    "max": 5,
+    "envParamsUnchanged": true,
+    "onlineVersions": [
+      {
+        "VersionName": "huangqiao-api-005",
+        "ImageUrl": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-003-20261009084758",
+        "FlowRatio": "100"
+      }
+    ],
+    "adminDeployment": {
+      "serviceName": "huangqiao-admin-staging",
+      "deployType": "static-hosting",
+      "framework": "static",
+      "domain": "huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "appPath": "/",
+      "url": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com/",
+      "latestStatus": "SUCCESS",
+      "createTime": "2026-10-08 23:12:08",
+      "latestVersionName": "huangqiao-admin-staging-006"
+    },
+    "serverConfigSemanticallyUnchanged": true,
+    "rawDifference": "OpenAccessTypes array order only; identical set"
+  },
+  "artifacts": {
+    "at": "2026-10-11T15:11:03.479259+00:00",
+    "artifacts": [
+      {
+        "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+        "file": "index.html",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "1602a52eff451460e062218858f29adfb9e04a6a9185a88d0789c59a448d85b5"
+      },
+      {
+        "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+        "file": "assets/index-B2BtfFOA.js",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "d4e1221918839623bc427f30982649dc087d1c5f865c8f82a99e3bd9f148a461"
+      },
+      {
+        "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+        "file": "assets/index-cLqtQ-te.css",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "b0cd66ad16f4f095a68845d1334d408a5f9a65b7b79bf463c0fbeec1a014b61b"
+      },
+      {
+        "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+        "file": "assets/yorray-logo-CFmraOUS.png",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb"
+      },
+      {
+        "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+        "file": "assets/login-luthier-european-v4-BMkbYrBX.png",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "4ed3b8625adbb650344ef6b9537f2483d6dc5dfc90f411268460dd636c70bbaf"
+      },
+      {
+        "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+        "file": "index.html",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "1602a52eff451460e062218858f29adfb9e04a6a9185a88d0789c59a448d85b5"
+      },
+      {
+        "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+        "file": "assets/index-B2BtfFOA.js",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "d4e1221918839623bc427f30982649dc087d1c5f865c8f82a99e3bd9f148a461"
+      },
+      {
+        "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+        "file": "assets/index-cLqtQ-te.css",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "b0cd66ad16f4f095a68845d1334d408a5f9a65b7b79bf463c0fbeec1a014b61b"
+      },
+      {
+        "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+        "file": "assets/yorray-logo-CFmraOUS.png",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb"
+      },
+      {
+        "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+        "file": "assets/login-luthier-european-v4-BMkbYrBX.png",
+        "status": 200,
+        "matchesBuild": true,
+        "sha256": "4ed3b8625adbb650344ef6b9537f2483d6dc5dfc90f411268460dd636c70bbaf"
+      }
+    ],
+    "publicContentSha256": "c6f9a9afcb81e68e40170ebc473bd8e908467e1c3604724a6df43abd87ccdcd1"
+  },
+  "tests": {
+    "targeted": 11,
+    "failures": 0,
+    "fullPostgreSQLSuiteThisTask": "NOT RUN",
+    "build": "PASS",
+    "typecheck": "PASS",
+    "originals": 25
+  },
+  "buildId": "2608506429",
+  "automation": "PAUSED"
+}
