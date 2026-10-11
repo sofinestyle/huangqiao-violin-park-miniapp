@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-11T09:45:59.298Z",
+  "pages": [
+    {
+      "name": "index",
+      "error": "",
+      "loading": false,
+      "stats": {
+        "packages": 5,
+        "gifts": 20,
+        "instruments": 8,
+        "series": 1
+      },
+      "ms": 4472
+    },
+    {
+      "name": "instruments",
+      "error": "",
+      "loading": false,
+      "count": 8,
+      "ms": 4470
+    },
+    {
+      "name": "gifts",
+      "error": "",
+      "loading": false,
+      "count": 20,
+      "ms": 4455
+    },
+    {
+      "name": "study",
+      "error": "",
+      "loading": false,
+      "count": 5,
+      "ms": 4448
+    },
+    {
+      "name": "teaching",
+      "error": "",
+      "loading": false,
+      "count": 13,
+      "ms": 4462
+    },
+    {
+      "name": "tour",
+      "error": "",
+      "loading": false,
+      "count": 4,
+      "ms": 4426
+    },
+    {
+      "name": "mine",
+      "error": "",
+      "loading": false,
+      "ms": 4413
+    }
+  ],
+  "exceptions": [],
+  "environment": {
+    "environment": "staging",
+    "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com"
+  },
+  "requests": [
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711959835,
+      "status": 200,
+      "ms": 393
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=instrument",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711965206,
+      "status": 200,
+      "ms": 38
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=gift",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711970475,
+      "status": 200,
+      "ms": 41
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=package",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711975766,
+      "status": 200,
+      "ms": 61
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=lesson",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711981018,
+      "status": 200,
+      "ms": 39
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=spot",
+      "method": "GET",
+      "timeout": 20000,
+      "started": 1791711986306,
+      "status": 200,
+      "ms": 67
+    }
+  ],
+  "pass": true,
+  "scope": "WeChat developer tools simulator, isolated build/mini-staging, read-only anonymous Staging pages",
+  "localUrlCheck": false,
+  "localOverrideApproval": "User explicitly approved only this local isolated test project on 2026-10-11",
+  "retryObserved": 0,
+  "timingNote": "requests.ms is actual wx.request callback elapsed time. pages.ms includes automation navigation/wait and is not user-perceived load time.",
+  "cloudConfigurationChanged": false,
+  "businessWrites": false
+}
