@@ -100,7 +100,8 @@
     "result": "PENDING",
     "notBeforeAsiaShanghai": "2026-10-12T09:45:00+08:00",
     "minimumIdleHours": 8,
-    "nextClient": "native-mini-program"
+    "nextClient": "native-mini-program",
+    "scheduling": "manual arrangement pending; no automatic probes"
   },
   "scopeNote": "Only controlled client inactivity can be evidenced. Other users and historical traffic are not excluded. No login POST was sent.",
   "postWakeBrowserChainResult": "FAIL",
@@ -117,6 +118,6 @@
     "status": "PAUSED",
     "updatedAt": "2026-10-11T14:48:42.344Z",
     "pauseCause": "unverified",
-    "resumeUserChoice": "pending"
+    "resumeUserChoice": "keep-paused; arrange acceptance manually later"
   }
 }
