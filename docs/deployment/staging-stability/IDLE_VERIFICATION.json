@@ -1,0 +1,115 @@
+{
+  "environment": "staging",
+  "sourceCommit": "d640c492ac14283467c72bc35c7e9ffed92c36fb",
+  "result": "NOT_EXECUTED",
+  "scheduledHeartbeatAt": "2026-10-11T10:56:59.622Z",
+  "executionClockObservedAt": "2026-10-11T14:35:17Z",
+  "controlledIdleStart": "2026-10-11T09:48:14.751287+00:00",
+  "firstBrowserNavigationAt": "2026-10-11T14:37:51.081Z",
+  "platformTestDomainNoticeAcknowledgedAt": "2026-10-11T14:39:01.080Z",
+  "firstApplicationApiAt": "2026-10-11T14:39:01.849Z",
+  "globalIdleProven": false,
+  "prewarmBeforeFirstClient": false,
+  "client": "Codex In-app Browser; isolated anonymous tab",
+  "ui": {
+    "result": "PASS",
+    "heading": "工作人员登录",
+    "accountAndPasswordInputs": "empty",
+    "errorOverlay": false,
+    "errorAndWarningLogCount": 0
+  },
+  "firstApplicationApi": {
+    "url": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com/api/admin/me",
+    "method": "GET",
+    "status": 404,
+    "responseMs": 499.46,
+    "completedMs": 498.56,
+    "actualRetryCount": 0,
+    "networkFailure": false
+  },
+  "staticDocument": {
+    "url": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com/",
+    "method": "GET",
+    "status": 200,
+    "responseMs": 311.32
+  },
+  "readOnlyDiagnosticsAfterFirstClient": [
+    {
+      "url": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com/api/admin/me",
+      "status": 404,
+      "contentType": "text/html",
+      "seconds": 0.6495,
+      "errorCode": "NoSuchKey",
+      "missingKey": "api%2Fadmin%2Fme"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/admin/me",
+      "status": 401,
+      "contentType": "application/json",
+      "seconds": 0.234,
+      "errorCode": "AUTH_REQUIRED"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/health",
+      "status": 200,
+      "seconds": 0.1011,
+      "response": {
+        "ok": true,
+        "database": true,
+        "environment": "staging"
+      }
+    }
+  ],
+  "cause": "Admin same-origin /api/admin/me resolves to a missing static object on the webapps host. App.jsx suppresses the initial me error; login rendering alone is insufficient evidence.",
+  "cliConfigurationRead": "NOT EXECUTED: No valid identity information; existing console session used instead",
+  "consoleConfiguration": {
+    "observedAt": "2026-10-11T14:45:00.785Z",
+    "currentVersion": "005",
+    "trafficPercent": 100,
+    "status": "正常",
+    "runningInstanceCount": 1,
+    "minInstances": 1,
+    "maxInstances": 5,
+    "cpuCores": 0.25,
+    "memoryGiB": 0.5,
+    "runMode": "自定义",
+    "cpuScaleThresholdPercent": 50,
+    "timerScaling": "无"
+  },
+  "consoleUsage": {
+    "observedAt": "2026-10-11T14:45:09.812Z",
+    "cycleStart": "2026-10-08",
+    "cycleEnd": "2026-11-08",
+    "quotaPoints": 330000,
+    "displayedQuotaDeduction": "2.53万点",
+    "displayedFunctionUsage": "2.55万点",
+    "displayedPayAsYouGoPoints": 0,
+    "cloudRunCyclePoints": 685.75,
+    "cloudRunCpuCoreHours": 5.2,
+    "cloudRunMemoryGiBHours": 10.41,
+    "monthlyIncrementalCashBillVerified": false,
+    "note": "Period totals include prior usage and delayed statistics; not solely attributable to min1."
+  },
+  "mutations": {
+    "businessApiWrites": 0,
+    "databaseWrites": 0,
+    "cloudConfigurationChanges": 0,
+    "productionChanges": 0
+  },
+  "overnight": {
+    "result": "PENDING",
+    "notBeforeAsiaShanghai": "2026-10-12T09:45:00+08:00",
+    "minimumIdleHours": 8,
+    "nextClient": "native-mini-program"
+  },
+  "scopeNote": "Only controlled client inactivity can be evidenced. Other users and historical traffic are not excluded. No login POST was sent.",
+  "postWakeBrowserChainResult": "FAIL",
+  "controlledIdleQualification": "INVALID: device slept before delayed automation ran; elapsed interval is not a qualifying idle acceptance",
+  "elapsedSecondsFromRecordedLastAccessUntilApi": 17447.097713,
+  "deviceSleepEvidence": {
+    "source": "pmset -g log",
+    "lastObservedSleepAsiaShanghai": "2026-10-11T22:32:28+08:00",
+    "fullWakeAsiaShanghai": "2026-10-11T22:33:09+08:00",
+    "note": "Maintenance Sleep / DarkWake occurred during the intended interval. User instructions require NOT_EXECUTED for sleep; post-wake browser 404 is a separate observed failure."
+  }
+}
