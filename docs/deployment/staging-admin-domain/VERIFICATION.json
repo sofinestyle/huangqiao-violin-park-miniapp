@@ -372,9 +372,9 @@
     ],
     "pass": true
   },
-  "browserLogin": "NOT EXECUTED: browser origin permission denied",
+  "browserLogin": "User reports successful hqadmin login; browser authentication not independently observed",
   "adminReadOnlyPages": "NOT EXECUTED: same browser permission blocker",
-  "browserCookieVerification": "NOT EXECUTED: login pending",
+  "browserCookieVerification": "NOT EXECUTED: saved browser origin permission still denies access after user login",
   "tests": {
     "targetedPassed": 11,
     "build": "PASS",
@@ -394,5 +394,23 @@
     ],
     "A": []
   },
-  "browserStatus": "PENDING: https://admin.yorray.com browser origin permission declined; awaiting user setting"
+  "browserStatus": "BLOCKED on follow-up: saved permission or managed policy denies https://admin.yorray.com; user notified, no workaround attempted",
+  "followUpAcceptance": {
+    "at": "2026-10-20T05:50:15.379762+00:00",
+    "userReportedLogin": {
+      "username": "hqadmin",
+      "status": "SUCCESS reported by user; not independently observed"
+    },
+    "browserTabOrigin": "https://admin.yorray.com",
+    "browserTabMetadataProvesAuthenticatedSession": false,
+    "browserAcquisition": "BLOCKED: saved origin permission or managed policy denies page observation",
+    "cookieAttributes": "NOT EXECUTED",
+    "sessionRefresh": "NOT EXECUTED",
+    "legacyEntryBrowserRedirects": "NOT EXECUTED",
+    "adminReadOnlyPages": "NOT EXECUTED",
+    "workaroundAttempted": false,
+    "cloudOrBusinessMutations": false,
+    "idleAutomationOperations": false,
+    "result": "NOT READY FOR FULL ACCEPTANCE"
+  }
 }
