@@ -1,0 +1,23 @@
+{
+  "environment": "staging",
+  "apiVersionBefore": "huangqiao-api-005",
+  "apiVersionAfter": "huangqiao-api-006",
+  "flowRatio": "100",
+  "sameImage": true,
+  "environmentChangedKeys": [
+    "ADMIN_ORIGIN"
+  ],
+  "databaseConnectionUnchanged": true,
+  "storageSettingsUnchanged": true,
+  "otherServerConfigChangedKeys": [],
+  "spec": {
+    "Cpu": 0.25,
+    "Mem": 0.5,
+    "MinNum": 1,
+    "MaxNum": 5
+  },
+  "directDatabaseOperations": false,
+  "businessMutationActions": 0,
+  "productionOperations": false,
+  "newPaidProductsOrUpgrades": false
+}

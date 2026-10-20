@@ -1,0 +1,398 @@
+{
+  "http": {
+    "responses": [
+      {
+        "path": "/api/health",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "seconds": 0.126,
+        "sha256": "7870abd1ba42a0b671bdc1c109bd44493126034671d1b460d03b630f6cb62a0f",
+        "cacheControl": "no-store"
+      },
+      {
+        "path": "/api/admin/me",
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "seconds": 0.107,
+        "sha256": "311202159de4f7526e7b1c22cf530c8c714ba1fc57f52ddc04e15f607b81393b",
+        "cacheControl": "no-store"
+      },
+      {
+        "path": "/api/public/content",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "seconds": 0.115,
+        "sha256": "c6f9a9afcb81e68e40170ebc473bd8e908467e1c3604724a6df43abd87ccdcd1",
+        "cacheControl": "no-store"
+      }
+    ],
+    "csrf": [
+      {
+        "case": "missing-action",
+        "status": 403,
+        "setCookiePresent": false,
+        "response": {
+          "error": "请求校验失败",
+          "code": "INVALID_REQUEST"
+        }
+      },
+      {
+        "case": "foreign-origin",
+        "status": 403,
+        "setCookiePresent": false,
+        "response": {
+          "error": "请求来源不允许",
+          "code": "INVALID_REQUEST"
+        }
+      },
+      {
+        "case": "old-gateway-origin",
+        "status": 403,
+        "setCookiePresent": false,
+        "response": {
+          "error": "请求来源不允许",
+          "code": "INVALID_REQUEST"
+        }
+      }
+    ],
+    "health": {
+      "ok": true,
+      "database": true,
+      "environment": "staging"
+    },
+    "tls": {
+      "verified": true,
+      "notAfter": "Jan  6 13:59:59 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "admin.yorray.com"
+        ]
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "origin": "https://admin.yorray.com",
+      "file": "assets/index-DAPn1kXK.js",
+      "status": 200,
+      "sha256": "813d6d80a482150722c0c173c2bc728624c93601741a47f1b8a14168c0597eb3",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://admin.yorray.com",
+      "file": "assets/index-cLqtQ-te.css",
+      "status": 200,
+      "sha256": "b0cd66ad16f4f095a68845d1334d408a5f9a65b7b79bf463c0fbeec1a014b61b",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://admin.yorray.com",
+      "file": "assets/login-luthier-european-v4-BMkbYrBX.png",
+      "status": 200,
+      "sha256": "4ed3b8625adbb650344ef6b9537f2483d6dc5dfc90f411268460dd636c70bbaf",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://admin.yorray.com",
+      "file": "assets/yorray-logo-CFmraOUS.png",
+      "status": 200,
+      "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://admin.yorray.com",
+      "file": "index.html",
+      "status": 200,
+      "sha256": "1aef6e739ddacbf52c27e6b0276b77404da96c7122437cc2a9e2ba86aa24f957",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "file": "assets/index-DAPn1kXK.js",
+      "status": 200,
+      "sha256": "813d6d80a482150722c0c173c2bc728624c93601741a47f1b8a14168c0597eb3",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "file": "assets/index-cLqtQ-te.css",
+      "status": 200,
+      "sha256": "b0cd66ad16f4f095a68845d1334d408a5f9a65b7b79bf463c0fbeec1a014b61b",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "file": "assets/login-luthier-european-v4-BMkbYrBX.png",
+      "status": 200,
+      "sha256": "4ed3b8625adbb650344ef6b9537f2483d6dc5dfc90f411268460dd636c70bbaf",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "file": "assets/yorray-logo-CFmraOUS.png",
+      "status": 200,
+      "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "file": "index.html",
+      "status": 200,
+      "sha256": "1aef6e739ddacbf52c27e6b0276b77404da96c7122437cc2a9e2ba86aa24f957",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "file": "assets/index-DAPn1kXK.js",
+      "status": 200,
+      "sha256": "813d6d80a482150722c0c173c2bc728624c93601741a47f1b8a14168c0597eb3",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "file": "assets/index-cLqtQ-te.css",
+      "status": 200,
+      "sha256": "b0cd66ad16f4f095a68845d1334d408a5f9a65b7b79bf463c0fbeec1a014b61b",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "file": "assets/login-luthier-european-v4-BMkbYrBX.png",
+      "status": 200,
+      "sha256": "4ed3b8625adbb650344ef6b9537f2483d6dc5dfc90f411268460dd636c70bbaf",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "file": "assets/yorray-logo-CFmraOUS.png",
+      "status": 200,
+      "sha256": "91de420fb90cf03f04bd4974032b17042ad811375c4ff38bbf81358e0af87feb",
+      "matchesBuild": true
+    },
+    {
+      "origin": "https://huangqiao-admin-staging-huangqiao-staging-d2d1dj1bb4ad90.webapps.tcloudbase.com",
+      "file": "index.html",
+      "status": 200,
+      "sha256": "1aef6e739ddacbf52c27e6b0276b77404da96c7122437cc2a9e2ba86aa24f957",
+      "matchesBuild": true
+    }
+  ],
+  "miniAfterRoutingBeforeOriginRollout": {
+    "at": "2026-10-20T05:34:22.244Z",
+    "client": "WeChat Stable 2.02.2608080 simulator",
+    "pages": [
+      {
+        "name": "index",
+        "error": "",
+        "loading": false,
+        "stats": {
+          "packages": 5,
+          "gifts": 20,
+          "instruments": 8,
+          "series": 1
+        }
+      },
+      {
+        "name": "instruments",
+        "error": "",
+        "loading": false,
+        "count": 8
+      },
+      {
+        "name": "gifts",
+        "error": "",
+        "loading": false,
+        "count": 20
+      },
+      {
+        "name": "study",
+        "error": "",
+        "loading": false,
+        "count": 5,
+        "heroImage": "/assets/images/workshop.optimized-v1.jpg"
+      },
+      {
+        "name": "teaching",
+        "error": "",
+        "loading": false,
+        "count": 13
+      },
+      {
+        "name": "tour",
+        "error": "",
+        "loading": false,
+        "count": 4
+      },
+      {
+        "name": "mine",
+        "error": "",
+        "loading": false
+      }
+    ],
+    "exceptions": [],
+    "environment": {
+      "environment": "staging",
+      "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com"
+    },
+    "requests": [
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=instrument",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=gift",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=package",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=lesson",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=spot",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      }
+    ],
+    "pass": true
+  },
+  "miniAfterFullRollout": {
+    "at": "2026-10-20T05:41:08.605Z",
+    "client": "WeChat Stable 2.02.2608080 simulator",
+    "pages": [
+      {
+        "name": "index",
+        "error": "",
+        "loading": false,
+        "stats": {
+          "packages": 5,
+          "gifts": 20,
+          "instruments": 8,
+          "series": 1
+        }
+      },
+      {
+        "name": "instruments",
+        "error": "",
+        "loading": false,
+        "count": 8
+      },
+      {
+        "name": "gifts",
+        "error": "",
+        "loading": false,
+        "count": 20
+      },
+      {
+        "name": "study",
+        "error": "",
+        "loading": false,
+        "count": 5,
+        "heroImage": "/assets/images/workshop.optimized-v1.jpg"
+      },
+      {
+        "name": "teaching",
+        "error": "",
+        "loading": false,
+        "count": 13
+      },
+      {
+        "name": "tour",
+        "error": "",
+        "loading": false,
+        "count": 4
+      },
+      {
+        "name": "mine",
+        "error": "",
+        "loading": false
+      }
+    ],
+    "exceptions": [],
+    "environment": {
+      "environment": "staging",
+      "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com"
+    },
+    "requests": [
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=instrument",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=gift",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=package",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=lesson",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      },
+      {
+        "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=spot",
+        "method": "GET",
+        "timeout": 20000,
+        "status": 200
+      }
+    ],
+    "pass": true
+  },
+  "browserLogin": "NOT EXECUTED: browser origin permission denied",
+  "adminReadOnlyPages": "NOT EXECUTED: same browser permission blocker",
+  "browserCookieVerification": "NOT EXECUTED: login pending",
+  "tests": {
+    "targetedPassed": 11,
+    "build": "PASS",
+    "typecheck": "PASS",
+    "originalFiles": 25,
+    "fullDatabaseSuite": "NOT RUN"
+  },
+  "adminVersion": "huangqiao-admin-staging-007",
+  "adminBuildId": "2609006507",
+  "apiTaskId": 2407076,
+  "apiTaskStatus": "finished",
+  "automation": "PAUSED; no operations this task",
+  "miniVisualReview": "All seven captured simulator pages inspected",
+  "dns": {
+    "CNAME": [
+      "admin.yorray.com.tcbaccess.tencentcloudbase.com."
+    ],
+    "A": []
+  },
+  "browserStatus": "PENDING: https://admin.yorray.com browser origin permission declined; awaiting user setting"
+}

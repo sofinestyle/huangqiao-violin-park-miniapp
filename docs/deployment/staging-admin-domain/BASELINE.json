@@ -1,0 +1,82 @@
+{
+  "head": "7082b40e0be45ddc92c2d5d0f58ca7bde70ee241",
+  "environment": "staging",
+  "domainBefore": {
+    "Domain": "admin.yorray.com",
+    "DomainType": "HTTPSERVICE",
+    "AccessType": "DIRECT",
+    "CertId": "bPy8pYBm",
+    "Protocol": "HTTP_AND_HTTPS",
+    "Cname": "",
+    "IsDefault": false,
+    "Enable": true,
+    "Status": "FAIL",
+    "DNSStatus": "EMPTY",
+    "PlatformCnameDNSStatus": "EMPTY",
+    "CreateTime": "2026-10-08T23:29:55+08:00",
+    "UpdateTime": "2026-10-10T07:44:19+08:00"
+  },
+  "domainAfter": {
+    "Domain": "admin.yorray.com",
+    "DomainType": "HTTPSERVICE",
+    "AccessType": "DIRECT",
+    "CertId": "bPy8pYBm",
+    "Protocol": "HTTP_TO_HTTPS",
+    "Cname": "admin.yorray.com.tcbaccess.tencentcloudbase.com",
+    "IsDefault": false,
+    "Enable": true,
+    "Status": "SUCCESS",
+    "DNSStatus": "EMPTY",
+    "PlatformCnameDNSStatus": "EMPTY",
+    "Routes": [
+      {
+        "Path": "/",
+        "PathRewrite": {
+          "Prefix": "/"
+        },
+        "UpstreamResourceType": "STATIC_STORE",
+        "UpstreamResourceName": "staticstore",
+        "EnableSafeDomain": false,
+        "EnableAuth": false,
+        "EnablePathTransmission": false,
+        "QPSPolicy": {},
+        "Enable": true,
+        "CreateTime": "2026-10-20T13:30:55+08:00",
+        "UpdateTime": "2026-10-20T13:30:55+08:00"
+      },
+      {
+        "Path": "/api",
+        "PathRewrite": {},
+        "UpstreamResourceType": "CBR",
+        "UpstreamResourceName": "huangqiao-api",
+        "EnableSafeDomain": false,
+        "EnableAuth": false,
+        "EnablePathTransmission": true,
+        "QPSPolicy": {},
+        "Enable": true,
+        "CreateTime": "2026-10-20T13:30:55+08:00",
+        "UpdateTime": "2026-10-20T13:30:55+08:00"
+      }
+    ],
+    "CreateTime": "2026-10-08T23:29:55+08:00",
+    "UpdateTime": "2026-10-20T13:30:55+08:00"
+  },
+  "otherGatewayDomainsUnchanged": true,
+  "adminVersionBefore": "huangqiao-admin-staging-006",
+  "apiBefore": {
+    "versions": [
+      {
+        "VersionName": "huangqiao-api-005",
+        "ImageUrl": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-003-20261009084758",
+        "FlowRatio": "100"
+      }
+    ],
+    "adminOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+    "spec": {
+      "Cpu": 0.25,
+      "Mem": 0.5,
+      "MinNum": 1,
+      "MaxNum": 5
+    }
+  }
+}
