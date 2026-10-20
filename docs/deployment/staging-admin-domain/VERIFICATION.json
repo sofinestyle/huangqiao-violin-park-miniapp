@@ -394,7 +394,7 @@
     ],
     "A": []
   },
-  "browserStatus": "BLOCKED on follow-up: saved permission or managed policy denies https://admin.yorray.com; user notified, no workaround attempted",
+  "browserStatus": "BLOCKED after restart: Chrome connected and exact user-mentioned tab matched; origin approval still denied",
   "followUpAcceptance": {
     "at": "2026-10-20T05:50:15.379762+00:00",
     "userReportedLogin": {
@@ -408,6 +408,26 @@
     "sessionRefresh": "NOT EXECUTED",
     "legacyEntryBrowserRedirects": "NOT EXECUTED",
     "adminReadOnlyPages": "NOT EXECUTED",
+    "workaroundAttempted": false,
+    "cloudOrBusinessMutations": false,
+    "idleAutomationOperations": false,
+    "result": "NOT READY FOR FULL ACCEPTANCE"
+  },
+  "postRestartAcceptance": {
+    "at": "2026-10-20T06:04:42.968394+00:00",
+    "client": "Chrome extension via official Browser plugin",
+    "extensionMatchedUserMention": true,
+    "exactTabMatchedUserMention": true,
+    "chromeTransport": "PASS: browser listing and openTabs returned successfully",
+    "siteAccess": "BLOCKED: saved user permission or managed policy denies page observation",
+    "postRestart": true,
+    "userConfirmedPermissionEntry": "Codex Computer Use > Chrome > Manage",
+    "configAllowIsSiteApproval": false,
+    "cookieAttributes": "NOT EXECUTED",
+    "sessionRefresh": "NOT EXECUTED",
+    "legacyEntryBrowserRedirects": "NOT EXECUTED",
+    "adminReadOnlyPages": "NOT EXECUTED",
+    "rootCause": "Unresolved: cannot distinguish persisted denial, overlapping policy, or client synchronization defect",
     "workaroundAttempted": false,
     "cloudOrBusinessMutations": false,
     "idleAutomationOperations": false,
