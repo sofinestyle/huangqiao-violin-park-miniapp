@@ -43,6 +43,13 @@
   "publishExecuted": false,
   "productionEnabled": false,
   "platformDomainConfigChanged": false,
-  "awaitingScopeChoice": true,
-  "status": "NOT READY FOR WECHAT AUDIT"
+  "awaitingScopeChoice": false,
+  "status": "NO UPLOAD: PRODUCTION PLANNING SELECTED",
+  "selectedScope": {
+    "date": "2026-10-21",
+    "statement": "先制定Production准备方案，本轮不上传",
+    "plan": "../production-preparation/PLAN.md",
+    "runtimeChangesAuthorizedThisRound": false
+  },
+  "auditReadiness": "NOT READY"
 }
