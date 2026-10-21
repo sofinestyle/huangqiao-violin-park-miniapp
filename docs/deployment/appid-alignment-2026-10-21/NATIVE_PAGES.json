@@ -1,0 +1,148 @@
+{
+  "at": "2026-10-21T09:49:13.074Z",
+  "targetAppID": "wx5dee6ef3087366c0",
+  "domainCheck": true,
+  "uploaded": false,
+  "pages": [
+    {
+      "name": "index",
+      "actualRoute": "pages/index/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "stats": {
+        "packages": 0,
+        "gifts": 0,
+        "instruments": 0,
+        "series": 0
+      },
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "instruments",
+      "actualRoute": "pages/instruments/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "gifts",
+      "actualRoute": "pages/gifts/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "study",
+      "actualRoute": "pages/study/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "teaching",
+      "actualRoute": "pages/teaching/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "tour",
+      "actualRoute": "pages/tour/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "mine",
+      "actualRoute": "pages/mine/index",
+      "loading": false,
+      "error": "",
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "brand",
+      "actualRoute": "pages/brand/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "hasIdentity": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    }
+  ],
+  "exceptions": [],
+  "account": {
+    "appId": "wx5dee6ef3087366c0",
+    "envVersion": "develop"
+  },
+  "environment": {
+    "name": "staging",
+    "apiBase": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+    "error": ""
+  },
+  "requests": [
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=instrument",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=gift",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=package",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=lesson",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=spot",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=site",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    }
+  ],
+  "pagesPass": false,
+  "scope": "Seven public pages plus brand; login assessed separately in LOGIN.json",
+  "status": "FAIL: request domain validation"
+}

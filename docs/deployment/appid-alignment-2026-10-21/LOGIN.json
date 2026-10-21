@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-21T09:52:39.065Z",
+  "targetAppID": "wx5dee6ef3087366c0",
+  "executed": true,
+  "requests": [
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/auth/wechat",
+      "method": "POST",
+      "error": "request:fail url not in domain list"
+    }
+  ],
+  "context": {
+    "appId": "wx5dee6ef3087366c0",
+    "route": "pages/mine/index",
+    "hasIdentity": false,
+    "busy": false,
+    "error": ""
+  },
+  "result": {
+    "route": "pages/mine/index",
+    "hasIdentity": false,
+    "busy": false,
+    "error": "暂时无法连接服务，请稍后重试"
+  },
+  "pass": false,
+  "authPosts": 1,
+  "otherWrites": 0
+}

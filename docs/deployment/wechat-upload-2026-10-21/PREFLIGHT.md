@@ -42,3 +42,7 @@
 ## 原地转正业务决定（2026-10-21）
 
 负责人确认：“staging可以直接转成正式数据库使用，目前已经对staging内的数据进行了更新和检查，不需要另行迁移”。据此更新[方案](../production-preparation/PLAN.md)：保留原数据库、媒体、关联和admin.yorray.com；不新建正式库、不重录或搬运业务资料。该决定不改变“本轮不上传”的边界；本轮未改运行身份、isTest数据或云配置，正式代码保护仍未启用Production。旧Staging客户端未来会触及同一正式数据，必须在切换前处理测试访问边界。
+
+## AppID更正与最新验证（2026-10-21）
+
+本文件上方wx5bf0160bd4262e24是当时实际预检目标，并非当前正式小程序。负责人后续指定wx5dee6ef3087366c0，现项目及Development/Staging构建已统一；原历史JSON不改写成新AppID成功证据。最新27专项/230全套、Build/Type Check和25原件通过；原生新AppID仍被业务网关合法域名校验拒绝，API在线版本未声明WX_APPID/WX_APPSECRET；真实登录、七页面及服务器最终包体积未通过/未完成。详见[新验收](../appid-alignment-2026-10-21/ACCEPTANCE.md)。本轮没有上传、preview、提审、发布、云配置或业务数据修改。

@@ -12,7 +12,7 @@
 | 后台验收 | 负责人反馈人工验收没有问题，保持HUMAN ACCEPTED；Codex浏览器专项未执行的历史保留，不重试权限 |
 | 后台域名 | 继续使用admin.yorray.com；当前仍服务Staging，尚未执行转正 |
 | 资源身份 | 复用现有CloudBase环境huangqiao-staging-d2d1dj1bb4ad90；环境ID或历史资源名含staging不妨碍正式用途，不为改名搬库 |
-| 小程序 | 当前AppID wx5bf0160bd4262e24；trial固定Staging，release/未知版本关闭，Production配置禁用且API为空 |
+| 小程序 | 当前目标AppID已更正为wx5dee6ef3087366c0（旧预检使用wx5bf0160bd4262e24，不能沿用其平台验收）；trial固定Staging，release/未知版本关闭，Production配置禁用且API为空 |
 | 微信访问 | 2026-10-21新隔离构建开启域名校验时首页失败，诊断url not in domain list；不能据此断言平台一定漏配，需核对正确AppID并重新验证 |
 | 本机既有检查 | 26项专项、Build/Type Check及25原件通过属于此前预检；不是Production运行、七页面真机或新候选实际包体积通过 |
 | 当前数据库内容 | 业务检查以负责人反馈为依据；本轮未查业务库，不能报告isTest分布、旧URL数量或测试记录已清理 |
@@ -87,3 +87,5 @@ api.yorray.com仅为可另行评估的长期域名建议，不是本轮必需的
 已确定：复用现有数据库和媒体、现有业务资料作为正式初始资料、后台沿用admin.yorray.com、无需另行迁移。后续待落实的是实施窗口与准确代码/配置范围、标记检查结果及必要元数据处理、旧测试访问限制、备份恢复证据、微信平台访问与真机验收。无需重复决定是否新建Production数据库。
 
 交付状态：**PLAN UPDATED / IN-PLACE PROMOTION NOT EXECUTED；NOT READY FOR WECHAT AUDIT。** 本轮无上传、提审、发布、数据库、业务数据、云配置或后台安全变更；保护既有未提交工作和原件。
+
+2026-10-21 AppID更正实施：项目与两种本机构建已统一为负责人指定wx5dee6ef3087366c0。线上API版本未声明微信登录凭据，目标AppID的原生请求仍被合法域名校验阻断；未启用Production或上传。实际结果见[验收](../appid-alignment-2026-10-21/ACCEPTANCE.md)。

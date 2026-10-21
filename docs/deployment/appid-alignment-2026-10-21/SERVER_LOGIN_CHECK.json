@@ -1,0 +1,12 @@
+{
+  "readSucceeded": true,
+  "onlineVersion": "huangqiao-api-006",
+  "WX_APPID": null,
+  "matchesTargetAppID": false,
+  "WX_APPSECRETConfigured": false,
+  "APP_ENV": "staging",
+  "LOCAL_DEV_AUTH": "false",
+  "configChanged": false,
+  "secretValuePrinted": false,
+  "errorCode": null
+}

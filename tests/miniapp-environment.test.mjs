@@ -35,7 +35,7 @@ test('Status component visible only in develop, hides even blocked release',()=>
  for(const [version,visible,label] of [['develop',true,'DEV · 本地'],['trial',false,'STAGING · 云端'],['release',false,'API 已阻止']]){const h=host({version});h.load('components/environment-status/index');const c=h.component();c.lifetimes.attached.call(c);assert.equal(c.data.visible,visible);assert.equal(c.data.label,label);}
 });
 test('Production builds and out-of-SSOT overrides rejected before any package is emitted',()=>{
- for(const env of [{APP_ENV:'production',MINI_API_BASE:'https://example.invalid',MINI_APPID:'wx5bf0160bd4262e24'},{APP_ENV:'production',MINI_API_BASE:'http://localhost:8787'},{APP_ENV:'development',MINI_API_BASE:'https://production.example.invalid'},{APP_ENV:'staging',MINI_API_BASE:'http://127.0.0.1:8787'},{APP_ENV:'invalid'}]){const r=spawnSync(process.execPath,['scripts/build-mini.mjs'],{env:{...process.env,...env},encoding:'utf8'});assert.notEqual(r.status,0);}
+ for(const env of [{APP_ENV:'production',MINI_API_BASE:'https://example.invalid',MINI_APPID:'wx5dee6ef3087366c0'},{APP_ENV:'production',MINI_API_BASE:'http://localhost:8787'},{APP_ENV:'development',MINI_API_BASE:'https://production.example.invalid'},{APP_ENV:'staging',MINI_API_BASE:'http://127.0.0.1:8787'},{APP_ENV:'invalid'}]){const r=spawnSync(process.execPath,['scripts/build-mini.mjs'],{env:{...process.env,...env},encoding:'utf8'});assert.notEqual(r.status,0);}
 });
 test('All page origins absent, wx.request only centralized, one environment SSOT and five tabs retained',()=>{
  function files(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(join(dir,e.name)):[join(dir,e.name)]);}

@@ -15,10 +15,12 @@ const u=new URL(config.apiBase);
 if(u.username||u.password||u.search||u.hash||u.pathname!=='/'||
  (environment==='development'&&!['127.0.0.1','localhost','[::1]'].includes(u.hostname))||
  (environment==='staging'&&(u.protocol!=='https:'||!u.hostname.endsWith('.app.tcloudbase.com'))))throw new Error('API环境边界无效');
-if(environment==='staging'&&!/^wx[a-f0-9]{16}$/.test(process.env.MINI_APPID||''))throw new Error('须明确配置MINI_APPID');
+// The shared native project is the single AppID source for every build target.
+const sourceProject=JSON.parse(readFileSync('miniprogram/project.config.json','utf8'));
+if(!/^wx[a-f0-9]{16}$/.test(sourceProject.appid||''))throw new Error('项目AppID无效，禁止构建');
+if(process.env.MINI_APPID&&process.env.MINI_APPID!==sourceProject.appid)throw new Error('MINI_APPID与项目AppID不一致，禁止构建');
 const out=resolve('build/mini-'+environment);rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
 cpSync('miniprogram',out,{recursive:true,filter:p=>!p.endsWith('project.private.config.json')&&!p.endsWith('.DS_Store')&&!p.endsWith('.js')&&!p.endsWith('.js.map')});
-if(environment==='staging'){const project=JSON.parse(readFileSync(join(out,'project.config.json'),'utf8'));project.appid=process.env.MINI_APPID;writeFileSync(join(out,'project.config.json'),JSON.stringify(project,null,2)+'\n');}
 writeFileSync(join(out,'miniprogram/build-target.ts'),'export default '+JSON.stringify({environment})+';\n');
 execFileSync(process.execPath,['node_modules/typescript/bin/tsc','-p',join(out,'tsconfig.json')],{stdio:'inherit'});
 // Emit JavaScript before the official preview compiler consumes this isolated build.

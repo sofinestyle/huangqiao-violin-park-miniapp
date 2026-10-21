@@ -1,0 +1,14 @@
+{
+  "exitCode": 0,
+  "host": "127.0.0.1",
+  "port": 55433,
+  "database": "hq_test_business_migration",
+  "summary": [
+    "ℹ tests 230",
+    "ℹ pass 230",
+    "ℹ fail 0",
+    "ℹ skipped 0",
+    "ℹ duration_ms 21947.108333"
+  ],
+  "usesBusinessDatabase": false
+}

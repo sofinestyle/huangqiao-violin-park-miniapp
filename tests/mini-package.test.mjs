@@ -21,7 +21,7 @@ test('品牌普通分包保持原路由，主包无跨分包固定资源依赖�
 
 test('隔离构建输出兼容JavaScript并保留环境选择与Production阻止机制',()=>{
  for(const environment of ['development','staging']){
-  const r=spawnSync(process.execPath,['scripts/build-mini.mjs'],{env:{...process.env,APP_ENV:environment,MINI_APPID:'wx5bf0160bd4262e24'},encoding:'utf8'});
+  const r=spawnSync(process.execPath,['scripts/build-mini.mjs'],{env:{...process.env,APP_ENV:environment,MINI_APPID:''},encoding:'utf8'});
   assert.equal(r.status,0,r.stderr);
   const root='build/mini-'+environment;
   const target=readFileSync(root+'/miniprogram/build-target.js','utf8');
@@ -37,6 +37,18 @@ test('隔离构建输出兼容JavaScript并保留环境选择与Production阻止
   assert.equal(loadConfig('trial').getEnvironment().name,'staging');
   assert.throws(()=>loadConfig('release').getEnvironment(),/Production尚未批准/);
   const project=JSON.parse(readFileSync(root+'/project.config.json'));
+  assert.equal(project.appid,'wx5dee6ef3087366c0');
+  assert.equal(project.appid,JSON.parse(readFileSync('miniprogram/project.config.json')).appid);
   assert.ok(!project.setting.useCompilerPlugins.includes('typescript'),'生成JS后不重复执行TS插件');
+ }
+});
+
+test('错误AppID在覆盖既有构建产物前被拒绝',()=>{
+ for(const environment of ['development','staging']){
+  const root='build/mini-'+environment;
+  const before=readFileSync(root+'/project.config.json','utf8');
+  const r=spawnSync(process.execPath,['scripts/build-mini.mjs'],{env:{...process.env,APP_ENV:environment,MINI_APPID:'wx5bf0160bd4262e24'},encoding:'utf8'});
+  assert.notEqual(r.status,0);assert.match(r.stderr,/MINI_APPID与项目AppID不一致/);
+  assert.equal(readFileSync(root+'/project.config.json','utf8'),before);
  }
 });

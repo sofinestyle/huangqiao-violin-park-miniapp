@@ -1,0 +1,22 @@
+{
+  "diagnosticOnly": true,
+  "usesNativeDomainValidation": false,
+  "businessMediaSamples": [
+    {
+      "kind": "image",
+      "status": 200,
+      "finalOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "contentType": "image/jpeg",
+      "contentLength": "1999104",
+      "acceptRanges": "bytes"
+    },
+    {
+      "kind": "video",
+      "status": 200,
+      "finalOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "contentType": "video/mp4",
+      "contentLength": "53917439",
+      "acceptRanges": "bytes"
+    }
+  ]
+}

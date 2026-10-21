@@ -1,0 +1,40 @@
+{
+  "source": "WeChat Developer Tools local code dependency analysis export",
+  "appid": "wx5dee6ef3087366c0",
+  "statis": {
+    "allSize": 1110095,
+    "codeSize": 172321,
+    "resourceSize": 937774,
+    "unusedCodeFilesSize": 0
+  },
+  "packages": {
+    "main": {
+      "bytes": 728054,
+      "files": 115,
+      "byExtension": {
+        ".js": 58415,
+        ".json": 3018,
+        ".wxss": 46567,
+        ".png": 379159,
+        ".jpg": 187720,
+        ".wxml": 53175
+      }
+    },
+    "pages/brand/": {
+      "bytes": 382041,
+      "files": 6,
+      "byExtension": {
+        ".jpg": 370895,
+        ".js": 2436,
+        ".json": 226,
+        ".wxml": 3824,
+        ".wxss": 4660
+      }
+    }
+  },
+  "previewExecuted": false,
+  "uploadExecuted": false,
+  "serverVerifiedPackageSize": null,
+  "qualityHintsNotEquivalentToHardLimits": true,
+  "sourceIncludesPreexistingUncommittedAssetChanges": true
+}
