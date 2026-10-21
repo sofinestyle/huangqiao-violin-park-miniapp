@@ -44,12 +44,22 @@
   "productionEnabled": false,
   "platformDomainConfigChanged": false,
   "awaitingScopeChoice": false,
-  "status": "NO UPLOAD: PRODUCTION PLANNING SELECTED",
+  "status": "NO UPLOAD: EXISTING STAGING IN-PLACE PROMOTION PLANNED",
   "selectedScope": {
     "date": "2026-10-21",
     "statement": "先制定Production准备方案，本轮不上传",
     "plan": "../production-preparation/PLAN.md",
-    "runtimeChangesAuthorizedThisRound": false
+    "runtimeChangesAuthorizedThisRound": false,
+    "productionResourceDecision": {
+      "date": "2026-10-21",
+      "statement": "staging可以直接转成正式数据库使用，目前已经对staging内的数据进行了更新和检查，不需要另行迁移",
+      "reuseExistingDatabase": true,
+      "reuseExistingMedia": true,
+      "businessDataReviewedBy": "project owner",
+      "dataMigrationRequired": false,
+      "promotionExecuted": false,
+      "databaseReadThisRound": false
+    }
   },
   "auditReadiness": "NOT READY"
 }
