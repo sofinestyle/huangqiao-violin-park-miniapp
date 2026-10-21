@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "4e93fca6102df5de7c98c8dd2bdc229c73ac3da7",
+  "sourceIncludesPreexistingUncommittedMiniChanges": true,
+  "appid": "wx5bf0160bd4262e24",
+  "tests": {
+    "targetedPassed": 26,
+    "targetedFailed": 0,
+    "build": "PASS",
+    "typecheck": "PASS",
+    "originalsPassed": 25,
+    "realDatabaseBusinessTests": "NOT RUN"
+  },
+  "native": {
+    "at": "2026-10-21T07:39:44.908Z",
+    "environment": {
+      "environment": "staging",
+      "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "error": "",
+      "envVersion": "develop"
+    },
+    "pages": [
+      {
+        "name": "index",
+        "loading": false,
+        "error": "暂时无法连接服务，请稍后重试",
+        "stats": {
+          "packages": 0,
+          "gifts": 0,
+          "instruments": 0,
+          "series": 0
+        }
+      }
+    ],
+    "stoppedAfterError": true,
+    "pass": false,
+    "singlePublicGetDiagnostic": {
+      "error": "request:fail url not in domain list"
+    }
+  },
+  "packageSize": "NOT MEASURED BY WECHAT COMPILER THIS ROUND",
+  "uploadExecuted": false,
+  "auditSubmitted": false,
+  "publishExecuted": false,
+  "productionEnabled": false,
+  "platformDomainConfigChanged": false,
+  "awaitingScopeChoice": true,
+  "status": "NOT READY FOR WECHAT AUDIT"
+}

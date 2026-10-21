@@ -432,5 +432,15 @@
     "cloudOrBusinessMutations": false,
     "idleAutomationOperations": false,
     "result": "NOT READY FOR FULL ACCEPTANCE"
+  },
+  "humanAcceptance": {
+    "reportedDate": "2026-10-21",
+    "confirmedBy": "Project owner in this chat",
+    "statement": "人工验收没有问题，暂时不考虑codex验收的问题。下一步将代码上传小程序后台审核，进行内部测试。",
+    "status": "ACCEPTED BY PROJECT OWNER",
+    "detailedChecklistProvided": false,
+    "independentlyVerifiedByCodex": false,
+    "overridesBrowserToolBlockAsStageGate": true,
+    "browserSpecificUnexecutedFactsRetained": true
   }
 }
