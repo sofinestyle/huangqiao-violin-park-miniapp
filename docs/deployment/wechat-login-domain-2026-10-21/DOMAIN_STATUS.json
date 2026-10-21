@@ -8,7 +8,17 @@
   "providerAuthorizationChanged": false,
   "domainValidationDisabled": false,
   "providerConsoleToolAccess": "BLOCKED: saved browser permission denies https://console.cloud.tencent.com",
-  "nextAction": "Owner configure request/downloadFile domains in delegated platform; preserve existing valid domains and authorization",
+  "nextAction": "小程序管理员在腾讯云账号中心→登录方式→微信公众平台完成与当前腾讯云账号绑定，再重新提交既有认证；若提示其他账号归属，停止并核对，不解绑。随后保留旧域名补充request/downloadFile并原生重测。",
   "officialGuidance": "https://cloud.tencent.com/document/product/1301/86886",
-  "status": "PENDING MANUAL DELEGATED DOMAIN CONFIGURATION"
+  "status": "BLOCKED BY MINI PROGRAM ACCOUNT BINDING",
+  "observedAtBeijing": "2026-10-21 22:40",
+  "currentCloudBasePage": "https://tcb.cloud.tencent.com/dev?envId=huangqiao-staging-d2d1dj1bb4ad90#/env/mp-auth",
+  "observedProgramName": "黄桥琴旅",
+  "observedAppId": "wx5dee6ef3087366c0",
+  "observedAuthorizationStatus": "授权失败",
+  "observedAuthorizationUpdatedAtBeijing": "2026-10-12 20:01:38",
+  "observedFailureReason": "该小程序未绑定腾讯云账号",
+  "domainEditButtonsDisabled": true,
+  "accountBindingChanged": false,
+  "authorizationRetrySubmitted": false
 }
