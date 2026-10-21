@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-21T14:20:06.466Z",
+  "submitted": true,
+  "TaskId": 2421449,
+  "RequestId": "57a6de60-1ef0-48ec-a175-ae1913bad5ba",
+  "oldVersion": "huangqiao-api-006",
+  "imageUnchanged": true,
+  "changedKeys": [
+    "WX_APPID",
+    "WX_APPSECRET"
+  ],
+  "businessDataMutation": false,
+  "productionMutation": false,
+  "secretPersistedLocally": false
+}

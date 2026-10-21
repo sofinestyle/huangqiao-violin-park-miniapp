@@ -89,3 +89,5 @@ api.yorray.com仅为可另行评估的长期域名建议，不是本轮必需的
 交付状态：**PLAN UPDATED / IN-PLACE PROMOTION NOT EXECUTED；NOT READY FOR WECHAT AUDIT。** 本轮无上传、提审、发布、数据库、业务数据、云配置或后台安全变更；保护既有未提交工作和原件。
 
 2026-10-21 AppID更正实施：项目与两种本机构建已统一为负责人指定wx5dee6ef3087366c0。线上API版本未声明微信登录凭据，目标AppID的原生请求仍被合法域名校验阻断；未启用Production或上传。实际结果见[验收](../appid-alignment-2026-10-21/ACCEPTANCE.md)。
+
+2026-10-21 22:20后续更新：目标AppID及配套AppSecret已由负责人经安全页配置，Staging API007部署并承接100%流量，其他环境变量、原镜像/规格不变。微搭托管阻止微信公众平台直接改域名，服务域名仍未保存，真实登录及Secret配对未通过；不启用Production或上传。详见[当前验收](../wechat-login-domain-2026-10-21/ACCEPTANCE.md)。

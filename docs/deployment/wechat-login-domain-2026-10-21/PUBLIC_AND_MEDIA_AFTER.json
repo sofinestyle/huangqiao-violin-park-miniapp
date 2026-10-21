@@ -1,0 +1,38 @@
+{
+  "diagnosticOnly": true,
+  "notNativeAcceptance": true,
+  "requests": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "health": {
+        "ok": true,
+        "database": true,
+        "environment": "staging"
+      }
+    },
+    {
+      "path": "/api/public/content",
+      "status": 200,
+      "count": 51,
+      "sha256": "c6f9a9afcb81e68e40170ebc473bd8e908467e1c3604724a6df43abd87ccdcd1",
+      "sameAsBeforeConfiguration": true
+    },
+    {
+      "kind": "image",
+      "status": 206,
+      "bytesRead": 65536,
+      "finalOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "contentType": "image/jpeg",
+      "contentRange": "bytes 0-65535/1999104"
+    },
+    {
+      "kind": "video",
+      "status": 206,
+      "bytesRead": 65536,
+      "finalOrigin": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com",
+      "contentType": "video/mp4",
+      "contentRange": "bytes 0-65535/53917439"
+    }
+  ]
+}

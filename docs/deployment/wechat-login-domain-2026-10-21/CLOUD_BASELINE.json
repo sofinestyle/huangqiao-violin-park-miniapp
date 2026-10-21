@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-21T14:15:04.923Z",
+  "envId": "huangqiao-staging-d2d1dj1bb4ad90",
+  "server": "huangqiao-api",
+  "environment": "staging",
+  "version": "huangqiao-api-006",
+  "image": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-003-20261009084758",
+  "appId": null,
+  "secretConfigured": false,
+  "adminOrigin": "https://admin.yorray.com",
+  "devAuth": "false",
+  "seed": "none",
+  "spec": {
+    "cpu": 0.25,
+    "memoryGiB": 0.5,
+    "min": 1,
+    "max": 5
+  },
+  "changed": false
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-21T14:26:04.163Z",
+  "versions": [
+    {
+      "VersionName": "huangqiao-api-007",
+      "ImageUrl": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-003-20261009084758",
+      "FlowRatio": "100"
+    }
+  ],
+  "changedEnvironmentKeys": [
+    "WX_APPID",
+    "WX_APPSECRET"
+  ],
+  "onlyAuthorizedCredentialsChanged": true,
+  "databaseConnectionUnchanged": true,
+  "allOtherEnvironmentValuesUnchanged": true,
+  "adminOriginUnchanged": true,
+  "productionEnabled": false,
+  "environment": "staging",
+  "specUnchanged": true,
+  "imageUnchanged": true,
+  "secretConfigured": true,
+  "appId": "wx5dee6ef3087366c0"
+}

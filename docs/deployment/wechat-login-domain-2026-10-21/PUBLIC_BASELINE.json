@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-21",
+  "requests": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "sha256": "7870abd1ba42a0b671bdc1c109bd44493126034671d1b460d03b630f6cb62a0f",
+      "health": {
+        "ok": true,
+        "database": true,
+        "environment": "staging"
+      }
+    },
+    {
+      "path": "/api/public/content",
+      "status": 200,
+      "sha256": "c6f9a9afcb81e68e40170ebc473bd8e908467e1c3604724a6df43abd87ccdcd1",
+      "count": 51
+    }
+  ]
+}

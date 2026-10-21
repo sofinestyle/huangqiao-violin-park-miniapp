@@ -1,0 +1,195 @@
+{
+  "at": "2026-10-21T14:28:24.818Z",
+  "targetAppId": "wx5dee6ef3087366c0",
+  "domainCheck": true,
+  "pages": [
+    {
+      "name": "index",
+      "route": "pages/index/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "stats": {
+        "packages": 0,
+        "gifts": 0,
+        "instruments": 0,
+        "series": 0
+      },
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "instruments",
+      "route": "pages/instruments/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "gifts",
+      "route": "pages/gifts/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "study",
+      "route": "pages/study/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "teaching",
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "tour",
+      "route": "pages/tour/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "count": 0,
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "mine",
+      "route": "pages/mine/index",
+      "loading": false,
+      "error": "",
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    {
+      "name": "brand",
+      "route": "pages/brand/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=instrument",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=product&category=gift",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=package",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=lesson",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=spot",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/public/content?kind=site",
+      "method": "GET",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    },
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/auth/wechat",
+      "method": "POST",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    }
+  ],
+  "exceptions": [],
+  "uploadExecuted": false,
+  "productionChanged": false,
+  "context": {
+    "appId": "wx5dee6ef3087366c0",
+    "envVersion": "develop",
+    "environment": "staging",
+    "base": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com"
+  },
+  "login": {
+    "executed": true,
+    "beforeHasIdentity": false,
+    "result": {
+      "route": "pages/mine/index",
+      "loading": false,
+      "error": "暂时无法连接服务，请稍后重试",
+      "hasIdentity": false,
+      "busy": false,
+      "heroFailed": false,
+      "buildingFailed": false
+    },
+    "pass": false
+  },
+  "media": [
+    {
+      "kind": "image",
+      "pass": false,
+      "error": "getImageInfo:fail download image fail. reason: downloadFile:fail createDownloadTask:fail url not in domain list"
+    },
+    {
+      "kind": "video-range-download",
+      "pass": false,
+      "error": "downloadFile:fail createDownloadTask:fail url not in domain list"
+    }
+  ],
+  "videoPlayback": "NOT EXECUTED: native page must first load through valid domain",
+  "otherWrites": 0,
+  "auth": [
+    {
+      "url": "https://huangqiao-staging-d2d1dj1bb4ad90-1300244228.ap-shanghai.app.tcloudbase.com/api/auth/wechat",
+      "method": "POST",
+      "timeout": 20000,
+      "error": "request:fail url not in domain list"
+    }
+  ],
+  "pagesPass": false,
+  "pass": false
+}

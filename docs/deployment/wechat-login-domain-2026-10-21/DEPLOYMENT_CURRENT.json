@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-21T14:22:58.086Z",
+  "environment": "staging",
+  "appId": "wx5dee6ef3087366c0",
+  "matchesTargetAppId": true,
+  "appSecretConfigured": true,
+  "adminOrigin": "https://admin.yorray.com",
+  "devAuth": "false",
+  "seed": "none",
+  "spec": {
+    "Cpu": 0.25,
+    "Mem": 0.5,
+    "MinNum": 1,
+    "MaxNum": 5
+  },
+  "versions": [
+    {
+      "VersionName": "huangqiao-api-007",
+      "ImageUrl": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-003-20261009084758",
+      "FlowRatio": "100"
+    }
+  ]
+}
