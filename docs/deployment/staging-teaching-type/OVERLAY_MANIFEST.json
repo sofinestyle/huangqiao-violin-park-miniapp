@@ -1,0 +1,13 @@
+{
+  "environment": "staging",
+  "envId": "huangqiao-staging-d2d1dj1bb4ad90",
+  "serverName": "huangqiao-api",
+  "baseImage": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api@sha256:3666e8ebf4544ca0ee84836945f1a064deffed9d6b476d08f80854a690fc24bd",
+  "files": {
+    "server/pg/foundation.mjs": "9394c4ae6735de1c9eae69323ea6de86e28a505f447f995f0392337e523ae578",
+    "shared/teaching-types.mjs": "2def6a2d793b7974a9a3c7f790cb531e06c70eceb1dc4e1fc4a9323a92dbbec8"
+  },
+  "configChanges": [],
+  "databaseMigration": false,
+  "automaticClassification": false
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "environment": "staging",
+  "status": "DEPLOYED_PENDING_OWNER_CLASSIFICATION_SAVE",
+  "cloudDeploymentSubmitted": true,
+  "tests": {
+    "all": 235,
+    "pass": 235,
+    "fail": 0,
+    "skip": 0,
+    "baseRuntimeOverlayHttpPg": true,
+    "build": true,
+    "typecheck": true,
+    "originals": 25
+  },
+  "businessDataWrites": false,
+  "databaseMigration": false,
+  "productionChanged": false,
+  "miniProgramUploaded": false,
+  "miniProgramSubmittedForReview": false,
+  "miniProgramPublished": false,
+  "existingUncommittedWorkPreserved": true,
+  "credentialOutputIncident": "Historical temporary deployment configuration accidentally appeared in tool output; no raw credentials committed; safe rotation pending",
+  "cloudVersion": "huangqiao-api-008",
+  "taskId": 2423855,
+  "buildId": 2609140789,
+  "trafficPercent": 100,
+  "environmentValuesUnchanged": true,
+  "selectedConfigurationValuesUnchanged": true,
+  "contentAndMediaRowsUnchanged": true,
+  "cloudHealth": 200,
+  "publicSections200": 6,
+  "videoRange206": 13,
+  "imageRange206": 4,
+  "cloudSecurityStatusCodes": [
+    403,
+    403,
+    401
+  ]
+}

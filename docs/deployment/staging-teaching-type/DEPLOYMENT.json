@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-22T01:35:06.688Z",
+  "version": "huangqiao-api-008",
+  "DeployId": "008",
+  "DeployTime": "2026-10-22 09:30:43",
+  "Status": "normal",
+  "BuildId": 2609140789,
+  "FlowRatio": 100,
+  "ImageUrl": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-008-20261022093051",
+  "HasTraffic": true,
+  "IsReleasing": false
+}

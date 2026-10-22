@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-22T01:32:45.860Z",
+  "environment": "staging",
+  "version": "huangqiao-api-008",
+  "image": "ccr.ccs.tencentyun.com/tcb-100011456753-gqyp/ca-pppfmzdq_huangqiao-api:huangqiao-api-008-20261022093051",
+  "flow": "100",
+  "configuration": {
+    "Cpu": 0.25,
+    "Mem": 0.5,
+    "MinNum": 1,
+    "MaxNum": 5,
+    "PolicyDetails": [
+      {
+        "PolicyType": "cpu",
+        "PolicyThreshold": 50
+      }
+    ],
+    "Port": 8787,
+    "VpcConf": {
+      "VpcId": "vpc-ff4sl9b6",
+      "VpcCIDR": "172.17.0.0/16",
+      "SubnetId": "subnet-lvuixyxd",
+      "SubnetCIDR": "172.17.0.0/20"
+    },
+    "PublicNetConf": {
+      "PublicNetStatus": "ENABLE"
+    },
+    "VolumesConf": [],
+    "BuildDir": ".",
+    "Dockerfile": "Dockerfile",
+    "Cmd": [],
+    "EntryPoint": []
+  },
+  "envSha256": "f668ac692652bf6e73bc16ee0c11440c7660ca9184d69a774c694388962e123e",
+  "allEnvironmentValuesUnchanged": true,
+  "allSelectedConfigurationValuesUnchanged": true,
+  "appId": "wx5dee6ef3087366c0",
+  "adminOrigin": "https://admin.yorray.com"
+}

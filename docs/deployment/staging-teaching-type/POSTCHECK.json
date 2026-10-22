@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-22T01:33:02.111Z",
+  "environment": "staging",
+  "health": {
+    "status": 200,
+    "milliseconds": 171,
+    "body": {
+      "ok": true,
+      "database": true,
+      "environment": "staging"
+    }
+  },
+  "public": {
+    "status": 200,
+    "count": 51,
+    "sha256": "84280eb6054285f4f0ed1847c461462759d3922950a4119abb3e3b289b67a357",
+    "identicalToBefore": true
+  },
+  "lessonCount": 13,
+  "allLessonFormatsVideo": true,
+  "allTeachingTypeKeysStillAbsent": true,
+  "pages": [
+    {
+      "page": "首页",
+      "status": 200,
+      "count": 1,
+      "milliseconds": 45
+    },
+    {
+      "page": "乐器",
+      "status": 200,
+      "count": 8,
+      "milliseconds": 42
+    },
+    {
+      "page": "文创",
+      "status": 200,
+      "count": 20,
+      "milliseconds": 35
+    },
+    {
+      "page": "研学",
+      "status": 200,
+      "count": 5,
+      "milliseconds": 34
+    },
+    {
+      "page": "教学",
+      "status": 200,
+      "count": 13,
+      "milliseconds": 49
+    },
+    {
+      "page": "点位导览",
+      "status": 200,
+      "count": 4,
+      "milliseconds": 37
+    }
+  ],
+  "videoRange": [
+    {
+      "id": "370907da-c0a2-4828-9700-8fc80f2fbebd",
+      "status": 206,
+      "range": "bytes 0-1023/53917439",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "52e1327b-7e27-4e3a-bdf4-7b4c219af0c5",
+      "status": 206,
+      "range": "bytes 0-1023/25486351",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "7410d0ee-cd95-4001-9583-c8e15fd72552",
+      "status": 206,
+      "range": "bytes 0-1023/16332286",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "77f1b33a-12af-41bb-833d-685173983e3e",
+      "status": 206,
+      "range": "bytes 0-1023/15578530",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "7d6c0874-d1ad-42b7-81cc-e04e92cf9c5b",
+      "status": 206,
+      "range": "bytes 0-1023/25262174",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "7edbdd1f-c69d-4f95-9591-bc2e83e33863",
+      "status": 206,
+      "range": "bytes 0-1023/17462264",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "899ebb03-f663-4635-9956-f6d8c3e90beb",
+      "status": 206,
+      "range": "bytes 0-1023/14184019",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "8bd3fc8b-ab4a-4302-8c17-febc004a5007",
+      "status": 206,
+      "range": "bytes 0-1023/12386531",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "8f60a3d5-76f4-4314-b473-5e4f9e3151e8",
+      "status": 206,
+      "range": "bytes 0-1023/15085281",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "c289e3ca-9f60-467b-8a12-a349260ba212",
+      "status": 206,
+      "range": "bytes 0-1023/12591052",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "ea470543-3389-428a-b658-de9e22fd14d3",
+      "status": 206,
+      "range": "bytes 0-1023/24157076",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "f4cd575e-f7c6-4143-b7f0-db2de47c46b9",
+      "status": 206,
+      "range": "bytes 0-1023/6237865",
+      "mime": "video/mp4",
+      "bytes": 1024
+    },
+    {
+      "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+      "status": 206,
+      "range": "bytes 0-1023/35722048",
+      "mime": "video/mp4",
+      "bytes": 1024
+    }
+  ],
+  "pictures": [
+    {
+      "path": "/api/media/3e3a8570-85af-494c-8805-ec9158adada0",
+      "status": 206,
+      "mime": "image/jpeg",
+      "bytes": 1024
+    },
+    {
+      "path": "/api/media/fc9c7210-3f15-4b25-9bc7-1e3ac8b2dc2e",
+      "status": 206,
+      "mime": "image/jpeg",
+      "bytes": 1024
+    },
+    {
+      "path": "/api/media/ccca16d5-5f35-48d2-86c7-fed71aa11662",
+      "status": 206,
+      "mime": "image/jpeg",
+      "bytes": 1024
+    },
+    {
+      "path": "/api/media/df0803ea-ad3b-4cb7-b780-42b46f794b4c",
+      "status": 206,
+      "mime": "image/jpeg",
+      "bytes": 1024
+    }
+  ],
+  "security": [
+    {
+      "case": "missing_action",
+      "status": 403,
+      "expected": 403
+    },
+    {
+      "case": "foreign_origin",
+      "status": 403,
+      "expected": 403
+    },
+    {
+      "case": "missing_cookie",
+      "status": 401,
+      "expected": 401
+    }
+  ],
+  "cloudAuthenticatedSaveExecuted": false,
+  "nativeOrPhonePageAcceptanceExecuted": false
+}

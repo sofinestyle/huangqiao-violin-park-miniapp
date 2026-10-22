@@ -1,0 +1,58 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {randomUUID} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {openDatabase} from './pg-test-db.mjs';
+import {createAccount} from '../server/security.mjs';
+import {createHttpServer} from '../server/http.mjs';
+
+test('teaching Admin → API → PostgreSQL → public API preserves categories, video format, Cookie and CSRF',async t=>{
+ const db=await openDatabase();
+ const password=randomUUID();
+ await createAccount(db,{username:'teaching_qa',password,roles:['content']});
+ await db.execute('INSERT INTO media VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9)',['qa-video','qa.mp4','video/mp4',4,'0'.repeat(64),'qa.mp4','synthetic rights',12,new Date().toISOString()]);
+ const origin='https://admin.example.invalid';
+ const {server}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'staging',adminOrigin:origin});
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ t.after(async()=>{await new Promise(resolve=>server.close(resolve));await db.close();});
+ const base='http://127.0.0.1:'+server.address().port;
+ const login=await fetch(base+'/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json','X-HQ-Action':'1',Origin:origin},body:JSON.stringify({username:'teaching_qa',password})});
+ assert.equal(login.status,200);
+ const cookieHeader=login.headers.get('set-cookie');
+ for(const flag of ['HttpOnly','Secure','SameSite=Strict','Path=/'])assert.ok(cookieHeader.includes(flag),'required Cookie attribute missing');
+ const cookie=cookieHeader.split(';')[0];
+ const headers={'Content-Type':'application/json','X-HQ-Action':'1',Origin:origin,Cookie:cookie};
+ const payload=(teachingType,type)=>({kind:'lesson',name:'isolated teaching',state:'published',data:{type,teachingType,isTest:true,mediaId:'qa-video',duration:12,rights:'synthetic rights',images:[]}});
+ const write=(data,h=headers)=>fetch(base+'/api/admin/content',{method:'POST',headers:h,body:JSON.stringify(data)});
+ for(const [choice,format] of [['unboxing','video'],['product_video','video'],['violin_course','course'],['article','article'],['other','video']]){
+  const response=await write(payload(choice,format));assert.equal(response.status,201);
+  const saved=await response.json();
+  const stored=await db.one('SELECT data FROM content WHERE id=$1',[saved.id]);
+  assert.equal(stored.data.teachingType,choice);assert.equal(stored.data.type,format);
+  const reopened=await (await fetch(base+'/api/admin/content/'+saved.id,{headers:{Cookie:cookie}})).json();
+  assert.equal(reopened.teachingType,choice);assert.equal(reopened.type,format);
+  const publicDetail=await (await fetch(base+'/api/public/content/'+saved.id)).json();
+  assert.equal(publicDetail.teachingType,choice);assert.equal(publicDetail.type,format);
+ }
+ const before=await db.many('SELECT * FROM content ORDER BY id');
+ for(const invalid of ['invalid','__proto__',null,[],{}])assert.equal((await write(payload(invalid,'video'))).status,400);
+ assert.equal((await write(payload('unboxing','article'))).status,400);
+ assert.equal((await write({...payload('unboxing','video'),data:{...payload('unboxing','video').data,duration:0}})).status,400);
+ assert.equal((await write({...payload('product_video','video'),data:{...payload('product_video','video').data,mediaId:'missing'}})).status,400);
+ assert.equal((await write(payload('other','video'),{...headers,Origin:'https://foreign.example.invalid'})).status,403);
+ const missingAction={...headers};delete missingAction['X-HQ-Action'];
+ assert.equal((await write(payload('other','video'),missingAction)).status,403);
+ const missingCookie={...headers};delete missingCookie.Cookie;
+ assert.equal((await write(payload('other','video'),missingCookie)).status,401);
+ assert.deepEqual(await db.many('SELECT * FROM content ORDER BY id'),before);
+ const legacy=payload(undefined,'video');delete legacy.data.teachingType;
+ const legacyResponse=await write(legacy);assert.equal(legacyResponse.status,201);
+ const savedLegacy=await legacyResponse.json();assert.equal(savedLegacy.type,'video');assert.equal(Object.hasOwn(savedLegacy,'teachingType'),false);
+ const update=await fetch(base+'/api/admin/content/'+savedLegacy.id,{method:'PUT',headers,body:JSON.stringify({...payload('product_video','video'),version:savedLegacy.version})});
+ assert.equal(update.status,200);
+ const updated=await update.json();assert.equal(updated.teachingType,'product_video');assert.equal(updated.type,'video');
+ const storedUpdate=await db.one('SELECT data FROM content WHERE id=$1',[updated.id]);
+ assert.equal(storedUpdate.data.teachingType,'product_video');assert.equal(storedUpdate.data.type,'video');
+ const list=await (await fetch(base+'/api/public/content?kind=lesson')).json();
+ assert.equal(list.length,6);assert.equal(list.filter(x=>Object.hasOwn(x,'teachingType')).length,6);
+});

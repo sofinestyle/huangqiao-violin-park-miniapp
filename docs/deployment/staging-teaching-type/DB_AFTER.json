@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-22T09:33:17.593001+08:00",
+  "database": "postgres-i56vqlwu",
+  "schema": "app",
+  "contentCount": 51,
+  "contentHash": "a344ef468edd284a5071d606968dd016",
+  "mediaCount": 79,
+  "mediaHash": "37680273d0d06147cba0c437dbac2cfd",
+  "lessonCount": 13,
+  "allLessonTypes": "video",
+  "allTeachingTypeKeysAbsent": true,
+  "identicalToBefore": true
+}
