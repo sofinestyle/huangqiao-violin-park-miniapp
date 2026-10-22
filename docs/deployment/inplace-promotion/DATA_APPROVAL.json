@@ -1,0 +1,10 @@
+{
+  "manifestSha256": "97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3",
+  "approvedBy": "project-owner",
+  "approvedAt": "2026-10-22T04:28:38.497Z",
+  "source": "explicit-user-reply",
+  "identityWritesMax": 2,
+  "visitorSessionsMax": 2,
+  "adminSessionsMax": 1,
+  "loginAuditsMax": 1
+}

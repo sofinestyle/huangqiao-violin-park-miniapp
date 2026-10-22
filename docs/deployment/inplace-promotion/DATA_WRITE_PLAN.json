@@ -1,0 +1,896 @@
+{
+  "format": 1,
+  "status": "AWAITING_EXPLICIT_DATA_APPROVAL",
+  "target": {
+    "envId": "huangqiao-staging-d2d1dj1bb4ad90",
+    "database": "postgres-i56vqlwu",
+    "schema": "app"
+  },
+  "contentCount": 51,
+  "content": [
+    {
+      "id": "191d0ed1-9d55-441e-9b67-5b4992a14569",
+      "kind": "product",
+      "name": "尤克里里玩偶",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T14:00:40.732+08:00",
+        "rowFingerprint": "40b6e72c705d31ee082b64bf4fb34e33"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "1e6e4395-cd7f-426a-bda1-943b8be315e9",
+      "kind": "package",
+      "name": "小小制琴师·工序体验营",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-09T23:25:48.007+08:00",
+        "rowFingerprint": "18b7232a43a75231b29bcd4253458848"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "2177d369-4cb6-5ee8-8246-cdbc0e18fe79",
+      "kind": "spot",
+      "name": "城市客厅",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-09T09:55:08.83+08:00",
+        "rowFingerprint": "73d37baefc19ce4edf8dd3a18bfbea9a"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "22c5b91a-16b3-4862-8c01-e7bb1a76c82c",
+      "kind": "package",
+      "name": "琴韵初体验",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-09T23:23:29.25+08:00",
+        "rowFingerprint": "a5268d9b339d9be31efe128ef4bfd5b7"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "31fd1095-0c24-4cf3-824d-ca1e15c9fbd6",
+      "kind": "product",
+      "name": "榉木笔筒夜灯",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:01:54.278+08:00",
+        "rowFingerprint": "85722e1e49e583a2c02c60594feb5e05"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "370907da-c0a2-4828-9700-8fc80f2fbebd",
+      "kind": "lesson",
+      "name": "新琴跑音如何处理",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 7,
+        "updatedAt": "2026-10-22T09:47:48.643+08:00",
+        "rowFingerprint": "b1299d6e129da4bd36d6f1abab57e21b"
+      },
+      "after": {
+        "isTest": false,
+        "version": 8,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "3b23bb3f-e46b-46a3-bfd6-25f97228f3c4",
+      "kind": "package",
+      "name": "提琴文化艺术营",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "915060e80ace68f8f9c015864ea5c6f2"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "3c78482a-c984-4b5c-bd93-4c78d813c6a8",
+      "kind": "product",
+      "name": "古镇冰箱贴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:53:50.369+08:00",
+        "rowFingerprint": "f617fd838aad570779a647d8cdfbfb72"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "41346998-856a-476e-8862-67133ee56c2e",
+      "kind": "product",
+      "name": "帆布包",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:02:56.686+08:00",
+        "rowFingerprint": "7384d20bd9397b7e8d44f70b78779547"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "46ed490c-2b8b-4c67-9e1c-5b07a8d64966",
+      "kind": "product",
+      "name": "L901",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:05:08.798+08:00",
+        "rowFingerprint": "4dc727993d9f06cd4c01d598274cc7b1"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "52e1327b-7e27-4e3a-bdf4-7b4c219af0c5",
+      "kind": "lesson",
+      "name": "如何正确使用松香",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-22T09:47:58.566+08:00",
+        "rowFingerprint": "06c2d5cd78be496c25cc59400ab3c242"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "61610c9a-3bb3-508d-97a4-ff3a455a5ef1",
+      "kind": "spot",
+      "name": "音乐生态湖",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-09T09:55:08.83+08:00",
+        "rowFingerprint": "43a64dfa321e72d62097b579e16c651c"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "66f86c41-9e41-46f0-b438-5df6a6e2cf16",
+      "kind": "product",
+      "name": "文创礼盒",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "6708db93c1eda212350a829101295fb8"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "6c2a045d-739a-493f-b313-37e18a15f8c7",
+      "kind": "product",
+      "name": "L301",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:22:33.417+08:00",
+        "rowFingerprint": "374831f43941cde9bc01c72d2f56d238"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "6c4a8600-90b4-488a-89d4-810e217fcac2",
+      "kind": "product",
+      "name": "小提琴紫砂壶",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "6ca657fb2ace009035ca63954a542ffd"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "7410d0ee-cd95-4001-9583-c8e15fd72552",
+      "kind": "lesson",
+      "name": "旋轴打滑处理",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-22T09:48:03.676+08:00",
+        "rowFingerprint": "af8bdc47161be52f9c6f7e095c16359e"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "77f1b33a-12af-41bb-833d-685173983e3e",
+      "kind": "lesson",
+      "name": "提琴的存放与保养",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-22T09:48:08.835+08:00",
+        "rowFingerprint": "645a8914ecfbd412af7db91f60c438cc"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "78b4a325-038a-4084-98c6-869a475ec24c",
+      "kind": "product",
+      "name": "L1201",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T14:06:02.753+08:00",
+        "rowFingerprint": "2029931e7c22b6bbc71dbdcd5e04984e"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "7d48f1df-e2aa-5c9e-ae2f-75f88396b798",
+      "kind": "spot",
+      "name": "产业园·中小企业集聚区",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-09T09:55:08.83+08:00",
+        "rowFingerprint": "916c1bd80eba0942f2058d0112e9b8f1"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "7d6c0874-d1ad-42b7-81cc-e04e92cf9c5b",
+      "kind": "lesson",
+      "name": "琴码的安装与扶正",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:46:27.655+08:00",
+        "rowFingerprint": "be81d6ffab4044764dc63c1e30517d71"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "7edbdd1f-c69d-4f95-9591-bc2e83e33863",
+      "kind": "lesson",
+      "name": "如何安装肩托",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:47:16.974+08:00",
+        "rowFingerprint": "8e187d9242cc25f859c22f08c10e5b5a"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "80c5af46-9960-4ef3-8b60-35ad2707d45e",
+      "kind": "product",
+      "name": "提琴书签",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:55:35.862+08:00",
+        "rowFingerprint": "14577be59172fa01c76cf0401408e216"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "80d79606-9251-4884-9010-b86aa6daae25",
+      "kind": "product",
+      "name": "L1普及小提琴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-07T22:48:26.962+08:00",
+        "rowFingerprint": "afe81699034317fa2239871309684bea"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8325afe2-ce9f-45d5-b318-64aa95f285af",
+      "kind": "package",
+      "name": "提琴匠心深度游",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-07T10:22:42.568+08:00",
+        "rowFingerprint": "96991f7ef5cfdc4c49b51fb36a53e693"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "84810900-e21d-467c-b486-6148b826a9d1",
+      "kind": "product",
+      "name": "提琴包挂",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "7377be656e8189e9313b64fbf3ec3586"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "894c5d2e-0d3d-4f94-83df-41a61410b36b",
+      "kind": "product",
+      "name": "棕色小提琴玩偶",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:03:16.026+08:00",
+        "rowFingerprint": "5e41f6320d53fefb87688eb80c7c6ebe"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "899ebb03-f663-4635-9956-f6d8c3e90beb",
+      "kind": "lesson",
+      "name": "如何安装指板贴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:51:48.007+08:00",
+        "rowFingerprint": "d799659238677ba8b4608bc145fa8995"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8bd3fc8b-ab4a-4302-8c17-febc004a5007",
+      "kind": "lesson",
+      "name": "日常保养（琴和弓）",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:45:50.494+08:00",
+        "rowFingerprint": "bb3c00ec1c42f4d295367a45dbd6fd7b"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8d96c41a-be2e-4745-8ff9-350c389d9b1a",
+      "kind": "product",
+      "name": "迷你乐器",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "8fc770459727c65b1cc7bbde5a50d0df"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8f60a3d5-76f4-4314-b473-5e4f9e3151e8",
+      "kind": "lesson",
+      "name": "琴弓松紧调节",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:44:55.464+08:00",
+        "rowFingerprint": "91ab292f75bffddd7bb3c9dc47be8f8c"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8f71fd1f-b7b4-4f35-b1ce-44cd1ac845f3",
+      "kind": "product",
+      "name": "音乐冰箱贴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:54:41.038+08:00",
+        "rowFingerprint": "602c010e8cd3a857e07eb56cea6a0493"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "8ff9b568-9717-4178-ad47-1f82b515dfc5",
+      "kind": "product",
+      "name": "纪念币",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:02:40.639+08:00",
+        "rowFingerprint": "1dad42644895aab1e5bce0f573342f3f"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "93ebf835-d7ee-4346-80ab-38445427a2a1",
+      "kind": "product",
+      "name": "L1101",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T14:05:35.65+08:00",
+        "rowFingerprint": "29452ef558d681d3811f05a812d394ae"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "980ff753-9e4e-42ac-af2c-b873b8bb2265",
+      "kind": "product",
+      "name": "琵琶玩偶",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:03:10.406+08:00",
+        "rowFingerprint": "da42b49530b82c45c12b5e39964f1542"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "981fd3f8-4d08-561d-ae9b-0983214e0b87",
+      "kind": "spot",
+      "name": "绿岛·智能环保表面处理中心",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-09T09:55:08.83+08:00",
+        "rowFingerprint": "0c5f86423662e7de3fbe2df566ae8aae"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "99780888-8c52-4319-95b8-9a3a034ef60e",
+      "kind": "product",
+      "name": "L701",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:29:04.852+08:00",
+        "rowFingerprint": "d38fdcf8f088e3770a2d4331cc20fdd8"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "a2d9c042-f349-4203-aa1e-4d7b776521cd",
+      "kind": "package",
+      "name": "制琴工坊探秘",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "43274736f0680d101083e2b9b883704c"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "a959c4a0-4b07-4837-9b97-3e7ae25b1caf",
+      "kind": "product",
+      "name": "L2初学者实木小提琴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:24:25.817+08:00",
+        "rowFingerprint": "39727c49ddf979cde42c098ee098b33d"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "b96c77b7-0910-405f-849a-e6c76f62965e",
+      "kind": "product",
+      "name": "亚克力拼图冰箱贴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:02:34.544+08:00",
+        "rowFingerprint": "69f50b369087fa77b9cb6a213b1c1ee0"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "bad6fd19-5b60-4d7c-8fb8-038e076fed1c",
+      "kind": "product",
+      "name": "L501",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-10T13:26:31.326+08:00",
+        "rowFingerprint": "22954836ddc523f9c39791ddb03a9c8f"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "c289e3ca-9f60-467b-8a12-a349260ba212",
+      "kind": "lesson",
+      "name": "琴弓浮毛的处理方式",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:51:03.659+08:00",
+        "rowFingerprint": "43fda99c496cb0acf8a67f4b7eb3d009"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "cc2158ab-aa01-4c2d-ae85-34221b457981",
+      "kind": "product",
+      "name": "地图冰箱贴",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T13:53:23.442+08:00",
+        "rowFingerprint": "927182e3547eaa1bdaa04b0a9df539ec"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "ccbea07c-9e18-4533-a01a-4f5aa79dbf5b",
+      "kind": "product",
+      "name": "1/64 纸盒",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "65bd7f14a84c50890087926c4bd66fa6"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "d5bbc0b8-3632-42bd-8380-bd2a8843cab6",
+      "kind": "product",
+      "name": "紫色提琴玩偶",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:03:04.424+08:00",
+        "rowFingerprint": "9616860ceb33c00577c0dcb879a01161"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "db4e68f6-2ef6-41da-85df-fc20a760c627",
+      "kind": "lesson",
+      "name": "L12大师级小提琴展示",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T13:43:50.12+08:00",
+        "rowFingerprint": "f97b3a29f5211f02aca2657e3d04f146"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "e95eb404-3e24-4673-8975-ddff21c75670",
+      "kind": "product",
+      "name": "金属直尺",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:02:45.979+08:00",
+        "rowFingerprint": "7311b6ed063a0935d140657520d21d99"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "ea470543-3389-428a-b658-de9e22fd14d3",
+      "kind": "lesson",
+      "name": "如何更换琴弦",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:43:39.389+08:00",
+        "rowFingerprint": "45d452c61c5225edd5a350ddaab85bac"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "eaa1dead-a24c-45e1-a469-247638f951f2",
+      "kind": "product",
+      "name": "手机支架",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 4,
+        "updatedAt": "2026-10-10T14:02:50.881+08:00",
+        "rowFingerprint": "e99a38129beaa6732b675fbd62162ca7"
+      },
+      "after": {
+        "isTest": false,
+        "version": 5,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "f4cd575e-f7c6-4143-b7f0-db2de47c46b9",
+      "kind": "lesson",
+      "name": "如何使用弱音器",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 1,
+        "updatedAt": "2026-10-10T13:49:46.988+08:00",
+        "rowFingerprint": "a2fe2fbb0acb7b241ec43465023dd243"
+      },
+      "after": {
+        "isTest": false,
+        "version": 2,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "fa43269b-dc79-43c7-b35d-54f1d74d7b9a",
+      "kind": "product",
+      "name": "1/64 木盒",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 2,
+        "updatedAt": "2026-10-01T10:00:46.222+08:00",
+        "rowFingerprint": "20547d725c512152a8b83889eaca8e69"
+      },
+      "after": {
+        "isTest": false,
+        "version": 3,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    },
+    {
+      "id": "site",
+      "kind": "site",
+      "name": "黄桥乐器文化产业园",
+      "state": "published",
+      "before": {
+        "isTest": true,
+        "version": 3,
+        "updatedAt": "2026-10-01T18:38:40.497+08:00",
+        "rowFingerprint": "fe4fa8d510249bb2ac808086d8b87036"
+      },
+      "after": {
+        "isTest": false,
+        "version": 4,
+        "updatedAt": "TRANSACTION_TIMESTAMP"
+      }
+    }
+  ],
+  "audit": {
+    "inserts": 1,
+    "actor": "deployment:approved-inplace-promotion",
+    "action": "content.production-promote",
+    "object": "approved-content-batch",
+    "detailFields": [
+      "manifestSha256",
+      "contentIds",
+      "count",
+      "approvalAt"
+    ]
+  },
+  "otherTableUpdates": 0,
+  "mediaObjectWrites": 0,
+  "schemaChanges": 0,
+  "deletes": 0,
+  "sha256": "97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3"
+}

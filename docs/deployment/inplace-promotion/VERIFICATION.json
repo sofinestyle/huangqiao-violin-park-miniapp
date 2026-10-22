@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "sourceCommit": "865beb0964bb528d13087ca529bd21c12a793d5e",
+  "cloudControlledMutations": 0,
+  "environment": "staging",
+  "productionEnabled": false,
+  "markingApplied": false,
+  "approvedManifestSha256": "97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3",
+  "backup": {
+    "complete": true,
+    "capturedAt": "2026-10-22T12:55:41.229271+08:00",
+    "manifestSha256": "23f392d49e83715151c0cae98b19f5707164c69379050f3427d495f869ac9212",
+    "tables": {
+      "accounts": 1,
+      "audit": 128,
+      "bookings": 0,
+      "changes": 0,
+      "consultations": 1,
+      "content": 51,
+      "idempotency": 17,
+      "media": 79,
+      "migrations": 1,
+      "product_skus": 70,
+      "sessions": 12,
+      "slots": 0,
+      "visitors": 1
+    },
+    "mediaCount": 79,
+    "mediaBytes": 328168761,
+    "nativePgDump": false,
+    "physicalCloudRecoveryVerified": false,
+    "offsiteCopyVerified": false
+  },
+  "restore": {
+    "status": "PASS",
+    "tablesMatched": true,
+    "media": {
+      "count": 79,
+      "bytes": 328168761,
+      "allHashesMatched": true,
+      "imageStatus": 200,
+      "videoRangeStatus": 206
+    },
+    "disposableTargetRemoved": true,
+    "decryptedMediaRemoved": true
+  },
+  "backgroundTaskObservation": {
+    "observedAt": "2026-10-22T04:52:07.479Z",
+    "rowCounts": {
+      "before": 17,
+      "after": 17
+    },
+    "changes": [
+      {
+        "route": "admin:direct-video:v1",
+        "beforeState": "expired",
+        "afterState": "expired",
+        "changedResponseFields": [
+          "nextCleanupAt"
+        ]
+      },
+      {
+        "route": "admin:direct-video:v1",
+        "beforeState": "expired",
+        "afterState": "expired",
+        "changedResponseFields": [
+          "nextCleanupAt"
+        ]
+      },
+      {
+        "route": "admin:direct-video:v1",
+        "beforeState": "expired",
+        "afterState": "expired",
+        "changedResponseFields": [
+          "nextCleanupAt"
+        ]
+      }
+    ],
+    "controlledSqlWrites": 0,
+    "explanation": "Existing scheduled upload worker may update expired task leases/nextCleanupAt; this is not evidence of globally write-free operation."
+  },
+  "nativeDomain": {
+    "appId": "wx5dee6ef3087366c0",
+    "domain": "https://admin.yorray.com",
+    "cloudWrites": 0,
+    "context": {
+      "appId": "wx5dee6ef3087366c0",
+      "envVersion": "develop",
+      "domainCheckSetting": true
+    },
+    "request": {
+      "error": "request:fail url not in domain list"
+    }
+  },
+  "tests": {
+    "allPassed": 245,
+    "failed": 0,
+    "skipped": 0,
+    "build": true,
+    "typeCheck": true,
+    "originalsVerified": 25
+  },
+  "formalCandidate": {
+    "runtimeEnabled": false,
+    "officialUpload": false,
+    "wechatServerPackageCheck": "NOT EXECUTED",
+    "sevenPagesPhone": "NOT EXECUTED",
+    "review": false,
+    "release": false
+  },
+  "status": "HELD_FOR_DOMAIN_CONFIGURATION"
+}

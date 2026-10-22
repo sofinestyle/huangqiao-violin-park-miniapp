@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import ts from 'typescript';import vm from 'node:vm';
-import {readFileSync,readdirSync,mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';import {resolve,dirname,join} from 'node:path';import {tmpdir} from 'node:os';import {spawnSync} from 'node:child_process';
+import {readFileSync,readdirSync,mkdtempSync,mkdirSync,writeFileSync,rmSync,cpSync,symlinkSync,existsSync} from 'node:fs';import {resolve,dirname,join} from 'node:path';import {tmpdir} from 'node:os';import {spawnSync} from 'node:child_process';
 function host({version='develop',query={},target,productionEnabled=false,productionApiBase,storage=new Map(),status=200}={}){
  const cache=new Map(),requests=[];let component;
  const wx={getAccountInfoSync:()=>({miniProgram:{envVersion:version}}),getLaunchOptionsSync:()=>({query}),getStorageSync:k=>storage.get(k)||'',setStorageSync:(k,v)=>storage.set(k,v),removeStorageSync:k=>storage.delete(k),login:o=>o.success({code:'synthetic-wechat-code'}),request:o=>{requests.push(o);o.success({statusCode:status,data:{token:'synthetic-'+requests.length,error:'synthetic'}});}};
@@ -60,4 +60,21 @@ test('Prepared production remains disabled; simulated approved trial/release use
  }
  assert.throws(()=>host({target:'production',version:'develop',productionEnabled:true}).load('config').getEnvironment());
  for(const productionApiBase of ['http://127.0.0.1:8787','https://unapproved.example.invalid'])assert.throws(()=>host({target:'production',version:'release',productionEnabled:true,productionApiBase}).load('config').getEnvironment());
+});
+
+test('Internal candidate build requires explicit mode and enabled SSOT, retains compression/domain checks and no review/release permission',()=>{
+ mkdirSync('build',{recursive:true});const dir=mkdtempSync(resolve('build/production-build-test-'));
+ try{
+  cpSync('miniprogram',join(dir,'miniprogram'),{recursive:true,filter:p=>!p.endsWith('project.private.config.json')&&!p.endsWith('.DS_Store')&&!p.endsWith('.js')&&!p.endsWith('.js.map')});
+  symlinkSync(resolve('node_modules'),join(dir,'node_modules'),'dir');
+  const settings=structuredClone(host().load('environment-settings').default),file=join(dir,'miniprogram/miniprogram/environment-settings.ts');
+  const save=()=>writeFileSync(file,'export default '+JSON.stringify(settings)+' as const;\n');
+  const run=(...args)=>spawnSync(process.execPath,[resolve('scripts/build-mini.mjs'),...args],{cwd:dir,env:{...process.env,APP_ENV:'production'},encoding:'utf8'});
+  settings.production.enabled=false;save();assert.notEqual(run('--candidate-production').status,0);
+  settings.production.enabled=true;save();assert.notEqual(run().status,0);assert.notEqual(run('--prepare-production','--candidate-production').status,0);
+  assert.equal(run('--candidate-production').status,0);
+  const out=join(dir,'build/mini-production'),meta=JSON.parse(readFileSync(join(out,'INTERNAL_CANDIDATE.json'))),project=JSON.parse(readFileSync(join(out,'project.config.json')));
+  assert.equal(meta.runtimeEnabled,true);assert.equal(meta.apiBase,'https://admin.yorray.com');assert.equal(meta.uploadPurpose,'internal-experience-only');assert.equal(meta.reviewApproved,false);assert.equal(meta.releaseApproved,false);
+  assert.equal(project.setting.urlCheck,true);assert.equal(project.setting.minified,true);assert.deepEqual(project.condition.miniprogram.list,[]);assert.equal(existsSync(join(out,'PREPARATION_ONLY.json')),false);
+ }finally{rmSync(dir,{recursive:true,force:true});}
 });

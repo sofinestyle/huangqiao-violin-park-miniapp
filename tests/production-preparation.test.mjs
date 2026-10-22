@@ -8,6 +8,7 @@ import {Service} from '../server/service.mjs';
 import {createHttpServer} from '../server/http.mjs';
 import {contentTestFlag,contentForSave} from '../admin/src/content-environment.mjs';
 import {entryFetch} from './http-entry-client.mjs';
+import {configuration} from '../server/config.mjs';
 
 test('Admin derives test marking from authenticated server environment and never promotes old content',()=>{
  for(const env of ['development','staging','production']){
@@ -65,4 +66,31 @@ test('Staging keeps existing entry behavior and reports authenticated environmen
  const base='http://127.0.0.1:'+server.address().port;
  assert.equal((await fetch(base+'/api/public/content')).status,200);
  const r=await fetch(base+'/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json','X-HQ-Action':'1',Origin:origin},body:JSON.stringify({username:'stage_qa',password})});assert.equal(r.status,200);assert.equal((await r.json()).environment,'staging');
+});
+
+test('Compatible rollback stays production, blocks API writes and background jobs without restoring old data',async t=>{
+ const config={APP_ENV:'development',DATABASE_URL:'postgresql://localhost/hq_test_config'};
+ assert.equal(configuration(config).readOnly,false);
+ assert.equal(configuration({...config,HQ_READ_ONLY:'true'}).readOnly,true);
+ assert.throws(()=>configuration({...config,HQ_READ_ONLY:'yes'}));
+ const db=await openDatabase(),origin='https://admin.yorray.com';
+ // If the real worker ran, it would claim this expired task and change its JSON.
+ const id=randomUUID(),task={id,owner:'isolated',objectKey:id+'.mp4',mime:'video/mp4',state:'pending',cleanupAt:0,expiresAt:0};
+ await db.execute('INSERT INTO idempotency VALUES($1,$2,$3,$4,$5)',[task.owner,'admin:direct-video:v1',id,id,JSON.stringify(task)]);
+ const snapshot=()=>db.one("SELECT jsonb_build_object('visitors',(SELECT jsonb_agg(t) FROM visitors t),'sessions',(SELECT jsonb_agg(t) FROM sessions t),'content',(SELECT jsonb_agg(t) FROM content t),'audit',(SELECT jsonb_agg(t) FROM audit t),'jobs',(SELECT jsonb_agg(t) FROM idempotency t)) AS data");
+ const before=await snapshot();
+ const {server,videoWorker}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'production',adminOrigin:origin,readOnly:true});
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ t.after(async()=>{await new Promise(resolve=>server.close(resolve));await db.close();});
+ const base='http://127.0.0.1:'+server.address().port,headers={Host:'admin.yorray.com',Origin:origin,'X-HQ-Action':'1','Content-Type':'application/json'};
+ assert.deepEqual(await (await entryFetch(base+'/api/health')).json(),{ok:true,database:true,environment:'production',readOnly:true,canonicalEntry:false});
+ assert.equal((await (await entryFetch(base+'/api/health',{headers})).json()).canonicalEntry,true);
+ assert.equal((await (await entryFetch(base+'/api/health',{headers:{Host:'old.app.tcloudbase.com','X-Forwarded-Host':'admin.yorray.com'}})).json()).canonicalEntry,false);
+ assert.equal((await entryFetch(base+'/api/public/content',{headers})).status,200);
+ for(const method of ['POST','PUT','PATCH','DELETE'])for(const path of ['/api/admin/login','/api/admin/content','/api/auth/wechat','/api/visitor/bookings','/api/admin/media/video-uploads']){
+  const r=await entryFetch(base+path,{method,headers:{...headers,'Content-Length':'2'},body:'{}'});assert.equal(r.status,503);assert.equal((await r.json()).code,'READ_ONLY_MAINTENANCE');
+ }
+ assert.equal((await entryFetch(base+'/api/admin/login',{method:'POST',headers:{...headers,'X-HQ-Action':'0'},body:'{}'})).status,403);
+ assert.equal((await entryFetch(base+'/api/public/content',{headers:{Host:'old.app.tcloudbase.com','X-Forwarded-Host':'admin.yorray.com'}})).status,403);
+ await videoWorker.tick();assert.deepEqual(await snapshot(),before);
 });
