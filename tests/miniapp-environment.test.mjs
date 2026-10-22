@@ -8,7 +8,7 @@ function host({version='develop',query={},target,productionEnabled=false,product
   if(file.endsWith('/build-target.ts')&&target)return {default:{environment:target}};
   const module={exports:{}};cache.set(file,module);
   const code=ts.transpileModule(readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
-  vm.runInNewContext('(function(require,module,exports,wx,Component){'+code+'\n})',{console,Promise,Object,Error})(name=>load(resolve(dirname(file),name+'.ts')),module,module.exports,wx,c=>{component={...c,data:{...c.data},setData(v){Object.assign(this.data,v);}};});if(file.endsWith('/environment-settings.ts')&&productionEnabled){module.exports.default={...module.exports.default,production:{...module.exports.default.production,enabled:true,...(productionApiBase?{apiBase:productionApiBase}:{})}};}return module.exports;}
+  vm.runInNewContext('(function(require,module,exports,wx,Component){'+code+'\n})',{console,Promise,Object,Error})(name=>load(resolve(dirname(file),name+'.ts')),module,module.exports,wx,c=>{component={...c,data:{...c.data},setData(v){Object.assign(this.data,v);}};});if(file.endsWith('/environment-settings.ts')&&productionEnabled!==null){module.exports.default={...module.exports.default,production:{...module.exports.default.production,enabled:productionEnabled,...(productionApiBase?{apiBase:productionApiBase}:{})}};}return module.exports;}
  return {wx,requests,storage,load:name=>load(resolve('miniprogram/miniprogram',name+'.ts')),component:()=>component};
 }
 test('Native default resolves real existing loopback; query selects fixed Staging, never an arbitrary URL',()=>{
@@ -42,7 +42,7 @@ test('All page origins absent, wx.request only centralized, one environment SSOT
  for(const file of files('miniprogram/miniprogram/pages').filter(f=>f.endsWith('.ts')))assert.doesNotMatch(readFileSync(file,'utf8'),/localhost|127\.0\.0\.1|tcloudbase|wx\.request/);
  const requests=files('miniprogram/miniprogram').filter(f=>f.endsWith('.ts')&&/wx\.request\(/.test(readFileSync(f,'utf8')));assert.deepEqual(requests,['miniprogram/miniprogram/lib/api.ts']);
  const app=JSON.parse(readFileSync('miniprogram/miniprogram/app.json','utf8'));assert.deepEqual(app.tabBar.list.map(x=>x.text),['首页','乐器','文创','研学','我的']);
- const h=host(),settings=h.load('environment-settings').default;assert.equal(settings.production.enabled,false);assert.equal(settings.production.apiBase,'https://admin.yorray.com');
+ const h=host({productionEnabled:null}),settings=h.load('environment-settings').default;assert.equal(settings.production.enabled,true);assert.equal(settings.production.apiBase,'https://admin.yorray.com');
 });
 test('Compile-mode preparation preserves domain/security and existing private conditions and is idempotent',()=>{
  const dir=mkdtempSync(join(tmpdir(),'hq-mini-prepare-'));try{mkdirSync(join(dir,'miniprogram'));const original={setting:{urlCheck:true},condition:{miniprogram:{list:[{name:'用户原有模式',query:'x=1'}]}},libVersion:'3.17.3'};writeFileSync(join(dir,'miniprogram/project.private.config.json'),JSON.stringify(original));writeFileSync(join(dir,'miniprogram/project.config.json'),readFileSync('miniprogram/project.config.json'));
@@ -50,7 +50,7 @@ test('Compile-mode preparation preserves domain/security and existing private co
 });
 
 
-test('Prepared production remains disabled; simulated approved trial/release use only canonical API with isolated identity',async()=>{
+test('Disabled production fails closed; approved trial/release use only canonical API with isolated identity',async()=>{
  for(const version of ['trial','release']){
   const blocked=host({target:'production',version});await assert.rejects(blocked.load('lib/api').api('/api/public/content'));assert.equal(blocked.requests.length,0);
   const storage=new Map([['hq-visitor-token:staging','old-staging-token']]);

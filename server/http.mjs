@@ -8,7 +8,7 @@ import { Fault, requireValue, authenticate, checkPassword, issueSession, createA
 import { now, decode, transaction } from './db.mjs';
 import { upload, serveMedia, listMedia } from './media.mjs';
 import {authorizeVideo,completeVideo,getVideoTask,videoUploadWorker} from './video-uploads.mjs';
-import {checkProductionEntry,canonicalHostMatches} from './production-access.mjs';
+import {checkProductionEntry,canonicalHostMatches,canonicalEntryMatches} from './production-access.mjs';
 const json = (res, value, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
 // Buffer responses until commit: never acknowledge a write that later rolls back.
 async function atomicAdminResponse(db,res,fn){
@@ -40,9 +40,10 @@ async function body(req) {
 const cookieToken = req => req.headers.cookie?.split(';').map(x => x.trim()).find(x => x.startsWith('hq_admin='))?.slice(9) || '';
 const bearer = req => /^Bearer (.+)$/.exec(req.headers.authorization || '')?.[1] || '';
 const safeAccount = a => ({ id: a.id, username: a.username, roles: decode(a.roles), active: !!a.active, canExport: !!a.can_export });
-export function createHttpServer({ db, uploads, storage, root, devAuth = false, environment = 'development', adminOrigin = '', readOnly = false }) {
+export function createHttpServer({ db, uploads, storage, root, devAuth = false, environment = 'development', adminOrigin = '', readOnly = false, gatewayToken = '' }) {
     const service = new Service(db,{environment}), loginFailures = new Map();
     if(environment!=='development'&&devAuth)throw new Error('非开发环境禁止Dev Auth');
+    if(environment==='production'&&!/^[a-f0-9]{64}$/.test(gatewayToken))throw new Error('正式网关隔离凭据缺失或无效');
     const secureCookie=environment==='development'?'':'; Secure';
     const mediaStorage=storage||uploads;
     // A rollback must not let background upload jobs mutate the shared store.
@@ -55,7 +56,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
             const path = url.pathname;
             const match = pattern => path.match(pattern);
             const method = req.method;
-            checkProductionEntry(req,path,{environment,adminOrigin});
+            checkProductionEntry(req,path,{environment,adminOrigin,gatewayToken});
             if (path.startsWith('/api/admin/') && !['GET', 'HEAD'].includes(method)) {
                 requireValue(req.headers['x-hq-action'] === '1', '请求校验失败', 403);
                 const origin = req.headers.origin;
@@ -63,7 +64,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
                 requireValue(!origin || (environment==='development'?[`http://127.0.0.1:${ownPort}`, `http://localhost:${ownPort}`, 'http://127.0.0.1:5173', 'http://localhost:5173']:[adminOrigin]).includes(origin), '请求来源不允许', 403);
             }
             if(path.startsWith('/api/')&&!['GET','HEAD'].includes(method))requireValue(!readOnly,'服务维护中，暂时只读，请稍后再试',503,'READ_ONLY_MAINTENANCE');
-            if(path==='/api/health'&&method==='GET'){try{await db.one('SELECT 1 AS ok');await db.one('SELECT version FROM migrations WHERE version=1');return json(res,{ok:true,database:true,environment,...(readOnly?{readOnly:true,canonicalEntry:canonicalHostMatches(req,adminOrigin)}:{})});}catch{return json(res,{ok:false,database:false},503);}}
+            if(path==='/api/health'&&method==='GET'){try{await db.one('SELECT 1 AS ok');await db.one('SELECT version FROM migrations WHERE version=1');return json(res,{ok:true,database:true,environment,...(readOnly?{readOnly:true,canonicalEntry:gatewayToken?canonicalEntryMatches(req,{adminOrigin,gatewayToken}):canonicalHostMatches(req,adminOrigin),gatewayProofRequired:!!gatewayToken}:{})});}catch{return json(res,{ok:false,database:false},503);}}
             if (path === '/api/auth/development' && method === 'POST') {
                 requireValue(devAuth, '本地测试身份已关闭', 403);
                 const visitorId = randomUUID();

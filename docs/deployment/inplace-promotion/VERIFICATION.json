@@ -1,15 +1,74 @@
 {
   "date": "2026-10-22",
-  "sourceCommit": "865beb0964bb528d13087ca529bd21c12a793d5e",
-  "cloudControlledMutations": 0,
-  "environment": "staging",
-  "productionEnabled": false,
-  "markingApplied": false,
+  "baselineCommit": "87a8c5c41f3c369001cdc00145b817338da99c65",
+  "environment": "production",
+  "resourcesRetained": true,
+  "apiVersion": "huangqiao-api-015",
+  "adminVersion": "huangqiao-admin-staging-009",
+  "canonicalApi": "https://admin.yorray.com",
+  "readOnly": false,
   "approvedManifestSha256": "97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3",
+  "marking": {
+    "at": "2026-10-22T05:47:44.129Z",
+    "pass": true,
+    "manifestSha256": "97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3",
+    "contentMarked": 51,
+    "contentNonApprovedFieldsUnchanged": true,
+    "auditInserted": 1,
+    "auditVerified": true,
+    "unchanged": {
+      "accounts": {
+        "count": 1,
+        "matched": true
+      },
+      "bookings": {
+        "count": 0,
+        "matched": true
+      },
+      "changes": {
+        "count": 0,
+        "matched": true
+      },
+      "consultations": {
+        "count": 1,
+        "matched": true
+      },
+      "idempotency": {
+        "count": 17,
+        "matched": true
+      },
+      "media": {
+        "count": 79,
+        "matched": true
+      },
+      "migrations": {
+        "count": 1,
+        "matched": true
+      },
+      "product_skus": {
+        "count": 70,
+        "matched": true
+      },
+      "sessions": {
+        "count": 12,
+        "matched": true
+      },
+      "slots": {
+        "count": 0,
+        "matched": true
+      },
+      "visitors": {
+        "count": 1,
+        "matched": true
+      }
+    },
+    "schemaChanged": false,
+    "mediaObjectWrites": 0,
+    "autoRetry": false
+  },
   "backup": {
-    "complete": true,
-    "capturedAt": "2026-10-22T12:55:41.229271+08:00",
-    "manifestSha256": "23f392d49e83715151c0cae98b19f5707164c69379050f3427d495f869ac9212",
+    "capturedAt": "2026-10-22T13:43:09.779813+08:00",
+    "manifestSha256": "fb32c018c33b39cb7625a3c1afa1ff1c0c1ceda37103062950adb163aa8dc6fd",
     "tables": {
       "accounts": 1,
       "audit": 128,
@@ -27,60 +86,21 @@
     },
     "mediaCount": 79,
     "mediaBytes": 328168761,
-    "nativePgDump": false,
+    "applicationRestore": "PASS",
     "physicalCloudRecoveryVerified": false,
     "offsiteCopyVerified": false
   },
-  "restore": {
-    "status": "PASS",
-    "tablesMatched": true,
-    "media": {
-      "count": 79,
-      "bytes": 328168761,
-      "allHashesMatched": true,
-      "imageStatus": 200,
-      "videoRangeStatus": 206
-    },
-    "disposableTargetRemoved": true,
-    "decryptedMediaRemoved": true
-  },
-  "backgroundTaskObservation": {
-    "observedAt": "2026-10-22T04:52:07.479Z",
-    "rowCounts": {
-      "before": 17,
-      "after": 17
-    },
-    "changes": [
-      {
-        "route": "admin:direct-video:v1",
-        "beforeState": "expired",
-        "afterState": "expired",
-        "changedResponseFields": [
-          "nextCleanupAt"
-        ]
-      },
-      {
-        "route": "admin:direct-video:v1",
-        "beforeState": "expired",
-        "afterState": "expired",
-        "changedResponseFields": [
-          "nextCleanupAt"
-        ]
-      },
-      {
-        "route": "admin:direct-video:v1",
-        "beforeState": "expired",
-        "afterState": "expired",
-        "changedResponseFields": [
-          "nextCleanupAt"
-        ]
-      }
-    ],
-    "controlledSqlWrites": 0,
-    "explanation": "Existing scheduled upload worker may update expired task leases/nextCleanupAt; this is not evidence of globally write-free operation."
+  "ingress": {
+    "pass": true,
+    "checks": 43,
+    "legacyRequestsRejected": 36,
+    "forwardedHeaderBypassClosed": true,
+    "secretNotReturned": true,
+    "publicHealthException": true
   },
   "nativeDomain": {
     "appId": "wx5dee6ef3087366c0",
+    "at": "2026-10-22T05:53:43.155Z",
     "domain": "https://admin.yorray.com",
     "cloudWrites": 0,
     "context": {
@@ -89,24 +109,189 @@
       "domainCheckSetting": true
     },
     "request": {
-      "error": "request:fail url not in domain list"
-    }
+      "status": 200,
+      "count": 51
+    },
+    "image": {
+      "pass": true,
+      "width": 7008,
+      "height": 4672
+    },
+    "videoDownload": {
+      "pass": true,
+      "status": 206
+    },
+    "pass": true
+  },
+  "runtimeReadChecks": {
+    "pass": true,
+    "publicContents": 51,
+    "databaseFormalFlags": 51,
+    "mediaRange206": 75,
+    "unpublishedMedia410": 4,
+    "adminFiveStaticFilesMatch": true,
+    "csrfNegativePassed": true,
+    "anonymousAdminMe": 401,
+    "transportObservation": {
+      "recordedAt": "2026-10-22T06:00:59.444Z",
+      "during": "post-admin009-first-open-runtime-verification",
+      "error": "ECONNRESET",
+      "layer": "TLS transport; no HTTP response captured",
+      "path": "not captured by initial verifier",
+      "source": "undetermined",
+      "writeRetry": false,
+      "action": "repeat read-only verification; per-GET retry capped at one"
+    },
+    "finalReadRetries": 0
+  },
+  "isolation": {
+    "at": "2026-10-22T06:05:16.669Z",
+    "pass": true,
+    "environment": "production",
+    "version": "huangqiao-api-015",
+    "changedEnvironmentKeys": [
+      "APP_ENV",
+      "HQ_READ_ONLY",
+      "HQ_GATEWAY_TOKEN"
+    ],
+    "otherEnvironmentValuesUnchanged": true,
+    "specUnchanged": true,
+    "databaseAndStorageConfigurationUnchanged": true,
+    "wxConfigurationUnchanged": true,
+    "unchanged": {
+      "accounts": {
+        "count": 1,
+        "matched": true
+      },
+      "bookings": {
+        "count": 0,
+        "matched": true
+      },
+      "changes": {
+        "count": 0,
+        "matched": true
+      },
+      "consultations": {
+        "count": 1,
+        "matched": true
+      },
+      "media": {
+        "count": 79,
+        "matched": true
+      },
+      "migrations": {
+        "count": 1,
+        "matched": true
+      },
+      "product_skus": {
+        "count": 70,
+        "matched": true
+      },
+      "slots": {
+        "count": 0,
+        "matched": true
+      }
+    },
+    "contentOnlyApprovedFieldsChanged": true,
+    "identityAdds": 0,
+    "sessionAdds": 0,
+    "sessionKinds": {},
+    "auditActions": {
+      "content.production-promote": 1
+    },
+    "idempotency": {
+      "countBefore": 17,
+      "countAfter": 17,
+      "changedRows": 3,
+      "existingExpiredCleanupWorkerResumed": true
+    },
+    "newResources": 0,
+    "purchasesOrUpgrades": 0
   },
   "tests": {
-    "allPassed": 245,
+    "allPassed": 246,
     "failed": 0,
     "skipped": 0,
     "build": true,
     "typeCheck": true,
     "originalsVerified": 25
   },
+  "security": {
+    "at": "2026-10-22T06:05:26.086Z",
+    "trackedFiles": 2089,
+    "candidateAndAdminFiles": 174,
+    "actualCredentialMatches": 0,
+    "matchedFiles": [],
+    "backupIgnored": true,
+    "keyIgnored": true,
+    "approvedPlanUnchanged": true
+  },
   "formalCandidate": {
-    "runtimeEnabled": false,
-    "officialUpload": false,
-    "wechatServerPackageCheck": "NOT EXECUTED",
-    "sevenPagesPhone": "NOT EXECUTED",
+    "version": "0.1.0-rc.1022",
+    "appId": "wx5dee6ef3087366c0",
+    "sourceManifestSha256": "192f787653171984c6f7c18b53b6389ca542d12c5edaddaa30ccd6dac5e4cccf",
+    "runtimeEnabled": true,
+    "officialUpload": true,
+    "officialSize": {
+      "total": 3077892,
+      "packages": [
+        {
+          "name": "TOTAL",
+          "size": 3077892
+        },
+        {
+          "name": "main",
+          "size": 1198100
+        },
+        {
+          "name": "/pages/brand/",
+          "size": 1879792
+        }
+      ]
+    },
+    "experienceSet": "PENDING_OWNER_CONFIRMATION",
+    "sevenPagesPhone": "PENDING_NEW_CANDIDATE",
+    "cookieLoginAndAdminReadonly": "PENDING_NEW_ADMIN_HUMAN_ACCEPTANCE",
     "review": false,
     "release": false
   },
-  "status": "HELD_FOR_DOMAIN_CONFIGURATION"
+  "status": "CLOUD_PROMOTION_AND_UPLOAD_PASS_PENDING_HUMAN_ACCEPTANCE",
+  "deployedSourceMatch": {
+    "at": "2026-10-22T06:06:00.898Z",
+    "pass": true,
+    "api": [
+      {
+        "file": "server/config.mjs",
+        "sha256": "82f1249fa2494c5f8a7ac588695fa7693034a957f1e169836b1716bf2257c851",
+        "matchesDeployedOverlay": true
+      },
+      {
+        "file": "server/http.mjs",
+        "sha256": "3466fedc4e81b8f82457eba013111ce708c591c2941ff47a29eed43f2bc99314",
+        "matchesDeployedOverlay": true
+      },
+      {
+        "file": "server/production-access.mjs",
+        "sha256": "af624bccd063a5424445d69a9338cbdae18e18e39dbc843da228e98e168febb2",
+        "matchesDeployedOverlay": true
+      },
+      {
+        "file": "server/pg/foundation.mjs",
+        "sha256": "9ed6e4bc0c56b99544b0d43abbbb830d49fbf203e7cb74cfa17768d234effb17",
+        "matchesDeployedOverlay": true
+      }
+    ],
+    "miniFilesCompared": 135,
+    "miniMismatches": [],
+    "miniGeneratedExceptions": [
+      "project.config.json: explicit minified/urlCheck/compile-mode",
+      "build-target.ts: explicit production target"
+    ]
+  },
+  "teachingClassification": {
+    "total": 13,
+    "withTeachingType": 4,
+    "withoutTeachingType": 9,
+    "automaticallyChanged": 0
+  }
 }

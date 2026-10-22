@@ -23,12 +23,12 @@ test('Admin derives test marking from authenticated server environment and never
 test('Production canonical API blocks ordinary old clients before writes; preserves auth, CSRF and explicit content marking',async t=>{
  const db=await openDatabase(),password=randomUUID();
  await createAccount(db,{username:'production_qa',password,roles:['admin']});
- const origin='https://admin.yorray.com',host='admin.yorray.com';
- const {server}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'production',adminOrigin:origin});
+ const origin='https://admin.yorray.com',host='admin.yorray.com',gatewayToken='1'.repeat(64);
+ const {server}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'production',adminOrigin:origin,gatewayToken});
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  t.after(async()=>{await new Promise(resolve=>server.close(resolve));await db.close();});
  const base='http://127.0.0.1:'+server.address().port;
- const call=(path,options={})=>entryFetch(base+path,{...options,headers:{Host:host,...options.headers}});
+ const call=(path,options={})=>entryFetch(base+path,{...options,headers:{Host:host,'X-HQ-Gateway-Token':gatewayToken,...options.headers}});
  assert.equal((await fetch(base+'/api/health')).status,200);
  const counts=()=>db.one('SELECT (SELECT count(*) FROM content) AS content,(SELECT count(*) FROM visitors) AS visitors,(SELECT count(*) FROM sessions) AS sessions,(SELECT count(*) FROM consultations) AS consultations,(SELECT count(*) FROM bookings) AS bookings');
  const before=await counts();
@@ -36,6 +36,8 @@ test('Production canonical API blocks ordinary old clients before writes; preser
   const r=await call(path,{method:'POST',headers:{Host:oldHost,'X-Forwarded-Host':host,Forwarded:'host='+host,'X-Mini-Environment':'production','Content-Type':'application/json'},body:'{}'});
   assert.equal(r.status,403);assert.equal((await r.json()).code,'PRODUCTION_ENTRY_REQUIRED');
  }
+ for(const supplied of ['','0'.repeat(64),'1','1'.repeat(64)+', '+ '1'.repeat(64)]){const r=await call('/api/auth/wechat',{method:'POST',headers:{'X-HQ-Gateway-Token':supplied,'X-Forwarded-Host':host,'Content-Type':'application/json'},body:'{}'});assert.equal(r.status,403);assert.equal((await r.json()).code,'PRODUCTION_ENTRY_REQUIRED');}
+ assert.equal((await entryFetch(base+'/api/public/content',{headers:{Host:host,'X-Forwarded-Host':host}})).status,403);
  assert.deepEqual(await counts(),before);
  assert.equal((await fetch(base+'/api/public/content')).status,403);
  assert.equal((await call('/api/public/content')).status,200);
@@ -73,17 +75,17 @@ test('Compatible rollback stays production, blocks API writes and background job
  assert.equal(configuration(config).readOnly,false);
  assert.equal(configuration({...config,HQ_READ_ONLY:'true'}).readOnly,true);
  assert.throws(()=>configuration({...config,HQ_READ_ONLY:'yes'}));
- const db=await openDatabase(),origin='https://admin.yorray.com';
+ const db=await openDatabase(),origin='https://admin.yorray.com',gatewayToken='1'.repeat(64);
  // If the real worker ran, it would claim this expired task and change its JSON.
  const id=randomUUID(),task={id,owner:'isolated',objectKey:id+'.mp4',mime:'video/mp4',state:'pending',cleanupAt:0,expiresAt:0};
  await db.execute('INSERT INTO idempotency VALUES($1,$2,$3,$4,$5)',[task.owner,'admin:direct-video:v1',id,id,JSON.stringify(task)]);
  const snapshot=()=>db.one("SELECT jsonb_build_object('visitors',(SELECT jsonb_agg(t) FROM visitors t),'sessions',(SELECT jsonb_agg(t) FROM sessions t),'content',(SELECT jsonb_agg(t) FROM content t),'audit',(SELECT jsonb_agg(t) FROM audit t),'jobs',(SELECT jsonb_agg(t) FROM idempotency t)) AS data");
  const before=await snapshot();
- const {server,videoWorker}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'production',adminOrigin:origin,readOnly:true});
+ const {server,videoWorker}=createHttpServer({db,root:fileURLToPath(new URL('../',import.meta.url)),environment:'production',adminOrigin:origin,readOnly:true,gatewayToken});
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  t.after(async()=>{await new Promise(resolve=>server.close(resolve));await db.close();});
- const base='http://127.0.0.1:'+server.address().port,headers={Host:'admin.yorray.com',Origin:origin,'X-HQ-Action':'1','Content-Type':'application/json'};
- assert.deepEqual(await (await entryFetch(base+'/api/health')).json(),{ok:true,database:true,environment:'production',readOnly:true,canonicalEntry:false});
+ const base='http://127.0.0.1:'+server.address().port,headers={Host:'admin.yorray.com','X-HQ-Gateway-Token':gatewayToken,Origin:origin,'X-HQ-Action':'1','Content-Type':'application/json'};
+ assert.deepEqual(await (await entryFetch(base+'/api/health')).json(),{ok:true,database:true,environment:'production',readOnly:true,canonicalEntry:false,gatewayProofRequired:true});
  assert.equal((await (await entryFetch(base+'/api/health',{headers})).json()).canonicalEntry,true);
  assert.equal((await (await entryFetch(base+'/api/health',{headers:{Host:'old.app.tcloudbase.com','X-Forwarded-Host':'admin.yorray.com'}})).json()).canonicalEntry,false);
  assert.equal((await entryFetch(base+'/api/public/content',{headers})).status,200);

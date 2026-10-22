@@ -11,9 +11,12 @@ export function configuration(env=process.env){
  if(development&&Object.entries(env).some(([k,v])=>k.startsWith('CLOUDBASE_')&&v))throw new Error('Development禁止云端配置');
  const port=Number(env.PORT||8787);if(!Number.isInteger(port)||port<1||port>65535)throw new Error('PORT无效');
  const adminOrigin=env.ADMIN_ORIGIN||'';
+ const gatewayToken=env.HQ_GATEWAY_TOKEN||'';
+ if(development&&gatewayToken)throw new Error('Development禁止正式网关凭据');
+ if((gatewayToken&&!/^[a-f0-9]{64}$/.test(gatewayToken))||(environment==='production'&&!gatewayToken))throw new Error('正式网关隔离凭据缺失或无效');
  if(!development){let origin;try{origin=new URL(adminOrigin);}catch{throw new Error('须设置ADMIN_ORIGIN');}if(origin.protocol!=='https:'||origin.origin!==adminOrigin||origin.username||origin.password)throw new Error('ADMIN_ORIGIN须为唯一HTTPS来源');}
  const storage=env.STORAGE_PROVIDER||'local';if(development&&storage!=='local')throw new Error('Development仅允许本地媒体存储');if(!['local','cloudbase'].includes(storage)||(!development&&storage!=='cloudbase'))throw new Error('非开发环境须使用CloudBase私有存储');
  if(storage==='cloudbase'&&(!env.CLOUDBASE_ENV_ID||!env.CLOUDBASE_BUCKET||!env.CLOUDBASE_SERVICE_ROLE_KEY))throw new Error('CloudBase私有存储配置不完整');
  const max=Number(env.PGPOOL_MAX||10);if(!Number.isInteger(max)||max<1||max>50)throw new Error('PGPOOL_MAX须为1—50');
- return {environment,devAuth,readOnly,seed,port,adminOrigin,storage,uploads:resolve(env.HQ_UPLOAD_DIR||'.local/uploads'),database:{connectionString:env.DATABASE_URL,schema:env.PGSCHEMA||'app',max},cloudbase:{envId:env.CLOUDBASE_ENV_ID,bucket:env.CLOUDBASE_BUCKET,token:env.CLOUDBASE_SERVICE_ROLE_KEY}};
+ return {environment,devAuth,readOnly,seed,port,adminOrigin,gatewayToken,storage,uploads:resolve(env.HQ_UPLOAD_DIR||'.local/uploads'),database:{connectionString:env.DATABASE_URL,schema:env.PGSCHEMA||'app',max},cloudbase:{envId:env.CLOUDBASE_ENV_ID,bucket:env.CLOUDBASE_BUCKET,token:env.CLOUDBASE_SERVICE_ROLE_KEY}};
 }

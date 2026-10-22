@@ -60,6 +60,7 @@ test('Production local preparation emits a disabled, minified, domain-checked ca
  assert.equal(manifest.runtimeEnabled,false);assert.equal(manifest.apiBase,'https://admin.yorray.com');assert.equal(manifest.uploadApproved,false);assert.equal(manifest.releaseApproved,false);
  assert.equal(project.setting.minified,true);assert.equal(project.setting.urlCheck,true);assert.equal(project.condition.miniprogram.list.length,0);assert.equal(project.appid,'wx5dee6ef3087366c0');
  assert.match(readFileSync(root+'/miniprogram/build-target.js','utf8'),/production/);
+ assert.match(readFileSync(root+'/miniprogram/environment-settings.js','utf8'),/"enabled": false|enabled: false/);
  for(const env of [{MINI_API_BASE:'http://127.0.0.1:8787'},{MINI_APPID:'wx5bf0160bd4262e24'}]){
   const failed=spawnSync(process.execPath,['scripts/build-mini.mjs','--prepare-production'],{env:{...process.env,APP_ENV:'production',...env},encoding:'utf8'});assert.notEqual(failed.status,0);assert.equal(readFileSync(root+'/project.config.json','utf8'),JSON.stringify(project,null,2)+'\n');
  }

@@ -27,6 +27,8 @@ if(process.env.MINI_APPID&&process.env.MINI_APPID!==sourceProject.appid)throw ne
 const out=resolve('build/mini-'+environment);rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
 cpSync('miniprogram',out,{recursive:true,filter:p=>!p.endsWith('project.private.config.json')&&!p.endsWith('.DS_Store')&&!p.endsWith('.js')&&!p.endsWith('.js.map')});
 writeFileSync(join(out,'miniprogram/build-target.ts'),'export default '+JSON.stringify({environment})+';\n');
+// A preparation artifact stays offline even after an approved runtime is enabled.
+if(preparationOnly)writeFileSync(join(out,'miniprogram/environment-settings.ts'),'export default '+JSON.stringify({...settings,production:{...settings.production,enabled:false}})+' as const;\n');
 execFileSync(process.execPath,['node_modules/typescript/bin/tsc','-p',join(out,'tsconfig.json')],{stdio:'inherit'});
 // Emit JavaScript before the official preview compiler consumes this isolated build.
 const project=JSON.parse(readFileSync(join(out,'project.config.json'),'utf8'));
@@ -34,7 +36,7 @@ if(preparationOnly||internalCandidate){
  project.setting.minified=true;project.setting.urlCheck=true;
  project.condition={miniprogram:{list:[]}};
  const file=preparationOnly?'PREPARATION_ONLY.json':'INTERNAL_CANDIDATE.json';
- writeFileSync(join(out,file),JSON.stringify({environment,apiBase:config.apiBase,runtimeEnabled:config.enabled,uploadApproved:internalCandidate,uploadPurpose:internalCandidate?'internal-experience-only':'none',reviewApproved:false,releaseApproved:false},null,2)+'\n');
+ writeFileSync(join(out,file),JSON.stringify({environment,apiBase:config.apiBase,runtimeEnabled:preparationOnly?false:config.enabled,uploadApproved:internalCandidate,uploadPurpose:internalCandidate?'internal-experience-only':'none',reviewApproved:false,releaseApproved:false},null,2)+'\n');
 }
 project.setting.useCompilerPlugins=(project.setting.useCompilerPlugins||[]).filter(name=>name!=='typescript');
 writeFileSync(join(out,'project.config.json'),JSON.stringify(project,null,2)+'\n');

@@ -1,42 +1,49 @@
-# 原地转正准备与验收
+# 原地转正与正式候选验收
 
-日期：2026-10-22。项目负责人批准：先核实备份、恢复和回退，再复用admin.yorray.com、现有PostgreSQL及媒体原地转正；不迁移或删除业务资料，不提审、不发布。基准865beb0964bb528d13087ca529bd21c12a793d5e。此前Staging体验版的人工通过不替代本轮正式候选验收。
+2026-10-22。负责人已批准复用admin.yorray.com、现有数据库和媒体原地转正，并确认目标AppID wx5dee6ef3087366c0的request/downloadFile均已保存。当前云端转正、入口隔离、配套后台和内部候选上传已完成；**新体验版设置、手机七页面和新后台人工验收待确认，不提审、不发布**。此前Staging体验版人工通过不替代本轮结果。
 
-## 现状与准确授权
+## 基线与实际部署
 
-云环境资源ID继续为huangqiao-staging-d2d1dj1bb4ad90，API服务huangqiao-api；资源名称不是运行环境的安全依据。当前在线API011使用已核对的API008不可变镜像，APP_ENV仍为staging，0.25CPU/0.5GiB、min1/max5，ADMIN_ORIGIN为https://admin.yorray.com。数据库postgres-i56vqlwu/app与huangqiao-media保持，不新建收费资源。
+开始前API011为staging、Admin007，51条已发布内容仍isTest=true；数据库postgres-i56vqlwu/app、huangqiao-media及规格0.25CPU/0.5GiB、min1/max5。先保存加密运行配置、备份与清单，再部署维护只读和入口保护。当前API015为production，HQ_READ_ONLY=false，100%流量；兼容Admin009已上线，同源API仍为/api/admin/。仅APP_ENV、HQ_READ_ONLY和新网关隔离凭据配置变化，其余数据库、媒体、微信配置及规格逐项不变，不新建资源、不升级套餐。
 
-51条内容均已发布但isTest=true：企业资料1、点位4、乐器8、文创20、套餐5、教学13；另有70条SKU、79份媒体（328,168,761字节）、1条咨询。禁止借转正清理或覆盖业务信息。
+后台008首次静态部署暴露打包路径错误：入口页引用/admin/assets，而根托管实际为/assets。已修正专用静态构建使用base=/，不改Node本地/admin/路径；Admin009的入口HTML、JS、CSS及两张图片共5文件均实际HTTP200，逐文件SHA-256与本次构建制品一致。新增归档引用完整性测试，避免仅判断部署SUCCESS。候选ZIP SHA-256为dbfb7ec7a2ca688b95a30b527718c032fe85b2ae57d39d7f748d0ec9f1136a8f。
 
-负责人已批准[逐项写入清单](DATA_WRITE_PLAN.json)，指纹97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3。清单本身保持不可变，其AWAITING状态表示生成时状态；后续批准另行记录，不重写清单指纹。每条仅改isTest true→false、version加1、updated_at记录事务时间，并新增1条批次审计。真实验收最多2条访客身份新增/更新、2条访客会话、1条后台会话及1条登录审计；不写预约、咨询、SKU、媒体或其他业务字段。批准不取消备份与安全门槛。
+## 准确写入与保护
 
-批次模块只生成SQL，不连接云端；必须给出与不可变清单匹配的人工批准。数据库名、完整内容集合、每条原记录指纹及版本必须一致。对内容表加锁，单语句事务完成全部标记和审计；发现编辑、新增、重复执行或清单篡改即整体拒绝。不存在自动重试、自动回退标记或静默扩大清单。
+已执行负责人批准的[51条清单](DATA_WRITE_PLAN.json)，指纹97836014a19f0209bc2b85361f385c0becf72f668e1bbda7ed10f48b4d5002f3。执行前重新核对全部指纹、版本和内容集合，在只读维护窗口以单个原子事务仅改isTest true→false、version加1、updated_at，并新增1条content.production-promote批次审计。逐行核对全部其他业务字段不变；70条SKU、79份媒体、现有咨询、账号及Schema保持，没有迁移、删除或上传媒体。
+
+云平台ExecutePGSql显式应用Role预检失败，尚未执行写入即停止；确认既有默认管理连接可用后，以同一批准绑定SQL执行，未修改账号、密码或权限。没有未知结果写入重试，也未重新生成批准清单。当前受控新增身份/会话/登录审计均为0；后续人工验收限既有批准最多2条身份新增/更新、2条访客会话、1条后台会话及1条后台登录审计。禁止提交预约、咨询或保存业务内容。
+
+恢复写入后既有清理工作器恢复，3条expired幂等任务的调度字段再次变化、行数仍17；不将受控操作等同全库没有其他活动。批次执行时全部非批准表逐行一致，最终受保护业务表仍逐行一致。
 
 ## 备份、恢复与回退
 
-详见[恢复与回退操作](RECOVERY.md)。云库单次只读SELECT取得13张应用表及列定义；数据库快照、Schema原件、含凭据的回退配置和媒体在本机加密，AES-256-GCM密钥单独保存在本机私有目录，不提交Git。数据库真实恢复在新建127.0.0.1:55433专用hq_test_promotion_restore_*数据库完成，13表全部一致，随后删除该隔离库；未向源库执行Migration、INSERT、UPDATE、DELETE或Schema变更。
+最新转正前单次应用快照：2026-10-22T13:43:09.779813+08:00；manifest SHA-256 fb32c018c33b39cb7625a3c1afa1ff1c0c1ceda37103062950adb163aa8dc6fd。13表361行与79份媒体328,168,761字节已加密备份；在全新本机隔离PostgreSQL和目录真实恢复，逐表/文件SHA-256一致，图片200、视频Range206，演练库及解密媒体已清理。原快照和加密运行回退配置保留，新网关凭据及原路由另以AES-256-GCM保存在同一私有备份目录，密钥单独保管。备份、密钥与QA证据均Git忽略。
 
-首轮整文件媒体下载遇到curl18中途截断，不计作完整备份。随后通过范围读取完成79份全文件SHA-256校验；完整加密集328,168,761字节。12:55:41补取最新单次数据库快照，保留原快照；13表与79份媒体全部在新本机隔离库/目录真实恢复并逐项一致，图片200、视频Range206，演练库与解密文件已清理。未以部分备份或模拟资料替代恢复证据。
+平台物理备份/PITR读取仍受权限限制，离机副本与密钥异地保管未完成，不能称完整灾备通过。异常回退使用当前兼容API设维护只读，保留production、网关隔离和Cookie/CSRF；不回滚为可写Staging、不反转标记、不覆盖新增业务资料。详见[恢复与回退](RECOVERY.md)。
 
-腾讯云DescribeBaseBackups和DescribeAvailableRecoveryTime均因AuthFailure.UnauthorizedOperation未取得记录；不代表没有自动备份，也不声称已验证平台物理备份、PITR或云实例恢复。本机应用级恢复不替代这些能力，离机副本与密钥异地保管亦未完成。
+## 入口、域名与实际读取
 
-兼容回退新增显式HQ_READ_ONLY开关，默认关闭，非法值拒绝启动。开启时保持APP_ENV=production及正式入口限制；API写方法返回503/READ_ONLY_MAINTENANCE，微信及后台登录也暂停写会话；视频后台任务停用，避免后台删除/登记媒体。GET/HEAD、既有授权及健康检查保留，健康响应含readOnly=true及实际Host匹配布尔值canonicalEntry，不输出原始Host或凭据；可在维护阶段先核对自定义域名与旧域名，再决定转正。Cookie、CSRF及Origin校验保留。此为应用维护保护，不是数据库账号级只读策略。不得回滚到会重新开放测试入口或产生测试标记的旧API011，不用备份覆盖转正后新增资料。
+真实只读预检发现平台代理可能将客户端X-Forwarded-Host改写为回源Host，仅Host规则不足。已在现有自有域名/api路由覆盖注入随机网关凭据，应用同时校验Host及凭据；该值不进入客户端、Git、日志或响应。系统默认域名不支持手工路由修改，未强行删除或修改。详见[入口边界](CANONICAL_INGRESS.md)。
 
-API候选仅在已核对API008镜像digest上覆盖config、http、production-access、pg/foundation四个文件。打包工具不部署、不改云配置、不带数据库、凭据、媒体或整个工作区；旧教学两文件部署脚本保持原有哈希锁定。Admin沿用现有同源架构，按已认证服务端environment决定保存标记，未知环境拒绝保存；需与API配套更新。
+Production只读阶段43次真实请求通过：自有域名内容/图片/视频正常、维护保护503、CSRF负例403；默认网关和两个CBR直连域名共36次公开读取、登录、写入入口及媒体请求均403/PRODUCTION_ENTRY_REQUIRED，含伪造Forwarded、X-Forwarded-Host和猜测凭据。健康GET明确保留公开例外。网关边界不是客户端版本身份证明，不替代微信登录或业务授权。
 
-## 域名与遗留静态资源
+urlCheck=true的原生开发者工具在目标AppID下实际GET正式域名51条内容200、7008×4672原图加载通过、视频下载206。此为域名/媒体原生API证据，未伪造envVersion，也未以此冒充新Production体验包的七页面或真机播放。普通develop构建不能切入Production。
 
-2026-10-22原生开发者工具连接目标AppID、urlCheck=true，直接GET https://admin.yorray.com/api/public/content返回request:fail url not in domain list。已请负责人保留原条目并补充admin.yorray.com的request/downloadFile白名单；未关闭校验，未将此前默认网关白名单通过视为正式域名通过。
+服务开放后首页、点位、乐器/文创、研学、教学所需公开内容、报名与场次读取均200；“我的”登录后的个人记录待手机验收。75份公开媒体Range206，4份未公开媒体410符合发布保护，已发布引用失败0；固定系统Logo200且与原件一致。后台匿名me为401，缺少动作头及错误Origin均403。一次最后复核曾出现ECONNRESET、未取得HTTP响应，来源未定；记录保留，后续只读复核通过，最终复核自动重试0次，写入不自动重试。60分钟/隔夜验收仍由人工安排，自动化保持暂停。
 
-纠正上一轮待处理项：site.images[0]的/assets/yorray-logo-CFmraOUS.png是既有固定系统Logo，不是待迁移业务图片。2026-10-09的logo-compatibility-result已经批准使用该静态地址且不新增媒体。本轮现网200、14,516字节、SHA-256与images/yorray-logo.png原件一致；首页背景读取site.images[1]。保留原关联与现有Admin构建的同一Logo，不上传huangqiao-media，不删除该字段；后续部署继续核对该固定资源200及哈希。不因此声称所有任意/assets业务引用都获正式批准。
+## 正式候选与包体积
 
-## 当前实际结果
+仅从Git暂存区的干净源码生成正式候选，未夹带原有图片优化WIP或用户资料。Production SSOT启用，仅显式--candidate-production生成内部验收包，API固定https://admin.yorray.com；trial/release隐藏环境字样，develop拒绝连接。--prepare-production即使SSOT已启用也强制生成关闭运行开关的准备包，避免误用。JS压缩、urlCheck均true；不提供提审或发布授权。
 
-- 从Git暂存区导出干净候选源码验证：245项全量测试通过，失败/跳过0；Build、Type Check及25份原件大小/SHA-256全部通过。覆盖保存兼容、入口/Cookie/CSRF、维护保护、批准绑定、批次并发/重复拒绝、制品白名单和显式内部候选构建。使用真实本机HTTP/PostgreSQL与离线制品，不是云端转正或手机证据。
-- 完整加密备份及真实应用级恢复PASS：13表361行、79份媒体328,168,761字节；最新备份快照2026-10-22 12:55:41（北京时间），manifest SHA-256为23f392d49e83715151c0cae98b19f5707164c69379050f3427d495f869ac9212。平台物理备份/PITR和离机副本未核实，不能合并称为完整灾备通过。
-- 本轮受控云端配置及业务SQL写入0；APP_ENV仍staging、API011/原镜像及min1/max5保持，51条标记尚未执行，Admin未部署。只读比对发现既有上传后台任务更新了3条expired任务的调度字段，幂等行数17不变；其余12张应用表与原快照逐行一致。补取后13表恢复均一致，不能声称整个云库全程静止。
-- API四文件候选ZIP17,540字节、SHA-256 8c71693b346a53c9a6b4a83dc67bb37beb8c2b14c0ac5d12049fe3588bc76ecf；Admin五个静态文件候选已构建。小程序只生成Production关闭开关的本地准备包，目标AppID正确、minified/urlCheck=true。显式--candidate-production必须在SSOT启用后才可构建内部验收包，仍不自动上传、提审或发布。当前未启用，未生成联网正式候选、执行新微信服务器包体积检查或手机七页面验收，不沿用旧Staging体验版结果。
-- 微信小程序备案仍只有“管局审核中”的负责人信息；隐私指引已更新，具体内容/提审版本同步、类目适配及认证有效期待核。此阶段不提审、不发布。
-- 闲置验收自动化不恢复；60分钟/隔夜首次访问仍待人工。保留既有未提交图片优化、文档WIP与用户video-covers资料，不承诺清空整个工作区。
+0.1.0-rc.1022已由微信官方工具上传成功至wx5dee6ef3087366c0；实际返回主包1,198,100字节、品牌分包1,879,792字节、总包3,077,892字节。不是源码目录体积。原分辨率与包内图片保持，图片/音频累计200K的质量建议仍未解决，不能称所有代码质量项通过。候选文件清单SHA-256：192f787653171984c6f7c18b53b6389ca542d12c5edaddaa30ccd6dac5e4cccf。
 
-状态：LOCAL PREPARATION / APPLICATION RESTORE PASS；CLOUD PROMOTION HELD；NOT READY FOR FORMAL CANDIDATE ACCEPTANCE。正式域名白名单尚未收到保存确认且原生检查失败，保持Staging，避免旧体验版被阻断而新候选无法连接。待白名单通过后，按恢复文档验证维护阶段真实Host/旧入口，才执行已有准确批准清单及配套部署、新候选手机验收。没有新建收费资源或升级套餐；备份读取消耗既有流量，不将其描述为实际零费用。
+## 验证与待办
+
+干净候选246项全量测试通过，失败/跳过0；Build、Type Check及25份原件大小/SHA-256通过。实际云凭据与2089份已跟踪文件、174份小程序候选及后台文件最终比对未命中；API覆盖层4文件和小程序135份源文件与待提交源码逐项一致。保留现有Cookie Secure/HttpOnly/SameSite及CSRF机制，没有为验收关闭安全配置。
+
+公开教学13条中4条已有teachingType、9条未填写，本轮保留其业务字段，待负责人按实际内容分类，未自动补写。
+
+负责人下一步按[手机验收](HUMAN_ACCEPTANCE.md)将新候选设为体验版并只读验收；新后台实际登录Cookie及只读页面亦待人工结果，不沿用先前后台人工通过。微信小程序备案仍只有“管局审核中”的已知信息，认证有效期、具体隐私条款/提审版本同步与类目适配还需正式提审前核对；不将候选上传等同可以提审。平台物理备份/PITR、离机备份待补齐。没有新购资源或提高规格，部署/备份仍可能消耗既有配额，实际账单未核销。
+
+状态：**CLOUD PROMOTION AND INTERNAL UPLOAD PASS / PENDING HUMAN ACCEPTANCE；NOT READY FOR REVIEW OR RELEASE**。原有未提交图片优化、文档WIP和用户封面资料原样保留；不以清空工作区为由提交用户资料。

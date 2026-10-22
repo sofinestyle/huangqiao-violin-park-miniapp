@@ -15,6 +15,6 @@ export default {
     "apiBase": "https://admin.yorray.com",
     "label": "",
     "identityMode": "wechat",
-    "enabled": false
+    "enabled": true
   }
 } as const;
