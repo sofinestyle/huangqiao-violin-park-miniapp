@@ -255,7 +255,7 @@
     "review": false,
     "release": false
   },
-  "status": "NOT_READY_PHONE_CONNECTION_FAILURE",
+  "status": "HOME_PASS_OWNER_CONFIRMED_PENDING_REMAINING_HUMAN_ACCEPTANCE",
   "deployedSourceMatch": {
     "at": "2026-10-22T06:06:00.898Z",
     "pass": true,
@@ -318,7 +318,7 @@
       "wechatStyleHeadersHTTP200": 3,
       "realPhoneSdkError": "NOT_CAPTURED"
     },
-    "rootCause": "UNDETERMINED_PENDING_PHONE_SDK_DIAGNOSIS",
+    "rootCause": "UNDETERMINED_RECOVERED_WITHOUT_PHONE_SDK_ERROR",
     "cloudChangesAfterFailure": 0,
     "businessWritesAfterFailure": 0,
     "diagnosticCandidate": {
@@ -349,8 +349,8 @@
       "trialOnlyFixedVocabulary": true,
       "rawSdkTextLogged": false,
       "releaseMessageUnchanged": true,
-      "experienceSet": "PENDING_OWNER_CONFIRMATION",
-      "phoneResult": "PENDING_OWNER_DIAGNOSTIC_TEXT",
+      "experienceSet": "CONFIRMED_BY_OWNER_VIA_VERSION_SPECIFIC_REPLY",
+      "phoneResult": "HOME_PASS_OWNER_CONFIRMED_ONLY",
       "review": false,
       "release": false,
       "at": "2026-10-22T06:25:45.136Z",
@@ -366,7 +366,30 @@
         "preparationMarkerAbsent": true,
         "manifestSha256": "5417c53f0b19b63f1189e3b504869d67e98fbed83b6bc63331e6f41561d9aa25"
       },
-      "frozenVerifiedAfterUpload": true
+      "frozenVerifiedAfterUpload": true,
+      "homeAcceptance": {
+        "source": "explicit-owner-reply",
+        "text": "首页已恢复",
+        "home": "PASS_OWNER_CONFIRMED",
+        "otherPages": "PENDING",
+        "login": "PENDING",
+        "mediaPlaybackAndSeeking": "PENDING",
+        "phoneModel": "NOT_PROVIDED",
+        "phoneNetwork": "NOT_PROVIDED",
+        "rootCause": "UNDETERMINED_NO_PHONE_SDK_ERROR_CAPTURED"
+      },
+      "remainingAcceptance": {
+        "login": "PENDING",
+        "instruments": "PENDING",
+        "gifts": "PENDING",
+        "study": "PENDING",
+        "teaching": "PENDING",
+        "tour": "PENDING",
+        "mine": "PENDING",
+        "images": "PENDING",
+        "videoPlaybackAndSeeking": "PENDING",
+        "adminCookieAndReadonly": "PENDING"
+      }
     },
     "tests": {
       "passed": 250,
@@ -376,7 +399,7 @@
       "typeCheck": true,
       "originals": 25
     },
-    "status": "NOT_READY_PHONE_CONNECTION_FAILURE",
+    "status": "HOME_RECOVERED_OWNER_CONFIRMED_REMAINING_ACCEPTANCE_PENDING",
     "discardedDiagnosticCandidate": {
       "version": "0.1.0-rc.1022.1",
       "status": "INVALID_OFFLINE_PREPARATION_ARTIFACT_DO_NOT_USE",
@@ -384,5 +407,44 @@
       "cause": "Tests overwrote shared build/mini-production after candidate build; final source check detected mismatch",
       "rootCauseOfFirstPhoneFailure": false
     }
+  },
+  "latestCandidateVersion": "0.1.0-rc.1022.2",
+  "homeRecoveryConfirmation": {
+    "recordedAt": "2026-10-22T06:33:22.182Z",
+    "dateAsiaShanghai": "2026-10-22",
+    "version": "0.1.0-rc.1022.2",
+    "appId": "wx5dee6ef3087366c0",
+    "humanEvidence": {
+      "source": "explicit-owner-reply",
+      "text": "首页已恢复",
+      "home": "PASS_OWNER_CONFIRMED",
+      "otherPages": "PENDING",
+      "login": "PENDING",
+      "mediaPlaybackAndSeeking": "PENDING",
+      "phoneModel": "NOT_PROVIDED",
+      "phoneNetwork": "NOT_PROVIDED",
+      "rootCause": "UNDETERMINED_NO_PHONE_SDK_ERROR_CAPTURED"
+    },
+    "readOnlyCheck": {
+      "healthStatus": 200,
+      "ok": true,
+      "database": true,
+      "environment": "production",
+      "activeVersions": [
+        {
+          "version": "huangqiao-api-015",
+          "flow": "100"
+        }
+      ],
+      "min": 1,
+      "max": 5,
+      "cpu": 0.25,
+      "memoryGiB": 0.5,
+      "frozenArtifactVerified": true
+    },
+    "cloudMutations": 0,
+    "businessWrites": 0,
+    "review": false,
+    "release": false
   }
 }
