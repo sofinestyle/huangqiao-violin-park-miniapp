@@ -1,0 +1,396 @@
+{
+  "at": "2026-10-22T01:10:19.402Z",
+  "domainValidationEnabled": true,
+  "cloudChecks": [
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "全部",
+      "q": "",
+      "count": 13,
+      "labels": [
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类",
+        "未分类"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "开箱教学",
+      "q": "",
+      "count": 0,
+      "labels": [],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "产品视频",
+      "q": "",
+      "count": 0,
+      "labels": [],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "提琴课程",
+      "q": "",
+      "count": 0,
+      "labels": [],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "图文教学",
+      "q": "",
+      "count": 0,
+      "labels": [],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "其他",
+      "q": "",
+      "count": 0,
+      "labels": [],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    }
+  ],
+  "syntheticMemoryChecks": [
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "全部",
+      "q": "",
+      "count": 5,
+      "labels": [
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "开箱教学",
+      "q": "",
+      "count": 1,
+      "labels": [
+        "开箱教学"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "产品视频",
+      "q": "",
+      "count": 1,
+      "labels": [
+        "产品视频"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "提琴课程",
+      "q": "",
+      "count": 1,
+      "labels": [
+        "提琴课程"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "图文教学",
+      "q": "",
+      "count": 1,
+      "labels": [
+        "图文教学"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    },
+    {
+      "route": "pages/teaching/index",
+      "loading": false,
+      "error": "",
+      "filters": [
+        "全部",
+        "开箱教学",
+        "产品视频",
+        "提琴课程",
+        "图文教学",
+        "其他"
+      ],
+      "selected": "其他",
+      "q": "",
+      "count": 1,
+      "labels": [
+        "其他"
+      ],
+      "videoUrlIsMedia": false,
+      "hasIdentity": false
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/public/content",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/content",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/content/370907da-c0a2-4828-9700-8fc80f2fbebd",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/content/site",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/content",
+      "status": 200
+    }
+  ],
+  "exceptions": [],
+  "context": {
+    "appId": "wx5dee6ef3087366c0",
+    "environment": "staging"
+  },
+  "cloudInitial": {
+    "route": "pages/teaching/index",
+    "loading": false,
+    "error": "",
+    "filters": [
+      "全部",
+      "开箱教学",
+      "产品视频",
+      "提琴课程",
+      "图文教学",
+      "其他"
+    ],
+    "selected": "全部",
+    "q": "",
+    "count": 13,
+    "labels": [
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类"
+    ],
+    "videoUrlIsMedia": false,
+    "hasIdentity": false
+  },
+  "cloudSearch": {
+    "route": "pages/teaching/index",
+    "loading": false,
+    "error": "",
+    "filters": [
+      "全部",
+      "开箱教学",
+      "产品视频",
+      "提琴课程",
+      "图文教学",
+      "其他"
+    ],
+    "selected": "全部",
+    "q": "松香",
+    "count": 1,
+    "labels": [
+      "未分类"
+    ],
+    "videoUrlIsMedia": false,
+    "hasIdentity": false
+  },
+  "detail": {
+    "route": "pages/lesson/index",
+    "loading": false,
+    "error": "",
+    "format": "video",
+    "videoUrlIsMedia": true,
+    "hasIdentity": false
+  },
+  "developmentBadge": null,
+  "restored": {
+    "route": "pages/teaching/index",
+    "loading": false,
+    "error": "",
+    "filters": [
+      "全部",
+      "开箱教学",
+      "产品视频",
+      "提琴课程",
+      "图文教学",
+      "其他"
+    ],
+    "selected": "全部",
+    "q": "",
+    "count": 13,
+    "labels": [
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类",
+      "未分类"
+    ],
+    "videoUrlIsMedia": false,
+    "hasIdentity": false
+  },
+  "pass": true,
+  "environmentBadgeNativeObservation": "NOT VERIFIED: component locator did not resolve; existing three-mode unit checks pass"
+}
