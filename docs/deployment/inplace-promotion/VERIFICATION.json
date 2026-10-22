@@ -209,12 +209,12 @@
     "purchasesOrUpgrades": 0
   },
   "tests": {
-    "allPassed": 246,
+    "passed": 249,
     "failed": 0,
     "skipped": 0,
     "build": true,
     "typeCheck": true,
-    "originalsVerified": 25
+    "originals": 25
   },
   "security": {
     "at": "2026-10-22T06:05:26.086Z",
@@ -249,13 +249,13 @@
         }
       ]
     },
-    "experienceSet": "PENDING_OWNER_CONFIRMATION",
-    "sevenPagesPhone": "PENDING_NEW_CANDIDATE",
+    "experienceSet": "CONFIRMED_BY_OWNER",
+    "sevenPagesPhone": "FAILED_CONNECTION_REPORTED_BY_OWNER",
     "cookieLoginAndAdminReadonly": "PENDING_NEW_ADMIN_HUMAN_ACCEPTANCE",
     "review": false,
     "release": false
   },
-  "status": "CLOUD_PROMOTION_AND_UPLOAD_PASS_PENDING_HUMAN_ACCEPTANCE",
+  "status": "NOT_READY_PHONE_CONNECTION_FAILURE",
   "deployedSourceMatch": {
     "at": "2026-10-22T06:06:00.898Z",
     "pass": true,
@@ -293,5 +293,75 @@
     "withTeachingType": 4,
     "withoutTeachingType": 9,
     "automaticallyChanged": 0
+  },
+  "phoneFailureFollowup": {
+    "recordedAt": "2026-10-22T06:20:41.506822+00:00",
+    "firstCandidate": "0.1.0-rc.1022",
+    "experienceSet": "CONFIRMED_BY_OWNER",
+    "phoneResult": "FAILED_REPORTED_UNABLE_TO_CONNECT",
+    "phoneModel": "NOT_PROVIDED",
+    "phoneNetwork": "NOT_PROVIDED",
+    "phoneBrowserHealth": "PASS_REPORTED_BY_OWNER",
+    "serverHealth": "PASS_PRODUCTION_DATABASE_TRUE",
+    "tls": {
+      "subject": "admin.yorray.com",
+      "issuer": "TrustAsia DV TLS RSA CA 2024",
+      "notBefore": "2026-10-08T14:00:00Z",
+      "notAfter": "2027-01-06T13:59:59Z",
+      "opensslVerifyCode": 0
+    },
+    "transportChecks": {
+      "HTTP1": 200,
+      "HTTP2": 200,
+      "dnsEdgesChecked": 2,
+      "dnsEdgesPublicContent200": 2,
+      "wechatStyleHeadersHTTP200": 3,
+      "realPhoneSdkError": "NOT_CAPTURED"
+    },
+    "rootCause": "UNDETERMINED_PENDING_PHONE_SDK_DIAGNOSIS",
+    "cloudChangesAfterFailure": 0,
+    "businessWritesAfterFailure": 0,
+    "diagnosticCandidate": {
+      "version": "0.1.0-rc.1022.1",
+      "appId": "wx5dee6ef3087366c0",
+      "uploaded": true,
+      "officialSize": {
+        "total": 3079111,
+        "packages": [
+          {
+            "name": "TOTAL",
+            "size": 3079111
+          },
+          {
+            "name": "main",
+            "size": 1199319
+          },
+          {
+            "name": "/pages/brand/",
+            "size": 1879792
+          }
+        ]
+      },
+      "sourceManifestSha256": "3d39d734fdeca7fffd5e6ced8bdf08c4cb2e581ebae90b1a44f386fcee103d92",
+      "apiBase": "https://admin.yorray.com",
+      "domainCheck": true,
+      "minified": true,
+      "trialOnlyFixedVocabulary": true,
+      "rawSdkTextLogged": false,
+      "releaseMessageUnchanged": true,
+      "experienceSet": "PENDING_OWNER_CONFIRMATION",
+      "phoneResult": "PENDING_OWNER_DIAGNOSTIC_TEXT",
+      "review": false,
+      "release": false
+    },
+    "tests": {
+      "passed": 249,
+      "failed": 0,
+      "skipped": 0,
+      "build": true,
+      "typeCheck": true,
+      "originals": 25
+    },
+    "status": "NOT_READY_PHONE_CONNECTION_FAILURE"
   }
 }

@@ -1,6 +1,7 @@
 import {getConsultationSpecDisplay, ConsultationSnapshot} from './consultation-display';
 import {getEnvironment,visitorTokenKey,hasVisitorIdentity} from '../config';
 import {API_TIMEOUT_MS,READ_BUDGET_MS,canRetryRead,retryDelay,retryableNetworkMessage} from './request-policy';
+import {networkFailureMessage} from './network-diagnostic';
 export interface Content { id: string; kind: string; name: string; images?: string[]; [key: string]: any }
 export interface Enrollment {id:string;title:string;date:string;start:string;end:string;packageId:string;packageName:string;cover:string;description:string;meetingPoint:string;feeNote:string;registrationNote:string;remaining:number;canApply:boolean;availabilityLabel:string;version:number}
 export interface BusinessRecord { id: string; state: string; snapshot: (Content & ConsultationSnapshot) | null; request: Record<string, any>; confirmed?: Record<string, any>; changes?: any[]; [key: string]: any }
@@ -40,7 +41,7 @@ export function api<T>(path: string, options: { method?: 'GET'|'POST'; data?: ob
      const error=new RequestError((res.data as {error?:string})?.error || '请求失败，请重试',res.statusCode,(res.data as {code?:string})?.code||'');
      retry(attempt,res.statusCode,false,error);
     },
-    fail(error){if(done)return;const text=error.errMsg || '';const code=/abort|cancel/i.test(text)?'REQUEST_CANCELLED':/timeout/i.test(text)?'REQUEST_TIMEOUT':'NETWORK_ERROR';retry(attempt,0,retryableNetworkMessage(text),new RequestError('暂时无法连接服务，请稍后重试',0,code));}
+    fail(error){if(done)return;const text=error.errMsg || '';const code=/abort|cancel/i.test(text)?'REQUEST_CANCELLED':/timeout/i.test(text)?'REQUEST_TIMEOUT':'NETWORK_ERROR';let version='';try{version=wx.getAccountInfoSync().miniProgram.envVersion;}catch{}retry(attempt,0,retryableNetworkMessage(text),new RequestError(networkFailureMessage(text,version,(error as WechatMiniprogram.GeneralCallbackResult&{errno?:number}).errno),0,code));}
    });
   };
   send(0);

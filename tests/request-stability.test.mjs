@@ -9,9 +9,9 @@ const policySource=readFileSync('miniprogram/miniprogram/lib/request-policy.ts',
 const policyModule=ts.transpileModule(policySource,{compilerOptions:{module:ts.ModuleKind.ES2022,target:ts.ScriptTarget.ES2022}}).outputText;
 const adminSource=readFileSync('admin/src/api.js','utf8').replace('import.meta.env.VITE_ADMIN_API_BASE',"''").replace("'../../miniprogram/miniprogram/lib/request-policy'",JSON.stringify('data:text/javascript;base64,'+Buffer.from(policyModule).toString('base64')));
 
-function mini(outcomes,{method='GET'}={}){
+function mini(outcomes,{method='GET',version='develop'}={}){
  let now=0,abortCount=0,base='https://staging.invalid';const requests=[],cache=new Map(),timers=new Map(),owner={},storage=new Map();
- const wx={getStorageSync:k=>storage.get(k),removeStorageSync:k=>storage.delete(k),request(options){requests.push(options);const task={abort(){abortCount++;}};const outcome=outcomes.shift();if(outcome){now+=outcome.elapsed||0;outcome.fail?options.fail({errMsg:outcome.fail}):options.success({statusCode:outcome.status||200,data:outcome.data||{ok:true}});}return task;}};
+ const wx={getAccountInfoSync:()=>({miniProgram:{envVersion:version}}),getStorageSync:k=>storage.get(k),removeStorageSync:k=>storage.delete(k),request(options){requests.push(options);const task={abort(){abortCount++;}};const outcome=outcomes.shift();if(outcome){now+=outcome.elapsed||0;outcome.fail?options.fail({errMsg:outcome.fail,errno:outcome.errno}):options.success({statusCode:outcome.status||200,data:outcome.data||{ok:true}});}return task;}};
  const fakeMath=Object.create(Math);fakeMath.random=()=>0;
  function load(file){if(cache.has(file))return cache.get(file).exports;if(file.endsWith('/config.ts'))return {getEnvironment:()=>({apiBase:base}),visitorTokenKey:()=> 'staging-token'};
   const module={exports:{}};cache.set(file,module);const code=ts.transpileModule(readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
@@ -29,6 +29,12 @@ test('Native never retries writes, authentication/validation errors or cancelled
  for(const method of ['POST']){const h=mini([{fail:'request:fail timeout'}],{method});h.flush();await assert.rejects(h.promise);assert.equal(h.requests.length,1);assert.equal(h.requests[0].timeout,20000);}
  for(const status of [400,401,403,404,408,409,422,429,500]){const h=mini([{status}]);h.flush();await assert.rejects(h.promise);assert.equal(h.requests.length,1);}
  for(const fail of ['request:fail abort','request:fail url not in domain list','request:fail certificate error','request:fail offline']){const h=mini([{fail}]);h.flush();await assert.rejects(h.promise);assert.equal(h.requests.length,1);}
+});
+test('Actual native request failure shows only trial-safe diagnosis; release and retry/target boundaries remain unchanged',async()=>{
+ for(const version of ['trial','release']){const h=mini([{fail:'request:fail url not in domain list https://private.invalid/?secret=synthetic',errno:-101}],{version});
+  await assert.rejects(h.promise,error=>{assert.equal(error.code,'NETWORK_ERROR');assert.equal(error.message.includes('DOMAIN_NOT_ALLOWED'),version==='trial');assert.doesNotMatch(error.message,/private|secret|synthetic/);return true;});
+  h.flush();assert.equal(h.requests.length,1);assert.equal(h.requests[0].method,'GET');assert.equal(h.requests[0].url,'https://staging.invalid/api/public/content');
+ }
 });
 test('Native page/app cancellation and target changes stop both in-flight requests and scheduled retries',async()=>{
  const pending=mini([]);pending.client.cancelReadRequests(pending.owner);await assert.rejects(pending.promise,e=>e.code==='REQUEST_CANCELLED');assert.equal(pending.aborts(),1);pending.requests[0].success({statusCode:200,data:{late:true}});
