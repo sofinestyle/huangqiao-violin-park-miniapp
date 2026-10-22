@@ -34,3 +34,5 @@
 当前兼容API015使用API013不可变镜像，production、正常写入，Admin009为根静态托管专用包。已批准的51条标记和1条审计已执行；正式候选0.1.0-rc.1022已上传但新体验设置/手机验收待确认。出现故障应将当前兼容镜像HQ_READ_ONLY改true，保持其余配置和网关隔离，不向旧API011/旧Admin回滚。恢复前最近应用快照为13:43:09，13表361行、79媒体全部真实恢复验证通过；仍未核实平台物理恢复与离机副本。
 
 部署Admin到根静态托管应使用scripts/prepare-production-admin.mjs，不直接上传默认/admin/构建。专用工具只打包index及4个资产，校验HTML引用确实存在；部署后还需对5个真实URL逐项HTTP与哈希确认，不能以构建SUCCESS替代可访问验收。
+
+小程序候选必须在全量测试结束后构建，并使用scripts/freeze-mini-internal-candidate.mjs复制到独立新目录。上传前后调用verifyFrozenCandidate，验证真实编译运行开关、目标、AppID、安全配置及全文件哈希；不得直接上传可能被测试覆盖的build/mini-production。0.1.0-rc.1022.1已因离线准备包覆盖作废，当前诊断候选仅0.1.0-rc.1022.2有效，手机连接问题仍待实际诊断。

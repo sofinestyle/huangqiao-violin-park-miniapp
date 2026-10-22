@@ -209,7 +209,7 @@
     "purchasesOrUpgrades": 0
   },
   "tests": {
-    "passed": 249,
+    "passed": 250,
     "failed": 0,
     "skipped": 0,
     "build": true,
@@ -322,7 +322,7 @@
     "cloudChangesAfterFailure": 0,
     "businessWritesAfterFailure": 0,
     "diagnosticCandidate": {
-      "version": "0.1.0-rc.1022.1",
+      "version": "0.1.0-rc.1022.2",
       "appId": "wx5dee6ef3087366c0",
       "uploaded": true,
       "officialSize": {
@@ -342,7 +342,7 @@
           }
         ]
       },
-      "sourceManifestSha256": "3d39d734fdeca7fffd5e6ced8bdf08c4cb2e581ebae90b1a44f386fcee103d92",
+      "sourceManifestSha256": "5417c53f0b19b63f1189e3b504869d67e98fbed83b6bc63331e6f41561d9aa25",
       "apiBase": "https://admin.yorray.com",
       "domainCheck": true,
       "minified": true,
@@ -352,16 +352,37 @@
       "experienceSet": "PENDING_OWNER_CONFIRMATION",
       "phoneResult": "PENDING_OWNER_DIAGNOSTIC_TEXT",
       "review": false,
-      "release": false
+      "release": false,
+      "at": "2026-10-22T06:25:45.136Z",
+      "postUploadUnchanged": true,
+      "manifestSha256": "5417c53f0b19b63f1189e3b504869d67e98fbed83b6bc63331e6f41561d9aa25",
+      "frozenPreupload": {
+        "at": "2026-10-22T06:25:35.799Z",
+        "pass": true,
+        "sourceFilesCompared": 136,
+        "sourceMismatches": 0,
+        "credentialMatches": 0,
+        "runtimeEnabled": true,
+        "preparationMarkerAbsent": true,
+        "manifestSha256": "5417c53f0b19b63f1189e3b504869d67e98fbed83b6bc63331e6f41561d9aa25"
+      },
+      "frozenVerifiedAfterUpload": true
     },
     "tests": {
-      "passed": 249,
+      "passed": 250,
       "failed": 0,
       "skipped": 0,
       "build": true,
       "typeCheck": true,
       "originals": 25
     },
-    "status": "NOT_READY_PHONE_CONNECTION_FAILURE"
+    "status": "NOT_READY_PHONE_CONNECTION_FAILURE",
+    "discardedDiagnosticCandidate": {
+      "version": "0.1.0-rc.1022.1",
+      "status": "INVALID_OFFLINE_PREPARATION_ARTIFACT_DO_NOT_USE",
+      "runtimeEnabled": false,
+      "cause": "Tests overwrote shared build/mini-production after candidate build; final source check detected mismatch",
+      "rootCauseOfFirstPhoneFailure": false
+    }
   }
 }
