@@ -1,3 +1,4 @@
+import {entryFetch} from './http-entry-client.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import {Readable} from 'node:stream';import {mkdtempSync,rmSync,readdirSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';import {randomUUID} from 'node:crypto';
 import {configuration} from '../server/config.mjs';import {CloudBaseStorage,LocalStorage} from '../server/storage/index.mjs';import {upload} from '../server/media.mjs';import {openDatabase} from './pg-test-db.mjs';import {Service} from '../server/service.mjs';import {productPayload} from '../server/sku-seed.mjs';import {fixture} from './admin-business-fixture.mjs';import {createHttpServer} from '../server/http.mjs';import {issueSession} from '../server/security.mjs';
 const actor={id:'synthetic',roles:['admin']};
@@ -34,14 +35,14 @@ test('PG delete and new consultation serialize references; never orphan history 
 });
 test('Production cookies, health and origin protection; concurrent permission revoke cannot authorize later write',async t=>{
  const f=await fixture();t.after(()=>f.close());const {server}=createHttpServer({db:f.db,uploads:join(f.dir,'uploads'),root:f.root,environment:'production',adminOrigin:'https://admin.example.invalid'});await new Promise(r=>server.listen(0,'127.0.0.1',r));t.after(()=>new Promise(r=>server.close(r)));const base='http://127.0.0.1:'+server.address().port;
- const login=await fetch(base+'/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json','X-HQ-Action':'1',Origin:'https://admin.example.invalid'},body:JSON.stringify({username:'qa_admin',password:f.passwords.admin})});assert.equal(login.status,200);assert.match(login.headers.get('set-cookie'),/Secure/);assert.match(login.headers.get('set-cookie'),/HttpOnly/);
- assert.equal((await fetch(base+'/api/health')).status,200);assert.equal((await fetch(base+'/api/auth/development',{method:'POST'})).status,403);
+ const login=await entryFetch(base+'/api/admin/login',{method:'POST',headers:{Host:'admin.example.invalid','Content-Type':'application/json','X-HQ-Action':'1',Origin:'https://admin.example.invalid'},body:JSON.stringify({username:'qa_admin',password:f.passwords.admin})});assert.equal(login.status,200);assert.match(login.headers.get('set-cookie'),/Secure/);assert.match(login.headers.get('set-cookie'),/HttpOnly/);
+ assert.equal((await entryFetch(base+'/api/health')).status,200);assert.equal((await entryFetch(base+'/api/auth/development',{method:'POST'})).status,403);
  const token=(await issueSession(f.db,f.accounts.content.id,'admin')).token;
  let unblock,locked;const ready=new Promise(r=>locked=r),gate=new Promise(r=>unblock=r);
  const revoke=f.db.transaction(async()=>{await f.db.lockKey('hq:accounts');await f.db.execute('UPDATE accounts SET active=false WHERE id=$1',[f.accounts.content.id]);locked();await gate;});await ready;
- const q=productPayload('must-not-save');q.data.isTest=false;const write=fetch(base+'/api/admin/content',{method:'POST',headers:{'Content-Type':'application/json','X-HQ-Action':'1',Cookie:'hq_admin='+token,Origin:'https://admin.example.invalid'},body:JSON.stringify(q)});unblock();await revoke;assert.equal((await write).status,401);
+ const q=productPayload('must-not-save');q.data.isTest=false;const write=entryFetch(base+'/api/admin/content',{method:'POST',headers:{Host:'admin.example.invalid','Content-Type':'application/json','X-HQ-Action':'1',Cookie:'hq_admin='+token,Origin:'https://admin.example.invalid'},body:JSON.stringify(q)});unblock();await revoke;assert.equal((await write).status,401);
  assert.equal((await f.db.one("SELECT count(*) n FROM content WHERE name='must-not-save'")).n,0);
- const denied=await fetch(base+'/api/admin/logout',{method:'POST',headers:{'X-HQ-Action':'1',Origin:'https://wrong.example.invalid'}});assert.equal(denied.status,403);
+ const denied=await entryFetch(base+'/api/admin/logout',{method:'POST',headers:{Host:'admin.example.invalid','X-HQ-Action':'1',Origin:'https://wrong.example.invalid'}});assert.equal(denied.status,403);
 });
 test('Production saved content forbids test seed while staging requires synthetic marking',async t=>{
  const db=await openDatabase();t.after(()=>db.close());const prod=new Service(db,{environment:'production'}),stage=new Service(db,{environment:'staging'});

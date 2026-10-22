@@ -8,6 +8,7 @@ import { Fault, requireValue, authenticate, checkPassword, issueSession, createA
 import { now, decode, transaction } from './db.mjs';
 import { upload, serveMedia, listMedia } from './media.mjs';
 import {authorizeVideo,completeVideo,getVideoTask,videoUploadWorker} from './video-uploads.mjs';
+import {checkProductionEntry} from './production-access.mjs';
 const json = (res, value, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
 // Buffer responses until commit: never acknowledge a write that later rolls back.
 async function atomicAdminResponse(db,res,fn){
@@ -53,6 +54,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
             const path = url.pathname;
             const match = pattern => path.match(pattern);
             const method = req.method;
+            checkProductionEntry(req,path,{environment,adminOrigin});
             if (path.startsWith('/api/admin/') && !['GET', 'HEAD'].includes(method)) {
                 requireValue(req.headers['x-hq-action'] === '1', '请求校验失败', 403);
                 const origin = req.headers.origin;
@@ -131,7 +133,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
                 const s = (await issueSession(db, row.id, 'admin'));
                 res.setHeader('Set-Cookie', `hq_admin=${s.token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800${secureCookie}`);
                 (await audit(db, { id: row.id }, 'account.login', row.id));
-                return json(res, safeAccount(row));
+                return json(res, {...safeAccount(row),environment});
                 });
             }
             // Streaming media must not hold a DB transaction while bytes traverse the network.
@@ -156,7 +158,7 @@ export function createHttpServer({ db, uploads, storage, root, devAuth = false, 
                 return await atomicAdminResponse(db,res,async res=>{
                 const actor = (await authenticate(db, cookieToken(req), 'admin'));
                 if (path === '/api/admin/me' && method === 'GET')
-                    return json(res, actor);
+                    return json(res, {...actor,environment});
                 if (path === '/api/admin/logout' && method === 'POST') {
                     (await db.execute("DELETE FROM sessions WHERE token_hash=$1", [digest(cookieToken(req))]));
                     res.setHeader('Set-Cookie', 'hq_admin=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0'+secureCookie);

@@ -9,14 +9,15 @@ import MediaUpload from './MediaUpload';
 import './instrument-pilot.css';
 import {AdminIcon} from './AdminUI';
 import {prepareVideoCover,durationText} from './video-cover.mjs';
+import {contentTestFlag,contentForSave} from './content-environment.mjs';
 const views=[{key:'instrument',kind:'product',category:'instrument',name:'乐器'}, {key:'gift',kind:'product',category:'gift',name:'文创'}, ...Object.entries(CONTENT_KINDS).filter(([k])=>k!=='product').map(([key,name])=>({key,kind:key,name}))];
 const states={draft:'草稿',published:'已发布',archived:'已下架'};
-function createDraft(view) {
+function createDraft(view,environment) {
   const kind=views.find(v=>v.key===view).kind;
-  return {kind,name:'',state:'draft',sort:0,isTest:true,...(kind==='product'?{category:view==='gift'?'gift':'violin',priceMode:'inquiry',variantModelVersion:2,variantMode:'simple',options:[],skus:[newSku()]}:{}),...(kind==='lesson'?{type:'article',teachingType:'article'}:{}),images:[]};
+  return {kind,name:'',state:'draft',sort:0,isTest:contentTestFlag(environment),...(kind==='product'?{category:view==='gift'?'gift':'violin',priceMode:'inquiry',variantModelVersion:2,variantMode:'simple',options:[],skus:[newSku()]}:{}),...(kind==='lesson'?{type:'article',teachingType:'article'}:{}),images:[]};
 }
-export default function Content({initialView='instrument',createOnOpen=false}) {
-  const [view,setView]=useState(initialView),[q,setQ]=useState(''),[editing,setEditing]=useState(()=>createOnOpen?createDraft(initialView):null),[error,setError]=useState('');
+export default function Content({initialView='instrument',createOnOpen=false,environment}) {
+  const [view,setView]=useState(initialView),[q,setQ]=useState(''),[editing,setEditing]=useState(()=>createOnOpen && ['development','staging','production'].includes(environment)?createDraft(initialView,environment):null),[error,setError]=useState('');
   const [deleting,setDeleting]=useState(null),[notice,setNotice]=useState('');
   const triggerRef=useRef(null),createButtonRef=useRef(null);
   const pilot=view==='instrument';
@@ -24,7 +25,7 @@ export default function Content({initialView='instrument',createOnOpen=false}) {
   const current=views.find(v=>v.key===view),kind=current.kind;
   const remote=useRemote(`content?${new URLSearchParams({kind,q,...(current.category?{category:current.category}:{})})}`);
   const edit=async item=>{try{setEditing(await api(`content/${item.id}`));}catch(e){setError(e.message);}};
-  const create=()=>setEditing(createDraft(view));
+  const create=()=>{try{setEditing(createDraft(view,environment));}catch(e){setError(e.message);}};
   const close=()=>{setEditing(null);if(pilot && !triggerRef.current)queueMicrotask(()=>createButtonRef.current?.focus());};
   return <section className={`admin-content ${pilot||skuEditorActive?'instrument-pilot':''}`} onClickCapture={e=>{const button=e.target.closest('button');if(pilot && button?.hasAttribute('data-editor-trigger'))triggerRef.current=button;}}>
     <div className="admin-content-header"><div><h1>内容维护</h1><p>管理小程序中的乐器、文创、研学和教学内容</p></div><button ref={createButtonRef} data-editor-trigger={pilot || undefined} data-editor-key={pilot?'new':undefined} disabled={kind==='site' && !!remote.data?.length} onClick={create}><AdminIcon name="plus" size={18}/>新增{current.name}</button></div>
@@ -39,7 +40,7 @@ export default function Content({initialView='instrument',createOnOpen=false}) {
       </>}
     </div>
     {deleting?<ContentDeleteDialog item={deleting} label={current.name} onClose={()=>setDeleting(null)} onDeleted={()=>{setDeleting(null);setNotice('内容已删除');remote.refresh();}}/>:null}
-    {editing?<ContentEditor key={editing.id || `${view}-new`} value={editing} pilot={pilot||skuEditorActive} returnFocusTo={triggerRef.current} onClose={close} onSaved={()=>{setEditing(null);remote.refresh();}}/>:null}
+    {editing?<ContentEditor key={editing.id || `${view}-new`} value={editing} environment={environment} pilot={pilot||skuEditorActive} returnFocusTo={triggerRef.current} onClose={close} onSaved={()=>{setEditing(null);remote.refresh();}}/>:null}
   </section>;
 }
 const textFields={
@@ -49,7 +50,7 @@ const textFields={
   lesson:[['category','教学分类'],['description','正文 / 简介'],['audience','适合对象'],['form','授课形式'],['place','授课地点'],['courseTime','公开时间说明'],['courseFee','公开费用说明'],['rights','内容授权说明']],
   spot:[['description','介绍'],['address','已核实地址'],['opening','开放说明'],['visitNote','到访 / 临时公告']]
 };
-function ContentEditor({value,onClose,onSaved,pilot=false,returnFocusTo}) {
+function ContentEditor({value,onClose,onSaved,pilot=false,returnFocusTo,environment}) {
   const saveLock=useRef(false);
   const [skuError,setSkuError]=useState(null),[skuConfirmPending,setSkuConfirmPending]=useState(false);
   const [form,setForm]=useState(value),[error,setError]=useState(''),[busy,setBusy]=useState(false),[uploadCount,setUploadCount]=useState(0),[uploaded,setUploaded]=useState([]);
@@ -58,12 +59,13 @@ function ContentEditor({value,onClose,onSaved,pilot=false,returnFocusTo}) {
   const addMedia=m=>{setUploaded(rows=>[m,...rows]);media.refresh();};
   const update=(k,v)=>setForm(f=>({...f,[k]:v}));
   const save=async e=>{e.preventDefault();if(uploadCount || busy || saveLock.current || skuConfirmPending || e.currentTarget.querySelector('.sku-confirm'))return;if(form.kind==='product' && (form.variantModelVersion!==2||form.skuStructureDirty)){setError('请使用新版产品并更新规格组合后保存。');return;}saveLock.current=true;setBusy(true);setError('');setSkuError(null);try{
+    contentForSave(form,environment); // Validate before any cover upload.
     const source=[...uploaded,...(media.data || [])].find(m=>m.id===form.mediaId);
     const cover=await prepareVideoCover(form,{upload:uploadFile,rights:source?.rights || form.rights});
     const savedForm=cover?{...form,images:[cover.url]}:form;
     // Keep a successfully uploaded cover on a failed content save so retry does not upload it twice.
     if(cover){addMedia(cover);setForm(savedForm);}
-    const {id,kind,name,state,sort,version,skus,specs,skuStructureDirty,...data}=savedForm;
+    const {id,kind,name,state,sort,version,skus,specs,skuStructureDirty,...data}=contentForSave(savedForm,environment);
     if(kind==='lesson' && form.type==='video' && durationText(data.duration))data.duration=Number(durationText(data.duration));
 
     const payload={kind,name,state,sort:Number(sort),version,data,...(kind==='product'?{skus:skus.filter(s=>s.current!==false).map(({id,sku_code,option_values,reference_price,images,enabled,sort_order})=>({...(id?{id}:{}),sku_code,option_values,reference_price,images,enabled,sort_order}))}:{})};

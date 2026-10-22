@@ -52,3 +52,15 @@ test('错误AppID在覆盖既有构建产物前被拒绝',()=>{
   assert.equal(readFileSync(root+'/project.config.json','utf8'),before);
  }
 });
+
+
+test('Production local preparation emits a disabled, minified, domain-checked candidate only under explicit flag',()=>{
+ const r=spawnSync(process.execPath,['scripts/build-mini.mjs','--prepare-production'],{env:{...process.env,APP_ENV:'production',MINI_APPID:''},encoding:'utf8'});assert.equal(r.status,0,r.stderr);
+ const root='build/mini-production',manifest=JSON.parse(readFileSync(root+'/PREPARATION_ONLY.json')),project=JSON.parse(readFileSync(root+'/project.config.json'));
+ assert.equal(manifest.runtimeEnabled,false);assert.equal(manifest.apiBase,'https://admin.yorray.com');assert.equal(manifest.uploadApproved,false);assert.equal(manifest.releaseApproved,false);
+ assert.equal(project.setting.minified,true);assert.equal(project.setting.urlCheck,true);assert.equal(project.condition.miniprogram.list.length,0);assert.equal(project.appid,'wx5dee6ef3087366c0');
+ assert.match(readFileSync(root+'/miniprogram/build-target.js','utf8'),/production/);
+ for(const env of [{MINI_API_BASE:'http://127.0.0.1:8787'},{MINI_APPID:'wx5bf0160bd4262e24'}]){
+  const failed=spawnSync(process.execPath,['scripts/build-mini.mjs','--prepare-production'],{env:{...process.env,APP_ENV:'production',...env},encoding:'utf8'});assert.notEqual(failed.status,0);assert.equal(readFileSync(root+'/project.config.json','utf8'),JSON.stringify(project,null,2)+'\n');
+ }
+});

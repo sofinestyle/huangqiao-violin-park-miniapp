@@ -63,7 +63,10 @@ export class Foundation {
                 delete detail.specs;
                 detail.options = skuPlan.options;
             }
-            if(this.environment==='production'){requireValue(detail.isTest!==true,'生产环境禁止测试内容');detail.isTest=false;}else{requireValue(detail.isTest!==false,'开发/测试环境内容必须标记为测试资料');detail.isTest=true;}
+            if(this.environment==='production'){
+                requireValue(prev?.isTest!==true,'旧测试内容须先按批准清单转正，普通保存不能自动转正');
+                requireValue(detail.isTest!==true,'生产环境禁止测试内容');detail.isTest=false;
+            }else{requireValue(detail.isTest!==false,'开发/测试环境内容必须标记为测试资料');detail.isTest=true;}
             for (const [key, value] of Object.entries(detail)) {
                 requireValue(value === null || ['string', 'number', 'boolean'].includes(typeof value) || Array.isArray(value), `${key}类型无效`);
                 if (typeof value === 'string')

@@ -12,7 +12,7 @@ export default {
     "enabled": true
   },
   "production": {
-    "apiBase": null,
+    "apiBase": "https://admin.yorray.com",
     "label": "",
     "identityMode": "wechat",
     "enabled": false

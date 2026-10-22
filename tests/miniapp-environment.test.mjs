@@ -1,14 +1,14 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import ts from 'typescript';import vm from 'node:vm';
 import {readFileSync,readdirSync,mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';import {resolve,dirname,join} from 'node:path';import {tmpdir} from 'node:os';import {spawnSync} from 'node:child_process';
-function host({version='develop',query={},target,storage=new Map(),status=200}={}){
+function host({version='develop',query={},target,productionEnabled=false,productionApiBase,storage=new Map(),status=200}={}){
  const cache=new Map(),requests=[];let component;
  const wx={getAccountInfoSync:()=>({miniProgram:{envVersion:version}}),getLaunchOptionsSync:()=>({query}),getStorageSync:k=>storage.get(k)||'',setStorageSync:(k,v)=>storage.set(k,v),removeStorageSync:k=>storage.delete(k),login:o=>o.success({code:'synthetic-wechat-code'}),request:o=>{requests.push(o);o.success({statusCode:status,data:{token:'synthetic-'+requests.length,error:'synthetic'}});}};
  function load(file){if(cache.has(file))return cache.get(file).exports;
   if(file.endsWith('/build-target.ts')&&target)return {default:{environment:target}};
   const module={exports:{}};cache.set(file,module);
   const code=ts.transpileModule(readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
-  vm.runInNewContext('(function(require,module,exports,wx,Component){'+code+'\n})',{console,Promise,Object,Error})(name=>load(resolve(dirname(file),name+'.ts')),module,module.exports,wx,c=>{component={...c,data:{...c.data},setData(v){Object.assign(this.data,v);}};});return module.exports;}
+  vm.runInNewContext('(function(require,module,exports,wx,Component){'+code+'\n})',{console,Promise,Object,Error})(name=>load(resolve(dirname(file),name+'.ts')),module,module.exports,wx,c=>{component={...c,data:{...c.data},setData(v){Object.assign(this.data,v);}};});if(file.endsWith('/environment-settings.ts')&&productionEnabled){module.exports.default={...module.exports.default,production:{...module.exports.default.production,enabled:true,...(productionApiBase?{apiBase:productionApiBase}:{})}};}return module.exports;}
  return {wx,requests,storage,load:name=>load(resolve('miniprogram/miniprogram',name+'.ts')),component:()=>component};
 }
 test('Native default resolves real existing loopback; query selects fixed Staging, never an arbitrary URL',()=>{
@@ -42,9 +42,22 @@ test('All page origins absent, wx.request only centralized, one environment SSOT
  for(const file of files('miniprogram/miniprogram/pages').filter(f=>f.endsWith('.ts')))assert.doesNotMatch(readFileSync(file,'utf8'),/localhost|127\.0\.0\.1|tcloudbase|wx\.request/);
  const requests=files('miniprogram/miniprogram').filter(f=>f.endsWith('.ts')&&/wx\.request\(/.test(readFileSync(f,'utf8')));assert.deepEqual(requests,['miniprogram/miniprogram/lib/api.ts']);
  const app=JSON.parse(readFileSync('miniprogram/miniprogram/app.json','utf8'));assert.deepEqual(app.tabBar.list.map(x=>x.text),['首页','乐器','文创','研学','我的']);
- const h=host(),settings=h.load('environment-settings').default;assert.equal(settings.production.enabled,false);assert.equal(settings.production.apiBase,null);
+ const h=host(),settings=h.load('environment-settings').default;assert.equal(settings.production.enabled,false);assert.equal(settings.production.apiBase,'https://admin.yorray.com');
 });
 test('Compile-mode preparation preserves domain/security and existing private conditions and is idempotent',()=>{
  const dir=mkdtempSync(join(tmpdir(),'hq-mini-prepare-'));try{mkdirSync(join(dir,'miniprogram'));const original={setting:{urlCheck:true},condition:{miniprogram:{list:[{name:'用户原有模式',query:'x=1'}]}},libVersion:'3.17.3'};writeFileSync(join(dir,'miniprogram/project.private.config.json'),JSON.stringify(original));writeFileSync(join(dir,'miniprogram/project.config.json'),readFileSync('miniprogram/project.config.json'));
  const run=()=>spawnSync(process.execPath,[resolve('scripts/prepare-mini-environments.mjs')],{cwd:dir,encoding:'utf8'});assert.equal(run().status,0);assert.equal(run().status,0);const result=JSON.parse(readFileSync(join(dir,'miniprogram/project.private.config.json')));assert.deepEqual(result.setting,original.setting);assert.equal(result.libVersion,original.libVersion);assert.equal(result.condition.miniprogram.list.length,3);assert.equal(result.condition.miniprogram.list[0].query,'x=1');}finally{rmSync(dir,{recursive:true,force:true});}
+});
+
+
+test('Prepared production remains disabled; simulated approved trial/release use only canonical API with isolated identity',async()=>{
+ for(const version of ['trial','release']){
+  const blocked=host({target:'production',version});await assert.rejects(blocked.load('lib/api').api('/api/public/content'));assert.equal(blocked.requests.length,0);
+  const storage=new Map([['hq-visitor-token:staging','old-staging-token']]);
+  const h=host({target:'production',version,productionEnabled:true,query:{miniEnvironment:'development'},storage});
+  const config=h.load('config'),e=config.getEnvironment();assert.equal(e.name,'production');assert.equal(e.apiBase,'https://admin.yorray.com');assert.equal(e.showDebug,false);assert.equal(config.hasVisitorIdentity(),false);
+  await h.load('lib/api').ensureIdentity();assert.equal(h.requests[0].url,'https://admin.yorray.com/api/auth/wechat');assert.ok(storage.get('hq-visitor-token:production'));assert.equal(storage.get('hq-visitor-token:staging'),'old-staging-token');
+ }
+ assert.throws(()=>host({target:'production',version:'develop',productionEnabled:true}).load('config').getEnvironment());
+ for(const productionApiBase of ['http://127.0.0.1:8787','https://unapproved.example.invalid'])assert.throws(()=>host({target:'production',version:'release',productionEnabled:true,productionApiBase}).load('config').getEnvironment());
 });
